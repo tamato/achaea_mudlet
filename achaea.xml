@@ -4260,6 +4260,28 @@ end</script>
 				</TriggerGroup>
 			</TriggerGroup>
 		</TriggerGroup>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>KillTarget</name>
+			<script>echo("\ncaught")
+
+Ratting()</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>You have recovered equilibrium.</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>3</integer>
+			</regexCodePropertyList>
+		</Trigger>
 	</TriggerPackage>
 	<TimerPackage>
 		<TimerGroup isActive="yes" isFolder="yes" isTempTimer="no" isOffsetTimer="no">
@@ -5919,8 +5941,7 @@ mmp.echo("All astral nodes have been "..(matches[2]:lower()=="on" and "" or "un"
 		</AliasGroup>
 		<Alias isActive="yes" isFolder="no">
 			<name>Sell rats</name>
-			<script>send("sell rats to ratman")
-send("put gold in pack")</script>
+			<script>sendAll("sell rats to ratman", "put gold in pack")</script>
 			<command></command>
 			<packageName></packageName>
 			<regex>^sr$</regex>
@@ -12831,20 +12852,24 @@ end</script>
 		<Script isActive="yes" isFolder="no">
 			<name>Ratting</name>
 			<packageName></packageName>
-			<script>--for k,v in pairs(gmcp.Room.Info.exits) do
---  echo(k.." "..v.."\n")
---end
+			<script>
+-- lua gmcp.Items.List
+local counter = #gmcp.Char.Items.List.items
+echo("Counter " .. counter .. "\n")
+if counter &gt; 0 then
+  for idx=1, counter do
+    local tbl = gmcp.Char.Items.List.items[idx]
+    local id = tbl.id
+    local name = tbl.name
+    echo(name .. id .. "\n")
+  end
+end
 
-local d = {}
 
-echo("testing\n")
-for k,v in pairs(roomInvTable) do
-  echo(k)
---  if v:match('%&lt;green%&gt;') then
---    local t = {id=k,name=v}
---    table.insert(d,t)
---  end
-end</script>
+-- gmcp.Char.Items.Add.item.id -- 
+-- gmcp.Char.Items.Add.item.name -- "a rat"
+-- gmcp.Char.Items.List.items[*].id/name
+-- gmcp.Char.Items.Remove.item.id -- </script>
 			<eventHandlerList />
 		</Script>
 		<Script isActive="yes" isFolder="no">
