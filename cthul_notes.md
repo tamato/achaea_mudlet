@@ -23,3 +23,11 @@ cavalry shield
 HELP WEAPONS
 HELP ARMOUR
 
+--- tmp
+HHelp
+CHelp
+
+----
+
+
+
