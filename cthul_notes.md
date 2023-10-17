@@ -6,8 +6,12 @@ Learn survival for SELFISNESS
 For Occultists, pg 13
 Tarot up to FOOL
 
+| | CLHELP IOE. The Institute of Entropy welcomes all manner of
+    combat related questions, and offers a specialized curriculum revolving
+    around preparation and training for raids and defences.
+
 Read CHELP ANTITHEFT
-    use of a 'shimmering orb' prevents others fro APPRAISE your stuff.
+    use of a 'shimmering orb' prevents others from APPRAISEing your stuff.
     quickly decays, and maby $$
 
     bell tattoo
@@ -19,6 +23,8 @@ Read CHELP ANTITHEFT
 Armour Scalemail
 cavalry shield
 
+Finding wares
+    DIRECTORY <item>
 
 x help newcomers savants
 - hhelp welcome
@@ -39,7 +45,7 @@ hhelp
 SAVANTS
 
 CLHELP welcome
-    acendsion...
+    Academy of Ascension
 
 Novicehood
 -----------
@@ -65,3 +71,7 @@ keyrite  sermons
 Misc
 -----------
 theorem
+
+
+
+
