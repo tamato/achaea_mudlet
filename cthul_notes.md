@@ -20,14 +20,48 @@ Armour Scalemail
 cavalry shield
 
 
-HELP WEAPONS
-HELP ARMOUR
+x help newcomers savants
+- hhelp welcome
+-   HWHO
+-   HNT <speak>
+-   HISTORY HNT
+-   house structure
+- hhelp primeborn
+-   Todo
+-       graduate from Academy of Ascension
+-       When ready for the interview, speak with Magister of bedlam, or aid to advance to Thrall.
+-   hhelp decorum
+-   hhelp laws
+-   hhelp chaos
 
---- tmp
-HHelp
-CHelp
+HONOURSF
+hhelp
+SAVANTS
 
-----
+CLHELP welcome
+    acendsion...
+
+Novicehood
+-----------
+~primeborn~  welcome
 
 
+Regulations
+-----------
+decorum  laws
 
+
+Reference
+-----------
+chaos        huntingtips  mentors      shop
+equipment    learning     novicegold
+
+
+Events
+-----------
+keyrite  sermons
+
+
+Misc
+-----------
+theorem
