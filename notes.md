@@ -1,16 +1,28 @@
 Ratting script
 ----------------
+Variables needed
+- autoBashing
+- target
+- listOfTargets
+- listOfApproveTargets
 
-Print GMCP to console in Mudlet
+rat enters room
+- append to list of targets
+- if no target, set it to the first entry of list
+
+rat leaves room
+- does it match the target
+    - clear target
+    - check list, set first entry
+
+Print GMCP to console in Mudlet, gives full list.
+lua gmpc
 
 Find exits
 - gmcp:  GMCP.Room.Info.exits
 - ignore: up, down, in, and out
     - There is a door in the way, to the <>.
 
-
--- targets
-local targets = {'^a.\*rat$'}
 
 -- list of exits
 local prohibited_exits = {'up', 'down', 'in', 'out'}
