@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<ScriptPackage>
+		<Script isActive="yes" isFolder="no">
+			<name>InRoom</name>
+			<packageName></packageName>
+			<script>bash_target = 0
+
+---------------------------------
+-- Monsters entering the room
+---------------------------------
+function mobEntered()
+  local newMob = gmcp.Char.Items.Add
+  --display(newMob)
+  if newMob.location == "room" then
+    echo("A " .. newMob.item.name .. newMob.item.id .. " has entered\n")
+    
+    if bash_target == "" then
+      echo("Set target to " .. bash_target .. "\n")
+      bash_target = newMob.item.id
+    end
+  end
+end
+
+local ok = registerNamedEventHandler("InRoom", "MobEntered", "gmcp.Char.Items.Add", mobEntered)
+if ok == false then
+  echo("Couldn't register mobEntered")
+end
+
+---------------------------------
+-- Monsters already in the room
+---------------------------------
+function mobList()
+  local rm_list = gmcp.Char.Items.List
+  if rm_list.location == "room" then
+    for _,thing in spairs(rm_list.items) do
+      if thing.attrib == "m" then
+        echo("There is a " .. thing.name .. thing.id .. " in here.\n")
+      end
+    end
+  end
+end
+
+local ok = registerNamedEventHandler("InRoom", "MobInHere", "gmcp.Char.Items.List", mobList)
+if ok == false then
+  echo("Couldn't register mobEntered")
+end
+
+---------------------------------
+-- Monsters already in the room
+---------------------------------
+function mobRemoved()
+  local removed = gmcp.Char.Items.Remove
+  if removed.location == "room" then
+    display(removed)  
+    if removed.item.id == bash_target then
+      bash_target = ""
+      echo("BT: " .. bash_target .. ":\n")
+    end
+  end
+end
+
+local ok = registerNamedEventHandler("InRoom", "mobRemoved", "gmcp.Char.Items.Remove", mobRemoved)
+if ok == false then
+  echo("Couldn't register mobEntered")
+end</script>
+			<eventHandlerList />
+		</Script>
+	</ScriptPackage>
+</MudletPackage>
