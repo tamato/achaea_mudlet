@@ -1,7 +1,7 @@
 From 'lessons for all achaeans' book/journal
 
-General, pg 2
-Learn survival for SELFISNESS
+Auto curing
+    HELP CURING SYSTEM
 
 For Occultists, pg 13
 Tarot up to FOOL
