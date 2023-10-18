@@ -12940,7 +12940,7 @@ end</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
-				<name>RightTop</name>
+				<name>InRoomView</name>
 				<packageName></packageName>
 				<script>local borderwidth = 200
 setBorderRight(borderwidth)
@@ -12968,7 +12968,7 @@ inHere:setStyleSheet([[
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
-				<name>InRoom</name>
+				<name>InRoomController</name>
 				<packageName></packageName>
 				<script>bash_target = 0
 

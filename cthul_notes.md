@@ -1,5 +1,7 @@
 From 'lessons for all achaeans' book/journal
 
+seek out Ulvin, he may help if he is around
+
 Auto curing
     HELP CURING SYSTEM
 
