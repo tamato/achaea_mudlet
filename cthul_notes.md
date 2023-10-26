@@ -107,3 +107,14 @@ In GreatRock
 Get key to save Kasha
 A huge collar for Hellitha
 Some box was found here too. Karma?
+
+
+Thrall experiment
+--------------------
+insane ayslum
+constant mist of the herb that keeps people awake.
+This will pervent those from sleeping
+at night allow chaos demons to room halls to saturet the hospital with their aura
+collect the smoke that is breathed in by the patients to crystalize it
+...
+
