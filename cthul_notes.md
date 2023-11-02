@@ -1,7 +1,13 @@
+<<<<<<< Updated upstream
 things to work on
     walk path
 
 
+||||||| Stash base
+From 'lessons for all achaeans' book/journal
+
+=======
+>>>>>>> Stashed changes
 seek out Ulvin, he may help if he is around
 
 System Message: Replay recording has started. File: /home/ahrimen/.
@@ -10,24 +16,22 @@ config/mudlet/profiles/Achaea/log/2023-10-20#20-42-46.dat
 Auto curing
     HELP CURING SYSTEM
 
+<<<<<<< Updated upstream
 | | CLHELP IOE. The Institute of Entropy welcomes all manner of
+||||||| Stash base
+For Occultists, pg 13
+Tarot up to FOOL
+
+| | CLHELP IOE. The Institute of Entropy welcomes all manner of
+=======
+[ ] CLHELP IOE. The Institute of Entropy welcomes all manner of
+>>>>>>> Stashed changes
     combat related questions, and offers a specialized curriculum revolving
     around preparation and training for raids and defences.
 
 
 HHELP huntingtips
     Get a 'jera' rune from a runewarden, more str and hp
-
-    ASTRONOMY EMPOWERMENT
-        Notes: available from an alchemist. Benefit depends upon the orrey
-        attunement for the year.
-
-        The sun - Gold - Increased health regeneration.
-        The moon - Silver - Increased mana regeneration.
-        The Nebula Coronae - Copper - Increased endurance and willpower
-        regeneration.
-        Ethian - Tin - Increased damage versus denizens.
-
 
 READ list
     CLHELP IOE
