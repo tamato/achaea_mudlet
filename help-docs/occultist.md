@@ -27,11 +27,13 @@ If such is the case, you may give that target the revelation of what the nature 
 
 * This number drops to four if they are suffering from the curse of whispering madness.
 
+Force Aeon
+
 
 Ways to Cause the mentioned afflictions
 ----------------------------------------
 DEVOLVE <target>
-Gives disloyalty and shyness
+Gives disloyalty and **shyness**
 
 UNNAMABLE SPEAK|VISION?
 
@@ -40,3 +42,11 @@ Does not work
 ----------------------------------------
 INSTILL <target> WITH <affliction>
 - asthma, clumsiness, healthleech, sensitivity, slickness, paralysis, or darkshade
+
+
+
+
+
+
+
+

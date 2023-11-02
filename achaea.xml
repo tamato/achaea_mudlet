@@ -4279,9 +4279,74 @@ end</script>
 			<colorTriggerBgColor>#000000</colorTriggerBgColor>
 			<regexCodeList />
 			<regexCodePropertyList />
+			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Sleep</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>The first faint feelings of exhaustion prick at your conscious</string>
+					<string>You struggle to stay awake as your eyelids shut repeatedly of their own accord.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</TriggerGroup>
+			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>AfflicationTriggers</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList />
+				<regexCodePropertyList />
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>DamagedLegArm</name>
+					<script>enqueueSalve({priority=9, apply="APPLY RESTORATION TO " .. matches[3]})
+enqueueSalve({priority=2, apply="APPLY MENDING TO " .. matches[3]})
+</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>Your (right|left) (leg|arm) is greatly damaged from the beating.</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>WatchGold</name>
-				<script></script>
+				<script>--A tiny pile of sovereigns spills from the corpse.
+--[Rage]: +8.0. Total: 36.8 Now Available: Temperance, Chaosgate
+--[Rage]: +8.7. Total: 45.5
+-- You can use Fluctuate again.
+-- You can use another Battlerage ability again. Available abilities: Temperance, Ruin, Fluctuate
+</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -4299,6 +4364,28 @@ end</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>getGold</name>
+				<script>next_commands[20] = {"get gold", "put gold in pack"}
+queque_eb_command()
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^.+pile of sovereigns spills from the corpse.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>CheckFollowers</name>
 				<script></script>
@@ -4313,7 +4400,7 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>(a ghostly presence)</string>
+					<string>a ghostly presence</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -4373,13 +4460,13 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>Your fellow citizen, (\w), has just escaped imprisonment in the foul pygmy dungeon. Welcome (\w)</string>
+					<string>Your fellow citizen, \w, has just escaped imprisonment in the foul pygmy dungeon. Welcome \w</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Chats</name>
 				<script>selectCurrentLine()
 copy()
@@ -4396,9 +4483,15 @@ AchaeaChats:appendBuffer()
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^\(\w+\).*"$</string>
+					<string>^\w\w.+ says*, .+$</string>
+					<string>^.+tells+,.+$</string>
+					<string>^You say.+</string>
+					<string>^\(\w+\):.*</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -4423,45 +4516,6 @@ AchaeaChats:appendBuffer()
 				</regexCodePropertyList>
 			</Trigger>
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>cheapMapper</name>
-				<script></script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList />
-				<regexCodePropertyList />
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>EnableCaptureMap</name>
-					<script>selectCurrentLine()
-copy()
-AchaeaMapWindow:appendBuffer()
-deleteLine()</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>24</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>---( Area|---).+</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</TriggerGroup>
-			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Balances</name>
 				<script></script>
 				<triggerType>0</triggerType>
@@ -4478,7 +4532,8 @@ deleteLine()</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Salves</name>
-					<script>salve_balance = true</script>
+					<script>salve_balance = true
+applySalve()</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -4533,12 +4588,13 @@ deleteLine()</script>
 						<string>You may eat another bit of irid moss or potash.</string>
 					</regexCodeList>
 					<regexCodePropertyList>
-						<integer>0</integer>
+						<integer>3</integer>
 					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>eating</name>
-					<script>eat_balance = true</script>
+					<script>eat_balance = true
+eatHerb()</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -4558,7 +4614,7 @@ deleteLine()</script>
 				</Trigger>
 			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Sheild</name>
+				<name>Shield</name>
 				<script></script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4611,7 +4667,7 @@ deleteLine()</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>A (\w+) tattoo fades from view and disappears</string>
+					<string>A \w+ tattoo fades from view and disappears</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -4642,7 +4698,7 @@ echo("gagged\n")</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="yes" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>warpGag</name>
 				<script>deleteLine()</script>
 				<triggerType>0</triggerType>
@@ -4656,11 +4712,11 @@ echo("gagged\n")</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>You reach out and clench a fist before</string>
-					<string>growths.$</string>
+					<string>^You reach out and clench a fist before.+</string>
+					<string>.+growths.$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
-					<integer>2</integer>
+					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -4682,6 +4738,50 @@ echo("gagged\n")</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Karma</name>
+				<script>echo("get karma item " .. matches[2] .. "\n")
+next_commands[31] = {"get " .. matches[2]}
+queque_eb_command()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>The (Mask) of the Beast tumbles out </string>
+					<string>A (fetish) charm tumbles out</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>2</integer>
+					<integer>2</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>KeepSelfish</name>
+				<script>send("selfishness")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>A feeling of generosity spreads throughout you.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -4714,6 +4814,24 @@ echo("gagged\n")</script>
 			<command></command>
 			<packageName>achaea</packageName>
 			<time>00:00:00.000</time>
+			<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+				<name>AutoBash</name>
+				<script>
+shielded = shielded or false
+
+--echo("C: " .. #next_commands .. " " .. target .. "\n")
+if shielded == false and target ~= 0 and #next_commands == 0 then
+  next_commands[999] = {"warp " .. target}
+  echo("Sending warp!\n")
+end
+
+sip_vial()
+queque_eb_command()
+</script>
+				<command></command>
+				<packageName></packageName>
+				<time>00:00:01.000</time>
+			</Timer>
 		</TimerGroup>
 	</TimerPackage>
 	<AliasPackage>
@@ -6366,6 +6484,7 @@ if toggle == " off" then
   disableTrigger("KeepSelfish")
 else
   send("SELFISHNESS", false)
+  enableTrigger("KeepSelfish")
 end
 </script>
 				<command></command>
@@ -6541,33 +6660,20 @@ send("rats")</script>
 
 echo("Check tattoos!\n")
 echo("Check tarot cards!\n")
+echo("Eat Kola!\n")
+echo("Sip Venom!\n")
+echo("Apply Caloric?!\n")
 
 tempTimer(1.0, [[ send("selfishness") ]])
 tempTimer(1.5, [[ send("activate hermit home") ]])
 tempTimer(2.0, [[ send("sip speed") ]])
 tempTimer(4.0, [[ send("put speed in pack") ]])
 tempTimer(4.0, [[ send("shroud") ]])
-</script>
+
+enableTrigger("KeepSelfish")</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^prep$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>ControlAutoBashing</name>
-				<script>use_auto_bash = 0
-
-if matches[2] == "on" then
-  cecho("&lt;white:&gt;-------------------------------\n")
-  cecho("&lt;red:white&gt;Enabling auto bash!\n")
-  use_auto_bash = 1
-else
-  cecho("&lt;white&gt;-------------------------------\n")
-  cecho("&lt;white:&gt;auto bash, disabled!\n")
-  use_auto_bash = 0
-end</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^abash *(.*)$</regex>
 			</Alias>
 			<AliasGroup isActive="yes" isFolder="yes">
 				<name>Tarot</name>
@@ -6577,7 +6683,7 @@ end</script>
 				<regex></regex>
 				<Alias isActive="yes" isFolder="no">
 					<name>Priestess</name>
-					<script>next_commands = {"fling priestess at me"}
+					<script>next_commands[5] = {"fling priestess at me"}
 queque_eb_command()
 </script>
 					<command></command>
@@ -6586,7 +6692,7 @@ queque_eb_command()
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>Go home</name>
-					<script>next_commands = {"fling hermit at ground home"}
+					<script>next_commands[5] = {"fling hermit at ground home"}
 queque_eb_command()
 </script>
 					<command></command>
@@ -6595,7 +6701,8 @@ queque_eb_command()
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>Hermit</name>
-					<script>next_commands = {"get deck from pack", "outd hermit", "activate hermit home"}
+					<script>next_commands = {}
+next_commands[20] = {"get deck from pack", "outd hermit", "activate hermit home"}
 queque_eb_command()
 </script>
 					<command></command>
@@ -6604,7 +6711,7 @@ queque_eb_command()
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>Fool</name>
-					<script>next_commands = {"get deck from pack", "outd fool", "fling fool at me"}
+					<script>next_commands[5] = {"get deck from pack", "outd fool", "fling fool at me"}
 queque_eb_command()
 </script>
 					<command></command>
@@ -6630,6 +6737,15 @@ tempTimer(4.1, [[ send("spur chariot skywards") ]])</script>
 					<packageName></packageName>
 					<regex>^chariot$</regex>
 				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Sun</name>
+					<script>--The light of the sun tarot soothes your afflictions.
+next_commands[5] = {"get deck from pack", "outd sun", "fling sun at ground"}
+queque_eb_command()</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sun$</regex>
+				</Alias>
 			</AliasGroup>
 			<AliasGroup isActive="yes" isFolder="yes">
 				<name>afflictions</name>
@@ -6639,8 +6755,8 @@ tempTimer(4.1, [[ send("spur chariot skywards") ]])</script>
 				<regex></regex>
 				<Alias isActive="yes" isFolder="no">
 					<name>epidermal</name>
-					<script>send("apply epidermal")
-salve_balance = false</script>
+					<script>local cmd = {priority=99, apply="apply epidermal"}
+enqueueSalve(cmd)</script>
 					<command></command>
 					<packageName></packageName>
 					<regex>^aep$</regex>
@@ -6663,10 +6779,12 @@ eat_balance = false</script>
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>Restoration</name>
-					<script>sendAll("get restoration from pack", "apply restoration to legs", "put restoration in pack")</script>
+					<script>--sendAll("get restoration from pack", "apply restoration to legs", "put restoration in pack")
+local cmd = {priority=99, apply="apply restoration"}
+enqueueSalve(cmd)</script>
 					<command></command>
 					<packageName></packageName>
-					<regex>^arl$</regex>
+					<regex>^ares( \w+)$</regex>
 				</Alias>
 			</AliasGroup>
 			<AliasGroup isActive="yes" isFolder="yes">
@@ -6710,6 +6828,58 @@ eat_balance = false</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^nt$</regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>Set Invalid Target</name>
+					<script>invalidTargets = invalidTargets or {}
+
+local area = gmcp.Room.Info.area
+table.insert(invalidTargets[area], matches[2])
+echo("NoKill " .. matches[2])</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^nokill (\w+)$</regex>
+				</Alias>
+			</AliasGroup>
+			<AliasGroup isActive="yes" isFolder="yes">
+				<name>AutoWalking</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>DoWalk</name>
+					<script>--gotoRoom(445)</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^dowalk$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>StartCapture</name>
+					<script>autoWalkRooms = autoWalkRooms or {}
+local area = gmcp.Room.Info.area
+autoWalkRooms[area] = {}
+
+autoWalkRooms[area].start = gmcp.Room.Info.num
+echo("Start: " .. autoWalkRooms[area].start .. "\n")
+display(autoWalkRooms)
+
+resumeNamedEventHandler("Mine", "AddRoom")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^startwalk$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>StopCapture</name>
+					<script>local success = stopNamedEventHandler("Mine", "AddRoom")
+disableScript("AddRoomsMapping")
+
+if success == false then
+  echo("Failed to stop 'AddRoom'")
+end</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^stopwalk$</regex>
+				</Alias>
 			</AliasGroup>
 		</AliasGroup>
 	</AliasPackage>
@@ -13627,38 +13797,93 @@ end</script>
 			<packageName>achaea</packageName>
 			<script></script>
 			<eventHandlerList />
-			<ScriptGroup isActive="yes" isFolder="yes">
-				<name>Bashing</name>
+			<Script isActive="yes" isFolder="no">
+				<name>functions</name>
 				<packageName></packageName>
-				<script>valid_targets = {}
-valid_targets["ashtan"] = {"rat"}
-valid_targets["greatrock"] = {
-  "stirge", 
-  "cloaked figure", 
-  "canine",
-  "headed cerberus",
-  "bloodied acolyte",
-  "cowled initiate",
-  "crazed ritualist",
-  "sect ritualist",
-  "cultist",
-  "Beast Cultist",
-  "Priestess"
-}
+				<script>-----------------------------------------
+--- Move between rooms
+-----------------------------------------
+function Move(cmd)
+  target = 0 -- should be redundant, as clearRoom should clear it.
+  
+  local stand = next_commands[1]
+  next_commands = {}
+  next_commands[10] = {cmd}
+  
+  if stand ~= nil then
+    next_commands[1] = "stand"
+  end
+  
+  queque_eb_command()
+  --display(next_commands)
+end
 
-target = 0
-all_targets = {}
-all_items = {}
-
-function setMyNextTarget()
-  local name = ""
-  for k,v in pairs(all_targets) do
-    target = k
-    name = v
-    send("SETTARGET " .. target)
+-----------------------------------------
+--- Sip Health or Mana vial
+-----------------------------------------
+function sip_vial() 
+  local hp = gmcp.Char.Vitals.hp / gmcp.Char.Vitals.maxhp
+  if hp &lt; 0.05 then
+    return
+  end 
+  
+  if hp &lt; 0.8 and true == sip_balance then
+    send("sip health")
+    sip_balance = false
+    return
+  end
+  
+  local mp = gmcp.Char.Vitals.mp / gmcp.Char.Vitals.maxmp
+  if mp &lt; 0.8 and true == sip_balance then
+    send("sip mana")
+    sip_balance = false
+    return
   end
 end
 
+</script>
+				<eventHandlerList />
+			</Script>
+			<ScriptGroup isActive="yes" isFolder="yes">
+				<name>Bashing</name>
+				<packageName></packageName>
+				<script>target = 0
+prev_targets = {}
+all_targets = {}
+all_items = {}
+
+-----------------------------------------
+--- Set next target
+-----------------------------------------
+function setMyNextTarget()
+  local prev = target
+  if target ~= 0 then
+    prev_targets[target] = true
+  end
+  
+  local area = gmcp.Room.Info.area
+  
+  invalidTargets = invalidTargets or {}
+  invalidTargets[area] = invalidTargets[area] or {} 
+  local localInvalid = invalidTargets[area]
+  
+  for id,name in pairs(all_targets) do
+    for _, notValid_name in pairs(localInvalid) do
+      if name:match(notValid_name) == nill then
+        target = id
+      end
+      echo("Skipping " .. name .. " as it is not valid\n")
+    end
+  end
+  
+  --cecho("&lt;red&gt;Target set: " .. target .. "\n")
+  --cecho("&lt;green&gt;Not valid targets in this area\n")
+  --display(invalidTargets)
+end
+
+-----------------------------------------
+--- Update consoles
+-----------------------------------------
 local updateConsoles = function()
   AchaeaMobsInHere:clear()
   AchaeaItemsInHere:clear()
@@ -13674,7 +13899,9 @@ local updateConsoles = function()
   end
 end
 
-----------------------------------
+-----------------------------------------
+--- Collect objects in a room
+-----------------------------------------
 local collectObjects = function(mob)
   if mob.attrib ~= nil then
     if mob.attrib:match('d') then return end -- dead
@@ -13697,6 +13924,9 @@ local collectObjects = function(mob)
   all_targets[mob.id] = mob.name
 end
 
+-----------------------------------------
+--- Clear items while moving between rooms
+-----------------------------------------
 function changeRoom()
   target = 0
   all_targets = {}
@@ -13704,6 +13934,7 @@ function changeRoom()
   
   AchaeaMobsInHere:clear()
   AchaeaItemsInHere:clear()
+  enableTrigger("EnableCaptureMap")
 end
 
 ---------------------------------
@@ -13748,7 +13979,6 @@ end
 ---------------------------------
 -- Monsters left the room
 ---------------------------------
-
 function mobRemoved()
   local removed = gmcp.Char.Items.Remove
   if removed.location == "room" then
@@ -13779,17 +14009,31 @@ end</script>
 					<script>---------------------------------
 -- Monsters entering the room
 ---------------------------------
-target_area = "greatrock"
-
-
 function queque_eb_command()
+
   local eq = gmcp.Char.Vitals.eq
+  if eq == "0" then
+    return
+  end
+
+  --display(next_commands)
+  if next_commands == {} then
+    return
+  end
   
-  if eq == "1" and #next_commands &gt; 0 then
-    echo("Sending commands\n")
-    for _,cmd in pairs(next_commands) do
-      send(cmd)
+  if eq == "1" then
+    --echo("Sending commands \n")
+    --display(next_commands)
+    for priority,cmdlist in pairs(next_commands) do
+      for _,cmd in pairs(cmdlist) do
+        --echo("cmd " .. cmd .. " \n")
+        send(cmd)
+      end
+      if priority == 10 then
+        changeRoom()
+      end
     end
+    
     next_commands = {}
   end
 end
@@ -13797,143 +14041,23 @@ local ok = registerNamedEventHandler("InRoom", "queuedEQCommands", "gmcp.Char.Vi
 if ok == false then
   echo("Couldn't register queuedEQCommands")
 end
-
-
-
-function autoBash()
-  use_auto_bash = 0
-  
-  if use_auto_bash == 0 then 
-    return 
-  end
-  --display(all_targets)
-  --echo("T: " .. target .. "\n")
-  if target == 0 then
-    for _,v in ipairs(valid_targets[target_area]) do
-      --echo("V " .. v .. "\n")
-      
-      for id,t in pairs(all_targets) do
-        --emecho("t " .. t .. " " .. id .. "\n")
-        if v:match(t..'$') ~= nil then
-            target = id
-            break
-        end
-      end
-      if target ~= 0 then break end
-    end  
-  end
-  
-  --sip_balance = false
-  --salve_balance = false
-  --eat_balance = false
-  local eq = gmcp.Char.Vitals.eq
-  if (eq == "1" and target ~= 0) then
-    
-    if aff_prone == true then
-      send("STAND")
-      aff_prone = false
-      return
-    end
-    
-    if aff_broken_arm == true then
-      cecho("&lt;red:white&gt;apply MENding to arms\n")
-      aff_broken_arm = false
-      return
-    end
-    
-    send("warp ".. target)
-  end
-end
-
-local ok = registerNamedEventHandler("InRoom", "KillRatEquilibrium", "gmcp.Char.Vitals",autoBash)
-if ok == false then
-  echo("Couldn't register killRat")
-end</script>
+</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
-			<Script isActive="yes" isFolder="no">
-				<name>AfflicationsAdded</name>
-				<packageName></packageName>
-				<script>all_afflication = {}
-
-aff_prone = false
-aff_broken_arm = false
-
-local fillConsole = function()
-  AchaeaAutoBashWindow:clear()
-  
-  for k,v in pairs(all_afflication) do
-    AchaeaAutoBashWindow:cecho(k .. " [" .. v[1] .. "] " .. v[2] .. "\n")
-  end
-end
-
---------------------------------
--- Afflication Added
----------------------------------
-function newAffliction()
-  local aff = gmcp.Char.Afflictions.Add
-  display(aff)
-  
-  all_afflication[aff.name] = {aff.cure, aff.desc}
-  fillConsole()
-  
-  if aff.name:match("^prone") then
-    aff_prone = true
-  end
-  
-  if aff.name:match("^broken") then
-    aff_broken_arm = true
-  end
-  
-  if aff.name:match("^burning") then
-    aff_broken_arm = true
-  end
-end
-
-local ok = registerNamedEventHandler(
-  "Mine", 
-  "AfflictionsAdded", 
-  "gmcp.Char.Afflictions.Add", 
-  newAffliction
-)
-
-if ok == false then
-  echo("Couldn't register AfflictionsAdded\n")
-end
-
-
-local removeAffliction = function()
-  local aff = gmcp.Char.Afflictions.Remove
-  all_afflication[aff[1]] = nil
-  fillConsole()
-end
-
-local ok = registerNamedEventHandler(
-  "Mine", 
-  "AfflictionsCleared", 
-  "gmcp.Char.Afflictions.Remove", 
-  removeAffliction
-)
-
-if ok == false then
-  echo("Couldn't register AfflictionsCleared\n")
-end</script>
-				<eventHandlerList />
-			</Script>
 			<ScriptGroup isActive="yes" isFolder="yes">
 				<name>GUIs</name>
 				<packageName></packageName>
-				<script>rightWidth = 1000
+				<script>rightWidth = 800
 bottomHeight = 100
-leftWidth = 0
+leftWidth = 460
 setBorderLeft(leftWidth)
 
 -- move the main command line over to the right
 
 -- push command bar to the right
 setCmdLineStyleSheet("main", [[ QPlainTextEdit {
-    padding-left: 0px; /* change 100 to your number */
+    padding-left: 460px; /* change 100 to your number */
     background-color: black; /* change it to your background color */
 } ]])
 
@@ -14051,7 +14175,7 @@ AchaeaChats = Geyser.MiniConsole:new({
   autoWrap = true,
   scrollBar = true,
   color = "black",
-  fontSize = 14
+  fontSize = 12
 }, right_container)
 AchaeaChats:raise()</script>
 					<eventHandlerList />
@@ -14059,28 +14183,329 @@ AchaeaChats:raise()</script>
 				<ScriptGroup isActive="yes" isFolder="yes">
 					<name>Left</name>
 					<packageName></packageName>
-					<script>
-local left_container = Geyser.Label:new({
-  name = "left_container",
-  x=0, y=0,
-  width=leftWidth, height="100%",
-})
-left_container:raise()
-left_container:hide()
-
-AchaeaMapWindow = Geyser.MiniConsole:new({
+					<script>AchaeaMapWindow = Geyser.MiniConsole:new({
   name = "mapWindow",
   x = 0, y = 0,
-  width = "45c", height = "25c",
+  width = "45c", height = "26c",
   fgColor = "white",
   color = "black",
-  fontSize = 14,
-}, left_container)
+  fontSize = 12,
+  autoWrap = false,
+})
 AchaeaMapWindow:raise()
 
 AchaeaMapWindow:hide()</script>
 					<eventHandlerList />
+					<Script isActive="yes" isFolder="no">
+						<name>Map</name>
+						<packageName></packageName>
+						<script>
+mapper = Geyser.Mapper:new({
+  name = "mapper",
+  x = 0, y = 0, -- edit here if you want to move it
+  width = "18%", height = "50%"
+})</script>
+						<eventHandlerList />
+					</Script>
 				</ScriptGroup>
+			</ScriptGroup>
+			<ScriptGroup isActive="yes" isFolder="yes">
+				<name>TravelRooms</name>
+				<packageName></packageName>
+				<script>---------------
+-- Great Rock
+---------------------
+
+
+--[[
+                                             )
+---------------------------------------------
+                                             
+
+                                             
+
+--]]</script>
+				<eventHandlerList />
+				<Script isActive="yes" isFolder="no">
+					<name>AddRoomsMapping</name>
+					<packageName></packageName>
+					<script>local addRoom = function()
+  local area = gmcp.Room.Info.area
+  autoWalkRooms[area] = autoWalkRooms[area] or {}
+  table.insert(autoWalkRooms[area], {gmcp.Room.Info.num})
+  
+  echo("List of rooms in AddRoomsMapping\n")
+  display(autoWalkRooms[area])
+  echo("---------------------\n")
+end
+
+local ok = registerNamedEventHandler(
+  "Mine", 
+  "AddRoom", 
+  "gmcp.Room.Info",
+  addRoom
+)
+
+if ok == false then
+  echo("Couldn't register AfflictionsAdded\n")
+end
+stopNamedEventHandler("Mine", "AddRoom")</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Travel</name>
+					<packageName></packageName>
+					<script>function travelRooms(area)
+  autoWalkRooms
+end</script>
+					<eventHandlerList />
+				</Script>
+			</ScriptGroup>
+			<ScriptGroup isActive="yes" isFolder="yes">
+				<name>Affliction</name>
+				<packageName></packageName>
+				<script>queuedSalveCmds = {}
+queuedEatCmds = {}
+
+irid_balance = true
+sip_balance = true
+eat_balance = true
+salve_balance = true
+
+-----------------------------------------
+--- Apply salve
+-----------------------------------------
+function applySalve()
+  local hp = gmcp.Char.Vitals.hp / gmcp.Char.Vitals.maxhp
+  if hp &lt; 0.05 then
+    queuedSalveCmds = {}
+    return
+  end
+ 
+  if salve_balance == true then
+    local cmd = next(queuedSalveCmds)
+    if cmd ~= nil then
+      --cecho("&lt;white&gt;Affliction grp, salve [" .. queuedSalveCmds[cmd] .. "]\n")
+      --display(queuedSalveCmds)
+      send(queuedSalveCmds[cmd])
+      queuedSalveCmds[cmd] = nil
+      salve_balance = false
+    end
+  end
+end
+
+-----------------------------------------
+--- Eat herb
+-----------------------------------------
+function eatHerb()
+  local hp = gmcp.Char.Vitals.hp / gmcp.Char.Vitals.maxhp
+  if hp &lt; 0.05 then
+    queuedEatCmds = {}
+    return
+  end
+ 
+  if eat_balance == true then
+    local cmd = next(queuedEatCmds)
+    if cmd ~= nil then
+      --cecho("&lt;white&gt;Affliction grp, salve [" .. queuedEatCmds[cmd] .. "]\n")
+      --display(queuedEatCmds)
+      send(queuedEatCmds[cmd])
+      queuedEatCmds[cmd] = nil
+      eat_balance = false
+    end
+  end
+end
+</script>
+				<eventHandlerList />
+				<Script isActive="yes" isFolder="no">
+					<name>AfflicationsAdded</name>
+					<packageName></packageName>
+					<script>all_afflication = {}
+
+aff_broken_arm = false
+
+local fillConsole = function()
+  AchaeaAutoBashWindow:clear()
+
+  --echo("Displaying affliction...\n")
+  --display(all_afflication)
+  --echo("------------------------\n")
+  for k,v in pairs(all_afflication) do
+    AchaeaAutoBashWindow:cecho(k .. " [" .. v[1] .. "] " .. v[2] .. "\n")
+  end
+end
+
+--------------------------------
+-- Afflication Added
+---------------------------------
+function newAffliction()
+  local aff = gmcp.Char.Afflictions.Add
+  
+  echo("New affliction...\n")
+  display(aff)
+  echo("------------------------\n")
+  
+  all_afflication[aff.name] = {aff.cure, aff.desc}
+  fillConsole()
+  
+  if aff.name:match("^prone") then
+    next_commands[2] = {"stand"}
+    queque_eb_command()
+    return
+  end
+  
+  if aff.cure:match("^EAT") then
+    enqueueEat({priority = 1, eat = aff.cure})
+  end
+  
+  if aff.cure:match("^APPLY") then
+    cecho("&lt;red&gt;Found apply " .. " cure: " .. aff.cure .. "\n")
+    local priority = 99
+    if aff.name:match("^damaged") then
+      cecho("&lt;red&gt;\nDamaged..\n")
+      priority = 9
+    end
+    if aff.name:match("^broken") then
+      cecho("&lt;red&gt;\nbroken..\n")
+      priority = 1
+    end
+  
+    --cecho("&lt;red&gt;Enqueuing " .. priority .. " cure: " .. aff.cure .. "\n")
+    --cecho("&lt;red&gt;\n------------------\n")
+    --cecho("&lt;red&gt;Scripts/AfflictionAdded/newAffliction\n")
+    enqueueSalve({priority = priority, apply = aff.cure})
+  end
+  
+  if aff.name:match("^broken.+arm") then
+    aff_broken_arm = true
+  end
+  
+  --webbed [WRITHE] Being webbed is restrictive on any actions you wish to make.
+  if aff.name:match("^webbed$") then
+    next_commands[1] = {"writhe"}
+    queque_eb_command()
+    return
+  end
+end
+
+local ok = registerNamedEventHandler(
+  "Mine", 
+  "AfflictionsAdded", 
+  "gmcp.Char.Afflictions.Add", 
+  newAffliction
+)
+
+if ok == false then
+  echo("Couldn't register AfflictionsAdded\n")
+end
+
+-----------------------------------------------------
+-- Existing Afflictions
+-----------------------------------------------------
+local listAfflictions = function()
+  local aff = gmcp.Char.Afflictions.Remove
+end
+
+local ok = registerNamedEventHandler(
+  "Mine", 
+  "AfflictionsExisting", 
+  "gmcp.Char.Afflictions.List", 
+  listAfflictions
+)
+
+if ok == false then
+  echo("Couldn't register AfflictionsExisting\n")
+end
+
+
+-----------------------------------------------------
+-- Removed Afflictions
+-----------------------------------------------------
+local removeAffliction = function()
+  local aff = gmcp.Char.Afflictions.Remove
+  cecho("&lt;green&gt;Removed affliction: \n")
+  display(aff)
+  all_afflication[aff[1]] = nil
+  fillConsole()
+end
+
+local ok = registerNamedEventHandler(
+  "Mine", 
+  "AfflictionsCleared", 
+  "gmcp.Char.Afflictions.Remove", 
+  removeAffliction
+)
+
+if ok == false then
+  echo("Couldn't register AfflictionsCleared\n")
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Defences</name>
+					<packageName></packageName>
+					<script>
+function addDefence()
+  -----------------------------------
+  -- Shield tattoo
+  -----------------------------------
+  local def = gmcp.Char.Defences.Add
+  
+  echo("Added Defences\n")
+  display(def)
+  echo("------------------------\n")
+  
+  for _,v in pairs(def) do
+    --echo("Got " .. k .. ", " .. v .. "\n")
+    if v:match("^shield$") then
+      shielded = true
+    end
+  end
+end
+
+local ok = registerNamedEventHandler("Mine", "DefencesAdded", "gmcp.Char.Defences.Add", addDefence)
+if ok == false then
+  echo("Couldn't register DefencesAdded")
+end
+
+--------------------------------
+-- Def removed
+--------------------------------
+function removeDefence()
+  local def = gmcp.Char.Defences.Remove
+  cecho("&lt;white&gt;Removed def\n")
+  display(def)
+  if def[1]:match("^sheild$") then
+    shielded = false
+  end
+end
+
+local ok = registerNamedEventHandler("Mine", "removeDefence", "gmcp.Char.Defences.Remove", removeDefence)
+if ok == false then
+  echo("Couldn't register removeDefence")
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Enqueue</name>
+					<packageName></packageName>
+					<script>-----------------------------------------
+--- Enqueue Apply salve
+-----------------------------------------
+function enqueueSalve(cmd)
+  queuedSalveCmds[cmd.priority] = cmd.apply
+  --display(queuedSalveCmds)
+  applySalve()
+end 
+
+
+function enqueueEat(cmd)
+  queuedEatCmds[cmd.priority] = cmd.eat
+  eatHerb()
+end 
+</script>
+					<eventHandlerList />
+				</Script>
 			</ScriptGroup>
 		</ScriptGroup>
 	</ScriptPackage>
@@ -14119,98 +14544,106 @@ enableKey("Enable Movement")</script>
 					<Key isActive="yes" isFolder="no">
 						<name>North</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>n</command>
+						<script>Move("n")</script>
+						<command></command>
 						<keyCode>75</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>South</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>s</command>
+						<script>Move("s")</script>
+						<command></command>
 						<keyCode>74</keyCode>
-						<keyModifier>0</keyModifier>
-					</Key>
-					<Key isActive="yes" isFolder="no">
-						<name>East</name>
-						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>e</command>
-						<keyCode>76</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>West</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>w</command>
+						<script>Move("w")</script>
+						<command></command>
 						<keyCode>72</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>Up</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>u</command>
+						<script>Move("u")</script>
+						<command></command>
 						<keyCode>60</keyCode>
 						<keyModifier>33554432</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>Down</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>d</command>
+						<script>Move("d")</script>
+						<command></command>
 						<keyCode>62</keyCode>
 						<keyModifier>33554432</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>In</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>in</command>
+						<script>Move("in")</script>
+						<command></command>
 						<keyCode>73</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>out</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>out</command>
+						<script>Move("out")</script>
+						<command></command>
 						<keyCode>79</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>NorthEast</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>ne</command>
+						<script>Move("ne")</script>
+						<command></command>
 						<keyCode>85</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>NorthWest</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>nw</command>
+						<script>Move("nw")</script>
+						<command></command>
 						<keyCode>89</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>SouthEast</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>se</command>
+						<script>Move("se")</script>
+						<command></command>
 						<keyCode>77</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>SouthWest</name>
 						<packageName></packageName>
-						<script>changeRoom()</script>
-						<command>sw</command>
+						<script>Move("sw")</script>
+						<command></command>
 						<keyCode>78</keyCode>
 						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Look</name>
+						<packageName></packageName>
+						<script>send("look")</script>
+						<command></command>
+						<keyCode>76</keyCode>
+						<keyModifier>33554432</keyModifier>
+						<Key isActive="yes" isFolder="no">
+							<name>East</name>
+							<packageName></packageName>
+							<script>Move("e")</script>
+							<command></command>
+							<keyCode>76</keyCode>
+							<keyModifier>0</keyModifier>
+						</Key>
 					</Key>
 				</KeyGroup>
 				<KeyGroup isActive="yes" isFolder="yes">
@@ -14223,7 +14656,7 @@ enableKey("Enable Movement")</script>
 					<Key isActive="yes" isFolder="no">
 						<name>Warp</name>
 						<packageName></packageName>
-						<script>next_commands = {"warp"}</script>
+						<script>next_commands[999] = {"warp"}</script>
 						<command></command>
 						<keyCode>87</keyCode>
 						<keyModifier>0</keyModifier>
@@ -14276,6 +14709,36 @@ end</script>
 						<keyModifier>0</keyModifier>
 					</Key>
 				</KeyGroup>
+				<KeyGroup isActive="yes" isFolder="yes">
+					<name>Defences</name>
+					<packageName></packageName>
+					<script></script>
+					<command></command>
+					<keyCode>33554431</keyCode>
+					<keyModifier>0</keyModifier>
+					<Key isActive="yes" isFolder="no">
+						<name>HermitHome</name>
+						<packageName></packageName>
+						<script>next_commands[4] = {"fling hermit at ground home"}
+next_commands[999] = nil
+queque_eb_command()
+echo("\nQuequed Hermit!\n")</script>
+						<command></command>
+						<keyCode>53</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>ShieldTattoo</name>
+						<packageName></packageName>
+						<script>next_commands[5] = {"touch shield"}
+next_commands[999] = nil
+queque_eb_command()
+echo("\nTouching Shield!\n")</script>
+						<command></command>
+						<keyCode>54</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+				</KeyGroup>
 			</KeyGroup>
 			<Key isActive="yes" isFolder="no">
 				<name>Enable Movement</name>
@@ -14288,99 +14751,39 @@ enableKey("NormalMode")</script>
 				<keyCode>46</keyCode>
 				<keyModifier>134217728</keyModifier>
 			</Key>
+			<Key isActive="yes" isFolder="no">
+				<name>DisableAutoBash</name>
+				<packageName></packageName>
+				<script>disableTimer("AutoBash")
+echo("Autobash disabled!\n")</script>
+				<command></command>
+				<keyCode>16777264</keyCode>
+				<keyModifier>0</keyModifier>
+				<Key isActive="yes" isFolder="no">
+					<name>EnableAutoBash</name>
+					<packageName></packageName>
+					<script>enableTimer("AutoBash")
+echo("Autobash enabled!\n")</script>
+					<command></command>
+					<keyCode>16777264</keyCode>
+					<keyModifier>67108864</keyModifier>
+				</Key>
+			</Key>
 		</KeyGroup>
 	</KeyPackage>
 	<VariablePackage>
 		<HiddenVariables />
 		<VariableGroup>
-			<name>valid_targets</name>
+			<name>autoWalkRooms</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
-			<VariableGroup>
-				<name>ashtan</name>
-				<keyType>4</keyType>
-				<value></value>
-				<valueType>5</valueType>
-				<Variable>
-					<name>1</name>
-					<keyType>3</keyType>
-					<value>rat</value>
-					<valueType>4</valueType>
-				</Variable>
-			</VariableGroup>
-			<VariableGroup>
-				<name>greatrock</name>
-				<keyType>4</keyType>
-				<value></value>
-				<valueType>5</valueType>
-				<Variable>
-					<name>1</name>
-					<keyType>3</keyType>
-					<value>stirge</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>2</name>
-					<keyType>3</keyType>
-					<value>cloaked figure</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>3</name>
-					<keyType>3</keyType>
-					<value>canine</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>4</name>
-					<keyType>3</keyType>
-					<value>headed cerberus</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>5</name>
-					<keyType>3</keyType>
-					<value>bloodied acolyte</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>6</name>
-					<keyType>3</keyType>
-					<value>cowled initiate</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>7</name>
-					<keyType>3</keyType>
-					<value>crazed ritualist</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>8</name>
-					<keyType>3</keyType>
-					<value>sect ritualist</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>9</name>
-					<keyType>3</keyType>
-					<value>cultist</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>10</name>
-					<keyType>3</keyType>
-					<value>Beast Cultist</value>
-					<valueType>4</valueType>
-				</Variable>
-				<Variable>
-					<name>11</name>
-					<keyType>3</keyType>
-					<value>Priestess</value>
-					<valueType>4</valueType>
-				</Variable>
-			</VariableGroup>
+		</VariableGroup>
+		<VariableGroup>
+			<name>next_commands</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
 		</VariableGroup>
 		<Variable>
 			<name>target_area</name>
