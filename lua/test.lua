@@ -17,3 +17,14 @@ local tbl = {}
 tbl = {"asdf", "dkddk", [6]={9} }
 
 print("Print : ", dump(tbl))
+
+
+function tbl:print(msg, m2) 
+   print("hi " .. msg .. " " .. m2)
+end
+tbl:print("stuff", "other")
+
+
+print("2nd")
+tbl.print(tbl, "mmmm", "other")
+

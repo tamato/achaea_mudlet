@@ -9,28 +9,28 @@ A listing of herbs, minerals, salves, and elixirs, and what they cure or cause.
 
 Herbs (EAT, or sometimes SMOKE)
 -------------------------------
-[x] Bayberry      Gives blindness.
-[x] Bellwort      Cures unnatural tendencies to be excessively altruistic.
-[x] Bloodroot     Cures paralysis and slickness.
-[x] Cohosh        Gives you insomnia, which prevents you being put to sleep.
-[x] Echinacea     Gives third eye.
-[ ] Ginger        Reduces the fluid level in your body when artificially raised.
-[x] Ginseng       Cure for impurities of the blood or diseases of the skin.
-[x] Goldenseal    Cure for body or mind in disharmony.
-[x] Hawthorn      Gives deafness.
-[x] Irid Moss     Heals some health and mana.
-[x] Kelp          Cure for weakened muscles or lower general fitness.
-[x] Kola          Allows you to awaken from sleep immediately, at will.
-[x] Lobelia       Cure relating mainly to various types of phobias or pathos.
-[x] Myrrh Gum     Increases your learning lesson speed.
-[x] Prickly Ash   When eaten, cures various afflictions relating to your sanity.
-[x] Prickly Pear  Allows breathing underwater. Cannot be used pre-emptively.
-[x] Sileris       (Applied) Defends against Serpent class fang attacks.
-[x] Skullcap      (Eaten) Gives deathsight.
-[x] Skullcap      (Smoked) Anti-weapon field that lasts until taken down by others
+[ ] Bayberry      Gives blindness.
+[ ] Bellwort      Cures unnatural tendencies to be excessively altruistic.
+[ ] Bloodroot     Cures paralysis and slickness.
+[ ] Cohosh        Gives you insomnia, which prevents you being put to sleep.
+[ ] Echinacea     Gives third eye.
+[!] Ginger        Reduces the fluid level in your body when artificially raised.
+[ ] Ginseng       Cure for impurities of the blood or diseases of the skin.
+[ ] Goldenseal    Cure for body or mind in disharmony.
+[ ] Hawthorn      Gives deafness.
+[ ] Irid Moss     Heals some health and mana.
+[ ] Kelp          Cure for weakened muscles or lower general fitness.
+[ ] Kola          Allows you to awaken from sleep immediately, at will.
+[ ] Lobelia       Cure relating mainly to various types of phobias or pathos.
+[ ] Myrrh Gum     Increases your learning lesson speed.
+[ ] Prickly Ash   When eaten, cures various afflictions relating to your sanity.
+[ ] Prickly Pear  Allows breathing underwater. Cannot be used pre-emptively.
+[ ] Sileris       (Applied) Defends against Serpent class fang attacks.
+[ ] Skullcap      (Eaten) Gives deathsight.
+[ ] Skullcap      (Smoked) Anti-weapon field that lasts until taken down by others
                   or you act aggressively. Causes weapons attacks to rebound.
-[x] Slippery Elm  (Smoked) Cures a variety of curses and afflictions.
-[x] Valerian      (Smoked) Cures the disfigurement and slickness afflictions.
+[ ] Slippery Elm  (Smoked) Cures a variety of curses and afflictions.
+[ ] Valerian      (Smoked) Cures the disfigurement and slickness afflictions.
 
 Ash           See Prickly Ash.
 Elm           See Slippery Elm.

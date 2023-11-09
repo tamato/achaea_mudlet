@@ -18,32 +18,32 @@ LLYWEITH'S HUNTING GUIDE
 
 Levels 1+
 -----------
-- Minia - imps, hellcats, firesprites
-- Lodi - all except guard pigs, wildcat queen and soldiers, gnomes
-- All major cities except Eleusis - baby, young, and normal rats.
-- Gheladan - Murinae, animals
+x Minia - imps, hellcats, firesprites
+x Lodi - all except guard pigs, wildcat queen and soldiers, gnomes
+x All major cities except Eleusis - baby, young, and normal rats.
+x Gheladan - Murinae, animals
 
 
 Levels 10+
 ------------
-- Minia - kobolds and pygmies
-- Lodi - guard pigs, wildcat queen and soldiers
-- All major cities except Eleusis - old and black rats.
-- Gheladan - Hornets, honeybees
+x Minia - kobolds and pygmies
+x Lodi - guard pigs, wildcat queen and soldiers
+x All major cities except Eleusis - old and black rats.
+x Gheladan - Hornets, honeybees
 
 
 Levels 20+
 ------------
-- The Great Rock
-- Bopalopia*
-- Bog near Ashtan
-- Actar Valley
+x The Great Rock
+x Bopalopia*
+x Bog near Ashtan
+x Actar Valley
 - Tasur'ke (avoid sharks until higher levels)
 
 
 Levels 30+
 ------------
-- Manara Burrow
+x Manara Burrow
 - The Underground Lake by Blackrock
 
 
@@ -52,7 +52,7 @@ Levels 35+
 - Rheodad
 - Enverren Marsh
 - Garnok and Thalagor, the villages at the foot of Dun Fortress
-- Forestwatch (avoid bottom half of Forestwatch until higher levels)
+x Forestwatch (avoid bottom half of Forestwatch until higher levels)
 - Manusha - not glubbers and glubberians
 - Northreach Forest
 - Rheodad
@@ -63,14 +63,14 @@ Levels 40+
 ------------
 - Ulangi
 - Mhojave Desert
-- Genji
+x Genji
 - Polyargos
 - Orc camp within Siroccian Mountains
 - Shala-Khulia*
 - Kamleikan
 - Xhaiden dale
 - El'Jazira
-- Green Lake (animals, fish)
+x Green Lake (animals, fish)
 - Kamleikan
 - Riparium (animals)
 - Western Vashnars
@@ -78,14 +78,14 @@ Levels 40+
 
 Levels 50+
 -------------
-- Manticore Caverns
+x Manticore Caverns
 - Maze beneath Maim's mansion*
 - Scorpion pit*
-- Azdun*
+x Azdun*
 - Goblin village
-- Thugs in sewers of Ashtan, Targossas, Hashan, Mhaldor
+x Thugs in sewers of Ashtan, Targossas, Hashan, Mhaldor
 - Bloodleeches in Cyrene's sewers
-- Black Forest (do not attack Treekins)
+x Black Forest (do not attack Treekins)
 - New Hope (be careful of the panthers)
 - Phereklos - upper levels
 - Scorpion pit*

@@ -4295,8 +4295,10 @@ end</script>
 				<regexCodeList>
 					<string>The first faint feelings of exhaustion prick at your conscious</string>
 					<string>You struggle to stay awake as your eyelids shut repeatedly of their own accord.</string>
+					<string>You yawn suddenly and migh</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>3</integer>
 					<integer>3</integer>
 					<integer>3</integer>
 				</regexCodePropertyList>
@@ -4367,7 +4369,6 @@ enqueueSalve({priority=2, apply="APPLY MENDING TO " .. matches[3]})
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>getGold</name>
 				<script>next_commands[20] = {"get gold", "put gold in pack"}
-queque_eb_command()
 </script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4483,13 +4484,11 @@ AchaeaChats:appendBuffer()
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^\w\w.+ says*, .+$</string>
-					<string>^.+tells+,.+$</string>
-					<string>^You say.+</string>
-					<string>^\(\w+\):.*</string>
+					<string>^.+(tell|say)s you, ".+$</string>
+					<string>^\(.+\):.+$</string>
+					<string>^You (tell|say).+$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
-					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
@@ -4515,7 +4514,7 @@ AchaeaChats:appendBuffer()
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<TriggerGroup isActive="no" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Balances</name>
 				<script></script>
 				<triggerType>0</triggerType>
@@ -4612,6 +4611,26 @@ eatHerb()</script>
 						<integer>3</integer>
 					</regexCodePropertyList>
 				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>Smoking</name>
+					<script></script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>Your lungs have recovered enough to smoke another mineral or plant</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>3</integer>
+					</regexCodePropertyList>
+				</Trigger>
 			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Shield</name>
@@ -4653,51 +4672,6 @@ eatHerb()</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>LostTattoos</name>
-				<script></script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>A \w+ tattoo fades from view and disappears</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Gaggs</name>
-				<script>deleteLine()
-echo("gagged\n")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>A flail-wielding gnoll sentry twirls his flail expertly as he cuts into you withits razor-sharp edges.</string>
-					<string>A flail-wielding gnoll sentry clutches his flail tightly as he slams the metal edge of it into your thigh.</string>
-					<string>You reach out and clench a fist before (\w+), who screams and doubles over in agony as his skin suddenly bubbles with gangrenous growths.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>warpGag</name>
 				<script>deleteLine()</script>
@@ -4713,10 +4687,8 @@ echo("gagged\n")</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>^You reach out and clench a fist before.+</string>
-					<string>.+growths.$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
-					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -4740,10 +4712,10 @@ echo("gagged\n")</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Karma</name>
 				<script>echo("get karma item " .. matches[2] .. "\n")
-next_commands[31] = {"get " .. matches[2]}
+next_commands[21] = {"get " .. matches[2]}
 queque_eb_command()</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4756,17 +4728,19 @@ queque_eb_command()</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>The (Mask) of the Beast tumbles out </string>
-					<string>A (fetish) charm tumbles out</string>
+					<string>The (\w+) of the Beast tumbles out </string>
+					<string>A (\w+) charm tumbles out</string>
 				</regexCodeList>
 				<regexCodePropertyList>
-					<integer>2</integer>
-					<integer>2</integer>
+					<integer>1</integer>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>KeepSelfish</name>
-				<script>send("selfishness")</script>
+				<script>cecho("&lt;black:yellow&gt;Lost selfishness, putting it back\n")
+next_commands[3] = {"selfishness"}
+queque_eb_command()</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -4782,6 +4756,88 @@ queque_eb_command()</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>BattleRage</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList />
+				<regexCodePropertyList />
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>UseAgain</name>
+					<script></script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ffe205</mFgColor>
+					<mBgColor>#000000</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>You can use another Battlerage ability again. Available abilities: (.+)$</string>
+						<string>You can use (.+) again.</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</TriggerGroup>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Exists</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ffff00</mFgColor>
+				<mBgColor>#000000</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>You see exits leading.+(up|in|down|out).*$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>LostTat</name>
+				<script>if auto_bash == true then
+  expandAlias("home")
+  tempTimer(5, [[ send("qq") ]])
+  botter:print("Lost " .. matches[2] .. " tattoos, getting out")
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>A (\w+) tattoo fades from view and disappears</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -4816,21 +4872,27 @@ queque_eb_command()</script>
 			<time>00:00:00.000</time>
 			<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
 				<name>AutoBash</name>
-				<script>
-shielded = shielded or false
+				<script>shielded = shielded or false
+shielded = false
 
---echo("C: " .. #next_commands .. " " .. target .. "\n")
 if shielded == false and target ~= 0 and #next_commands == 0 then
   next_commands[999] = {"warp " .. target}
   echo("Sending warp!\n")
 end
 
-sip_vial()
 queque_eb_command()
 </script>
 				<command></command>
 				<packageName></packageName>
 				<time>00:00:01.000</time>
+			</Timer>
+			<Timer isActive="no" isFolder="no" isTempTimer="no" isOffsetTimer="no">
+				<name>Rebounding</name>
+				<script>send("light pipe")
+send("smoke pipe")</script>
+				<command></command>
+				<packageName></packageName>
+				<time>00:01:00.000</time>
 			</Timer>
 		</TimerGroup>
 	</TimerPackage>
@@ -6467,6 +6529,41 @@ mmp.echo("All astral nodes have been "..(matches[2]:lower()=="on" and "" or "un"
 				</AliasGroup>
 			</AliasGroup>
 		</AliasGroup>
+		<Alias isActive="yes" isFolder="no">
+			<name>botting</name>
+			<script>if not matches[2] then
+  botter:usage()
+  return
+end
+
+--botter:print("test " .. matches[2])
+
+local function toBool(value)
+  if value == "true" or value == true then
+    return true
+  end
+  return false
+end
+
+local args = matches[2]:split(" ")
+local command = args[1]
+local value = args[2]
+
+if command == "roomid" then
+  botter.print(mmp.currentroom)
+  return
+elseif command == "manara" then
+  botter.runManara()
+  return
+elseif command == "stop" then
+  botter.stop()
+  return
+end
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^bot(?: (.*))?</regex>
+		</Alias>
 		<AliasGroup isActive="yes" isFolder="yes">
 			<name>achaea</name>
 			<script></script>
@@ -6651,10 +6748,12 @@ send("rats")</script>
 				<script>sendAll(
   "get deck from pack",
   "outd hermit",
-  "outd 10 priestess",
   "put deck in pack",
   "get health from pack",
   "get mana from pack",
+  "get mending from pack",
+  "get epidermal from pack",
+  "get restoration from pack",
   "get speed from pack"
 )
 
@@ -6664,13 +6763,14 @@ echo("Eat Kola!\n")
 echo("Sip Venom!\n")
 echo("Apply Caloric?!\n")
 
-tempTimer(1.0, [[ send("selfishness") ]])
+tempTimer(1.0, [[ expandAlias("self") ]])
 tempTimer(1.5, [[ send("activate hermit home") ]])
 tempTimer(2.0, [[ send("sip speed") ]])
 tempTimer(4.0, [[ send("put speed in pack") ]])
-tempTimer(4.0, [[ send("shroud") ]])
+tempTimer(4.1, [[ send("shroud") ]])
 
-enableTrigger("KeepSelfish")</script>
+
+tempTimer(6.0, [[ cecho("&lt;yellow&gt;Finished Prep!\n" ]])</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^prep$</regex>
@@ -6693,6 +6793,7 @@ queque_eb_command()
 				<Alias isActive="yes" isFolder="no">
 					<name>Go home</name>
 					<script>next_commands[5] = {"fling hermit at ground home"}
+next_commands[999] = nil
 queque_eb_command()
 </script>
 					<command></command>
@@ -6824,20 +6925,30 @@ enqueueSalve(cmd)</script>
 			</AliasGroup>
 			<AliasGroup isActive="yes" isFolder="yes">
 				<name>NextTarget</name>
-				<script>setMyNextTarget()</script>
+				<script>setMyNextTarget()
+
+display(invalidTargets)</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^nt$</regex>
 				<Alias isActive="yes" isFolder="no">
-					<name>Set Invalid Target</name>
-					<script>invalidTargets = invalidTargets or {}
+					<name>KillTargt</name>
+					<script>validTargets = validTargets or {}
 
 local area = gmcp.Room.Info.area
-table.insert(invalidTargets[area], matches[2])
-echo("NoKill " .. matches[2])</script>
+table.insert(validTargets[area], matches[2])
+
+showAreaTargets(area)</script>
 					<command></command>
 					<packageName></packageName>
-					<regex>^nokill (\w+)$</regex>
+					<regex>^kill (\w+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>ShowTargets</name>
+					<script>showAreaTargets(gmcp.Room.Info.area)</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^showTargets$</regex>
 				</Alias>
 			</AliasGroup>
 			<AliasGroup isActive="yes" isFolder="yes">
@@ -6848,10 +6959,10 @@ echo("NoKill " .. matches[2])</script>
 				<regex></regex>
 				<Alias isActive="yes" isFolder="no">
 					<name>DoWalk</name>
-					<script>--gotoRoom(445)</script>
+					<script>gotoRoom(matches[2])</script>
 					<command></command>
 					<packageName></packageName>
-					<regex>^dowalk$</regex>
+					<regex>^dowalk (\w+)$</regex>
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>StartCapture</name>
@@ -6870,17 +6981,136 @@ resumeNamedEventHandler("Mine", "AddRoom")</script>
 				</Alias>
 				<Alias isActive="yes" isFolder="no">
 					<name>StopCapture</name>
-					<script>local success = stopNamedEventHandler("Mine", "AddRoom")
-disableScript("AddRoomsMapping")
-
-if success == false then
-  echo("Failed to stop 'AddRoom'")
-end</script>
+					<script>stopNamedEventHandler("Mine", "AddRoom")
+</script>
 					<command></command>
 					<packageName></packageName>
 					<regex>^stopwalk$</regex>
 				</Alias>
 			</AliasGroup>
+		</AliasGroup>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>demonnicAutoWalker</name>
+			<script></script>
+			<command></command>
+			<packageName>demonnicAutoWalker</packageName>
+			<regex></regex>
+			<AliasGroup isActive="yes" isFolder="yes">
+				<name>demonwalker</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>dwalk</name>
+					<script>if not matches[2] then
+  demonwalker:usage()
+  return
+end
+local function toBool(value)
+  if value == "true" or value == true then
+    return true
+  end
+  return false
+end
+local args = matches[2]:split(" ")
+local command = args[1]
+local value = args[2]
+if command == "report" then
+  demonwalker:performanceReport()
+  return
+elseif command == "stop" then
+  raiseEvent("demonwalker.stop")
+  stopNamedEventHandler("demonwalker", "explore")
+  return
+elseif command == "move" then
+  raiseEvent("demonwalker.move")
+  return
+elseif command == "config" then
+  demonwalker:displayConfig()
+  return
+elseif command == "breadth" then
+  value = tonumber(value)
+  if value then
+    demonwalker.config.breadth = value
+  end
+  demonwalker:save()
+  return
+elseif command == "returnToStart" then
+  demonwalker.config.returnToStart = toBool(value)
+  demonwalker:save()
+  return
+elseif command == "debug" then
+  demonwalker.config.debug = toBool(value)
+  demonwalker:save()
+  return
+elseif command == "avoid" then
+  value = tonumber(value)
+  if value == nil then
+    value = gmcp.Room.Info.num
+    value = tonumber(value)
+  end
+  
+  demonwalker:addAvoidRoom(value)
+  demonwalker:echo(string.format("Added %d to avoidList", value))
+  return
+elseif command == "clearAvoid" then
+  demonwalker:clearAvoidList()
+  demonwalker:echo("Cleadred out avoid list")
+  return  
+elseif command == "unavoid" then
+  value = tonumber(value)
+  if value then
+    demonwalker:removeAvoidRoom(value)
+    demonwalker:echo(string.format("Removed %s from avoidList", tostring(value)))
+  end
+  return
+elseif command == "avoidList" then
+  demonwalker:printAvoidList()
+  return
+elseif command == "load" then
+  demonwalker:load()
+  return
+elseif command == "save" then
+  demonwalker:save()
+  return
+elseif command == "explore" then
+  demonwalker:echo("Time to explore!")
+  registerNamedEventHandler("demonwalker", "explore", "demonwalker.arrived", function()
+    raiseEvent("demonwalker.move")
+  end)
+  demonwalker:init()
+  return
+elseif command == "update" then
+  uninstallPackage("demonnicAutoWalker")
+  installPackage("https://github.com/demonnic/demonnicAutoWalker/releases/latest/download/demonnicAutoWalker.mpackage")
+  demonwalker:echo("demonnicAutoWalker package updated")
+  return
+end
+demonwalker:usage(matches[1])
+</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^dwalk(?: (.*))?</regex>
+				</Alias>
+			</AliasGroup>
+			<Alias isActive="yes" isFolder="no">
+				<name>AddIgnoredRooms</name>
+				<script>expandAlias("dwalk clearAvoid")
+
+-- manticorse in Genji
+local manticoresIgnoreTable = { 10092, 10093, 10094, 10095, 10097, 10098, 10101, 10102, 10103, 10105, 10106, 10108, 10109, 10110, 10111, 10112, 10113, 10114, 10115, 10117, 10118, 10119, 10120, 10121, 10122, 10123, 10124, 10125, 10126, 10127, 10128, 10172, 10242, 11611, 11663, 11682, 11694, 13385, 14509, 14527, 15961, 15981, 16023, 16076, 16088, 16089, 16098, 16100, 16104, 39032, 40991 }
+
+local forestWatchIgnoreTable = { 7786 }
+
+for _,thing in ipairs(manticoresIgnoreTable) do
+  --echo(thing .. "\n")
+  expandAlias("dwalk avoid " .. thing)
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^updateIgnoreList$</regex>
+			</Alias>
 		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
@@ -13792,10 +14022,190 @@ end</script>
 				</Script>
 			</ScriptGroup>
 		</ScriptGroup>
+		<Script isActive="yes" isFolder="no">
+			<name>BotterScript</name>
+			<packageName></packageName>
+			<script>--[===[
+
+--]===]
+
+botter = botter or {}
+auto_bash = false
+
+function botter:usage()  
+  botter:print("Usage:")
+  botter:print("bot")
+  botter:print("- Get this help.")
+  botter:print("bot stop")
+  botter:print("- stops the bot.")
+  botter:print("bot roomid")
+  botter:print("- Get the ID of the current room.")
+  botter:print("bot manara")
+  botter:print("- runs the stored commands for Manara.")
+
+  echo("\n")
+end
+
+function botter:stop()
+  raiseEvent("botter.stop")
+end
+
+function botter:runManara()
+  gotoManara()
+end
+
+function botter:print(msg)
+  cecho("\n&lt;purple&gt;(&lt;cyan&gt;bot&lt;purple&gt;):&lt;white&gt; " .. msg)
+end
+
+function botter:error(msg)
+  cecho("\n&lt;purple&gt;(&lt;red&gt;bot error&lt;purple&gt;):&lt;white&gt; " .. msg .. "\n")
+end
+</script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>Manara</name>
+				<packageName></packageName>
+				<script>local gotoTriggerId = gotoTriggerId or ""
+local eqTriggerId = eqTriggerId or ""
+local slainTriggerId = slainTriggerId or ""
+local cleanUpId = cleanUpId or ""
+
+function gotoManara()
+  -- started with alias "bot manara"
+  local trigger = "You have arrived at your destination!"
+  gotoTriggerId = tempTrigger(trigger, exploreLevel4)
+
+  botter:print("Headed to ManaraBurrows")
+  send("walkto manara", false)
+end
+
+function exploreLevel4()
+  --level4CleanUp()
+  
+  botter:print("Arrived at Manara")
+  killTrigger(gotoTriggerId)
+  
+  send("pull roots 4")
+  
+  registerNamedEventHandler("Bot", "finished", "demonwalker.finished", finishedLevel4)
+  registerNamedEventHandler("Bot", "checkTargets", "gmcp.Room.Info", botter.checkForTargets)
+  cleanUpId = registerAnonymousEventHandler("botter.stop", level4CleanUp)
+  
+  eqTriggerId = tempTrigger("You have recovered", botter.checkForTargets)
+  slainTriggerId = tempTrigger("You have slain ", botter.slain)
+  
+  auto_bash = true
+  tempTimer(1.0, [[ demonwalker:init() ]])
+  tempTimer(2.0, [[ botter.checkForTargets() ]] )
+end
+
+function finishedLevel4()
+  -- clean up
+  botter:print("Finished level 4.")
+  raiseEvent("botter.stop")
+  
+  -- next phase
+end
+
+function level4CleanUp()
+  botter:print("CleanUp level 4.")
+  auto_bash = false
+  killTrigger(eqTriggerId)
+  killTrigger(slainTriggerId)
+  
+  deleteNamedEventHandler("Bot", "finished")
+  deleteNamedEventHandler("Bot", "checkTargets")
+  
+  killAnonymousEventHandler(cleanUpId)
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Attack</name>
+				<packageName></packageName>
+				<script>local prevTarget = prevTarget or 0
+
+function botter:enqueue_attack()
+  if target == 0 then setMyNextTarget() end
+  if target == 0 then return end
+  
+  -- don't repeat commands
+  if next_commands == {} then return end
+  if next_commands[999] ~= nil then return end
+  
+  next_commands[999] = {"warp " .. target}
+end
+
+function botter:onEq()
+  local bal = gmcp.Char.Vitals.bal
+  local eq = gmcp.Char.Vitals.eq
+  if eq == "0" or bal == "0" then return end
+
+  if target ~= prevTarget and target ~= 0 then send("settarget " .. target) end
+  prevTarget = target
+  
+  for priority,cmdlist in pairs(next_commands) do
+    for _,cmd in pairs(cmdlist) do
+      send(cmd)
+    end
+  end
+
+  next_commands = {}
+end
+
+function botter:checkForTargets()
+  setMyNextTarget()
+  if target ~= 0 then
+    botter:enqueue_attack()
+    botter:onEq()
+  else
+    if #next_commands &gt; 0 then
+      -- make sure to run commands befor moving
+      botter:onEq()
+      tempTimer(2.0, [[ raiseEvent("demonwalker.move") ]] )
+    else
+      raiseEvent("demonwalker.move")
+    end
+  end
+end
+
+function botter:slain()
+  target = 0
+  prevTarget = target
+  if next_commands[999] then next_commands[999] = nil end
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>BattleRage</name>
+				<packageName></packageName>
+				<script>---------------------------------
+-- Monsters entering the room
+---------------------------------
+function battleRage()
+  local rage = gmcp.Char.Vitals.charstats[2]
+  amount = rex.match(rage, [[\d+]])
+  amount = tonumber(amount)
+  --botter:print("rage: " .. amount)
+end
+
+
+local ok = registerNamedEventHandler("Mine", "battleRage", "gmcp.Char.Vitals", battleRage)
+if ok == false then
+  echo("Couldn't register battleRage")
+end</script>
+				<eventHandlerList />
+			</Script>
+		</Script>
 		<ScriptGroup isActive="yes" isFolder="yes">
 			<name>achaea</name>
 			<packageName>achaea</packageName>
-			<script></script>
+			<script>tempTimer(0, [[ setDiscordApplicationID(gmcp.External.Discord.Info.applicationid) ]])
+setDiscordApplicationID(gmcp.External.Discord.Info.applicationid)
+</script>
 			<eventHandlerList />
 			<Script isActive="yes" isFolder="no">
 				<name>functions</name>
@@ -13804,81 +14214,63 @@ end</script>
 --- Move between rooms
 -----------------------------------------
 function Move(cmd)
-  target = 0 -- should be redundant, as clearRoom should clear it.
-  
-  local stand = next_commands[1]
   next_commands = {}
   next_commands[10] = {cmd}
-  
-  if stand ~= nil then
-    next_commands[1] = "stand"
-  end
-  
   queque_eb_command()
-  --display(next_commands)
 end
-
------------------------------------------
---- Sip Health or Mana vial
------------------------------------------
-function sip_vial() 
-  local hp = gmcp.Char.Vitals.hp / gmcp.Char.Vitals.maxhp
-  if hp &lt; 0.05 then
-    return
-  end 
-  
-  if hp &lt; 0.8 and true == sip_balance then
-    send("sip health")
-    sip_balance = false
-    return
-  end
-  
-  local mp = gmcp.Char.Vitals.mp / gmcp.Char.Vitals.maxmp
-  if mp &lt; 0.8 and true == sip_balance then
-    send("sip mana")
-    sip_balance = false
-    return
-  end
-end
-
 </script>
 				<eventHandlerList />
 			</Script>
 			<ScriptGroup isActive="yes" isFolder="yes">
 				<name>Bashing</name>
 				<packageName></packageName>
-				<script>target = 0
-prev_targets = {}
-all_targets = {}
-all_items = {}
+				<script>target = target or 0
+prev_targets = prev_targets or {}
+all_targets = all_targets or {}
+all_items = all_items or {}
 
 -----------------------------------------
 --- Set next target
 -----------------------------------------
 function setMyNextTarget()
   local prev = target
-  if target ~= 0 then
-    prev_targets[target] = true
+  target = 0
+  
+  if prev ~= 0 then
+    prev_targets[prev] = true
+  end
+  
+  -- safety net for when scripts are being loaded and gmcp has not.
+  if gmcp.Room == nil then
+    return
   end
   
   local area = gmcp.Room.Info.area
   
-  invalidTargets = invalidTargets or {}
-  invalidTargets[area] = invalidTargets[area] or {} 
-  local localInvalid = invalidTargets[area]
+  validTargets = validTargets or {}
+  validTargets[area] = validTargets[area] or {}
+  local localValid = validTargets[area]
   
-  for id,name in pairs(all_targets) do
-    for _, notValid_name in pairs(localInvalid) do
-      if name:match(notValid_name) == nill then
-        target = id
+  --cecho("&lt;white&gt;before loop\n")
+  --display(all_targets)
+  if target == 0 then
+    for id,name in pairs(all_targets) do
+      for _,tar in pairs(localValid) do
+        if name:find(tar) then
+          target = id
+          --cecho("&lt;green&gt;Target set: " .. name .. ":" .. target .. "\n")
+        end
       end
-      echo("Skipping " .. name .. " as it is not valid\n")
     end
   end
-  
-  --cecho("&lt;red&gt;Target set: " .. target .. "\n")
-  --cecho("&lt;green&gt;Not valid targets in this area\n")
-  --display(invalidTargets)
+end
+
+-----------------------------------------
+--- Show Area Targets
+-----------------------------------------
+function showAreaTargets(area)
+  echo("Targets in this area " .. area)
+  display(validTargets[area])
 end
 
 -----------------------------------------
@@ -13985,11 +14377,13 @@ function mobRemoved()
     
     AchaeaMobsInHere:clear()
     AchaeaItemsInHere:clear()
-  
+    
+    -- remove the item
+    if all_items[removed.item.id] ~= nil then all_items[removed.item.id] = nil end
+    
+    -- remove the enemy
     if removed.item.id == target then
-      if all_targets[removed.item.id] ~= nil then all_targets[removed.item.id] = nil end
-      if all_items[removed.item.id] ~= nil then all_items[removed.item.id] = nil end
-      
+      all_targets[target] = nil
       target = 0
     end
     
@@ -14010,23 +14404,23 @@ end</script>
 -- Monsters entering the room
 ---------------------------------
 function queque_eb_command()
+  botter:error("queque_eb_command should not be called")
+  
+  if gmcp.Char == nil then return end
 
   local eq = gmcp.Char.Vitals.eq
-  if eq == "0" then
+  local bal = gmcp.Char.Vitals.bal
+  if eq == "0" or bal == "0" then
     return
   end
 
-  --display(next_commands)
   if next_commands == {} then
     return
   end
   
   if eq == "1" then
-    --echo("Sending commands \n")
-    --display(next_commands)
     for priority,cmdlist in pairs(next_commands) do
       for _,cmd in pairs(cmdlist) do
-        --echo("cmd " .. cmd .. " \n")
         send(cmd)
       end
       if priority == 10 then
@@ -14037,10 +14431,9 @@ function queque_eb_command()
     next_commands = {}
   end
 end
-local ok = registerNamedEventHandler("InRoom", "queuedEQCommands", "gmcp.Char.Vitals", queque_eb_command)
-if ok == false then
-  echo("Couldn't register queuedEQCommands")
-end
+
+--registerNamedEventHandler("InRoom", "queuedEQCommands", "gmcp.Char.Vitals", queque_eb_command)
+--stopNamedEventHandler("InRoom", "queuedEQCommands")
 </script>
 					<eventHandlerList />
 				</Script>
@@ -14204,64 +14597,25 @@ mapper = Geyser.Mapper:new({
   name = "mapper",
   x = 0, y = 0, -- edit here if you want to move it
   width = "18%", height = "50%"
-})</script>
+})
+
+DefencesWindow = Geyser.MiniConsole:new({
+  name = "defencesWindow",
+  x = 0, y = "51%",
+  width = "45c", height = "26c",
+  fgColor = "white",
+  color = "black",
+  fontSize = 10,
+  autoWrap = false,
+})
+DefencesWindow:raise()
+
+--DefencesWindow:hide()</script>
 						<eventHandlerList />
 					</Script>
 				</ScriptGroup>
 			</ScriptGroup>
-			<ScriptGroup isActive="yes" isFolder="yes">
-				<name>TravelRooms</name>
-				<packageName></packageName>
-				<script>---------------
--- Great Rock
----------------------
-
-
---[[
-                                             )
----------------------------------------------
-                                             
-
-                                             
-
---]]</script>
-				<eventHandlerList />
-				<Script isActive="yes" isFolder="no">
-					<name>AddRoomsMapping</name>
-					<packageName></packageName>
-					<script>local addRoom = function()
-  local area = gmcp.Room.Info.area
-  autoWalkRooms[area] = autoWalkRooms[area] or {}
-  table.insert(autoWalkRooms[area], {gmcp.Room.Info.num})
-  
-  echo("List of rooms in AddRoomsMapping\n")
-  display(autoWalkRooms[area])
-  echo("---------------------\n")
-end
-
-local ok = registerNamedEventHandler(
-  "Mine", 
-  "AddRoom", 
-  "gmcp.Room.Info",
-  addRoom
-)
-
-if ok == false then
-  echo("Couldn't register AfflictionsAdded\n")
-end
-stopNamedEventHandler("Mine", "AddRoom")</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>Travel</name>
-					<packageName></packageName>
-					<script>function travelRooms(area)
-  autoWalkRooms
-end</script>
-					<eventHandlerList />
-				</Script>
-			</ScriptGroup>
-			<ScriptGroup isActive="yes" isFolder="yes">
+			<ScriptGroup isActive="no" isFolder="yes">
 				<name>Affliction</name>
 				<packageName></packageName>
 				<script>queuedSalveCmds = {}
@@ -14320,7 +14674,11 @@ end
 				<Script isActive="yes" isFolder="no">
 					<name>AfflicationsAdded</name>
 					<packageName></packageName>
-					<script>all_afflication = {}
+					<script>stopNamedEventHandler("Mine", "AfflictionsAdded")
+stopNamedEventHandler("Mine", "AfflictionsExisting")
+stopNamedEventHandler("Mine", "AfflictionsCleared")
+
+all_afflication = {}
 
 aff_broken_arm = false
 
@@ -14347,45 +14705,6 @@ function newAffliction()
   
   all_afflication[aff.name] = {aff.cure, aff.desc}
   fillConsole()
-  
-  if aff.name:match("^prone") then
-    next_commands[2] = {"stand"}
-    queque_eb_command()
-    return
-  end
-  
-  if aff.cure:match("^EAT") then
-    enqueueEat({priority = 1, eat = aff.cure})
-  end
-  
-  if aff.cure:match("^APPLY") then
-    cecho("&lt;red&gt;Found apply " .. " cure: " .. aff.cure .. "\n")
-    local priority = 99
-    if aff.name:match("^damaged") then
-      cecho("&lt;red&gt;\nDamaged..\n")
-      priority = 9
-    end
-    if aff.name:match("^broken") then
-      cecho("&lt;red&gt;\nbroken..\n")
-      priority = 1
-    end
-  
-    --cecho("&lt;red&gt;Enqueuing " .. priority .. " cure: " .. aff.cure .. "\n")
-    --cecho("&lt;red&gt;\n------------------\n")
-    --cecho("&lt;red&gt;Scripts/AfflictionAdded/newAffliction\n")
-    enqueueSalve({priority = priority, apply = aff.cure})
-  end
-  
-  if aff.name:match("^broken.+arm") then
-    aff_broken_arm = true
-  end
-  
-  --webbed [WRITHE] Being webbed is restrictive on any actions you wish to make.
-  if aff.name:match("^webbed$") then
-    next_commands[1] = {"writhe"}
-    queque_eb_command()
-    return
-  end
 end
 
 local ok = registerNamedEventHandler(
@@ -14425,6 +14744,7 @@ local removeAffliction = function()
   local aff = gmcp.Char.Afflictions.Remove
   cecho("&lt;green&gt;Removed affliction: \n")
   display(aff)
+  cecho("&lt;green&gt;--------------\n")
   all_afflication[aff[1]] = nil
   fillConsole()
 end
@@ -14444,7 +14764,9 @@ end</script>
 				<Script isActive="yes" isFolder="no">
 					<name>Defences</name>
 					<packageName></packageName>
-					<script>
+					<script>stopNamedEventHandler("Mine", "DefencesAdded")
+
+
 function addDefence()
   -----------------------------------
   -- Shield tattoo
@@ -14473,8 +14795,10 @@ end
 --------------------------------
 function removeDefence()
   local def = gmcp.Char.Defences.Remove
-  cecho("&lt;white&gt;Removed def\n")
+  cecho("&lt;green&gt;Removed def\n")
   display(def)
+  cecho("&lt;green&gt;--------------\n")
+  
   if def[1]:match("^sheild$") then
     shielded = false
   end
@@ -14486,23 +14810,521 @@ if ok == false then
 end</script>
 					<eventHandlerList />
 				</Script>
+			</ScriptGroup>
+		</ScriptGroup>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>demonnicAutoWalker</name>
+			<packageName>demonnicAutoWalker</packageName>
+			<script></script>
+			<eventHandlerList />
+			<ScriptGroup isActive="yes" isFolder="yes">
+				<name>demonwalker</name>
+				<packageName></packageName>
+				<script></script>
+				<eventHandlerList />
 				<Script isActive="yes" isFolder="no">
-					<name>Enqueue</name>
+					<name>Code</name>
 					<packageName></packageName>
-					<script>-----------------------------------------
---- Enqueue Apply salve
------------------------------------------
-function enqueueSalve(cmd)
-  queuedSalveCmds[cmd.priority] = cmd.apply
-  --display(queuedSalveCmds)
-  applySalve()
-end 
+					<script>--[===[
+The MIT License (MIT)
 
+Copyright (c) 2020,2021 Damian Monogue
 
-function enqueueEat(cmd)
-  queuedEatCmds[cmd.priority] = cmd.eat
-  eatHerb()
-end 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+--]===]
+
+demonwalker = demonwalker or {}
+demonwalker.saveFile = getMudletHomeDir() .. "/demonwalkerconfig.lua"
+demonwalker.timerName = "demonwalkerPerfTimer"
+demonwalker.config = demonwalker.config or {}
+if demonwalker.enabled == nil then
+  demonwalker.enabled = false
+end
+
+function demonwalker:echo(msg)
+  if msg == nil then msg = "" end
+  cecho(string.format("\n&lt;purple&gt;(&lt;green&gt;Demonwalker&lt;purple&gt;):&lt;white&gt; %s", msg))
+end
+
+function demonwalker:debugEcho(msg)
+  if not demonwalker.config.debug then return end
+  local msgType = type(msg)
+  if msgType == "table" then
+    demonwalker:echo("DEBUG DISPLAY FOLLOWS\n")
+    display(msg)
+    return
+  end
+  demonwalker:echo("DEBUG: " .. tostring(msg))
+end
+
+function demonwalker:save()
+  table.save(demonwalker.saveFile, demonwalker.config)
+end
+
+function demonwalker:load()
+  local config = {}
+  local cfg = {}
+  local existingSave = io.exists(demonwalker.saveFile)
+  if existingSave then
+    table.load(demonwalker.saveFile, cfg)
+  end
+  if cfg.returnToStart == nil then
+    config.returnToStart = true
+  else
+    config.returnToStart = cfg.returnToStart
+  end
+  if cfg.debug == nil then
+    config.debug = false
+  else
+    config.debug = cfg.debug
+  end
+  config.avoidList = cfg.avoidList or {}
+  config.breadth = cfg.breadth or 10
+  if not _comp(config, cfg) then
+    -- there is a new value which was not in the save file, or there is no savefile yet
+    demonwalker:save()
+  end
+  demonwalker.config = config
+end
+
+function demonwalker:addAvoidRoom(roomID)
+  local ridType = type(roomID)
+  local avoidList = demonwalker.config.avoidList
+  if ridType == "number" then
+    avoidList[roomID] = true
+  elseif ridType == "table" then
+    for _,rid in ipairs(roomID) do
+      avoidList[rid] = true
+    end
+  elseif ridType == "string" then
+    local rid = tonumber(roomID)
+    if rid then
+      avoidList[rid] = true
+    end
+  end
+  demonwalker:save()
+end
+
+function demonwalker:clearAvoidList()
+  local avoidList = demonwalker.config.avoidList
+  avoidList = {}
+  demonwalker:save()
+end
+
+function demonwalker:removeAvoidRoom(roomID)
+  local ridType = type(roomID)
+  local avoidList = demonwalker.config.avoidList
+  if ridType == "number" then
+    avoidList[roomID] = nil
+  elseif ridType == "table" then
+    for _,rid in ipairs(roomID) do
+      avoidList[rid] = nil
+    end
+  elseif ridType == "string" then
+    local rid = tonumber(roomID)
+    if rid then
+      avoidList[rid] = nil
+    end
+  end
+  demonwalker:save()
+end
+
+function demonwalker:printAvoidList()
+  local aRooms = table.keys(demonwalker.config.avoidList)
+  demonwalker:echo(" avoidList    : {")
+  demonwalker:echo("  ID#  &lt;green&gt;Room Name &lt;white&gt;(&lt;purple&gt;Area Name&lt;white&gt;),")
+  for _,roomID in spairs(aRooms) do
+    local roomName = getRoomName(roomID)
+    roomName = roomName or "Unknown Room"
+    local roomAreaID = getRoomArea(roomID)
+    local roomArea = "Unknown Area"
+    if roomAreaID then
+      roomArea = getRoomAreaName(roomAreaID)
+    end
+    demonwalker:echo(string.format("  %s &lt;green&gt;%s &lt;white&gt;(&lt;purple&gt;%s&lt;white&gt;),", tostring(roomID), roomName, roomArea))
+  end
+  demonwalker:echo(" } -- avoidList")
+end
+
+function demonwalker:displayConfig()
+  demonwalker:echo("demonwalker.config:")
+  demonwalker:echo(" breadth      : " .. demonwalker.config.breadth)
+  demonwalker:echo(" returnToStart: " .. tostring(demonwalker.config.returnToStart))
+  demonwalker:echo(" debug        : " .. tostring(demonwalker.config.debug))
+  demonwalker:printAvoidList()
+  demonwalker:echo("End demonwalker.config")
+end
+
+function demonwalker:jiggerTable()
+  local rooms = {}
+  for room,_ in pairs(demonwalker.remainingRooms) do
+    rooms[room] = true
+  end
+  demonwalker.remainingRooms = rooms
+end
+
+function demonwalker:init(options)
+  if demonwalker.enabled then
+    return
+  end
+  options = options or {}
+  local rooms = options.rooms or {}
+  local roomsToAvoid = options.avoidRooms or {}
+  local searchTargets = options.searchTargets or {}
+  demonwalker.enabled = true
+  local currentRoom = mmp.currentroom
+  demonwalker.currentRoom = currentRoom
+  demonwalker.startingRoom = currentRoom
+  demonwalker.nextRoom = currentRoom
+  demonwalker.performanceTimes = {}
+  local area = getRoomArea(currentRoom)
+  demonwalker.area = area
+  if #rooms ~= 0 then
+    demonwalker.area = getRoomArea(rooms[1])
+  else
+    rooms = getAreaRooms(area)
+    if rooms[0] then
+      rooms[#rooms+1] = rooms[0]
+      rooms[0] = nil
+    end
+  end
+  demonwalker.remainingRooms = {}
+  for _,roomID in ipairs(rooms) do
+    demonwalker.remainingRooms[roomID] = true
+  end
+  for roomID,_ in pairs(demonwalker.config.avoidList) do
+    demonwalker.remainingRooms[roomID] = nil
+  end
+  for _,roomID in ipairs(roomsToAvoid) do
+    demonwalker.remainingRooms[roomID] = nil
+  end
+  demonwalker:setSearchTargets(searchTargets)
+  demonwalker:registerEventHandlers()
+  if table.is_empty(demonwalker.searchTargets) then
+    raiseEvent("demonwalker.arrived")
+    return
+  end
+  demonwalker.checkForItems()
+end
+
+function demonwalker:setSearchTargets(searchTargets)
+  local targets = {}
+  for _,targetName in ipairs(searchTargets) do
+    targets[targetName] = true
+  end
+  demonwalker.searchTargets = targets
+end
+
+function demonwalker:stop()
+  if not demonwalker.enabled then
+    return
+  end
+  demonwalker.currentRoom = nil
+  demonwalker.remainingRooms = nil
+  demonwalker.enabled = false
+  demonwalker:removeEventHandlers()
+  raiseEvent("demonwalker.finished")
+  
+  if demonwalker.config.returnToStart then
+    tempTimer(0, function() mmp.gotoRoom(demonwalker.startingRoom) end)
+  end
+end
+
+function demonwalker:usage(attemptedCommand)
+  if attemptedCommand then
+    demonwalker:echo(string.format("You attempted to use '%s' and we do not recognize it", attemptedCommand))
+  end
+  demonwalker:echo("dwalk usage:")
+  demonwalker:echo("dwalk")
+  demonwalker:echo(" - displays this usage information")
+  demonwalker:echo("dwalk config")
+  demonwalker:echo(" - displays the full configuration for demonwalker")
+  demonwalker:echo("dwalk report")
+  demonwalker:echo(" - displays a performance report for the current walk if")
+  demonwalker:echo("   one is running, or previous walk if not.")
+  demonwalker:echo("dwalk explore")
+  demonwalker:echo(" - runs through the current area, automatically moving to")
+  demonwalker:echo("   the next room each time it arrives")
+  demonwalker:echo("dwalk stop")
+  demonwalker:echo(" - cancel the current walk, raises 'demonwalker.stop' event")
+  demonwalker:echo("dwalk move")
+  demonwalker:echo(" - move on to the next room in the walk")
+  demonwalker:echo("   raises 'demonwalker.move' event")
+  demonwalker:echo("dwalk avoidList")
+  demonwalker:echo(" - prints out the list of rooms to avoid in all walks")
+  demonwalker:echo("dwalk avoid &lt;roomID&gt;")
+  demonwalker:echo(" - add a roomID to the permanent avoidRooms list")
+  demonwalker:echo("dwalk unavoid &lt;roomID&gt;")
+  demonwalker:echo(" - remove a roomID from the permanent avoidRooms list")
+  demonwalker:echo("dwalk breadth &lt;newBreadth&gt;")
+  demonwalker:echo(" - sets number of rooms away from the current to check")
+  demonwalker:echo("   using breadth-first before brute forcing")
+  demonwalker:echo("dwalk returnToStart &lt;true/false&gt;")
+  demonwalker:echo(" - sets whether to return to your starting room after")
+  demonwalker:echo("   a walk is finished/stopped or not")
+  demonwalker:echo("dwalk debug &lt;true/false&gt;")
+  demonwalker:echo(" - set to true to turn on some debugging echos. WARNING: spammy")
+  demonwalker:echo("dwalk update")
+  demonwalker:echo(" - updates to the latest version of the demonnicAutoWalker package from github")
+  demonwalker:echo("end of dwalk usage")
+end
+
+function demonwalker:move()
+  if not demonwalker.enabled then
+    return
+  end
+  if mmp.paused then
+    tempTimer(0, function() mmp.pause() end)
+    return
+  end
+  demonwalker.nextRoom = demonwalker:closestRoom()
+  
+  if demonwalker.nextRoom ~= "" then
+    tempTimer(0, function() mmp.gotoRoom(demonwalker.nextRoom) end)
+  else
+    raiseEvent("demonwalker.stop")
+  end
+end
+
+function demonwalker:atDestination()
+  return tonumber(mmp.currentroom) == tonumber(demonwalker.nextRoom)
+end
+
+function demonwalker.checkForItems(event, ...)
+  local searchTargets = demonwalker.searchTargets
+  if table.is_empty(searchTargets) then return end
+  local list = gmcp.Char.Items.List
+  if list.location ~= "room" then return end
+  if mmp.paused then return end
+  demonwalker.checked = true
+  local atDestination = demonwalker:atDestination()
+  for _,item in ipairs(list.items) do
+    if searchTargets[item.name] then
+      demonwalker:debugEcho("Stopping because we found something on the search list")
+      if not atDestination then
+        mmp.pause("on")
+      end
+      raiseEvent("demonwalker.arrived")
+      return
+    end
+  end
+  demonwalker:debugEcho("Nothing here, moving on")
+  if atDestination then raiseEvent("demonwalker.move") end
+end
+
+function demonwalker:arrived()
+  if tonumber(mmp.currentroom) == tonumber(demonwalker.nextRoom) then
+    demonwalker.currentRoom = mmp.currentroom
+    demonwalker.remainingRooms[mmp.currentroom] = nil
+    if table.is_empty(demonwalker.searchTargets) then
+      raiseEvent("demonwalker.arrived")
+      return
+    end
+    demonwalker.checked = false
+    demonwalker.failsafe = tempPromptTrigger(
+      function()
+        if not demonwalker.checked then
+          demonwalker.checkForItems()
+        end
+      end
+    , 1)
+  else
+    debugc("demonwalker: Somehow, the mudlet mapper says we have arrived but it is not to the room we said to go to.")
+  end
+end
+
+function demonwalker:failedPath()
+  demonwalker.remainingRooms[demonwalker.nextRoom] = nil
+  demonwalker.currentRoom = mmp.currentroom
+  raiseEvent("demonwalker.move")
+end
+
+function demonwalker:removeEventHandlers()
+  for _, handlerID in pairs(demonwalker.eventHandlers) do
+    killAnonymousEventHandler(handlerID)
+  end
+end
+
+function demonwalker:registerEventHandlers()
+  demonwalker.eventHandlers = demonwalker.eventHandlers or {}
+  demonwalker:removeEventHandlers()
+  demonwalker.eventHandlers.move = registerAnonymousEventHandler("demonwalker.move", demonwalker.move)
+  demonwalker.eventHandlers.stop = registerAnonymousEventHandler("demonwalker.stop", demonwalker.stop)
+  demonwalker.eventHandlers.arrived = registerAnonymousEventHandler("mmapper arrived", demonwalker.arrived)
+  demonwalker.eventHandlers.failedPath = registerAnonymousEventHandler("mmapper failed path", demonwalker.failedPath)
+  demonwalker.eventHandlers.itemCheck = registerAnonymousEventHandler("gmcp.Char.Items.List", demonwalker.checkForItems)
+end
+
+function demonwalker:getAdjacentRooms(roomID)
+  local adjacentRooms = getSpecialExits(roomID)
+  local exits = getRoomExits(roomID)
+  for _,id in pairs(exits) do
+    adjacentRooms[id] = true
+  end
+  return adjacentRooms
+end
+
+function demonwalker:extractFirstUnvisitedRoom(rooms)
+  local remainingRooms = demonwalker.remainingRooms
+  for id,_ in ipairs(rooms) do
+    if remainingRooms[id] then
+      return id
+    end
+  end
+  return nil
+end
+
+function demonwalker:startPerfTimer()
+  createStopWatch(demonwalker.timerName)
+  resetStopWatch(demonwalker.timerName)
+  startStopWatch(demonwalker.timerName)
+end
+
+function demonwalker:recordPerfTime(steps, checks)
+  local perfTime = getStopWatchTime(demonwalker.timerName)
+  stopStopWatch(demonwalker.timerName)
+  demonwalker:debugEcho(string.format("Took %.5f seconds to find our room at %d distance and %d checks\n", perfTime, steps, checks))
+  demonwalker.performanceTimes[#demonwalker.performanceTimes+1] = {time = perfTime, steps = steps, checks = checks}
+end
+
+function demonwalker:performanceReport()
+  local perfTable = demonwalker.performanceTimes
+  local timesMoved = 0
+  if perfTable then
+    timesMoved = #perfTable
+  end
+  local roomsLeft = 0
+  if demonwalker.remainingRooms then
+    roomsLeft = table.size(demonwalker.remainingRooms)
+  end
+  if timesMoved == 0 then
+    demonwalker:echo("No performance report to generate, have not moved")
+    return
+  end
+  local steps = {}
+  local times = {}
+  local checks = {}
+  local totalSteps = 0
+  local totalTime = 0
+  local totalChecks = 0
+  for _, info in ipairs(perfTable) do
+    totalSteps = totalSteps + info.steps
+    totalTime = totalTime + info.time
+    totalChecks = totalChecks + info.checks
+    steps[#steps+1] = info.steps
+    times[#times+1] = info.time
+    checks[#checks+1] = info.checks
+  end
+  local averageTime = totalTime / timesMoved
+  local averageSteps = totalSteps / timesMoved
+  local averageChecks = totalChecks / timesMoved
+  table.sort(steps)
+  table.sort(times)
+  table.sort(checks)
+  local half = timesMoved / 2
+  local medianSteps = 0
+  local medianTime = 0
+  local medianChecks = 0
+  local roundedHalf = math.ceil(half)
+  if roundedHalf &gt; half then
+    medianSteps = steps[roundedHalf]
+    medianTime = times[roundedHalf]
+    medianChecks = checks[roundedHalf]
+  else
+    medianSteps = (steps[half] + steps[half + 1]) / 2
+    medianTime = (times[half] + times[half+1]) / 2
+    medianChecks = (checks[half] + checks[half+1]) / 2
+  end
+  local longestMove = steps[#steps]
+  local longestTime = times[#times]
+  local mostChecks = checks[#checks]
+  demonwalker:echo("Performance report of current demonwalk!")
+  demonwalker:echo("Note: Number of steps actually taken may be more or less")
+  demonwalker:echo("as the walker does not always take the reported number of")
+  demonwalker:echo("steps due to mmp overshooting or some interruption.")
+  demonwalker:echo(string.format("Rooms left in this walk : %d", roomsLeft))
+  demonwalker:echo(string.format("Total times moved       : %d", timesMoved))
+  demonwalker:echo(string.format("Total steps taken       : %d", totalSteps))
+  demonwalker:echo(string.format("Avg steps per move      : %.3f", averageSteps))
+  demonwalker:echo(string.format("Median steps per move   : %.3f", medianSteps))
+  demonwalker:echo(string.format("Longest move            : %0d", longestMove))
+  demonwalker:echo(string.format("Total time calculating  : %.3f", totalTime))
+  demonwalker:echo(string.format("Avg time per move       : %.3f", averageTime))
+  demonwalker:echo(string.format("Median time per move    : %.3f", medianTime))
+  demonwalker:echo(string.format("Longest time            : %.3f", longestTime))
+  demonwalker:echo(string.format("Total checks            : %d", totalChecks))
+  demonwalker:echo(string.format("Avg checks per move     : %.3f", averageChecks))
+  demonwalker:echo(string.format("Median checks per move  : %.3f", medianChecks))
+  demonwalker:echo(string.format("Most checks             : %0d", mostChecks))
+  demonwalker:echo("End of performance report")
+end
+
+function demonwalker:closestRoom()
+  local remainingRooms = demonwalker.remainingRooms
+  local startingRoom = mmp.currentroom
+  if not remainingRooms or table.is_empty(remainingRooms) then return "" end
+  demonwalker:startPerfTimer()
+  local roomsToCheck = {
+    [startingRoom] = true
+  }
+  local numberOfChecks = 0
+  for iteration = 1, demonwalker.config.breadth do
+    demonwalker:debugEcho("Iteration: " .. iteration)
+    local newRooms = {}
+    for room,_ in pairs(roomsToCheck) do
+      demonwalker:debugEcho("Checking adjacent rooms of :" .. room)
+      for id,_ in pairs(demonwalker:getAdjacentRooms(room)) do
+        numberOfChecks = numberOfChecks + 1
+        demonwalker:debugEcho("Checking roomID: " .. id)
+        if remainingRooms[id] then
+          demonwalker:recordPerfTime(iteration, numberOfChecks)
+          return id
+        end
+        newRooms[id] = true
+      end
+    end
+    roomsToCheck = newRooms
+  end
+  demonwalker:debugEcho("Did not find a room within the configured breadth:" .. numberOfChecks)
+  -- we didn't find an unvisited room within demonwalker.config.breadth steps, so now let's loop the remaining rooms list
+  local distance = 99999
+  local minDistance = demonwalker.config.breadth + 1
+  local targetRoom = ""
+  for roomID,_ in pairs(remainingRooms) do
+    numberOfChecks = numberOfChecks + 1
+    local ok, pathLength = getPath(startingRoom, roomID)
+    if not ok then 
+      remainingRooms[roomID] = nil
+    elseif pathLength &lt; distance then
+      distance = pathLength
+      targetRoom = roomID
+      if distance &lt;= minDistance then
+        demonwalker:recordPerfTime(distance, numberOfChecks)
+        return targetRoom
+      end
+    end
+  end
+  demonwalker:recordPerfTime(distance, numberOfChecks)
+  return targetRoom
+end
+
+if _comp(demonwalker.config, {}) then demonwalker:load() end
 </script>
 					<eventHandlerList />
 				</Script>
@@ -14517,22 +15339,40 @@ end
 			<command></command>
 			<keyCode>0</keyCode>
 			<keyModifier>0</keyModifier>
+			<Key isActive="yes" isFolder="no">
+				<name>Enable Keymode</name>
+				<packageName></packageName>
+				<script>echo("Key mode Active\n")
+AchaeaAutoBashWindow:setColor(0,0,0,255)
+
+
+disableKey("Enable Movement")
+enableKey("Hotkeys")
+</script>
+				<command></command>
+				<keyCode>46</keyCode>
+				<keyModifier>134217728</keyModifier>
+			</Key>
 			<KeyGroup isActive="no" isFolder="yes">
-				<name>NormalMode</name>
+				<name>Hotkeys</name>
 				<packageName></packageName>
 				<script>echo("The group NormalMode is doing stuff!\n")</script>
 				<command></command>
 				<keyCode>96</keyCode>
 				<keyModifier>0</keyModifier>
 				<Key isActive="yes" isFolder="no">
-					<name>Toggle Disable</name>
+					<name>DisableKeymode</name>
 					<packageName></packageName>
-					<script>echo("Normal mode deactive\n")
-disableKey("NormalMode")
-enableKey("Enable Movement")</script>
+					<script>AchaeaAutoBashWindow:setColor(0,0,200,255)
+--clearCmdLine()
+
+echo("Key mode deactive\n")
+
+disableKey("Hotkeys")
+enableKey("Enable Keymode")</script>
 					<command></command>
-					<keyCode>39</keyCode>
-					<keyModifier>0</keyModifier>
+					<keyCode>65</keyCode>
+					<keyModifier>67108864</keyModifier>
 				</Key>
 				<KeyGroup isActive="yes" isFolder="yes">
 					<name>Movement</name>
@@ -14646,21 +15486,13 @@ enableKey("Enable Movement")</script>
 						</Key>
 					</Key>
 				</KeyGroup>
-				<KeyGroup isActive="yes" isFolder="yes">
+				<KeyGroup isActive="no" isFolder="yes">
 					<name>CommonActions</name>
 					<packageName></packageName>
 					<script></script>
 					<command></command>
 					<keyCode>33554431</keyCode>
 					<keyModifier>0</keyModifier>
-					<Key isActive="yes" isFolder="no">
-						<name>Warp</name>
-						<packageName></packageName>
-						<script>next_commands[999] = {"warp"}</script>
-						<command></command>
-						<keyCode>87</keyCode>
-						<keyModifier>0</keyModifier>
-					</Key>
 					<Key isActive="yes" isFolder="no">
 						<name>Wares</name>
 						<packageName></packageName>
@@ -14670,42 +15502,6 @@ send("wares tinder")
 </script>
 						<command></command>
 						<keyCode>70</keyCode>
-						<keyModifier>0</keyModifier>
-					</Key>
-					<Key isActive="yes" isFolder="no">
-						<name>Harry</name>
-						<packageName></packageName>
-						<script>if target ~= 0 then
-  send("harry " .. target)
-else
-  echo("No TARGET\n")
-end</script>
-						<command></command>
-						<keyCode>69</keyCode>
-						<keyModifier>0</keyModifier>
-					</Key>
-					<Key isActive="yes" isFolder="no">
-						<name>Chaosgate</name>
-						<packageName></packageName>
-						<script>if target ~= 0 then
-  send("chaosgate " .. target)
-else
-  echo("No TARGET\n")
-end</script>
-						<command></command>
-						<keyCode>84</keyCode>
-						<keyModifier>0</keyModifier>
-					</Key>
-					<Key isActive="yes" isFolder="no">
-						<name>Ruin</name>
-						<packageName></packageName>
-						<script>if target ~= 0 then
-  send("ruin " .. target)
-else
-  echo("No TARGET\n")
-end</script>
-						<command></command>
-						<keyCode>82</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
 				</KeyGroup>
@@ -14730,7 +15526,8 @@ echo("\nQuequed Hermit!\n")</script>
 					<Key isActive="yes" isFolder="no">
 						<name>ShieldTattoo</name>
 						<packageName></packageName>
-						<script>next_commands[5] = {"touch shield"}
+						<script>shielded = true
+next_commands[5] = {"touch shield"}
 next_commands[999] = nil
 queque_eb_command()
 echo("\nTouching Shield!\n")</script>
@@ -14738,24 +15535,133 @@ echo("\nTouching Shield!\n")</script>
 						<keyCode>54</keyCode>
 						<keyModifier>0</keyModifier>
 					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Astralform</name>
+						<packageName></packageName>
+						<script>shielded = true
+next_commands[1] = {"astralform"}
+next_commands[999] = nil
+queque_eb_command()
+cecho("&lt;yellow&gt;\n-------------\n")
+cecho("&lt;yellow&gt;\nGoing Astral!\n")
+cecho("&lt;yellow&gt;\n-------------\n")</script>
+						<command></command>
+						<keyCode>52</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+				</KeyGroup>
+				<KeyGroup isActive="yes" isFolder="yes">
+					<name>Attacking</name>
+					<packageName></packageName>
+					<script></script>
+					<command></command>
+					<keyCode>33554431</keyCode>
+					<keyModifier>0</keyModifier>
+					<Key isActive="yes" isFolder="no">
+						<name>Warp</name>
+						<packageName></packageName>
+						<script>next_commands[999] = {"warp " .. target}
+queque_eb_command()</script>
+						<command></command>
+						<keyCode>70</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Chaosgate</name>
+						<packageName></packageName>
+						<script>if target ~= 0 then
+  send("chaosgate " .. target)
+else
+  echo("No TARGET\n")
+end</script>
+						<command></command>
+						<keyCode>71</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Ruin</name>
+						<packageName></packageName>
+						<script>if target ~= 0 then
+  send("ruin " .. target)
+else
+  echo("No TARGET\n")
+end</script>
+						<command></command>
+						<keyCode>82</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Harry</name>
+						<packageName></packageName>
+						<script>if target ~= 0 then
+  send("harry " .. target)
+else
+  echo("No TARGET\n")
+end</script>
+						<command></command>
+						<keyCode>68</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Stagnate</name>
+						<packageName></packageName>
+						<script>if target ~= 0 then
+  send("stagnate " .. target)
+else
+  echo("No TARGET\n")
+end</script>
+						<command></command>
+						<keyCode>83</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Fluctuate</name>
+						<packageName></packageName>
+						<script>if target ~= 0 then
+  send("fluctuate " .. target)
+else
+  echo("No TARGET\n")
+end</script>
+						<command></command>
+						<keyCode>65</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>Score</name>
+						<packageName></packageName>
+						<script>send("sc")</script>
+						<command></command>
+						<keyCode>83</keyCode>
+						<keyModifier>67108864</keyModifier>
+					</Key>
+					<Key isActive="yes" isFolder="no">
+						<name>NextTarget</name>
+						<packageName></packageName>
+						<script>cecho("&lt;yellow&gt;Settig next target too\n")
+setMyNextTarget()</script>
+						<command></command>
+						<keyCode>96</keyCode>
+						<keyModifier>0</keyModifier>
+					</Key>
 				</KeyGroup>
 			</KeyGroup>
 			<Key isActive="yes" isFolder="no">
-				<name>Enable Movement</name>
-				<packageName></packageName>
-				<script>echo("Normal mode Active\n")
-
-disableKey("Enable Movement")
-enableKey("NormalMode")</script>
-				<command></command>
-				<keyCode>46</keyCode>
-				<keyModifier>134217728</keyModifier>
-			</Key>
-			<Key isActive="yes" isFolder="no">
 				<name>DisableAutoBash</name>
 				<packageName></packageName>
-				<script>disableTimer("AutoBash")
-echo("Autobash disabled!\n")</script>
+				<script>auto_bash = false
+
+
+expandAlias("dwalk stop")
+demonwalker.enabled = false
+
+disableTimer("AutoBash")
+disableTrigger("AutoBashing")
+enableKey("EnableAutoBash")
+
+
+cecho("\n&lt;yellow&gt;-------------------------------\n")
+cecho("\n&lt;green&gt;Disabled Auto Bash!\n")
+cecho("\n&lt;yellow&gt;-------------------------------\n")</script>
 				<command></command>
 				<keyCode>16777264</keyCode>
 				<keyModifier>0</keyModifier>
@@ -14763,21 +15669,829 @@ echo("Autobash disabled!\n")</script>
 					<name>EnableAutoBash</name>
 					<packageName></packageName>
 					<script>enableTimer("AutoBash")
-echo("Autobash enabled!\n")</script>
+
+auto_bash = true
+
+demonwalker:echo("Auto bashing and explore enabled!")
+registerNamedEventHandler("Mine", "explore", "demonwalker.arrived", function() setMyNextTarget() end)
+demonwalker:init()
+--demonwalker:stop()
+
+cecho("\n&lt;yellow&gt;-------------------------------\n")
+cecho("\n&lt;green&gt;Auto Bash enabled!\n")
+cecho("\n&lt;yellow&gt;-------------------------------\n")</script>
 					<command></command>
 					<keyCode>16777264</keyCode>
 					<keyModifier>67108864</keyModifier>
 				</Key>
 			</Key>
+			<KeyGroup isActive="no" isFolder="yes">
+				<name>Undeath</name>
+				<packageName></packageName>
+				<script>-- priorities are 1 to 10, 10 being the lowest
+next_commands[4] = {"SOUL"}
+next_commands[999] = nil
+queque_eb_command()
+echo("\nQuequed Hermit!\n")</script>
+				<command></command>
+				<keyCode>70</keyCode>
+				<keyModifier>0</keyModifier>
+			</KeyGroup>
 		</KeyGroup>
 	</KeyPackage>
 	<VariablePackage>
 		<HiddenVariables />
 		<VariableGroup>
+			<name>validTargets</name>
+			<keyType>4</keyType>
+			<value></value>
+			<valueType>5</valueType>
+			<VariableGroup>
+				<name>the Zaphar River</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>Ashtan</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>rat</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Mhojave Desert</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the bog of Ashtan</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Southern Vashnar Mountains</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Eastern Road</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Eastern Shore</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>Riparium</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Savannah</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Pachacacha River</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Dakhota Hills</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Azdun Dungeon</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>goblin</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value>soldier</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Cyrene Road</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Southern Wilderness</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Northern Wilderness</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Great Southern Road</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Siroccian Mountains</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Village of Genji</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>manticore</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>Shastaan</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Eastern Wilderness</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Western Ithmia</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Urubamba River</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Eastern Reaches</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Sangre Plains</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Northern Ithmia</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Granite Hills</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Estate of the Grand Merchant Collective</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Valley of Actar</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>rabbit</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value>deer</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>3</name>
+					<keyType>3</keyType>
+					<value>nymph</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>Forest Watch</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>slugbeast</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value>swordsman</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>3</name>
+					<keyType>3</keyType>
+					<value>youth</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>4</name>
+					<keyType>3</keyType>
+					<value>zombie</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>5</name>
+					<keyType>3</keyType>
+					<value>guard</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>6</name>
+					<keyType>3</keyType>
+					<value>ghoul</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>Manara Burrow</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>gnoll</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value>slaver</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Vashnar Mountains</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Isle of Delos</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Dungeon of the Beastlords</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<Variable>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value>cloaked</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value>bestial</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>3</name>
+					<keyType>3</keyType>
+					<value>acolyte</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>4</name>
+					<keyType>3</keyType>
+					<value>initiate</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>5</name>
+					<keyType>3</keyType>
+					<value>ritualist</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>6</name>
+					<keyType>3</keyType>
+					<value>cultist</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>7</name>
+					<keyType>3</keyType>
+					<value>cerberus</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>8</name>
+					<keyType>3</keyType>
+					<value>priestess</value>
+					<valueType>4</valueType>
+				</Variable>
+				<Variable>
+					<name>9</name>
+					<keyType>3</keyType>
+					<value>beast</value>
+					<valueType>4</valueType>
+				</Variable>
+			</VariableGroup>
+			<VariableGroup>
+				<name>the Central Wilderness</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+			</VariableGroup>
+		</VariableGroup>
+		<VariableGroup>
 			<name>autoWalkRooms</name>
 			<keyType>4</keyType>
 			<value></value>
 			<valueType>5</valueType>
+			<VariableGroup>
+				<name>the Dungeon of the Beastlords</name>
+				<keyType>4</keyType>
+				<value></value>
+				<valueType>5</valueType>
+				<VariableGroup>
+					<name>1</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4229</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>2</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4230</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>3</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4231</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>4</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4232</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>5</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4233</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>6</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4234</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>7</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4235</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>8</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4236</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>9</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4237</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>10</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4238</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>11</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4237</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>12</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4236</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>13</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>4249</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>14</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>36804</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>15</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>38208</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>16</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37521</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>17</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37532</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>18</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37521</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>19</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37130</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>20</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37887</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>21</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37957</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>22</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37887</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>23</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37493</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>24</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37646</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>25</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37493</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>26</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37083</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>27</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37702</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>28</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37083</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>29</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>38398</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>30</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37083</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>31</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>38398</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>32</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37083</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>33</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>38450</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>34</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>37083</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<VariableGroup>
+					<name>35</name>
+					<keyType>3</keyType>
+					<value></value>
+					<valueType>5</valueType>
+					<Variable>
+						<name>1</name>
+						<keyType>3</keyType>
+						<value>38450</value>
+						<valueType>3</valueType>
+					</Variable>
+				</VariableGroup>
+				<Variable>
+					<name>start</name>
+					<keyType>4</keyType>
+					<value>4230</value>
+					<valueType>3</valueType>
+				</Variable>
+			</VariableGroup>
 		</VariableGroup>
 		<VariableGroup>
 			<name>next_commands</name>
@@ -14786,10 +16500,10 @@ echo("Autobash enabled!\n")</script>
 			<valueType>5</valueType>
 		</VariableGroup>
 		<Variable>
-			<name>target_area</name>
+			<name>auto_bash</name>
 			<keyType>4</keyType>
-			<value>greatrock</value>
-			<valueType>4</valueType>
+			<value>false</value>
+			<valueType>1</valueType>
 		</Variable>
 	</VariablePackage>
 </MudletPackage>
