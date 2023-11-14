@@ -20,6 +20,9 @@ occult = 'occultist'
 battleRageAbilities = battleRageAbilities or {}
 battleRageAbilities[occult] = battleRageAbilities[occult] or {}
 
+target = 0
+alt_target = 0
+
 local occRage = battleRageAbilities[occult]
 occRage['harry'] = {
    ready = false,
@@ -62,3 +65,15 @@ occRage['stagnate'] = {
    rage = 24,
    priority = 99,
 }
+
+
+botter = botter or {}
+botter.events = {}
+botter.events.cleanup = { "cleanup", function() print("Hi!") end }
+
+for _,id in pairs(botter.events) do
+   if type(id) == "function" then
+      print("ID: " .. "func")
+   end
+end
+print(botter)

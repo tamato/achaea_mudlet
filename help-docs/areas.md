@@ -18,3 +18,10 @@ Azdun
 
 Genji
 ---------------
+
+
+Aran'riod
+----------------
+has a silver ring with a moonstone.
+
+
