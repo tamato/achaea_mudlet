@@ -1,33 +1,35 @@
-<<<<<<< Updated upstream
-things to work on
-    walk path
+
+OFFER CORPSES
+ELIST SUMMARY
+CALENDAR
+QUEUE
+    CONFIG USEQUEUEING <ON|OFF>             - Enable or disable the queueing
+                                              functionality.
+    CONFIG SHOWQUEUEALERTS <ON|OFF>         - Enable or disable the system messages
+
+command separators
+
+Scriptings notes from teh devs
+readnews ANNOUNCE 5453
+ - If you use svof, why do you use svof?
+ - If you use wsys, why do you use wsys?
+ - If you use nexsys, why do you use nexsys?
+ - For any other script packages you use, what is it that you can't live without, and why?
+ - For your personal scripts, what have you gone out of your way to code, and why?
+    ISCRIPT ON <client> BECAUSE <reason>
+
 
 Emote list
-    emote (clean's off the debire from @statue,) shows respect to anciet chaos lord.
+    emote (clean's off the debirs from @statue,) showing respect to the anciet Chaos Lord.
+    emote approaches @statue
 
-||||||| Stash base
-From 'lessons for all achaeans' book/journal
-
-=======
->>>>>>> Stashed changes
 seek out Ulvin, he may help if he is around
-
-System Message: Replay recording has started. File: /home/ahrimen/.
-config/mudlet/profiles/Achaea/log/2023-10-20#20-42-46.dat
 
 Auto curing
     HELP CURING SYSTEM
 
-<<<<<<< Updated upstream
-| | CLHELP IOE. The Institute of Entropy welcomes all manner of
-||||||| Stash base
-For Occultists, pg 13
-Tarot up to FOOL
-
-| | CLHELP IOE. The Institute of Entropy welcomes all manner of
-=======
-[ ] CLHELP IOE. The Institute of Entropy welcomes all manner of
->>>>>>> Stashed changes
+[ ] CLHELP IOE. 
+    The Institute of Entropy welcomes all manner of
     combat related questions, and offers a specialized curriculum revolving
     around preparation and training for raids and defences.
 
