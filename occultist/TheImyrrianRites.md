@@ -807,7 +807,7 @@ Note: The vision of the true nature of the multiverse may have driven
 the attendees mildly insane.
 
 
-CEREMONIAL BINDING OF BLOOD
+            CEREMONIAL BINDING OF BLOOD
 
 Many of the unwashed masses assume the progression of a bloodline is
 merely the result of vulgar rutting, as if we were confined to the least
@@ -884,7 +884,7 @@ Imyrr passes a hand over Treyak's wounds and as verdant sparks dance
 across them, they heal seamlessly
 
 
-THE EMPOWERMENT OF PAZUZU
+            THE EMPOWERMENT OF PAZUZU
 
 At times, it behooves the practitioners of Chaos to remind our enemies
 of the foolishness of their opposition. In this instance, we summoned
@@ -998,7 +998,7 @@ Taug was eventually slain, but not before dragging many Shallamese
 screaming into death.
 
 
-THE RECONSTITUTION OF TALLAEN
+                THE RECONSTITUTION OF TALLAEN
 
 Tallaen was an interesting girl. Bright in her studies of the Occult,
 but somewhat reckless, she plumbed depths that were best left for the
@@ -2218,7 +2218,7 @@ for if you have lied, you will be destroyed."
 
 The indistinct figure shimmers once and is gone.
 
-SACRIFICIAL OFFERING TO BABEL
+                    SACRIFICIAL OFFERING TO BABEL
 
 The more militant arm of Babel's Cult, the Spear, is often at a loss
 when it comes to ritual work. One of the more prominent members of the
@@ -2264,7 +2264,7 @@ Imyrr revels in his communion with Oblivion, then returns with a sigh to
 the here and now as the wind dies to a mere whisper and the mangled
 corpse of Kerrilynn fades from view.
 
-THE RETURN OF ENDLESS HUNGER
+                THE RETURN OF ENDLESS HUNGER
 
 During the fifth century after the fall of the Seleucarian Empire, an
 ancient relic of Babel's surfaced: a semi-sentient blade named Endless

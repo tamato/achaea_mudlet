@@ -36,7 +36,7 @@ Riding - The abilities in riding are heavily combat-oriented and should
 be learned after some of the more important skills above are acquired.
 HELP RIDING
 
----Occultist---
+-Occultist---
 --------------------------------
 
 Must haves:
@@ -51,6 +51,8 @@ path.
 
 You have two main kill routes to choose from, enlighten and truename.
 
+-- Enlighten Path
+--------------------------------------------------------------------
 To achieve enlighten, you will need to instill + bloodleech until you
 stick 3 physical affs and then stick cadmus. Once you have cadmus, moon
 (targetted or untargetted + devil) and either storm or humbug or
@@ -58,6 +60,19 @@ bloodleech until 5 affs are stacked. Stick hecate and madness, then add
 more moons with storm or humbug until there are enough mental affs to
 enlighten and unravel.
 
+bloodleech              - haemophilia, thins blood, prime increases bleed
+instill                 - afflictions of the body
+humbug                  - addiction, prime drain hp and mana, eat ginseng
+moon (use with devil)   - mental afflictions
+cadmus                  - asthma, then slick, prime maladies of the mind
+storm                   - vertigo
+hecate                  - withered limbs
+madness                 - longer focus
+enlighten               - locks them
+unravel                 - finisher
+
+-- Truename
+--------------------------------------------------------------------
 Truename uses enervate + hound to pressure health and mana together to
 attempt to get them down to 40% mana. Hit with cleansaura and use
 abomination to harvest truenames. You can harvest up to 3 truenames via
