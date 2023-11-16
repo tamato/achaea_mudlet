@@ -38,7 +38,7 @@ x The Great Rock
 x Bopalopia*
 x Bog near Ashtan
 x Actar Valley
-- Tasur'ke (avoid sharks until higher levels)
+x Tasur'ke (avoid sharks until higher levels)
 
 
 Levels 30+
@@ -61,7 +61,7 @@ x Forestwatch (avoid bottom half of Forestwatch until higher levels)
 
 Levels 40+
 ------------
-- Ulangi
+x Ulangi
 - Mhojave Desert
 x Genji
 - Polyargos
@@ -94,11 +94,11 @@ x Black Forest (do not attack Treekins)
 
 Levels 60+
 -------------
-- Darkenwood
+x Darkenwood
 - Harae*
-- Southern Vashnars
+x Southern Vashnars
 - Sea Lion Cove*
-- Mysia
+x Mysia
 - Parts of Belladona's Keep*
 - Shala'jen Monastery*
 - Aalen forest (animals - grizzly bears if careful)

@@ -1,4 +1,21 @@
+Instill (Occultism)                 Known: Yes
+-------------------------------------------------------------------------------
+Syntax:            INSTILL <target> WITH <affliction>
+Works against:     Adventurers
+Cooldown:          2.50 seconds of equilibrium
+Resource:          50 mana
+Details:           This ability will allow you to instill your victim's aura with various afflictions. 
 
+You may select from: 
+    Afflicatin  | Cured by
+    -------------------------------------
+    asthma      | eat kelp/aurum
+    clumsiness  | eat kelp
+    healthleech | eat kelp
+    sensitivity | eat kelp
+    slickness   | smoke valerian/realgar or eat bloodroot/magnesium
+    paralysis   | eat bloodroot
+    darkshade   | eat ginseng
 
 
 
@@ -28,8 +45,6 @@ weakens the mind enough to afflict that person with the dreaded curse of
 whispering madness. Once afflicted, your victim will find that attempts
 to focus their mind take far longer to recover from.
 
--------------------------------------------------------------------------------
-
 
 Enlighten (Occultism)                         Known: Yes
 -------------------------------------------------------------------------------
@@ -52,5 +67,4 @@ their insanities permanent until death.
 * This number drops to five if they are suffering from the curse of
 whispering madness.
 
--------------------------------------------------------------------------------
 
