@@ -38,6 +38,11 @@ CALL ENTITIES              : Call your loyal entities to you.
 CALL ENTITIES PASSIVE      : Call your loyal entities to you in passive
 form.
 
+
+DOMINATE <entity>          : Begin to dominate a chaos entity.
+* declare karma / wealth
+* mean neutral GENEROUS
+
 * You may prepend/append SWIFT to a single or list of entities to summon. This summons them with a karma cost instead of an equilibrium cost (for each entity).
 
 Certain entities cannot be summoned in this way: GOLGOTHA, XENOPHAGE, PIRIDON, and ISTRIA. Entities summoned in this way will not attack passively for ten seconds, though may still be commanded to attack actively.

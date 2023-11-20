@@ -78,6 +78,7 @@ it will set him or her shivering, which will regularly cause a loss of
 equilibrium. If you chill a shivering person, you will freeze him or her
 completely. If two of their limbs are broken to the point of needing a
 restoration salve, it will perform this freeze twice in a single cast.
+
 -------------------------------------------------------------------------------
 
 
@@ -89,6 +90,7 @@ Cooldown:          1.00 seconds of equilibrium
 Resource:          20 mana
 Details:
 Using the power of your will, you can seek out the location of anyone's aura.
+
 -------------------------------------------------------------------------------
 
 
@@ -112,6 +114,7 @@ Cooldown:          4.00 seconds of equilibrium
 Resource:          50 mana
 Details:
 Cast a shroud of darkness over a location.
+
 -------------------------------------------------------------------------------
 
 
@@ -161,6 +164,7 @@ Resource:          500 mana
 Details:
 This ability will cause all the chaos entities in your entourage to become cloaked. While cloaked,
 their movement in and out of rooms will not be seen. To remove the cloak, use UNMASK.
+
 -------------------------------------------------------------------------------
 
 
@@ -225,6 +229,7 @@ Resource:          700 mana
 Details:
 You are an Occultist, attuned to the aura of all living beings and able to seek out their lifeforce.
 With this power, you will gain both deathsight and lifevision.
+
 -------------------------------------------------------------------------------
 
 
