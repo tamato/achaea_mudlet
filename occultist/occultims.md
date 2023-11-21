@@ -1,25 +1,63 @@
-paralysis
-- cure deaf/blind with ATTEND, 2.2 seconds, cured by eating
-- INSTILL paralysis, 2.5 seconds, cured by eating
 
-Aeon strat
-- cure deaf/blind with ATTEND, 2.2 seconds, cured by eating
-- INSTILL asthma, 2.5
-- cured by smoking
+afflication     | Gives                 | Whisper   | Enlighten
+---------------------------------------------------------------
+shyness         | Devolve               |           | x
+stupidity       | Moon, Buul,Cadmus,P   | x         | x
+hallucinations  | Moon, Buul,Cadmus,P   | x         | x
+confusion       | Moon, Buul,Cadmus,P   | x         | x
+claustrophobia  | Moon, Buul,Cadmus,P   | x         | x
+agoraphobia     | Moon, Buul,Cadmus,P   | x         | x
+hypersomnia     | Moon, Buul,Cadmus,P   | x         | x
+dementia        |                       |           | x
+epilepsy        | Moon,                 | x         | x
+paranoia        |                       | x         | x
+vertigo         | Danaues               |           | x
+impatience      |                       | x         |
+addiction       | nemesis               | x         | x
+lovers          | lovers                | x         | x
+loneliness      | Moon, Buul,Cadmus,P   | x         | x
+recklessness    | Moon, Buul,Cadmus,P   | x         | x
+masochism       | Moon                  | x         | x
+asthma          | Instill, Cadmus
+clumsiness      | Instill
+healthleech     | Instill,Palpatar, Nemsis,P
+sensitivity     | Instill
+slickness       | Instill,Cadmus*
+paralysis       | Instill, Nin'kh
+darkshade       | Instill
+dizziness       | Eerion
+haemophilia     | Scrag
+ablaze          | Pyridus,P
+nausea          | Palpatar,P
+prone           | Buul,P
+sleep           | Buul,P
+weariness       | Lycantha
+wither          | Hecate
+shiver/cold     | Ague
+anorexia        | Regress,Pyridus,P
 
-Gives, mental   | Ability
----------------------------
-shyness         | Devolve
-stupidity       | Moon, tarot
-masochism       | Moon, tarot
-hallucinations  | Moon, tarot
-confusion       | Moon, tarot
-epilepsy        | Moon, tarot
-claustrophobia  | Moon, tarot
-agoraphobia     | Moon, tarot
+Pyrdius
+- Whisperingmadness becomes recklessness.
+- Manaleech becomes anorexia.
+- Healthleech becomes damage (this does not cure the healthleech).
+Prime - random damage to all, ablaze
 
-hypersomnia     | Moon, tarot
+Nin'kharsag
+- if target has asthma, will paralyse.
+Prime - damage, more if they have healthleech
 
+Nemsis
+Prime - healthleech, if addicted more health and manaleech
+
+Buul
+- gives mental maladies when commanded
+Prime
+- A roar which will cure a target's deafness if such is present, or knock them prone with a stun if it is not.
+- A headbutt which will knock your foe prone.
+- An insidious blast of breath which shall inspire sleep in your enemy.
+
+Cadmus
+- if they have asthma, then give slickness
 
 Abilities in Occultism:
 -------------------------------------------------------------------------------
@@ -177,6 +215,7 @@ Resource:          125 mana
 Details:
 Using the power of your will, you can exert your aura and force your students to attend to their
 studies, curing them of deafness and blindness.
+
 -------------------------------------------------------------------------------
 
 
@@ -192,6 +231,7 @@ the energy from the aura of another, thereby draining another's mental
 energy to add to your own. If your subject is afflicted with manaleech
 or they are frozen, the amount of their mental strength you drain will
 be increased.
+
 -------------------------------------------------------------------------------
 
 
@@ -205,6 +245,7 @@ Details:
 Secrecy is one of the hallmarks of Occultism. In order to guard your writings
 from the uninitiated, you can hide your writings in a cipher. TRANSLATE will
 decipher the text so anyone may read.
+
 -------------------------------------------------------------------------------
 
 
@@ -215,9 +256,8 @@ Works on/against:  Adventurers
 Cooldown:          4.00 seconds of equilibrium
 Resource:          75 mana
 Details:
-Your power over reality and time is such that you can create a small warp in the time field around
-an individual, who will not notice any time pass, though his or her body will suddenly feel the 
-effects.
+Your power over reality and time is such that you can create a small warp in the time field around an individual, who will not notice any time pass, though his or her body will suddenly feel the effects.
+
 -------------------------------------------------------------------------------
 
 
@@ -227,8 +267,7 @@ Syntax:            ASTRALVISION
 Cooldown:          4.00 seconds of equilibrium
 Resource:          700 mana
 Details:
-You are an Occultist, attuned to the aura of all living beings and able to seek out their lifeforce.
-With this power, you will gain both deathsight and lifevision.
+You are an Occultist, attuned to the aura of all living beings and able to seek out their lifeforce. With this power, you will gain both deathsight and lifevision.
 
 -------------------------------------------------------------------------------
 
@@ -247,6 +286,7 @@ proved temporary and ultimately harmless long term.
 
 * This ability will prone your target.
 ** If they're already prone, they'll be afflicted with anorexia.
+
 -------------------------------------------------------------------------------
 
 
@@ -275,6 +315,7 @@ seeing any anomalies and enchantments attached to the auras, or sense
 any presence that protects or affects the aura.
 
 This ability requires equilibrium, but not balance.
+
 -------------------------------------------------------------------------------
 
 
@@ -324,6 +365,7 @@ sublime arts of Occultism. By reaching out with your consciousness, you may find
 these disruptions throughout the Prime Material Plane. Unlike those of lesser, uninitiated minds, 
 you are able to perform this feat from any plane, and even pinpoint those entities loyal 
 specificially to you whether on the Prime Material Plane or otherwise.
+
 -------------------------------------------------------------------------------
 
 
@@ -334,8 +376,8 @@ Works on/against:  Room
 Cooldown:          4.25 seconds of equilibrium
 Resource:          1% karma
 Details:
-You are a master of time itself and can warp the field of time in your location. If there are any
-vibes in your location, one will be randomly dislocated outside of time.
+You are a master of time itself and can warp the field of time in your location. If there are any vibes in your location, one will be randomly dislocated outside of time.
+
 -------------------------------------------------------------------------------
 
 
@@ -352,8 +394,8 @@ portion of physical damage dealt to you to be fed back on the attacker.
 Your mana reserves will be constantly drained as long as your aura is
 distorted. NORMALAURA will return your aura to its natural state.
 
-A distorted aura additionally mitigates some damage from denizens,
-though not from players.
+A distorted aura additionally mitigates some damage from denizens, though not from players.
+
 -------------------------------------------------------------------------------
 
 
@@ -381,6 +423,7 @@ Details:
 This ability will allow you to transfer some of your own karma to another Occultist. It should be
 noted that this is not an even exchange - more karma is lost by you than is gained by the recipient 
 of the transfer.
+
 -------------------------------------------------------------------------------
 
 
@@ -394,6 +437,7 @@ Open a gateway to the Chaos Plane, allowing you to go there and bargain for the 
 Chaos Entities. Once the gate is opened, ENTER GATEWAY to enter the Chaos Plane. Once there, you can 
 either wait the quarter part of an Achaean day (in which case you will be unceremoniously ejected), 
 or you can seek the exit, which is hidden in the Whirlpool of Chaos.
+
 -------------------------------------------------------------------------------
 
 
@@ -444,6 +488,7 @@ This obscure occultic ability allows one to strip away the natural
 defences of a target's aura, exposing them to more invasive assaults.
 
 It requires that the target's mana be 40% or lower to be successful.
+
 -------------------------------------------------------------------------------
 
 
@@ -454,8 +499,7 @@ Works on/against:  Room
 Cooldown:          4.00 seconds of equilibrium
 Resource:          1% karma
 Details:
-You can warp your body so that it sprouts tentacles, which seek out your enemies of their own
-accord, holding them in your location.
+You can warp your body so that it sprouts tentacles, which seek out your enemies of their own accord, holding them in your location.
 
 -------------------------------------------------------------------------------
 
@@ -467,8 +511,7 @@ Works on/against:  Room
 Cooldown:          4.00 seconds of equilibrium
 Resource:          2% karma
 Details:
-Transmuting your karma into pure chaos, you can summon forth the Seven Rays to blast a location,
-hitting everyone in the room except yourself with random rays of chaos.
+Transmuting your karma into pure chaos, you can summon forth the Seven Rays to blast a location, hitting everyone in the room except yourself with random rays of chaos.
 
 -------------------------------------------------------------------------------
 
@@ -484,14 +527,11 @@ upon the lesser forms of warping, though requires a far greater degree
 of finesse. However, it comes with the unique benefit that lesser
 occultic workings(**) may be introduced into the process.
 
-* Does limb damage and a minor amount of health damage. The limb damage
-is increased against a limb that is already broken to requiring a
-mending salve.
+* Does limb damage and a minor amount of health damage. The limb damage is increased against a limb that is already broken to requiring a mending salve.
 ** Lesser works which can be combined are: ague, shrivel, and regress.
+
 -------------------------------------------------------------------------------
 
-
-(Newbie): Firelordlex says, "How can I use my Skills."
 
 Instill (Occultism)                           Known: Yes
 -------------------------------------------------------------------------------
@@ -517,6 +557,7 @@ truename derived by the power of the Imperator(**).
 
 * Does some small amount of health and mana damage.
 ** From the Glaaki ability in domination.
+
 -------------------------------------------------------------------------------
 
 
@@ -578,14 +619,11 @@ Works on/against:  Adventurers
 Cooldown:          4.00 seconds of equilibrium
 Resource:          1% karma
 Details:
-Your occult knowledge has grown to such an extent that you can discern the truename of an
-individual, the name that vibrates to that person's soul, from his or her corpse. TRUENAMES will 
-tell you whose truenames you have and how many times you may utter it. If the truename of a person 
-is uttered in front of him or her, that person will be harmed in body and mind and be inflicted by 
-the Aeon curse. Once uttered, that particular truename will be forgotten.
 
-Due to the mental strain of remembering an individual's truename, you are only able to remember up
-to three for each person, for a total of fifty people.
+Your occult knowledge has grown to such an extent that you can discern the truename of an individual, the name that vibrates to that person's soul, from his or her corpse. TRUENAMES will tell you whose truenames you have and how many times you may utter it. If the truename of a person is uttered in front of him or her, that person will be harmed in body and mind and be inflicted by the Aeon curse. Once uttered, that particular truename will be forgotten.
+
+Due to the mental strain of remembering an individual's truename, you are only able to remember up to three for each person, for a total of fifty people.
+
 -------------------------------------------------------------------------------
 
 
@@ -630,6 +668,7 @@ their insanities permanent until death.
 
 * This number drops to five if they are suffering from the curse of
 whispering madness.
+
 -------------------------------------------------------------------------------
 
 
@@ -640,10 +679,8 @@ Works on/against:  Adventurers
 Cooldown:          5.00 seconds of equilibrium
 Resource:          500 mana
 Details:
-Once you've enlightened the mind of a non-initiate to the mysteries of the Occult, you may draw upon
-the latent energies of Entropy and Discord throughout Creation. Focusing these Chaotic ripples upon 
-your target's already battered psyche, you may completely unravel his mind, slaying him instantly. 
-Slaying an individual in this manner will release a potent karmic aura, buffering your own karma.
+Once you've enlightened the mind of a non-initiate to the mysteries of the Occult, you may draw upon the latent energies of Entropy and Discord throughout Creation. Focusing these Chaotic ripples upon your target's already battered psyche, you may completely unravel his mind, slaying him instantly. Slaying an individual in this manner will release a potent karmic aura, buffering your own karma.
+
 -------------------------------------------------------------------------------
 
 

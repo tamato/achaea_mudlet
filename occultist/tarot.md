@@ -35,9 +35,6 @@ Wheel                Spin the wheel and take your chances.
 Creator              Create an illusion in an adjacent room.
 Justice              Bring justice to the unjust.
 Star                 Strike down a foe with a flaming meteor.
-   -------------------------------------------------------------------------
-                 *** Next ability available in 138 lessons ***
-   -------------------------------------------------------------------------
 Aeon                 Curse your foe with the mark of Chronos.
 Lust                 Cause an opponent to hopelessly lust after you.
 Universe             Transport yourself around the land.
@@ -47,15 +44,11 @@ Death                Call down Death itself to claim the soul of your enemy.
 
 Occultist specific Specialisation: 
 Heretic              Raised from Ruin.
-   -------------------------------------------------------------------------
-                 *** Next ability available in 690 lessons ***
-   -------------------------------------------------------------------------
 Ruinate              Two sides of the same coin.
+
 -------------------------------------------------------------------------------
 To gain further information on an ability, AB <ability>.
 
-
-A small grey-brown rattlesnake fades from view.
 
 Inscribing (Tarot)                            Known: Yes
 -------------------------------------------------------------------------------
@@ -64,7 +57,6 @@ Resource:          10 mana
 Details:
 With this ability, you may inscribe blank tarot cards with the various images of the Major Arcana.
 -------------------------------------------------------------------------------
-
 
 Sun (Tarot)                                   Known: Yes
 -------------------------------------------------------------------------------
@@ -112,6 +104,7 @@ Cooldown:          3.00 seconds of balance
 Details:
 The Magician represents the power of magic and the power of the mind. This card will replenish the
 mana of the adventurer it is thrown at.
+
 -------------------------------------------------------------------------------
 
 
@@ -123,6 +116,7 @@ Cooldown:          3.00 seconds of balance
 Details:
 The Priestess represents benevolent healing. Flinging this card at an adventurer will heal some of
 his health.
+
 -------------------------------------------------------------------------------
 
 
@@ -138,6 +132,7 @@ existence. You must wait a time(*) before the Fool will attend you
 again.
 
 * 35 second cooldown.
+
 -------------------------------------------------------------------------------
 
 
@@ -154,6 +149,7 @@ The Chariot will create an infernal chariot upon which you may ride. It has the 
 BOARD CHARIOT will board your chariot. SPUR CHARIOT SKYWARDS will drive it up to the sky. LAND will 
 bring you back down again. While in the Chariot, you may move about using the usual commands. Be 
 warned: flinging cards at the ground while flying is a useless endeavour.
+
 -------------------------------------------------------------------------------
 
 
@@ -171,6 +167,7 @@ The Hermit is a solitary person. When you activate the hermit card, it will reme
 which you activated it. Then, when you fling it, you will be transported to that location, provided 
 there are no adventurers in that location at the time. SNIFF HERMIT will tell you the name of the 
 location at which the hermit was activated.
+
 -------------------------------------------------------------------------------
 
 
@@ -181,11 +178,10 @@ Syntax:            FLING EMPRESS AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
-With this ability, you may summon someone from anywhere within the local area, provided you are on
-his or her allies list. If you have forced yourself onto that list via the Lust tarot, then you will 
-be able to summon that person from anywhere on the continent.
+With this ability, you may summon someone from anywhere within the local area, provided you are on his or her allies list. If you have forced yourself onto that list via the Lust tarot, then you will be able to summon that person from anywhere on the continent.
 
 You may also SNIFF a card inscribed with this image to determine if you have someone lusted.
+
 -------------------------------------------------------------------------------
 
 Lovers (Tarot)                                Known: Yes
@@ -194,8 +190,8 @@ Syntax:            FLING LOVERS AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
-The Lovers tarot will inspire your target to fall deeply in love with you. While in love with you,
-he or she will be generally unwilling to cause you harm.
+The Lovers tarot will inspire your target to fall deeply in love with you. While in love with you, he or she will be generally unwilling to cause you harm.
+
 -------------------------------------------------------------------------------
 
 
@@ -206,6 +202,7 @@ Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
 The Hangedman will entangle your foe in a mass of ropes.
+
 -------------------------------------------------------------------------------
 
 
@@ -217,6 +214,7 @@ Cooldown:          3.00 seconds of balance
 Details:
 The Tower card will cause a crumbling tower to appear in your location, which will then collapse,
 making it difficult to leave via some of the exits.
+
 -------------------------------------------------------------------------------
 
 
@@ -226,11 +224,10 @@ Syntax:            FLING WHEEL AT GROUND
 Works on/against:  Room
 Cooldown:          3.00 seconds of balance
 Details:
-The Wheel of Fortune is mysterious and represents luck, neither good nor bad. Sometimes it will
-bring good things, sometimes bad. The effects of this card are permanent, except those affecting 
-adventurer statistics.
+The Wheel of Fortune is mysterious and represents luck, neither good nor bad. Sometimes it will bring good things, sometimes bad. The effects of this card are permanent, except those affecting adventurer statistics.
 
 Use of this card which affects anyone unwillingly could result in very serious repercussions.
+
 -------------------------------------------------------------------------------
 
 
@@ -240,9 +237,8 @@ Syntax:            FLING CREATOR <direction> [LETHAL] <illusion text>
 Works on/against:  Room
 Cooldown:          3.00 seconds of balance
 Details:
-This Tarot card will allow you to create an illusion of your choosing in an adjacent location. You
-may embed a single newline by including the characters \n at the appropriate spot. For limitations 
-and restrictions, please refer to HELP ILLUSIONS.
+This Tarot card will allow you to create an illusion of your choosing in an adjacent location. You may embed a single newline by including the characters \n at the appropriate spot. For limitations and restrictions, please refer to HELP ILLUSIONS.
+
 -------------------------------------------------------------------------------
 
 
@@ -253,6 +249,7 @@ Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
 The Justice tarot will bring the wrath of Miramar, the Even-Handed, down upon your foe.
+
 -------------------------------------------------------------------------------
 
 
@@ -265,6 +262,7 @@ Details:
 The Star tarot will bring down a flaming meteor upon your unlucky foe's
 head. Your foe must be within three rooms of your line of sight and both
 you and he must be outdoors.
+
 -------------------------------------------------------------------------------
 
 
@@ -274,8 +272,8 @@ Syntax:            FLING AEON AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.70 seconds of balance
 Details:
-The Aeon tarot will give the curse of Chronos the Eternal to an adventurer, slowing his passage
-through time.
+The Aeon tarot will give the curse of Chronos the Eternal to an adventurer, slowing his passage through time.
+
 -------------------------------------------------------------------------------
 
 
@@ -285,8 +283,8 @@ Syntax:            FLING LUST AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
-With this Tarot, you may instill a lust for you in another adventurer, so that he or she will
-consider you an ally.
+With this Tarot, you may instill a lust for you in another adventurer, so that he or she will consider you an ally.
+
 -------------------------------------------------------------------------------
 
 
@@ -297,9 +295,7 @@ Syntax:            FLING UNIVERSE AT GROUND
                    TOUCH <location>
 Cooldown:          3.00 seconds of balance
 Details:
-The Universe tarot will allow you to quickly travel throughout Achaea,
-with instant transport to a number of locations on the mainland of
-Sapience and continent of Meropis.
+The Universe tarot will allow you to quickly travel throughout Achaea, with instant transport to a number of locations on the mainland of Sapience and continent of Meropis.
 
 -------------------------------------------------------------------------------
 

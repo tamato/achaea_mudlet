@@ -1,14 +1,100 @@
 MARDUK commands...
     to order, does it use my eq?
+        seem's to force the play to do the actino immediately, then there is a cool down on the soulmaster
+        how long is the delay to do another command?
     force them to use generostiy, use up eqbal
     force them to use focus, use up eqbal
     force them to use compose, use up eqbal
-    tell themt to sit... if they tell themselves to sit it might stick?
     clear out their command queue?
+        
     fire/mushroom sigils
+    fire sigils - no damage, just can't touch the item.
 
-    tell myself to sit
-    tell myself to sleep, do I get up?
+
+Possible ways to defeat someone
+--------------------------------
+Death Tarot
+Enlighten
+Truename
+
+
+Play...
+--------------------------------------------------------------
+Attend - 2.2 b, so that the can hear me(eat) (hear AND sight)
+Buul - roar, 2.5 eb, mind affliction(eat)
+
+nemesis - 2.2 eb, addiction(eat)
+Unnamable - 3.2 e, (vairous maladies)
+
+Danaeus - 2.2 eb
+whispering - 2.3 e (eat lobelia/argentum)
+
+
+
+tarot Aeon - 3.7 b, (smoke)
+
+Instill - 2.5 e, give asthma(eat)
+Cadums - 2.2 eb, if they have asthma(eat), give slickness(smoke)
+
+Cadums - 2.2 eb, give asthma(eat)
+
+hecate - wither(apply)
+And then - freezing(apply)
+
+hecate - wither(apply)
+And then - freezing(apply)
+
+Steps to give manaleech... maybe.
+--------------------------------
+nemesis
+rixil
+
+
+Ways to make them prone
+---------------------------
+Regress
+Prones them, if already down, then anorexia.
+
+buul
+2/3 chance if primed
+
+
+Paralysis
+--------------------------------
+- cure deaf/blind with ATTEND, 2.2 seconds, cured/fixed by eating
+- Buul random mind affliction(eat)
+
+- INSTILL paralysis, 2.5 seconds(eat)
+
+
+Death Tarot
+--------------------------------
+just need to rub the card on them 7 times
+need tatics to stay alive
+3.2 seconds of eq == 7 * 3.2 = 22.4 seconds
+time it with weapon rebounding
+hermit out?
+
+* Death rubs are increased for each of: stun, aeon, entangled,
+shivering, or paralysed.
+stun = BUUL primebonded, sometimes will stun
+    how long for each proc?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Addiction - consume all their herbs, then to Aeon
@@ -87,17 +173,4 @@ REGRESS <target>
 regress - 2.5 eq, no mana?
 REGRESS <target>
 
-
-Death Tarot
---------------------------------
-just need to rub the card on them 7 times
-need tatics to stay alive
-3.2 seconds of eq == 7 * 3.2 = 22.4 seconds
-time it with weapon rebounding
-hermit out?
-
-* Death rubs are increased for each of: stun, aeon, entangled,
-shivering, or paralysed.
-stun = BUUL primebonded, sometimes will stun
-    how long for each proc?
 

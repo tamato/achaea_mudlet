@@ -68,9 +68,6 @@ Nemesis              Nemesis.
 Buul                 Buul, the Chaos Chirurgeon.
 Cadmus               Cadmus, the cursed shaman.
 Piridon              Piridon, the shapechanger.
-   -------------------------------------------------------------------------
-                 *** Next ability available in 109 lessons ***
-   -------------------------------------------------------------------------
 Danaeus              Danaeus, the dark savant.
 Xenophage            Xenophage, keeper of the chaos gate.
 Lycantha             Lycantha, Keeper of the Hounds.
@@ -78,6 +75,7 @@ Tarotlink            Command your doppleganger to throw tarot cards.
 Hecate               Hecate, Mother of the Crones.
 Covenant             You are known to the court.
 Glaaki               Glaaki, the Eldritch Ascendant
+
 -------------------------------------------------------------------------------
 To gain further information on an ability, AB <ability>.
 
@@ -110,6 +108,7 @@ victim's next attempt to focus their mind.
 When primebonded, the sycophant shall drain the mana of your enemies;
 this mana is increased if they are shivering, and increased even more so
 if they are frozen.
+
 -------------------------------------------------------------------------------
 
 
@@ -128,6 +127,7 @@ you will recover faster from this ability.
 When primebonded, the gremlin shall race around the legs of your target,
 inspiring dizziness in them; if they are already dizzy, it shall knock
 them off balance.
+
 -------------------------------------------------------------------------------
 
 
@@ -141,7 +141,6 @@ Arctar, the Defender. Enigmatic, skilful, Guardian of the Chaos Throne.
 When you summon him, he will send to you a chaos orb. This orb may then
 be COMMANDed to explode, granting you a temporary defence against that
 which would harm you.
-
 
 -------------------------------------------------------------------------------
 
@@ -198,6 +197,7 @@ Though a mere shadow of his former glory, Golgotha will pact with
 occultists. He will grant a protection from attempts to magically banish
 your chaotic servants back to the Chaos Plane, though it will only aid
 you when you are in the same location as the targeted entities.
+
 -------------------------------------------------------------------------------
 
 
@@ -304,6 +304,7 @@ they may be severed from anywhere.
 * Entities benefitting from a prime bond will act passively in addition
 to retaining their active effects. See the ability files for relevant
 details for each entity.
+
 -------------------------------------------------------------------------------
 
 
@@ -358,10 +359,10 @@ The plague lord will send to you a bubonis, which when commanded, will
 inflict such torment upon your foe with a single touch that their lungs
 will fill with fluid(*). If they are already suffering in such a way,
 they shall be struck down with slickness.
+* Gives asthma.
 
 When primebonded, the bubonis shall act of its own will, inflicting your
 foe with maladies of the mind.
-* Gives asthma.
 
 -------------------------------------------------------------------------------
 
