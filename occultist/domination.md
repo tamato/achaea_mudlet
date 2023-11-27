@@ -31,8 +31,9 @@ DOMINATE <entity>          : Begin to dominate a chaos entity.
 ABORT                      : Abort negotiations with the entity.
 PACTS                      : See what pacts you have with entities.
 PACT CANCEL <entity>       : Cancel a pact with an entity.
-SUMMON <entity>            : Summon an entity or one of its servants. (*)
+SUMMON <entity>            : Summon an entity or one of its servants. (*), 3 eq
 SUMMON <list of entities>  : Summon multiple entities at once. (*)
+                           : 3 second EQ for each
 BANISH <entity>            : Banish an entity back to the plane of Chaos.
 CALL ENTITIES              : Call your loyal entities to you.
 CALL ENTITIES PASSIVE      : Call your loyal entities to you in passive
@@ -274,7 +275,8 @@ Marduk (Domination)                           Known: Yes
 Syntax:            ORDER SOULMASTER POSSESS <target>
                    ORDER <target> <command>
 Works on/against:  Adventurers
-Cooldown:          3.00 seconds of equilibrium
+Cooldown:          3.00 seconds of equilibrium (3 sec to summon)
+
 Details:
 Marduk will send to you a soulmaster entity. This entity may be ordered
 to POSSESS an adventurer. When it does, it will take a few seconds to

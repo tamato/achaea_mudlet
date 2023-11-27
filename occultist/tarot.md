@@ -399,8 +399,70 @@ So few truly understand the duality inherent in the nature of Chaos.
 With a minor application of your recondite knowledge, twist one of the
 major arcana just so to display its opposite face.
 
-Currently, the lovers, justice, creator, and wheel cards may be
+Currently, the 
+    lovers  - manaleech
+    justice - tyranny (converst afflictsion to broken limbs, APPLY) from EAT to APPLY
+    creator - death, but quicker and with restrictions
+    wheel   - "chaosrays"
+
+    cards may be
 ruinated. See their ability files for details.
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Syntax:            FLING CREATOR <direction> [LETHAL] <illusion text>
+Works on/against:  Room
+Cooldown:          3.00 seconds of balance
+Details:
+This Tarot card will allow you to create an illusion of your choosing in an adjacent location. You
+may embed a single newline by including the characters \n at the appropriate spot. For limitations 
+and restrictions, please refer to HELP ILLUSIONS.
+
+When ruinated, the Creator becomes the Destroyer. This manifestation of
+destruction requires a fully charged Death card to invoke, and that
+Death card will also be consumed in the process. You may only fling the
+Destroyer at a target who is both blacked out and shivering; but when
+you do, they will be slain shortly there after(*).
+
+* This is a channel similar to death tarot, but resolves faster when the
+additional conditions are met.
+
+-------------------------------------------------------------------------------
+
+O 100h 0rage 89m 100e 99w[ex] :-ab tarot justice
+Justice (Tarot)                               Known: Yes
+-------------------------------------------------------------------------------
+Syntax:            FLING JUSTICE AT <target>
+Works on/against:  Adventurers
+Cooldown:          3.00 seconds of balance
+Details:
+The Justice tarot will bring the wrath of Miramar, the Even-Handed, down upon your foe.
+
+When ruinated, the justice becomes tyranny. It will convert the following afflictions into broken limbs: 
+    paralysis, 
+    sensitivity, 
+    healthleech, 
+    haemophilia, 
+    weariness, 
+    asthma, 
+    clumsiness. 
+
+If five or more afflictions are converted, the target is frozen; this ability will also prone your target if both of their legs are broken when it resolves.
+
+-------------------------------------------------------------------------------
+
+Lovers (Tarot)                                Known: Yes
+-------------------------------------------------------------------------------
+Syntax:            FLING LOVERS AT <target>
+Works on/against:  Adventurers
+Cooldown:          3.00 seconds of balance
+Details:
+The Lovers tarot will inspire your target to fall deeply in love with you. While in love with you,
+he or she will be generally unwilling to cause you harm.
+
+When ruinated, the lovers become the betrayer. It shall inflict
+manaleech when flung.
 
 -------------------------------------------------------------------------------
 

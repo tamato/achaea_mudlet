@@ -10,6 +10,8 @@ MARDUK commands...
     fire/mushroom sigils
     fire sigils - no damage, just can't touch the item.
 
+    
+
 
 Possible ways to defeat someone
 --------------------------------
@@ -26,23 +28,21 @@ Buul - roar, 2.5 eb, mind affliction(eat)
 nemesis - 2.2 eb, addiction(eat)
 Unnamable - 3.2 e, (vairous maladies)
 
-Danaeus - 2.2 eb
+Danaeus - 2.2 eb, veritgo(eat Lobelia)
 whispering - 2.3 e (eat lobelia/argentum)
 
-
-
-tarot Aeon - 3.7 b, (smoke)
 
 Instill - 2.5 e, give asthma(eat)
 Cadums - 2.2 eb, if they have asthma(eat), give slickness(smoke)
 
-Cadums - 2.2 eb, give asthma(eat)
+hecate - 3 eb, wither(apply)
+Shrivel -2 e, wither(apply)
 
-hecate - wither(apply)
-And then - freezing(apply)
+ague - 2.2 e, freezing(apply)
 
-hecate - wither(apply)
-And then - freezing(apply)
+tarot Aeon - 3.7 b, (smoke)
+
+
 
 Steps to give manaleech... maybe.
 --------------------------------

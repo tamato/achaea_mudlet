@@ -1,6 +1,10 @@
+def list in gui
+players to number for easy target
+
+tomeofmuses
+
 
 OFFER CORPSES
-ELIST SUMMARY
 CALENDAR
 QUEUE
     CONFIG USEQUEUEING <ON|OFF>             - Enable or disable the queueing

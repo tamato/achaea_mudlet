@@ -513,6 +513,33 @@ Resource:          2% karma
 Details:
 Transmuting your karma into pure chaos, you can summon forth the Seven Rays to blast a location, hitting everyone in the room except yourself with random rays of chaos.
 
+------
+Tapping into your stores of karma, you transmute a small amount into pure chaos. Seven rays of
+different coloured light spring out from your outstretched hands, irradiating the location with 
+blinding strobes.
+Ulvin is hit by a violet, indigo, and orange ray.
+Horror overcomes Ulvin's face as his body stiffens into paralysis.
+Davok is hit by a blue and red ray.
+Kaelthas is hit by a violet and indigo ray.
+
+Ulvin lets out a loud, long "MOOOOOOOOOOO!"
+Davok takes a drink from a soaring eagle vial.
+Kaelthas makes a strangled meowing noise and quickly shuts up, blushing.
+
+
+Ulvin eats a magnesium chip.
+A look of extreme focus crosses the face of Ulvin.
+Ulvin touches a tree of life tattoo.
+Kaelthas eats a plumbum flake.
+
+
+Ulvin suddenly seems less dexterous, his reactions becoming noticeably slower.
+
+Ulvin takes a drink from a vile vial.
+Kaelthas suddenly seems less dexterous, his reactions becoming noticeably slower.
+
+Kaelthas takes a drink from a fairy-shaped amber vial.
+
 -------------------------------------------------------------------------------
 
 
