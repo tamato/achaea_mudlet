@@ -46,70 +46,59 @@ Triggers
 -------------------------------
 on each fous - use Rixil,the next focus will take longer
 on each tree - use nin'kh, makes tree take longer
+-- <x> touches a tree of life tattoo.
 
 Stopping someone
 -------------------------------
-- paralysis
-instill astham
-command nin'kh (slow tree)
+- paralysis (magnes/bloodroot)
 
-hanged man
-lycantha (EAT)
+[1nin]
+instill astham (kelp/aurum) -- first is to trigger eating and maybe tree
+command nin'kh (slow tree and paralysis (magnesium/bloodroot)
+Create trigger for "x eats a magnesium chip.|Bulwer eats a bloodroot leaf."
+Create trigger for "x eats an aurum flake.|Nezaya eats a piece of kelp."
 
-hecate, interlink (limbs)
-then ague, shiver to freeze
+[1nin]
+instill astham (kelp/aurum) -- second is to deffinately trigger tree
+command nin'kh (slow tree and paralysis (magnesium/bloodroot)
 
-lovers (won't attack me), EAT
-lycantha, EAT
-
-- 
-instill paralysis
-command nin'kh (slow tree), need to watch for when they use Tree.
-
-- 
-lycantha, EAT
-pause, instill paralysis EAT(may use tree)
-
-- 
-command nin'kh (slow tree), need to watch for when they use Tree.
-instill paralysis (only got 2 seconds)
+[1am]
+command nin'kh (slow tree) (if astham is still in effect, paralysis again)
+hanged man -- to screw with them? They can't attack back at least. right?
 
 
--  
-instill paralysis
-fighter: palpatar, healthleech(eat) & nausea(eat)
+Slow prep
+-------------------------------
+Use "Stopping someone" to start it up.
 
--
-lycantha, EAT
-instill paralysis
+if just one person, chaos rays
 
-- 
-hanged man (maybe weariness slows their attempts?)
- - if using any tarot, devilmark,devil should be ready too
+[1bul]
+attend -- need triggers, do they cure sight or deafness first
+buul
+
+[1...]
+unnameable speak/vision dependant on the above
+rixil - longer focus time
+
+... watch if they don't cure vision or hearing, if they don't then...
+unnameable speak/vision dependant on the above
 cadmus
-
--
-hanged man (maybe weariness slows their attempts?)
 cadmus
+readaura
 
--- if 1 target
-chaos rays
+tarot moon (with devil)
 cadmus
+readaura
 
-
-- Damage: palpatar, healthleech primed nausea
-  - Conditional, if someone else is causing bleed damage: 
-    - Scarg (haemophilia, primed then more bleeding)
- 
-puase, instill paralysis
-
-
-hanged man
-lycantha (EAT)
 
 
 Play...
 --------------------------------------------------------------
+
+ruinate lovers (manaleech)              - does writhe stop either of these?
+pyradius manaleech - anaroxia(apply)        
+
 a
 ---
 hecate - 3 eb, wither right arm (apply)

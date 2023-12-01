@@ -255,6 +255,10 @@ When primebonded, the slime shall periodically damage your target; the
 amount of damage inflicted is increased if they are suffering from
 healthleech.
 
+-- when slime is done
+Irimon finally rids himself of the slime covering him
+kaelthas ate - magnesium then aurum
+
 -------------------------------------------------------------------------------
 
 
