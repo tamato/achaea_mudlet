@@ -145,6 +145,10 @@ enervate their mana away. Once it is low enough (40%) you can use
 CLEANSEAURA, followed by Glaaki's abomination to steal their truenames
 (up to 3 maximum) which you can then use for a great burst of damage.
 
+-------------------------
+
+-------------------------
+
 Beyond these methods, it is up to you to delve further into the complex
 Occult arts. There are numerous in Ashtan well-versed who you can seek
 out.

@@ -17,11 +17,117 @@ Possible ways to defeat someone
 --------------------------------
 Death Tarot
 Enlighten
+- could use this to test how they heal and what their priorities are.
+
 Truename
+- use glaaki's minions to get 3 truenames.
+ - need to use cleanseaura ( mana must be < 40% )
+  - lower mana (readaura .5 e) to check
+   - Draining mana
+    - enervate (4 e) if manaleech, then more.
+    - runiated lovers, manaleech
+    - if they have manaleech, then gets more
+    - if frozen then more
+    - if primed, Rixil drains. More if shivering and frozen
+    - if primed, Nemesis (humbug) and need to be addicted
+- utter truename (4 e)
+
+Prep for battle
+--------------------------------
+distortaura
+astralvision
+devilmark
+devil tarot
+summon buul, hecate, cadmus(asthma/slick), glaaki, golgotha, rixil(mana drain)
+summon lycantha(weariness), nin'kh (slow tree, if asthma then paralysis, also damage)
+
+
+Triggers
+-------------------------------
+on each fous - use Rixil,the next focus will take longer
+on each tree - use nin'kh, makes tree take longer
+
+Stopping someone
+-------------------------------
+- paralysis
+instill astham
+command nin'kh (slow tree)
+
+hanged man
+lycantha (EAT)
+
+hecate, interlink (limbs)
+then ague, shiver to freeze
+
+lovers (won't attack me), EAT
+lycantha, EAT
+
+- 
+instill paralysis
+command nin'kh (slow tree), need to watch for when they use Tree.
+
+- 
+lycantha, EAT
+pause, instill paralysis EAT(may use tree)
+
+- 
+command nin'kh (slow tree), need to watch for when they use Tree.
+instill paralysis (only got 2 seconds)
+
+
+-  
+instill paralysis
+fighter: palpatar, healthleech(eat) & nausea(eat)
+
+-
+lycantha, EAT
+instill paralysis
+
+- 
+hanged man (maybe weariness slows their attempts?)
+ - if using any tarot, devilmark,devil should be ready too
+cadmus
+
+-
+hanged man (maybe weariness slows their attempts?)
+cadmus
+
+-- if 1 target
+chaos rays
+cadmus
+
+
+- Damage: palpatar, healthleech primed nausea
+  - Conditional, if someone else is causing bleed damage: 
+    - Scarg (haemophilia, primed then more bleeding)
+ 
+puase, instill paralysis
+
+
+hanged man
+lycantha (EAT)
 
 
 Play...
 --------------------------------------------------------------
+a
+---
+hecate - 3 eb, wither right arm (apply)
+interlink - ?e, bodywarp <tar> <right arm> <shrivel>
+
+shrivel legs, shrivel | hecate
+
+regress - 2.5 e, knock prone
+buul - 2.5 eb, some mental aff (if not deaf could stun)
+
+regress - 2.5 e, gives anorxia(if still prone)
+
+---
+
+
+
+
+
 Attend - 2.2 b, so that the can hear me(eat) (hear AND sight)
 Buul - roar, 2.5 eb, mind affliction(eat)
 
@@ -79,98 +185,5 @@ hermit out?
 shivering, or paralysed.
 stun = BUUL primebonded, sometimes will stun
     how long for each proc?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Addiction - consume all their herbs, then to Aeon
---------------------------------------
-cured with eating ginsing
-
-# find out what they use
-Marduk - 3 eq
-ORDER SOULMASTER POSSESS <target>
-
-nemesis - 2.2 ent, 50 mana
-COMMAND HUMBUG AT <target>
-primed - health and mana too
-# HIGHLIGHT used herb/chem
-
-# now use that up (ginseng or ferrum)
-Marduk - 3 eq
-ORDER <target> "outr all <cure>"
-
-nemesis - 2.2 ent, 50 mana
-COMMAND HUMBUG AT <target>
-primed - health and mana too
-
-# They may have both...
-
-# stick it
-nemesis - 2.2 ent, 50 mana
-COMMAND HUMBUG AT <target>
-primed - health and mana too
-# HIGHLIGHT used herb/chem
-# timer if they don't heal to show it is stuck?
-## ---- ent is used, need to get a eq in here.
-
-# use up kelp for asthma
-# give asthma
-# give aeon
-# use up goldeneal, plumbum
-# stack the mental maladies...
-
-
-
-Shrivel limbs - uses APPLY
-------------------------------
-
-# Arms, to prevent using salves
-hecate - 3 second entity, 50 mana
-COMMAND CRONE AT <target> RIGHT ARM
-
-SHRIVEL - 1 second eq, 50 mana
-SHRIVEL LEFT ARM <target>
-
-# take advantage of broken limbs.
-# If 2 limbs needs a restoration salve, then 2 levels are used.
-# might be a low priority item, good to gt a stack going.
-Ague - 2.2 eq, 100 mana
-Ague <target>
-
-# if they are still cold
-# 
-Rixil - 2 entity, 50
-COMMAND SYCOPHANT AT <target>
-
-# Legs
-# give anorexia
-hecate - 3 second entity, 50 mana
-COMMAND CRONE AT <target> RIGHT leg
-
-SHRIVEL - 1 second eq, 50 mana
-SHRIVEL LEFT leg <target>
-
-# Must be done twice, make the prone
-# then will give anorexia
-regress - 2.5 eq, no mana?
-REGRESS <target>
-
-regress - 2.5 eq, no mana?
-REGRESS <target>
 
 

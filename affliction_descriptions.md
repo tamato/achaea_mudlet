@@ -299,3 +299,18 @@ Enlighten:          No
 Tzantza:            No
 Accentato:          No
 CadmusCurse:        Yes
+
+Affliction:         Stupidity
+Diagnose:           unnaturally stupid.
+Afflicted msg:      Hmmmm. Why must everything be so difficult to figure out?
+Cured msg:          You aren't such a complete idiot anymore.
+Cure(s):            Eat Goldenseal / Eat Plumbum
+                    Focus Mind
+Description:        Stupidity makes it harder to do exactly what you want to do. You may fumble some actions.
+WhisperingMadness:  Yes
+Enlighten:          Yes
+Tzantza:            Yes
+Accentato:          Yes
+CadmusCurse:        No
+
+

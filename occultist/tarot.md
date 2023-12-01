@@ -405,8 +405,7 @@ Currently, the
     creator - death, but quicker and with restrictions
     wheel   - "chaosrays"
 
-    cards may be
-ruinated. See their ability files for details.
+cards may be ruinated. See their ability files for details.
 
 -------------------------------------------------------------------------------
 
