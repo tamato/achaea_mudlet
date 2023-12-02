@@ -278,8 +278,20 @@ Marduk (Domination)                           Known: Yes
 -------------------------------------------------------------------------------
 Syntax:            ORDER SOULMASTER POSSESS <target>
                    ORDER <target> <command>
+                   - eat time with eat commands?
+                   - force generosity
+                   - apply a salve
+                   - smoke a pipe
+                   - touch a tattoo
+                   - throw a pipe
+                   - do they have a heal command, to heal me with?
+
 Works on/against:  Adventurers
-Cooldown:          3.00 seconds of equilibrium (3 sec to summon)
+Cooldown:          3.00 seconds of equilibrium 
+                    (3 sec to summon)
+                    (3.00 to possess?)
+                    (then it has its own cooldown)
+                
 
 Details:
 Marduk will send to you a soulmaster entity. This entity may be ordered

@@ -10,11 +10,8 @@ when you recover balance.
 
 Automatic Queueing
 ------------------
-When using automatic queueing, there are two types of queues, one for physical balance and one for
-mental equilibrium. Items are added to this queue when they're attempted while off their respected 
-balance. For example: You're hunting rats with your sword, and JAB RAT to attack it. If you 
-attempted to JAB RAT while still off balance from the first attack, it'll be added to the queue and 
-will run automatically when you regain balance next.
+When using automatic queueing, there are two types of queues, one for physical balance and one for mental equilibrium. Items are added to this queue when they're attempted while off their respected balance. 
+For example: You're hunting rats with your sword, and JAB RAT to attack it. If you attempted to JAB RAT while still off balance from the first attack, it'll be added to the queue and will run automatically when you regain balance next.
 
 Queue-related commands:
 
@@ -58,11 +55,9 @@ QUEUE CLEAR <queue>
 
 Queue Limits and Specifics
 --------------------------
-Queued commands are limited to a maximum of ten across ALL QUEUE TYPES. This limit is not per-queue.
-INSERTing or PREPENDing queue commands past your queue limit will remove the last queued command 
-across all queues. ADDCLEAR will remove queued commands of the specified queue type, and if there is 
-still not space in the queue, the command will fail. ADDCLEARFULL will remove all queued commands 
-and then insert the new command at the beginning of your queue.
+Queued commands are limited to a maximum of ten across ALL QUEUE TYPES. This limit is not per-queue. 
+INSERTing or PREPENDing queue commands past your queue limit will remove the last queued command across all queues. 
+ADDCLEAR will remove queued commands of the specified queue type, and if there is still not space in the queue, the command will fail. ADDCLEARFULL will remove all queued commands and then insert the new command at the beginning of your queue.
 
 
 Simple Queue Types
@@ -82,8 +77,7 @@ Full        = Freestand, plus class balance
 
 Custom Queue Types
 ------------------
-In addition to the simple queue types above, you may use fully custom queue types, mixing and
-matching the following balances and statuses as you see fit.
+In addition to the simple queue types above, you may use fully custom queue types, mixing and matching the following balances and statuses as you see fit.
 
 e = Have equilibrium
 b = Have balance
@@ -93,6 +87,8 @@ p = Have paralysis
 w = Are bound
 u = Is upright (not prone)
 t = Is stunned
+
+e!p!wu!t    = eq, not para, not webbed, upright, not stunned
 
 To mix and match these queues, you can use any combination of these flags, or their inverse by
 marking them with an exclamation point. For example:

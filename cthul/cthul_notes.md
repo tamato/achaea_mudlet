@@ -1,15 +1,11 @@
 def list in gui
-players to number for easy target
 
-tomeofmuses
-
-
-OFFER CORPSES
-CALENDAR
-QUEUE
-    CONFIG USEQUEUEING <ON|OFF>             - Enable or disable the queueing
-                                              functionality.
-    CONFIG SHOWQUEUEALERTS <ON|OFF>         - Enable or disable the system messages
+things to tie in with 
+    moon tarot
+    cleanseaura - glaaki
+    tower
+    eldrichtmists
+    ruinate lovers (manaleech)
 
 command separators
 

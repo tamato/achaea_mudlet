@@ -192,6 +192,8 @@ Cooldown:          3.00 seconds of balance
 Details:
 The Lovers tarot will inspire your target to fall deeply in love with you. While in love with you, he or she will be generally unwilling to cause you harm.
 
+When ruinated, the lovers become the betrayer. It shall inflict manaleech when flung.
+
 -------------------------------------------------------------------------------
 
 
@@ -448,20 +450,6 @@ When ruinated, the justice becomes tyranny. It will convert the following afflic
     clumsiness. 
 
 If five or more afflictions are converted, the target is frozen; this ability will also prone your target if both of their legs are broken when it resolves.
-
--------------------------------------------------------------------------------
-
-Lovers (Tarot)                                Known: Yes
--------------------------------------------------------------------------------
-Syntax:            FLING LOVERS AT <target>
-Works on/against:  Adventurers
-Cooldown:          3.00 seconds of balance
-Details:
-The Lovers tarot will inspire your target to fall deeply in love with you. While in love with you,
-he or she will be generally unwilling to cause you harm.
-
-When ruinated, the lovers become the betrayer. It shall inflict
-manaleech when flung.
 
 -------------------------------------------------------------------------------
 
