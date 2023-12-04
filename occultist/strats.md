@@ -1,23 +1,20 @@
+tree end   12.20.38.195
+tree start 12.20.18.129
+-- 20 seconds. What is it after slime?
+
+
 MARDUK commands...
     to order, does it use my eq?
         seem's to force the play to do the actino immediately, then there is a cool down on the soulmaster
         how long is the delay to do another command?
     force them to use generostiy, use up eqbal
-    force them to use focus, use up eqbal
     force them to use compose, use up eqbal
     clear out their command queue?
         
-    fire/mushroom sigils
-    fire sigils - no damage, just can't touch the item.
-
-
-herb, herb - 2
-
-
-
 Possible ways to defeat someone
 --------------------------------
 Death Tarot
+
 Enlighten
 - could use this to test how they heal and what their priorities are.
 
@@ -27,11 +24,11 @@ Truename
   - lower mana (readaura .5 e) to check
    - Draining mana
     - enervate (4 e) if manaleech, then more.
-    - runiated lovers, manaleech
-    - if they have manaleech, then gets more
-    - if frozen then more
-    - if primed, Rixil drains. More if shivering and frozen
-    - if primed, Nemesis (humbug) and need to be addicted
+        - runiated lovers, manaleech
+        - if they have manaleech, then gets more
+        - if frozen then more
+        - if primed, Rixil drains. More if shivering and frozen
+        - if primed, Nemesis (humbug) and need to be addicted
 - utter truename (4 e)
 
 Prep for battle

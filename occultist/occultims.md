@@ -8,9 +8,9 @@ confusion       | Moon, Buul,Cadmus,P   | x         | x
 claustrophobia  | Moon, Buul,Cadmus,P   | x         | x
 agoraphobia     | Moon, Buul,Cadmus,P   | x         | x
 hypersomnia     | Moon, Buul,Cadmus,P   | x         | x
-dementia        |                       |           | x
+dementia        | Unnamable?            |           | x
 epilepsy        | Moon,                 | x         | x
-paranoia        |                       | x         | x
+paranoia        | Unnamable?            | x         | x
 vertigo         | Danaues               |           | x
 impatience      |                       | x         |
 addiction       | nemesis               | x         | x
@@ -517,7 +517,7 @@ Transmuting your karma into pure chaos, you can summon forth the Seven Rays to b
 Tapping into your stores of karma, you transmute a small amount into pure chaos. Seven rays of
 different coloured light spring out from your outstretched hands, irradiating the location with blinding strobes.
 
-violet - Aeon?
+violet - Aeon
 Orange - paralysis
 indigo - stupidity?
 blue - 
@@ -525,21 +525,21 @@ red -
 
 Ulvin is hit by a violet, indigo, and orange ray.
 - Horror overcomes Ulvin's face as his body stiffens into paralysis.
+- cured: Ulvin eats a magnesium chip.
 - Ulvin lets out a loud, long "MOOOOOOOOOOO!"
-- Ulvin eats a magnesium chip.
 - Ulvin touches a tree of life tattoo.
 - Ulvin suddenly seems less dexterous, his reactions becoming noticeably slower.
 - Ulvin takes a drink from a vile vial.
 - A look of extreme focus crosses the face of Ulvin.
 
-
 Davok is hit by a blue and red ray.
 - Davok takes a drink from a soaring eagle vial.
+- Had a shield, probably wasn't affected at all.
 
 Kaelthas is hit by a violet and indigo ray.
-- Kaelthas makes a strangled meowing noise and quickly shuts up, blushing. (shyness)?
+- Kaelthas makes a strangled meowing noise and quickly shuts up, blushing.
 - Kaelthas eats a plumbum flake.
-- Kaelthas suddenly seems less dexterous, his reactions becoming noticeably slower.(aeon)?
+- Kaelthas suddenly seems less dexterous, his reactions becoming noticeably slower.
 - Kaelthas takes a drink from a fairy-shaped amber vial.
 
 -------------------------------------------------------------------------------

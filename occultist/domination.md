@@ -363,8 +363,8 @@ its heads at a target, causing one of the following effects:
 - A roar which will cure a target's deafness if such is present, or
 knock them prone with a stun if it is not.
 - A headbutt which will knock your foe prone.
--k
-An insidious blast of breath which shall inspire sleep in your enemy.
+- An insidious blast of breath which shall inspire sleep in your enemy.
+
 -------------------------------------------------------------------------------
 
 

@@ -9,8 +9,7 @@ curing priority aeon 1 timeloop 1 shadowmadness 1 heartseed 1 paralysis 1 skullf
 Your affliction curing priorities:
 1:  paralysis, aeon, hellsight, stuttering, heartseed, prone, skullfractures, shadowmadness,
 timeloop
-2:  asthma, haemophilia, impatience, sleeping, depression, calcifiedskull, calcifiedtorso, pressure,
-pyramides
+2:  asthma, haemophilia, impatience, sleeping, depression, calcifiedskull, calcifiedtorso, pressure, pyramides
 3:  slickness, anorexia, impaled, wristfractures, retribution, unweavingspirit, rebbies, mycalium
 4:  weariness, darkshade, torntendons, unweavingbody, unweavingmind
 5:  dazed, justice, nausea, scytherus, stupidity, addiction, hypochondria, voyria, crackedribs,
