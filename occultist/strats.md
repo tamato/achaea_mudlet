@@ -48,24 +48,50 @@ on each fous - use Rixil,the next focus will take longer
 on each tree - use nin'kh, makes tree take longer
 -- <x> touches a tree of life tattoo.
 
+they gained deafness - Hawthorn, Calamine
+they gained blindness - Arsenic, Bayberry
+
 Stopping someone
 -------------------------------
 - paralysis (magnes/bloodroot)
 
-[1nin]
+[1st]
 instill astham (kelp/aurum) -- first is to trigger eating and maybe tree
 command nin'kh (slow tree and paralysis (magnesium/bloodroot)
 Create trigger for "x eats a magnesium chip.|Bulwer eats a bloodroot leaf."
 Create trigger for "x eats an aurum flake.|Nezaya eats a piece of kelp."
 
-[1nin]
+[1st]
 instill astham (kelp/aurum) -- second is to deffinately trigger tree
 command nin'kh (slow tree and paralysis (magnesium/bloodroot)
 
-[1am]
+[1am] -- asthma hangedman, keep them paralized.
 command nin'kh (slow tree) (if astham is still in effect, paralysis again)
-hanged man -- to screw with them? They can't attack back at least. right?
+hanged man -- They can't attack back at least. right?
 
+[1mo] -- moon with cadums
+- Got 2 mentals on Satum.(dec 2 10am)
+
+[]
+
+System Message: Logging has been stopped. Log file is /home/ahrimen/.config/mudlet/profiles/Achaea/log/2023-12-02#10-17-51.txt
+
+Eat timer is 1.6 seconds?
+
+-- Attend / Buul
+Focusing your will, you exert your aura at Satum and snap your fingers, forcing him to pay attention
+to you.
+Satum's eyes flicker open and his head snaps up.
+You may command another entity to do your bidding.
+
+You command your chimera to bring Satum low.
+A chimera lets out a concussive roar at Satum.
+Satum begins to pant in terror.
+A look of extreme focus crosses the face of Satum.
+
+Satum eats an **aurum** flake.
+Satum eats a **hawthorn** berry. -- gained deafness
+Satum eats an **arsenic** pellet.-- gained blindness
 
 Slow prep
 -------------------------------

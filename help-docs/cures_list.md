@@ -58,17 +58,6 @@ Salves (APPLY)
 [x] Restoration   Heals damage done to body parts. (see HELP BODY PART DAMAGE)
 
 
-Prep defences
----------------
-Caloric
-deafness
-blindness
-kola - wake
-Cohosh
-speed
-venom
-mass
-
 
 Minerals (EAT, or sometimes SMOKE)
 ----------------------------------
