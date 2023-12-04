@@ -10,7 +10,9 @@ MARDUK commands...
     fire/mushroom sigils
     fire sigils - no damage, just can't touch the item.
 
-    
+
+herb, herb - 2
+
 
 
 Possible ways to defeat someone
@@ -202,3 +204,36 @@ stun = BUUL primebonded, sometimes will stun
     how long for each proc?
 
 
+
+-- just notes
+
+palpatar, 
+    - when primed with sometimes give nausea
+    - gives healthleech
+    - Sets up extra damage for Nin'kharsag
+
+Nin'kharsag
+    - use tree slower
+    - if they have asthma, then paralysis.
+    - if they have healthleech (from palpatar, then more damage).
+    - on each tree - use nin'kh, makes tree take longer
+
+
+on each tree - use nin'kh, makes tree take longer
+    - How long is a tree usage?
+on each fous - use Rixil,the next focus will take longer
+-- <x> touches a tree of life tattoo.
+
+
+cleanseaura when not ready
+dameron when not ready
+tree timing
+get hit with webbing. 
+    - Can I fling cards can't outd fool
+    - Can I sip health - yep
+    - Can I eat herbs - can't outr
+    - Touch tree - nope!
+    - can use mending
+
+if webbed - can't stand
+    lightbind is similar
