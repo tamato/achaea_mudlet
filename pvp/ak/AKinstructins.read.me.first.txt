@@ -1,0 +1,83 @@
+
+
+
+**********************************************************************************************************************************
+
+                                *Important information about Display*
+
+The Included Gui is very standard to mudlet. If you use any additional Gui I suggest you go into the OSETTINGS! script, and set the "nodisplay" variable to true.  This will cause my Gui to be completely removed, so you might want to look into setting up one of the two supplied prompt scripts.  
+
+To change the display positioning and size, locate the odisplay script inside of the Displays folder.  Edit the following code inside of the ak.refreshAffsOLD() script:
+
+        moveWindow("aff_display", WindowWidth-190,WindowHeight-900)
+        resizeWindow("aff_display", 175,890)
+
+Make sure you retarget something everytime you adjust these numbers, so you know where you stand currently.  I recommend increasing and decreasing it by variables of 50.
+
+
+You can edit the OSETTINGS! script to set your own custom echos for gaining, losing and possibly curing afflictions. 
+
+**********************************************************************************************************************************
+
+                                                   *Overview*
+
+The purpose of this script is to track your opponent's current afflictions.  IF you give it the proper information, it will tell you what current afflictions your target has the highest % chance of having.  
+
+
+Note that the system will automatically detect paralysis and impatience, regardless of what method they are delivered. This is due to the presense of a third party message on both afflictions, so just because you see this, does not mean you are properly putting in all of your afflictions.  You should see a processed affliction line beside every attack that looks similar to this: 
+
+Processed Affliction(kalmia curare) or Processed Affliction(paralysis) 
+
+**********************************************************************************************************************************
+
+
+                                                  *Installation*
+
+Step 1.
+
+Install the downloaded xml file "Ak Opponent Tracking" via the package manager.
+
+Step 2.
+
+Add this into your alias that sets your target to ensure everything gets reset everytime you change targets:
+
+target = matches[2] 
+target = target:title()
+ak.oresetparse()
+
+I included a disabled alias for everyone, so if you cannot get it, just enable and use mine.  "t Austere", to target me!
+
+Step 3.
+
+Delete line four in the script file "Osettings! --Move This Outside of AK". This will be the primary file you change your settings in.
+
+Modify remaining variables per your personal taste.
+
+Instructions for adding AK to your prompt for Svo and Wys are found at the bottom of the above mentioned script file.
+
+
+
+--
+
+                                                      *Prompt*
+
+There are scripts for both Wundersys and Svo that detail how to relay these afflictions to a custom prompt inside OSETTINGS!
+
+**********************************************************************************************************************************
+
+                                                    ***Credits***
+
+Strata helped me the most while I was writing this script.   He introduced me to the theory of it as well as providing me with some very basic examples of how to parse and form a tracking table.  Without his assistance in explaining everything, I would never have even believed this was possible, let alone attempted to write one.
+
+Seragorn for always being available to answer any coding related questions I have in general.  While he has never directly given me input on this(that I can remember), the thousands of questions he has answered for me has definitely assisted me in writing this.
+
+Klendathu for contributing massively to the offense tracking.  The amount of work you have done on Bard alone warrants sharing the title of the offense tracker with you.  Thank you for agreeing to help me out.  When I burned out on this project last, it was you that kept me going.
+
+
+
+**********************************************************************************************************************************
+
+                                                     *Disclaimer*
+
+Not guaranteeing anything on this. I thoroughly recommend looking through the buttons to make sure you know how to reset affs and balances without re-targetting(+ button on num pad) and how to change various defense statuses. 
+  
