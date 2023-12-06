@@ -357,6 +357,8 @@ Details:
 When you call upon Buul he shall send to you a chimera, which you may
 ride, and when commanded at a foe will deliver a most terrifying roar.
 If your target is not deaf, they shall suffer an affliction of the mind.
+- 
+- 
 
 When primebonded, the chimera shall periodically strike out with one of
 its heads at a target, causing one of the following effects:
