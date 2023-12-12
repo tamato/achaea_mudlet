@@ -24,8 +24,7 @@ Truename
   - lower mana (readaura .5 e) to check
    - Draining mana
     - enervate (4 e) if manaleech, then more.
-        - runiated lovers, manaleech
-        - if they have manaleech, then gets more
+        - runiated lovers == manaleech(smoke)
         - if frozen then more
         - if primed, Rixil drains. More if shivering and frozen
         - if primed, Nemesis (humbug) and need to be addicted
