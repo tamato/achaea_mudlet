@@ -2,15 +2,12 @@
 afflication     | Gives                 | Whisper   | Enlighten
 ---------------------------------------------------------------
 shyness         | Devolve               |           | x
-stupidity       | Moon, Buul,Cadmus,P   | x         | x
 hallucinations  | Moon, Buul,Cadmus,P   | x         | x
-confusion       | Moon, Buul,Cadmus,P   | x         | x
 claustrophobia  | Moon, Buul,Cadmus,P   | x         | x
 agoraphobia     | Moon, Buul,Cadmus,P   | x         | x
 hypersomnia     | Moon, Buul,Cadmus,P   | x         | x
-dementia        | Unnamable?            |           | x
 epilepsy        | Moon,                 | x         | x
-paranoia        | Unnamable?            | x         | x
+paranoia        |                       | x         | x
 vertigo         | Danaues               |           | x
 impatience      |                       | x         |
 addiction       | nemesis               | x         | x
@@ -18,12 +15,16 @@ lovers          | lovers                | x         | x
 loneliness      | Moon, Buul,Cadmus,P   | x         | x
 recklessness    | Moon, Buul,Cadmus,P   | x         | x
 masochism       | Moon                  | x         | x
+confusion       | Moon, Buul,Unnam      | x         | x
+stupidity       | Moon, Buul,Unnam,CR   | x         | x
+dementia        | Unnamable             |           | x
+paralysis       | Instill, Nin'kh, CR
+aeon            | CR
 asthma          | Instill, Cadmus
 clumsiness      | Instill
 healthleech     | Instill,Palpatar, Nemsis,P
 sensitivity     | Instill
 slickness       | Instill,Cadmus*
-paralysis       | Instill, Nin'kh
 darkshade       | Instill
 dizziness       | Eerion
 haemophilia     | Scrag
@@ -519,7 +520,7 @@ different coloured light spring out from your outstretched hands, irradiating th
 
 violet - Aeon
 Orange - paralysis
-indigo - stupidity?
+indigo - stupidity
 blue - 
 red - 
 

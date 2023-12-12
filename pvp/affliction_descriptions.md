@@ -313,5 +313,13 @@ Tzantza:            Yes
 Accentato:          Yes
 CadmusCurse:        No
 
-
-
+Diagnose:           wearied in body.
+Afflicted msg:      Your limbs grow heavy and you groan feebly.
+Cured msg:          Your limbs strengthen and you feel stronger.
+Cure(s):            Eat Kelp / Eat Aurum
+Description:        Weariness increases the rate at which you use endurance, decreases damage from cutting or blunt attacks you perform, and makes certain delayed movements take longer.
+WhisperingMadness:  No
+Enlighten:          No
+Tzantza:            No
+Accentato:          No
+CadmusCurse:        No
