@@ -1,23 +1,28 @@
+You say in a reverberating voice, ""Shyness, paranoia, recklessness."
+"Vertigo."
+"Masochism."
+"Claustrophobia."
+Confusion."
 
 afflication     | Gives                 | Whisper   | Enlighten
 ---------------------------------------------------------------
-shyness         | Devolve               |           | x
-hallucinations  | Moon, Buul,Cadmus,P   | x         | x
+shyness         | Devolve,Cadmus,P      |           | x
+hallucinations  | Moon, Buul            | x         | x
 claustrophobia  | Moon, Buul,Cadmus,P   | x         | x
-agoraphobia     | Moon, Buul,Cadmus,P   | x         | x
-hypersomnia     | Moon, Buul,Cadmus,P   | x         | x
+agoraphobia     | Moon, Buul            | x         | x
+hypersomnia     | Moon,                 | x         | x
 epilepsy        | Moon,                 | x         | x
-paranoia        |                       | x         | x
-vertigo         | Danaues               |           | x
+paranoia        | Cadmus,P              | x         | x
+vertigo         | Danaues,Cadmus,P      |           | x
 impatience      |                       | x         |
 addiction       | nemesis               | x         | x
 lovers          | lovers                | x         | x
-loneliness      | Moon, Buul,Cadmus,P   | x         | x
-recklessness    | Moon, Buul,Cadmus,P   | x         | x
-masochism       | Moon                  | x         | x
-confusion       | Moon, Buul,Unnam      | x         | x
-stupidity       | Moon, Buul,Unnam,CR   | x         | x
-dementia        | Unnamable             |           | x
+loneliness      | Moon,                 | x         | x
+recklessness    | Moon, Cadmus,P        | x         | x
+masochism       | Moon, Cadmus,P        | x         | x
+confusion       | Moon, Buul,Cad,Unnam  | x         | x
+stupidity       | Moon, Unnam,CR        | x         | x
+dementia        | Unnamable,Buul        |           | x
 paralysis       | Instill, Nin'kh, CR
 aeon            | ChaosRays(CR)
 asthma          | Instill, Cadmus

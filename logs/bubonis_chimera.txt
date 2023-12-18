@@ -1,0 +1,1633 @@
+Log session starting at 16:44:53 on Thursday, 14 December 2023.
+
+A chimera lets out a concussive roar, all three of the creatures heads thrown forward toward you.
+You have been afflicted with hallucinations.
+An unseen being takes you to one side and whispers conspiratorially to you.
+O 104h 0rage 100m 100e 100w[ex] :-
+
+You eat some prickly ash bark.
+Your hallucinations cease to plague you.
+You have cured the hallucinations affliction.
+O 104h 0rage 100m 100e 100w[ex] :-ab domination buul
+You may eat another plant or mineral.
+O 104h 0rage 100m 100e 100w[ex] :-
+Buul (Domination)                             Known: Yes
+-------------------------------------------------------------------------------
+Syntax:            COMMAND CHIMERA AT <target>
+                   MOUNT CHIMERA
+                   SPUR CHIMERA SKYWARD
+Works on/against:  Adventurers
+Cooldown:          2.50 seconds of entity balance
+Resource:          50 mana
+Details:
+When you call upon Buul he shall send to you a chimera, which you may
+ride, and when commanded at a foe will deliver a most terrifying roar.
+If your target is not deaf, they shall suffer an affliction of the mind.
+
+When primebonded, the chimera shall periodically strike out with one of
+its heads at a target, causing one of the following effects:
+- A roar which will cure a target's deafness if such is present, or
+knock them prone with a stun if it is not.
+- A headbutt which will knock your foe prone.
+- An insidious blast of breath which shall inspire sleep in your enemy.
+-------------------------------------------------------------------------------
+
+O 104h 0rage 100m 100e 100w[ex] :-
+The sable edge of Benten Tzun Taiga's scythe has sent Dunn hurtling headlong into death.
+O 104h 0rage 100m 100e 100w[ex] :-
+
+A chimera lets out a concussive roar, all three of the creatures heads thrown forward toward you.
+You have been afflicted with confusion.
+Your head spins as your mind is drowned in chaos and confusion.
+O 104h 0rage 100m 100e 100w[ex] :-
+
+You eat some prickly ash bark.
+The confusion lifts from your mind and it is clear once again.
+You have cured the confusion affliction.
+O 104h 0rage 100m 100e 100w[ex] :-
+You may eat another plant or mineral.
+O 104h 0rage 100m 100e 100w[ex] :-
+Damek, Feranki Magelord's magical power has overwhelmed Yilui, whose body ruptures into a dozen
+bloody lumps of flesh.
+O 104h 0rage 100m 100e 100w[ex] :-command chimera at pruxi
+You command your chimera to bring Pruxi low.
+A chimera throws forward all three of its heads and roars at Pruxi, but fae seems completely
+unphased.
+O 104h 0rage 99m 100e 99w[ex] :-
+You may command another entity to do your bidding.
+O 104h 0rage 100m 100e 99w[ex] :-
+Benten has succumbed to the black will of Irimon, her life offered in profane sacrifice to the
+Breaker of Chains.
+O 104h 0rage 100m 100e 99w[ex] :-1bu
+
+
+
+-------------------------- Start -----------------------------------
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+Pruxi's eyes flicker open and faes head snaps up.
+O 104h 0rage 97m 100e 99w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi begins to pant in terror.
+O 104h 0rage 96m 100e 99w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 96m 100e 99w[x] :-
+Pruxi eats an argentum flake.
+O 104h 0rage 96m 100e 99w[x] :-
+Pruxi eats a calamine crystal.
+[Bot]: Pruxiis now deaf, calamine
+O 104h 0rage 96m 100e 99w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 96m 100e 99w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 0 mental afflictions.
+16:45:27 [MentalAff]: 0
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:45:27 [DrainedMana]: Pruxi Mana at 100%, drained 5258
+O 104h 0rage 96m 100e 99w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 93m 100e 99w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi looks about bemusedly.
+O 104h 0rage 93m 100e 99w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 93m 100e 99w[x] :-
+A look of extreme focus crosses the face of Pruxi.
+O 104h 0rage 93m 100e 99w[x] :-
+You may read another's aura once more.
+O 104h 0rage 93m 100e 99w[x] :-
+Pruxi eats an arsenic pellet.
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+O 104h 0rage 93m 100e 99w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 94m 100e 99w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is blind.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 14 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 0 mental afflictions.
+16:45:29 [MentalAff]: 0
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:45:29 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 93m 100e 99w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 93m 100e 99w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+Pruxi's eyes flicker open and faes head snaps up.
+O 104h 0rage 91m 100e 99w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi begins to pant in terror.
+O 104h 0rage 90m 100e 99w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 90m 100e 99w[x] :-
+Pruxi eats an argentum flake.
+O 104h 0rage 90m 100e 99w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 0 mental afflictions.
+16:45:33 [MentalAff]: 0
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:45:33 [DrainedMana]: Pruxi Mana at 100%, drained 0
+You may command another entity to do your bidding.
+O 104h 0rage 89m 100e 99w[ex] :-def
+
+16:45:35 [Defences]: starburst
+16:45:35 [Defences]: boartattoo
+16:45:35 [Defences]: mosstattoo
+16:45:35 [Defences]: moontattoo
+16:45:35 [Defences]: shroud
+16:45:35 [Defences]: levitating
+16:45:35 [Defences]: insulation
+16:45:35 [Defences]: poisonresist
+16:45:35 [Defences]: kola
+16:45:35 [Defences]: selfishness
+16:45:35 [Defences]: deathsight
+16:45:35 [Defences]: lifevision
+You have the following defences:
+You are walking with the grace of the stars.
+The vitality of the boar is energising you.
+Your wounds are being staunched by the moss tattoo.
+Illuminated by the light of the moon.
+Your actions are cloaked in secrecy.
+You are walking on a small cushion of air.
+You are coated in an insulating unguent.
+Your resistance to damage by poison has been increased.
+You are feeling extremely energetic.
+You are feeling quite selfish.
+Your mind has been attuned to the realm of Death.
+You have enhanced your vision to be able to see traces of lifeforce.
+Your sense of time is heightened, and your reactions are speeded.
+You are benefitting from a 33% bonus to experience gain.
+You are benefitting from a 1% bonus to critical hits.
+You are protected by 13 defences.
+O 104h 0rage 89m 100e 99w[x] :-
+You may read another's aura once more.
+O 104h 0rage 89m 100e 99w[x] :-
+You have recovered equilibrium.
+O 104h 0rage 89m 100e 99w[ex] :-
+Pruxi sits down.
+O 104h 0rage 89m 100e 99w[ex] :-
+"Ok!" Pruxi exclaims.
+O 104h 0rage 91m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Do that a bunch of times."
+O 104h 0rage 92m 100e 99w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 90m 100e 99w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+O 104h 0rage 89m 100e 99w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 89m 100e 99w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 89m 100e 99w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 1 mental afflictions.
+16:45:56 [MentalAff]: 1
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:45:56 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 88m 100e 99w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 86m 100e 99w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi begins to pant in terror.
+O 104h 0rage 85m 100e 98w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 85m 100e 98w[x] :-
+You may read another's aura once more.
+O 104h 0rage 85m 100e 99w[x] :-' go tit
+You may command another entity to do your bidding.
+O 104h 0rage 85m 100e 99w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 2 mental afflictions.
+16:45:59 [MentalAff]: 2
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:45:59 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 84m 100e 98w[ex] :-
+You say in a reverberating voice, "Go tit."
+O 104h 0rage 84m 100e 98w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 86m 100e 98w[ex] :-
+The sable edge of Benten Tzun Taiga's scythe has sent Irimon hurtling headlong into death.
+O 104h 0rage 86m 100e 99w[ex] :-' Ahem, got it
+You say in a reverberating voice, "Ahem, got it."
+O 104h 0rage 86m 100e 99w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 85m 100e 98w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi stares about faenself frenziedly, wild-eyed.
+O 104h 0rage 84m 100e 98w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 84m 100e 98w[x] :-
+Pruxi's eyes sparkle with amusement.
+O 104h 0rage 84m 100e 98w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 84m 100e 98w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 3 mental afflictions.
+16:46:11 [MentalAff]: 3
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:11 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 83m 100e 98w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 81m 100e 98w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 80m 100e 98w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 80m 100e 98w[x] :-
+Emiya has succumbed to the black will of Irimon, her life offered in profane sacrifice to the
+Inevitable.
+O 104h 0rage 80m 100e 98w[x] :-
+You may read another's aura once more.
+O 104h 0rage 80m 100e 98w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 80m 100e 98w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 80m 100e 98w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 4 mental afflictions.
+16:46:15 [MentalAff]: 4
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:15 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 79m 100e 98w[ex] :-
+You take a drink from an oaken vial.
+Your mind feels stronger and more alert.
+O 104h 0rage 93m 100e 98w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+You may read another's aura once more.
+O 104h 0rage 93m 100e 98w[ex] :-
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 91m 100e 98w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi looks about bemusedly.
+O 104h 0rage 90m 100e 98w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 90m 100e 98w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 90m 100e 98w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 5 mental afflictions.
+16:46:18 [MentalAff]: 5
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:18 [DrainedMana]: Pruxi Mana at 100%, drained 0
+You may command another entity to do your bidding.
+O 104h 0rage 90m 100e 98w[ex] :-
+You may drink another health or mana elixir.
+O 104h 0rage 91m 100e 98w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 91m 100e 98w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 91m 100e 98w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 89m 100e 98w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+O 104h 0rage 88m 100e 98w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 88m 100e 98w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 88m 100e 98w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 5 mental afflictions.
+16:46:23 [MentalAff]: 5
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:23 [DrainedMana]: Pruxi Mana at 100%, drained 0
+You may command another entity to do your bidding.
+O 104h 0rage 87m 100e 98w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 87m 100e 98w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 85m 100e 98w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+O 104h 0rage 84m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 84m 100e 97w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 84m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 84m 100e 97w[x] :-
+Benten has succumbed to the black will of Irimon, her life offered in profane sacrifice to the
+Breaker of Chains.
+O 104h 0rage 84m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 5 mental afflictions.
+16:46:27 [MentalAff]: 5
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:27 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 83m 100e 97w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 81m 100e 97w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+O 104h 0rage 80m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 80m 100e 97w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 80m 100e 97w[x] :-
+You may read another's aura once more.
+O 104h 0rage 80m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 82m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 5 mental afflictions.
+16:46:30 [MentalAff]: 5
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:30 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 81m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Okay I believe that's it."
+O 104h 0rage 81m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 81m 100e 97w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 81m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 81m 100e 97w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 79m 100e 97w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+O 104h 0rage 78m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 78m 100e 97w[x] :-
+You take a drink from an oaken vial.
+Your mind feels stronger and more alert.
+O 104h 0rage 96m 100e 97w[x] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 96m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 96m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 5 mental afflictions.
+16:46:38 [MentalAff]: 5
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:46:38 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 95m 100e 97w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 96m 100e 97w[ex] :-' k
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 96m 100e 97w[ex] :-
+You say in a reverberating voice, "K."
+O 104h 0rage 96m 100e 97w[ex] :-
+You may drink another health or mana elixir.
+O 104h 0rage 96m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 96m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 96m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 98m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, 
+"Hallucinations, claustrophobia, dementia, agoraphobia, confusion."
+
+O 104h 0rage 98m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 98m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 98m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 98m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 99m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 99m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 99m 100e 97w[ex] :-
+(Ashtan): Ulvin says, "Hail, Seat."
+O 104h 0rage 99m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Let's see.."
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi eats a stannum flake.
+A look of extreme focus crosses the face of Pruxi.
+Pruxi touches a tree of life tattoo.
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi is gripped with fear, staring out with terrified eyes.
+O 104h 0rage 100m 100e 97w[ex] :-
+Pruxi eats an argentum flake.
+O 104h 0rage 100m 100e 97w[ex] :-
+A look of extreme focus crosses the face of Pruxi.
+O 104h 0rage 100m 100e 97w[ex] :-
+(Ashtan): Eoka says, "Hello, Warlord."
+O 104h 0rage 100m 100e 97w[ex] :-' good to know. Want to hit me with bubonis?
+Pruxi says in Ashtani in a quiet, scratchy voice, "Do that again."
+O 104h 0rage 100m 100e 97w[ex] :-
+You say in a reverberating voice, "Good to know. Want to hit me with bubonis?"
+O 104h 0rage 100m 100e 97w[ex] :-
+(Ashtan): Imyrr says, "Good morning, Ulvin."
+O 104h 0rage 100m 100e 97w[ex] :-' alright
+You say in a reverberating voice, "Alright."
+O 104h 0rage 100m 100e 98w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 97m 100e 97w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi stares about faenself frenziedly, wild-eyed.
+O 104h 0rage 96m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 96m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 98m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 1 mental afflictions.
+16:47:40 [MentalAff]: 1
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:47:40 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 97m 100e 97w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 95m 100e 97w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi looks about bemusedly.
+O 104h 0rage 94m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 94m 100e 97w[x] :-
+You may read another's aura once more.
+O 104h 0rage 94m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 94m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 2 mental afflictions.
+16:47:42 [MentalAff]: 2
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:47:42 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 93m 100e 97w[ex] :-1bu
+
+[Bot]: Player selected: Pruxiqueue insert eq 0 attend Pruxi
+queue insert class 0 command chimera at Pruxi
+1ra
+
+[Bot]: Player selected: Pruxiqueue insert eq 2 readaura Pruxi
+[System]: Added ATTEND PRUXI to your equilibrium queue.
+[System]: Running queued equilibrium command: ATTEND PRUXI
+Focusing your will, you exert your aura at Pruxi and snap your fingers, forcing faen to pay
+attention to you.
+O 104h 0rage 91m 100e 97w[x] :-
+[System]: Added COMMAND CHIMERA AT PRUXI to your class queue.
+[System]: Running queued class command: COMMAND CHIMERA AT PRUXI
+You command your chimera to bring Pruxi low.
+A chimera lets out a concussive roar at Pruxi.
+Pruxi begins to pant in terror.
+O 104h 0rage 90m 100e 97w[x] :-
+[System]: Added READAURA PRUXI to your equilibrium queue.
+O 104h 0rage 90m 100e 97w[x] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Okay, not the same order."
+O 104h 0rage 90m 100e 97w[x] :-
+You may read another's aura once more.
+O 104h 0rage 90m 100e 97w[x] :-
+Pruxi's eyes sparkle with amusement.
+O 104h 0rage 90m 100e 97w[x] :-
+You may command another entity to do your bidding.
+O 104h 0rage 90m 100e 97w[x] :-
+You have recovered equilibrium.
+[System]: Running queued equilibrium command: READAURA PRUXI
+Studying the aura of Pruxi, you look for traces of anything that may be protecting it.
+Fae has the following defences:
+Fae is acknowledged by Jy'Barrak Golgotha, the Ascendant's Thrall.
+Faes wounds are being staunched by the moss tattoo.
+The vitality of the boar is energising faen.
+Fae is feeling extremely energetic.
+Faes senses are magically heightened.
+Fae is walking on a small cushion of air.
+Fae has insomnia, and cannot easily go to sleep.
+Fae is coated in an insulating unguent.
+Fae is tempered against fire damage.
+Fae is feeling quite selfish.
+Faes mind has been attuned to the realm of Death.
+Fae has enhanced faes vision to be able to see traces of lifeforce.
+Faes sense of time is heightened, and faes reactions are speeded.
+Fae is benefitting from a 51% bonus to experience gain.
+Fae is benefitting from a 1% bonus to critical hits.
+Fae is protected by 13 defences.
+You perceive that Pruxi suffers from 0 physical afflictions and 3 mental afflictions.
+16:47:45 [MentalAff]: 3
+You sense that the mana of Pruxi stands at 5258 of a maximum 5258.
+16:47:45 [DrainedMana]: Pruxi Mana at 100%, drained 0
+O 104h 0rage 89m 100e 97w[ex] :-
+You may read another's aura once more.
+O 104h 0rage 89m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Just checking."
+O 104h 0rage 89m 100e 97w[ex] :-
+Pruxi eats a stannum flake.
+A look of extreme focus crosses the face of Pruxi.
+O 104h 0rage 91m 100e 97w[ex] :-
+Pruxi touches a tree of life tattoo.
+O 104h 0rage 91m 100e 97w[ex] :-
+Pruxi stands up.
+O 104h 0rage 91m 100e 97w[ex] :-
+Pruxi eats a calamine crystal.
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+[Bot]: Pruxiis now deaf, calamine
+O 104h 0rage 91m 100e 97w[ex] :-
+Pruxi eats an arsenic pellet.
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+[Bot]: Pruxiis now blind, arsenic
+O 104h 0rage 91m 100e 97w[ex] :-
+Pruxi puts faes hands on faes hips and goes "Hmmm!"
+O 104h 0rage 92m 100e 97w[ex] :-' Alright, I would hope that we are random
+You say in a reverberating voice, "Alright, I would hope that we are random."
+O 104h 0rage 92m 100e 97w[ex] :-
+Pruxi leaves to the west.
+O 104h 0rage 92m 100e 97w[ex] :-
+Pruxi arrives from the west.
+O 104h 0rage 93m 100e 97w[ex] :-
+Pruxi nods faes head emphatically.
+O 104h 0rage 93m 100e 97w[ex] :-
+A bubonis begins to follow Pruxi obediently.
+O 104h 0rage 95m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Alright, stop curing and sit down."
+O 104h 0rage 95m 100e 97w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Easiest way to make sure you've gotten everything
+all at once is to not cure."
+O 104h 0rage 96m 100e 97w[ex] :-
+Pruxi taps faes nose knowingly.
+O 104h 0rage 97m 100e 97w[ex] :-' one, gotta rember how to turn that off
+You say in a reverberating voice, "One, gotta rember how to turn that off."
+
+
+---------------------
+-- Curing Off -------
+---------------------
+
+O 104h 0rage 97m 100e 97w[ex] :-curing off
+Curing disabled.
+O 104h 0rage 99m 100e 97w[ex] :-sit
+
+You sit yourself down.
+You have been afflicted with prone.
+O 104h 0rage 99m 100e 97w[ex] :-
+
+A bubonis entity scuttles over to you and then suddenly leaps up, latching itself to your head.
+The bubonis entity cuts you slightly, and you become unbearably shy.
+You have been afflicted with shyness.
+O 104h 0rage 100m 100e 98w[ex] :-' I should be set
+You say in a reverberating voice, "I should be set."
+O 104h 0rage 100m 100e 98w[ex] :-
+
+The bubonis entity whispers words of madness into your ear.
+You have been afflicted with paranoia.
+O 104h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 104h 0rage 100m 100e 98w[ex] :-
+
+16:49:14 [Aff Added]: recklessness
+Pain is something only the weak feel!
+You have been afflicted with recklessness.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-' shyness, paranoia, recklessness
+You say in a reverberating voice, "Shyness, paranoia, recklessness."
+O 100h 0rage 100m 100e 98w[ex] :-
+
+The thought of heights is more than you can bear.
+You have been afflicted with vertigo.
+O 100h 0rage 100m 100e 98w[ex] :-' vertigo
+You say in a reverberating voice, "Shyness, paranoia, recklessness."
+"Vertigo."
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+
+You feel the urge to slash, cut, and bruise yourself.
+You have been afflicted with masochism.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You smile with pleasure as you ram your fist into your jaw.
+O 100h 0rage 100m 100e 98w[ex] :-' masochism
+You say in a reverberating voice, "Shyness, paranoia, recklessness."
+"Vertigo."
+"Masochism."
+O 100h 0rage 100m 100e 98w[ex] :-
+
+"Don't get trapped now...", the bubonis entity whispers to you.
+You have been afflicted with claustrophobia.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-' claustrophobia
+You say in a reverberating voice, "Shyness, paranoia, recklessness."
+"Vertigo."
+"Masochism."
+"Claustrophobia."
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+You smile with pleasure as you ram your fist into your jaw.
+O 100h 0rage 100m 100e 98w[ex] :-
+
+The bubonis entity strokes your forehead and your thoughts are thrown into chaos.
+You have been afflicted with confusion.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-' confusion
+You say in a reverberating voice, 
+
+-------------------
+--= Cadmus List =--
+-------------------
+Shyness
+paranoia
+recklessness
+Vertigo
+Masochism
+Claustrophobia
+Confusion
+-------------------
+
+
+O 100h 0rage 100m 100e 98w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 20 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 17 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi raises a tarot card over your head. Upon releasing it, it instantly expands and moves downward
+until your entire body has been passed through it, healing you as it falls.
+O 100h 0rage 100m 100e 98w[ex] :-
+You smile with pleasure as you ram your fist into your jaw.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 19 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi gives you the once over.
+O 100h 0rage 100m 100e 98w[ex] :-fool
+QUEUE INSERT free 1 outd fool
+QUEUE INSERT free 2 fling fool at me
+[System]: Added OUTD FOOL to your free queue.
+[System]: Running queued free command: OUTD FOOL
+You shuffle a card with the image of the Fool out of your deck, bringing the total remaining to 17.
+O 100h 0rage 100m 100e 98w[ex] :-
+[System]: Added FLING FOOL AT ME to your free queue.
+[System]: Running queued free command: FLING FOOL AT ME
+You must be standing first.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "That all?"
+O 100h 0rage 100m 100e 98w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 18 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi raises a tarot card over your head. Upon releasing it, it instantly expands and moves downward
+until your entire body has been passed through it, healing you as it falls.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi gives you the once over.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 17 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 13 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "I guess so, it stopped."
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi's eyes sparkle with amusement.
+O 100h 0rage 100m 100e 98w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+You smile with pleasure as you ram your fist into your jaw.
+O 100h 0rage 100m 100e 98w[ex] :-
+
+16:50:25 [Aff Removed]: vertigo
+16:50:25 [Aff Removed]: paranoia
+Pruxi presses a tarot to your forehead and a sensation of warmth ripples through your body.
+Your fear of heights subsides.
+You have cured the vertigo affliction.
+Aaaahhh. No one is out to get you after all.
+You have cured the paranoia affliction.
+The confusion lifts from your mind and it is clear once again.
+You have cured the confusion affliction.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+You drive a clenched fist into your gut.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi gives you the once over.
+O 100h 0rage 100m 100e 98w[ex] :-
+
+The bubonis entity whispers words of madness into your ear.
+You have been afflicted with paranoia.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-' hmm, I do think that was it.
+You say in a reverberating voice, "Hmm, I do think that was it."
+O 100h 0rage 100m 100e 98w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 98w[ex] :-
+
+The thought of heights is more than you can bear.
+You have been afflicted with vertigo.
+O 100h 0rage 100m 100e 98w[ex] :-
+A bubonis loses its grip and drops to the ground.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+You smile with pleasure as you ram your fist into your jaw.
+O 100h 0rage 100m 100e 98w[ex] :-' paranoia again
+You say in a reverberating voice, "Paranoia again."
+O 100h 0rage 100m 100e 98w[ex] :-' vertigo
+You say in a reverberating voice, "Vertigo."
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 98w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 98w[ex] :-
+You drive a clenched fist into your gut.
+O 100h 0rage 100m 100e 98w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 98w[ex] :-
+Pruxi presses a tarot to your forehead and a sensation of warmth ripples through your body.
+The Fool has no effect on you.
+O 100h 0rage 100m 100e 99w[ex] :-
+You bleed 10 health.
+O 100h 0rage 100m 100e 99w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 99w[ex] :-daig
+I cannot fathom the meaning of "daig".
+O 100h 0rage 100m 100e 99w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi presses a tarot to your forehead and a sensation of warmth ripples through your body.
+The Fool has no effect on you.
+O 100h 0rage 100m 100e 99w[ex] :-daig
+I cannot fathom the meaning of "daig".
+O 100h 0rage 100m 100e 99w[ex] :-
+You may heal another affliction.
+O 100h 0rage 100m 100e 99w[ex] :-diag
+You are:
+afflicted by unbearable shyness.
+reckless.
+masochistic.
+claustrophobic.
+paranoid.
+afraid of heights.
+bleeding for 10 health.
+seated on the ground.
+O 100h 0rage 100m 100e 99w[x] :-
+You drive a clenched fist into your gut.
+O 100h 0rage 100m 100e 99w[x] :-
+You bleed 20 health.
+O 100h 0rage 100m 100e 99w[x] :-
+You have recovered equilibrium.
+O 100h 0rage 100m 100e 99w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Cure."
+O 100h 0rage 100m 100e 99w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 100e 99w[ex] :-
+You bleed 16 health.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi raises a tarot card over your head. Upon releasing it, it instantly expands and moves downward
+until your entire body has been passed through it, healing you as it falls.
+O 100h 0rage 100m 100e 99w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+O 100h 0rage 100m 100e 99w[ex] :-fool
+QUEUE INSERT free 1 outd fool
+QUEUE INSERT free 2 fling fool at me
+[System]: Added OUTD FOOL to your free queue.
+[System]: Running queued free command: OUTD FOOL
+You shuffle a card with the image of the Fool out of your deck, bringing the total remaining to 16.
+O 100h 0rage 100m 100e 99w[ex] :-
+[System]: Added FLING FOOL AT ME to your free queue.
+[System]: Running queued free command: FLING FOOL AT ME
+You must be standing first.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi gives you the once over.
+O 100h 0rage 100m 100e 99w[ex] :-
+With the heel of your palm, you smack yourself upside the head.
+O 100h 0rage 100m 100e 99w[ex] :-
+You bleed 12 health.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi raises a tarot card over your head. Upon releasing it, it instantly expands and moves downward
+until your entire body has been passed through it, healing you as it falls.
+O 100h 0rage 100m 100e 99w[ex] :-stand
+
+You stand up.
+O 100h 0rage 100m 100e 99w[ex] :-
+Heart thumping, you cannot bear the company of others and attempt to flee in terror.
+A gnarled, blackened oak tree.
+The sky lightens with the onset of dawn. A crumbling, stone well is here.
+You see exits leading southeast, south, and southwest.
+O 100h 0rage 100m 99e 99w[ex] :-
+You use your right foot to stomp on your left as hard as possible.
+O 100h 0rage 100m 99e 99w[ex] :-fool
+QUEUE INSERT free 1 outd fool
+QUEUE INSERT free 2 fling fool at me
+[System]: Added OUTD FOOL to your free queue.
+[System]: Running queued free command: OUTD FOOL
+You shuffle a card with the image of the Fool out of your deck, bringing the total remaining to 15.
+O 100h 0rage 100m 100e 99w[ex] :-
+
+16:51:17 [Aff Removed]: paranoia
+16:51:17 [Aff Removed]: masochism
+16:51:17 [Aff Removed]: recklessness
+16:51:17 [HPChanged]: -2474pri
+QUEUE insert Eqbal 1 fling priestess at me
+[System]: Added FLING FOOL AT ME to your free queue.
+[System]: Running queued free command: FLING FOOL AT ME
+You press the Fool tarot to your forehead.
+Aaaahhh. No one is out to get you after all.
+You have cured the paranoia affliction.
+You no longer enjoy pain.
+You have cured the masochism affliction.
+Prudence rules your psyche once again.
+You have cured the recklessness affliction.
+O 41h 0rage 100m 99e 99w[e] :-
+[System]: Added FLING PRIESTESS AT ME to your eb queue.
+O 41h 0rage 100m 99e 99w[e] :-
+
+You bleed 14 health.
+O 41h 0rage 100m 99e 99w[e] :-curing on
+
+You have recovered balance on all limbs.
+[System]: Running queued eb command: FLING PRIESTESS AT ME
+You shuffle a tarot card inscribed with the High Priestess out of your deck, bringing the total
+number of remaining cards to 114.
+Raising the High Priestess tarot over your head, parallel to the ground, you release it. It
+instantly expands and moves downward, healing you as your body passes through it.
+O 66h 0rage 100m 99e 99w[e] :-
+Curing activated.
+O 66h 0rage 100m 99e 99w[e] :-
+
+16:51:20 [Aff Removed]: shyness
+16:51:20 [Aff Removed]: claustrophobia
+16:51:20 [Aff Removed]: vertigo
+You remove 1 goldenseal, bringing the total in the rift to 350.
+You eat a goldenseal root.
+Your shyness has been cured. You can now face the world boldly.
+You have cured the shyness affliction.
+You focus your mind intently on curing your mental maladies.
+Small spaces no longer frighten you.
+You have cured the claustrophobia affliction.
+You touch the tree of life tattoo.
+Your fear of heights subsides.
+You have cured the vertigo affliction.
+You take a drink from a cedarwood vial.
+The elixir heals and soothes you.
+O 80h 0rage 91m 99e 98w[e] :-
+You may eat another plant or mineral.
+O 80h 0rage 91m 99e 98w[e] :-
+
+You bleed 2 health.
+O 85h 0rage 92m 99e 98w[e] :-
+You have recovered balance on all limbs.
+O 85h 0rage 92m 99e 98w[ex] :-
+You may drink another health or mana elixir.
+O 85h 0rage 92m 99e 98w[ex] :-
+Your mind is able to focus once again.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 s
+[System]: Added S to your free queue.
+[System]: Running queued free command: S
+A field of graves.
+The sky lightens with the onset of dawn. An oaken statue shows a fearsome ogre brandishing a club. A
+dagger of blackest obsidian lies like a shadow.
+You see exits leading north, east, and west.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 e
+[System]: Added E to your free queue.
+[System]: Running queued free command: E
+A silent graveyard.
+The sky lightens with the onset of dawn. A winged harpy is carved of limestone. A large crypt has
+crumbled into disrepair, blocking the way southeast.
+You see exits leading southeast, west, and northwest.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 w
+[System]: Added W to your free queue.
+[System]: Running queued free command: W
+A field of graves.
+The sky lightens with the onset of dawn. An oaken statue shows a fearsome ogre brandishing a club. A
+dagger of blackest obsidian lies like a shadow.
+You see exits leading north, east, and west.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 w
+[System]: Added W to your free queue.
+[System]: Running queued free command: W
+Amidst several large tombstones.
+The sky lightens with the onset of dawn. Bursting out of the ground here is an enormous ankheg
+statue.
+You see exits leading northeast, east, and southwest.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 e
+[System]: Added E to your free queue.
+[System]: Running queued free command: E
+A field of graves.
+The sky lightens with the onset of dawn. An oaken statue shows a fearsome ogre brandishing a club. A
+dagger of blackest obsidian lies like a shadow.
+You see exits leading north, east, and west.
+O 85h 0rage 92m 99e 98w[ex] :-QUEUE INSERT Free 0 n
+
+[System]: Added N to your free queue.
+[System]: Running queued free command: N
+A gnarled, blackened oak tree.
+The sky lightens with the onset of dawn. A crumbling, stone well is here.
+You see exits leading southeast, south, and southwest.
+O 90h 0rage 94m 99e 99w[ex] :-QUEUE INSERT Free 0 s
+[System]: Added S to your free queue.
+[System]: Running queued free command: S
+A field of graves.
+The sky lightens with the onset of dawn. An oaken statue shows a fearsome ogre brandishing a club. A
+dagger of blackest obsidian lies like a shadow.
+You see exits leading north, east, and west.
+O 90h 0rage 94m 99e 99w[ex] :-diag
+You are in perfect health.
+O 90h 0rage 94m 99e 99w[x] :-
+You have recovered equilibrium.
+O 90h 0rage 94m 99e 99w[ex] :-
+Pruxi quickly flings a tarot card at you, and you feel unreasonable lust for faen.
+O 90h 0rage 94m 99e 99w[ex] :-
+You may utilise the tree tattoo again.
+O 90h 0rage 94m 99e 99w[ex] :-l
+A field of graves.
+The sky lightens with the onset of dawn. A light mist has settled across the grounds, giving the
+grounds a light coat of moisture. Tombstones surround you, as numerous as the trees in a forest, 
+sprawling out in all directions. The stones appear to have been randomly placed, as you can find no 
+pattern to their assignment. One of the smaller headstones has a small bouquet of colourless flowers 
+placed upon it. An oaken statue shows a fearsome ogre brandishing a club. A dagger of blackest 
+obsidian lies like a shadow.
+You see exits leading north, east, and west.
+O 90h 0rage 94m 99e 99w[ex] :-def
+
+16:51:44 [Defences]: starburst
+16:51:44 [Defences]: boartattoo
+16:51:44 [Defences]: mosstattoo
+16:51:44 [Defences]: moontattoo
+16:51:44 [Defences]: shroud
+16:51:44 [Defences]: levitating
+16:51:44 [Defences]: insulation
+16:51:44 [Defences]: poisonresist
+16:51:44 [Defences]: kola
+16:51:44 [Defences]: selfishness
+16:51:44 [Defences]: deathsight
+16:51:44 [Defences]: lifevision
+16:51:44 [Defences]: speed
+You have the following defences:
+You are walking with the grace of the stars.
+The vitality of the boar is energising you.
+Your wounds are being staunched by the moss tattoo.
+Illuminated by the light of the moon.
+Your actions are cloaked in secrecy.
+You are walking on a small cushion of air.
+You are coated in an insulating unguent.
+Your resistance to damage by poison has been increased.
+You are feeling extremely energetic.
+You are feeling quite selfish.
+Your mind has been attuned to the realm of Death.
+You have enhanced your vision to be able to see traces of lifeforce.
+Your sense of time is heightened, and your reactions are speeded.
+You are benefitting from a 33% bonus to experience gain.
+You are benefitting from a 1% bonus to critical hits.
+You are protected by 13 defences.
+O 95h 0rage 95m 100e 99w[x] :-
+You have recovered equilibrium.
+O 95h 0rage 95m 100e 99w[ex] :-
+You may heal another affliction.
+O 95h 0rage 95m 100e 99w[ex] :-
+
+A large, rectangular gateway opens up near you, and you feel yourself irresistibly drawn inside.
+A garden along the northeastern wall.
+The sky lightens with the onset of dawn. A large crypt has crumbled into disrepair, blocking the way
+northwest. The massive Great Elephant Bull is depicted here in a towering slate statue. Servitor 
+Pruxi is here. Fae wields a cavalry shield in faes left hand.
+You see exits leading southeast, south, and northwest.
+O 100h 0rage 96m 100e 99w[ex] :-
+Pruxi gives you the once over.
+O 100h 0rage 96m 100e 99w[ex] :-
+Pruxi nods faes head emphatically.
+O 100h 0rage 96m 100e 99w[ex] :-
+Pruxi's eyes sparkle with amusement.
+O 100h 0rage 96m 100e 99w[ex] :-' thanks
+You say in a reverberating voice, "Thanks."
+O 100h 0rage 96m 100e 99w[ex] :-sit
+
+You sit yourself down.
+You have been afflicted with prone.
+O 100h 0rage 99m 100e 99w[ex] :-curing off
+Curing disabled.
+O 100h 0rage 99m 100e 99w[ex] :-' all set if you want to go again
+You say in a reverberating voice, "All set if you want to go again."
+O 100h 0rage 100m 100e 99w[ex] :-allies
+You have the following allies:
+You feel an unusually strong lust for Wintermute.
+You feel an unusually strong lust for Montago.
+You feel an unusually strong lust for Kaelthas.
+You feel an unusually strong lust for Pruxi.
+Dalran is an ally.
+Gregg is an ally.
+Isaiah is an ally.
+Kazuya is an ally.
+Kierra is an ally.
+Ulvin is an ally.
+You have currently used 6 ally slots of your 20 maximum.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Okay so the bubonis attacks with..."
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Looks like everything it attacks with is on the
+enlighten list."
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi purses faes lips, deep in thought.
+O 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Wait."
+O 100h 0rage 100m 100e 99w[ex] :-
+Lauryyn has fallen victim to the extraordinary powers of Tenderfoot Haeron Celes'Ciel, of the
+Forests in The Collosea en Duir.
+O 100h 0rage 100m 100e 100w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "Okay they both do, that's useful. Slightly
+different though for some reason."
+O 100h 0rage 100m 100e 100w[ex] :-
+Pruxi's eyes sparkle with amusement.
+O 100h 0rage 100m 100e 100w[ex] :-
+
+The spectator enclosure. (indoors)
+Crackling ozone heralds warp-touched mirage, their coming the advent of change. A runic totem is
+planted solidly in the ground. There are 5 Ashtani corsairs here.
+You see a single exit leading northeast.
+Adjusting his hat, an Ashtani corsair nods his head at you with a rakish smile.
+Pruxi arrives from the ether.
+An Ashtani corsair whistles the melody of a popular local shanty.
+I 100h 0rage 100m 100e 99w[ex] :-
+Pruxi clenches faes fists and grits faes teeth.
+Pruxi eats a calamine crystal.
+I 100h 0rage 100m 100e 99w[ex] :-
+Pruxi eats an arsenic pellet.
+I 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "I'm trying to work on counting for enlighten."
+I 100h 0rage 100m 100e 99w[ex] :-stand
+You are not fallen or kneeling.
+I 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "But that strategy won't work on another
+occultist, I think."
+I 100h 0rage 100m 100e 99w[ex] :-curing on
+Curing activated.
+I 100h 0rage 100m 100e 99w[ex] :-' well the only thing that won't work in Unnamable. We are all immune to those speaches and
+visions.
+You say in a reverberating voice, "Well the only thing that won't work in Unnamable. We are all
+immune to those speaches and visions."
+I 100h 0rage 100m 100e 99w[ex] :-
+Karalden dies, his defences no match for the relentless might of Drudge Ghi in The Matsuhama Arena.
+I 100h 0rage 100m 100e 99w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "I was counting on that."
+I 100h 0rage 100m 100e 100w[ex] :-
+Pruxi's eyes sparkle with amusement.
+I 100h 0rage 100m 100e 100w[ex] :-
+A greater water elemental has fed the corpse of Ruckus to its piscine friends.
+I 100h 0rage 100m 100e 100w[ex] :-
+A greater water elemental has fed the corpse of Sudu to its piscine friends.
+I 100h 0rage 100m 100e 100w[ex] :-
+A greater water elemental has fed the corpse of Sudu to its piscine friends.
+I 100h 0rage 100m 100e 100w[ex] :-
+Pruxi says in Ashtani in a quiet, scratchy voice, "If you're lucky, it's some of the fastest mental
+afflicting I was able to work out."
+I 100h 0rage 100m 100e 100w[ex] :-
+The shimmer of divine protection fades from around you.
+The shimmer of divine protection fades from around Pruxi.
+I 100h 0rage 100m 100e 100w[ex] :-allies
+You have the following allies:
+You feel an unusually strong lust for Wintermute.
+You feel an unusually strong lust for Montago.
+You feel an unusually strong lust for Kaelthas.
+Dalran is an ally.
+Gregg is an ally.
+Isaiah is an ally.
+Kazuya is an ally.
+Kierra is an ally.
+Ulvin is an ally.
+You have currently used 6 ally slots of your 20 maximum.
+I 100h 0rage 100m 100e 100w[ex] :-honours wintermute
+Wintermute Cayce (male Chaos Lord resembling a Grook).
+He is 679 years old, having been born on the 4th of Sarapin, 255 years after the fall of the
+Seleucarian Empire.
+He is unranked in Achaea.
+He is an extremely credible character.
+He is not known for acts of infamy.
+He is a Patrician in Ashtan.
+He is a member of the Occultist class.
+He is considered to be approximately 145% of your might.
+He is a mentor and able to take on proteges.
+His motto: 'Only small minds want always to be right.'
+He bears the arms: Sable, a pair of wolves combatant Argent and a sword Argent within an orle or.
+See HONOURS DEEDS WINTERMUTE to view his 3 special honours.
+I 100h 0rage 100m 100e 100w[x] :-
+You have recovered equilibrium.
+I 100h 0rage 100m 100e 100w[ex] :-honours montago
+Wanderer, Montago Taver, Leyandoal esh Alhago (male Xoran).
+He is 568 years old, having been born on the 5th of Glacian, 365 years after the fall of the
+Seleucarian Empire.
+He is unranked in Achaea.
+He is an extremely credible character.
+He is not known for acts of infamy.
+He is a Peer in Hashan.
+He is a member of the Shaman class.
+He is considered to be approximately 150% of your might.
+He is a mentor and able to take on proteges.
+His motto: 'Within one's self lies the single truth.'
+He has taken the hand of Grand Master Ixin Rousseau, Aurean Levin in marriage.
+He has been divorced once.
+He bears the arms: Sable, on a bend Or, an ouroboros Argent.
+See HONOURS DEEDS MONTAGO to view his 6 special honours.
+I 100h 0rage 100m 100e 100w[x] :-
+You have recovered equilibrium.
+I 100h 0rage 100m 100e 100w[ex] :-l
+The spectator enclosure. (indoors)
+Crackling ozone heralds warp-touched mirage, their coming the advent of change. This is a large semi
+-covered stone enclosure, which has been constructed on a small hill, overlooking the western 
+quarter of what were once the Royal Gardens of Ashtan. Maintained after the fall of the Crown, they 
+contain the massive tomb of Glanos, the founder of Ashtan, visible to the north. The Ashtan arena 
+itself has been built upon this ancient part of history. The tomb rests directly in the centre of 
+the main grounds with a large, shadowy forest to the west and a tranquil garden to the east. The 
+main gate to the crypt is on the south face and to the far north you can make out thousands of dark 
+gravestones. Bounding it all is an intact section of the massive wall that surrounds the Royal 
+Compound. A runic totem is planted solidly in the ground. There are 5 Ashtani corsairs here. 
+Servitor Pruxi is here. Fae wields a cavalry shield in faes left hand.
+You see a single exit leading northeast.
+I 100h 0rage 100m 100e 100w[ex] :-
+Lauryyn dies, her defences no match for the relentless might of Tenderfoot Haeron Celes'Ciel, of the
+Forests in The Collosea en Duir.
+I 100h 0rage 100m 100e 100w[ex] :-' I've been tying to work that out too. Without chaos rays and unnamble I can't even imagine
+how to get all of them to stick
+You say in a reverberating voice, "I've been tying to work that out too. Without chaos rays and
+unnamble I can't even imagine how to get all of them to stick."
+I 100h 0rage 100m 100e 100w[ex] :-' There's just so many ways to cure them off. 
+You say in a reverberating voice, "There's just so many ways to cure them off."
+I 100h 0rage 100m 100e 100w[ex] :-
+Log session ending at 16:57:32 on Thursday, 14 December 2023.
