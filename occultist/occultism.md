@@ -19,7 +19,7 @@ confusion       | Moon, Buul,Unnam      | x         | x
 stupidity       | Moon, Buul,Unnam,CR   | x         | x
 dementia        | Unnamable             |           | x
 paralysis       | Instill, Nin'kh, CR
-aeon            | CR
+aeon            | ChaosRays(CR)
 asthma          | Instill, Cadmus
 clumsiness      | Instill
 healthleech     | Instill,Palpatar, Nemsis,P
@@ -59,6 +59,7 @@ Prime
 
 Cadmus
 - if they have asthma, then give slickness
+- Unless it is primed. Then only mental afflictions.
 
 Abilities in Occultism:
 -------------------------------------------------------------------------------
@@ -140,8 +141,8 @@ Works on/against:  Adventurers and denizens
 Cooldown:          4.00 seconds of equilibrium
 Resource:          80 mana
 Details:
-Your power to warp reality can be focused on a single individual, causing horrific mutations and
-cancerous growths that are ultimately quite lethal.
+Your power to warp reality can be focused on a single individual, causing horrific mutations and cancerous growths that are ultimately quite lethal.
+
 -------------------------------------------------------------------------------
 
 
@@ -165,6 +166,7 @@ Cooldown:          2.00 seconds of equilibrium
 Resource:          75 mana
 Details:
 This will draw a shroud of concealment over your actions.
+
 -------------------------------------------------------------------------------
 
 
@@ -179,6 +181,7 @@ You can warp your own form into an unspeakable image, causing a primal
 fear even in the most hardy so long as they can see you(*).
 
 * The victim must be unblind.
+
 -------------------------------------------------------------------------------
 
 
@@ -191,6 +194,7 @@ Resource:          200 mana
 Details:
 By singing the Hymn to Glaaki, you may call up eldritch mists out of the
 ground itself, harming all adventurers present except yourself.
+
 -------------------------------------------------------------------------------
 
 
@@ -214,8 +218,7 @@ Works on/against:  Adventurers
 Cooldown:          2.20 seconds of equilibrium
 Resource:          125 mana
 Details:
-Using the power of your will, you can exert your aura and force your students to attend to their
-studies, curing them of deafness and blindness.
+Using the power of your will, you can exert your aura and force your students to attend to their studies, curing them of deafness and blindness.
 
 -------------------------------------------------------------------------------
 

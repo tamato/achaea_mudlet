@@ -313,6 +313,8 @@ The Devil is a rather unique card. When you fling it at the ground, a Devil will
 The 6 are: 
     hanged man
     moon
+    Lover
+    Aeon
 
 -------------------------------------------------------------------------------
 
@@ -403,9 +405,9 @@ major arcana just so to display its opposite face.
 
 Currently, the 
     lovers  - manaleech
-    justice - tyranny (converst afflictsion to broken limbs, APPLY) from EAT to APPLY
+    justice - tyranny (converst phys afflictions to broken limbs, APPLY) from EAT to APPLY
     creator - death, but quicker and with restrictions
-    wheel   - "chaosrays"
+    wheel   - "chaosrays", paralysis(orange), aeon(violet), stupidity(indigo)
 
 cards may be ruinated. See their ability files for details.
 
@@ -450,6 +452,9 @@ When ruinated, the justice becomes tyranny. It will convert the following afflic
     clumsiness. 
 
 If five or more afflictions are converted, the target is frozen; this ability will also prone your target if both of their legs are broken when it resolves.
+
+** A reason to use this card/ability is to stack on Devil
+** Does Devil use Ent balance?
 
 -------------------------------------------------------------------------------
 
