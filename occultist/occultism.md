@@ -1,9 +1,3 @@
-You say in a reverberating voice, ""Shyness, paranoia, recklessness."
-"Vertigo."
-"Masochism."
-"Claustrophobia."
-Confusion."
-
 afflication     | Gives                 | Whisper   | Enlighten
 ---------------------------------------------------------------
 shyness         | Devolve,Cadmus,P      |           | x

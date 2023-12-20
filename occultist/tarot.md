@@ -223,12 +223,18 @@ making it difficult to leave via some of the exits.
 Wheel (Tarot)                                 Known: Yes
 -------------------------------------------------------------------------------
 Syntax:            FLING WHEEL AT GROUND
-Works on/against:  Room
+Works on/against:  **Everyone** in the Room
 Cooldown:          3.00 seconds of balance
 Details:
 The Wheel of Fortune is mysterious and represents luck, neither good nor bad. Sometimes it will bring good things, sometimes bad. The effects of this card are permanent, except those affecting adventurer statistics.
 
 Use of this card which affects anyone unwillingly could result in very serious repercussions.
+
+Between each turn, and tothe start of the first, 7 seconds.
+Then each of these, in this order, each after 7 seconds.
+Cold Blue - ??
+Indigo - stupidity
+Violet - aeon
 
 -------------------------------------------------------------------------------
 
@@ -310,11 +316,14 @@ Cooldown:          3.00 seconds of balance
 Details:
 The Devil is a rather unique card. When you fling it at the ground, a Devil will be called up, who will serve you once, and only once. He will possess your body and, the next Tarot card you fling, he will cause you to immediately fling another one of six random tarot cards.
 
+Does not use up entity balance
 The 6 are: 
-    hanged man
-    moon
-    Lover
     Aeon
+    HangedMan
+    Justice
+    Lover
+    Lust
+    Moon
 
 -------------------------------------------------------------------------------
 
@@ -392,6 +401,7 @@ of the Heretic.
 When a victim falls under the Heretic's sway, the Occultist may command
 them to witness an image: and so long as they are not blind, they will
 be unable to avoid gazing upon that which is brought forth.
+
 -------------------------------------------------------------------------------
 
 
@@ -407,7 +417,7 @@ Currently, the
     lovers  - manaleech
     justice - tyranny (converst phys afflictions to broken limbs, APPLY) from EAT to APPLY
     creator - death, but quicker and with restrictions
-    wheel   - "chaosrays", paralysis(orange), aeon(violet), stupidity(indigo)
+    wheel   - reduced chaosrays,  aeon(violet), stupidity(indigo)
 
 cards may be ruinated. See their ability files for details.
 
