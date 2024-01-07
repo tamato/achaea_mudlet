@@ -1,5 +1,8 @@
 def list in gui
 
+read through PROJECT 100, by Boosteya
+
+
 things to tie in with 
     moon tarot
     cleanseaura - glaaki
@@ -22,8 +25,6 @@ readnews ANNOUNCE 5453
 Emote list
     emote (clean's off the debirs from @statue,) showing respect to the anciet Chaos Lord.
     emote approaches @statue
-
-seek out Ulvin, he may help if he is around
 
 Auto curing
     HELP CURING SYSTEM

@@ -220,9 +220,9 @@ making it difficult to leave via some of the exits.
 -------------------------------------------------------------------------------
 
 
-Wheel (Tarot)                                 Known: Yes
+**RUINATE** Wheel (Tarot)                                 Known: Yes
 -------------------------------------------------------------------------------
-Syntax:            FLING WHEEL AT GROUND
+Syntax:            **RUINATE** WHEEL AT GROUND
 Works on/against:  **Everyone** in the Room
 Cooldown:          3.00 seconds of balance
 Details:
@@ -230,11 +230,35 @@ The Wheel of Fortune is mysterious and represents luck, neither good nor bad. So
 
 Use of this card which affects anyone unwillingly could result in very serious repercussions.
 
-Between each turn, and tothe start of the first, 7 seconds.
+Between each turn, and to the start of the first, 7 seconds, 4 seconds after fling.
 Then each of these, in this order, each after 7 seconds.
-Cold Blue - ??
-Indigo - stupidity
+
+Cold Blue - seems to be shiver/cold
+- Rays of cold blue light lash out from the Wheel of Chaos, irradiating the location.
+- shiver cured by: APPLY caloric
+
+Vibrant indigo - stupidity
+- Vibrant indigo rays of light lash out from the Wheel of Chaos
+- Stupidity: cured by EAT Goldenseal/Plumbum
+
 Violet - aeon
+- Rays of violet light lash out at the location from the Wheel of Chaos.
+- Aeon: 
+ - cured by SMOKE ELM/Cinnabar
+ - This is the only affliction cured with smoking Elm. e.g. Stacking smoking aff's don't mean anythng.
+  - need to stack things that block asthma.
+
+
+PREREQ - Devil
+Fling/Ruinate wheel
+- (shiver timer)    then temptimer( 7, interlink shiver); DOMINATE use with hecate to ruin limbs (apply mending)
+- (stupidity timer) then temptimer(14, ); DOMINATE 
+- (aeon timer)      then tmeptimer(21, 
+ - curing system seems to prefer smoking to cure SLICKNESS, smoking is needed to cure AEON.
+ - SMOKING AFF
+   - Disfigurement
+   - Mana Leech
+   - Slickness
 
 -------------------------------------------------------------------------------
 
@@ -257,6 +281,19 @@ Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
 The Justice tarot will bring the wrath of Miramar, the Even-Handed, down upon your foe.
+
+When ruinated, the justice becomes tyranny. It will convert the following afflictions into broken limbs: 
+    paralysis       instill, nin'kharsag, chaosrays, 
+    sensitivity     instill
+    healthleech,    instill
+    haemophilia,    scrag
+    weariness,      lycantha
+    asthma,         instill, 
+    clumsiness.     instill
+
+If five or more afflictions are converted, the target is frozen; this ability will also prone your target if both of their legs are broken when it resolves.
+
+- A reason to use this card/ability is to stack on Devil
 
 -------------------------------------------------------------------------------
 
@@ -443,29 +480,5 @@ additional conditions are met.
 
 -------------------------------------------------------------------------------
 
-O 100h 0rage 89m 100e 99w[ex] :-ab tarot justice
-Justice (Tarot)                               Known: Yes
--------------------------------------------------------------------------------
-Syntax:            FLING JUSTICE AT <target>
-Works on/against:  Adventurers
-Cooldown:          3.00 seconds of balance
-Details:
-The Justice tarot will bring the wrath of Miramar, the Even-Handed, down upon your foe.
-
-When ruinated, the justice becomes tyranny. It will convert the following afflictions into broken limbs: 
-    paralysis, 
-    sensitivity, 
-    healthleech, 
-    haemophilia, 
-    weariness, 
-    asthma, 
-    clumsiness. 
-
-If five or more afflictions are converted, the target is frozen; this ability will also prone your target if both of their legs are broken when it resolves.
-
-** A reason to use this card/ability is to stack on Devil
-** Does Devil use Ent balance?
-
--------------------------------------------------------------------------------
 
 

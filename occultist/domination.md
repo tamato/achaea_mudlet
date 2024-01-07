@@ -110,6 +110,9 @@ When primebonded, the sycophant shall drain the mana of your enemies;
 this mana is increased if they are shivering, and increased even more so
 if they are frozen.
 
+-- gives 
+weakenedmind
+
 -------------------------------------------------------------------------------
 
 
@@ -255,6 +258,9 @@ When primebonded, the slime shall periodically damage your target; the
 amount of damage inflicted is increased if they are suffering from
 healthleech.
 
+-- gives
+slimeobscure
+
 -- when slime is done
 Irimon finally rids himself of the slime covering him
 kaelthas ate - magnesium then aurum
@@ -282,9 +288,9 @@ Syntax:            ORDER SOULMASTER POSSESS <target>
                    - eat time with eat commands?
                    - force generosity
                    - apply a salve
-                   - smoke a pipe
+                   - If target starts to tumble, force them to move to end the tumble
+                   - force to FOCUS to lose balance/eq
                    - touch a tattoo
-                   - throw a pipe
                    - do they have a heal command, to heal me with?
 
 Works on/against:  Adventurers
@@ -293,13 +299,13 @@ Cooldown:          3.00 seconds of equilibrium
                     (3.00 to possess?)
                     (then it has its own cooldown)
                 
-
 Details:
 Marduk will send to you a soulmaster entity. This entity may be ordered
 to POSSESS an adventurer. When it does, it will take a few seconds to
 gain control of the victim's mind. Once it has done this, you may ORDER
 <target> <command>. Doing this is quite difficult for the soulmaster
 though, so you will be restricted to doing it once every few seconds.
+
 
 -------------------------------------------------------------------------------
 
@@ -357,15 +363,20 @@ Details:
 When you call upon Buul he shall send to you a chimera, which you may
 ride, and when commanded at a foe will deliver a most terrifying roar.
 If your target is not deaf, they shall suffer an affliction of the mind.
-- 
-- 
 
 When primebonded, the chimera shall periodically strike out with one of
 its heads at a target, causing one of the following effects:
-- A roar which will cure a target's deafness if such is present, or
-knock them prone with a stun if it is not.
+
+- A roar which will cure a target's deafness if such is present, or knock them prone with a stun if it is not.
+  - The lion head on the chimera roars at you, restoring your hearing.
+  - The lion head on the chimera roars at you, stunning you with its power.
+
 - A headbutt which will knock your foe prone.
+  - The chimera's goat head rams into you and knocks you sprawling.
+
 - An insidious blast of breath which shall inspire sleep in your enemy.
+  - The chimera's dragon head exhales a cloud of gas at you, and you feel sleepy.
+
 
 -------------------------------------------------------------------------------
 
@@ -385,6 +396,9 @@ they shall be struck down with slickness.
 
 When primebonded, the bubonis shall act of its own will, inflicting your
 foe with maladies of the mind.
+
+- Lost worm
+A bubonis loses its grip and drops to the ground.
 
 -------------------------------------------------------------------------------
 

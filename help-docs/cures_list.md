@@ -84,3 +84,4 @@ Quicksilver   (Applied) Defends against Serpent class fang attacks.
 Realgar       (Smoked) Cures the disfigurement and slickness afflictions.
 Stannum       When eaten, cures various afflictions relating to your sanity.
 
+

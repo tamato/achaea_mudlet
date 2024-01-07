@@ -11,12 +11,13 @@ vertigo         | Danaues,Cadmus,P      |           | x
 impatience      |                       | x         |
 addiction       | nemesis               | x         | x
 lovers          | lovers                | x         | x
-loneliness      | Moon,                 | x         | x
+loneliness      | Moon,Compel           | x         | x
 recklessness    | Moon, Cadmus,P        | x         | x
 masochism       | Moon, Cadmus,P        | x         | x
 confusion       | Moon, Buul,Cad,Unnam  | x         | x
 stupidity       | Moon, Unnam,CR        | x         | x
 dementia        | Unnamable,Buul        |           | x
+ ----------------------------------------------------------
 paralysis       | Instill, Nin'kh, CR
 aeon            | ChaosRays(CR)
 asthma          | Instill, Cadmus
@@ -25,7 +26,7 @@ healthleech     | Instill,Palpatar, Nemsis,P
 sensitivity     | Instill
 slickness       | Instill,Cadmus*
 darkshade       | Instill
-dizziness       | Eerion
+dizziness       | Eerion, Compel
 haemophilia     | Scrag
 ablaze          | Pyridus,P
 nausea          | Palpatar,P
@@ -35,6 +36,7 @@ weariness       | Lycantha
 wither          | Hecate
 shiver/cold     | Ague
 anorexia        | Regress,Pyradius,P
+manaleech       | ruinated lovers
 
 Pyradius
 - Whisperingmadness becomes recklessness.
@@ -573,15 +575,16 @@ Cooldown:          2.50 seconds of equilibrium
 Resource:          50 mana
 Details:
 You may instill from: 
-    Afflication | Cured by
-    -------------------------------------
-    asthma      | eat kelp/aurum
-    clumsiness  | eat kelp
-    healthleech | eat kelp
-    sensitivity | eat kelp
-    slickness   | smoke valerian/realgar or eat bloodroot/magnesium
-    paralysis   | eat bloodroot
-    darkshade   | eat ginseng
+    Afflication | Cured by                      | Domination Equiv
+    ---------------------------------------------------------
+    asthma      | eat kelp/aurum                | none
+    clumsiness  | eat kelp                      | none
+    healthleech | eat kelp                      | palpatar
+    sensitivity | eat kelp                      | none
+    paralysis   | eat bloodroot                 | Nin'kharsag, if they have asthma
+    darkshade   | eat ginseng                   |
+    slickness   | smoke valerian/realgar        | Cadmus, if they have asthma
+                | or eat bloodroot/magnesium    |
 
 This process inflicts a minorly taxing influence upon the subject(*),
 though the influence is more significant if you are in possession of a
