@@ -118,7 +118,7 @@ caloric salve applied, this will nullify the caloric salve. If not, then
 it will set him or her shivering, which will regularly cause a loss of
 equilibrium. If you chill a shivering person, you will freeze him or her
 completely. If two of their limbs are broken to the point of needing a
-restoration salve, it will perform this freeze twice in a single cast.
+**restoration** salve, it will perform this freeze twice in a single cast.
 
 -------------------------------------------------------------------------------
 

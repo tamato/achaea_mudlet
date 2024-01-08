@@ -253,12 +253,22 @@ PREREQ - Devil
 Fling/Ruinate wheel
 - (shiver timer)    then temptimer( 7, interlink shiver); DOMINATE use with hecate to ruin limbs (apply mending)
 - (stupidity timer) then temptimer(14, ); DOMINATE 
-- (aeon timer)      then tmeptimer(21, tarot aeon); DOMINATE
+- (aeon timer)      then tmeptimer(20, tarot aeon); DOMINATE (weariness) command hound at <tar>
  - curing system seems to prefer smoking to cure SLICKNESS, smoking is needed to cure AEON.
  - SMOKING AFF
-   - Disfigurement
-   - Mana Leech
-   - Slickness
+    - Aeon,             elm/cinnabar
+    - Disfigurement,    valerian/realgar
+    - Mana Leech,       valerian/realgar
+    - Slickness,        valerian/realgar
+
+shiver
+end time:   23:17:57.77
+start time: 23:17:44.48
+
+
+aeon time:  23:10:30.90
+start time: 23:10:01.58
+
 
 -------------------------------------------------------------------------------
 
