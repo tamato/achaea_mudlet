@@ -19,7 +19,7 @@ stupidity       | Moon, Unnam,CR        | x         | x
 dementia        | Unnamable,Buul        |           | x
  ----------------------------------------------------------
 paralysis       | Instill, Nin'kh, CR
-aeon            | ChaosRays(CR)
+aeon            | ChaosRays(CR), tarot aeon
 asthma          | Instill, Cadmus
 clumsiness      | Instill
 healthleech     | Instill,Palpatar, Nemsis,P
