@@ -155,10 +155,11 @@ You shuffle a tarot card inscribed with the Aeon out of your deck, bringing the 
 remaining cards to 21.
 Your aura of weapons rebounding disappears.
 You stand an Aeon tarot on your palm, and blow it lightly at Ulvin.
+
 23:24:30.36 O 100h 0rage 100m 99e 100w[eE|93] :>-
 Ulvin suddenly seems less dexterous, his reactions becoming noticeably slower.
+
 23:24:32.31 O 100h 0rage 100m 99e 100w[eE|93] :>-
-[Ulvin]: mentals 0 mana 100 
 Ulvin takes a drink from a soaring eagle vial.
 
 [Ulvin]: mentals 0 mana 100 readaura Ulvin

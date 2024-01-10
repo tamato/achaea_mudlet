@@ -313,11 +313,25 @@ Tzantza:            Yes
 Accentato:          Yes
 CadmusCurse:        No
 
+Affliction:         weariness
 Diagnose:           wearied in body.
 Afflicted msg:      Your limbs grow heavy and you groan feebly.
 Cured msg:          Your limbs strengthen and you feel stronger.
 Cure(s):            Eat Kelp / Eat Aurum
 Description:        Weariness increases the rate at which you use endurance, decreases damage from cutting or blunt attacks you perform, and makes certain delayed movements take longer.
+WhisperingMadness:  No
+Enlighten:          No
+Tzantza:            No
+Accentato:          No
+CadmusCurse:        No
+
+Affliction:         The aeon curse
+Diagnose:           afflicted with the curse of the Aeon.
+Afflicted msg:      Suddenly your movement through the time stream is slowed.
+Cured msg:          The curse of the Aeon wears off and you return to the normal timestream.
+Cure(s):            Smoke Elm / Smoke Cinnabar
+                    Time
+Description:        The aeon curse slows time around you, making it impossible to do more than one thing at once, and delaying everything you do.
 WhisperingMadness:  No
 Enlighten:          No
 Tzantza:            No

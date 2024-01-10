@@ -243,6 +243,8 @@ Vibrant indigo - stupidity
 
 Violet - aeon
 - Rays of violet light lash out at the location from the Wheel of Chaos.
+- Use PinchAura to remove Speed defence ~26 seconds in for Aeon to land.
+ - PinchAura's messae is hidden from the target.
 - Aeon: 
  - cured by SMOKE ELM/Cinnabar
  - This is the only affliction cured with smoking Elm. e.g. Stacking smoking aff's don't mean anythng.
@@ -328,6 +330,13 @@ Works on/against:  Adventurers
 Cooldown:          3.70 seconds of balance
 Details:
 The Aeon tarot will give the curse of Chronos the Eternal to an adventurer, slowing his passage through time.
+
+- It seems to take 2 seconds for Aeon to "hit"
+- need to get a log of this.
+ - Aeon used time:
+ - Slows down message:
+ - Cure message:
+ - TODO Add this all to wheel too.
 
 -------------------------------------------------------------------------------
 
