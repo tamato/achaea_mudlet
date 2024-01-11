@@ -179,7 +179,7 @@ Pyradius will send his firelords to assist you. These Chaotic minions
 have the power to convert the afflictions your enemies labour into other
 conditions:
 
-- Whisperingmadness becomes recklessness.
+- Whisperingmadness(eat Lobelia) becomes recklessness(eat Lobelia).
 
 - Manaleech becomes anorexia.
 

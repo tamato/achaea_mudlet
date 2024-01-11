@@ -337,3 +337,28 @@ Enlighten:          No
 Tzantza:            No
 Accentato:          No
 CadmusCurse:        No
+
+Affliction:         A **broken** left leg
+Diagnose:           afflicted by a **crippled** left leg.
+Afflicted msg:      Your left leg breaks with a loud crack.
+Cured msg:          The bones in your left leg mend.
+Cure(s):            Apply Mending To Legs
+Description:        Having a broken left leg prevents you from using that leg in most situations.
+                    Broken and Crippled are the same thing.
+WhisperingMadness:  No
+Enlighten:          No
+Tzantza:            No
+Accentato:          No
+CadmusCurse:        No
+
+Affliction:         Disloyalty/Disfigurement
+Diagnose:           inspires disloyalty in those nearby.
+Afflicted msg:      You feel ugliness radiating from you.
+Cured msg:          You no longer will inspire disloyalty among friends.
+Cure(s):            Smoke Valerian / Smoke Realgar
+Description:        Disloyalty, often caused by disfigurement, makes creatures loyal to you consider you a beastly enemy.
+WhisperingMadness:  No
+Enlighten:          No
+Tzantza:            No
+Accentato:          No
+CadmusCurse:        No

@@ -40,6 +40,7 @@ Deadening:          Smoke       Elm              Cinnabar
 Deafness:           Apply       Epidermal        Epidermal
 Dementia:           Eat         Prickly Ash      Stannum
 Disfigurement:      Smoke       Valerian         Realgar
+Disloyalty:         Smoke       Valerian         Realgar
 Dissonance:         Eat         Goldenseal       Plumbum
 Dizziness:          Eat         Goldenseal       Plumbum
 Drowning:           Eat         Pear             Calcite

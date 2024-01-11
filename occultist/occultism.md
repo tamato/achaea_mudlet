@@ -16,7 +16,7 @@ recklessness    | Moon, Cadmus,P        | x         | x
 masochism       | Moon, Cadmus,P        | x         | x
 confusion       | Moon, Buul,Cad,Unnam  | x         | x
 stupidity       | Moon, Unnam,CR        | x         | x
-dementia        | Unnamable,Buul        |           | x
+dementia        | Unnam,Buul            |           | x
  ----------------------------------------------------------
 paralysis       | Instill, Nin'kh, CR
 aeon            | ChaosRays(CR), tarot aeon
@@ -30,7 +30,7 @@ dizziness       | Eerion, Compel
 haemophilia     | Scrag
 ablaze          | Pyridus,P
 nausea          | Palpatar,P
-prone           | Buul,P
+prone           | Regress, Buul,P
 sleep           | Buul,P
 weariness       | Lycantha
 wither          | Hecate
@@ -119,6 +119,9 @@ it will set him or her shivering, which will regularly cause a loss of
 equilibrium. If you chill a shivering person, you will freeze him or her
 completely. If two of their limbs are broken to the point of needing a
 **restoration** salve, it will perform this freeze twice in a single cast.
+
+Shrivel causes a limb to need Mending, 1 balance.
+Crippled or Broken.
 
 -------------------------------------------------------------------------------
 
@@ -237,6 +240,10 @@ energy to add to your own. If your subject is afflicted with manaleech
 or they are frozen, the amount of their mental strength you drain will
 be increased.
 
+- Rixil with drain some mana, if frozen/shivering
+- nemesis, if addicted
+- ruinate lovers = manaleech
+
 -------------------------------------------------------------------------------
 
 
@@ -304,6 +311,8 @@ Cooldown:          2.10 seconds of equilibrium
 Resource:          300 mana
 Details:
 By grabbing onto the limb of an adventurer, you can destroy its marrow, rendering it useless.
+
+- Causes the limb to become **broken<><>/crippled** which needs a **Mending Salve** to fix. 1s balance.
 
 -------------------------------------------------------------------------------
 
@@ -466,6 +475,12 @@ various insanities.
 The insanities bestowed by this will not duplicate with existing
 maladies upon the unfortunate witness or listener.
 
+- variable number of maladies
+ - ^([\w'\-]+) has been struck down by (\d+) curses of the unnamable\.$
+- "stupidity" : fumble commands
+- "dementia"  : see things not there.
+- "confusion" : slow eq rate by 100%
+
 -------------------------------------------------------------------------------
 
 
@@ -481,6 +496,8 @@ on him or her in disgust and to crush their own opinion of their
 worth(*).
 
 * Gives disloyalty and shyness.
+- disloyalty cured by smoke val
+- shyness
 
 -------------------------------------------------------------------------------
 
@@ -567,6 +584,8 @@ occultic workings(**) may be introduced into the process.
 * Does limb damage and a minor amount of health damage. The limb damage is increased against a limb that is already broken to requiring a mending salve.
 ** Lesser works which can be combined are: ague, shrivel, and regress.
 
+- use Hecate first to increase limb damage
+
 -------------------------------------------------------------------------------
 
 
@@ -596,6 +615,9 @@ truename derived by the power of the Imperator(**).
 * Does some small amount of health and mana damage.
 ** From the Glaaki ability in domination.
 
+- Does 3% hp/mana damage and 6% if holding a glaaki truename
+ - from classleads news #108 10/12/2022
+
 -------------------------------------------------------------------------------
 
 
@@ -608,7 +630,7 @@ Resource:          200 mana
 Details:
 Having one of the following insanities: 
 
-Afflicatino     |   Source    | Cure
+Afflicatino     |  Alt Source    | Cure
 ------------------------------------------
 dementia 
 stupidity          moon

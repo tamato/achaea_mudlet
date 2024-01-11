@@ -54,7 +54,7 @@ Salves (APPLY)
                   attacks.
 [x] Epidermal     Cure associated with outer organs, like the eyes and ears.
 [x] Mass          Prevents various forms of moving you against your will.
-[x] Mending       Cures broken or shrivelled limbs as well as some other things.
+[x] Mending       Cures broken or **shrivelled** limbs as well as some other things.
 [x] Restoration   Heals damage done to body parts. (see HELP BODY PART DAMAGE)
 
 

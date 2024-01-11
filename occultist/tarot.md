@@ -102,8 +102,7 @@ Syntax:            FLING MAGICIAN AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.00 seconds of balance
 Details:
-The Magician represents the power of magic and the power of the mind. This card will replenish the
-mana of the adventurer it is thrown at.
+The Magician represents the power of magic and the power of the mind. This card will replenish the mana of the adventurer it is thrown at.
 
 -------------------------------------------------------------------------------
 
@@ -349,6 +348,8 @@ Cooldown:          3.00 seconds of balance
 Details:
 With this Tarot, you may instill a lust for you in another adventurer, so that he or she will consider you an ally.
 
+- <> quickly flings a tarot card at you, and you feel unreasonable lust for <>.
+
 -------------------------------------------------------------------------------
 
 
@@ -396,16 +397,15 @@ The moon tarot will give your enemy maladies associated with the mind.
 The affliction will be random if unspecified, and hidden from the
 victim. If you specify an affliction, the ability is faster to recover
 from, but the victim shall see what was delivered. 
-You may pick from:
-    stupidity, 
-    masochism, 
-    hallucinations, 
-    hypersomnia, 
-    confusion, 
-    epilepsy,
-    claustrophobia, 
-    agoraphobia.
-
+You may pick from:          Cures
+    stupidity,          | eat goldenseal/plumbum
+    masochism,          | eat lobelia/argentum (same with wmad)
+    hallucinations,     | eat ash/stannum
+    hypersomnia,        | eat ash/stannum
+    confusion,          | eat ash/stannum
+    epilepsy,           | eat goldenseal/plumbum
+    claustrophobia,     | eat lobelia/argentum (wmad)
+    agoraphobia.        | eat lobelia/argentum (wmad)
 
 -------------------------------------------------------------------------------
 

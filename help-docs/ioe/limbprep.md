@@ -36,15 +36,9 @@ When you do enough damage to reach a critical threshold to a limb, you
 Limbs exist in one of four distinct states:
 
 * a healthy limb, which has no impediment.
-* a crippled limb, which is cured by the mending salve (a 1s balance).
-This comes about as a result of curing a damaged limb with restoration
-or from certain abilities and venoms like epteth and epseth.
-* a damaged limb, which is produced when you reach the threshold of
-damage we have discussed. Cured by a restoration salve (4s balance).
-Also produced when you cure a mutilated limb.
-* a mutilated limb, which is produced if you hit the threshold of damage
-a second time, before they finish curing the limb from the damaged
-state. This needs an additional application of the restoration salve.
+* a crippled limb, which is cured by the mending salve (a 1s balance). This comes about as a result of curing a damaged limb with restoration or from certain abilities and venoms like epteth and epseth.
+* a damaged limb, which is produced when you reach the threshold of damage we have discussed. Cured by a restoration salve (4s balance). Also produced when you cure a mutilated limb.
+* a mutilated limb, which is produced if you hit the threshold of damage a second time, before they finish curing the limb from the damaged state. This needs an additional application of the restoration salve.
 
 So, if I am a dual cutting knight wielding scimitars and I DOUBLESLASH
 TARGET RIGHT LEG repeatedly, eventually the target will be afflicted by
