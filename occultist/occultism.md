@@ -584,7 +584,7 @@ occultic workings(**) may be introduced into the process.
 * Does limb damage and a minor amount of health damage. The limb damage is increased against a limb that is already broken to requiring a mending salve.
 ** Lesser works which can be combined are: ague, shrivel, and regress.
 
-- use Hecate first to increase limb damage
+- use Hecate first to increase limb damage, difference is healthy limbe 14.7, vs shriveled 20
 
 -------------------------------------------------------------------------------
 

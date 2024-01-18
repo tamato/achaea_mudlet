@@ -203,13 +203,15 @@ You sense that the mana of Ulvin stands at 7272 of a maximum 7272.
 Ague, Aeon ramblings, Apply
 --------------------------------------
 Mending uses salve balance
-**Aeon** is cured with smoking, asthma by eating
+**Aeon** is cured with smoking, asthma by eating and fitness, anorexia by APPLYing
 - BUT the speed defence is applied with **SIP** Speed
 - If their mana or health is low enough, then that might block Sipping speed.
 - Set up a trigger to watch for sipping.
 - once they are hit with Aeon, apply **Asthma**
  - ways to get asthma:
  - instil asthma, cadmus (non primed)
+ - for this setup use a covenant without cadmus.
+ - usepinchaura to remove speed along with cadums to give asthma.
  - if still aeon'd and asthma, then hit with Nin'kharsag, and web them
 - Triggers for finding which pipe they use for curing asthma
 - Triggers for finding which pipe they use for curing disfigurement/mana leech
