@@ -278,6 +278,9 @@ When called upon, Istria, known as the Pathfinder, will send to you a pathfinder
 you summon the pathfinder entity will be home to it. Later, you may simply ORDER PATHFINDER HOME to 
 be taken back to where the pathfinder was summoned from.
 
+- TODO: can this be used when off balance?
+- TODO: Can Hermit be used off eq?
+
 -------------------------------------------------------------------------------
 
 
@@ -285,19 +288,12 @@ Marduk (Domination)                           Known: Yes
 -------------------------------------------------------------------------------
 Syntax:            ORDER SOULMASTER POSSESS <target>
                    ORDER <target> <command>
-                   - eat time with eat commands?
-                   - force generosity
-                   - apply a salve
-                   - If target starts to tumble, force them to move to end the tumble
-                   - force to FOCUS to lose balance/eq
-                   - touch a tattoo
-                   - do they have a heal command, to heal me with?
 
 Works on/against:  Adventurers
 Cooldown:          3.00 seconds of equilibrium 
-                    (3 sec to summon)
-                    (3.00 to possess?)
-                    (then it has its own cooldown)
+                   (3 sec to summon)
+                   (3.00 to possess?)
+                   (then it has its own cooldown)
                 
 Details:
 Marduk will send to you a soulmaster entity. This entity may be ordered
@@ -306,6 +302,17 @@ gain control of the victim's mind. Once it has done this, you may ORDER
 <target> <command>. Doing this is quite difficult for the soulmaster
 though, so you will be restricted to doing it once every few seconds.
 
+- <> begins to tumble towards the <>.
+ - ORDER target to walk in a direction to stop their movement.
+ - Would DIVE work here?
+- ORDER DIVE to force prone
+- eat time with eat commands?
+- force generosity
+- apply a salve
+- If target starts to tumble, force them to move to end the tumble
+- force to FOCUS to lose balance/eq
+- touch a tattoo
+- do they have a heal command, to heal me with?
 
 -------------------------------------------------------------------------------
 
@@ -397,7 +404,7 @@ they shall be struck down with slickness.
 When primebonded, the bubonis shall act of its own will, inflicting your
 foe with maladies of the mind.
 
-- Lost worm
+- Lost bubonis
 A bubonis loses its grip and drops to the ground.
 
 -------------------------------------------------------------------------------

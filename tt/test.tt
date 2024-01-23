@@ -1,0 +1,69 @@
+#nop Main cfg for tintin
+#nop legendmud.org wiki, gmcp tintin++
+
+#nop info event
+#nop session Achaea ahaea.com 23
+#nop debug events
+
+#nop Defined in tintin/src/telnet.h
+#var IAC    \xFF; #nop interpt as command
+#var DO     \xFD;
+#var SB     \xFA;
+#var SE     \xF0;
+#var GMCP   \xC9;
+
+#nop According to IRE Gmcp page, this needs to be the first message.
+#send {$IAC$DO$GMCP Core.Hello { "client": "TinTin", "version": "2.0.1" } $IAC$SE}; 
+
+#EVENT {IAC WILL GMCP} 
+{
+   #send {$telnet[iac]$telnet[do]$telnet[gmcp]};
+
+   #nop send { \xFF\xFA\xC9 Core.Supports.Set [ "Core 1", "Char 1", "Char.Afflictions 1", "Char.Defenses 1", "Char.Items 1", "Char.Skills 1", "Room 1", "Comm.Channel 1", "IRE.Rift 1", "IRE.Time 1" ] \xFF\xFO };
+
+   #echo {Got WILL, sent DO};
+}
+
+#nop Get GMCP events.
+#event {IAC SB GMCP Char IAC SE} 
+{
+   #var mytest {%0};
+   #alias {ddd} {#echo {$mytset}};
+   #echo {when will it work...}
+}
+
+#var simple {#echo {hi}}
+#alias esimp {$simple}
+
+#echo {File has been read!}
+
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {UTF-8}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {COMPACT} {OFF}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {OFF}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {ON}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TELNET} {ON}
+#CONFIG {VERBATIM} {ON}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {ON}
+#CONFIG {WORDWRAP} {ON}
+
+#nop HIGHLIGHT {imp} {blink yellow} {5}
+#nop HIGHLIGHT {pygmy} {blink yellow} {5}
+
+#nop Macro's are keybindings.
+#nop #macro
+#nop Use #draw for splitting up the screen with #split
+
+

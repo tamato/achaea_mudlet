@@ -1,0 +1,938 @@
+#ALIAS {draw_sponsors}
+{
+    #class world_tab kill;
+    #class profile_tab kill;
+    #draw tile 4 1 -4 26 { };
+    #if {&info[BANNERS][] == 0}
+    {
+        #line ignore #showme <faa>Sponsors: No banners found.;
+        #return
+    };
+    #local index $gui[index];
+    #local offset 1;
+    #local rows 0;
+    #if {&info[BANNERS][] * 2 - $index * 2 > $gui[rows] - 9}
+    {
+        #math rows ($gui[rows] - 3) & ~1
+    };
+    #else
+    {
+        #math rows 6 + &info[BANNERS][] * 2 - $index * 2
+    };
+    #draw jade Azure rounded grid table 4 1 $rows 26 { }$info[BANNERS][];
+    #loop {$gui[index]} {&info[BANNERS][]} {index}
+    {
+        draw_world {$offset} {$info[BANNERS][+$index][NAME]} {$gui[active]};
+        #math offset $offset + 1;
+        #if {$offset * 2 + 1 > $gui[rows] - 6}
+        {
+            #break
+        }
+    }
+}
+
+#ALIAS {draw_world}
+{
+    #if {{%2} == {%3}}
+    {
+        #draw jade Yellow rounded TALIGN tile %1*2+3 2 %1*2+3 25 @gui_profile_link{WORLD;%2;%2}
+    };
+    #else
+    {
+        #draw jade  Azure rounded TALIGN tile %1*2+3 2 %1*2+3 25 @gui_profile_link{WORLD;%2;%2}
+    }
+}
+
+#ALIAS {draw_worlds}
+{
+    #class world_tab kill;
+    #class profile_tab kill;
+    #draw tile 4 1 -4 26 { };
+    #if {&worldlist[] == 0}
+    {
+        #return
+    };
+    #local index $gui[index];
+    #local offset 1;
+    #local rows 0;
+    #if {&worldlist[] * 2 - $index * 2 > $gui[rows] - 9}
+    {
+        #math rows ($gui[rows] - 3) & ~1
+    };
+    #else
+    {
+        #math rows 6 + &worldlist[] * 2 - $index * 2
+    };
+    #draw jade Azure rounded grid table 4 1 $rows 26 { }$worldlist[];
+    #loop {$gui[index]} {&worldlist[]} {index}
+    {
+        draw_world {$offset} {$worldlist[+$index][NAME]} {$gui[active]};
+        #math offset $offset + 1;
+        #if {$offset * 2 + 1 > $gui[rows] - 6}
+        {
+            #break
+        }
+    }
+}
+
+#ALIAS {gui_connect}
+{
+    #if {&gui[new] == 0}
+    {
+        #line ignore #showme <faa>Connect: No world selected;
+        #return
+    };
+    profile_tab_update;
+    #screen inputregion -2 28 -2 -28 profile_tab_INPUT;
+    #cursor clear;
+    #if {{$gui[new][ALIAS]} == {}}
+    {
+        #line ignore #showme <faa>Connect: No alias set;
+        #return
+    };
+    #if {{$gui[new][HOST]} == {}}
+    {
+        #line ignore #showme <faa>Connect: No host set;
+        #return
+    };
+    #if {{$gui[new][PORT]} == {}}
+    {
+        #line ignore #showme <faa>Connect: No port set;
+        #return
+    };
+    #line ignore #showme {<acf>Connecting to <ffa>$gui[new][NAME]<acf>..};
+    #config mouse off;
+    #buffer refresh;
+    #if {{$gui[new][SSL]} == {off}}
+    {
+        #session $gui[new][ALIAS] $gui[new][HOST] $gui[new][PORT] $gui[new][FILE]
+    };
+    #else
+    {
+        #ssl $gui[new][ALIAS] $gui[new][HOST] $gui[new][PORT] $gui[new][FILE]
+    };
+    #info SESSION save;
+    #if {{$info[SESSION][NAME]} !== {gui}}
+    {
+        #if {{@gui{$gui[new][CHARACTER]}} !== {}}
+        {
+            #send {@gui{$gui[new][CHARACTER]}};
+            #if {{@gui{$gui[new][PASSWORD]}} !== {}}
+            {
+                #send {@gui{@b64Z{$gui[new][PASSWORD]}}}
+            }
+        }
+    };
+    #else
+    {
+        #line ignore #showme <faa>Connect: Failed to connect to <ffa>$gui[new][NAME]<faa>.
+    }
+}
+
+#ALIAS {gui_draw_left}
+{
+    #if {{$gui[world_tab]} == {worlds}}
+    {
+        draw_worlds
+    };
+    #else
+    {
+        draw_sponsors
+    }
+}
+
+#ALIAS {gui_init}
+{
+    #config scroll_lock off;
+    #class WORLDS assign #variable {worldlist} {};
+    #info system save;
+    #banner save;
+    #line quiet #read $info[SYSTEM][TINTIN]/worlds.tin;
+    #variable gui[pause] 0;
+    #variable gui[profile_tab] 0;
+    #variable gui[world_tab] worlds;
+    #screen inputregion -2 28 -2 -28 profile_tab_INPUT;
+    #variable gui[input][INPUT] {{top_row}{-2}{top_col}{28}{bot_row}{-2}{bot_col}{-28}};
+    gui_reload;
+    #if {$gui[cols] > 75}
+    {
+        #draw Silver huge traced scroll tile 1 1 6 73 { TINTIN++};
+        #draw Silver calign scroll tile 1 1 2 75 {}{$info[SYSTEM][CLIENT_VERSION]};
+        #draw Silver calign scroll tile 1 1 3 75 {}{Code by Peter Unold, Bill Reiss, and Igor van den Hoven}
+    };
+    #elseif {$gui[cols] > 40}
+    {
+        #draw Silver huge traced scroll tile 1 1 6 40 { TT++};
+        #draw Silver calign scroll tile 1 1 2 40 {}{$info[SYSTEM][CLIENT_VERSION]};
+        #draw Silver calign scroll tile 1 1 4 40 {}{Code by Peter Unold, Bill Reiss,}{}{and Igor van den Hoven}
+    };
+    #elseif {$gui[cols] > 18}
+    {
+        #draw Silver calign scroll tile 1 1 14 $gui[cols] {T I N T I N + +}{}{$info[SYSTEM][CLIENT_VERSION]}{}{Code by}{}{Peter Unold}{}{Bill Reiss}{}{and}{}{Igor van den Hoven}
+    };
+    #elseif {$gui[cols] > 8}
+    {
+        #draw Silver huge traced scroll tile 1 1 6 9 {T};
+        #draw Silver huge traced scroll tile 1 1 6 9 {T};
+        #draw Silver huge traced scroll tile 1 1 6 9 {+};
+        #draw Silver huge traced scroll tile 1 1 6 9 {+};
+        #draw Silver calign scroll tile 1 1 1 9 {$info[SYSTEM][CLIENT_VERSION]}
+    };
+    #elseif {$gui[cols] > 1}
+    {
+        #draw Silver calign scroll tile 1 1 8 $gui[cols] {T}{i}{n}{T}{i}{n}{+}{+}
+    }
+}
+
+#ALIAS {gui_new}
+{
+    #class profile_tab kill;
+    #variable gui[new] {{NAME}{} {ALIAS}{} {HOST}{} {PORT}{} {SSL}{off} {FILE}{} {CHARACTER}{} {PASSWORD}{} {INPUT}{}};
+    reload_profile_tab
+}
+
+#ALIAS {gui_reload}
+{
+    #split 1 3 27 27;
+    #config mouse on;
+    #screen clear split;
+    #screen inputregion -2 28 -2 -28 profile_tab_INPUT;
+    #screen get rows gui[rows];
+    #screen get cols gui[cols];
+    #math gui[cols] $gui[cols] - 54;
+    #variable gui[index] 1;
+    #draw Orange rounded box -3 27 -1 -27;
+    #draw Orange rounded box 1 27 -4 -27;
+    world_tab $gui[world_tab];
+    #switch {{$gui[world_tab]}}
+    {
+        #case {{worlds}}
+        {
+            draw_worlds
+        };
+        #case {{sponsors}}
+        {
+            draw_sponsors
+        }
+    };
+    #if {$gui[profile_tab] == 1}
+    {
+        reload_profile_tab
+    }
+}
+
+#ALIAS {gui_remove}
+{
+    #if {&gui[new] == 0}
+    {
+        #showme {<faa>Remove: No profile loaded.};
+        #return
+    };
+    #if {{$gui[new][NAME]} === {}}
+    {
+        #showme {<faa>Remove: No profile name set.};
+        #return
+    };
+    profile_tab_save;
+    #unvariable {worldlist[$gui[new][NAME]]};
+    profile_tab_cancel;
+    draw_worlds 0;
+    #line ignore #showme {<acf>World <ffa>$gui[new][NAME]<acf> removed.};
+    #class WORLDS WRITE $info[SYSTEM][TINTIN]/worlds.tin
+}
+
+#ALIAS {gui_save}
+{
+    #if {&gui[new] == 0}
+    {
+        #class WORLDS WRITE $info[SYSTEM][TINTIN]/worlds.tin;
+        #showme {<acf>Saving worlds.};
+        #return
+    };
+    profile_tab_update;
+    #if {{$gui[new][NAME]} === {}}
+    {
+        #showme {<faa>Save: No profile name set.};
+        #return
+    };
+    #screen inputregion -2 28 -2 -28 profile_tab_INPUT;
+    #variable {worldlist[$gui[new][NAME]]} {$gui[new]};
+    #unvariable {worldlist[$gui[new][NAME]][DESC]};
+    gui_worlds;
+    draw_worlds {&worldlist[$gui[new][NAME]]};
+    reload_profile_tab;
+    #line ignore #showme {<acf>World <ffa>$gui[new][NAME]<acf> saved.};
+    #class WORLDS WRITE $info[SYSTEM][TINTIN]/worlds.tin
+}
+
+#ALIAS {gui_sponsors}
+{
+    world_tab sponsors
+}
+
+#ALIAS {gui_tab_backward}
+{
+    #screen get INPUT_NAME input_name;
+    #switch {{$input_name}}
+    {
+        #case {{profile_tab_NAME}}
+        {
+            profile_tab_cycle INPUT NAME
+        };
+        #case {{profile_tab_ALIAS}}
+        {
+            profile_tab_cycle NAME ALIAS
+        };
+        #case {{profile_tab_HOST}}
+        {
+            profile_tab_cycle ALIAS HOST
+        };
+        #case {{profile_tab_PORT}}
+        {
+            profile_tab_cycle HOST PORT
+        };
+        #case {{profile_tab_FILE}}
+        {
+            profile_tab_cycle PORT FILE
+        };
+        #case {{profile_tab_CHARACTER}}
+        {
+            profile_tab_cycle FILE CHARACTER
+        };
+        #case {{profile_tab_PASSWORD}}
+        {
+            profile_tab_cycle CHARACTER PASSWORD
+        };
+        #case {{profile_tab_INPUT}}
+        {
+            profile_tab_cycle PASSWORD INPUT
+        }
+    }
+}
+
+#ALIAS {gui_tab_forward}
+{
+    #screen get INPUT_NAME input_name;
+    #switch {{$input_name}}
+    {
+        #case {{profile_tab_NAME}}
+        {
+            profile_tab_cycle ALIAS NAME
+        };
+        #case {{profile_tab_ALIAS}}
+        {
+            profile_tab_cycle HOST ALIAS
+        };
+        #case {{profile_tab_HOST}}
+        {
+            profile_tab_cycle PORT HOST
+        };
+        #case {{profile_tab_PORT}}
+        {
+            profile_tab_cycle FILE PORT
+        };
+        #case {{profile_tab_FILE}}
+        {
+            profile_tab_cycle CHARACTER FILE
+        };
+        #case {{profile_tab_CHARACTER}}
+        {
+            profile_tab_cycle PASSWORD CHARACTER
+        };
+        #case {{profile_tab_PASSWORD}}
+        {
+            profile_tab_cycle INPUT PASSWORD
+        };
+        #case {{profile_tab_INPUT}}
+        {
+            profile_tab_cycle NAME INPUT
+        }
+    }
+}
+
+#ALIAS {gui_worlds}
+{
+    world_tab worlds
+}
+
+#ALIAS {profile_tab}
+{
+    #switch {{%1}}
+    {
+        #case {{NAME}}
+        {
+            profile_tab_draw 1 -26 3 -1 NAME
+        };
+        #case {{ALIAS}}
+        {
+            profile_tab_draw 4 -26 6 -1 ALIAS
+        };
+        #case {{HOST}}
+        {
+            profile_tab_draw 7 -26 9 -1 HOST
+        };
+        #case {{PORT}}
+        {
+            profile_tab_draw 10 -26 12 -9 PORT
+        };
+        #case {{SSL}}
+        {
+            profile_tab_draw 10 -7 12 -1 SSL toggle
+        };
+        #case {{FILE}}
+        {
+            profile_tab_draw 13 -26 15 -1 FILE
+        };
+        #case {{CHARACTER}}
+        {
+            profile_tab_draw 16 -26 18 -1 CHARACTER
+        };
+        #case {{PASSWORD}}
+        {
+            profile_tab_draw 19 -26 21 -1 PASSWORD
+        }
+    }
+}
+
+#ALIAS {profile_tab_cancel}
+{
+    #screen get INPUT_NAME input_name;
+    #regexp {$input_name} {profile_tab_{NAME|ALIAS|HOST|PORT|SSL|FILE|CHARACTER|PASSWORD}}
+    {
+        profile_tab_cycle INPUT &1
+    };
+    #screen clear square 1 -26 -1 -1;
+    #variable gui[profile_tab] 0;
+    #math gui[index] 1
+}
+
+#ALIAS {profile_tab_cycle}
+{
+    profile_tab_pull %2;
+    #screen inputregion $gui[input][%1][top_row] $gui[input][%1][top_col] $gui[input][%1][bot_row] $gui[input][%1][bot_col] profile_tab_%1;
+    profile_tab_set %1
+}
+
+#ALIAS {profile_tab_draw}
+{
+    #if {{%5} == {PASSWORD}}
+    {
+        #variable temp @b64Z{$gui[new][%5]};
+        #draw jade Silver rounded talign box %1 %2 %3 %4 {@starout{$temp}};
+        #unvariable temp
+    };
+    #else
+    {
+        #draw jade Silver rounded talign box %1 %2 %3 %4 {$gui[new][%5]}
+    };
+    #draw jade Azure scaled tile %1 %2+2 %1 %2+3 *gui[new][%5];
+    #class profile_tab assign {profile_tab_input %1+1 %2+1 %1+1 %4-1 %5 %6}
+}
+
+#ALIAS {profile_tab_input}
+{
+    #variable gui[input][%5] {{top_row}{%1}{top_col}{%2}{bot_row}{%3}{bot_col}{%4}};
+    #if {{%6} == {toggle}}
+    {
+        #button {%1 %2 %3 %4;PRESSED MOUSE BUTTON ONE}{#var gui[new][%5] @gui_toggle{$gui[new][%5];on;off};profile_tab %5}
+    };
+    #else
+    {
+        #button {%1 %2 %3 %4;PRESSED MOUSE BUTTON ONE}{profile_tab_update;#screen inputregion %1 %2 %3 %4 profile_tab_%5;profile_tab_set %5;};
+        #event {CATCH RECEIVED INPUT profile_tab_%5}{profile_tab_pull %5;#screen inputregion -2 28 -2 -28 profile_tab_INPUT;}
+    }
+}
+
+#ALIAS {profile_tab_pull}
+{
+    #if {{%1} == {PASSWORD}}
+    {
+        #cursor get temp;
+        #variable gui[new][%1] {@b64z{$temp}};
+        #unvariable temp
+    };
+    #else
+    {
+        #cursor get {gui[new][%1]}
+    };
+    #cursor clear;
+    profile_tab %1
+}
+
+#ALIAS {profile_tab_save}
+{
+    #screen get INPUT_NAME input_name;
+    #regexp {$input_name} {profile_tab_{NAME|ALIAS|INPUT|HOST|PORT|SSL|FILE|CHARACTER|PASSWORD}}
+    {
+        profile_tab_pull &1
+    }
+}
+
+#ALIAS {profile_tab_set}
+{
+    #if {{%1} == {PASSWORD}}
+    {
+        #local temp {};
+        #format temp %+64Z {$gui[new][%1]};
+        #cursor set {$temp}
+    };
+    #else
+    {
+        #cursor set {$gui[new][%1]}
+    }
+}
+
+#ALIAS {profile_tab_update}
+{
+    #screen get INPUT_NAME input_name;
+    #regexp {$input_name} {profile_tab_{NAME|ALIAS|INPUT|HOST|PORT|FILE|CHARACTER|PASSWORD}}
+    {
+        profile_tab_pull &1
+    }
+}
+
+#ALIAS {reload_profile_tab}
+{
+    #variable gui[profile_tab] 1;
+    profile_tab NAME;
+    profile_tab ALIAS;
+    profile_tab HOST;
+    profile_tab PORT;
+    profile_tab SSL;
+    profile_tab FILE;
+    profile_tab CHARACTER;
+    profile_tab PASSWORD;
+    #buffer clear;
+    #if {&gui[new][DESC] && $gui[cols] >= 26}
+    {
+        #draw jade bumped ualign rounded scaled calign scroll box 1 1 1 $gui[cols] {<ffa>$gui[new][NAME] <fff>- <ffa>]8;;$gui[new][WEBSITE][04m$gui[new][WEBSITE][24m]8;;};
+        #draw jade Silver ualign rounded scaled scroll box 1 1 1 $gui[cols] {$gui[new][DESC]}
+    };
+    #draw jade Green rounded calign box -3 14 -1 26 {@gui_link{COMMAND;gui_connect;connect}};
+    #draw jade Green rounded calign box -3 -26 -1 -14 {@gui_link{COMMAND;gui_save;save}};
+    #if {{$gui[world_tab]} !== {sponsors}}
+    {
+        #draw jade Green rounded calign box -3 -13 -1 -1  {@gui_link{COMMAND;gui_remove;remove}}
+    };
+    #macro {\t} {gui_tab_forward};
+    #macro {\e[Z} {gui_tab_backward}
+}
+
+#ALIAS {world_click}
+{
+    #variable gui[active] {%1};
+    #nop profile_tab_cancel;
+    #if {{$gui[world_tab]} == {worlds}}
+    {
+        #variable gui[new] {$worldlist[%1]};
+        draw_worlds {%1}
+    };
+    #else
+    {
+        #variable gui[new] {$info[BANNERS][%1]} {{SSL}{off}} {{FILE}{}} {{CHARACTER}{}} {{PASSWORD}{}} {{INPUT}{}};
+        draw_sponsors
+    };
+    reload_profile_tab;
+    #buffer end
+}
+
+#ALIAS {world_tab}
+{
+    #variable gui[world_tab] %1;
+    #class world_tab kill;
+    #if {{$gui[world_tab]} == {worlds}}
+    {
+        #draw jade Yellow rounded calign box 1  1 3 13 {@gui_link{COMMAND;{profile_tab_cancel;world_tab worlds;draw_worlds};worlds}};
+        #draw jade Azure  rounded calign box 1 14 3 26 {@gui_link{COMMAND;{profile_tab_cancel;world_tab sponsors;draw_sponsors};sponsors}}
+    };
+    #else
+    {
+        #draw jade Azure  rounded calign box 1  1 3 13 {@gui_link{COMMAND;{profile_tab_cancel;world_tab worlds;draw_worlds};worlds}};
+        #draw jade Yellow rounded calign box 1 14 3 26 {@gui_link{COMMAND;{profile_tab_cancel;world_tab sponsors;draw_sponsors};sponsors}}
+    };
+    #draw jade Green rounded calign box -3  1 -1 13 {@gui_link{COMMAND;gui_new;new}};
+    #draw jade Green rounded calign box -3 14 -1 26 {@gui_link{COMMAND;#delay 0 #end;exit}}
+}
+
+
+#BUTTON {-2 28 -2 -28;PRESSED MOUSE BUTTON ONE}
+{
+    profile_tab_update;
+    #screen inputregion -2 28 -2 -28 profile_tab_INPUT;
+    profile_tab_set INPUT
+}
+
+
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {UTF-8}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {COMPACT} {OFF}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {ON}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {OFF}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TELNET} {ON}
+#CONFIG {VERBATIM} {OFF}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {OFF}
+#CONFIG {WORDWRAP} {ON}
+
+#EVENT {DOUBLE-CLICKED SECURE LINK WORLD MOUSE BUTTON ONE}
+{
+    gui_connect
+}
+
+#EVENT {PRESSED SECURE LINK COMMAND MOUSE BUTTON ONE}
+{
+    %4
+}
+
+#EVENT {PRESSED SECURE LINK COMMAND MOUSE BUTTON THREE}
+{
+    #line ignore #showme {<138>Group<178>: %6 <138>Command<178>: %4}
+}
+
+#EVENT {PRESSED SECURE LINK WORLD MOUSE BUTTON ONE}
+{
+    world_click {%4}
+}
+
+#EVENT {PRESSED SECURE LINK WORLD MOUSE BUTTON THREE}
+{
+    #line ignore #showme {<138>Group<178>: %6 <138>Command<178>: %4}
+}
+
+#EVENT {SCREEN RESIZE}
+{
+    #delay {gui_reload} {gui_reload;#buffer end} {0.1}
+}
+
+#EVENT {SCROLLED MOUSE WHEEL DOWN}
+{
+    #if {%1 <= 26}
+    {
+        #if {$gui[profile_tab] >= 0 && $gui[index] < @gui_size_left{} && @gui_size_left{} > $gui[rows] / 3 - 6}
+        {
+            #math gui[index] $gui[index] + 1;
+            gui_draw_left
+        }
+    };
+    #elseif {$gui[profile_tab] && %3 >= -26}
+    {
+        #if {$gui[pause] == 1}
+        {
+            #return
+        };
+        gui_tab_forward;
+        #variable gui[pause] 1;
+        #delay 0.2 #var gui[pause] 0
+    };
+    #else
+    {
+        #buffer down 1
+    }
+}
+
+#EVENT {SCROLLED MOUSE WHEEL UP}
+{
+    #if {%1 <= 26}
+    {
+        #if {$gui[profile_tab] >= 0 && $gui[index] > 1}
+        {
+            #math gui[index] $gui[index] - 1;
+            gui_draw_left
+        }
+    };
+    #elseif {$gui[profile_tab] && %3 >= -26}
+    {
+        #if {$gui[pause] == 1}
+        {
+            #return
+        };
+        gui_tab_backward;
+        #variable gui[pause] 1;
+        #delay 0.2 #var gui[pause] 0
+    };
+    #else
+    {
+        #buffer up 1
+    }
+}
+
+#EVENT {SESSION ACTIVATED}
+{
+    gui_reload
+}
+
+#EVENT {SESSION DESTROYED}
+{
+    #gts #delay 0 #end
+}
+
+
+#FUNCTION {b64Z}
+{
+    #if {{%0} === {}}
+    {
+        #return
+    };
+    #local temp {};
+    #format temp %+64Z {%0};
+    #return {$temp}
+}
+
+#FUNCTION {b64z}
+{
+    #if {{%0} === {}}
+    {
+        #return
+    };
+    #local temp {};
+    #format temp %+64z {%0};
+    #return {$temp}
+}
+
+#FUNCTION {gui_link}
+{
+    #format gui[link] {%+11h} {%3};
+    #replace gui[link] {#} { };
+    #line sub esc #var gui[link] {]68;2;%1;%2[4;24m$gui[link][24m};
+    #return {$gui[link]}
+}
+
+#FUNCTION {gui_profile_link}
+{
+    #format gui[link] {%-24.24s} {%3};
+    #line sub esc #var gui[link] {]68;2;%1;%2[4;24m$gui[link][24m};
+    #return {$gui[link]}
+}
+
+#FUNCTION {gui_size_left}
+{
+    #if {{$gui[world_tab]} == {worlds}}
+    {
+        #return {&worldlist[]}
+    };
+    #else
+    {
+        #return {&info[BANNERS][]}
+    }
+}
+
+#FUNCTION {gui_toggle}
+{
+    #if {{%1} == {%2}}
+    {
+        #return {%3}
+    };
+    #return {%2}
+}
+
+#FUNCTION {starout}
+{
+    #local temp {%0};
+    #replace temp {%.} {*};
+    #return {$temp}
+}
+
+
+#PATHDIR {d} {u} {32}
+#PATHDIR {e} {w} {2}
+#PATHDIR {n} {s} {1}
+#PATHDIR {ne} {sw} {3}
+#PATHDIR {nw} {se} {9}
+#PATHDIR {s} {n} {4}
+#PATHDIR {se} {nw} {6}
+#PATHDIR {sw} {ne} {12}
+#PATHDIR {u} {d} {16}
+#PATHDIR {w} {e} {8}
+
+#VARIABLE {gui}
+{
+    {cols} {39}
+    {index} {1}
+    {input} 
+    {
+        {INPUT} 
+        {
+            {bot_col} {-28}
+            {bot_row} {-2}
+            {top_col} {28}
+            {top_row} {-2}
+        }
+    }
+    {link} {]68;2;COMMAND;#delay 0 #end[4;24m   exit    [24m}
+    {pause} {0}
+    {profile_tab} {0}
+    {rows} {42}
+    {world_tab} {worlds}
+}
+#VARIABLE {info}
+{
+    {BANNERS} 
+    {
+        {3Kingdoms} 
+        {
+            {ALIAS} {3K}
+            {DESC} {Based around the mighty town of Pinnacle, three main realms beckon the player
+to explore.  These kingdoms are: Fantasy, a vast medieval realm of orcs, elves,
+dragons, and a myriad of other creatures; Science, a post-apocalyptic, war-torn
+world set in the not-so-distant future; and Chaos, a transient realm where the
+realities of Fantasy and Science collide to produce unimaginable results.
+
+3Kingdoms combines all these features, and so much more, to give the player an
+experience that will stay with them for the rest of their lives.  Come live the
+adventure and find out for yourself why 3K is the best there is!}
+            {HOST} {3k.org}
+            {NAME} {3Kingdoms}
+            {PORT} {3000}
+            {WEBSITE} {http://3k.org}
+        }
+        {Alter Aeon} 
+        {
+            {ALIAS} {aa}
+            {DESC} {Alter Aeon is a custom multiclass MUD, where each of the character
+classes can be combined to make very unique characters.  This huge
+fantasy themed game has hundreds of areas and quests, spanning
+several continents and outer planar regions.  There are custom spells,
+skills, minions, player run shops, boats, PvP, and many other features
+for nearly every kind of player.  The game is very friendly to new players
+and has extensive support for the blind and visually impaired.}
+            {HOST} {alteraeon.com}
+            {NAME} {Alter Aeon}
+            {PORT} {3000}
+            {WEBSITE} {https://www.alteraeon.com}
+        }
+        {Legends of Kallisti} 
+        {
+            {ALIAS} {LoK}
+            {DESC} {One of the longest running, most feature rich MUDs in the world with decades
+of development. Kallisti boasts a massive original world, great atmosphere of
+players, excellent combat system including group formations, ranged combat,
+optional PK and arena PvP, extensive character customization, player lineages,
+clans, customizable player houses, item crafting, extensively customizable UI,
+Mud Sound Protocol, extensive blind player support, MSDP, and so much more.
+
+This is an amazing game that you could literally play for a decade and still
+discover more - you won't be disappointed!}
+            {HOST} {legendsofkallisti.com}
+            {NAME} {Legends of Kallisti}
+            {PORT} {4000}
+            {WEBSITE} {https://legendsofkallisti.com}
+        }
+        {Lost Souls} 
+        {
+            {ALIAS} {ls}
+            {DESC} {"Lost Souls is not for the faint of heart." -- Net Games
+
+"The depth of Lost Souls can be amazing." -- Playing MUDs On The Internet
+
+"Have you ever come upon a place on the Net that's so incredible that you
+can't believe such entertainment is free? This MUD will blow your mind with
+its marvelous attention to detail and incredible role-playing atmosphere!"
+
+  -- Yahoo! Wild Web Rides}
+            {HOST} {lostsouls.org}
+            {NAME} {Lost Souls}
+            {PORT} {23}
+            {WEBSITE} {https://lostsouls.org}
+        }
+        {New Worlds Ateraan} 
+        {
+            {ALIAS} {nwa}
+            {DESC} {Ateraan is a world of Intensive Roleplaying offering many unique and powerful
+guilds, races, politics, religion, justice, economy, and a storyline that is
+dominantly player controlled and based on a novel. The game is based on a
+Kingdom with knights, merchants, mages, and thieves, and a fierce southern
+state that has warriors, shaman, slaves, and servants. Ships rule the seas and
+caravans travel the lands. With 100's of players and features like invasions,
+ship creation, house building, clans, theaters, leatherball fields, and massive
+events, the game is incredibly robust and diverse.}
+            {HOST} {ateraan.com}
+            {NAME} {New Worlds Ateraan}
+            {PORT} {4002}
+            {WEBSITE} {http://www.ateraan.com}
+        }
+        {Primal Darkness} 
+        {
+            {ALIAS} {pd}
+            {DESC} {Primal Darkness boasts twenty three start races, three quest races, five start
+classes and twenty one subclasses to suit your adventuring needs, and a custom
+remort system allowing you to save all your hard work while trying out new
+races and/or classes. The world has zoned player killing (pk) supported by a
+justice system, player built and ran guilds, a fully sail-able ocean with
+customizable ships and ship battle system, a fully flyable sky with mapping
+system, mud-wide auction line, a colosseum in which to prove your battle
+prowess (harmless/free pk), and 30+ areas on multiple continents to explore.}
+            {HOST} {mud.primaldarkness.com}
+            {NAME} {Primal Darkness}
+            {PORT} {5000}
+            {WEBSITE} {https://www.primaldarkness.com}
+        }
+        {Realm of Utopian Dreams (RUD)} 
+        {
+            {ALIAS} {rud}
+            {DESC} {RUD is a unique ROM-based high-fantasy MUD with character choices for many play
+styles from hack-n-slash to roleplay. Each of the races and classes offer
+unique spells and skills, unlocked through a tiered remort system with
+customization through religion memberships and epic advancements. RUD started
+in 1996, always seeking new adventurers to become the next hero, build a home,
+start a shop, and eventually become Nobles of the Realm! New players to RUD can
+be just as successful as 20+ year veterans. We run quests, plots, and annual
+festivals in an ever evolving world. Come build Lantarea with us!}
+            {HOST} {rudmud.com}
+            {NAME} {Realm of Utopian Dreams (RUD)}
+            {PORT} {1701}
+            {WEBSITE} {http://rudmud.com}
+        }
+        {RetroMUD} 
+        {
+            {ALIAS} {rm}
+            {DESC} {RetroMUD features over 100 levels of play, a huge array of character advancement
+options, and dozens of quests across six different worlds. It's like six games
+in one.}
+            {HOST} {96.126.116.118}
+            {NAME} {RetroMUD}
+            {PORT} {3000}
+            {WEBSITE} {http://www.retromud.org}
+        }
+        {Threshold RPG} 
+        {
+            {ALIAS} {thresh}
+            {DESC} {Join us at Threshold RPG, one of the oldest RP enforced games on the
+internet. Add to twenty-six years of player created history and make your
+own mark on the world today. Join a hundred other players who are vying for
+political and religious power in complex systems that reward skill, effort,
+and social interactions. Threshold RPG is a custom code-base written in
+LPC and features a completely unique and original world.}
+            {HOST} {thresholdrpg.com}
+            {NAME} {Threshold RPG}
+            {PORT} {3333}
+            {WEBSITE} {https://www.thresholdrpg.com}
+        }
+    }
+    {SYSTEM} 
+    {
+        {ATTACH_FILE} {}
+        {CLIENT_NAME} {TinTin++}
+        {CLIENT_VERSION} {2.02.31 }
+        {CWD} {/home/tamausb/repos/achaea_mudlet/tt}
+        {DETACH_FILE} {}
+        {EXEC} {tt++}
+        {HOME} {/home/tamausb}
+        {LANG} {en_US.UTF-8}
+        {OS} {UNKNOWN}
+        {PID} {8976}
+        {TERM} {xterm-256color}
+        {TINTIN} {/home/tamausb/.tintin}
+    }
+}
+

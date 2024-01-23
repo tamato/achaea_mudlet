@@ -1,3 +1,17 @@
+
+local stopTimer = false
+function timer(time)
+   tempTimer(1.0, function() 
+      if stopTimer == true then
+         return
+      end
+
+      
+   end)
+end
+
+
+
 ----------------------------
 -- Target rooms for quests
 ----------------------------
@@ -43,4 +57,5 @@ registerNamedEventHandler("Mine", "finishedHunt", "mmapper arrived", finishedHun
 
 
 --local currentRoom = mmp.currentroom
+
 

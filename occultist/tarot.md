@@ -167,6 +167,9 @@ which you activated it. Then, when you fling it, you will be transported to that
 there are no adventurers in that location at the time. SNIFF HERMIT will tell you the name of the 
 location at which the hermit was activated.
 
+- TODO: Can Hermit be used off eq?
+- TODO: can Istria be used when off balance?
+
 -------------------------------------------------------------------------------
 
 
