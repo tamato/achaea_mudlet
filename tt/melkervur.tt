@@ -1,0 +1,17 @@
+#read ./connect.tt
+#read ./events.tt
+
+#session mel achaea.com 23
+
+#EVENT {SESSION ACTIVATED}
+{
+   #send melkervur
+   #send achaeapassword
+}
+
+#class {battleRage} {kill}
+#class {battleRage} {assign} {
+   #var atk { #send swing }
+   #var atk %1 { #send swing %1 }
+}
+
