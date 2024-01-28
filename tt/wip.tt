@@ -1,0 +1,36 @@
+#nop test scripts
+#nop For these events to work, tt++ must be started with connect.tt to enable GMCP
+
+
+#EVENT {IAC SB GMCP char.items.list IAC SE}
+{
+   #unvar monsters;
+   #nop https://tintin.mudhalla.net/manual/colors.php;
+
+   #var charItemsList %0;
+
+   #loop 1 &charItemsList[] idx {
+
+      #var name $charItemsList[$idx][name];
+      #var id $charItemsList[$idx][id];
+
+      #var monsters[$idx] {{id}{$idx}{name}{$name}};
+   }
+}
+
+
+#EVENT {IAC SB GMCP char.vitals IAC SE}
+{
+   #variable charVitals %0;
+}
+
+
+
+#alias atk {
+
+#foreach {$monsters} {mon} {
+   #showme $monsters[$mon][name];
+   #nop #echo {#list areas[$areaName] find 
+}
+
+}

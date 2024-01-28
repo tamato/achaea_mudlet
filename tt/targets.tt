@@ -1,0 +1,106 @@
+#nop Targeting aliases and events
+
+
+#class targeting kill
+#class targeting open
+
+#EVENT {IAC SB GMCP room.info IAC SE}
+{
+   #nop #echo {<110>Got RoomInfo};
+   #variable roomInfo {%0};
+   #var areaName $roomInfo[area];
+}
+
+#EVENT {IAC SB GMCP Char.Items.List IAC SE}
+{
+   #var items {%0};
+   #variable gmcp[char][items][list] {$items[items]};
+   #unvar roomMobs;
+
+   #loop 1 &gmcp[char][items][list][%*] id {
+      #nop NEED TO CHECK FOR ONLY MONSTERS;
+
+      #if {"$gmcp[char][items][list][$id][attrib]" == {} }{ #showme <074>skipped item; #continue; };
+      #if {"$gmcp[char][items][list][$id][attrib]" != "m" }{ #showme <074>skipped nonmonster; #continue; };
+
+      #var mob $gmcp[char][items][list][$id];
+      #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
+   };
+
+   #unvar id;
+   #unvar mob;
+   #unvar items;
+}
+
+#alias {target}
+{
+   #if {"%0" == ""}
+   {
+      #showme {*targets[$areaName][%*]}
+   };
+   #elseif {&targets[$areaName][%0]}
+   {
+      #unhighlight {%0};
+      #unvar targets[$areaName][%0];
+      #showme Target '%0' removed from '$areaName'.;
+   };
+   #else
+   {
+      #highlight {%0} {blink reverse};
+      #var targets[$areaName][%0] {};
+      #showme Target '%0' added to '$areaName'.;
+   };
+}
+
+#alias {atk} 
+{
+   #if {"%0" == ""}
+   {
+      #nop Go through the list of possible targets and attack the first one.;
+      #nop #showme <038>Targets list: *targets[$areaName][%*];
+
+      #loop 1 &roomMobs[] denizen {
+
+         #var denizen {$roomMobs[$denizen]};
+         #nop #showme in room: <038>$denizen;
+
+         #foreach $targets[$areaName] tar {
+
+            #nop Skip over empty entries;
+            #if {"$tar" === {}} { #continue; };
+            #nop #showme tar: <028>"$tar";
+
+            #var found 0;
+            #regex {$denizen} {$tar} {
+
+               #var found 1;
+               #nop #showme found tar: <028>$tar\e]R,<178>*denizen[];
+               attackCmd $tar;
+            };
+
+            #if {$found == 1} {
+               #return
+            };
+         };
+      };
+   };
+   #else
+   {
+      attackCmd %1;
+   };
+}
+
+#alias {filltar} {
+   #unvar roomMobs;
+
+   #loop 1 &gmcp[char][items][list][%*] id {
+      #var mob $gmcp[char][items][list][$id];
+
+      #showme $id, $mob;
+      #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
+   };
+   #var roomMobs;
+}
+
+
+#class targeting close

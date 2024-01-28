@@ -1,0 +1,18 @@
+#nop
+
+#alias {print} {
+   #showme  <168>-----------------------------------------------------------;
+   #showme  <078>[ <038>%0 <078>];
+   #showme  <168>-----------------------------------------------------------;
+}
+
+
+#nop \Z until the end f the text zent by the mud
+#highlight {^You have slain%*.$} {black b Magenta};
+#highlight {gold{|en} sovereigns} {black b yellow};
+
+#action {A %w golden sovereigns spill from the} {
+   queue add freestand get gold;
+   put gold in pack;
+}
+

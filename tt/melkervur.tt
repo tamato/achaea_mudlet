@@ -1,17 +1,21 @@
-#read ./connect.tt
-#read ./events.tt
+#nop Start up script for melkervur
+
+#read global.tt
+#read connect.tt
 
 #session mel achaea.com 23
+melkervur
+achaeapassword
 
-#EVENT {SESSION ACTIVATED}
-{
-   #send melkervur
-   #send achaeapassword
-}
+#nop set target when one is seen.
 
-#class {battleRage} {kill}
-#class {battleRage} {assign} {
-   #var atk { #send swing }
-   #var atk %1 { #send swing %1 }
+#var pveTarget 0
+#alias attackCmd {swing}
+
+#read targets.tt
+#read melkervur/battlerage.tt
+
+#action {^You have recovered balance on all limbs.$} {
+   atk 
 }
 
