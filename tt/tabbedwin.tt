@@ -2,7 +2,7 @@
 
 #VARIABLE {comm_window}
 {
-    {active} {tells}
+    {active} {chats}
     {botcol} {80}
     {botrow} {6}
     {offset} {1}
@@ -24,9 +24,9 @@
     comm_window_show tells %1 tells you %2
 }
 
-#ACTION {~%1 chats %2}
+#ACTION {~%1 says, %2}
 {
-    comm_window_show chats %1 chats %2
+   comm_window_show chats %1 chats %2;
 }
 
 #ALIAS {comm_window_scroll_up}
@@ -130,7 +130,5 @@
     #config mouse on;
     #screen clear top;
     comm_window_draw_tabs;
-    #showme <138>Bubba tells you 'hello';
-    #showme <158>Pamela chats 'bye';
-    #showme <168>Bobbo tells you 'bli bla blo'
+    #showme <148>(Ashtan): Fitz says, "Stuff".;
 }

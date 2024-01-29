@@ -20,8 +20,8 @@
    #loop 1 &gmcp[char][items][list][%*] id {
       #nop NEED TO CHECK FOR ONLY MONSTERS;
 
-      #if {"$gmcp[char][items][list][$id][attrib]" == {} }{ #showme <074>skipped item; #continue; };
-      #if {"$gmcp[char][items][list][$id][attrib]" != "m" }{ #showme <074>skipped nonmonster; #continue; };
+      #if {"$gmcp[char][items][list][$id][attrib]" == {} }{ #continue; };
+      #if {"$gmcp[char][items][list][$id][attrib]" != "m" }{ #continue; };
 
       #var mob $gmcp[char][items][list][$id];
       #var roomMobs[$id] {{$mob[name]}{$mob[id]}};

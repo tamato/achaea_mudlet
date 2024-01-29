@@ -24,13 +24,3 @@
    #variable charVitals %0;
 }
 
-
-
-#alias atk {
-
-#foreach {$monsters} {mon} {
-   #showme $monsters[$mon][name];
-   #nop #echo {#list areas[$areaName] find 
-}
-
-}

@@ -8,10 +8,12 @@
 
 
 #nop \Z until the end f the text zent by the mud
-#highlight {^You have slain%*.$} {black b Magenta};
+#highlight {^You have slain%*.$} {black b magenta};
+#nop #action {^You have slain%*.$} {clearqueue balance};
+
 #highlight {gold{|en} sovereigns} {black b yellow};
 
-#action {A %w golden sovereigns spill from the} {
+#action {A %* golden sovereigns spill from the} {
    queue add freestand get gold;
    put gold in pack;
 }

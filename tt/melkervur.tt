@@ -10,12 +10,15 @@ achaeapassword
 #nop set target when one is seen.
 
 #var pveTarget 0
-#alias attackCmd {swing}
+#alias attackCmd {queue insert freestand 5 swing}
 
 #read targets.tt
 #read melkervur/battlerage.tt
 
-#action {^You have recovered balance on all limbs.$} {
-   atk 
+#nop set up a way to disable
+#var atkagain 1
+#high {^You have recovered balance%*.$ } { reverse }
+#action {You have recovered balance } {
+   #if {$atkagain == 1} {atk};
 }
 

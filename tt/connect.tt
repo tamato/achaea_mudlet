@@ -116,7 +116,6 @@
 #EVENT {IAC SB GMCP char.status IAC SE}
 {
     #variable gmcp[char][status] {%0};
-    #echo {new status!};
 }
 
 #EVENT {IAC SB GMCP char.base IAC SE}
