@@ -19,9 +19,13 @@
    #var areaName $roomInfo[area];
 }
 
+#EVENT {IAC SB GMCP Char.Items.Add IAC SE}
+{
+}
+
 #EVENT {IAC SB GMCP Char.Items.List IAC SE}
 {
-   #var items {%0};
+   #local items {%0};
    #variable gmcp[char][items][list] {$items[items]};
    #unvar roomMobs;
 
@@ -29,15 +33,25 @@
       #nop NEED TO CHECK FOR ONLY MONSTERS;
 
       #if {"$gmcp[char][items][list][+$id][attrib]" == {} }{ #continue; };
-      #if {"$gmcp[char][items][list][+$id][attrib]" != "m" }{ #continue; };
+      #if {"$gmcp[char][items][list][+$id][attrib]" != "%*m%*" }{ #continue; };
+      #if {"$gmcp[char][items][list][+$id][attrib]" == "%*[xd]%*" }{ #continue; };
 
-      #var mob $gmcp[char][items][list][+$id];
-      #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
+      #local mob $gmcp[char][items][list][+$id];
+
+      #loop 1 &targets[$areaName][] taridx {
+         #local tar *targets[$areaName][+$tarIdx];
+         #if {{$mob} == {.*$tar.*}}
+            #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
+         };
+      };
    };
 
    #unvar id;
-   #unvar mob;
-   #unvar items;
+   #unvar taridx;
+}
+
+#EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
+{
 }
 
 #alias {target}
