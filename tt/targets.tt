@@ -1,8 +1,16 @@
 #nop Targeting aliases and events
 
-
 #class targeting kill
 #class targeting open
+
+#VARIABLE {targets}
+{
+    {the land of Minia} 
+    {
+        {pixie} {}
+        {pygmy} {}
+    }
+}
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
@@ -20,10 +28,10 @@
    #loop 1 &gmcp[char][items][list][%*] id {
       #nop NEED TO CHECK FOR ONLY MONSTERS;
 
-      #if {"$gmcp[char][items][list][$id][attrib]" == {} }{ #continue; };
-      #if {"$gmcp[char][items][list][$id][attrib]" != "m" }{ #continue; };
+      #if {"$gmcp[char][items][list][+$id][attrib]" == {} }{ #continue; };
+      #if {"$gmcp[char][items][list][+$id][attrib]" != "m" }{ #continue; };
 
-      #var mob $gmcp[char][items][list][$id];
+      #var mob $gmcp[char][items][list][+$id];
       #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
    };
 
@@ -61,25 +69,19 @@
 
       #loop 1 &roomMobs[] denizen {
 
-         #var denizen {$roomMobs[$denizen]};
+         #local denizen {$roomMobs[+$denizen]};
          #nop #showme in room: <038>$denizen;
 
-         #foreach $targets[$areaName] tar {
+         #nop TODO convert this to a **loop**;
+         #loop 1 &targets[$areaName][] tar {
+            #local tar *targets[$areaName][+$tar];
 
-            #nop Skip over empty entries;
-            #if {"$tar" === {}} { #continue; };
-            #nop #showme tar: <028>"$tar";
+            #nop #showme --- $tar ---;
 
-            #var found 0;
-            #regex {$denizen} {$tar} {
-
-               #var found 1;
+            #if {"$denizen" == "%*$tar%*"} {
                #nop #showme found tar: <028>$tar\e]R,<178>*denizen[];
                attackCmd $tar;
-            };
-
-            #if {$found == 1} {
-               #return
+               #return;
             };
          };
       };

@@ -1,0 +1,641 @@
+#ACTION {A %* golden sovereigns spill from the}
+{
+    queue add freestand get gold;
+    put gold in pack
+}
+
+#ACTION {You have recovered balance }
+{
+    #if {$atkagain == 1}
+    {
+        atk
+    }
+}
+
+#ACTION {~%1 says, %2}
+{
+    comm_window_show chats %1 chats %2
+}
+
+#ACTION {~%1 tells you %2}
+{
+    comm_window_show tells %1 tells you %2
+}
+
+
+#ALIAS {attackCmd}
+{
+    queue insert freestand 5 swing
+}
+
+#ALIAS {comm_window_draw_data}
+{
+    #draw tile @comm_window_square{} $comm_window[tab][%1][%*]
+}
+
+#ALIAS {comm_window_draw_tabs}
+{
+    #draw green filled jeweled box @comm_window_border{};
+    #local short {};
+    #local index {};
+    #loop {1} {&comm_window[tab][]} {index}
+    {
+        #local tab *comm_window[tab][+$index];
+        #if {{$comm_window[active]} === {$tab}}
+        {
+            #format short <138>%.6s $tab
+        };
+        #elseif {$comm_window[unread][$tab] == 1}
+        {
+            #format short <168>%.6s $tab
+        };
+        #else
+        {
+            #format short <268>%.6s $tab
+        };
+        #line ignore #showme {\e]68;2;TAB;comm_window_tab_click $tab\a\e[4;24m$short\e[24m} {$comm_window[toprow]} {$comm_window[topcol] - 5 + $index * 7}
+    }
+}
+
+#ALIAS {comm_window_scroll_down}
+{
+    #if {$comm_window[offset] > 1}
+    {
+        #math comm_window[offset] $comm_window[offset] - 1;
+        comm_window_draw_data $comm_window[active]
+    }
+}
+
+#ALIAS {comm_window_scroll_up}
+{
+    #if {$comm_window[offset] < &comm_window[tab][%0][]}
+    {
+        #math comm_window[offset] $comm_window[offset] + 1;
+        comm_window_draw_data $comm_window[active]
+    }
+}
+
+#ALIAS {comm_window_show %1 %2}
+{
+    #list comm_window[tab][%1] ins -1 {%2};
+    #if {{%1} === {$comm_window[active]}}
+    {
+        comm_window_draw_data %1
+    };
+    #elseif {$comm_window[unread][%1] == 0}
+    {
+        #variable comm_window[unread][%1] 1;
+        comm_window_draw_tabs
+    }
+}
+
+#ALIAS {comm_window_tab_click}
+{
+    #variable comm_window[active] %0;
+    #variable comm_window[unread][%0] 0;
+    #variable comm_window[offset] 1;
+    comm_window_draw_tabs;
+    comm_window_draw_data %0
+}
+
+#ALIAS {gmcp}
+{
+    #echo {send out request};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] %0 $TELNET[IAC]$TELNET[SE]\}
+}
+
+#ALIAS {guireset}
+{
+    #config mouse on;
+    #split 10 1 30 39;
+    comm_window_draw_tabs
+}
+
+#ALIAS {print}
+{
+    #showme <168>-----------------------------------------------------------;
+    #showme <078>[ <038>%0 <078>];
+    #showme <168>-----------------------------------------------------------
+}
+
+#ALIAS {schats}
+{
+    comm_window_tab_click chats
+}
+
+#ALIAS {stells}
+{
+    comm_window_tab_click tells
+}
+
+#ALIAS {test}
+{
+    #nop #split 6 1;
+    #showme <201>Make there is a split of 6 1 in place!;
+    #config mouse on;
+    #screen clear top;
+    comm_window_draw_tabs;
+    #showme <238>(Ashtan): Fitz says, "Stuff".;
+    #showme <238>(Ashtan): Fitz says, "weclome noobs".;
+    #showme <238>(Ashtan): Fitz says, "hi".;
+    #showme <238>(Ashtan): Fitz says, "by".;
+    #showme <238>(Ashtan): Fitz says, "hail".;
+    #showme <238>(Ashtan): Fitz says, "greetings".;
+    #showme <238>(Ashtan): Fitz says, "help".;
+    #showme <238>(Ashtan): Fitz says, "undestand".;
+    #showme <238>(Ashtan): Fitz says, "things".;
+    #showme <238>(Ashtan): Fitz says, "today".;
+    #showme <238>Fitz says, "why not".;
+    #showme <128>Pruxi tells you "Stuff".
+}
+
+
+#BUTTON {$comm_window[toprow] $comm_window[topcol] $comm_window[botrow] $comm_window[botcol] SCROLLED MOUSE WHEEL DOWN}
+{
+    comm_window_scroll_down
+}
+
+#BUTTON {$comm_window[toprow] $comm_window[topcol] $comm_window[botrow] $comm_window[botcol] SCROLLED MOUSE WHEEL UP}
+{
+    comm_window_scroll_up $comm_window[active]
+}
+
+
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {UTF-8}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {COMPACT} {OFF}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {ON}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {ON}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TELNET} {ON}
+#CONFIG {VERBATIM} {OFF}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {OFF}
+#CONFIG {WORDWRAP} {ON}
+
+#EVENT {IAC SB GMCP char.base IAC SE}
+{
+    #variable gmcp[char][base] {%0}
+}
+
+#EVENT {IAC SB GMCP char.items.add IAC SE}
+{
+    #variable charItemsAdd %0
+}
+
+#EVENT {IAC SB GMCP char.items.list IAC SE}
+{
+    #variable items {%0};
+    #variable gmcp[char][items][list] {$items[items]};
+    #unvariable roomMobs;
+    #loop {1} {&gmcp[char][items][list][%*]} {id}
+    {
+        #nop NEED TO CHECK FOR ONLY MONSTERS;
+        #if {"$gmcp[char][items][list][+$id][attrib]" == {} }
+        {
+            #continue;
+            
+        };
+        #if {"$gmcp[char][items][list][+$id][attrib]" != "m" }
+        {
+            #continue;
+            
+        };
+        #variable mob $gmcp[char][items][list][+$id];
+        #variable roomMobs[$id] {{$mob[name]}{$mob[id]}}
+    };
+    #unvariable id;
+    #unvariable mob;
+    #unvariable items
+}
+
+#EVENT {IAC SB GMCP char.items.remove IAC SE}
+{
+    #variable charItemsRemove %0
+}
+
+#EVENT {IAC SB GMCP char.maxstats IAC SE}
+{
+    #variable gmcp[char][maxstats] {%0}
+}
+
+#EVENT {IAC SB GMCP char.status IAC SE}
+{
+    #variable gmcp[char][status] {%0}
+}
+
+#EVENT {IAC SB GMCP char.vitals IAC SE}
+{
+    #variable charVitals %0
+}
+
+#EVENT {IAC SB GMCP char.worth IAC SE}
+{
+    #variable gmcp[char][worth] {%0}
+}
+
+#EVENT {IAC SB GMCP Comm.Channel.Text IAC SE}
+{
+    #nop print %0;
+    #variable messages {%0};
+    comm_window_show chats $messages[text]
+}
+
+#EVENT {IAC SB GMCP Room.Info IAC SE}
+{
+    #nop #echo {<110>Got RoomInfo};
+    #variable roomInfo {%0};
+    #variable areaName $roomInfo[area]
+}
+
+#EVENT {IAC WILL GMCP}
+{
+    #info SYSTEM save;
+    #send {$TELNET[IAC]$TELNET[DO]$TELNET[GMCP]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.hello { "client": "$info[SYSTEM][CLIENT_NAME]", "version": "$info[SYSTEM][CLIENT_VERSION]" } $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.set [ "room 1", "room.info 1", "char 1", "char.status 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.items 1", "char.afflictions 1", "char.defences 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.skills 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "comm.channel 1" ] $TELNET[IAC]$TELNET[SE]\}
+}
+
+#EVENT {PRESSED SECURE LINK TAB MOUSE BUTTON ONE}
+{
+    %4
+}
+
+#EVENT {SESSION CONNECTED}
+{
+    #variable TELNET[IAC]  \xFF;
+    #variable TELNET[DONT] \xFE;
+    #variable TELNET[DO]   \xFD;
+    #variable TELNET[WONT] \xFC;
+    #variable TELNET[WILL] \xFB;
+    #variable TELNET[SB]   \xFA;
+    #variable TELNET[SE]   \xF0;
+    #variable TELNET[GMCP] \xC9;
+    #nop Turn telnet debug on to see telnet debugging information.;
+    #nop #config {debug telnet} {on};
+    #echo {Session connection!}
+}
+
+#EVENT {SESSION DISCONNECTED}
+{
+    #map write gmcp.map
+}
+
+
+#FUNCTION {colscale}
+{
+    #switch {10 * %1 / %2}
+    {
+        #case {0}
+        {
+            #return {<faa>}
+        };
+        #case {1}
+        {
+            #return {<fba>}
+        };
+        #case {2}
+        {
+            #return {<fca>}
+        };
+        #case {3}
+        {
+            #return {<fda>}
+        };
+        #case {4}
+        {
+            #return {<fea>}
+        };
+        #case {5}
+        {
+            #return {<ffa>}
+        };
+        #case {6}
+        {
+            #return {<efa>}
+        };
+        #case {7}
+        {
+            #return {<dfa>}
+        };
+        #case {8}
+        {
+            #return {<cfa>}
+        };
+        #case {9}
+        {
+            #return {<bfa>}
+        };
+        #default
+        {
+            #return {<afa>}
+        }
+    }
+}
+
+#FUNCTION {comm_window_border}
+{
+    #return {$comm_window[toprow] $comm_window[topcol] $comm_window[botrow] $comm_window[botcol]}
+}
+
+#FUNCTION {comm_window_square}
+{
+    #return {$comm_window[toprow]+1 $comm_window[topcol]+1 $comm_window[botrow]-1 $comm_window[botcol]-1}
+}
+
+
+#HIGHLIGHT {^You have recovered balance%*.$ } { reverse } {5}
+#HIGHLIGHT {^You have slain%*.$} {black b magenta} {5}
+#HIGHLIGHT {gold{|en} sovereigns} {black b yellow} {5}
+#HIGHLIGHT {pixie} {blink reverse} {5}
+#HIGHLIGHT {pygmy} {blink reverse} {5}
+
+#MACRO {\e1;2P}
+{
+    print {resuming atk};
+    #variable atkagain 1 
+}
+
+#MACRO {\eOP}
+{
+    print {stopping atk};
+    #variable atkagain 0 
+}
+
+#MACRO {q,}
+{
+    up 
+}
+
+#MACRO {q.}
+{
+    down 
+}
+
+#MACRO {qh}
+{
+    ne 
+}
+
+#MACRO {qi}
+{
+    in 
+}
+
+#MACRO {qj}
+{
+    south 
+}
+
+#MACRO {qk}
+{
+    north 
+}
+
+#MACRO {ql}
+{
+    east 
+}
+
+#MACRO {qm}
+{
+    se 
+}
+
+#MACRO {qn}
+{
+    sw 
+}
+
+#MACRO {qo}
+{
+    out 
+}
+
+#MACRO {qy}
+{
+    nw 
+}
+
+
+#PATHDIR {d} {u} {32}
+#PATHDIR {e} {w} {2}
+#PATHDIR {n} {s} {1}
+#PATHDIR {ne} {sw} {3}
+#PATHDIR {nw} {se} {9}
+#PATHDIR {s} {n} {4}
+#PATHDIR {se} {nw} {6}
+#PATHDIR {sw} {ne} {12}
+#PATHDIR {u} {d} {16}
+#PATHDIR {w} {e} {8}
+
+#TICKER {prompt_update} {#if {&{gmcp[char][]} != 5}{#return};#format {prompt} {};#format {prompt} {$prompt<038> Hp: @colscale{$gmcp[char][vitals][hp];$gmcp[char][maxstats][maxhp]}%+4s<238>/<138>%-4s } {$gmcp[char][vitals][hp]} {$gmcp[char][maxstats][maxhp]};#format {prompt} {$prompt<238> Mn: @colscale{$gmcp[char][vitals][mana];$gmcp[char][maxstats][maxmana]}%+3s<238>/<138>%-3s } {$gmcp[char][vitals][mana]} {$gmcp[char][maxstats][maxmana]};#format {prompt} {$prompt<238> Mv: @colscale{$gmcp[char][vitals][moves];$gmcp[char][maxstats][maxmoves]}%+3s<238>/<138>%-3s } {$gmcp[char][vitals][moves]} {$gmcp[char][maxstats][maxmoves]};#format {prompt} {$prompt<238> Xp: @colscale{$gmcp[char][status][tnl];1000}%-3m } {100 * $gmcp[char][status][tnl] / 1000};#format {prompt} {$prompt<238> Gd: <128>%-8s } {$gmcp[char][worth][gold]};#variable exits {};#foreach {n;north;e;east;s;south;w;west;u;up;d;down} {exit}{#if {&gmcp[room][info][exits][$exit] == 0}{#continue};#variable {exits} {$exits<128>$DIR_NAME[$exit]}};#format {prompt} {$prompt <238>Ex: %-6s} {$exits   <088>};#line ignore #showme {$prompt} {-2}} {1}
+
+#VARIABLE {DIR_NAME}
+{
+    {d} {D}
+    {down} {D}
+    {e} {E}
+    {east} {E}
+    {n} {N}
+    {north} {N}
+    {s} {S}
+    {south} {S}
+    {u} {U}
+    {up} {U}
+    {w} {W}
+    {west} {W}
+}
+#VARIABLE {TELNET}
+{
+    {DO} {\xFD}
+    {DONT} {\xFE}
+    {GMCP} {\xC9}
+    {IAC} {\xFF}
+    {SB} {\xFA}
+    {SE} {\xF0}
+    {WILL} {\xFB}
+    {WONT} {\xFC}
+}
+#VARIABLE {areaName} {the land of Minia}
+#VARIABLE {atkagain} {1}
+#VARIABLE {charItemsAdd}
+{
+    {attrib} {m}
+    {icon} {animal}
+    {id} {66582}
+    {name} {a red admiral butterfly}
+}
+#VARIABLE {charItemsRemove}
+{
+    {attrib} {m}
+    {icon} {humanoid}
+    {id} {546747}
+    {name} {a pygmy hunter}
+}
+#VARIABLE {charVitals}
+{
+    {1} {Bleed: 0}
+    {2} {Rage: 0}
+    {3} {Karma: 0%}
+    {4} {Anathema: Yes}
+    {5} {Manifestation: 0%}
+    {6} {Spec: None}
+}
+#VARIABLE {comm_window}
+{
+    {active} {chats}
+    {botcol} {150}
+    {botrow} {10}
+    {offset} {1}
+    {tab} 
+    {
+        {chats} 
+        {
+            {1} {\u001b[0\;1\;32m(Newbie): Argwin (Discord) says, "The skill of metamorphosis gives different entry and exit lines, and so does being a dragon."\u001b[0\;37m}
+            {2} {[38;5;010m(Newbie): Argwin (Discord) chats "The skill of metamorphosis gives different entry and exit lines, and so does being a dragon."[38;5;007m}
+        }
+        {tells} {}
+    }
+    {topcol} {30}
+    {toprow} {1}
+    {unread} 
+    {
+        {chats} {0}
+        {tells} {0}
+    }
+}
+#VARIABLE {denizen} {1}
+#VARIABLE {exit} {w}
+#VARIABLE {f} {hello}
+#VARIABLE {found} {0}
+#VARIABLE {g} {ll}
+#VARIABLE {gmcp}
+{
+    {char} 
+    {
+        {items} 
+        {
+            {list} 
+            {
+                {1} 
+                {
+                    {attrib} {m}
+                    {icon} {humanoid}
+                    {id} {274076}
+                    {name} {a fat pygmy guard}
+                }
+                {2} 
+                {
+                    {attrib} {m}
+                    {icon} {animal}
+                    {id} {47984}
+                    {name} {a red admiral butterfly}
+                }
+            }
+        }
+        {status} 
+        {
+            {gold} {665}
+        }
+    }
+    {room} 
+    {
+        {info} 
+        {
+            {area} {the land of Minia}
+            {coords} {11,-2,-2,1}
+            {desc} {A large grass and mud hut looms to the east. Windows open into it on every side, letting the sunlight in. From the northwest drifts the smell of a wood-fueled fire. Oak trees line the path to the north and south, dwarfing any pygmy who strolls past.}
+            {details} {}
+            {environment} {Road}
+            {exits} 
+            {
+                {e} {18366}
+                {n} {18123}
+                {w} {10980}
+            }
+            {map} {www.achaea.com/irex/maps/clientmap.php?map=11&building=0&level=1 6 6}
+            {name} {Before a large pygmy hut (road)}
+            {num} {18105}
+        }
+    }
+}
+#VARIABLE {info}
+{
+    {SYSTEM} 
+    {
+        {ATTACH_FILE} {}
+        {CLIENT_NAME} {TinTin++}
+        {CLIENT_VERSION} {2.02.31 }
+        {CWD} {/home/tamausb/repos/achaea_mudlet/tt}
+        {DETACH_FILE} {}
+        {EXEC} {tt++}
+        {HOME} {/home/tamausb}
+        {LANG} {en_US.UTF-8}
+        {OS} {UNKNOWN}
+        {PID} {10247}
+        {TERM} {xterm-256color}
+        {TINTIN} {/home/tamausb/.tintin}
+    }
+}
+#VARIABLE {messages}
+{
+    {channel} {newbie}
+    {talker} {Argwin (Discord)}
+    {text} {\u001b[0\;1\;32m(Newbie): Argwin (Discord) says, "The skill of metamorphosis gives different entry and exit lines, and so does being a dragon."\u001b[0\;37m}
+}
+#VARIABLE {roomInfo}
+{
+    {area} {the land of Minia}
+    {coords} {11,0,-2,1}
+    {desc} {This is where the pygmy guards relax and sleep. Crude straw mattresses line the walls, and dirty cotton shifts are crumpled next to them. Beside each bed at least one spear and one tortoise shell buckler are strewn, and on some beds are good luck charms, made to warn away demons who might plague the sleep of the guards.}
+    {details} 
+    {
+        {1} {indoors}
+    }
+    {environment} {Urban}
+    {exits} 
+    {
+        {n} {17911}
+        {s} {16664}
+        {w} {18366}
+    }
+    {map} {www.achaea.com/irex/maps/clientmap.php?map=11&building=0&level=1 8 6}
+    {name} {Pygmy guards' barracks (indoors)}
+    {num} {17895}
+}
+#VARIABLE {roomMobs}
+{
+    {1} 
+    {
+        {a fat pygmy guard} {274076}
+    }
+    {2} 
+    {
+        {a red admiral butterfly} {47984}
+    }
+}
+#VARIABLE {ta} {pygmy}
+#VARIABLE {tar} {1}
+#VARIABLE {targets}
+{
+    {the land of Minia} 
+    {
+        {pixie} {}
+        {pygmy} {}
+    }
+}
+

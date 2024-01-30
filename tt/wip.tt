@@ -1,26 +1,16 @@
 #nop test scripts
-#nop For these events to work, tt++ must be started with connect.tt to enable GMCP
 
 
-#EVENT {IAC SB GMCP char.items.list IAC SE}
-{
-   #unvar monsters;
-   #nop https://tintin.mudhalla.net/manual/colors.php;
+#class bash kill
+#class bash open
 
-   #var charItemsList %0;
+#high {^You have recovered balance%*.$ } { reverse };
+#action {You have recovered balance} {
+   atk;
+};
 
-   #loop 1 &charItemsList[] idx {
+#macro {\eOP} { print {stopping atk};#class bash clear; }; #nop F1
+#macro {\e1;2P} { print {resuming atk};#class bash load }; #nop S-F1
 
-      #var name $charItemsList[$idx][name];
-      #var id $charItemsList[$idx][id];
-
-      #var monsters[$idx] {{id}{$idx}{name}{$name}};
-   }
-}
-
-
-#EVENT {IAC SB GMCP char.vitals IAC SE}
-{
-   #variable charVitals %0;
-}
-
+#class bash close
+#class bash save

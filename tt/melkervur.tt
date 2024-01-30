@@ -1,7 +1,6 @@
 #nop Start up script for melkervur
 
-#read global.tt
-#read connect.tt
+#read global.tt;
 
 #session mel achaea.com 23
 melkervur
@@ -9,16 +8,11 @@ achaeapassword
 
 #nop set target when one is seen.
 
-#var pveTarget 0
-#alias attackCmd {queue insert freestand 5 swing}
+#alias attackCmd {queue insert freestand 5 swing};
 
-#read targets.tt
-#read melkervur/battlerage.tt
+#read melkervur/battlerage.tt;
 
-#nop set up a way to disable
-#var atkagain 1
-#high {^You have recovered balance%*.$ } { reverse }
-#action {You have recovered balance } {
-   #if {$atkagain == 1} {atk};
-}
+guireset
+
+#nop set up a way to disable;
 

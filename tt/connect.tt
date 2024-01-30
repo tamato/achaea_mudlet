@@ -17,8 +17,7 @@
     #nop Turn telnet debug on to see telnet debugging information.;
     #nop #config {debug telnet} {on};
 
-    #split 0 1 40 40
-    #echo {Session connection!}
+    #echo {Session connection!};
 }
 
 #VARIABLE {DIR_NAME}
@@ -94,7 +93,9 @@
     #send {$TELNET[IAC]$TELNET[DO]$TELNET[GMCP]\};
     #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.hello { "client": "$info[SYSTEM][CLIENT_NAME]", "version": "$info[SYSTEM][CLIENT_VERSION]" } $TELNET[IAC]$TELNET[SE]\};
     #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.set [ "room 1", "room.info 1", "char 1", "char.status 1" ] $TELNET[IAC]$TELNET[SE]\};
-    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.items 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.items 1", "char.afflictions 1", "char.defences 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.skills 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "comm.channel 1" ] $TELNET[IAC]$TELNET[SE]\};
 }
 
 #nop Caps DO NOT matter

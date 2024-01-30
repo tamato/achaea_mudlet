@@ -1,13 +1,16 @@
 #nop
 
+#read gui.tt;
+#nop #read targets.tt
+#read connect.tt
+
 #alias {print} {
    #showme  <168>-----------------------------------------------------------;
    #showme  <078>[ <038>%0 <078>];
    #showme  <168>-----------------------------------------------------------;
 }
 
-
-#nop \Z until the end f the text zent by the mud
+#nop \Z until the end f the text zent by the mud;
 #highlight {^You have slain%*.$} {black b magenta};
 #nop #action {^You have slain%*.$} {clearqueue balance};
 
@@ -18,3 +21,17 @@
    put gold in pack;
 }
 
+#macro {qk} { north };
+#macro {qj} { south };
+#macro {ql} { east };
+#macro {qh} { west };
+
+#macro {qy} { nw };
+#macro {qu} { ne };
+#macro {qn} { sw };
+#macro {qm} { se };
+
+#macro {qi} { in };
+#macro {qo} { out };
+#macro {q,} { up };
+#macro {q.} { down };
