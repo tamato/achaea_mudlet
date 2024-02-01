@@ -40,7 +40,7 @@
 
       #loop 1 &targets[$areaName][] taridx {
          #local tar *targets[$areaName][+$tarIdx];
-         #if {{$mob} == {.*$tar.*}}
+         #if {{$mob} == {.*$tar.*}} {
             #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
          };
       };
@@ -58,6 +58,7 @@
 {
    #if {"%0" == ""}
    {
+      #showme {<848>Targets for <818>[<838>$areaName<818>]}
       #showme {*targets[$areaName][%*]}
    };
    #elseif {&targets[$areaName][%0]}
@@ -84,7 +85,8 @@
       #loop 1 &roomMobs[] denizen {
 
          #local denizen {$roomMobs[+$denizen]};
-         #nop #showme in room: <038>$denizen;
+         #showme in room: <038>$denizen:*roomMobs[+$denizen];
+         attackCmd $denizen;
 
          #nop TODO convert this to a **loop**;
          #loop 1 &targets[$areaName][] tar {
@@ -94,7 +96,6 @@
 
             #if {"$denizen" == "%*$tar%*"} {
                #nop #showme found tar: <028>$tar\e]R,<178>*denizen[];
-               attackCmd $tar;
                #return;
             };
          };

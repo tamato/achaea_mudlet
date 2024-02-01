@@ -1,0 +1,332 @@
+#LOG: LOGGING OUTPUT TO 'manuscrpit' FILESIZE: 0
+' now that is a slick manuscript
+You say, "Now that is a slick manuscript."
+04:41:01.06 I 100h 0rage 100m 100e 100w[exE|60] :>-who here
+You see the following people here:
+Cthul
+04:41:04.83 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript
+You read what is written on a bound manuscript:
+(Page 1)
+Table of Contents............................................page 1
+
+Foreword.....................................................page 2
+
+The Red Ray..................................................page 3
+
+The Orange Ray...............................................page 4
+
+The Yellow Ray...............................................page 5
+
+The Green Ray................................................page 6
+
+The Blue Ray.................................................page 7
+
+The Indigo Ray...............................................page 8
+
+The Violet Ray...............................................page 9
+
+The Seven Rays...............................................page 10
+04:41:15.79 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 2
+You read what is written on a bound manuscript:
+(Page 2)
+Foreward:
+
+The colours that vibrate in tune with the aura can be separated into
+seven distinct shades: Red, Orange, Yellow, Green, Blue, Indigo and
+Violet. The manipulation of these, the Seven Rays, grants tremendous
+strength to those who practice the Occult Arts.
+
+This primer delves into the various properties of each individual Ray.
+It is of utmost importance that the word individual be noted, as when
+combined and invoked simultaneously, the Seven Rays differ in effect and
+aspect.
+
+With that understanding, please, read on. The mysteries of the Seven
+Rays of Chaos await you.
+
+~~Imyrr Rousseau
+04:41:20.38 I 100h 0rage 100m 100e 100w[exE|60] :>-
+Alashi lets out a long-suffering sigh.
+04:41:20.96 I 100h 0rage 100m 100e 100w[exE|60] :>-
+Alashi begins making an entry in a glimmering manuscript, disappearing from sight.
+04:41:23.45 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 3
+You read what is written on a bound manuscript:
+(Page 3)
+The Red Ray:
+
+The Red Ray resonates most strongly with the root chakra of an
+individual. As such, any meditative invocations will be centered there.
+The main aspects associated with the Red Ray, are those of passion and
+sex.
+
+In general practice, the Red Ray is used to create heartstones. However,
+ritualistically, its use is far broader.
+
+The Red Ray is used to root the body and mind to the Prime Material
+plane, to siphon off the bodily afflictions cause by wayward rituals, as
+well as to bind extraplanar creatures to this plane.
+
+The grounding properties of this Ray serve two purposes. The first is to
+modify the bodies and auras of the extraplanar entities to more closely
+integrate with this Plane, thus making their stay longer. Whether they
+will it or not. The second is to reassociate the self with the natural
+plane, the Prime Material. The latter application is mainly used for
+those who have been wandering the extremes of the multiverse and need to
+release some of the energy picked up in their travels.
+
+As a note, invoking the Red Ray while off of the Prime Material plane
+can help grant you direction by attuning yourself to the Prime. This is
+useful if you are in a plane like Limbo, where there is no direction and
+all about is grey fog. A word of caution, however. Do not try to invoke
+the Red Ray for binding purposes while off of the Prime Material plane.
+The Red Ray is too closely connected to the Prime. Should this Ray be
+[Type MORE if you wish to continue reading. (92% shown)]
+04:41:31.38 I 100h 0rage 100m 100e 100w[exE|60] :>-more
+[File continued via MORE]
+invoked used as a binding energy, the results could be disastrous, both
+for the creature and for the invoker.
+04:41:32.52 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 4
+You read what is written on a bound manuscript:
+(Page 4)
+The Orange Ray:
+
+This Ray is found and invoked within the next chakra, the stomach*. The
+Orange Ray is by far the most enigmatic of the Seven Rays. Even the
+Chaos Lords themselves respect its power, as I discovered upon
+attempting to gain insight from the Dark Savant. Its ritualistic aspect
+is that of perserverance.
+
+In practical application, this Ray is used to enlighten someone whose
+mind is sufficiently open to the truth. However, the colour summoned is
+not quite a pure orange, but seems to be a bit of an amalgamation with
+red. The melding of two Rays, as may be evident in this case, takes a
+tremendous strength of will and a great deal of karmic understanding.
+
+Unfortunately little is known about this Ray, even amongst the Court.
+Perhaps further research will provide the answer to this puzzling
+question.
+
+Its invocation in ritual is a dangerous thing. It too, can serve as a
+far more powerful binding energy than the Red Ray. However, our control
+over this Ray is too unstable to use on a reliable basis. Should
+something go awry with the Orange invocation, you will find yourself
+bound in body, mind, spirit, or any combination thereof. An assistant
+will be required to invoke the Green Ray to nullify the harmful effects
+of the Orange.
+
+To aid the reader in research, ponder the following, and see where your
+thoughts lead you:
+[Type MORE if you wish to continue reading. (79% shown)]
+04:41:34.88 I 100h 0rage 100m 100e 100w[exE|60] :>-more
+[File continued via MORE]
+
+What is it about the Orange Ray that makes it something to be so
+respected, and even feared, by the Imperial Court?
+
+Why did the ancients, in all their power and knowledge, not seek to
+further their comprehension of this Ray?
+
+Given what little we do know of this Ray, what conclusions can be drawn
+of its potential?
+04:41:36.88 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 5
+You read what is written on a bound manuscript:
+(Page 5)
+The Yellow Ray:
+
+This Ray is found and invoked within the third chakra, that of the solar
+plexus.
+
+A very offensive energy, the Yellow Ray relates to the mind. More
+specifically, the draining of knowledge, even of self into a repository
+- its chakra.
+
+Ritualistically, I believe it can be utilized to strip knowledge from an
+individual and grant it to the invoker. Along the lines of an
+interrogation, but without the chance for misleading lies.
+
+Amongst my own research into its usage, I have, as of yet, been unable
+to successfully siphon information from an individual into myself. I
+have been able to wipe clean specific knowledge, but there seems to be
+some interference with the transferral.
+04:41:40.13 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 6
+You read what is written on a bound manuscript:
+(Page 6)
+The Green Ray:
+
+The Green Ray is found and invoked within the heart chakra.
+
+The only Ray with no offensive leanings, the Green Ray is the embodiment
+of healing energy. Commonly used to cure pupils of blindness, deafness
+and hopefully laziness, it can be used to much greater effect elsewhere.
+
+It has the capacity to heal, through ritual invocation, maladies of
+mind, body and spirit. It can even be used to rejuvenate the body, renew
+old skin and yes, even to reverse the effects of aging.
+
+This is the gentlest energy an Occultist can invoke, and is the only one
+I have managed to fully meld with my aura. A side effect, as some may
+have noticed, is that I am constantly wreathed with verdant lightning.
+This energy normally remains dormant, visible only as a nimbus around my
+hands. However, during times of emotional agitation, the lightning
+lashes out at the surroundings in a rather spectacular light show.
+
+Here are some things of interest involving this manifestation of the
+Green Ray:
+
+The lightning never strikes anything living, even the plants remain
+wholly unharmed.
+
+It only reacts in a seemingly violent way when my emotional state is
+heightened.
+
+[Type MORE if you wish to continue reading. (54% shown)]
+04:41:42.89 I 100h 0rage 100m 100e 100w[exE|60] :>-more
+[File continued via MORE]
+The explanations behind these two observations are, I believe, directly
+related to the very nature of the Green Ray. It is by nature a healing
+energy. As such, harming anything else would go act against its normal
+vibratory state. Also, as a healing energy, it involves empathy. Empathy
+being based within emotion, during states of heightened emotions, the
+Green Ray also becomes more active, more heightened.
+
+As to the idea that the Green Ray is capable of halting and even
+reversing the aging process, I need only look in a mirror to check its
+veracity. I appear to be no older than my mid-twenties, however as of
+this writing, I am sixty years old. I managed to fully meld my aura with
+the Green Ray's vibration during my late thirties, so it seems to be a
+fairly solid causal relationship.
+
+I offer a bit of caution to those eager to test the powers of the Green
+Ray. While it is the easiest of the Rays to integrate, the regenerative
+benefits have so far only affected my body. My mind has, and it seems
+will continue to, aged. So do not expect to keep your youthful mind
+along with your young body.
+04:41:44.48 I 100h 0rage 100m 100e 100w[exE|60] :>-
+Alashi begins making an entry in a glimmering manuscript, disappearing from sight.
+04:41:53.64 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 7
+You read what is written on a bound manuscript:
+(Page 7)
+The Blue Ray:
+
+Located and invoked within the throat chakra, this Ray is representative
+of the power of the mind and of perception.
+
+This Ray is most commonly used to grant a heightened awareness of the
+world. I also believe that an aspect of this Ray is invoked when one
+seeks out the location of another via Occult methods.
+
+The Blue Ray can be used ritualistically to improve our mental status,
+expand our minds (much like myrrh) and increase our ability to
+communicate. This last aspect, if taken to its full potential, I believe
+can grant a semblance of telepathy to the invoker. It is most prudent to
+invoke the energies of the Blue Ray before summoning any extraplanar
+creature, so as to be sure you are capable of communicating with it.
+
+In regards to influencing mental states, it is very reminiscent of the
+Green Ray. It can be used to soothe and calm an unsteady mind, and to
+bolster flagging mental reserves (useful for an assistant to invoke
+during a long incantation or other strenuous mental activities).
+04:41:57.14 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 
+You read what is written on a bound manuscript:
+(Page 1)
+Table of Contents............................................page 1
+
+Foreword.....................................................page 2
+
+The Red Ray..................................................page 3
+
+The Orange Ray...............................................page 4
+
+The Yellow Ray...............................................page 5
+
+The Green Ray................................................page 6
+
+The Blue Ray.................................................page 7
+
+The Indigo Ray...............................................page 8
+
+The Violet Ray...............................................page 9
+
+The Seven Rays...............................................page 10
+04:42:00.85 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 8
+You read what is written on a bound manuscript:
+(Page 8)
+The Indigo Ray:
+
+Representative of the bridging of the gap between body, mind and spirit,
+this Ray is found and invoked within the chakra of the third eye.
+
+This is most commonly used to sever the bond between the spirits of
+nature and the aura of others. Ritualistically, it serves much the same
+purpose, severing and mending the bonds between the facets of being. One
+such application is spirit walking (allowing the soul to wander free of
+its mortal coil without suffering the anguish of death) as well as
+mending wounds to the spirit itself.
+
+Be warned, invoking any of the Rays while discorporate is nigh
+impossible. An assistant will be necessary to invoke the Indigo Ray,
+probably in conjunction with the Green and Blue Rays, in order to
+restore the bond between the facets of being, and to repair any damage
+that may have occurred during the experiment.
+04:42:03.42 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 9
+You read what is written on a bound manuscript:
+(Page 9)
+The Violet Ray:
+
+The representation of transcendent understanding (not to be confused
+with any ranks one attains through studying a skill), the Violet Ray is
+found and invoked within the Crown chakra.
+
+This Ray is strange in that it resonates in two different wavelengths.
+On one hand, it is used or invoked to raise our consciousness to higher
+states, allowing glimpses into the Weave itself. On the other hand, it
+represents complete control over the aura.
+
+In Occult practices, it is used in the latter aspect in several ways:
+removing aural anomalies, distorting our own aura, and siphoning off
+aural energies to provide a shield against injury.
+
+As the ultimate Ray, its power is extremely versatile and quite potent.
+Ritualistically speaking, using the Violet Ray to craft wards is ideal.
+The wards affect anything that has any aural resonance (so undead and
+other soulbleed creations will require other methods). The reason the
+Violet Ray makes for such strong wards, is that they bar even those in
+the spirit realm (not death, but spirit, such as Shamanic or Natural
+totems) and can be tuned to allow specific entities entry and exit
+without harm to the invoker or to the entity.
+04:42:05.87 I 100h 0rage 100m 100e 100w[exE|60] :>-read manuscript page 10
+You read what is written on a bound manuscript:
+(Page 10)
+The Seven Rays:
+
+So far, the Rays have been spoken of individually. In this, the chants
+to invoke the Rays will be revealed, as will the effects of combining
+all Seven Rays into one tremendous blast of energy that Occult scholars
+name, the Chaos Rays.
+
+Invocations:
+
+Red:    Om Dawwru
+Orange: Om Jahih
+Yellow: Om Budmi
+Green:  Om Qitwavey
+Blue:   Om Hilo
+Indigo: Om Jojers
+Violet: Om Witaze
+
+The meditative repitition of those chants invokes the power of the Ray.
+
+The Rays undergo a change when combined together, and evoke the
+following responses upon those struck with their energies:
+
+Red:    Fire damage
+Orange: Paralysis
+Yellow: Electrical damage
+Green:  Healing
+Blue:   Cold Damage
+Indigo: Stupidity
+[Type MORE if you wish to continue reading. (98% shown)]
+04:42:08.28 I 100h 0rage 100m 100e 100w[exE|60] :>-more
+[File continued via MORE]
+Violet: Aeon
+04:42:09.74 I 100h 0rage 100m 100e 100w[exE|60] :>-#log off

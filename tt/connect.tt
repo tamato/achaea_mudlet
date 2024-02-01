@@ -17,6 +17,14 @@
     #nop Turn telnet debug on to see telnet debugging information.;
     #nop #config {debug telnet} {on};
 
+    #map create 100000;
+    #map goto 1;
+    #map flag static;
+    #map flag unicodegraphics on;
+    #map flag nofollow;
+    #map offset 1 1 20 35;
+    #nop #map read gmcp.map;
+
     #echo {Session connection!};
 }
 
@@ -200,11 +208,11 @@
 
 #EVENT {SESSION DISCONNECTED}
 {
-    #map write gmcp.map
+    #nop #map write gmcp.map
 }
 
 #alias {gmcp}
 {
    #echo {send out request};
-    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] %0 $TELNET[IAC]$TELNET[SE]\};
+   #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] %0 $TELNET[IAC]$TELNET[SE]\};
 }

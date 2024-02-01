@@ -11,7 +11,7 @@
         {chats} {}
         {tells} {}
     }
-    {topcol} {30}
+    {topcol} {35}
     {toprow} {1}
     {unread} 
     {
@@ -133,7 +133,7 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #split 10 1 30 39;
+   #split 10 1 35 35;
    comm_window_draw_tabs;
 }
 

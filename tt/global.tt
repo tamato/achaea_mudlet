@@ -4,6 +4,8 @@
 #nop #read targets.tt
 #read connect.tt
 
+#config log html
+
 #alias {print} {
    #showme  <168>-----------------------------------------------------------;
    #showme  <078>[ <038>%0 <078>];
@@ -21,17 +23,3 @@
    put gold in pack;
 }
 
-#macro {qk} { north };
-#macro {qj} { south };
-#macro {ql} { east };
-#macro {qh} { west };
-
-#macro {qy} { nw };
-#macro {qu} { ne };
-#macro {qn} { sw };
-#macro {qm} { se };
-
-#macro {qi} { in };
-#macro {qo} { out };
-#macro {q,} { up };
-#macro {q.} { down };
