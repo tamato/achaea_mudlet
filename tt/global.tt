@@ -1,7 +1,7 @@
 #nop
 
 #read gui.tt;
-#nop #read targets.tt
+#nop #read targeting.tt
 #read connect.tt
 
 #config log html

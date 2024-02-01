@@ -3,14 +3,6 @@
 #class targeting kill
 #class targeting open
 
-#VARIABLE {targets}
-{
-    {the land of Minia} 
-    {
-        {pixie} {}
-        {pygmy} {}
-    }
-}
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
@@ -119,5 +111,8 @@
    #var roomMobs;
 }
 
+#read targetlist.tt
 
 #class targeting close
+
+

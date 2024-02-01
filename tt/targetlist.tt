@@ -1,0 +1,9 @@
+#VARIABLE {targets}
+{
+    {the land of Minia} 
+    {
+        {pixie} {}
+        {pygmy} {}
+    }
+}
+
