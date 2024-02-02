@@ -1,0 +1,33 @@
+#class achaeamap kill
+#class achaeamap open
+
+#showme <118>Usage: load <json file>
+
+#alias load
+{
+    #map create 100000;
+    #scan txt %1
+}
+
+#var pathdirs {{north}{n}{east}{e}{south}{s}{west}{w}{northeast}{ne}{southeast}{se}{southwest}{sw}{northwest}{nw}}
+
+#act {"environment": %1,} {#var terrain %1;#var exits {}}
+#act {"exitId": %1,} {#var exit %1}
+#act {"name": "%1"$} {#var exits[$exit] $pathdirs[%1]}
+#act {"id": %1,} {#var vnum %1}
+#act {"name": "%1",} {#var name %1}
+
+#act {"Game Area": "%1",}
+{
+   #map goto {$vnum} {dig};
+   #map set roomarea %1;
+   #map set roomterrain $terrain;
+   #map set roomname $name;
+   #foreach {*exits[]} {exit}
+   {
+       #map dig {$exits[$exit]} {$exit}
+   }
+}
+
+#class achaeamap close
+#class achaeamap save

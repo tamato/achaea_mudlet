@@ -3,12 +3,26 @@
 #class targeting kill
 #class targeting open
 
+#read targetlist.tt
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
-   #nop #echo {<110>Got RoomInfo};
+   #nop unhighlight we were 
+   #local areaList &targets[$areaname]
+   #loop 1 &areaList[] tar {
+      #local tar *areaList[+tar]
+      #unhighlight $tar
+   }
+
    #variable roomInfo {%0};
    #var areaName $roomInfo[area];
+
+   #nop highlight new area's targets
+   #local areaList &targets[$areaname]
+   #loop 1 &areaList[] tar {
+      #local tar *areaList[+tar]
+      #highlight $tar
+   }
 }
 
 #EVENT {IAC SB GMCP Char.Items.Add IAC SE}
@@ -24,9 +38,12 @@
    #loop 1 &gmcp[char][items][list][%*] id {
       #nop NEED TO CHECK FOR ONLY MONSTERS;
 
-      #if {"$gmcp[char][items][list][+$id][attrib]" == {} }{ #continue; };
-      #if {"$gmcp[char][items][list][+$id][attrib]" != "%*m%*" }{ #continue; };
-      #if {"$gmcp[char][items][list][+$id][attrib]" == "%*[xd]%*" }{ #continue; };
+      #local attri $gmcp[char][items][list][+$id][attrib]
+      #regex {
+      #if {"attri" == {} }{ #continue; };
+      #if {"attri" != "%*m%*" }{ #continue; };
+      #if {"attri" == "%*dx%*" }{ #continue; };
+#nop #regex {dlx} {^{[^d]*}$} {#show <138>hi}
 
       #local mob $gmcp[char][items][list][+$id];
 
@@ -50,8 +67,8 @@
 {
    #if {"%0" == ""}
    {
-      #showme {<848>Targets for <818>[<838>$areaName<818>]}
-      #showme {*targets[$areaName][%*]}
+      #showme {<848>Targets for <818>[<838>$areaName<818>]};
+      #showme {*targets[$areaName][%*]};
    };
    #elseif {&targets[$areaName][%0]}
    {
@@ -111,8 +128,4 @@
    #var roomMobs;
 }
 
-#read targetlist.tt
-
 #class targeting close
-
-
