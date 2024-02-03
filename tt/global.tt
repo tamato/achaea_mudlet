@@ -1,8 +1,10 @@
 #nop
 
-#read gui.tt;
-#nop #read targeting.tt
 #read connect.tt
+#read gui.tt;
+guireset
+
+#nop #read targeting.tt
 
 #config log html
 
@@ -23,3 +25,5 @@
    put gold in pack;
 }
 
+#nop Use Diagnose  for losing eq
+#nop use Directory for losing balance

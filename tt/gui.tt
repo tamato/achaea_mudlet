@@ -1,5 +1,21 @@
 #nop Gui Setup and chats/messages
 
+#VARIABLE {room_window}
+{
+    {active} {mobs}
+    {botcol} {150}
+    {botrow} {10}
+    {offset} {1}
+    {tab} 
+    {
+        {players} {}
+        {mobs} {}
+        {items} {}
+    }
+    {topcol} {35}
+    {toprow} {1}
+}
+
 #VARIABLE {comm_window}
 {
     {active} {chats}
@@ -134,6 +150,7 @@
 {
    #nop #config mouse on;
    #split 10 1 35 35;
+   #draw boxed map 1 1 20 35;
    comm_window_draw_tabs;
 }
 
