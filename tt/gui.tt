@@ -1,33 +1,37 @@
 #nop Gui Setup and chats/messages
 
+#nop #split 20 1 40 50;
+#nop Home setup: ;
+#nop     60 rows;
+#nop     252 cols;
+
 #VARIABLE {room_window}
 {
     {active} {mobs}
-    {botcol} {150}
-    {botrow} {10}
-    {offset} {1}
+    {botcol} {-1}
+    {botrow} {20}
     {tab} 
     {
         {players} {}
         {mobs} {}
         {items} {}
     }
-    {topcol} {35}
+    {topcol} {-50}
     {toprow} {1}
-}
+};
 
 #VARIABLE {comm_window}
 {
     {active} {chats}
-    {botcol} {150}
-    {botrow} {10}
+    {botcol} {-50}
+    {botrow} {20}
     {offset} {1}
     {tab} 
     {
         {chats} {}
         {tells} {}
     }
-    {topcol} {35}
+    {topcol} {40}
     {toprow} {1}
     {unread} 
     {
@@ -39,7 +43,6 @@
 {
     comm_window_show tells %1 tells you %2
 }
-#nop #ACTION {~%1 says, %2} { comm_window_show chats %1 chats %2; };
 
 #ALIAS {comm_window_scroll_up}
 {
@@ -74,14 +77,29 @@
     #return $comm_window[toprow]+1 $comm_window[topcol]+1 $comm_window[botrow]-1 $comm_window[botcol]-1
 }
 
+#FUNCTION {room_window_square}
+{
+    #return $room_window[toprow]+1 $room_window[topcol]+1 $room_window[botrow]-1 $room_window[botcol]-1
+}
+
 #FUNCTION {comm_window_border}
 {
     #return $comm_window[toprow] $comm_window[topcol] $comm_window[botrow] $comm_window[botcol]
 }
 
+#FUNCTION {room_window_border}
+{
+    #return $room_window[toprow] $room_window[topcol] $room_window[botrow] $room_window[botcol]
+}
+
 #ALIAS {comm_window_draw_data}
 {
     #draw tile @comm_window_square{} $comm_window[tab][%1][%*]
+}
+
+#ALIAS {room_window_draw_data}
+{
+    #draw tile @room_window_square{} $room_window[tab][%1][%*]
 }
 
 #ALIAS {comm_window_show %1 %2}
@@ -124,6 +142,27 @@
    }
 }
 
+#ALIAS {room_window_draw_tabs}
+{
+   #draw green filled jeweled box @room_window_border{};
+
+   #local short {};
+   #local index {};
+   #loop {1} {&room_window[tab][]} {index}
+   {
+      #local tab *room_window[tab][+$index];
+      #if {{$room_window[active]} === {$tab}}
+      {
+          #format short <138>%.6s $tab
+      };
+      #else
+      {
+          #format short <268>%.6s $tab
+      };
+      #line ignore #showme {$short} {$room_window[toprow]} {$room_window[topcol] - 5 + $index * 7};
+   }
+}
+
 #ALIAS {comm_window_tab_click}
 {
     #variable comm_window[active] %0;
@@ -131,6 +170,25 @@
     #variable comm_window[offset] 1;
     comm_window_draw_tabs;
     comm_window_draw_data %0
+}
+
+#ALIAS {room_window_tab_click}
+{
+    #variable room_window[active] %0;
+    room_window_draw_tabs;
+    room_window_draw_data %0
+}
+
+#alias {smobs} {
+   room_window_tab_click mobs
+}
+
+#alias {sitems} {
+   room_window_tab_click items
+}
+
+#alias {splayers} {
+   room_window_tab_click players
 }
 
 #alias {schats} {
@@ -149,9 +207,10 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #split 10 1 35 35;
-   #draw boxed map 1 1 20 35;
+   #split 20 1 40 50;
+   #draw boxed map 1 1 30 40;
    comm_window_draw_tabs;
+   room_window_draw_tabs;
 }
 
 #ALIAS {test}
@@ -161,15 +220,6 @@
     #nop #config mouse on;
     #screen clear top;
     comm_window_draw_tabs;
-    #showme <238>(Ashtan): Fitz says, "Stuff".;
-    #showme <238>(Ashtan): Fitz says, "weclome noobs".;
-    #showme <238>(Ashtan): Fitz says, "hi".;
-    #showme <238>(Ashtan): Fitz says, "by".;
-    #showme <238>(Ashtan): Fitz says, "hail".;
-    #showme <238>(Ashtan): Fitz says, "greetings".;
-    #showme <238>(Ashtan): Fitz says, "help".;
-    #showme <238>(Ashtan): Fitz says, "undestand".;
-    #showme <238>(Ashtan): Fitz says, "things".;
     #showme <238>(Ashtan): Fitz says, "today".;
     #showme <238>Fitz says, "why not".;
     #showme <128>Pruxi tells you "Stuff".;
@@ -177,7 +227,26 @@
 
 #EVENT {IAC SB GMCP Comm.Channel.Text IAC SE}
 {
-   #nop print %0;
    #var messages {%0};
    comm_window_show chats $messages[text]
 }
+
+#ALIAS {room_window_show %1 %2}
+{
+   #list room_window[tab][%1] ins -1 {%2};
+   #if {{%1} === {$room_window[active]}}
+   {
+      room_window_draw_data %1
+   };
+}
+
+#ALIAS {refresh_room_window}
+{
+   #if {{%1} === {$room_window[active]}}
+   {
+      room_window_draw_data %1;
+   };
+}
+
+
+

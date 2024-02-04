@@ -4,6 +4,7 @@
 #read gui.tt;
 guireset
 
+#nop Targeting needs to be after GUI
 #nop #read targeting.tt
 
 #config log html
@@ -27,3 +28,7 @@ guireset
 
 #nop Use Diagnose  for losing eq
 #nop use Directory for losing balance
+
+#read character_highlights.tt
+#read player_events.tt
+#highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}

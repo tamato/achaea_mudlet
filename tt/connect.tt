@@ -24,7 +24,6 @@
     #map flag nofollow;
     #nop #map flag vtmap; #nop draw map;
     #nop#map offset 1 1 20 35;
-    #draw boxed map 1 1 20 35;
     #map read achaea.map;
 
     #echo {Session connection!};
@@ -121,12 +120,6 @@
    #variable gmcp[char][items][add] {%0};
 }
 
-#EVENT {IAC SB GMCP char.items.remove IAC SE}
-{
-   #var charItemsRemove %0;
-   #variable gmcp[char][items][remove] {%0};
-}
-
 #EVENT {IAC SB GMCP char.status IAC SE}
 {
     #variable gmcp[char][status] {%0};
@@ -211,7 +204,22 @@
         }
     };
 
-    #draw boxed map 1 1 20 35;
+    #draw boxed map 1 1 30 40;
+}
+
+#EVENT {IAC SB GMCP Room.addplayer IAC SE}
+{
+    #variable gmcp[room][addplayer] {%0};
+}
+
+#EVENT {IAC SB GMCP Room.Players IAC SE}
+{
+    #variable gmcp[room][players] {%0};
+}
+
+#EVENT {IAC SB GMCP Room.removeplayer IAC SE}
+{
+    #variable gmcp[room][removeplayer] {%0};
 }
 
 #EVENT {SESSION DISCONNECTED}

@@ -2,7 +2,7 @@
 
 #read global.tt;
 
-#session mel achaea.com 23
+#session mel achaea.com 23;
 cthul
 achaeapassword
 
@@ -12,10 +12,8 @@ achaeapassword
 
 #nop #read melkervur/battlerage.tt;
 
-guireset
+#alias {b} { #if {"%0" != ""}{ activate hermit %0 } };
 
-#alias {b} { #if {"%0" != ""}{ activate hermit %0 }
-
-#nop find the enchiridon of oblivion
---- Nicator Archives -------------- 1:0:0 ---
+#nop find the enchiridon of oblivion;
+#nop --- Nicator Archives -------------- 1:0:0 ---;
 

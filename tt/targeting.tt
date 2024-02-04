@@ -7,60 +7,54 @@
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
-   #nop unhighlight we were 
-   #local areaList &targets[$areaname]
+   #nop unhighlight we were ;
+   #local areaList &targets[$areaname];
    #loop 1 &areaList[] tar {
-      #local tar *areaList[+tar]
-      #unhighlight $tar
-   }
+      #local tar *areaList[+tar];
+      #unhighlight $tar;
+   };
 
    #variable roomInfo {%0};
    #var areaName $roomInfo[area];
 
-   #nop highlight new area's targets
-   #local areaList &targets[$areaname]
+   #nop highlight new area's targets;
+   #local areaList &targets[$areaname];
    #loop 1 &areaList[] tar {
-      #local tar *areaList[+tar]
-      #highlight $tar
-   }
+      #local tar *areaList[+tar];
+      #highlight $tar;
+   };
 }
 
 #EVENT {IAC SB GMCP Char.Items.Add IAC SE}
 {
+   #local item {%0};
+   #variable gmcp[char][items][add] $item[item];
+
+   #local attri $gmcp[char][items][add][attrib];
+   #if {"attri" == {} }{ #continue; };
+   #if {"attri" != "%*m%*" }{ #continue; };
+   #if {"attri" == "%*dx%*" }{ #continue; };
+
+   #local name $gmcp[char][items][add][name];
+   #local id $gmcp[char][items][add][id];
+   #local mob $name<028>$id;
+
+   room_window_show mobs $mob;
 }
 
 #EVENT {IAC SB GMCP Char.Items.List IAC SE}
 {
-   #local items {%0};
-   #variable gmcp[char][items][list] {$items[items]};
-   #unvar roomMobs;
-
-   #loop 1 &gmcp[char][items][list][%*] id {
-      #nop NEED TO CHECK FOR ONLY MONSTERS;
-
-      #local attri $gmcp[char][items][list][+$id][attrib]
-      #regex {
-      #if {"attri" == {} }{ #continue; };
-      #if {"attri" != "%*m%*" }{ #continue; };
-      #if {"attri" == "%*dx%*" }{ #continue; };
-#nop #regex {dlx} {^{[^d]*}$} {#show <138>hi}
-
-      #local mob $gmcp[char][items][list][+$id];
-
-      #loop 1 &targets[$areaName][] taridx {
-         #local tar *targets[$areaName][+$tarIdx];
-         #if {{$mob} == {.*$tar.*}} {
-            #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
-         };
-      };
-   };
-
-   #unvar id;
-   #unvar taridx;
 }
 
 #EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
 {
+   #show %0;
+   #var gmcp[char][items][remove] %0;
+
+   #local mob $gmcp[char][items][remove][id];
+   #list room_window[tab][mobs] find {$mob} idx;
+   #unvar room_window[tab][mobs][+$idx];
+   refresh_room_window mobs;
 }
 
 #alias {target}

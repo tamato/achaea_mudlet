@@ -1,5 +1,6 @@
 #nop 
 /*
+F 00 00 00
         Some terminals are capable of displaying colors, but have no colors initialized, or
         have the colors initialized to rather odd values. The following script will set them
         to default values. This might not work for every terminal.
@@ -23,9 +24,9 @@
 #showme \e]PC5555FF <148>light blue;
 #showme \e]PDFF55FF <158>light magenta;
 #showme \e]PE55FFFF <168>light cyan;
-#showme \e]PFFFFFFF <178>light white
+#showme \e]PFFFFFFF <178>light white;
 
-   #var yellow {<038>}
+   #var yellow {<038>};
 
 }
 
