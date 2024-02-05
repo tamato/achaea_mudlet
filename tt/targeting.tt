@@ -7,21 +7,17 @@
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
-   #nop unhighlight we were ;
-   #local areaList &targets[$areaname];
-   #loop 1 &areaList[] tar {
-      #local tar *areaList[+tar];
-      #unhighlight $tar;
-   };
+   #local areaList &targets[$areaName];
+   #nop #loop 1 &areaList[] tar { #local tar *areaList[+tar]; #unhighlight $tar; };
 
    #variable roomInfo {%0};
    #var areaName $roomInfo[area];
 
    #nop highlight new area's targets;
-   #local areaList &targets[$areaname];
-   #loop 1 &areaList[] tar {
-      #local tar *areaList[+tar];
-      #highlight $tar;
+   #local areaList $targets[$areaName];
+   #foreach *areaList[] tar {
+      #nop #show <003> highlighting: [$tar];
+      #highlight $tar {blink reverse};
    };
 }
 
@@ -31,19 +27,63 @@
    #variable gmcp[char][items][add] $item[item];
 
    #local attri $gmcp[char][items][add][attrib];
-   #if {"attri" == {} }{ #continue; };
-   #if {"attri" != "%*m%*" }{ #continue; };
-   #if {"attri" == "%*dx%*" }{ #continue; };
+   #if {"$attri" == {} }
+   { 
+      #local name $gmcp[char][items][add][name];
+      #local id $gmcp[char][items][add][id];
+      #local item <278>$name<028>$id<209>;
+
+      room_window_show items $item;
+      #continue; 
+   };
+
+   #if {"$attri" != "%*m%*" }{ #continue; };
+   #if {"$attri" == "%*dx%*" }{ #continue; };
 
    #local name $gmcp[char][items][add][name];
    #local id $gmcp[char][items][add][id];
-   #local mob $name<028>$id;
+   #local mob <278>$name<028>$id<209>;
 
    room_window_show mobs $mob;
 }
 
 #EVENT {IAC SB GMCP Char.Items.List IAC SE}
 {
+   #list room_window[tab][mobs] clear;
+   #list room_window[tab][items] clear;
+   refresh_room_window mobs;
+
+   #local item {%0};
+   #variable gmcp[char][items][list] $item[items];
+   #local items $gmcp[char][items][list];
+   #foreach $items[%*] item {
+
+      #local attri $item[attrib];
+      #nop ADD items here;
+      #if {"$attri" == {} }
+      { 
+         #local name $item[name];
+         #local id $item[id];
+         #local item <278>$name<028>$id<209>;
+
+         #nop #showme <003>Adding: [$item];
+
+         #nop #show <003>NO ATTRIB;
+         room_window_show items $item;
+         #continue; 
+      };
+
+      #if {"$attri" != "%*m%*" }{ #show <003>Not a monster;#continue; };
+      #if {"$attri" == "%*dx%*" }{ #show <003>dead or leave alone;#continue; };
+
+      #local name $item[name];
+      #local id $item[id];
+      #local mob <278>$name<028>$id<209>;
+
+      #nop #showme <003>Adding: [$mob];
+
+      room_window_show mobs $mob;
+   }
 }
 
 #EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
@@ -121,5 +161,6 @@
    };
    #var roomMobs;
 }
+
 
 #class targeting close

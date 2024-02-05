@@ -9,8 +9,6 @@
    #local ply $gmcp[room][addplayer][name];
 
    room_window_show players $ply;
-
-   #showme $ply says, hi!
 }
 
 #EVENT {IAC SB GMCP Room.Players IAC SE}

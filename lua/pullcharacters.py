@@ -26,8 +26,6 @@ with urllib.request.urlopen(url) as response:
             with open(f'../characters/{name}.json', 'w') as charfile:
                 json.dump(charjson, charfile)
 
-
-
 print ('finished characters')
 
 # load up all the character files
@@ -63,7 +61,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{{{char["name"]}(,| )}}}} {{{color}}}\n')
+                hi.write(f'#highlight {{{{{char["name"]}?}}}} {{{color}}}\n')
             except Exception as inst:
                 print("bad")
                 print(type(inst))    # the exception type
