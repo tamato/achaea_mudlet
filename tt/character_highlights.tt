@@ -5,467 +5,473 @@
 
 #ticker {updatechardb} {#read character_highlights.tt} {60}
 
-#highlight {{Holkom?}} {<Fffff00>}
-#highlight {{Dominius?}} {<110>}
-#highlight {{Boue?}} {<Fffff00>}
-#highlight {{Blackwillow?}} {<Fffff00>}
-#highlight {{Ryzan?}} {<Fffff00>}
-#highlight {{Rique?}} {<400><Fffff00>}
-#highlight {{Rori?}} {<Fffff00>}
-#highlight {{Jaisael?}} {<400><Fffff00>}
-#highlight {{Jargo?}} {<Fffff00>}
-#highlight {{Mynnan?}} {<110>}
-#highlight {{Thuqi?}} {<Fffff00>}
-#highlight {{Bumin?}} {<Fffff00>}
-#highlight {{Sela?}} {<400><Fffff00>}
-#highlight {{Rynstakaar?}} {<400><Fffff00>}
-#highlight {{Minkai?}} {<400><Fffff00>}
-#highlight {{Kalliana?}} {<Fffff00>}
-#highlight {{Ipomoea?}} {<Fffff00>}
-#highlight {{Leafy?}} {<Fffff00>}
-#highlight {{Laras?}} {<Fffff00>}
-#highlight {{Feldin?}} {<Fffff00>}
-#highlight {{Vadora?}} {<Fffff00>}
-#highlight {{Fanten?}} {<400><Fffff00>}
-#highlight {{Lenn?}} {<Fffff00>}
-#highlight {{Yoruthas?}} {<Fffff00>}
-#highlight {{Ejani?}} {<Fffff00>}
-#highlight {{Mishka?}} {<Fffff00>}
-#highlight {{Jeryl?}} {<Fffff00>}
-#highlight {{Batuun?}} {<Fffff00>}
-#highlight {{Thoralyn?}} {<Fffff00>}
-#highlight {{Marcella?}} {<400><Fffff00>}
-#highlight {{Ceno?}} {<400><Fffff00>}
-#highlight {{Laergon?}} {<Fffff00>}
-#highlight {{Bambi?}} {<400><Fffff00>}
-#highlight {{Korvenn?}} {<Fffff00>}
-#highlight {{Atalkez?}} {<Fffff00>}
-#highlight {{Brynn?}} {<Fffff00>}
-#highlight {{Morthif?}} {<Fffff00>}
-#highlight {{Mornath?}} {<Fffff00>}
-#highlight {{Landon?}} {<Fffff00>}
-#highlight {{Yiliri?}} {<414>}
-#highlight {{Danicasteel?}} {<Fffff00>}
-#highlight {{Dyfi?}} {<Fffff00>}
-#highlight {{Khrysopos?}} {<Fffff00>}
-#highlight {{Lyrikai?}} {<Fff33ff>}
-#highlight {{Azele?}} {<Fffff00>}
-#highlight {{Ita?}} {<400><Fffff00>}
-#highlight {{Makram?}} {<Fffff00>}
-#highlight {{Relrai?}} {<Fffff00>}
-#highlight {{Zbaco?}} {<Fffff00>}
-#highlight {{Mortim?}} {<400><Fffff00>}
-#highlight {{Iadius?}} {<Fff33ff>}
-#highlight {{Audenzia?}} {<Fffff00>}
-#highlight {{Arcturus?}} {<400><Fffff00>}
-#highlight {{Ilsefi?}} {<Fffff00>}
-#highlight {{Valaria?}} {<Fffff00>}
-#highlight {{Yilui?}} {<Fffff00>}
-#highlight {{Liena?}} {<400><Fffff00>}
-#highlight {{Zygra?}} {<110>}
-#highlight {{Finnegan?}} {<Fffff00>}
-#highlight {{Khefka?}} {<Fffff00>}
-#highlight {{Brandle?}} {<Fffff00>}
-#highlight {{Einrich?}} {<Fff33ff>}
-#highlight {{Ealee?}} {<Fffff00>}
-#highlight {{Icraa?}} {<110>}
-#highlight {{Zorina?}} {<110>}
-#highlight {{Aecius?}} {<Fffff00>}
-#highlight {{Welsh?}} {<Fffff00>}
-#highlight {{Qwax?}} {<Fff33ff>}
-#highlight {{Nika?}} {<Fffff00>}
-#highlight {{Kazuya?}} {<Fff33ff>}
-#highlight {{Ailikki?}} {<Fff33ff>}
-#highlight {{Aerek?}} {<Fffff00>}
-#highlight {{Andraste?}} {<Fffff00>}
-#highlight {{Dantte?}} {<Fff33ff>}
-#highlight {{Pluc?}} {<Fffff00>}
-#highlight {{Calistar?}} {<400><Fffff00>}
-#highlight {{Aodfionn?}} {<Fffff00>}
-#highlight {{Enalya?}} {<Fffff00>}
-#highlight {{Kildcu?}} {<Fffff00>}
-#highlight {{Zariah?}} {<Fffff00>}
-#highlight {{Gaelyn?}} {<Fffff00>}
-#highlight {{Arraidh?}} {<Fffff00>}
-#highlight {{Ucin?}} {<400><Fffff00>}
-#highlight {{Brel?}} {<400><Fffff00>}
-#highlight {{Treyal?}} {<Fffff00>}
-#highlight {{Austere?}} {<Fffff00>}
-#highlight {{Menpo?}} {<Fffff00>}
-#highlight {{Lachlan?}} {<Fffff00>}
-#highlight {{Viceleritas?}} {<400><Fffff00>}
-#highlight {{Roselle?}} {<Fffff00>}
-#highlight {{Kelraz?}} {<Fffff00>}
-#highlight {{Shylene?}} {<Fffff00>}
-#highlight {{Belaziel?}} {<400><Fffff00>}
-#highlight {{Swikaan?}} {<Fffff00>}
-#highlight {{Majin?}} {<Fffff00>}
-#highlight {{Blackhole?}} {<110>}
-#highlight {{Amranu?}} {<400><Fffff00>}
-#highlight {{Lyssine?}} {<Fffff00>}
-#highlight {{Lurch?}} {<Fffff00>}
-#highlight {{Aina?}} {<400><Fffff00>}
-#highlight {{Ayeka?}} {<Fffff00>}
-#highlight {{Aristus?}} {<Fffff00>}
-#highlight {{Lasyll?}} {<400><Fffff00>}
-#highlight {{Aroan?}} {<Fffff00>}
-#highlight {{Farran?}} {<Fffff00>}
-#highlight {{Aniara?}} {<Fffff00>}
-#highlight {{Omeli?}} {<Fff33ff>}
-#highlight {{Axios?}} {<Fffff00>}
-#highlight {{Aelar?}} {<Fffff00>}
-#highlight {{Ryssa?}} {<Fffff00>}
-#highlight {{Cornelia?}} {<Fffff00>}
-#highlight {{Darvin?}} {<Fffff00>}
-#highlight {{Summit?}} {<400><Fffff00>}
-#highlight {{Valnyran?}} {<Fffff00>}
-#highlight {{Kamamul?}} {<400><Fffff00>}
-#highlight {{Mizuto?}} {<Fffff00>}
-#highlight {{Andrayas?}} {<110>}
-#highlight {{Tahllulah?}} {<Fffff00>}
-#highlight {{Delia?}} {<Fffff00>}
-#highlight {{Ranara?}} {<Fffff00>}
-#highlight {{Melaya?}} {<400><Fffff00>}
-#highlight {{Nefertem?}} {<Fffff00>}
-#highlight {{Arthias?}} {<Fffff00>}
-#highlight {{Hoplun?}} {<Fffff00>}
-#highlight {{Vothaec?}} {<Fffff00>}
-#highlight {{Badriyah?}} {<400><Fffff00>}
-#highlight {{Clodhna?}} {<Fffff00>}
-#highlight {{Moroa?}} {<Fffff00>}
-#highlight {{Makog?}} {<Fffff00>}
-#highlight {{Nialla?}} {<Fffff00>}
-#highlight {{Lucianus?}} {<110>}
-#highlight {{Ilira?}} {<Fffff00>}
-#highlight {{Cthul?}} {<Fff33ff>}
-#highlight {{Xaleth?}} {<400><Fffff00>}
-#highlight {{Atul?}} {<400><Fffff00>}
-#highlight {{Saphyria?}} {<Fffff00>}
-#highlight {{Gavriil?}} {<Fffff00>}
-#highlight {{Agramon?}} {<400><Fffff00>}
-#highlight {{Aemira?}} {<Fffff00>}
-#highlight {{Cooper?}} {<110>}
-#highlight {{Laias?}} {<400><Fffff00>}
-#highlight {{Marcalo?}} {<Fff33ff>}
-#highlight {{Criemick?}} {<400><Fffff00>}
-#highlight {{Nezha?}} {<Fffff00>}
-#highlight {{Yinaf?}} {<Fffff00>}
-#highlight {{Kimora?}} {<Fffff00>}
-#highlight {{Juliet?}} {<Fffff00>}
-#highlight {{Tsia?}} {<400><Fffff00>}
-#highlight {{Balisarius?}} {<400><Fffff00>}
-#highlight {{Evisi?}} {<Fffff00>}
-#highlight {{Cyprian?}} {<Fffff00>}
-#highlight {{Noz?}} {<400><Fffff00>}
-#highlight {{Khaseem?}} {<Fff33ff>}
-#highlight {{Milabar?}} {<Fffff00>}
-#highlight {{Tifini?}} {<Fffff00>}
-#highlight {{Arushimi?}} {<Fffff00>}
-#highlight {{Halos?}} {<Fffff00>}
-#highlight {{Ryzant?}} {<110>}
-#highlight {{Trendric?}} {<Fffff00>}
-#highlight {{Ashay?}} {<Fffff00>}
-#highlight {{Alyzar?}} {<Fffff00>}
-#highlight {{Drican?}} {<Fffff00>}
-#highlight {{Serahfyna?}} {<Fffff00>}
-#highlight {{Kresslack?}} {<Fffff00>}
-#highlight {{Sylvi?}} {<Fffff00>}
-#highlight {{Haemon?}} {<Fff33ff>}
-#highlight {{Neno?}} {<Fffff00>}
-#highlight {{Jirijyanyja?}} {<400><Fffff00>}
-#highlight {{Bimnono?}} {<Fff33ff>}
-#highlight {{Fitz?}} {<Fff33ff>}
-#highlight {{Faerum?}} {<Fffff00>}
-#highlight {{Baptiste?}} {<Fffff00>}
-#highlight {{Ogoun?}} {<Fffff00>}
-#highlight {{Cerenea?}} {<400><Fffff00>}
-#highlight {{Laytron?}} {<400><Fffff00>}
-#highlight {{Hirst?}} {<Fff33ff>}
-#highlight {{Shirszae?}} {<Fffff00>}
-#highlight {{Dreddik?}} {<Fffff00>}
-#highlight {{Lyndenroe?}} {<110>}
-#highlight {{Avianca?}} {<Fffff00>}
-#highlight {{Samakhulis?}} {<Fffff00>}
-#highlight {{Glutami?}} {<Fffff00>}
-#highlight {{Vix?}} {<Fffff00>}
-#highlight {{Drual?}} {<Fffff00>}
-#highlight {{Larcenn?}} {<400><Fffff00>}
-#highlight {{Anno?}} {<Fffff00>}
-#highlight {{Synbios?}} {<Fffff00>}
-#highlight {{Alyna?}} {<Fffff00>}
-#highlight {{Ozmatiah?}} {<Fffff00>}
-#highlight {{Aegoth?}} {<110>}
-#highlight {{Perl?}} {<Fffff00>}
-#highlight {{Karalden?}} {<Fffff00>}
-#highlight {{Mazakyne?}} {<Fff33ff>}
-#highlight {{Melkervur?}} {<Fff33ff>}
-#highlight {{Aziz?}} {<400><Fffff00>}
-#highlight {{Xylria?}} {<Fff33ff>}
-#highlight {{Titonus?}} {<110>}
-#highlight {{Lira?}} {<Fffff00>}
-#highlight {{Tymbi?}} {<Fffff00>}
-#highlight {{Kaelthas?}} {<Fff33ff>}
-#highlight {{Minsideon?}} {<Fffff00>}
-#highlight {{Eonir?}} {<400><Fffff00>}
-#highlight {{Khalayx?}} {<400><Fffff00>}
-#highlight {{Ticca?}} {<Fffff00>}
-#highlight {{Gergemaal?}} {<Fffff00>}
-#highlight {{Elizabetha?}} {<Fffff00>}
-#highlight {{Wynu?}} {<Fffff00>}
-#highlight {{Eril?}} {<400><Fffff00>}
-#highlight {{Mardil?}} {<Fffff00>}
-#highlight {{Iandor?}} {<Fffff00>}
-#highlight {{Knightwolf?}} {<Fffff00>}
-#highlight {{Entaro?}} {<110>}
-#highlight {{Dortheron?}} {<Fffff00>}
-#highlight {{Valknut?}} {<Fff33ff>}
-#highlight {{Benten?}} {<Fffff00>}
-#highlight {{Mystor?}} {<110>}
-#highlight {{Saibel?}} {<110>}
-#highlight {{Olin?}} {<Fffff00>}
-#highlight {{Nixx?}} {<400><Fffff00>}
-#highlight {{Chamia?}} {<Fff33ff>}
-#highlight {{Asmodron?}} {<400><Fffff00>}
-#highlight {{Bainz?}} {<400><Fffff00>}
-#highlight {{Zaltear?}} {<Fffff00>}
-#highlight {{Khadafi?}} {<110>}
-#highlight {{Rician?}} {<Fffff00>}
-#highlight {{Mercer?}} {<Fffff00>}
-#highlight {{Tront?}} {<Fffff00>}
-#highlight {{Xarthus?}} {<110>}
-#highlight {{Orzon?}} {<Fffff00>}
-#highlight {{Czanthria?}} {<400><Fffff00>}
-#highlight {{Runi?}} {<400><Fffff00>}
-#highlight {{Utan?}} {<400><Fffff00>}
-#highlight {{Siduri?}} {<Fffff00>}
-#highlight {{Doki?}} {<Fffff00>}
-#highlight {{Nyathera?}} {<Fffff00>}
-#highlight {{Vinzent?}} {<Fffff00>}
-#highlight {{Edena?}} {<Fffff00>}
-#highlight {{Lirathea?}} {<400><Fffff00>}
-#highlight {{Hhaos?}} {<400><Fffff00>}
-#highlight {{Antoninus?}} {<110>}
-#highlight {{Sudu?}} {<Fffff00>}
-#highlight {{Slangen?}} {<Fff33ff>}
-#highlight {{Argwin?}} {<Fffff00>}
-#highlight {{Vasha?}} {<Fffff00>}
-#highlight {{Reyl?}} {<Fffff00>}
-#highlight {{Monnique?}} {<Fffff00>}
-#highlight {{Kallysta?}} {<Fffff00>}
-#highlight {{Jasol?}} {<Fffff00>}
-#highlight {{Yazuki?}} {<Fffff00>}
-#highlight {{Archaeon?}} {<Fff33ff>}
-#highlight {{Avikare?}} {<Fffff00>}
-#highlight {{Parvina?}} {<Fffff00>}
-#highlight {{Kaili?}} {<Fffff00>}
-#highlight {{Faur?}} {<Fffff00>}
-#highlight {{Shaul?}} {<110>}
-#highlight {{Grynwold?}} {<Fffff00>}
-#highlight {{Brandabarus?}} {<Fffff00>}
-#highlight {{Elinia?}} {<Fffff00>}
-#highlight {{Terron?}} {<Fffff00>}
-#highlight {{Ominis?}} {<110>}
-#highlight {{Urll?}} {<Fffff00>}
-#highlight {{Gallus?}} {<Fffff00>}
-#highlight {{Jei?}} {<Fffff00>}
-#highlight {{Kinilan?}} {<Fffff00>}
-#highlight {{Probatio?}} {<400><Fffff00>}
-#highlight {{Thiev?}} {<Fff33ff>}
-#highlight {{Kog?}} {<Fffff00>}
-#highlight {{Nezaya?}} {<400><Fffff00>}
-#highlight {{Mizik?}} {<Fff33ff>}
-#highlight {{Caron?}} {<Fffff00>}
-#highlight {{Kormac?}} {<Fffff00>}
-#highlight {{Tahquil?}} {<400><Fffff00>}
-#highlight {{Cedarclaw?}} {<Fffff00>}
-#highlight {{Aeowynn?}} {<Fffff00>}
-#highlight {{Harmonia?}} {<Fffff00>}
-#highlight {{Katerrina?}} {<Fffff00>}
-#highlight {{Sprucebruce?}} {<110>}
-#highlight {{Alizais?}} {<400><Fffff00>}
-#highlight {{Aaraka?}} {<Fffff00>}
-#highlight {{Akaya?}} {<Fffff00>}
-#highlight {{Willowbelle?}} {<Fffff00>}
-#highlight {{Kiryn?}} {<Fffff00>}
-#highlight {{Rennath?}} {<Fffff00>}
-#highlight {{Bonji?}} {<400><Fffff00>}
-#highlight {{Ardor?}} {<400><Fffff00>}
-#highlight {{Ievandur?}} {<Fffff00>}
-#highlight {{Eiat?}} {<Fffff00>}
-#highlight {{Shandora?}} {<Fffff00>}
-#highlight {{Ann?}} {<Fffff00>}
-#highlight {{Narmoth?}} {<Fffff00>}
-#highlight {{Roenalia?}} {<400><Fffff00>}
-#highlight {{Solosite?}} {<400><Fffff00>}
-#highlight {{Vindanel?}} {<400><Fffff00>}
-#highlight {{Illiyath?}} {<Fffff00>}
-#highlight {{Tinarni?}} {<Fffff00>}
-#highlight {{Nomak?}} {<Fff33ff>}
-#highlight {{Szael?}} {<Fffff00>}
-#highlight {{Erikarn?}} {<400><Fffff00>}
-#highlight {{Ansuya?}} {<Fffff00>}
-#highlight {{Proficy?}} {<110>}
-#highlight {{Saelily?}} {<Fffff00>}
-#highlight {{Nicolina?}} {<400><Fffff00>}
-#highlight {{Ulvin?}} {<Fffff00>}
-#highlight {{Erikka?}} {<Fffff00>}
-#highlight {{Grandue?}} {<Fffff00>}
-#highlight {{Eemeli?}} {<400><Fffff00>}
-#highlight {{Elysiana?}} {<Fffff00>}
-#highlight {{Uino?}} {<Fffff00>}
-#highlight {{Moritza?}} {<400><Fffff00>}
-#highlight {{Fieth?}} {<400><Fffff00>}
-#highlight {{Zerboxx?}} {<Fffff00>}
-#highlight {{Havyn?}} {<Fffff00>}
-#highlight {{Inki?}} {<400><Fffff00>}
-#highlight {{Dilek?}} {<Fffff00>}
-#highlight {{Sevyn?}} {<400><Fffff00>}
-#highlight {{Armitage?}} {<Fff33ff>}
-#highlight {{Kyah?}} {<Fffff00>}
-#highlight {{Haeron?}} {<Fffff00>}
-#highlight {{Lyrin?}} {<Fffff00>}
-#highlight {{Hetazi?}} {<Fffff00>}
-#highlight {{Annase?}} {<Fffff00>}
-#highlight {{Accipiter?}} {<400><Fffff00>}
-#highlight {{Weymar?}} {<110>}
-#highlight {{Llialesam?}} {<Fff33ff>}
-#highlight {{Ziel?}} {<Fffff00>}
-#highlight {{Phyr?}} {<400><Fffff00>}
-#highlight {{Myrddin?}} {<Fffff00>}
-#highlight {{Destani?}} {<Fffff00>}
-#highlight {{Adrac?}} {<Fff33ff>}
-#highlight {{Mantodea?}} {<Fffff00>}
-#highlight {{Yuuusuke?}} {<Fffff00>}
-#highlight {{Taelle?}} {<Fffff00>}
-#highlight {{Auria?}} {<Fffff00>}
-#highlight {{Oroan?}} {<110>}
-#highlight {{Yen?}} {<Fffff00>}
-#highlight {{Ficus?}} {<Fffff00>}
-#highlight {{Tukio?}} {<Fffff00>}
-#highlight {{Glithich?}} {<Fffff00>}
-#highlight {{Tsurrok?}} {<110>}
-#highlight {{Gauge?}} {<Fffff00>}
-#highlight {{Bunni?}} {<400><Fffff00>}
-#highlight {{Azaka?}} {<Fffff00>}
-#highlight {{Gelo?}} {<Fffff00>}
-#highlight {{Pelaya?}} {<Fffff00>}
-#highlight {{Laorir?}} {<Fffff00>}
-#highlight {{Boklwa?}} {<400><Fffff00>}
-#highlight {{Nishan?}} {<400><Fffff00>}
-#highlight {{Kilian?}} {<Fffff00>}
-#highlight {{Amira?}} {<Fffff00>}
-#highlight {{Banri?}} {<Fffff00>}
-#highlight {{Aldare?}} {<400><Fffff00>}
-#highlight {{Starlina?}} {<Fffff00>}
-#highlight {{Bellis?}} {<Fffff00>}
-#highlight {{Zuriel?}} {<Fffff00>}
-#highlight {{Anaria?}} {<Fffff00>}
-#highlight {{Sinvier?}} {<Fffff00>}
-#highlight {{Vilissa?}} {<400><Fffff00>}
-#highlight {{Therod?}} {<Fffff00>}
-#highlight {{Fayne?}} {<400><Fffff00>}
-#highlight {{Tialha?}} {<Fffff00>}
-#highlight {{Bulwer?}} {<400><Fffff00>}
-#highlight {{Colgano?}} {<Fffff00>}
-#highlight {{Tarth?}} {<Fffff00>}
-#highlight {{Grakhir?}} {<400><Fffff00>}
-#highlight {{Ceredia?}} {<400><Fffff00>}
-#highlight {{Plessa?}} {<Fffff00>}
-#highlight {{Tristitia?}} {<Fffff00>}
-#highlight {{Allysin?}} {<Fffff00>}
-#highlight {{Darona?}} {<Fffff00>}
-#highlight {{Kyrista?}} {<Fffff00>}
-#highlight {{Lif?}} {<Fff33ff>}
-#highlight {{Kaburia?}} {<400><Fffff00>}
-#highlight {{Kestrella?}} {<Fffff00>}
-#highlight {{Mirai?}} {<110>}
-#highlight {{Ffop?}} {<110>}
-#highlight {{Wraiph?}} {<110>}
-#highlight {{Lokis?}} {<Fffff00>}
-#highlight {{Solaire?}} {<110>}
-#highlight {{Beake?}} {<400><Fffff00>}
-#highlight {{Pruxi?}} {<Fff33ff>}
-#highlight {{Tilia?}} {<Fffff00>}
-#highlight {{Aurola?}} {<400><Fffff00>}
-#highlight {{Ante?}} {<Fffff00>}
-#highlight {{Merewyn?}} {<Fffff00>}
-#highlight {{Aranos?}} {<Fffff00>}
-#highlight {{Auxias?}} {<Fffff00>}
-#highlight {{Antheia?}} {<Fffff00>}
-#highlight {{Kieva?}} {<Fffff00>}
-#highlight {{Lunariya?}} {<400><Fffff00>}
-#highlight {{Ilmakiur?}} {<400><Fffff00>}
-#highlight {{Kassie?}} {<Fffff00>}
-#highlight {{Anaidiana?}} {<Fffff00>}
-#highlight {{Plagho?}} {<Fffff00>}
-#highlight {{Nielae?}} {<Fffff00>}
-#highlight {{Toji?}} {<Fffff00>}
-#highlight {{Kaele?}} {<Fffff00>}
-#highlight {{Ultimus?}} {<Fffff00>}
-#highlight {{Lhachman?}} {<Fffff00>}
-#highlight {{Mycen?}} {<Fffff00>}
-#highlight {{Venusears?}} {<110>}
-#highlight {{Azayil?}} {<400><Fffff00>}
-#highlight {{Joaquin?}} {<Fffff00>}
-#highlight {{Ayasatya?}} {<Fffff00>}
-#highlight {{Lialaeda?}} {<Fffff00>}
-#highlight {{Bekke?}} {<Fffff00>}
-#highlight {{Visaya?}} {<Fffff00>}
-#highlight {{Sarruk?}} {<400><Fffff00>}
-#highlight {{Lauryyn?}} {<Fffff00>}
-#highlight {{Antreus?}} {<Fffff00>}
-#highlight {{Zeches?}} {<Fffff00>}
-#highlight {{Tarvius?}} {<Fffff00>}
-#highlight {{Lirri?}} {<Fffff00>}
-#highlight {{Elaniara?}} {<Fffff00>}
-#highlight {{Avas?}} {<Fffff00>}
-#highlight {{Smashy?}} {<110>}
-#highlight {{Aesior?}} {<Fffff00>}
-#highlight {{Orinna?}} {<400><Fffff00>}
-#highlight {{Katy?}} {<Fffff00>}
-#highlight {{Avagabriella?}} {<400><Fffff00>}
-#highlight {{Bharash?}} {<400><Fffff00>}
-#highlight {{Risolgne?}} {<110>}
-#highlight {{Celadriel?}} {<400><Fffff00>}
-#highlight {{Alashi?}} {<Fff33ff>}
-#highlight {{Izahl?}} {<Fffff00>}
-#highlight {{Irimon?}} {<Fff33ff>}
-#highlight {{Raem?}} {<Fffff00>}
-#highlight {{Ruckus?}} {<Fffff00>}
-#highlight {{Belfatorus?}} {<Fffff00>}
-#highlight {{Dunn?}} {<Fff33ff>}
-#highlight {{Elathaen?}} {<Fffff00>}
-#highlight {{Kaiu?}} {<Fffff00>}
-#highlight {{Artanis?}} {<Fffff00>}
-#highlight {{Hyuma?}} {<110>}
-#highlight {{Aleksei?}} {<110>}
-#highlight {{Salkina?}} {<400><Fffff00>}
-#highlight {{Jakasa?}} {<Fffff00>}
-#highlight {{Dalran?}} {<Fff33ff>}
-#highlight {{Ereia?}} {<400><Fffff00>}
-#highlight {{Dubheasa?}} {<Fffff00>}
-#highlight {{Imyrr?}} {<Fffff00>}
-#highlight {{Sheena?}} {<Fffff00>}
-#highlight {{Maven?}} {<Fffff00>}
-#highlight {{Sephor?}} {<Fff33ff>}
-#highlight {{Claes?}} {<Fffff00>}
-#highlight {{Tayla?}} {<Fffff00>}
-#highlight {{Hikagejuunin?}} {<400><Fffff00>}
-#highlight {{Tih?}} {<Fffff00>}
-#highlight {{Ceirina?}} {<Fffff00>}
-#highlight {{Boosteya?}} {<Fff33ff>}
-#highlight {{Tesha?}} {<Fffff00>}
-#highlight {{Celandine?}} {<Fffff00>}
-#highlight {{Ziam?}} {<Fffff00>}
-#highlight {{Treischt?}} {<Fffff00>}
-#highlight {{Kaden?}} {<Fffff00>}
-#highlight {{Ghi?}} {<Fffff00>}
-#highlight {{Bahtell?}} {<Fffff00>}
-#highlight {{Ravai?}} {<110>}
-#highlight {{Phenthrikh?}} {<110>}
-#highlight {{Blonk?}} {<400><Fffff00>}
-#highlight {{Kirsi?}} {<Fffff00>}
-#highlight {{Kasotus?}} {<Fffff00>}
+#highlight {{Holkom}} {<Fffff00>}
+#highlight {{Dominius}} {<110>}
+#highlight {{Boue}} {<Fffff00>}
+#highlight {{Blackwillow}} {<Fffff00>}
+#highlight {{Ryzan}} {<Fffff00>}
+#highlight {{Rique}} {<400><Fffff00>}
+#highlight {{Rori}} {<Fffff00>}
+#highlight {{Jaisael}} {<400><Fffff00>}
+#highlight {{Jargo}} {<Fffff00>}
+#highlight {{Mynnan}} {<110>}
+#highlight {{Thuqi}} {<Fffff00>}
+#highlight {{Bumin}} {<Fffff00>}
+#highlight {{Sela}} {<400><Fffff00>}
+#highlight {{Rynstakaar}} {<400><Fffff00>}
+#highlight {{Minkai}} {<400><Fffff00>}
+#highlight {{Kalliana}} {<Fffff00>}
+#highlight {{Ipomoea}} {<Fffff00>}
+#highlight {{Leafy}} {<Fffff00>}
+#highlight {{Laras}} {<Fffff00>}
+#highlight {{Feldin}} {<Fffff00>}
+#highlight {{Vadora}} {<Fffff00>}
+#highlight {{Fanten}} {<400><Fffff00>}
+#highlight {{Lenn}} {<Fffff00>}
+#highlight {{Yoruthas}} {<Fffff00>}
+#highlight {{Ejani}} {<Fffff00>}
+#highlight {{Mishka}} {<Fffff00>}
+#highlight {{Jeryl}} {<Fffff00>}
+#highlight {{Batuun}} {<Fffff00>}
+#highlight {{Thoralyn}} {<Fffff00>}
+#highlight {{Marcella}} {<400><Fffff00>}
+#highlight {{Ceno}} {<400><Fffff00>}
+#highlight {{Laergon}} {<Fffff00>}
+#highlight {{Bambi}} {<400><Fffff00>}
+#highlight {{Korvenn}} {<Fffff00>}
+#highlight {{Atalkez}} {<Fffff00>}
+#highlight {{Brynn}} {<Fffff00>}
+#highlight {{Morthif}} {<Fffff00>}
+#highlight {{Mornath}} {<Fffff00>}
+#highlight {{Landon}} {<Fffff00>}
+#highlight {{Yiliri}} {<414>}
+#highlight {{Danicasteel}} {<Fffff00>}
+#highlight {{Dyfi}} {<Fffff00>}
+#highlight {{Khrysopos}} {<Fffff00>}
+#highlight {{Lyrikai}} {<Fff33ff>}
+#highlight {{Azele}} {<Fffff00>}
+#highlight {{Ita}} {<400><Fffff00>}
+#highlight {{Makram}} {<Fffff00>}
+#highlight {{Relrai}} {<Fffff00>}
+#highlight {{Zbaco}} {<Fffff00>}
+#highlight {{Mortim}} {<400><Fffff00>}
+#highlight {{Iadius}} {<Fff33ff>}
+#highlight {{Audenzia}} {<Fffff00>}
+#highlight {{Arcturus}} {<400><Fffff00>}
+#highlight {{Ilsefi}} {<Fffff00>}
+#highlight {{Valaria}} {<Fffff00>}
+#highlight {{Yilui}} {<Fffff00>}
+#highlight {{Liena}} {<400><Fffff00>}
+#highlight {{Zygra}} {<110>}
+#highlight {{Finnegan}} {<Fffff00>}
+#highlight {{Khefka}} {<Fffff00>}
+#highlight {{Brandle}} {<Fffff00>}
+#highlight {{Einrich}} {<Fff33ff>}
+#highlight {{Ealee}} {<Fffff00>}
+#highlight {{Icraa}} {<110>}
+#highlight {{Zorina}} {<110>}
+#highlight {{Aecius}} {<Fffff00>}
+#highlight {{Welsh}} {<Fffff00>}
+#highlight {{Qwax}} {<Fff33ff>}
+#highlight {{Nika}} {<Fffff00>}
+#highlight {{Kazuya}} {<Fff33ff>}
+#highlight {{Ailikki}} {<Fff33ff>}
+#highlight {{Aerek}} {<Fffff00>}
+#highlight {{Andraste}} {<Fffff00>}
+#highlight {{Dantte}} {<Fff33ff>}
+#highlight {{Pluc}} {<Fffff00>}
+#highlight {{Calistar}} {<400><Fffff00>}
+#highlight {{Aodfionn}} {<Fffff00>}
+#highlight {{Enalya}} {<Fffff00>}
+#highlight {{Kildcu}} {<Fffff00>}
+#highlight {{Zariah}} {<Fffff00>}
+#highlight {{Gaelyn}} {<Fffff00>}
+#highlight {{Arraidh}} {<Fffff00>}
+#highlight {{Samizsea}} {<Fffff00>}
+#highlight {{Ucin}} {<400><Fffff00>}
+#highlight {{Brel}} {<400><Fffff00>}
+#highlight {{Treyal}} {<Fffff00>}
+#highlight {{Austere}} {<Fffff00>}
+#highlight {{Menpo}} {<Fffff00>}
+#highlight {{Lachlan}} {<Fffff00>}
+#highlight {{Viceleritas}} {<400><Fffff00>}
+#highlight {{Roselle}} {<Fffff00>}
+#highlight {{Kelraz}} {<Fffff00>}
+#highlight {{Shylene}} {<Fffff00>}
+#highlight {{Belaziel}} {<400><Fffff00>}
+#highlight {{Swikaan}} {<Fffff00>}
+#highlight {{Majin}} {<Fffff00>}
+#highlight {{Blackhole}} {<110>}
+#highlight {{Amranu}} {<400><Fffff00>}
+#highlight {{Lyssine}} {<Fffff00>}
+#highlight {{Lurch}} {<Fffff00>}
+#highlight {{Aina}} {<400><Fffff00>}
+#highlight {{Ayeka}} {<Fffff00>}
+#highlight {{Aristus}} {<Fffff00>}
+#highlight {{Lasyll}} {<400><Fffff00>}
+#highlight {{Aroan}} {<Fffff00>}
+#highlight {{Farran}} {<Fffff00>}
+#highlight {{Aniara}} {<Fffff00>}
+#highlight {{Omeli}} {<Fff33ff>}
+#highlight {{Axios}} {<Fffff00>}
+#highlight {{Aelar}} {<Fffff00>}
+#highlight {{Ryssa}} {<Fffff00>}
+#highlight {{Cornelia}} {<Fffff00>}
+#highlight {{Darvin}} {<Fffff00>}
+#highlight {{Summit}} {<400><Fffff00>}
+#highlight {{Valnyran}} {<Fffff00>}
+#highlight {{Kamamul}} {<400><Fffff00>}
+#highlight {{Mizuto}} {<Fffff00>}
+#highlight {{Andrayas}} {<110>}
+#highlight {{Tahllulah}} {<Fffff00>}
+#highlight {{Delia}} {<Fffff00>}
+#highlight {{Ranara}} {<Fffff00>}
+#highlight {{Melaya}} {<400><Fffff00>}
+#highlight {{Nefertem}} {<Fffff00>}
+#highlight {{Arthias}} {<Fffff00>}
+#highlight {{Hoplun}} {<Fffff00>}
+#highlight {{Vothaec}} {<Fffff00>}
+#highlight {{Badriyah}} {<400><Fffff00>}
+#highlight {{Clodhna}} {<Fffff00>}
+#highlight {{Moroa}} {<Fffff00>}
+#highlight {{Makog}} {<Fffff00>}
+#highlight {{Nialla}} {<Fffff00>}
+#highlight {{Lucianus}} {<110>}
+#highlight {{Ilira}} {<Fffff00>}
+#highlight {{Cthul}} {<Fff33ff>}
+#highlight {{Xaleth}} {<400><Fffff00>}
+#highlight {{Atul}} {<400><Fffff00>}
+#highlight {{Saphyria}} {<Fffff00>}
+#highlight {{Gavriil}} {<Fffff00>}
+#highlight {{Agramon}} {<400><Fffff00>}
+#highlight {{Aemira}} {<Fffff00>}
+#highlight {{Cooper}} {<110>}
+#highlight {{Laias}} {<400><Fffff00>}
+#highlight {{Marcalo}} {<Fff33ff>}
+#highlight {{Criemick}} {<400><Fffff00>}
+#highlight {{Nezha}} {<Fffff00>}
+#highlight {{Yinaf}} {<Fffff00>}
+#highlight {{Kimora}} {<Fffff00>}
+#highlight {{Juliet}} {<Fffff00>}
+#highlight {{Tsia}} {<400><Fffff00>}
+#highlight {{Balisarius}} {<400><Fffff00>}
+#highlight {{Evisi}} {<Fffff00>}
+#highlight {{Cyprian}} {<Fffff00>}
+#highlight {{Noz}} {<400><Fffff00>}
+#highlight {{Khaseem}} {<Fff33ff>}
+#highlight {{Milabar}} {<Fffff00>}
+#highlight {{Tifini}} {<Fffff00>}
+#highlight {{Arushimi}} {<Fffff00>}
+#highlight {{Halos}} {<Fffff00>}
+#highlight {{Ryzant}} {<110>}
+#highlight {{Trendric}} {<Fffff00>}
+#highlight {{Ashay}} {<Fffff00>}
+#highlight {{Alyzar}} {<Fffff00>}
+#highlight {{Drican}} {<Fffff00>}
+#highlight {{Serahfyna}} {<Fffff00>}
+#highlight {{Kresslack}} {<Fffff00>}
+#highlight {{Sylvi}} {<Fffff00>}
+#highlight {{Haemon}} {<Fff33ff>}
+#highlight {{Neno}} {<Fffff00>}
+#highlight {{Jirijyanyja}} {<400><Fffff00>}
+#highlight {{Bimnono}} {<Fff33ff>}
+#highlight {{Fitz}} {<Fff33ff>}
+#highlight {{Faerum}} {<Fffff00>}
+#highlight {{Baptiste}} {<Fffff00>}
+#highlight {{Ogoun}} {<Fffff00>}
+#highlight {{Cerenea}} {<400><Fffff00>}
+#highlight {{Laytron}} {<400><Fffff00>}
+#highlight {{Hirst}} {<Fff33ff>}
+#highlight {{Shirszae}} {<Fffff00>}
+#highlight {{Dreddik}} {<Fffff00>}
+#highlight {{Lyndenroe}} {<110>}
+#highlight {{Avianca}} {<Fffff00>}
+#highlight {{Samakhulis}} {<Fffff00>}
+#highlight {{Glutami}} {<Fffff00>}
+#highlight {{Vix}} {<Fffff00>}
+#highlight {{Drual}} {<Fffff00>}
+#highlight {{Larcenn}} {<400><Fffff00>}
+#highlight {{Anno}} {<Fffff00>}
+#highlight {{Synbios}} {<Fffff00>}
+#highlight {{Alyna}} {<Fffff00>}
+#highlight {{Eaboa}} {<Fff33ff>}
+#highlight {{Ozmatiah}} {<Fffff00>}
+#highlight {{Aegoth}} {<110>}
+#highlight {{Perl}} {<Fffff00>}
+#highlight {{Karalden}} {<Fffff00>}
+#highlight {{Mazakyne}} {<Fff33ff>}
+#highlight {{Melkervur}} {<Fff33ff>}
+#highlight {{Aziz}} {<400><Fffff00>}
+#highlight {{Xylria}} {<Fff33ff>}
+#highlight {{Titonus}} {<110>}
+#highlight {{Lira}} {<Fffff00>}
+#highlight {{Tymbi}} {<Fffff00>}
+#highlight {{Kaelthas}} {<Fff33ff>}
+#highlight {{Minsideon}} {<Fffff00>}
+#highlight {{Eonir}} {<400><Fffff00>}
+#highlight {{Khalayx}} {<400><Fffff00>}
+#highlight {{Ticca}} {<Fffff00>}
+#highlight {{Gergemaal}} {<Fffff00>}
+#highlight {{Elizabetha}} {<Fffff00>}
+#highlight {{Senti}} {<Fffff00>}
+#highlight {{Wynu}} {<Fffff00>}
+#highlight {{Eril}} {<400><Fffff00>}
+#highlight {{Stanton}} {<400><Fffff00>}
+#highlight {{Mardil}} {<Fffff00>}
+#highlight {{Iandor}} {<Fffff00>}
+#highlight {{Knightwolf}} {<Fffff00>}
+#highlight {{Entaro}} {<110>}
+#highlight {{Dortheron}} {<Fffff00>}
+#highlight {{Sevaui}} {<Fffff00>}
+#highlight {{Valknut}} {<Fff33ff>}
+#highlight {{Benten}} {<Fffff00>}
+#highlight {{Mystor}} {<110>}
+#highlight {{Saibel}} {<110>}
+#highlight {{Olin}} {<Fffff00>}
+#highlight {{Nixx}} {<400><Fffff00>}
+#highlight {{Chamia}} {<Fff33ff>}
+#highlight {{Asmodron}} {<400><Fffff00>}
+#highlight {{Bainz}} {<400><Fffff00>}
+#highlight {{Zaltear}} {<Fffff00>}
+#highlight {{Khadafi}} {<110>}
+#highlight {{Rician}} {<Fffff00>}
+#highlight {{Mercer}} {<Fffff00>}
+#highlight {{Tront}} {<Fffff00>}
+#highlight {{Xarthus}} {<110>}
+#highlight {{Orzon}} {<Fffff00>}
+#highlight {{Czanthria}} {<400><Fffff00>}
+#highlight {{Runi}} {<400><Fffff00>}
+#highlight {{Utan}} {<400><Fffff00>}
+#highlight {{Siduri}} {<Fffff00>}
+#highlight {{Doki}} {<Fffff00>}
+#highlight {{Nyathera}} {<Fffff00>}
+#highlight {{Vinzent}} {<Fffff00>}
+#highlight {{Edena}} {<Fffff00>}
+#highlight {{Vignaria}} {<Fffff00>}
+#highlight {{Lirathea}} {<400><Fffff00>}
+#highlight {{Hhaos}} {<400><Fffff00>}
+#highlight {{Antoninus}} {<110>}
+#highlight {{Sudu}} {<Fffff00>}
+#highlight {{Slangen}} {<Fff33ff>}
+#highlight {{Argwin}} {<Fffff00>}
+#highlight {{Vasha}} {<Fffff00>}
+#highlight {{Reyl}} {<Fffff00>}
+#highlight {{Monnique}} {<Fffff00>}
+#highlight {{Kallysta}} {<Fffff00>}
+#highlight {{Jasol}} {<Fffff00>}
+#highlight {{Yazuki}} {<Fffff00>}
+#highlight {{Archaeon}} {<Fff33ff>}
+#highlight {{Avikare}} {<Fffff00>}
+#highlight {{Parvina}} {<Fffff00>}
+#highlight {{Kaili}} {<Fffff00>}
+#highlight {{Faur}} {<Fffff00>}
+#highlight {{Shaul}} {<110>}
+#highlight {{Grynwold}} {<Fffff00>}
+#highlight {{Brandabarus}} {<Fffff00>}
+#highlight {{Elinia}} {<Fffff00>}
+#highlight {{Terron}} {<Fffff00>}
+#highlight {{Ominis}} {<110>}
+#highlight {{Urll}} {<Fffff00>}
+#highlight {{Gallus}} {<Fffff00>}
+#highlight {{Jei}} {<Fffff00>}
+#highlight {{Kinilan}} {<Fffff00>}
+#highlight {{Probatio}} {<400><Fffff00>}
+#highlight {{Thiev}} {<Fff33ff>}
+#highlight {{Kog}} {<Fffff00>}
+#highlight {{Nezaya}} {<400><Fffff00>}
+#highlight {{Mizik}} {<Fff33ff>}
+#highlight {{Caron}} {<Fffff00>}
+#highlight {{Kormac}} {<Fffff00>}
+#highlight {{Tahquil}} {<400><Fffff00>}
+#highlight {{Cedarclaw}} {<Fffff00>}
+#highlight {{Aeowynn}} {<Fffff00>}
+#highlight {{Harmonia}} {<Fffff00>}
+#highlight {{Katerrina}} {<Fffff00>}
+#highlight {{Sprucebruce}} {<110>}
+#highlight {{Alizais}} {<400><Fffff00>}
+#highlight {{Aaraka}} {<Fffff00>}
+#highlight {{Akaya}} {<Fffff00>}
+#highlight {{Willowbelle}} {<Fffff00>}
+#highlight {{Kiryn}} {<Fffff00>}
+#highlight {{Rennath}} {<Fffff00>}
+#highlight {{Bonji}} {<400><Fffff00>}
+#highlight {{Ardor}} {<400><Fffff00>}
+#highlight {{Ievandur}} {<Fffff00>}
+#highlight {{Eiat}} {<Fffff00>}
+#highlight {{Shandora}} {<Fffff00>}
+#highlight {{Ann}} {<Fffff00>}
+#highlight {{Narmoth}} {<Fffff00>}
+#highlight {{Roenalia}} {<400><Fffff00>}
+#highlight {{Solosite}} {<400><Fffff00>}
+#highlight {{Vindanel}} {<400><Fffff00>}
+#highlight {{Illiyath}} {<Fffff00>}
+#highlight {{Tinarni}} {<Fffff00>}
+#highlight {{Nomak}} {<Fff33ff>}
+#highlight {{Szael}} {<Fffff00>}
+#highlight {{Erikarn}} {<400><Fffff00>}
+#highlight {{Ansuya}} {<Fffff00>}
+#highlight {{Proficy}} {<110>}
+#highlight {{Saelily}} {<Fffff00>}
+#highlight {{Nicolina}} {<400><Fffff00>}
+#highlight {{Ulvin}} {<Fffff00>}
+#highlight {{Erikka}} {<Fffff00>}
+#highlight {{Grandue}} {<Fffff00>}
+#highlight {{Eemeli}} {<400><Fffff00>}
+#highlight {{Elysiana}} {<Fffff00>}
+#highlight {{Uino}} {<Fffff00>}
+#highlight {{Moritza}} {<400><Fffff00>}
+#highlight {{Fieth}} {<400><Fffff00>}
+#highlight {{Zerboxx}} {<Fffff00>}
+#highlight {{Havyn}} {<Fffff00>}
+#highlight {{Inki}} {<400><Fffff00>}
+#highlight {{Dilek}} {<Fffff00>}
+#highlight {{Sevyn}} {<400><Fffff00>}
+#highlight {{Armitage}} {<Fff33ff>}
+#highlight {{Kyah}} {<Fffff00>}
+#highlight {{Haeron}} {<Fffff00>}
+#highlight {{Lyrin}} {<Fffff00>}
+#highlight {{Hetazi}} {<Fffff00>}
+#highlight {{Annase}} {<Fffff00>}
+#highlight {{Accipiter}} {<400><Fffff00>}
+#highlight {{Weymar}} {<110>}
+#highlight {{Llialesam}} {<Fff33ff>}
+#highlight {{Ziel}} {<Fffff00>}
+#highlight {{Phyr}} {<400><Fffff00>}
+#highlight {{Myrddin}} {<Fffff00>}
+#highlight {{Destani}} {<Fffff00>}
+#highlight {{Adrac}} {<Fff33ff>}
+#highlight {{Mantodea}} {<Fffff00>}
+#highlight {{Yuuusuke}} {<Fffff00>}
+#highlight {{Taelle}} {<Fffff00>}
+#highlight {{Auria}} {<Fffff00>}
+#highlight {{Oroan}} {<110>}
+#highlight {{Yen}} {<Fffff00>}
+#highlight {{Ficus}} {<Fffff00>}
+#highlight {{Tukio}} {<Fffff00>}
+#highlight {{Glithich}} {<Fffff00>}
+#highlight {{Tsurrok}} {<110>}
+#highlight {{Gauge}} {<Fffff00>}
+#highlight {{Bunni}} {<400><Fffff00>}
+#highlight {{Azaka}} {<Fffff00>}
+#highlight {{Gelo}} {<Fffff00>}
+#highlight {{Pelaya}} {<Fffff00>}
+#highlight {{Laorir}} {<Fffff00>}
+#highlight {{Boklwa}} {<400><Fffff00>}
+#highlight {{Nishan}} {<400><Fffff00>}
+#highlight {{Kilian}} {<Fffff00>}
+#highlight {{Amira}} {<Fffff00>}
+#highlight {{Banri}} {<Fffff00>}
+#highlight {{Aldare}} {<400><Fffff00>}
+#highlight {{Starlina}} {<Fffff00>}
+#highlight {{Bellis}} {<Fffff00>}
+#highlight {{Zuriel}} {<Fffff00>}
+#highlight {{Anaria}} {<Fffff00>}
+#highlight {{Sinvier}} {<Fffff00>}
+#highlight {{Vilissa}} {<400><Fffff00>}
+#highlight {{Therod}} {<Fffff00>}
+#highlight {{Fayne}} {<400><Fffff00>}
+#highlight {{Tialha}} {<Fffff00>}
+#highlight {{Bulwer}} {<400><Fffff00>}
+#highlight {{Colgano}} {<Fffff00>}
+#highlight {{Tarth}} {<Fffff00>}
+#highlight {{Grakhir}} {<400><Fffff00>}
+#highlight {{Ceredia}} {<400><Fffff00>}
+#highlight {{Plessa}} {<Fffff00>}
+#highlight {{Tristitia}} {<Fffff00>}
+#highlight {{Allysin}} {<Fffff00>}
+#highlight {{Darona}} {<Fffff00>}
+#highlight {{Kyrista}} {<Fffff00>}
+#highlight {{Lif}} {<Fff33ff>}
+#highlight {{Kaburia}} {<400><Fffff00>}
+#highlight {{Kestrella}} {<Fffff00>}
+#highlight {{Mirai}} {<110>}
+#highlight {{Ffop}} {<110>}
+#highlight {{Wraiph}} {<110>}
+#highlight {{Lokis}} {<Fffff00>}
+#highlight {{Solaire}} {<110>}
+#highlight {{Beake}} {<400><Fffff00>}
+#highlight {{Pruxi}} {<Fff33ff>}
+#highlight {{Tilia}} {<Fffff00>}
+#highlight {{Aurola}} {<400><Fffff00>}
+#highlight {{Ante}} {<Fffff00>}
+#highlight {{Merewyn}} {<Fffff00>}
+#highlight {{Aranos}} {<Fffff00>}
+#highlight {{Auxias}} {<Fffff00>}
+#highlight {{Antheia}} {<Fffff00>}
+#highlight {{Kieva}} {<Fffff00>}
+#highlight {{Lunariya}} {<400><Fffff00>}
+#highlight {{Ilmakiur}} {<400><Fffff00>}
+#highlight {{Kassie}} {<Fffff00>}
+#highlight {{Anaidiana}} {<Fffff00>}
+#highlight {{Plagho}} {<Fffff00>}
+#highlight {{Nielae}} {<Fffff00>}
+#highlight {{Toji}} {<Fffff00>}
+#highlight {{Kaele}} {<Fffff00>}
+#highlight {{Ultimus}} {<Fffff00>}
+#highlight {{Lhachman}} {<Fffff00>}
+#highlight {{Mycen}} {<Fffff00>}
+#highlight {{Venusears}} {<110>}
+#highlight {{Azayil}} {<400><Fffff00>}
+#highlight {{Joaquin}} {<Fffff00>}
+#highlight {{Ayasatya}} {<Fffff00>}
+#highlight {{Lialaeda}} {<Fffff00>}
+#highlight {{Bekke}} {<Fffff00>}
+#highlight {{Visaya}} {<Fffff00>}
+#highlight {{Sarruk}} {<400><Fffff00>}
+#highlight {{Lauryyn}} {<Fffff00>}
+#highlight {{Antreus}} {<Fffff00>}
+#highlight {{Zeches}} {<Fffff00>}
+#highlight {{Tarvius}} {<Fffff00>}
+#highlight {{Lirri}} {<Fffff00>}
+#highlight {{Elaniara}} {<Fffff00>}
+#highlight {{Avas}} {<Fffff00>}
+#highlight {{Smashy}} {<110>}
+#highlight {{Aesior}} {<Fffff00>}
+#highlight {{Orinna}} {<400><Fffff00>}
+#highlight {{Katy}} {<Fffff00>}
+#highlight {{Avagabriella}} {<400><Fffff00>}
+#highlight {{Bharash}} {<400><Fffff00>}
+#highlight {{Risolgne}} {<110>}
+#highlight {{Celadriel}} {<400><Fffff00>}
+#highlight {{Alashi}} {<Fff33ff>}
+#highlight {{Izahl}} {<Fffff00>}
+#highlight {{Irimon}} {<Fff33ff>}
+#highlight {{Raem}} {<Fffff00>}
+#highlight {{Ruckus}} {<Fffff00>}
+#highlight {{Belfatorus}} {<Fffff00>}
+#highlight {{Dunn}} {<Fff33ff>}
+#highlight {{Elathaen}} {<Fffff00>}
+#highlight {{Kaiu}} {<Fffff00>}
+#highlight {{Artanis}} {<Fffff00>}
+#highlight {{Hyuma}} {<110>}
+#highlight {{Aleksei}} {<110>}
+#highlight {{Salkina}} {<400><Fffff00>}
+#highlight {{Jakasa}} {<Fffff00>}
+#highlight {{Dalran}} {<Fff33ff>}
+#highlight {{Ereia}} {<400><Fffff00>}
+#highlight {{Dubheasa}} {<Fffff00>}
+#highlight {{Imyrr}} {<Fffff00>}
+#highlight {{Sheena}} {<Fffff00>}
+#highlight {{Maven}} {<Fffff00>}
+#highlight {{Sephor}} {<Fff33ff>}
+#highlight {{Claes}} {<Fffff00>}
+#highlight {{Tayla}} {<Fffff00>}
+#highlight {{Hikagejuunin}} {<400><Fffff00>}
+#highlight {{Tih}} {<Fffff00>}
+#highlight {{Ceirina}} {<Fffff00>}
+#highlight {{Boosteya}} {<Fff33ff>}
+#highlight {{Tesha}} {<Fffff00>}
+#highlight {{Celandine}} {<Fffff00>}
+#highlight {{Ziam}} {<Fffff00>}
+#highlight {{Treischt}} {<Fffff00>}
+#highlight {{Kaden}} {<Fffff00>}
+#highlight {{Ghi}} {<Fffff00>}
+#highlight {{Bahtell}} {<Fffff00>}
+#highlight {{Ravai}} {<110>}
+#highlight {{Phenthrikh}} {<110>}
+#highlight {{Blonk}} {<400><Fffff00>}
+#highlight {{Kirsi}} {<Fffff00>}
+#highlight {{Kasotus}} {<Fffff00>}
 
 #var {chardb}
 {
@@ -624,7 +630,7 @@
 		{city}	{targossas}
 		{pvp}		{3}
 		{class}	{depthswalker}
-		{xp}		{619}
+		{xp}		{618}
 		{explorer} {879}
 		{color}	{<Fffff00>}
 	};
@@ -634,8 +640,8 @@
 		{city}	{eleusis}
 		{pvp}		{8}
 		{class}	{druid}
-		{xp}		{253}
-		{explorer} {383}
+		{xp}		{251}
+		{explorer} {379}
 		{color}	{<Fffff00>}
 	};
 
@@ -1164,7 +1170,7 @@
 		{city}	{ashtan}
 		{pvp}		{4}
 		{class}	{occultist}
-		{xp}		{98}
+		{xp}		{97}
 		{explorer} {103}
 		{color}	{<Fff33ff>}
 	};
@@ -1274,7 +1280,7 @@
 		{city}	{eleusis}
 		{pvp}		{75}
 		{class}	{sentinel}
-		{xp}		{375}
+		{xp}		{374}
 		{explorer} {443}
 		{color}	{<Fffff00>}
 	};
@@ -1286,6 +1292,16 @@
 		{class}	{druid}
 		{xp}		{0}
 		{explorer} {1236}
+		{color}	{<Fffff00>}
+	};
+
+	{Samizsea} {
+		{lvl}		{99}
+		{city}	{cyrene}
+		{pvp}		{13}
+		{class}	{blademaster}
+		{xp}		{379}
+		{explorer} {421}
 		{color}	{<Fffff00>}
 	};
 
@@ -1395,7 +1411,7 @@
 		{pvp}		{926}
 		{class}	{jester}
 		{xp}		{151}
-		{explorer} {171}
+		{explorer} {169}
 		{color}	{<400><Fffff00>}
 	};
 
@@ -1794,8 +1810,8 @@
 		{city}	{ashtan}
 		{pvp}		{0}
 		{class}	{occultist}
-		{xp}		{627}
-		{explorer} {602}
+		{xp}		{628}
+		{explorer} {595}
 		{color}	{<Fff33ff>}
 	};
 
@@ -1894,7 +1910,7 @@
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{depthswalker}
-		{xp}		{635}
+		{xp}		{633}
 		{explorer} {370}
 		{color}	{<400><Fffff00>}
 	};
@@ -2044,7 +2060,7 @@
 		{city}	{mhaldor}
 		{pvp}		{16}
 		{class}	{runewarden}
-		{xp}		{477}
+		{xp}		{475}
 		{explorer} {501}
 		{color}	{<110>}
 	};
@@ -2053,7 +2069,7 @@
 		{lvl}		{129}
 		{city}	{eleusis}
 		{pvp}		{2737}
-		{class}	{serpent}
+		{class}	{runewarden}
 		{xp}		{25}
 		{explorer} {138}
 		{color}	{<Fffff00>}
@@ -2073,7 +2089,7 @@
 		{lvl}		{111}
 		{city}	{targossas}
 		{pvp}		{1376}
-		{class}	{blademaster}
+		{class}	{depthswalker}
 		{xp}		{103}
 		{explorer} {99}
 		{color}	{<Fffff00>}
@@ -2349,6 +2365,16 @@
 		{color}	{<Fffff00>}
 	};
 
+	{Eaboa} {
+		{lvl}		{1}
+		{city}	{ashtan}
+		{pvp}		{0}
+		{class}	{occultist}
+		{xp}		{0}
+		{explorer} {1215}
+		{color}	{<Fff33ff>}
+	};
+
 	{Ozmatiah} {
 		{lvl}		{125}
 		{city}	{targossas}
@@ -2529,6 +2555,16 @@
 		{color}	{<Fffff00>}
 	};
 
+	{Senti} {
+		{lvl}		{77}
+		{city}	{eleusis}
+		{pvp}		{4}
+		{class}	{psion}
+		{xp}		{751}
+		{explorer} {785}
+		{color}	{<Fffff00>}
+	};
+
 	{Wynu} {
 		{lvl}		{101}
 		{city}	{cyrene}
@@ -2546,6 +2582,16 @@
 		{class}	{depthswalker}
 		{xp}		{299}
 		{explorer} {164}
+		{color}	{<400><Fffff00>}
+	};
+
+	{Stanton} {
+		{lvl}		{30}
+		{city}	{hashan}
+		{pvp}		{0}
+		{class}	{blademaster}
+		{xp}		{1142}
+		{explorer} {1125}
 		{color}	{<400><Fffff00>}
 	};
 
@@ -2596,6 +2642,16 @@
 		{class}	{depthswalker}
 		{xp}		{276}
 		{explorer} {41}
+		{color}	{<Fffff00>}
+	};
+
+	{Sevaui} {
+		{lvl}		{9}
+		{city}	{eleusis}
+		{pvp}		{0}
+		{class}	{shaman}
+		{xp}		{0}
+		{explorer} {1215}
 		{color}	{<Fffff00>}
 	};
 
@@ -2836,6 +2892,16 @@
 		{class}	{monk}
 		{xp}		{71}
 		{explorer} {47}
+		{color}	{<Fffff00>}
+	};
+
+	{Vignaria} {
+		{lvl}		{21}
+		{city}	{eleusis}
+		{pvp}		{0}
+		{class}	{magi}
+		{xp}		{0}
+		{explorer} {1038}
 		{color}	{<Fffff00>}
 	};
 
@@ -3084,8 +3150,8 @@
 		{city}	{eleusis}
 		{pvp}		{150}
 		{class}	{shaman}
-		{xp}		{174}
-		{explorer} {179}
+		{xp}		{173}
+		{explorer} {175}
 		{color}	{<Fffff00>}
 	};
 
@@ -3572,10 +3638,10 @@
 	{Zerboxx} {
 		{lvl}		{116}
 		{city}	{targossas}
-		{pvp}		{141}
-		{class}	{magi}
+		{pvp}		{148}
+		{class}	{monk}
 		{xp}		{66}
-		{explorer} {60}
+		{explorer} {58}
 		{color}	{<Fffff00>}
 	};
 
@@ -3734,8 +3800,8 @@
 		{city}	{targossas}
 		{pvp}		{256}
 		{class}	{depthswalker}
-		{xp}		{273}
-		{explorer} {265}
+		{xp}		{271}
+		{explorer} {262}
 		{color}	{<Fffff00>}
 	};
 
@@ -3744,8 +3810,8 @@
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{blademaster}
-		{xp}		{0}
-		{explorer} {1214}
+		{xp}		{1028}
+		{explorer} {978}
 		{color}	{<Fffff00>}
 	};
 
@@ -3840,12 +3906,12 @@
 	};
 
 	{Glithich} {
-		{lvl}		{31}
+		{lvl}		{33}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{psion}
-		{xp}		{1133}
-		{explorer} {1214}
+		{xp}		{1129}
+		{explorer} {1215}
 		{color}	{<Fffff00>}
 	};
 
@@ -3974,8 +4040,8 @@
 		{city}	{hashan}
 		{pvp}		{3}
 		{class}	{blademaster}
-		{xp}		{232}
-		{explorer} {357}
+		{xp}		{235}
+		{explorer} {361}
 		{color}	{<400><Fffff00>}
 	};
 
@@ -4070,12 +4136,12 @@
 	};
 
 	{Bulwer} {
-		{lvl}		{96}
+		{lvl}		{97}
 		{city}	{hashan}
-		{pvp}		{293}
+		{pvp}		{295}
 		{class}	{magi}
-		{xp}		{396}
-		{explorer} {525}
+		{xp}		{388}
+		{explorer} {521}
 		{color}	{<400><Fffff00>}
 	};
 
@@ -4154,8 +4220,8 @@
 		{city}	{cyrene}
 		{pvp}		{6}
 		{class}	{bard}
-		{xp}		{538}
-		{explorer} {574}
+		{xp}		{535}
+		{explorer} {561}
 		{color}	{<Fffff00>}
 	};
 
@@ -4164,7 +4230,7 @@
 		{city}	{cyrene}
 		{pvp}		{78}
 		{class}	{magi}
-		{xp}		{145}
+		{xp}		{144}
 		{explorer} {240}
 		{color}	{<Fffff00>}
 	};
@@ -4284,7 +4350,7 @@
 		{city}	{hashan}
 		{pvp}		{116}
 		{class}	{bard}
-		{xp}		{387}
+		{xp}		{386}
 		{explorer} {287}
 		{color}	{<400><Fffff00>}
 	};
@@ -4554,8 +4620,8 @@
 		{city}	{(none)}
 		{pvp}		{7}
 		{class}	{sylvan}
-		{xp}		{593}
-		{explorer} {155}
+		{xp}		{585}
+		{explorer} {153}
 		{color}	{<Fffff00>}
 	};
 
@@ -4664,7 +4730,7 @@
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{613}
+		{xp}		{612}
 		{explorer} {684}
 		{color}	{<400><Fffff00>}
 	};
@@ -4904,8 +4970,8 @@
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{alchemist}
-		{xp}		{1053}
-		{explorer} {1214}
+		{xp}		{1054}
+		{explorer} {1215}
 		{color}	{<Fffff00>}
 	};
 
@@ -5052,10 +5118,10 @@
 	{Blonk} {
 		{lvl}		{108}
 		{city}	{hashan}
-		{pvp}		{518}
+		{pvp}		{521}
 		{class}	{pariah}
-		{xp}		{143}
-		{explorer} {296}
+		{xp}		{139}
+		{explorer} {288}
 		{color}	{<400><Fffff00>}
 	};
 
@@ -5064,8 +5130,8 @@
 		{city}	{cyrene}
 		{pvp}		{133}
 		{class}	{serpent}
-		{xp}		{298}
-		{explorer} {250}
+		{xp}		{297}
+		{explorer} {254}
 		{color}	{<Fffff00>}
 	};
 

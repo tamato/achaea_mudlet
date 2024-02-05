@@ -53,17 +53,17 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 color = fg_yellow
 
                 city = char['city']
-                if 'ashtan'     in city: color = fg_magenta
-                if 'hashan'     in city: color = '<400>'+color   # underscore
-                if 'targosas'   in city: color = '<500>'+color   # blink
-                if 'underworld' in city: color = '<414>'          # underscore, read, blue
+                if 'ashtan'     in city: color = '<400>'+fg_magenta # underscore
+                if 'hashan'     in city: color = '<400>'+color      # underscore
+                if 'targosas'   in city: color = '<500>'+color      # blink
+                if 'underworld' in city: color = '<414>'            # underscore, read, blue
                 if 'mhaldor'    in city: color = '<110>'   
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{{{char["name"]}?}}}} {{{color}}}\n')
+                hi.write(f'#highlight {{{{{char["name"]}}}}} {{{color}}}\n')
             except Exception as inst:
-                print("bad")
+                print("WTF??")
                 print(type(inst))    # the exception type
                 print(inst.args)     # arguments stored in .args
                 print(inst)          # __str__ allows args to be printed directly,
