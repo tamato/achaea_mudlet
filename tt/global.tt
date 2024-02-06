@@ -7,12 +7,23 @@ guireset
 #nop Targeting needs to be after GUI
 #nop #read targeting.tt
 
-#config log html
+#config {command color} {\e[4;33m};
+#config {verbatim}      {on};
+#config {speedwalk}     {on};
+#config {log}           {txt};
 
 #alias {print} {
    #showme  <168>-----------------------------------------------------------;
    #showme  <078>[ <038>%0 <078>];
    #showme  <168>-----------------------------------------------------------;
+}
+
+#alias {fight!} {
+   #nop #if {{%0} != {}} { #log off; #config {log} {txt}; #break; };
+
+   #config log html;
+   #log append combat.log;
+   print {New Fight};
 }
 
 #nop \Z until the end f the text zent by the mud;

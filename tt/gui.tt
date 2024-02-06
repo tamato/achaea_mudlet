@@ -5,6 +5,10 @@
 #nop     60 rows;
 #nop     252 cols;
 
+#nop Laptop;
+#nop gtd->screen->rows:          50;
+#nop gtd->screen->cols:         190;
+
 #VARIABLE {room_window}
 {
     {active} {mobs}
