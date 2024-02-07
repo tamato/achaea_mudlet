@@ -2,9 +2,9 @@
 
 #read global.tt;
 
-#session mel achaea.com 23;
-cthul
-achaeapassword
+#nop #session cthul achaea.com 23;
+#nop cthul
+#nop achaeapassword
 
 #nop set target when one is seen.
 

@@ -67,3 +67,74 @@ print("[[[ ------------------------------ ]]]")
 
 # use top level userData for special glpyhs for rooms
 # use envToColorMapping with 'environment' for colors
+#  for areas in parsed['areas']:
+#      # areas is a list
+#      # each area has a directionary of rooms
+#      for room in areas['rooms']:
+#          if room['id'] == 436:
+#              foundroom = room
+#              inarea = areas
+#              break
+
+
+with open('world.map', 'w') as f:
+    f.write("#VARIABLE worldmap {")
+
+    f.write("\t{areas} {\n")
+    for areas in parsed['areas']:
+        roomid = areas['id']
+        name = areas['name']
+        roomCnt =  areas['roomCount']
+
+        f.write(f'\t\t{{{roomid}}} {{\n')
+        f.write(f'\t\t\t{{name}} {{{name}}}\n')
+        f.write(f'\t\t\t{{roomCount}} {{{roomCnt}}}\n')
+        f.write(f'\t\t\t{{rooms}} {{\n')
+        for rooms in areas['rooms']:
+            if 'name' not in rooms:
+                break;
+            if 'userData' not in rooms:
+                break;
+            
+            name = rooms['name']
+            coordinates = rooms['coordinates']
+            environment = rooms['environment']
+            roomid = rooms['id']
+            exits = rooms['exits']
+            user = rooms['userData']
+            f.write(f'\t\t\t\t{{{roomid}}} {{\n')
+            f.write(f'\t\t\t\t\t{{name}} {{{name}}}\n')
+
+        f.write('\t\t\t\t}\n')
+        f.write('\t\t\t}\n')
+        f.write('\t\t}\n')
+
+    f.write("\t}\n")
+
+    f.write("\t{areaCount} {467}\n")
+    f.write("\t{cusmtomEnvColors} {\n")
+    f.write("\t}\n")
+    f.write("\t{envToColorMapping} {\n")
+    f.write("\t}\n")
+    f.write("\t{formatVersion} {1}\n")
+    f.write("\t{roomCount} {29871}\n")
+    f.write("\t{userData} {\n")
+    f.write("\t\t{mapFeatures} {\n")
+    f.write("\t\t\t{subdivision} {S}\n")
+    f.write("\t\t\t{ferry} {F}\n")
+    f.write("\t\t\t{grate} {G}\n")
+    f.write("\t\t\t{commdityshop} {C}\n")
+    f.write("\t\t\t{news} {N}\n")
+    f.write("\t\t\t{stronghold} {M}\n")
+    f.write("\t\t\t{shop} {$}\n")
+    f.write("\t\t\t{locksmith} {L}\n")
+    f.write("\t\t\t{harbour} {H}\n")
+    f.write("\t\t\t{wilderness} {W}\n")
+    f.write("\t\t\t{arena} {A}\n")
+    f.write("\t\t\t{postoffice} {P}\n")
+    f.write("\t\t\t{bank} {B}\n")
+    f.write("\t\t}\n")
+    f.write("\t}\n")
+    f.write("};\n")
+
+

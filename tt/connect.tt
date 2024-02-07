@@ -183,12 +183,35 @@
     #map get roomarea {result};
     #if {"$result" == ""}
     {
-        #map set roomarea $gmcp[room][info][zone];
-        #map set roomnote $gmcp[room][info][environment];
-        #map set roomname $gmcp[room][info][name];
-        #map set roomterr $gmcp[room][info][terrain];
-        #map set roominfo $gmcp[room][info][details];
+        #map set roomarea $gmcp[room][info][num];
         #map set roomcolor <178>
+        map set roomdata;
+        map set roomdesc;
+        map set roomflags;
+        map set roomid;
+        #map set roomname $gmcp[room][info][name];
+        #map set roomnote $gmcp[room][info][environment];
+        map set roomsymbol;
+        #map set roomterr $gmcp[room][info][terrain];
+
+        #nop ???;
+        #map set roominfo $gmcp[room][info][details];
+
+/*
+      tintin_printf2(ses, "   ROOMAREA: %s", room->area);
+      tintin_printf2(ses, "  ROOMCOLOR: %s", room->color);
+      tintin_printf2(ses, "   ROOMDATA: %s", room->data);
+      tintin_printf2(ses, "   ROOMDESC: %s", room->desc);
+      tintin_printf2(ses, "  ROOMFLAGS: %d", room->flags);
+      tintin_printf2(ses, "     ROOMID: %s", room->id);
+      tintin_printf2(ses, "   ROOMNAME: %s", room->name);
+      tintin_printf2(ses, "   ROOMNOTE: %s", room->note);
+      tintin_printf2(ses, " ROOMSYMBOL: %s", room->symbol);
+      tintin_printf2(ses, "ROOMTERRAIN: %s", room->terrain);
+      tintin_printf2(ses, " ROOMWEIGHT: %.3f", room->weight);
+
+*/
+
     };
     #foreach {*gmcp[room][info][exits][]} {exit}
     {
