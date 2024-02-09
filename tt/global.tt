@@ -7,9 +7,8 @@ guireset
 #nop Targeting needs to be after GUI
 #nop #read targeting.tt
 
-#config {command color} {\e[4;33m};
+#config {command color} {\e[4;33m}; #nop underline red;
 #config {verbatim}      {on};
-#config {speedwalk}     {on};
 #config {log}           {txt};
 
 #alias {print} {

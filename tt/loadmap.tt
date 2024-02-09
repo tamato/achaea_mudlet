@@ -1,0 +1,91 @@
+#nop Loads up parts of the world.tt
+
+#nop #read world.tt
+#read testmap.tt
+
+#alias loaderhelp {
+   #showme <268>========================================;
+   #showme <238>Load worldmap.tt for the mapper;
+   #showme <238>Usage:           ;
+   #showme <238>  loaderhelp;
+   #showme <238>    Show this help.;
+   #showme <238>  areakeys <area>;
+   #showme <238>    <area> is case sensitive;
+   #showme <238>    Helper to find the names of areas.;
+   #showme <238>  wload <area>   ;
+   #showme <268>=======================================;
+}
+loaderhelp;
+
+#alias {areakeys} {
+   #var areavar *worldmap[areas][%0%*];
+
+   #show {areavar is set to $areavar};
+}
+#alias hand {
+   #map create 100000;
+   #map flag static;
+   #nop #map flag unicodegraphics on;
+   #nop #map flag nofollow;
+   #map flag vtmap; #nop draw map;
+   #map flag asciigraphics on;
+
+   #map goto {1} {dig};
+   #map set roomarea {TestBed};
+   #map set roomcolor <158>;
+   #map dig {south} {2};
+   #map dig {south} {2};
+
+   #map goto {2} {dig};
+   #map set roomarea {southern road};
+   #map set roomcolor <158>;
+   #map dig {north} {1};
+}
+
+#alias {wload} {
+
+   #map create 100000;
+   #map flag static;
+   #nop #map flag unicodegraphics on;
+   #map flag nofollow;
+   #map flag vtmap; #nop draw map;
+   #map flag asciigraphics on;
+
+   #nop #split 15 1;
+   #nop #map offset 1 1 20 35;
+
+   #var rooms $worldmap[areas][%0][rooms];
+   #var greaterArea *worldmap[areas][%0][greaterArea];
+
+   #local counter 0;
+   #loop 1 {$rooms} {room} {
+      #nop #local counter {$counter + 1};
+      #nop #if {counter > 10} {#break;};
+      
+      #show {RoomNum: *rooms[+$room]};
+
+      #map goto {*rooms[+$room]} {dig} #nop room number;
+      #map set roomarea {$greaterArea};
+      #map set roomcolor <158>;
+
+      #nop #map set roomdata {};
+      #nop #map set roomdesc {};
+      #nop #map set roomflags;
+      #nop #map set roomid;
+      #nop #map set roomname {$rooms[$room][name]};
+      #nop #map set roomnote {My Tests}; #nop TODO;
+      #nop #map set roomsymbol {W};      #nop TODO;
+      #nop #map set roomterr {Urban};    #nop TODO;
+
+      #nop bank, shop, ...;
+      #nop #map set roominfo $gmcp[room][info][details];
+      #showme Doing exits;
+      #foreach {$rooms[+$rooms][exits]} {exit}
+      {
+         #showme Exit: $exit;
+         #nop #map get {roomexit} {result};
+         #nop #map get {roomvnum} {result} {$gmcp[room][info][exits][$exit]};
+         #map dig {$exit} {$gmcp[room][info][exits][$exit]};
+      };
+   }
+}

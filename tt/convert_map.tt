@@ -5,8 +5,16 @@
 
 #alias load
 {
-    #scan txt %1
+   #map flag vtmap on;
+   #split 30 1;
+   #scan txt %1;
 }
+
+#nop up = u;
+#nop down = d;
+#nop in =  TOOD;
+#nop out = TODO;
+
 
 #var pathdirs {{north}{n}{east}{e}{south}{s}{west}{w}{northeast}{ne}{southeast}{se}{southwest}{sw}{northwest}{nw}}
 
@@ -28,7 +36,7 @@
        #map dig {$exits[$exit]} {$exit}
    }
 
-   #map write map_files/%1.ttmap;
+   #nop #map write map_files/%1.ttmap;
 }
 
 #class achaeamap close

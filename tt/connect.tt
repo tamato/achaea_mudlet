@@ -1,5 +1,8 @@
 #nop https://tintin.mudhalla.net/scripts/gmcp.php
 
+#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 2
+#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 1
+
 #nop https://gitlab.com/inutt/flexible-survival-ui 
 #nop - might have a way to collect targets
 #nop - shifted over command line
@@ -23,8 +26,14 @@
     #map flag unicodegraphics on;
     #map flag nofollow;
     #nop #map flag vtmap; #nop draw map;
-    #nop#map offset 1 1 20 35;
-    #map read achaea.map;
+
+    #nop #split 20 1 40 50;
+    #nop #map offset 1 1 20 35;
+
+    #nop seems to be either to use draw or vtmpa/split/offset;
+    #draw boxed map 1 1 30 40;
+
+    #map read gmcp.map
 
     #echo {Session connection!};
 }
@@ -168,7 +177,7 @@
         #variable {exits} {$exits<128>$DIR_NAME[$exit]}
     };
     #format {prompt} {$prompt <238>Ex: %-6s} {$exits   <088>};
-    #line ignore #showme {$prompt} {-2}
+    #line ignore #showme {$prompt} {-2};
 }
 {1}
 
@@ -185,47 +194,35 @@
     {
         #map set roomarea $gmcp[room][info][num];
         #map set roomcolor <178>
-        map set roomdata;
-        map set roomdesc;
-        map set roomflags;
-        map set roomid;
+        #nop map set roomdata;
+        #nop map set roomdesc;
+        #nop map set roomflags;
+        #nop map set roomid;
         #map set roomname $gmcp[room][info][name];
         #map set roomnote $gmcp[room][info][environment];
-        map set roomsymbol;
+        #nop map set roomsymbol;
         #map set roomterr $gmcp[room][info][terrain];
 
         #nop ???;
         #map set roominfo $gmcp[room][info][details];
-
-/*
-      tintin_printf2(ses, "   ROOMAREA: %s", room->area);
-      tintin_printf2(ses, "  ROOMCOLOR: %s", room->color);
-      tintin_printf2(ses, "   ROOMDATA: %s", room->data);
-      tintin_printf2(ses, "   ROOMDESC: %s", room->desc);
-      tintin_printf2(ses, "  ROOMFLAGS: %d", room->flags);
-      tintin_printf2(ses, "     ROOMID: %s", room->id);
-      tintin_printf2(ses, "   ROOMNAME: %s", room->name);
-      tintin_printf2(ses, "   ROOMNOTE: %s", room->note);
-      tintin_printf2(ses, " ROOMSYMBOL: %s", room->symbol);
-      tintin_printf2(ses, "ROOMTERRAIN: %s", room->terrain);
-      tintin_printf2(ses, " ROOMWEIGHT: %.3f", room->weight);
-
-*/
-
     };
     #foreach {*gmcp[room][info][exits][]} {exit}
-    {
+    { 
+         #show "!!!!!!!!!!!!!!!!!!!";
+         #show $exit; #nop "sw s e";
         #map get {roomexit} {result};
         #if {&result[$exit] == 0}
         {
             #map get {roomvnum} {result} {$gmcp[room][info][exits][$exit]};
             #map dig {$exit} {$gmcp[room][info][exits][$exit]};
+            #nop "map dig <direction> <roomnum>
             #if {$result == 0}
             {
                 #map set {roomcolor} {<118>} {$gmcp[room][info][exits][$exit]}
             }
         }
     };
+   #nop #VARIABLE {gmcp[room][info][exits]} {n} {10994} {se} {10980 {w} {10984};
 
     #draw boxed map 1 1 30 40;
 }
@@ -247,7 +244,7 @@
 
 #EVENT {SESSION DISCONNECTED}
 {
-    #nop #map write gmcp.map
+    #map write gmcp.map
 }
 
 #alias {gmcp}

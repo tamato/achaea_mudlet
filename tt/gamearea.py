@@ -4,112 +4,61 @@ import json
 
 with open('map.json') as mapfile:
     parsed = json.load(mapfile)
-  
-for idx in parsed:
-    print(idx)
 
-print("-----------------------")
-print(parsed['areaCount'])
-print(parsed['roomCount'])
-#print(parsed['customEnvColors'])
-print(parsed['formatVersion'])
-print(parsed['labelCount'])
+with open('world.tt', 'w') as f:
+    tabs = 0
+    f.write("#VARIABLE worldmap {\n")
 
-print("[Areas]-----------------------")
-print(len(parsed['areas']))
-
-#  ids = []
-#  counter = 0
-#  for idx in parsed['areas']:
-#      if 'Ashtan' in idx['name']:
-#          ids.append(counter)
-#          print(f'id: {idx["id"]}  name: {idx["name"]}, counter: {counter}')
-#      counter += 1
-
-#  print("[Room] -----------------------")
-#  spot = parsed['areas'][47]
-#  for k in spot.keys() :
-#      print(k)
-
-#  print(f'[{spot["name"]}]: id:[{spot["id"]}] roomcount: {spot["roomCount"]}')
-#  print("[List of Rooms] -----------------------")
-#  rooms = parsed['areas'][47]['rooms']
-#  for k in rooms[1].items() :
-#      print(f'{k}\n')
-#      print(f'{k[0]}\n')
-#      print(f'{k[1]}\n')
-#      print("--")
-
-print("[[[ ------------------------------ ]]]")
-# find a specific room number, 436 (in Ashtan, Entering the main gate..)
-# rooms are in 'areas'
-foundroom = {}
-inarea = {}
-for areas in parsed['areas']:
-    # areas is a list
-    # each area has a directionary of rooms
-    for room in areas['rooms']:
-        if room['id'] == 436:
-            foundroom = room
-            inarea = areas
-            break
-
-# when loading in and getting the gmcp message with a room number
-# we can find which area we are in.
-# and then load the map for that location.
-# Then when changing rooms, check if the 'area' has changed. 
-#  If it has, load up the new area. 
-print(foundroom['name'])
-print(foundroom['environment'])
-print(foundroom['userData']['Game Area'])
-print(inarea['name'])
-print("[[[ ------------------------------ ]]]")
-
-# use top level userData for special glpyhs for rooms
-# use envToColorMapping with 'environment' for colors
-#  for areas in parsed['areas']:
-#      # areas is a list
-#      # each area has a directionary of rooms
-#      for room in areas['rooms']:
-#          if room['id'] == 436:
-#              foundroom = room
-#              inarea = areas
-#              break
-
-
-with open('world.map', 'w') as f:
-    f.write("#VARIABLE worldmap {")
-
-    f.write("\t{areas} {\n")
+    tabs = 1
+    f.write(tabs*'\t'+'{areas} {\n')
     for areas in parsed['areas']:
-        roomid = areas['id']
-        name = areas['name']
+        
+        areaname = areas['name']
+        #  print(f'Area name: {name}')
+
         roomCnt =  areas['roomCount']
+        if roomCnt == 0: continue
+        areaid = areas['id']
 
-        f.write(f'\t\t{{{roomid}}} {{\n')
-        f.write(f'\t\t\t{{name}} {{{name}}}\n')
-        f.write(f'\t\t\t{{roomCount}} {{{roomCnt}}}\n')
-        f.write(f'\t\t\t{{rooms}} {{\n')
+        f.write(2*'\t'+f'{{{areaname}}} {{\n')
+
         for rooms in areas['rooms']:
-            if 'name' not in rooms:
-                break;
-            if 'userData' not in rooms:
-                break;
-            
-            name = rooms['name']
-            coordinates = rooms['coordinates']
-            environment = rooms['environment']
+            if 'userData' in rooms:
+                user = rooms['userData']
+                if 'Game Area' in user:
+                    f.write(3*'\t'+f'{{greaterArea}} {{{user["Game Area"]}}}\n')
+                    break
+
+        f.write(3*'\t'+f'{{roomCount}} {{{roomCnt}}}\n')
+        f.write(3*'\t'+f'{{rooms}} {{\n')
+        for rooms in areas['rooms']:
+
             roomid = rooms['id']
-            exits = rooms['exits']
-            user = rooms['userData']
-            f.write(f'\t\t\t\t{{{roomid}}} {{\n')
-            f.write(f'\t\t\t\t\t{{name}} {{{name}}}\n')
+            f.write(4*'\t'+f'{{{roomid}}} {{\n')
 
-        f.write('\t\t\t\t}\n')
-        f.write('\t\t\t}\n')
-        f.write('\t\t}\n')
+            if 'name' in rooms:
+                roomname = rooms['name']
+                f.write(5*'\t'+f'{{name}} {{{roomname}}}\n')
 
-    f.write("\t}\n")
+            coordinates = rooms['coordinates']
+            f.write(5*'\t'+f'{{x}} {{{coordinates[0]}}}\n')
+            f.write(5*'\t'+f'{{y}} {{{coordinates[1]}}}\n')
+            f.write(5*'\t'+f'{{z}} {{{coordinates[2]}}}\n')
+
+            environment = rooms['environment']
+            f.write(5*'\t'+f'{{env}} {{{environment}}}\n')
+
+            f.write(5*'\t' + '{exits} {\n')
+            for exits in rooms['exits']:
+                f.write(6*'\t' + f'{{{exits["exitId"]}}} {{{exits["name"]}}}\n')
+            f.write(5*'\t'+'}\n') # close room
+
+            f.write(4*'\t'+'}\n') # close room
+
+        f.write(3*'\t'+'}\n') # close roomS
+        f.write(2*'\t'+'}\n') # close area id
+
+    f.write(1*'\t'+'}\n') # close areas
 
     f.write("\t{areaCount} {467}\n")
     f.write("\t{cusmtomEnvColors} {\n")
@@ -136,5 +85,73 @@ with open('world.map', 'w') as f:
     f.write("\t\t}\n")
     f.write("\t}\n")
     f.write("};\n")
+  
+#  print("-----------------------")
+#  print(parsed['areaCount'])
+#  print(parsed['roomCount'])
+#  print(parsed['customEnvColors']
+#  print(parsed['formatVersion'])
+#  print(parsed['labelCount'])
+#
+#  print("[Areas]-----------------------")
+#  print(len(parsed['areas']))
+
+#  ids = []
+#  counter = 0
+#  for idx in parsed['areas']:
+#      if 'Ashtan' in idx['name']:
+#          ids.append(counter)
+#          print(f'id: {idx["id"]}  name: {idx["name"]}, counter: {counter}')
+#      counter += 1
+
+#  print("[Room] -----------------------")
+#  spot = parsed['areas'][47]
+#  for k in spot.keys() :
+#      print(k)
+
+#  print(f'[{spot["name"]}]: id:[{spot["id"]}] roomcount: {spot["roomCount"]}')
+#  print("[List of Rooms] -----------------------")
+#  rooms = parsed['areas'][47]['rooms']
+#  for k in rooms[1].items() :
+#      print(f'{k}\n')
+#      print(f'{k[0]}\n')
+#      print(f'{k[1]}\n')
+#      print("--")
+
+#  print("[[[ ------------------------------ ]]]")
+# find a specific room number, 436 (in Ashtan, Entering the main gate..)
+# rooms are in 'areas'
+foundroom = {}
+inarea = {}
+for areas in parsed['areas']:
+    # areas is a list
+    # each area has a directionary of rooms
+    for room in areas['rooms']:
+        if room['id'] == 436:
+            foundroom = room
+            inarea = areas
+            break
+
+# when loading in and getting the gmcp message with a room number
+# we can find which area we are in.
+# and then load the map for that location.
+# Then when changing rooms, check if the 'area' has changed. 
+#  If it has, load up the new area. 
+#  print(foundroom['name'])
+#  print(foundroom['environment'])
+#  print(foundroom['userData']['Game Area'])
+#  print(inarea['name'])
+#  print("[[[ ------------------------------ ]]]")
+
+# use top level userData for special glpyhs for rooms
+# use envToColorMapping with 'environment' for colors
+#  for areas in parsed['areas']:
+#      # areas is a list
+#      # each area has a directionary of rooms
+#      for room in areas['rooms']:
+#          if room['id'] == 436:
+#              foundroom = room
+#              inarea = areas
+#              break
 
 
