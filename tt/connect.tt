@@ -23,7 +23,7 @@
     #map create 100000;
     #map goto 1;
     #map flag static;
-    #map flag unicodegraphics on;
+    #map flag ascii;
     #map flag nofollow;
     #nop #map flag vtmap; #nop draw map;
 
@@ -33,7 +33,7 @@
     #nop seems to be either to use draw or vtmpa/split/offset;
     #draw boxed map 1 1 30 40;
 
-    #map read gmcp.map
+    #map read gmcp.map;
 
     #echo {Session connection!};
 }
@@ -188,43 +188,64 @@
     {
         #return
     };
+
+
     #map goto {$gmcp[room][info][num]} {dig};
     #map get roomarea {result};
     #if {"$result" == ""}
     {
         #map set roomarea $gmcp[room][info][num];
-        #map set roomcolor <178>
+        #map set roomcolor <178>;
         #nop map set roomdata;
         #nop map set roomdesc;
         #nop map set roomflags;
         #nop map set roomid;
         #map set roomname $gmcp[room][info][name];
         #map set roomnote $gmcp[room][info][environment];
-        #nop map set roomsymbol;
         #map set roomterr $gmcp[room][info][terrain];
 
         #nop ???;
         #map set roominfo $gmcp[room][info][details];
+
     };
+
+   #foreach {*gmcp[room][info][details][]} {key}
+   {
+      #show {<003>Room Details: $gmcp[room][info][details][$key]};
+      #switch {{$gmcp[room][info][details][$key]}}
+      {
+         #case {"subdivision"}   {#map set roomsymbol {S};};
+         #case {"bank"}          {#map set roomsymbol {B};};
+         #case {"sewer"}         {#map set roomsymbol {G};};
+         #case {"wilderness"}    {#map set roomsymbol {W};};
+         #case {"shop"}          {#map set roomsymbol {$};};
+      };
+   };
     #foreach {*gmcp[room][info][exits][]} {exit}
     { 
-         #show "!!!!!!!!!!!!!!!!!!!";
-         #show $exit; #nop "sw s e";
+        #nop #show "!!!!!!!!!!!!!!!!!!!";
+        #nop #show $exit; #nop "sw s e";
         #map get {roomexit} {result};
         #if {&result[$exit] == 0}
         {
             #map get {roomvnum} {result} {$gmcp[room][info][exits][$exit]};
             #map dig {$exit} {$gmcp[room][info][exits][$exit]};
-            #nop "map dig <direction> <roomnum>
+            #nop "map dig <direction> <roomnum>;
             #if {$result == 0}
             {
-                #map set {roomcolor} {<118>} {$gmcp[room][info][exits][$exit]}
+                #map set {roomcolor} {<118>} {$gmcp[room][info][exits][$exit]};
             }
         }
     };
-   #nop #VARIABLE {gmcp[room][info][exits]} {n} {10994} {se} {10980 {w} {10984};
+
 
     #draw boxed map 1 1 30 40;
+}
+
+#EVENT {IAC SB GMCP char.name IAC SE}
+{
+   #variable gmcp[char][name] {%0};
+   #show {I am $gmcp[char][name]};
 }
 
 #EVENT {IAC SB GMCP Room.addplayer IAC SE}

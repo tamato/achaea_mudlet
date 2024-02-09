@@ -1,6 +1,8 @@
 #nop
 
+#show Reading connect file;
 #read connect.tt
+#show Reading gui file;
 #read gui.tt;
 guireset
 

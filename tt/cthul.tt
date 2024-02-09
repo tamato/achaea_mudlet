@@ -1,5 +1,6 @@
 #nop Start up script for melkervur
 
+#show Reading global file;
 #read global.tt;
 
 #session cthul achaea.com 23;
