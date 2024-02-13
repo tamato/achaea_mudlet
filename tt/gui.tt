@@ -13,7 +13,7 @@
 {
     {active} {mobs}
     {botcol} {-1}
-    {botrow} {20}
+    {botrow} {40}
     {tab} 
     {
         {players} {}

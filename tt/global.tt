@@ -4,10 +4,9 @@
 #read connect.tt
 #show Reading gui file;
 #read gui.tt;
-guireset
 
 #nop Targeting needs to be after GUI
-#nop #read targeting.tt
+#read targeting.tt
 
 #config {command color} {\e[4;33m}; #nop underline red;
 #config {verbatim}      {on};
@@ -41,6 +40,6 @@ guireset
 #nop Use Diagnose  for losing eq
 #nop use Directory for losing balance
 
-#read character_highlights.tt
 #read player_events.tt
+
 #highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}

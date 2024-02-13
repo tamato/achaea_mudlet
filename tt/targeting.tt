@@ -43,6 +43,7 @@
    #local name $gmcp[char][items][add][name];
    #local id $gmcp[char][items][add][id];
    #local mob <278>$name<028>$id<209>;
+   #var roomMobs {{$id}{$mob}};
 
    room_window_show mobs $mob;
 }
@@ -51,6 +52,7 @@
 {
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
+   #list roomMobs clear;
    refresh_room_window mobs;
 
    #local item {%0};
@@ -79,6 +81,7 @@
       #local name $item[name];
       #local id $item[id];
       #local mob <278>$name<028>$id<209>;
+      #var roomMobs {{$id}{$mob}};
 
       #nop #showme <003>Adding: [$mob];
 
@@ -92,8 +95,14 @@
    #var gmcp[char][items][remove] %0;
 
    #local mob $gmcp[char][items][remove][id];
+   #show {Deleting mob: $mob};
+
    #list room_window[tab][mobs] find {$mob} idx;
-   #unvar room_window[tab][mobs][+$idx];
+   #show {Deleting idx from window: $idx};
+   #list room_window[tab][mobs] delete $idx;
+
+   #list roomMobs find {$mob} idx;
+   #list roomMobs delete $idx;
    refresh_room_window mobs;
 }
 
@@ -125,9 +134,8 @@
       #nop Go through the list of possible targets and attack the first one.;
       #nop #showme <038>Targets list: *targets[$areaName][%*];
 
-      #loop 1 &roomMobs[] denizen {
+      #loop 1 *room_window[tab][mobs][] denizen {
 
-         #local denizen {$roomMobs[+$denizen]};
          #showme in room: <038>$denizen:*roomMobs[+$denizen];
          attackCmd $denizen;
 
@@ -148,6 +156,8 @@
    {
       attackCmd %1;
    };
+
+   #unvar denizen;
 }
 
 #alias {filltar} {
@@ -160,6 +170,11 @@
       #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
    };
    #var roomMobs;
+}
+
+#EVENT {SESSION DISCONNECTED}
+{
+    #nop #map write gmcp.map
 }
 
 

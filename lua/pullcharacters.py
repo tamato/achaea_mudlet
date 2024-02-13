@@ -50,27 +50,29 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # create a dictionary of them
                 #  print(char['name'])
                 # could use 24 bit colors, format is <F000000> <FFFFFFF>
-                color = fg_yellow
+                color = '<038>'
+                #  color = fg_yellow
 
-                city = char['city']
-                if 'ashtan'     in city: color = '<400>'+fg_magenta # underscore
-                if 'hashan'     in city: color = '<400>'+color      # underscore
-                if 'targosas'   in city: color = '<500>'+color      # blink
-                if 'underworld' in city: color = '<414>'            # underscore, read, blue
-                if 'mhaldor'    in city: color = '<110>'   
+                if 'city' in char:
+                    city = char['city']
+                    if 'ashtan'     in city: color = '<408>'+fg_magenta # underscore
+                    if 'hashan'     in city: color = '<408>'+color      # underscore
+                    if 'targosas'   in city: color = '<508>'+color      # blink
+                    if 'underworld' in city: color = '<414>'            # underscore, read, blue
+                    if 'mhaldor'    in city: color = '<118>'   
 
                 char['color'] = color
                 characters[char['name']] = char
                 hi.write(f'#highlight {{{{{char["name"]}}}}} {{{color}}}\n')
             except Exception as inst:
-                print("WTF??")
-                print(type(inst))    # the exception type
+                print(f'WTF??')
+                print(f'---------------------')
+                print(f'{file}')
+                print(f'---------------------')
                 print(inst.args)     # arguments stored in .args
                 print(inst)          # __str__ allows args to be printed directly,
                                      # but may be overridden in exception subclasses
                 break
-# {"name":"Aaraka","fullname":"Aaraka","city":"cyrene","house":"(none)","level":"5","class":"blademaster","mob_kills":"9","player_kills":"0","xp_rank":"0","explorer_rank":"1257"}
-
 
     hi.write('\n')
     hi.write('#var {chardb}\n')
@@ -88,7 +90,6 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
         hi.write('\t};\n\n')
     hi.write('};\n\n')
-
 
     hi.write(f'#class chardatabase close\n')
     hi.write(f'#class chardatabase save\n')

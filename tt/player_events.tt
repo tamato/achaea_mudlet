@@ -1,7 +1,8 @@
 #nop place for all the player events, to allow for GUI to be loaded up first and then the char database.
 #nop Read gui.tt FIRST
-#nop then character_highlights.tt
 #nop then this file.
+
+#read character_highlights.tt
 
 #EVENT {IAC SB GMCP Room.addplayer IAC SE}
 {
