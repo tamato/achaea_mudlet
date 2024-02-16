@@ -5,9 +5,8 @@
 
 #read targetlist.tt;
 
-#EVENT {IAC SB GMCP room.info IAC SE}
-{
-   #variable roomInfo {%0};
+#alias {targeting.onRoomInfo} {
+   #variable roomInfo {%1};
 
    #nop UNhighlight mobs from a different area.;
    #if {{$areaName} != {$roomInfo[area]}} {
@@ -26,6 +25,11 @@
       #nop #show <003> highlighting: [$tar];
       #highlight $tar {blink reverse};
    };
+}
+
+#EVENT {IAC SB GMCP room.info IAC SE}
+{
+   targeting.onRoomInfo %0;
 }
 
 #EVENT {IAC SB GMCP Char.Items.Add IAC SE}
@@ -89,7 +93,7 @@
          #continue; 
       };
 
-      #if {"$attri" != "%*m%*" }{ #show <003>Not a monster;#continue; };
+      #if {"$attri" != "%*m%*" }{ #continue; };
       #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
       #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
 
@@ -146,9 +150,9 @@
    #if {"%1" === ""}
    {
       #foreach *roomMobs[] denizen {
-         #nop #showme in room: <038>$denizen;
+         #showme in room: <038>$denizen;
          #foreach *targets[$areaName][] tar {
-            #nop #showme trying target: <038>$tar;
+            #showme trying target: <038>$tar;
 
             #if {"$roomMobs[$denizen]" == "%*$tar%*"} {
                #showme FOUND tar: <028>$tar;

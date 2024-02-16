@@ -1,0 +1,23 @@
+
+
+-----------------------------------------------------------
+             [ {Begin Entry} ]
+-----------------------------------------------------------
+#var roomInfo
+#VARIABLE {roomInfo}
+{
+    {area} {the Darkenwood Forest}
+    {coords} {124,7,2,0}
+    {desc} {To the east, the boundaries of the Northreach seem warm and bright in comparison to the forest you stand in. The ancient oaks and sycamores stretch their branches west into total darkness, and little motes of sunlight squeak their way through the darkness to kiss the forest floor. Few animals can be heard in the profound silence of the Darkenwood, and yet, the plantlife here seems healthy and thriving.}
+    {details} {}
+    {environment} {Forest}
+    {exits} 
+    {
+        {nw} {7266}
+        {sw} {9040}
+    }
+    {map} {www.achaea.com/irex/maps/clientmap.php?map=124&building=0&level=0 15 7}
+    {name} {On the edge of the Darkenwood Forest}
+    {num} {7258}
+}
+#log off

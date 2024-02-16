@@ -19,5 +19,6 @@ achaeapassword
 #nop --- Nicator Archives -------------- 1:0:0 ---;
 
 #read cthul/misc.tt;
+#read cthul/occultism.tt;
 
 guireset;

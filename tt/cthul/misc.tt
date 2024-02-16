@@ -30,6 +30,11 @@
 #class battlerage kill;
 #class battlerage open;
 
+#var chaosgate 1;
+#var stagnate 1;
+#var harry 1;
+#var fluctuate 1;
+
 #nop Around monsters?
 #nop there might be a different one around people.
 #high {^A nearly invisible magical shield forms around.*$} { underscore <FFF0000>}
@@ -161,7 +166,7 @@
    };
 }
 
-#alias {QQ} {
+#alias {qq} {
    #send {curing defences off};
    #send {CITY GUIDE UNAVAILABLE};
    #send {QQ};

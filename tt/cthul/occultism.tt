@@ -5,13 +5,13 @@
 
 #var astralactive 0;
 #alias {af} {
-   #if {astralactive === 0} {
+   #if {$astralactive === 0} {
       #var astralactive 1;
       #send {$addfree astralform};
 #nop ACtion for when AF goes active.
    }{
       #var astralactive 0;
-      #send {humanform};
+      #send {human};
    }
 }
 
