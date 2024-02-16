@@ -11,22 +11,22 @@ from os.path import isfile, join
 url = 'https://api.achaea.com/characters.json'
 file_name = 'characters.json'
 
-with urllib.request.urlopen(url) as response:
-    # load up the json object
-    jsondata = json.loads(response.read())
-    print ('finished downloading list of characters')
-    print(jsondata['count'])
-
-    # parse out each character
-    for c in jsondata['characters']:
-        uri = c['uri']
-        name = c['name']
-        with urllib.request.urlopen(uri) as charuri:
-            charjson = json.loads(charuri.read())
-            with open(f'../characters/{name}.json', 'w') as charfile:
-                json.dump(charjson, charfile)
-
-print ('finished characters')
+#  with urllib.request.urlopen(url) as response:
+#      # load up the json object
+#      jsondata = json.loads(response.read())
+#      print ('finished downloading list of characters')
+#      print(jsondata['count'])
+#
+#      # parse out each character
+#      for c in jsondata['characters']:
+#          uri = c['uri']
+#          name = c['name']
+#          with urllib.request.urlopen(uri) as charuri:
+#              charjson = json.loads(charuri.read())
+#              with open(f'../characters/{name}.json', 'w') as charfile:
+#                  json.dump(charjson, charfile)
+#
+#  print ('finished characters')
 
 # load up all the character files
 path = f'{os.environ["HOME"]}/repos/achaea_mudlet/characters'
@@ -50,14 +50,14 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # create a dictionary of them
                 #  print(char['name'])
                 # could use 24 bit colors, format is <F000000> <FFFFFFF>
-                color = '<838>' # the first '8' is to 'use previous value'
+                color = '<830>' # the first '8' is to 'use previous value'
                 #  color = fg_yellow
 
                 if 'city' in char:
                     city = char['city']
-                    if 'ashtan'     in city: color = '<408>'+fg_magenta # underscore
-                    if 'hashan'     in city: color = '<408>'+color      # underscore
-                    if 'targosas'   in city: color = '<508>'+color      # blink
+                    if 'ashtan'     in city: color = '<400>'+fg_magenta # underscore
+                    if 'hashan'     in city: color = '<400>'+color      # underscore
+                    if 'targosas'   in city: color = '<500>'+'<fac>'    # blink, Pink
                     if 'underworld' in city: color = '<414>'            # underscore, read, blue
                     if 'mhaldor'    in city: color = '<110>'   
 
