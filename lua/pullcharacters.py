@@ -50,7 +50,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # create a dictionary of them
                 #  print(char['name'])
                 # could use 24 bit colors, format is <F000000> <FFFFFFF>
-                color = '<038>'
+                color = '<838>' # the first '8' is to 'use previous value'
                 #  color = fg_yellow
 
                 if 'city' in char:
@@ -59,7 +59,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                     if 'hashan'     in city: color = '<408>'+color      # underscore
                     if 'targosas'   in city: color = '<508>'+color      # blink
                     if 'underworld' in city: color = '<414>'            # underscore, read, blue
-                    if 'mhaldor'    in city: color = '<118>'   
+                    if 'mhaldor'    in city: color = '<110>'   
 
                 char['color'] = color
                 characters[char['name']] = char

@@ -211,10 +211,16 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #split 20 1 40 50;
-   #draw boxed map 1 1 30 40;
-   comm_window_draw_tabs;
-   room_window_draw_tabs;
+   #if {$guiSettings[nope] == 0} {
+      #split 10 1 20 20;
+      #nop desktop #split 20 1 40 50;
+      #nop #draw boxed map 1 1 30 40;
+      #draw boxed map 1 1 20 40;
+      comm_window_draw_tabs;
+      room_window_draw_tabs;
+   } {
+      #split 0 1 10;
+   };
 }
 
 #ALIAS {test}

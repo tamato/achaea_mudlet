@@ -7,15 +7,17 @@
 cthul
 achaeapassword
 
+#var whoami Cthul;
+
 #nop set target when one is seen.
 
 #alias attackCmd {queue insert freestand 5 warp};
 
 #nop #read melkervur/battlerage.tt;
 
-#alias {b} { #if {"%0" != ""}{ activate hermit %0 } };
-
 #nop find the enchiridon of oblivion;
 #nop --- Nicator Archives -------------- 1:0:0 ---;
+
+#read cthul/misc.tt;
 
 guireset;

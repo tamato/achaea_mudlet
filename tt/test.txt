@@ -1,0 +1,6 @@
+[0m#LOG: LOGGING OUTPUT TO 'test.txt' FILESIZE: 0[0m
+[4;33ml[0m
+[38;5;003mBefore a large [5m[7mpygmy[0m[0;38;5;3m hut.[38;5;007m (road)
+[38;5;006mThe sun shines down, its rays broken only by the occasional wisp of cloud.[38;5;007m A large grass and mud hut looms to the west. Windows open into it on every side, letting the sunlight in. From the east drifts the smell of a wood-fueled fire. Oak trees line the path to the north and south, dwarfing any [5m[7mpygmy[0m[0;38;5;7m who strolls past.[38;5;006m A common red admiral butterfly flits about over your head.[38;5;007m[38;5;006m A [5m[7mpygmy[0m[0;38;5;6m stands guard here, defending his village from invaders.[38;5;007m
+[38;5;003mYou see exits leading[38;5;007m[38;5;003m east and west (open door).[38;5;007m
+[38;5;002m104[38;5;007m [38;5;002m100[38;5;007m [38;5;002m100[38;5;007m [38;5;002m100[38;5;007m [ex0]-[4;33m#log off[0m

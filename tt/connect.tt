@@ -1,11 +1,11 @@
-#nop https://tintin.mudhalla.net/scripts/gmcp.php
+#nop https://tintin.mudhalla.net/scripts/gmcp.php;
 
-#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 2
-#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 1
+#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 2;
+#nop www.achaea.com/irex/maps/clientmap.php?map=53&building=0&level=0 2 1;
 
-#nop https://gitlab.com/inutt/flexible-survival-ui 
-#nop - might have a way to collect targets
-#nop - shifted over command line
+#nop https://gitlab.com/inutt/flexible-survival-ui ;
+#nop - might have a way to collect targets;
+#nop - shifted over command line;
 
 #EVENT {SESSION CONNECTED}
 {
@@ -20,20 +20,23 @@
     #nop Turn telnet debug on to see telnet debugging information.;
     #nop #config {debug telnet} {on};
 
-    #map create 100000;
-    #map goto 1;
-    #map flag static;
-    #map flag ascii;
-    #map flag nofollow;
-    #nop #map flag vtmap; #nop draw map;
+   #if {$guiSettings[nope] == 0} {
+      #map create 100000;
+      #map goto 1;
+      #map flag static;
+      #map flag ascii;
+      #map flag nofollow;
+      #nop #map flag vtmap; #nop draw map;
 
-    #nop #split 20 1 40 50;
-    #nop #map offset 1 1 20 35;
+      #nop #split 20 1 40 50;
+      #nop #map offset 1 1 20 35;
 
-    #nop seems to be either to use draw or vtmpa/split/offset;
-    #draw boxed map 1 1 30 40;
+      #nop seems to be either to use draw or vtmpa/split/offset;
+      #draw boxed map 1 1 20 40;
+      #nop #draw boxed map 1 1 30 40;
 
-    #map read gmcp.map;
+      #map read gmcp.map;
+   }
 
     #echo {Session connection!};
 }
@@ -141,7 +144,6 @@
 
 #EVENT {IAC SB GMCP char.vitals IAC SE}
 {
-    #variable charVitals %0;
     #variable gmcp[char][vitals] {%0}
 }
 

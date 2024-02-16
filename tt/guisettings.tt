@@ -1,0 +1,8 @@
+#nop Settings for laptop/desktop
+
+#var {guiSettings}
+{
+   {botrow}{20} #nop height of the gui
+   {topcol}{-20} #nop width of the gui
+};
+

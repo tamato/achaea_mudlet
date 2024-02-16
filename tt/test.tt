@@ -1,6 +1,0 @@
-#CLASS {test} OPEN
-
-#VARIABLE {mytest} {hi}
-#VARIABLE {newva} {hello}
-
-#CLASS {test} CLOSE

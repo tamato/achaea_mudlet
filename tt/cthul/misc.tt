@@ -1,0 +1,169 @@
+#nop Cthul Scripts
+#nop All variables belong in Cthul.tt or Global.tt.
+
+#var priestessEnable 0;
+#var ruinCost 17;
+
+#class bash open
+
+#high {^You have recovered equilibrium%*.$ } { reverse };
+#action {You have recovered equilibrium} {
+   #if {&{atkTarget} !== 0} {
+      atk;
+   }
+};
+
+#nop F1
+#macro {\eOP} { print {stopping atk};#class bash clear; }; #nop F1
+
+#nop S-F1
+#macro {\e1;2P} { print {resuming atk};#class bash load }; #nop S-F1
+
+#class bash close
+#class bash save
+#class bash kill
+
+
+#nop -------------------------------------------------------------------------
+#nop BattleRage
+#nop -------------------------------------------------------------------------
+#class battlerage kill;
+#class battlerage open;
+
+#nop Around monsters?
+#nop there might be a different one around people.
+#high {^A nearly invisible magical shield forms around.*$} { underscore <FFF0000>}
+#action {^A nearly invisible magical shield forms around.*$} 
+{ 
+   #if {&{atkTarget} !== 0} {
+      #if {$rage >= $ruinCost} {
+         #send {ruin}
+      }
+   }
+};
+
+#alias {tryRage}
+{
+   #if {$rage >= %1+$ruinCost && $%2 == 1} {
+      #var %2 0;
+      #send {%2}; 
+      #delay {%3} {#var %2 {1}}
+   }
+}
+
+#EVENT {IAC SB GMCP char.vitals IAC SE}
+{
+   #nop #showme <150>CharVitals: %0;
+
+   #variable gmcp[char][vitals] {%0};
+   #var rage {$gmcp[char][vitals][charstats][2]};
+   #regex {$rage} {Rage: %d}
+      {#var rage &1} 
+      {#show <513>BattleRage: NOT GETTING IT};
+
+   #nop TODO - need to add Temper;
+
+   tryRage 35 chaosgate 23;
+   tryRage 24 stagnate 35;
+   tryRage 14 harry 17;
+   tryRage 23 fluctuate 25;
+
+#nop CharVitals: ;
+#nop   {hp}{4300};
+#nop   {maxhp}{4300};
+#nop   {mp}{5392}{maxmp}{5786};
+#nop   {ep}{16400}{maxep}{16400};
+#nop   {wp}{20858}{maxwp}{21200};
+#nop   {nl}{92};
+#nop   {bal}{1}{eq}{1};
+#nop   {string}{H:4300/4300};
+#nop   {M:5392/5786 E:16400/16400 W:20858/21200 NL:92/100 };
+#nop   {charstats}{{1}{Bleed: 0}{2}{Rage: 0}{3}{Karma: 71%}{4}{Entity: Yes}};
+}
+
+#class battlerage close;
+#class battlerage save;
+
+#nop -------------------------------------------------------------------------
+#nop Tarot
+#nop -------------------------------------------------------------------------
+#class tarot kill;
+#class tarot open;
+
+#alias {b} { 
+   #if {"%1" === ""}  { #send {hermits} };
+   #else              { #send {activate hermit %1} };
+};
+
+#alias {t} { 
+   #if {"%1" === ""}  { #send {hermits} };
+   #else              { #send {activate hermit %1} };
+};
+
+#alias {pri} {
+   $insfree fling priestess at me;
+   #line oneshot #action {"Raising the High Priestess tarot over your head"} {#var priestessEnable 1};
+};
+
+#nop Alias only match at the start of a line.;
+#nop There is also a comment about if no % var's are used in the commands, something will get appended to %0.;
+#alias {uni} {
+   #if {"%1" === ""} {
+      #show {};
+      #show {---- Universe Shortcuts ---};
+      #show {nt : New Thera};
+      #show {gn : Genji};
+      #show {sh: Shastaan};
+      #show {az: Azdun};
+      #show {bf: Bitterfork};
+      #show {mb: Manara};
+      #show {};
+   };
+   #else {
+      #send {$addfree fling universe at ground};
+      
+      #if     {"%1" === "nt"} {#var dest {newthera}};
+      #elseif {"%1" === "gn"} {#var dest {genji}};
+      #elseif {"%1" === "sh"} {#var dest {shastaan}};
+      #elseif {"%1" === "az"} {#var dest {azdun}};
+      #elseif {"%1" === "bf"} {#var dest {bitterfork}};
+      #elseif {"%1" === "mb"} {#var dest {manara}};
+      #else                   {#var dest %1};
+      
+      #nop example of a one time action;
+      #line onetime {#action {^A shimmering, translucent image rises up before you, its glittering surface d}}
+      {
+            #send {$addfree touch $dest};
+      };
+      #unvar dest;
+   }
+};
+
+#class tarot close;
+
+#alias {trainer}
+{
+   #send {CITY GUIDE AVAILABLE};
+   #send {CITYNEWBIES};
+   #send {CITY NOVICE LIST};
+}
+
+#var generosity 0;
+#alias {self} {
+   #if {$generosity == 0} {
+      #var generosity 1;
+      #send {curing defences on"};
+   };
+   #else {
+      #var generosity 0;
+      #send {curing defences off"};
+      #send {generosity};
+   };
+}
+
+#alias {QQ} {
+   #send {curing defences off};
+   #send {CITY GUIDE UNAVAILABLE};
+   #send {QQ};
+}
+

@@ -1,34 +1,64 @@
 #nop
 
-#show Reading connect file;
-#read connect.tt
-#show Reading gui file;
+#script {configdir} {echo $HOME/.config/tintin}
+#read {$configdir[1]/guisettings.tt}
+
+#read connect.tt;
 #read gui.tt;
+
+#nop Convert ANSI output to HTML
+#nop install 'aha'
+#nop  cat test.txt | aha --black > test.htm
+
+#nop to see ANSI in NVIM, 
+#nop  use nvim -c ":term cat $1", or ansivim in .profile.
 
 #nop Targeting needs to be after GUI
 #read targeting.tt
 
-#config {command color} {\e[4;33m}; #nop underline red;
+#config {command color} {\e[4;33m}; #nop underline yellow;
 #config {verbatim}      {on};
 #config {log}           {txt};
+#config {REPEAT_ENTER}  {ON};    #nop repeat last command.
 
-#alias {print} {
+#var addfree {queue add freestanding};
+#var insfree {queue insert freestanding 1};
+
+#alias {^print} {
    #showme  <168>-----------------------------------------------------------;
-   #showme  <078>[ <038>%0 <078>];
+   #showme  <078>             [ <038>%0 <078>];
    #showme  <168>-----------------------------------------------------------;
 }
 
-#alias {fight!} {
+#alias {^echo} {
+   #showme  {<460>%1};
+}
+
+#alias {journal} {
+   #nop #if {{%0} != {}} { #log off; #config {log} {txt}; #break; };
+
+   #config log plain;
+   #log append journal.txt;
+
+   #show {};
+   #show {};
+   print {Begin Entry};
+}
+
+#alias {^fight!} {
    #nop #if {{%0} != {}} { #log off; #config {log} {txt}; #break; };
 
    #config log html;
    #log append combat.log;
+
+   #show {};
+   #show {};
    print {New Fight};
 }
 
 #nop \Z until the end f the text zent by the mud;
 #highlight {^You have slain%*.$} {black b magenta};
-#nop #action {^You have slain%*.$} {clearqueue balance};
+#action {^You have slain%*.$} {#send {clearqueue balance}; #unvar aktTarget;};
 
 #highlight {gold{|en} sovereigns} {black b yellow};
 
@@ -43,3 +73,44 @@
 #read player_events.tt
 
 #highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}
+
+
+
+#nop -------------------------------------------------------------------------
+#nop These macros will allow you to move around with the arrow keys while
+#nop holding down the control key. You can move ne by pressing arrow up +
+#nop right simultaniously. Move up by pressing arrow up + down simultaniously.
+#nop Move down by pressing arrow left + right simultaniously.
+#nop -------------------------------------------------------------------------
+
+#macro {\e[1;5A} {#cursor macro preserve;#delay {move} {#cursor macro reset;n} {0.05}}
+#macro {\e[1;5C} {#cursor macro preserve;#delay {move} {#cursor macro reset;e} {0.05}}
+#macro {\e[1;5B} {#cursor macro preserve;#delay {move} {#cursor macro reset;s} {0.05}}
+#macro {\e[1;5D} {#cursor macro preserve;#delay {move} {#cursor macro reset;w} {0.05}}
+
+#macro {\e[1;5A\e[1;5A} {#undelay {move};#cursor macro reset;n;n}
+#macro {\e[1;5C\e[1;5C} {#undelay {move};#cursor macro reset;e;e}
+#macro {\e[1;5B\e[1;5B} {#undelay {move};#cursor macro reset;s;s}
+#macro {\e[1;5D\e[1;5D} {#undelay {move};#cursor macro reset;w;w}
+
+#macro {\e[1;5A\e[1;5B} {#undelay {move};#cursor macro reset;u}
+#macro {\e[1;5B\e[1;5A} {#undelay {move};#cursor macro reset;u}
+
+#macro {\e[1;5C\e[1;5D} {#undelay {move};#cursor macro reset;d}
+#macro {\e[1;5D\e[1;5C} {#undelay {move};#cursor macro reset;d}
+
+#macro {\e[1;5A\e[1;5C} {#undelay {move};#cursor macro reset;ne}
+#macro {\e[1;5C\e[1;5A} {#undelay {move};#cursor macro reset;ne}
+
+#macro {\e[1;5B\e[1;5C} {#undelay {move};#cursor macro reset;se}
+#macro {\e[1;5C\e[1;5B} {#undelay {move};#cursor macro reset;se}
+
+#macro {\e[1;5D\e[1;5B} {#undelay {move};#cursor macro reset;sw}
+#macro {\e[1;5B\e[1;5D} {#undelay {move};#cursor macro reset;sw}
+
+#macro {\e[1;5D\e[1;5A} {#undelay {move};#cursor macro reset;nw}
+#macro {\e[1;5A\e[1;5D} {#undelay {move};#cursor macro reset;nw}
+
+
+
+

@@ -1,8 +1,8 @@
 #nop test scripts
 
 
-#class bash kill
-#class bash open
+#class wip kill
+#class wip open
 
 #high {^You have recovered balance%*.$ } { reverse };
 #action {You have recovered balance} {
@@ -12,5 +12,5 @@
 #macro {\eOP} { print {stopping atk};#class bash clear; }; #nop F1
 #macro {\e1;2P} { print {resuming atk};#class bash load }; #nop S-F1
 
-#class bash close
-#class bash save
+#class wip close
+#class wip save

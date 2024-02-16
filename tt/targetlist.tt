@@ -1,5 +1,13 @@
+#CLASS {targetlist} OPEN
+
+#VARIABLE {areaName} {Test}
 #VARIABLE {targets}
 {
+    {Test} 
+    {
+        {orc} {}
+        {smurf} {}
+    }
     {the land of Minia} 
     {
         {pixie} {}
@@ -7,3 +15,4 @@
     }
 }
 
+#CLASS {targetlist} CLOSE
