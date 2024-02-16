@@ -20,23 +20,20 @@
     #nop Turn telnet debug on to see telnet debugging information.;
     #nop #config {debug telnet} {on};
 
-   #if {$guiSettings[nope] == 0} {
-      #map create 100000;
-      #map goto 1;
-      #map flag static;
-      #map flag ascii;
-      #map flag nofollow;
-      #nop #map flag vtmap; #nop draw map;
+   #map create 100000;
+   #map goto 1;
+   #map flag static;
+   #map flag unicode;
+   #map flag nofollow;
+   #map flag vtmap; 
 
-      #nop #split 20 1 40 50;
-      #nop #map offset 1 1 20 35;
+   #nop #split 20 1 40 50;
+   #nop #map offset 1 1 20 35;
 
-      #nop seems to be either to use draw or vtmpa/split/offset;
-      #draw boxed map 1 1 20 40;
-      #nop #draw boxed map 1 1 30 40;
+   #nop seems to be either to use draw or vtmpa/split/offset;
+   #draw boxed map 1 1 $uimap[height] $uimap[width];
 
-      #map read gmcp.map;
-   }
+   #map read gmcp.map;
 
     #echo {Session connection!};
 }

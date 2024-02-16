@@ -13,29 +13,29 @@
 {
     {active} {mobs}
     {botcol} {-1}
-    {botrow} {40}
+    {botrow} {$uiroom[height]}
     {tab} 
     {
         {players} {}
         {mobs} {}
         {items} {}
     }
-    {topcol} {-50}
+    {topcol} {-$uiroom[width]}
     {toprow} {1}
 };
 
 #VARIABLE {comm_window}
 {
     {active} {chats}
-    {botcol} {-50}
-    {botrow} {20}
+    {botcol} {-$uiroom[width]}
+    {botrow} {$uicomms[height]}
     {offset} {1}
     {tab} 
     {
         {chats} {}
         {tells} {}
     }
-    {topcol} {40}
+    {topcol} {$uimap[width]}
     {toprow} {1}
     {unread} 
     {
@@ -211,16 +211,12 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #if {$guiSettings[nope] == 0} {
-      #split 10 1 20 20;
-      #nop desktop #split 20 1 40 50;
-      #nop #draw boxed map 1 1 30 40;
-      #draw boxed map 1 1 20 40;
-      comm_window_draw_tabs;
-      room_window_draw_tabs;
-   } {
-      #split 0 1 10;
-   };
+   #split $uicomms[height] 1 $uimap[width] $uiroom[width];
+
+   #draw boxed map 1 1 $uimap[height] $uimap[width];
+   comm_window_draw_tabs;
+   room_window_draw_tabs;
+   smobs;
 }
 
 #ALIAS {test}

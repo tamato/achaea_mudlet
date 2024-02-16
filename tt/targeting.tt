@@ -7,10 +7,17 @@
 
 #EVENT {IAC SB GMCP room.info IAC SE}
 {
-   #local areaList &targets[$areaName];
-   #nop #loop 1 &areaList[] tar { #local tar *areaList[+tar]; #unhighlight $tar; };
-
    #variable roomInfo {%0};
+
+   #nop UNhighlight mobs from a different area.;
+   #if {{$areaName} != {$roomInfo[area]}} {
+      #local areaList $targets[$areaName];
+      #foreach *areaList[] tar {
+         #local tar *areaList[+tar]; 
+         #unhighlight $tar; 
+      };
+   };
+
    #var areaName $roomInfo[area];
 
    #nop highlight new area's targets;
@@ -26,8 +33,11 @@
    #local item {%0};
    #variable gmcp[char][items][add] $item[item];
 
+   #local icon $gmcp[char][items][add][icon];
+   #if {"$icon" == "deadbody"} { #return; };
+
    #local attri $gmcp[char][items][add][attrib];
-   #if {"$attri" == {} }
+   #if {"$attri" == ""}
    { 
       #local name $gmcp[char][items][add][name];
       #local id $gmcp[char][items][add][id];
@@ -38,12 +48,13 @@
    };
 
    #if {"$attri" != "%*m%*" }{ #continue; };
-   #if {"$attri" == "%*dx%*" }{ #continue; };
+   #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
+   #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
 
    #local name $gmcp[char][items][add][name];
    #local id $gmcp[char][items][add][id];
    #local mob <278>$name<028>$id<209>;
-   #var roomMobs {{$id}{$mob}};
+   #var roomMobs[$id] {$name};
 
    room_window_show mobs $mob;
 }
@@ -52,13 +63,16 @@
 {
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
-   #list roomMobs clear;
+   #unvar roomMobs;
    refresh_room_window mobs;
 
    #local item {%0};
    #variable gmcp[char][items][list] $item[items];
    #local items $gmcp[char][items][list];
    #foreach $items[%*] item {
+
+      #local icon $item[icon];
+      #if {"$icon" == "deadbody"} { #continue; };
 
       #local attri $item[attrib];
       #nop ADD items here;
@@ -76,14 +90,13 @@
       };
 
       #if {"$attri" != "%*m%*" }{ #show <003>Not a monster;#continue; };
-      #if {"$attri" == "%*dx%*" }{ #show <003>dead or leave alone;#continue; };
+      #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
+      #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
 
       #local name $item[name];
       #local id $item[id];
       #local mob <278>$name<028>$id<209>;
-      #var roomMobs {{$id}{$mob}};
-
-      #nop #showme <003>Adding: [$mob];
+      #var roomMobs[$id] {$name};
 
       room_window_show mobs $mob;
    }
@@ -93,17 +106,15 @@
 {
    #var gmcp[char][items][remove] %0;
 
-   #local mob $gmcp[char][items][remove][id];
-   #show {<403>Deleting mob: $mob};
+   #local id $gmcp[char][items][remove][id];
+   #unvar roomMobs[$id];
+   #nop #show {<403>Deleting mob id: $id};
 
-   #list room_window[tab][mobs] find {{.*$mob.*}} idx;
-   #show {<403>Deleting idx from window: $idx};
+   #list room_window[tab][mobs] find {%*$id%*} idx;
    #list room_window[tab][mobs] delete $idx;
+   #nop #show {<403>Deleting idx from window: $idx};
 
-   #list roomMobs find {{.*$mob.*}} idx;
-   #list roomMobs delete $idx;
    refresh_room_window mobs;
-
    #unvar idx;
 }
 
@@ -134,23 +145,18 @@
 {
    #if {"%1" === ""}
    {
-      #nop Go through the list of possible targets and attack the first one.;
-      #nop #showme <038>Targets list: *targets[$areaName][%*];
+      #foreach *roomMobs[] denizen {
+         #nop #showme in room: <038>$denizen;
+         #foreach *targets[$areaName][] tar {
+            #nop #showme trying target: <038>$tar;
 
-      #loop 1 *room_window[tab][mobs][] denizen {
+            #if {"$roomMobs[$denizen]" == "%*$tar%*"} {
+               #showme FOUND tar: <028>$tar;
 
-         #showme in room: <038>$denizen:*roomMobs[+$denizen];
-         #var atkTarget $deniszen;
-         attackCmd $denizen;
+               #var atkTarget $denizen;
+               #send {settarget $denizen};
+               attackCmd $denizen;
 
-         #nop TODO convert this to a **loop**;
-         #loop 1 &targets[$areaName][] tar {
-            #local tar *targets[$areaName][+$tar];
-
-            #nop #showme --- $tar ---;
-
-            #if {"$denizen" == "%*$tar%*"} {
-               #nop #showme found tar: <028>$tar\e]R,<178>*denizen[];
                #return;
             };
          };
@@ -162,19 +168,7 @@
       attackCmd %1;
    };
 
-   #unvar denizen;
-}
-
-#alias {filltar} {
-   #unvar roomMobs;
-
-   #loop 1 &gmcp[char][items][list][%*] id {
-      #var mob $gmcp[char][items][list][$id];
-
-      #showme $id, $mob;
-      #var roomMobs[$id] {{$mob[name]}{$mob[id]}};
-   };
-   #var roomMobs;
+   #nop #unvar denizen;
 }
 
 #class targeting close

@@ -6,6 +6,7 @@
     {Test} 
     {
         {orc} {}
+        {pygmy} {}
         {smurf} {}
     }
     {the land of Minia} 
