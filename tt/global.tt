@@ -24,14 +24,18 @@
 #var addfree {queue add freestanding};
 #var insfree {queue insert freestanding 1};
 
-#alias {^print} {
+#alias {print} {
    #showme  <168>-----------------------------------------------------------;
    #showme  <078>             [ <038>%0 <078>];
    #showme  <168>-----------------------------------------------------------;
 }
 
-#alias {^echo} {
-   #showme  {<460>%1};
+#alias {err} {
+   #showme  {<410>ERROR: %1};
+}
+
+#alias {dbg} {
+   #showme  {<460>DBG: %1};
 }
 
 #alias {journal} {
@@ -69,8 +73,6 @@
 
 #nop Use Diagnose  for losing eq
 #nop use Directory for losing balance
-
-#read player_events.tt
 
 #highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}
 

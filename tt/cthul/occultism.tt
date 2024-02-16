@@ -1,0 +1,25 @@
+#nop .: Occultist Alias's :.
+
+#class occultism kill;
+#class occultism open;
+
+#var astralactive 0;
+#alias {af} {
+   #if {astralactive === 0} {
+      #var astralactive 1;
+      #send {$addfree astralform};
+#nop ACtion for when AF goes active.
+   }{
+      #var astralactive 0;
+      #send {humanform};
+   }
+}
+
+#nop Go to the plane of Chaos!
+#alias {choas} {
+   #send {transendence};
+   #nop TODO action for the gate.
+}
+
+#class occultism close;
+#class occultism save;

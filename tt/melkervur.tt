@@ -6,6 +6,8 @@
 melkervur
 achaeapassword
 
+#var whoami Melkervur;
+
 #nop set target when one is seen.
 
 #alias attackCmd {queue insert freestand 5 swing};
