@@ -211,7 +211,7 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #split $uicomms[height] 1 $uimap[width] $uiroom[width];
+   #split $uicomms[height] 3 $uimap[width] $uiroom[width];
 
    #draw boxed map 1 1 $uimap[height] $uimap[width];
    comm_window_draw_tabs;
@@ -257,15 +257,14 @@
 #read character_highlights.tt
 #ticker {rh_hi} {#read character_highlights.tt} {60}
 
-#EVENT {IAC SB GMCP Room.addplayer IAC SE}
+#alias {gui.onAddPlayer}
 {
-   #variable gmcp[room][addplayer] {%0};
    #local ply $gmcp[room][addplayer][name];
 
    room_window_show players $ply;
 }
 
-#EVENT {IAC SB GMCP Room.Players IAC SE}
+#alias {gui.onRoomPlayers}
 {
    #list room_window[tab][players] clear;
 
@@ -281,7 +280,7 @@
    #unvar idx;
 }
 
-#EVENT {IAC SB GMCP Room.removeplayer IAC SE}
+#alias {gui.onRoomRemovePlayers}
 {
    #variable gmcp[room][removeplayer] {%0};
    #local ply $gmcp[room][removeplayer];
@@ -300,5 +299,41 @@
 
    refresh_room_window player;
    #show $room_window[active]
+}
+
+#VARIABLE {DIR_NAME}
+{
+    {u} {U}
+    {d} {D}
+    {n} {N}
+    {ne} {NE}
+    {e} {E}
+    {se} {SE}
+    {s} {S}
+    {sw} {SW}
+    {w} {W}
+    {nw} {NW}
+    {in} {In}
+    {out} {Out}
+}
+
+#alias {gui.onCharVitals} 
+{
+   #screen clear square -3 1 -3 -1;
+   #format {prompt} {};
+   #format {prompt} {$prompt<038> Hp: @colscale{$gmcp[char][vitals][hp];$gmcp[char][vitals][maxhp]}%+4s<238>/<138>%-4s } {$gmcp[char][vitals][hp]} {$gmcp[char][vitals][maxhp]};
+   #format {prompt} {$prompt<238> Mn: @colscale{$gmcp[char][vitals][mp];$gmcp[char][vitals][maxmp]}%+3s<238>/<138>%-3s } {$gmcp[char][vitals][mp]} {$gmcp[char][vitals][maxmp]};
+   #format {prompt} {$prompt<238> Xp: @colscale{$gmcp[char][vitals][nl];100}%-2m } {$gmcp[char][vitals][nl] / 100};
+   #format {prompt} {$prompt<238> Gd: <128>%-8s } {$gmcp[char][status][gold]};
+
+   #variable {exits} {};
+   #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
+   {
+       #if {&gmcp[room][info][exits][$exit] == 0} { #continue };
+       #variable {exits} {$exits<128>$DIR_NAME[$exit],};
+   };
+
+   #format {prompt} {$prompt <238>Ex: %-6s} {$exits   <088>};
+   #line ignore {#showme {$prompt} {-3} {42}};
 }
 

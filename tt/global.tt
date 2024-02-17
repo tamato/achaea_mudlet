@@ -3,6 +3,7 @@
 #script {configdir} {echo $HOME/.config/tintin}
 #read {$configdir[1]/guisettings.tt}
 
+#read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;
 #read gui.tt;
 
@@ -18,7 +19,6 @@
 
 #config {command color} {\e[4;33m}; #nop underline yellow;
 #config {verbatim}      {on};
-#config {log}           {txt};
 #config {REPEAT_ENTER}  {ON};    #nop repeat last command.
 
 #var addfree {queue add freestanding};
@@ -76,8 +76,6 @@
 
 #highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}
 
-
-
 #nop -------------------------------------------------------------------------
 #nop These macros will allow you to move around with the arrow keys while
 #nop holding down the control key. You can move ne by pressing arrow up +
@@ -113,6 +111,5 @@
 #macro {\e[1;5D\e[1;5A} {#undelay {move};#cursor macro reset;nw}
 #macro {\e[1;5A\e[1;5D} {#undelay {move};#cursor macro reset;nw}
 
-
-
+#read events.tt;
 

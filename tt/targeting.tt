@@ -5,8 +5,9 @@
 
 #read targetlist.tt;
 
-#alias {targeting.onRoomInfo} {
-   #variable roomInfo {%1};
+#alias {targeting.onRoomInfo}
+{
+   #variable roomInfo $gmcp[room][info];
 
    #nop UNhighlight mobs from a different area.;
    #if {{$areaName} != {$roomInfo[area]}} {
@@ -27,16 +28,8 @@
    };
 }
 
-#EVENT {IAC SB GMCP room.info IAC SE}
+#alias {targeting.onCharItemsAdd}
 {
-   targeting.onRoomInfo %0;
-}
-
-#EVENT {IAC SB GMCP Char.Items.Add IAC SE}
-{
-   #local item {%0};
-   #variable gmcp[char][items][add] $item[item];
-
    #local icon $gmcp[char][items][add][icon];
    #if {"$icon" == "deadbody"} { #return; };
 
@@ -63,15 +56,13 @@
    room_window_show mobs $mob;
 }
 
-#EVENT {IAC SB GMCP Char.Items.List IAC SE}
+#alias {targeting.onCharItemsList}
 {
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
    #unvar roomMobs;
    refresh_room_window mobs;
 
-   #local item {%0};
-   #variable gmcp[char][items][list] $item[items];
    #local items $gmcp[char][items][list];
    #foreach $items[%*] item {
 
@@ -106,10 +97,8 @@
    }
 }
 
-#EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
+#alias {targeting.onCharItemsRemove}
 {
-   #var gmcp[char][items][remove] %0;
-
    #local id $gmcp[char][items][remove][id];
    #unvar roomMobs[$id];
    #nop #show {<403>Deleting mob id: $id};

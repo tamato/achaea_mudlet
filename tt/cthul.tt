@@ -4,8 +4,8 @@
 #read global.tt;
 
 #session cthul achaea.com 23;
-cthul
-achaeapassword
+cthul;
+achaeapassword;
 
 #var whoami Cthul;
 

@@ -11,22 +11,22 @@ from os.path import isfile, join
 url = 'https://api.achaea.com/characters.json'
 file_name = 'characters.json'
 
-#  with urllib.request.urlopen(url) as response:
-#      # load up the json object
-#      jsondata = json.loads(response.read())
-#      print ('finished downloading list of characters')
-#      print(jsondata['count'])
-#
-#      # parse out each character
-#      for c in jsondata['characters']:
-#          uri = c['uri']
-#          name = c['name']
-#          with urllib.request.urlopen(uri) as charuri:
-#              charjson = json.loads(charuri.read())
-#              with open(f'../characters/{name}.json', 'w') as charfile:
-#                  json.dump(charjson, charfile)
-#
-#  print ('finished characters')
+with urllib.request.urlopen(url) as response:
+    # load up the json object
+    jsondata = json.loads(response.read())
+    print ('finished downloading list of characters')
+    print(jsondata['count'])
+
+    # parse out each character
+    for c in jsondata['characters']:
+        uri = c['uri']
+        name = c['name']
+        with urllib.request.urlopen(uri) as charuri:
+            charjson = json.loads(charuri.read())
+            with open(f'../characters/{name}.json', 'w') as charfile:
+                json.dump(charjson, charfile)
+
+print ('finished characters')
 
 # load up all the character files
 path = f'{os.environ["HOME"]}/repos/achaea_mudlet/characters'

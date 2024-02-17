@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the Darkenwood Forest}
+#VARIABLE {areaName} {the Village of Genji}
 #VARIABLE {targets}
 {
     {Test} 
@@ -12,6 +12,11 @@
     {the Darkenwood Forest} 
     {
         {arachnoi} {}
+        {spider} {}
+    }
+    {the Village of Genji} 
+    {
+        {manticore} {}
     }
     {the land of Minia} 
     {

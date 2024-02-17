@@ -1,0 +1,92 @@
+#nop List for all events. Will call out to other files.
+
+#alias {gmcp}
+{
+   #echo {send out request};
+   #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] %0 $TELNET[IAC]$TELNET[SE]\};
+}
+
+#EVENT {IAC SB GMCP char.items.list IAC SE}
+{
+   #local item {%0};
+   #variable gmcp[char][items][add] $item[item];
+   targeting.onCharItemsAdd;
+}
+
+#EVENT {IAC SB GMCP char.items.add IAC SE}
+{
+   #local item {%0};
+   #variable gmcp[char][items][list] $item[items];
+   targeting.onCharItemsList;
+}
+
+#EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
+{
+   #var gmcp[char][items][remove] %0;
+   targeting.onCharItemsRemove;
+}
+
+#EVENT {IAC SB GMCP char.status IAC SE}
+{
+    #variable gmcp[char][status] {%0};
+}
+
+#EVENT {IAC SB GMCP char.vitals IAC SE}
+{
+   #variable gmcp[char][vitals] {%0};
+   gui.onCharVitals;
+   battlerage.onCharVitals;
+}
+
+#EVENT {IAC SB GMCP char.maxstats IAC SE}
+{
+    #variable gmcp[char][maxstats] {%0}
+}
+
+#EVENT {IAC SB GMCP char.worth IAC SE}
+{
+    #variable gmcp[char][worth] {%0}
+}
+
+#EVENT {IAC SB GMCP Room.Info IAC SE}
+{
+   #variable gmcp[room][info] {%0};
+   #if {$gmcp[room][info][num] == -1}
+   {
+       #return
+   };
+
+   targeting.onRoomInfo;
+}
+
+#EVENT {IAC SB GMCP char.name IAC SE}
+{
+   #variable gmcp[char][name] {%0};
+   #show {I am $gmcp[char][name]};
+}
+
+#EVENT {IAC SB GMCP Room.addplayer IAC SE}
+{
+    #variable gmcp[room][addplayer] {%0};
+    gui.onAddPlayer;
+}
+
+#EVENT {IAC SB GMCP Room.Players IAC SE}
+{
+    #variable gmcp[room][players] {%0};
+    gui.onRoomPlayers;
+}
+
+#EVENT {IAC SB GMCP Room.removeplayer IAC SE}
+{
+    #variable gmcp[room][removeplayer] {%0};
+    gui.onRoomRemovePlayers;
+}
+
+#EVENT {SESSION DISCONNECTED}
+{
+    #map write gmcp.map
+}
+
+
+

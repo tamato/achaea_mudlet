@@ -37,7 +37,7 @@
 
 #nop Around monsters?
 #nop there might be a different one around people.
-#high {^A nearly invisible magical shield forms around.*$} { underscore <FFF0000>}
+#high {A nearly invisible magical shield forms around} { underscore <FFF0000>}
 #action {^A nearly invisible magical shield forms around.*$} 
 { 
    #if {&{atkTarget} !== 0} {
@@ -56,10 +56,8 @@
    }
 }
 
-#EVENT {IAC SB GMCP char.vitals IAC SE}
+#alias {battlerage.onCharVitals}
 {
-   #nop #showme <150>CharVitals: %0;
-
    #variable gmcp[char][vitals] {%0};
    #var rage {$gmcp[char][vitals][charstats][2]};
    #regex {$rage} {Rage: %d}
@@ -72,18 +70,6 @@
    tryRage 24 stagnate 35;
    tryRage 14 harry 17;
    tryRage 23 fluctuate 25;
-
-#nop CharVitals: ;
-#nop   {hp}{4300};
-#nop   {maxhp}{4300};
-#nop   {mp}{5392}{maxmp}{5786};
-#nop   {ep}{16400}{maxep}{16400};
-#nop   {wp}{20858}{maxwp}{21200};
-#nop   {nl}{92};
-#nop   {bal}{1}{eq}{1};
-#nop   {string}{H:4300/4300};
-#nop   {M:5392/5786 E:16400/16400 W:20858/21200 NL:92/100 };
-#nop   {charstats}{{1}{Bleed: 0}{2}{Rage: 0}{3}{Karma: 71%}{4}{Entity: Yes}};
 }
 
 #class battlerage close;
@@ -155,13 +141,13 @@
 
 #var generosity 0;
 #alias {self} {
-   #if {$generosity == 0} {
+   #if {$generosity === 0} {
       #var generosity 1;
-      #send {curing defences on"};
+      #send {curing defences on};
    };
    #else {
       #var generosity 0;
-      #send {curing defences off"};
+      #send {curing defences off};
       #send {generosity};
    };
 }
