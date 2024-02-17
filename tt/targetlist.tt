@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {Ashtan}
+#VARIABLE {areaName} {the Rhodestrian Settlement}
 #VARIABLE {targets}
 {
     {Ashtan} 
@@ -17,6 +17,14 @@
     {
         {arachnoi} {}
         {spider} {}
+    }
+    {the Rhodestrian Settlement} 
+    {
+        {cougar} {}
+    }
+    {the Southern Vashnar Mountains} 
+    {
+        {grizzly} {}
     }
     {the Village of Genji} 
     {

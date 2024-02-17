@@ -15,6 +15,17 @@
    }
 }
 
+#var distortActive 0;
+#alias {da} {
+   #if {$distortActive === 0} {
+      #var distortActive 1;
+      #send {$addfree distortaura};
+   } {
+      #var distortActive 0;
+      #send {$addfree normalaura};
+   }
+}
+
 #nop Go to the plane of Chaos!
 #alias {choas} {
    #send {transendence};

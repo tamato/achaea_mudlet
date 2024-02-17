@@ -6,9 +6,9 @@
 
 #class bash open
 
-#high {^You have recovered equilibrium%*.$ } { reverse };
+#high {^You have recovered equilibrium%*} { reverse };
 #action {You have recovered equilibrium} {
-   #if {&{atkTarget} !== 0} {
+   #if {&{atkTarget} != 0} {
       atk;
    }
 };

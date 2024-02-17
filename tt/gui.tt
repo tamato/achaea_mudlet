@@ -213,10 +213,10 @@
    #nop #config mouse on;
    #split $uicomms[height] 3 $uimap[width] $uiroom[width];
 
-   #draw boxed map 1 1 $uimap[height] $uimap[width];
    comm_window_draw_tabs;
    room_window_draw_tabs;
    smobs;
+   mapping.onRoomInfo;
 }
 
 #ALIAS {test}
@@ -385,6 +385,6 @@
    };
 
    #format {prompt} {$prompt <238>Ex: %-6s} {$exits   <088>};
-   #line ignore {#showme {$prompt} {-3} {42}};
+   #line ignore #showme {$prompt} {-3} {42};
 }
 
