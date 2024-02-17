@@ -58,7 +58,6 @@
 
 #alias {battlerage.onCharVitals}
 {
-   #variable gmcp[char][vitals] {%0};
    #var rage {$gmcp[char][vitals][charstats][2]};
    #regex {$rage} {Rage: %d}
       {#var rage &1} 
@@ -82,13 +81,20 @@
 #class tarot open;
 
 #alias {b} { 
-   #if {"%1" === ""}  { #send {hermits} };
-   #else              { #send {activate hermit %1} };
+   #if {"%1" === ""}  { 
+      #send {hermits}
+   } { 
+      #send {$addfree outd hermit};
+      #send {$addfree activate hermit %1} 
+   };
 };
 
 #alias {t} { 
-   #if {"%1" === ""}  { #send {hermits} };
-   #else              { #send {activate hermit %1} };
+   #if {"%1" === ""}  { 
+      #send {hermits} 
+   } { 
+      #send {fling hermit at ground %1};
+   };
 };
 
 #alias {pri} {
@@ -109,9 +115,10 @@
       #show {bf: Bitterfork};
       #show {mb: Manara};
       #show {};
-   };
-   #else {
+   } {
       #send {$addfree fling universe at ground};
+      
+      #var dest %1;
       
       #if     {"%1" === "nt"} {#var dest {newthera}};
       #elseif {"%1" === "gn"} {#var dest {genji}};
@@ -119,14 +126,15 @@
       #elseif {"%1" === "az"} {#var dest {azdun}};
       #elseif {"%1" === "bf"} {#var dest {bitterfork}};
       #elseif {"%1" === "mb"} {#var dest {manara}};
-      #else                   {#var dest %1};
       
       #nop example of a one time action;
-      #line onetime {#action {^A shimmering, translucent image rises up before you, its glittering surface d}}
+      #line oneshot {#action {A shimmering, translucent }
       {
-            #send {$addfree touch $dest};
-      };
-      #unvar dest;
+         #show {Headed out to $dest};
+
+         #send {$addfree touch $dest};
+         #unvar dest;
+      }};
    }
 };
 

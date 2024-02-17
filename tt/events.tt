@@ -8,21 +8,19 @@
 
 #EVENT {IAC SB GMCP char.items.list IAC SE}
 {
-   #local item {%0};
-   #variable gmcp[char][items][add] $item[item];
-   targeting.onCharItemsAdd;
+   #var gmcp[char][items][list] %0;
+   targeting.onCharItemsList;
 }
 
 #EVENT {IAC SB GMCP char.items.add IAC SE}
 {
-   #local item {%0};
-   #variable gmcp[char][items][list] $item[items];
-   targeting.onCharItemsList;
+   #var gmcp[char][items][add] %0;
+   targeting.onCharItemsAdd;
 }
 
 #EVENT {IAC SB GMCP Char.Items.Remove IAC SE}
 {
-   #var gmcp[char][items][remove] %0;
+   #var gmcp[char][items][remove] {%0};
    targeting.onCharItemsRemove;
 }
 
@@ -34,6 +32,7 @@
 #EVENT {IAC SB GMCP char.vitals IAC SE}
 {
    #variable gmcp[char][vitals] {%0};
+
    gui.onCharVitals;
    battlerage.onCharVitals;
 }

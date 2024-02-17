@@ -1,8 +1,12 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the Village of Genji}
+#VARIABLE {areaName} {Ashtan}
 #VARIABLE {targets}
 {
+    {Ashtan} 
+    {
+        {rat} {}
+    }
     {Test} 
     {
         {orc} {}

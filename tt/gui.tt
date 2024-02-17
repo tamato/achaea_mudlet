@@ -317,13 +317,64 @@
     {out} {Out}
 }
 
+#FUNCTION {colscale}
+{
+    #switch {10 * %1 / %2}
+    {
+        #case {0}
+        {
+            #return {<faa>}
+        };
+        #case {1}
+        {
+            #return {<fba>}
+        };
+        #case {2}
+        {
+            #return {<fca>}
+        };
+        #case {3}
+        {
+            #return {<fda>}
+        };
+        #case {4}
+        {
+            #return {<fea>}
+        };
+        #case {5}
+        {
+            #return {<ffa>}
+        };
+        #case {6}
+        {
+            #return {<efa>}
+        };
+        #case {7}
+        {
+            #return {<dfa>}
+        };
+        #case {8}
+        {
+            #return {<cfa>}
+        };
+        #case {9}
+        {
+            #return {<bfa>}
+        };
+        #default
+        {
+            #return {<afa>}
+        }
+    }
+}
+
 #alias {gui.onCharVitals} 
 {
    #screen clear square -3 1 -3 -1;
    #format {prompt} {};
    #format {prompt} {$prompt<038> Hp: @colscale{$gmcp[char][vitals][hp];$gmcp[char][vitals][maxhp]}%+4s<238>/<138>%-4s } {$gmcp[char][vitals][hp]} {$gmcp[char][vitals][maxhp]};
    #format {prompt} {$prompt<238> Mn: @colscale{$gmcp[char][vitals][mp];$gmcp[char][vitals][maxmp]}%+3s<238>/<138>%-3s } {$gmcp[char][vitals][mp]} {$gmcp[char][vitals][maxmp]};
-   #format {prompt} {$prompt<238> Xp: @colscale{$gmcp[char][vitals][nl];100}%-2m } {$gmcp[char][vitals][nl] / 100};
+   #format {prompt} {$prompt<238> Xp: <128>%-2m } {$gmcp[char][vitals][nl]};
    #format {prompt} {$prompt<238> Gd: <128>%-8s } {$gmcp[char][status][gold]};
 
    #variable {exits} {};
