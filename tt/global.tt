@@ -41,7 +41,7 @@
 #alias {journal} {
    #nop #if {{%0} != {}} { #log off; #config {log} {txt}; #break; };
 
-   #config log plain;
+   #config log raw;
    #log append journal.txt;
 
    #show {};
