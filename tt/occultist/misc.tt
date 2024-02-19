@@ -109,6 +109,7 @@
       #var priStatus {Ready};
       #nop Have it out of deck, it could be similar to the rift in that some things my block getting it out.;
       #send {outd priestess};
+      updateCharUI;
    };
 };
 
