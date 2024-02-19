@@ -103,7 +103,15 @@
 
 #ALIAS {room_window_draw_data}
 {
-    #draw tile @room_window_square{} $room_window[tab][%1][%*]
+   room_window_draw_box;
+   #local data {};
+   #foreach {*room_window[tab][]} con {
+      #list data ins -1 {[-] <028>$con};
+      #foreach {$room_window[tab][$con][]} line {
+         #list data ins -1 {  $line};
+      };
+   }
+   #draw tile @room_window_square{} $data[%*];
 }
 
 #ALIAS {comm_window_show %1 %2}
@@ -146,24 +154,17 @@
    }
 }
 
-#ALIAS {room_window_draw_tabs}
+#ALIAS {room_window_draw_box}
 {
    #draw green filled jeweled box @room_window_border{};
 
    #local short {};
    #local index {};
+   #local vert 1;
    #loop {1} {&room_window[tab][]} {index}
    {
       #local tab *room_window[tab][+$index];
-      #if {{$room_window[active]} === {$tab}}
-      {
-          #format short <138>%.6s $tab
-      };
-      #else
-      {
-          #format short <268>%.6s $tab
-      };
-      #line ignore #showme {$short} {$room_window[toprow]} {$room_window[topcol] - 5 + $index * 7};
+      #line ignore #showme {<138>$tab} {$room_window[toprow]} {$room_window[topcol] - 5 + $index * 7};
    }
 }
 
@@ -179,7 +180,6 @@
 #ALIAS {room_window_tab_click}
 {
     #variable room_window[active] %0;
-    room_window_draw_tabs;
     room_window_draw_data %0
 }
 
@@ -214,7 +214,7 @@
    #split $uicomms[height] 3 $uimap[width] $uiroom[width];
 
    comm_window_draw_tabs;
-   room_window_draw_tabs;
+   room_window_draw_box;
    smobs;
    mapping.onRoomInfo;
 }
