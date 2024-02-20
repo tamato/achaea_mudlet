@@ -63,7 +63,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{char["name"]}%!{{ |,}}}} {{{color}}}\n')
+                hi.write(f'#highlight {{{char["name"]}{{ |,}}}} {{{color}}}\n')
             except Exception as inst:
                 print(f'WTF??')
                 print(f'---------------------')
