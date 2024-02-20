@@ -110,7 +110,7 @@
       #foreach {$room_window[tab][$con][]} line {
          #list data ins -1 {  $line};
       };
-   }
+   };
    #draw tile @room_window_square{} $data[%*];
 }
 

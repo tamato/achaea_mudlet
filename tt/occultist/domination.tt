@@ -1,1 +1,11 @@
-#nop 
+#nop
+
+#var orbActive 0;
+#alias {orb}
+{
+   #send {$addfree summon arctar};
+   #line oneshot #action {A swirling portal of chaos opens, spits out a chaos orb, then vanishes.} 
+   {
+      #send {$addfree command orb};
+   }
+}

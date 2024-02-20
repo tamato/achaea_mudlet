@@ -15,7 +15,7 @@
    #nop seems to be either to use draw or vtmpa/split/offset;
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 
-   #map read gmcp.map;
+   #nop#map read gmcp.map;
 }
 
 #alias {mapping.onRoomInfo}

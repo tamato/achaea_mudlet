@@ -19,8 +19,9 @@
 #nop S-F1
 #macro {\e[1;2P} { print {resuming atk};#class bash load };
 
-#class bash close
-#class bash save
+#class bash close;
+#class bash save;
+#class bash kill;
 
 #nop F1
 #macro {\eOP} { print {stopping atk};#class bash kill; }; #nop F1
