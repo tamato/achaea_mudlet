@@ -23,25 +23,22 @@
    #nop highlight new area's targets;
    #local areaList $targets[$areaName];
    #foreach *areaList[] tar {
-      #highlight {{ |^}$tar{ |$}} {blink reverse};
+      #highlight { $tar } {blink reverse};
    };
 }
 
 #alias {targeting.onCharItemsAdd}
 {
    #local loc $gmcp[char][items][add][location];
-   #show GEtting the Gold [$loc]!;
 
    #if {"$loc" === "inv"} {#return};
-   #show GEtting the Gold!;
 
    #local item $gmcp[char][items][add][item];
    #local icon $item[icon];
    #if {"$icon" == "deadbody"} { #return; };
-   #show GEtting the Gold!;
 
    #local attri $item[attrib];
-   #if {"$attri" == ""}
+   #if {"$attri" == "" || "$attri" != "%*m%*" }
    { 
       #local name $item[name];
       #local id $item[id];
@@ -51,16 +48,14 @@
       #continue; 
    };
 
-   #show Icon: $icon and Attri: $attri;
    #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
+      #return; 
       #send {$addfree get gold};
       #send {$addfree put gold in pack};
       #return; 
    };
 
-   #if {"$attri" != "%*m%*" }{ #continue; };
-   #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
-   #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
+   #if {"$attri" == "%*d%*" }{ #continue; };
 
    #local name $item[name];
    #local id $item[id];
@@ -78,7 +73,6 @@
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
    #unvar roomMobs;
-   refresh_room_window mobs;
 
    #local items $gmcp[char][items][list][items];
    #foreach $items[%*] item {
@@ -88,15 +82,12 @@
 
       #local attri $item[attrib];
       #nop ADD items here;
-      #if {"$attri" == {} }
+      #if {"$attri" == "" || "$attri" != "%*m%*" }
       { 
          #local name $item[name];
          #local id $item[id];
          #local item <278>$name<028>$id<209>;
 
-         #nop #showme <003>Adding: [$item];
-
-         #nop #show <003>NO ATTRIB;
          room_window_show items $item;
          #continue; 
       };
@@ -107,9 +98,7 @@
          #return; 
       };
 
-      #if {"$attri" != "%*m%*" }{ #continue; };
-      #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
-      #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
+      #if {"$attri" == "%*d%*" }{ #continue; };
 
       #local name $item[name];
       #local id $item[id];
@@ -126,16 +115,13 @@
    #if {"$loc" == "inv"} {#return};
 
    #local item $gmcp[char][items][remove][item];
+   #local name $item[name];
+   #local attri $item[attrib];
+
+   room_window_remove $name;
+
    #local id $item[id];
    #unvar roomMobs[$id];
-   #nop #show {<403>Deleting mob id: $id};
-
-   #list room_window[tab][mobs] find {%*$id%*} idx;
-   #list room_window[tab][mobs] delete $idx;
-   #nop #show {<403>Deleting idx from window: $idx};
-
-   refresh_room_window mobs;
-   #unvar idx;
 }
 
 #alias {target}
@@ -154,7 +140,7 @@
    };
    #else
    {
-      #highlight {%0} {blink reverse};
+      #highlight { %0 } {blink reverse};
       #var targets[$areaName][%0] {};
       #showme Target '%0' added to '$areaName'.;
       #class targetlist write targetlist.tt;

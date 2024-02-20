@@ -7,10 +7,6 @@
    #map flag static;
    #map flag unicode;
    #map flag nofollow;
-   #map flag vtmap; 
-
-   #nop #split 20 1 40 50;
-   #nop #map offset 1 1 20 35;
 
    #nop seems to be either to use draw or vtmpa/split/offset;
    #draw boxed map 1 1 $uimap[height] $uimap[width];
@@ -68,7 +64,7 @@
       }
    };
 
-   #draw boxed map 1 1 30 40;
+   #draw boxed map 1 1 $uimap[height] $uimap[width];
 
    #line ignore #showme {<038>$gmcp[room][info][area]} {1} {6};
    #line ignore #showme {<038>$gmcp[room][info][name]} {30} {3};

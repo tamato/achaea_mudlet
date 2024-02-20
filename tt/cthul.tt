@@ -20,5 +20,7 @@ achaeapassword;
 
 #read occultist/misc.tt;
 #read occultist/occultism.tt;
+#read occultist/domination.tt;
+#read occultist/gui.tt;
 
 guireset;

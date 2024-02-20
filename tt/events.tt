@@ -92,8 +92,10 @@
 
 #EVENT {IAC SB GMCP Room.Players IAC SE}
 {
-    #variable gmcp[room][players] {%0};
-    gui.onRoomPlayers;
+   #variable gmcp[room][players] {%0};
+   #nop [ Players? {1}{{name}{Cthul}{fullname}{Servitor Cthul}} ];
+
+   gui.onRoomPlayers;
 }
 
 #EVENT {IAC SB GMCP Room.removeplayer IAC SE}

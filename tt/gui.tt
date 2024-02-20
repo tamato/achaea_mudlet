@@ -103,13 +103,18 @@
 
 #ALIAS {room_window_draw_data}
 {
-   room_window_draw_box;
+   #nop room_window_draw_box;
+
    #local data {};
    #foreach {*room_window[tab][]} con {
-      #list data ins -1 {[-] <028>$con};
+      #list data ins -1 {<078>[-]<028> $con};
+
       #foreach {$room_window[tab][$con][]} line {
-         #list data ins -1 {  $line};
+         #list data ins -1 {    $line};
       };
+
+      #nop blank line spacer;
+      #list data ins -1 {};
    };
    #draw tile @room_window_square{} $data[%*];
 }
@@ -157,15 +162,6 @@
 #ALIAS {room_window_draw_box}
 {
    #draw green filled jeweled box @room_window_border{};
-
-   #local short {};
-   #local index {};
-   #local vert 1;
-   #loop {1} {&room_window[tab][]} {index}
-   {
-      #local tab *room_window[tab][+$index];
-      #line ignore #showme {<138>$tab} {$room_window[toprow]} {$room_window[topcol] - 5 + $index * 7};
-   }
 }
 
 #ALIAS {comm_window_tab_click}
@@ -177,22 +173,16 @@
     comm_window_draw_data %0
 }
 
-#ALIAS {room_window_tab_click}
-{
-    #variable room_window[active] %0;
-    room_window_draw_data %0
-}
-
 #alias {smobs} {
-   room_window_tab_click mobs
+   #nop room_window_tab_click mobs
 }
 
 #alias {sitems} {
-   room_window_tab_click items
+   #nop room_window_tab_click items
 }
 
 #alias {splayers} {
-   room_window_tab_click players
+   #nop room_window_tab_click players
 }
 
 #alias {schats} {
@@ -240,65 +230,58 @@
 #ALIAS {room_window_show %1 %2}
 {
    #list room_window[tab][%1] ins -1 {%2};
-   #if {{%1} === {$room_window[active]}}
-   {
-      room_window_draw_data %1
-   };
+   room_window_draw_data
 }
 
-#ALIAS {refresh_room_window}
+#alias {room_window_remove %1}
 {
-   #if {{%1} === {$room_window[active]}}
-   {
-      room_window_draw_data %1;
+   #foreach {*room_window[tab][]} con {
+      #list room_window[tab][$con] find {%*%1%*} idx;
+      #if {$idx === 0} { #continue };
+      #list room_window[tab][$con] delete $idx;
    };
+   
+   room_window_draw_data;
 }
 
 #read character_highlights.tt
-#ticker {rh_hi} {#read character_highlights.tt} {60}
+#ticker {rh_hi} {#read character_highlights.tt} {360}
 
 #alias {gui.onAddPlayer}
 {
    #local ply $gmcp[room][addplayer][name];
 
-   room_window_show players $ply;
+
+   #if {{$chardb[$ply]} != {}} {
+      room_window_show players $chardb[$ply][color]$ply<099>;
+   }{
+      room_window_show players <070>$ply<099>;
+   };
 }
 
 #alias {gui.onRoomPlayers}
 {
    #list room_window[tab][players] clear;
 
-   #variable gmcp[room][players] {%0};
    #foreach {*gmcp[room][players][]} {idx} {
       #nop #show $gmcp[room][players][+$idx];
       #local ply $gmcp[room][players][+$idx][name];
 
       #if {{$ply} === {$whoami}} { #continue };
 
-      room_window_show players $ply;
+      #if {{$chardb[$ply]} != {}} {
+         room_window_show players $chardb[$ply][color]$ply<099>;
+      }{
+         room_window_show players <070>$ply<099>;
+      };
    };
    #unvar idx;
 }
 
 #alias {gui.onRoomRemovePlayers}
 {
-   #variable gmcp[room][removeplayer] {%0};
    #local ply $gmcp[room][removeplayer];
-   #list room_window[tab][players] find {$ply} idx;
-   #unvar room_window[tab][players][+$idx];
-
-   refresh_room_window player;
-}
-
-#alias {addplayer} {
-   room_window_show players {TestPlayer};
-}
-
-#alias {rmplayer} {
-   #unvar room_window[tab][players];
-
-   refresh_room_window player;
-   #show $room_window[active]
+   room_window_remove $ply;
 }
 
 #VARIABLE {DIR_NAME}

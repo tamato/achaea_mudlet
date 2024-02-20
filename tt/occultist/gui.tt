@@ -1,19 +1,20 @@
 #nop Gui info specific to Cthul
 
 #alias {updateCharUI} {
-   #screen clear square {$uimap[height]+1} 1 -4 {$uimap[width]-1};
+   #local offset 12;
+   #screen clear square {$uimap[height]+$offset} 1 -4 {$uimap[width]-1};
 
-   #nop Left hand side
-   #line ignore #showme {Priestess: $priStatus, #: 0} {$uimap[height]+1} {2};
-   #line ignore #showme {Fool: 0, #:0} {$uimap[height]+2} {2};
-   #line ignore #showme {DAura: 0} {$uimap[height]+3} {2};
-   #line ignore #showme {Arctar: 0, #:0} {$uimap[height]+4} {2};
-   #line ignore #showme {Tentacles: 0} {$uimap[height]+5} {2};
-   #line ignore #showme {Astral: 0} {$uimap[height]+6} {2};
+   #nop Left hand side;
+   #line ignore #showme {Priestess: $priStatus, #: 0} {$uimap[height]+1+$offset} {3};
+   #line ignore #showme {Fool: 0, #:0} {$uimap[height]+2+$offset} {3};
+   #line ignore #showme {DAura: 0} {$uimap[height]+3+$offset} {3};
+   #line ignore #showme {Arctar: 0, #:0} {$uimap[height]+4+$offset} {3};
+   #line ignore #showme {Tentacles: 0} {$uimap[height]+5+$offset} {3};
+   #line ignore #showme {Astral: 0} {$uimap[height]+6+$offset} {3};
 
-   #nop Right hand side
-   #line ignore #showme {Hermits: 0} {$uimap[height]+8} {2};
-   #line ignore #showme {  In Deck: 0} {$uimap[height]+8} {2};
-   #line ignore #showme {Wheel: 0} {$uimap[height]+9} {2};
+   #nop Right hand side;
+   #line ignore #showme {Hermits: 0} {$uimap[height]+8+$offset} {3};
+   #line ignore #showme {  In Deck: 0} {$uimap[height]+9+$offset} {3};
+   #line ignore #showme {Wheel: 0} {$uimap[height]+$offset+10} {3};
 }
 
