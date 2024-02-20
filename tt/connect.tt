@@ -27,5 +27,6 @@
     #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.vitals 1", "char.items 1", "char.afflictions 1", "char.defences 1" ] $TELNET[IAC]$TELNET[SE]\};
     #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "char.skills 1" ] $TELNET[IAC]$TELNET[SE]\};
     #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "comm.channel 1" ] $TELNET[IAC]$TELNET[SE]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] core.supports.add [ "core.ping 1" ] $TELNET[IAC]$TELNET[SE]\};
 }
 

@@ -23,33 +23,47 @@
    #nop highlight new area's targets;
    #local areaList $targets[$areaName];
    #foreach *areaList[] tar {
-      #nop #show <003> highlighting: [$tar];
-      #highlight $tar {blink reverse};
+      #highlight {{ |^}$tar{ |$}} {blink reverse};
    };
 }
 
 #alias {targeting.onCharItemsAdd}
 {
-   #local icon $gmcp[char][items][add][icon];
-   #if {"$icon" == "deadbody"} { #return; };
+   #local loc $gmcp[char][items][add][location];
+   #show GEtting the Gold [$loc]!;
 
-   #local attri $gmcp[char][items][add][attrib];
+   #if {"$loc" === "inv"} {#return};
+   #show GEtting the Gold!;
+
+   #local item $gmcp[char][items][add][item];
+   #local icon $item[icon];
+   #if {"$icon" == "deadbody"} { #return; };
+   #show GEtting the Gold!;
+
+   #local attri $item[attrib];
    #if {"$attri" == ""}
    { 
-      #local name $gmcp[char][items][add][name];
-      #local id $gmcp[char][items][add][id];
+      #local name $item[name];
+      #local id $item[id];
       #local item <278>$name<028>$id<209>;
 
       room_window_show items $item;
       #continue; 
    };
 
+   #show Icon: $icon and Attri: $attri;
+   #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
+      #send {$addfree get gold};
+      #send {$addfree put gold in pack};
+      #return; 
+   };
+
    #if {"$attri" != "%*m%*" }{ #continue; };
    #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
    #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
 
-   #local name $gmcp[char][items][add][name];
-   #local id $gmcp[char][items][add][id];
+   #local name $item[name];
+   #local id $item[id];
    #local mob <278>$name<028>$id<209>;
    #var roomMobs[$id] {$name};
 
@@ -58,12 +72,15 @@
 
 #alias {targeting.onCharItemsList}
 {
+   #local loc $gmcp[char][items][list][location];
+   #if {"$loc" == "inv"} {#return};
+
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
    #unvar roomMobs;
    refresh_room_window mobs;
 
-   #local items $gmcp[char][items][list];
+   #local items $gmcp[char][items][list][items];
    #foreach $items[%*] item {
 
       #local icon $item[icon];
@@ -84,6 +101,12 @@
          #continue; 
       };
 
+      #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
+         #send {$addfree get gold};
+         #send {$addfree put gold in pack};
+         #return; 
+      };
+
       #if {"$attri" != "%*m%*" }{ #continue; };
       #if {"$attri" == "%*d%*" }{ #show <003>dead;#continue; };
       #if {"$attri" == "%*x%*" }{ #show <003>leave alone;#continue; };
@@ -99,7 +122,11 @@
 
 #alias {targeting.onCharItemsRemove}
 {
-   #local id $gmcp[char][items][remove][id];
+   #local loc $gmcp[char][items][remove][location];
+   #if {"$loc" == "inv"} {#return};
+
+   #local item $gmcp[char][items][remove][item];
+   #local id $item[id];
    #unvar roomMobs[$id];
    #nop #show {<403>Deleting mob id: $id};
 
@@ -139,12 +166,13 @@
    #if {"%1" === ""}
    {
       #foreach *roomMobs[] denizen {
-         #showme in room: <038>$denizen;
+         #nop #showme in room: <038>$denizen;
          #foreach *targets[$areaName][] tar {
-            #showme trying target: <038>$tar;
+            #nop #showme trying target: <038>$tar;
 
             #if {"$roomMobs[$denizen]" == "%*$tar%*"} {
-               #showme FOUND tar: <028>$tar;
+               #nop #showme FOUND tar: <028>$tar;
+               #nop #showme FOUND tar: <028>$denizen;
 
                #var atkTarget $denizen;
                #send {settarget $denizen};

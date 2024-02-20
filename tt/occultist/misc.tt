@@ -21,8 +21,12 @@
 
 #class bash close
 #class bash save
-#class bash kill
 
+#nop F1
+#macro {\eOP} { print {stopping atk};#class bash kill; }; #nop F1
+
+#nop S-F1
+#macro {\e[1;2P} { print {resuming atk};#class bash load }; #nop S-F1
 
 #nop -------------------------------------------------------------------------
 #nop BattleRage
@@ -37,10 +41,11 @@
 
 #nop Around monsters?
 #nop there might be a different one around people.
-#high {A nearly invisible magical shield forms around} { underscore <FFF0000>}
+#high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
 #action {^A nearly invisible magical shield forms around.*$} 
 { 
-   #if {&{atkTarget} !== 0} {
+#nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
+   #if {&{atkTarget} != 0} {
       #if {$rage >= $ruinCost} {
          #send {ruin}
       }
@@ -64,6 +69,9 @@
       {#show <513>BattleRage: NOT GETTING IT};
 
    #nop TODO - need to add Temper;
+   #if {$rage >= $ruinCost} {#send {ruin};};
+
+   tryRage 35 chaosgate 23;
 
    tryRage 35 chaosgate 23;
    tryRage 24 stagnate 35;

@@ -374,8 +374,10 @@
    #format {prompt} {};
    #format {prompt} {$prompt<038> Hp: @colscale{$gmcp[char][vitals][hp];$gmcp[char][vitals][maxhp]}%+4s<238>/<138>%-4s } {$gmcp[char][vitals][hp]} {$gmcp[char][vitals][maxhp]};
    #format {prompt} {$prompt<238> Mn: @colscale{$gmcp[char][vitals][mp];$gmcp[char][vitals][maxmp]}%+3s<238>/<138>%-3s } {$gmcp[char][vitals][mp]} {$gmcp[char][vitals][maxmp]};
-   #format {prompt} {$prompt<238> Xp: <128>%-2m } {$gmcp[char][vitals][nl]};
-   #format {prompt} {$prompt<238> Gd: <128>%-8s } {$gmcp[char][status][gold]};
+   #format {prompt} {$prompt<238> Xp: <128>%+2m} {$gmcp[char][vitals][nl]};
+   #format {prompt} {$prompt<238> Gd: <128>%-2s} {$gmcp[char][status][gold]};
+   #format {prompt} {$prompt<238> Orb: <128>%+1s} {$orbActive};
+   #format {prompt} {$prompt<238> DA: <128>%+1s} {$distortActive};
 
    #variable {exits} {};
    #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}

@@ -41,7 +41,7 @@
 
    #foreach {*gmcp[room][info][details][]} {key}
    {
-      #show {<003>Room Details: $gmcp[room][info][details][$key]};
+      #nop #show {<003>Room Details: $gmcp[room][info][details][$key]};
       #switch {{$gmcp[room][info][details][$key]}}
       {
          #case {"subdivision"}   {#map set roomsymbol {S};};

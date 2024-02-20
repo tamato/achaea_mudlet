@@ -62,54 +62,15 @@
 
 #nop \Z until the end f the text zent by the mud;
 #highlight {^You have slain%*.$} {black b magenta};
-#action {^You have slain%*.$} {#send {clearqueue balance}; #unvar aktTarget;};
+#action {^You have slain%*.$} {#unvar aktTarget;};
 
 #highlight {gold{|en} sovereigns} {black b yellow};
-
-#action {A %* golden sovereigns spill from the} {
-   queue add freestand get gold;
-   put gold in pack;
-}
 
 #nop Use Diagnose  for losing eq
 #nop use Directory for losing balance
 
 #highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow}
 
-#nop -------------------------------------------------------------------------
-#nop These macros will allow you to move around with the arrow keys while
-#nop holding down the control key. You can move ne by pressing arrow up +
-#nop right simultaniously. Move up by pressing arrow up + down simultaniously.
-#nop Move down by pressing arrow left + right simultaniously.
-#nop -------------------------------------------------------------------------
-
-#macro {\e[1;5A} {#cursor macro preserve;#delay {move} {#cursor macro reset;n} {0.05}}
-#macro {\e[1;5C} {#cursor macro preserve;#delay {move} {#cursor macro reset;e} {0.05}}
-#macro {\e[1;5B} {#cursor macro preserve;#delay {move} {#cursor macro reset;s} {0.05}}
-#macro {\e[1;5D} {#cursor macro preserve;#delay {move} {#cursor macro reset;w} {0.05}}
-
-#macro {\e[1;5A\e[1;5A} {#undelay {move};#cursor macro reset;n;n}
-#macro {\e[1;5C\e[1;5C} {#undelay {move};#cursor macro reset;e;e}
-#macro {\e[1;5B\e[1;5B} {#undelay {move};#cursor macro reset;s;s}
-#macro {\e[1;5D\e[1;5D} {#undelay {move};#cursor macro reset;w;w}
-
-#macro {\e[1;5A\e[1;5B} {#undelay {move};#cursor macro reset;u}
-#macro {\e[1;5B\e[1;5A} {#undelay {move};#cursor macro reset;u}
-
-#macro {\e[1;5C\e[1;5D} {#undelay {move};#cursor macro reset;d}
-#macro {\e[1;5D\e[1;5C} {#undelay {move};#cursor macro reset;d}
-
-#macro {\e[1;5A\e[1;5C} {#undelay {move};#cursor macro reset;ne}
-#macro {\e[1;5C\e[1;5A} {#undelay {move};#cursor macro reset;ne}
-
-#macro {\e[1;5B\e[1;5C} {#undelay {move};#cursor macro reset;se}
-#macro {\e[1;5C\e[1;5B} {#undelay {move};#cursor macro reset;se}
-
-#macro {\e[1;5D\e[1;5B} {#undelay {move};#cursor macro reset;sw}
-#macro {\e[1;5B\e[1;5D} {#undelay {move};#cursor macro reset;sw}
-
-#macro {\e[1;5D\e[1;5A} {#undelay {move};#cursor macro reset;nw}
-#macro {\e[1;5A\e[1;5D} {#undelay {move};#cursor macro reset;nw}
 
 #read events.tt;
 

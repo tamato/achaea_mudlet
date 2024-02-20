@@ -20,10 +20,14 @@
     }
     {the Rhodestrian Settlement} 
     {
+        {Rhodestrian} {}
         {cougar} {}
+        {mercenary} {}
+        {troll} {}
     }
     {the Southern Vashnar Mountains} 
     {
+        {drake} {}
         {grizzly} {}
     }
     {the Village of Genji} 
