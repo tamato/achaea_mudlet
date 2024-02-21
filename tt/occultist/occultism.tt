@@ -21,6 +21,8 @@
       #var astralactive 0;
       #send {human};
    }
+
+   updateCharUI;
 }
 
 #nop Go to the plane of Chaos!
@@ -31,6 +33,8 @@
 
 #var distortActive 0;
 #alias {da} {
+   updateCharUI;
+
    #if {$distortActive === 0} {
       #var distortActive 1;
       #send {$addfree distortaura};

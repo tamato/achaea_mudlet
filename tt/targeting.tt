@@ -149,25 +149,27 @@
 
 #alias {atk}
 {
+   #unvar atkTarget;
+
    #if {"%1" === ""}
    {
+
+      #if {&{roomMobs} == 0} {dbg {no roomMobs};#return};
+      #if {&{roomMobs[]} == 0} {dbg {roomMobs list empty};#return};
+
       #foreach *roomMobs[] denizen {
-         #nop #showme in room: <038>$denizen;
          #foreach *targets[$areaName][] tar {
-            #nop #showme trying target: <038>$tar;
 
             #if {"$roomMobs[$denizen]" == "%*$tar%*"} {
-               #nop #showme FOUND tar: <028>$tar;
-               #nop #showme FOUND tar: <028>$denizen;
 
-               #var atkTarget $denizen;
+               #var atkTarget $tar;
                #send {settarget $denizen};
                attackCmd $denizen;
-
                #return;
             };
          };
       };
+
    };
    #else
    {
@@ -175,7 +177,7 @@
       attackCmd %1;
    };
 
-   #nop #unvar denizen;
+   #if {&{atkTarget} == 0} {dbg {Nothing to attack}};
 }
 
 #class targeting close

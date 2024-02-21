@@ -8,26 +8,18 @@
 
 #high {^You have recovered equilibrium%*} { reverse };
 #action {You have recovered equilibrium} {
-   #if {&{atkTarget} != 0} {
-      atk;
-   }
+   atk;
 };
-
-#nop F1
-#macro {\eOP} { print {stopping atk};#class bash clear; };
-
-#nop S-F1
-#macro {\e[1;2P} { print {resuming atk};#class bash load };
 
 #class bash close;
 #class bash save;
-#class bash kill;
+#class bash clear;
 
 #nop F1
-#macro {\eOP} { print {stopping atk};#class bash kill; }; #nop F1
+#macro {\eOP} { #unvar atkTarget;print {stopping atk};#class bash clear; };
 
 #nop S-F1
-#macro {\e[1;2P} { print {resuming atk};#class bash load }; #nop S-F1
+#macro {\e[1;2P} { print {resuming atk};#class bash load };
 
 #nop -------------------------------------------------------------------------
 #nop BattleRage
@@ -64,6 +56,8 @@
 
 #alias {battlerage.onCharVitals}
 {
+   #if {&{atkTarget} == 0} {#return};
+
    #var rage {$gmcp[char][vitals][charstats][2]};
    #regex {$rage} {Rage: %d}
       {#var rage &1} 
@@ -96,6 +90,7 @@
       #send {$addfree outd hermit};
       #send {$addfree activate hermit %1};
       print {Can hermit be used off balance?};
+      updateCharUI;
    };
 };
 
@@ -105,6 +100,7 @@
    } { 
       #send {fling hermit at ground %1};
       print {Can hermit be used off balance?};
+      updateCharUI;
    };
 };
 

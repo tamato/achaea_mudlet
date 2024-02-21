@@ -38,11 +38,11 @@
 }
 
 #alias {err} {
-   #showme  {<410>ERROR: %1};
+   #showme  {<410>ERROR: %0};
 }
 
 #alias {dbg} {
-   #showme  {<460>DBG: %1};
+   #showme  {<460>DBG: %0};
 }
 
 #alias {journal} {
@@ -67,9 +67,11 @@
    print {New Fight};
 }
 
-#nop \Z until the end f the text zent by the mud;
+#nop \Z until the end f the text sent by the mud;
 #highlight {^You have slain%*.$} {black b magenta};
-#action {^You have slain%*.$} {#unvar aktTarget;};
+#action {^You have slain%*.$} {
+   #unvar atkTarget;
+};
 
 #highlight {gold{|en} sovereigns} {black b yellow};
 
