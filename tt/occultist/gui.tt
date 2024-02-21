@@ -7,7 +7,7 @@
    #nop Left hand side;
    #line ignore #showme {Priestess: $priStatus, #: 0} {$uimap[height]+1+$offset} {3};
    #line ignore #showme {Fool: 0, #:0} {$uimap[height]+2+$offset} {3};
-   #line ignore #showme {DAura: 0} {$uimap[height]+3+$offset} {3};
+   #line ignore #showme {DAura: $distortActive} {$uimap[height]+3+$offset} {3};
    #line ignore #showme {Arctar: 0, #:0} {$uimap[height]+4+$offset} {3};
    #line ignore #showme {Tentacles: 0} {$uimap[height]+5+$offset} {3};
    #line ignore #showme {Astral: 0} {$uimap[height]+6+$offset} {3};

@@ -49,7 +49,6 @@
    };
 
    #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
-      #return; 
       #send {$addfree get gold};
       #send {$addfree put gold in pack};
       #return; 
@@ -89,13 +88,13 @@
          #local item <278>$name<028>$id<209>;
 
          room_window_show items $item;
-         #continue; 
-      };
+         #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
 
-      #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
-         #send {$addfree get gold};
-         #send {$addfree put gold in pack};
-         #return; 
+            #send {$addfree get gold};
+            #send {$addfree put gold in pack};
+         };
+
+         #continue; 
       };
 
       #if {"$attri" == "%*d%*" }{ #continue; };
@@ -115,10 +114,10 @@
    #if {"$loc" == "inv"} {#return};
 
    #local item $gmcp[char][items][remove][item];
-   #local name $item[name];
+   #local id $item[id];
    #local attri $item[attrib];
 
-   room_window_remove $name;
+   room_window_remove $id;
 
    #local id $item[id];
    #unvar roomMobs[$id];

@@ -9,6 +9,10 @@
 #high {^You have recovered equilibrium%*} { reverse };
 #action {You have recovered equilibrium} {
    atk;
+
+   #if {&{atkTarget} == 0} {
+      #class bash clear;
+   };
 };
 
 #class bash close;
@@ -19,7 +23,7 @@
 #macro {\eOP} { #unvar atkTarget;print {stopping atk};#class bash clear; };
 
 #nop S-F1
-#macro {\e[1;2P} { print {resuming atk};#class bash load };
+#macro {\e[1;2P} { print {resuming atk};#class bash load; atk;};
 
 #nop -------------------------------------------------------------------------
 #nop BattleRage
@@ -37,7 +41,7 @@
 #high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
 #action {^A nearly invisible magical shield forms around.*$} 
 { 
-#nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
+   #nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
    #if {&{atkTarget} != 0} {
       #if {$rage >= $ruinCost} {
          #send {ruin}
@@ -47,7 +51,8 @@
 
 #alias {tryRage}
 {
-   #if {$rage >= %1+$ruinCost && $%2 == 1} {
+   #math sum {%1 + $ruinCost};
+   #if {$rage >= $sum && $%2 == 1} {
       #var %2 0;
       #send {%2}; 
       #delay {%3} {#var %2 {1}}

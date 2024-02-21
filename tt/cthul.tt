@@ -24,3 +24,5 @@ achaeapassword;
 #read occultist/gui.tt;
 
 guireset;
+updateCharUI;
+
