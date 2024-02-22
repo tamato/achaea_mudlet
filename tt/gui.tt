@@ -220,11 +220,22 @@
     #showme <238>Fitz says, "why not".;
     #showme <128>Pruxi tells you "Stuff".;
 }
+#EVENT {IAC SB GMCP Comm.Channel.Start IAC SE}
+{
+#nop #class load, highlights
+}
+
+#EVENT {IAC SB GMCP Comm.Channel.End IAC SE}
+{
+#nop #class close, highlights
+}
 
 #EVENT {IAC SB GMCP Comm.Channel.Text IAC SE}
 {
    #var messages {%0};
    comm_window_show chats $messages[text]
+   #nop {{text}{includes the talkers name "..."}{channel}{"says"}{talker}{"includes color sdfsdaf"}};
+#nop #class load, highlights
 }
 
 #ALIAS {room_window_show %1 %2}
