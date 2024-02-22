@@ -17,10 +17,24 @@
 #alias {mapping.onRoomInfo}
 {
    #map goto {$gmcp[room][info][num]} {dig};
-   #map get roomarea {result};
+
+   #nop Coords
+   #nop first number is the Map Id
+   #nop then horizton
+   #nop then vertical
+   #nop #VARIABLE {gmcp[room][info]}
+   #nop {
+   #nop     {area} {Ashtan}
+   #nop     {coords} {49,6,-9,0}
+
+   #nop #list gmcp[room][info][coords] {explode} {,}
+   #nop to convert into a list
+
+   #map get roomvnum {result};
    #if {"$result" == ""}
    {
-      #map set roomarea $gmcp[room][info][num];
+      #map set roomvnum $gmcp[room][info][num];
+      #map set roomarea $gmcp[room][info][coords];
       #map set roomcolor <178>;
       #nop map set roomdata;
       #nop map set roomdesc;
@@ -49,8 +63,6 @@
    };
     #foreach {*gmcp[room][info][exits][]} {exit}
     { 
-      #nop #show "!!!!!!!!!!!!!!!!!!!";
-      #nop #show $exit; #nop "sw s e";
       #map get {roomexit} {result};
       #if {&result[$exit] == 0}
       {
@@ -67,5 +79,7 @@
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 
    #line ignore #showme {<038>$gmcp[room][info][area]} {1} {6};
-   #line ignore #showme {<038>$gmcp[room][info][name]} {30} {3};
+   #line ignore #showme {<038>$gmcp[room][info][name]} {$uimap[height]} {3};
 }
+
+
