@@ -14,8 +14,16 @@
     {active} {mobs}
     {botcol} {-1}
     {botrow} {$uiroom[height]}
+    {expanded} 
+    {
+        {seen} {}
+        {players} {}
+        {mobs} {}
+        {items} {}
+    }
     {tab} 
     {
+        {seen} {}
         {players} {}
         {mobs} {}
         {items} {}
@@ -107,10 +115,19 @@
 
    #local data {};
    #foreach {*room_window[tab][]} con {
+
+      #nop Collapse container if it is not expanded;
+      #if {&{room_window[expanded][$con]} == 0} {
+         #list data ins -1 {<078>[+]<028> $con};
+         #nop blank line spacer;
+         #list data ins -1 {};
+         #continue;
+      };
+
       #list data ins -1 {<078>[-]<028> $con};
 
       #foreach {$room_window[tab][$con][]} line {
-         #list data ins -1 {    $line};
+         #list data ins -1 {    $line<099>};
       };
 
       #nop blank line spacer;
@@ -173,16 +190,30 @@
     comm_window_draw_data %0
 }
 
-#alias {smobs} {
-   #nop room_window_tab_click mobs
+#alias {toggleExpanded} {
+   #if {&{room_window[expanded][%0]}} {
+      #unvar room_window[expanded][%0];
+   }{
+      #var room_window[expanded][%0] {};
+   };
+
+   room_window_draw_data;
 }
 
-#alias {sitems} {
-   #nop room_window_tab_click items
+#alias {tmobs} {
+   toggleExpanded mobs;
 }
 
-#alias {splayers} {
-   #nop room_window_tab_click players
+#alias {titems} {
+   toggleExpanded items;
+}
+
+#alias {tplayers} {
+   toggleExpanded players;
+}
+
+#alias {tseen} {
+   toggleExpanded seen;
 }
 
 #alias {schats} {
@@ -201,12 +232,14 @@
 #ALIAS {guireset}
 {
    #nop #config mouse on;
-   #split $uicomms[height] 3 $uimap[width] $uiroom[width];
+   #split $uicomms[height] 1 $uimap[width] $uiroom[width];
 
    comm_window_draw_tabs;
    room_window_draw_box;
-   smobs;
+   tseen;
+   tseen;
    mapping.onRoomInfo;
+   schats;
 }
 
 #ALIAS {test}
@@ -233,7 +266,8 @@
 #EVENT {IAC SB GMCP Comm.Channel.Text IAC SE}
 {
    #var messages {%0};
-   comm_window_show chats $messages[text]
+   comm_window_show chats $messages[text];
+
    #nop {{text}{includes the talkers name "..."}{channel}{"says"}{talker}{"includes color sdfsdaf"}};
 #nop #class load, highlights
 }
@@ -241,7 +275,7 @@
 #ALIAS {room_window_show %1 %2}
 {
    #list room_window[tab][%1] ins -1 {%2};
-   room_window_draw_data
+   room_window_draw_data;
 }
 
 #alias {room_window_remove %1}
@@ -293,22 +327,6 @@
 {
    #local ply $gmcp[room][removeplayer];
    room_window_remove $ply;
-}
-
-#VARIABLE {DIR_NAME}
-{
-    {u} {U}
-    {d} {D}
-    {n} {N}
-    {ne} {NE}
-    {e} {E}
-    {se} {SE}
-    {s} {S}
-    {sw} {SW}
-    {w} {W}
-    {nw} {NW}
-    {in} {In}
-    {out} {Out}
 }
 
 #FUNCTION {colscale}
@@ -372,15 +390,5 @@
    #format {prompt} {$prompt<238> Gd: <128>%-2s} {$gmcp[char][status][gold]};
    #format {prompt} {$prompt<238> Orb: <128>%+1s} {$orbActive};
    #format {prompt} {$prompt<238> DA: <128>%+1s} {$distortActive};
-
-   #variable {exits} {};
-   #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
-   {
-       #if {&gmcp[room][info][exits][$exit] == 0} { #continue };
-       #variable {exits} {$exits<128>$DIR_NAME[$exit],};
-   };
-
-   #format {prompt} {$prompt <238>Ex: %-6s} {$exits   <088>};
-   #line ignore #showme {$prompt} {-3} {42};
 }
 
