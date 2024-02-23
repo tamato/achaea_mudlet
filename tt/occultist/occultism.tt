@@ -33,8 +33,6 @@
 
 #var distortActive 0;
 #alias {da} {
-   updateCharUI;
-
    #if {$distortActive === 0} {
       #var distortActive 1;
       #send {$addfree distortaura};
@@ -42,6 +40,7 @@
       #var distortActive 0;
       #send {$addfree normalaura};
    }
+   updateCharUI;
 }
 
 #class occultism close;

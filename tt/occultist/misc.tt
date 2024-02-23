@@ -12,6 +12,7 @@
 
    #if {&{atkTarget} == 0} {
       #class bash clear;
+      #if {$distortActive === 1} {da};
    };
 };
 
@@ -20,10 +21,19 @@
 #class bash clear;
 
 #nop F1
-#macro {\eOP} { #unvar atkTarget;print {stopping atk};#class bash clear; };
+#macro {\eOP} { 
+   #unvar atkTarget;
+   print {stopping auto attack};
+   #class bash clear; 
+};
 
 #nop S-F1
-#macro {\e[1;2P} { print {resuming atk};#class bash load; atk;};
+#macro {\e[1;2P} { 
+   #class bash load; 
+   print {resuming auto attack};
+   #if {$distortActive === 0} {da};
+   atk;
+};
 
 #nop -------------------------------------------------------------------------
 #nop BattleRage
@@ -52,10 +62,12 @@
 #alias {tryRage}
 {
    #math sum {%1 + $ruinCost};
-   #if {$rage >= $sum && $%2 == 1} {
+   #if {$rage >= $sum && ${%2} == 1} {
+      #var rage 0;
       #var %2 0;
       #send {%2}; 
-      #delay {%3} {#var %2 {1}}
+      print {Used %1, disabled [${%2}]};
+      #delay {%3} {#var %2 {1};#print {${%2} reEnabled}};
    }
 }
 
@@ -69,9 +81,8 @@
       {#show <513>BattleRage: NOT GETTING IT};
 
    #nop TODO - need to add Temper;
-   #if {$rage >= $ruinCost} {#send {ruin};};
 
-   tryRage 35 chaosgate 23;
+   #if {$rage >= $ruinCost} {#send {ruin};#var rage 0};
 
    tryRage 35 chaosgate 23;
    tryRage 24 stagnate 35;
