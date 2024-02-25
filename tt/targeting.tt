@@ -72,6 +72,7 @@
    #list room_window[tab][mobs] clear;
    #list room_window[tab][items] clear;
    #unvar roomMobs;
+   room_window_draw_data;
 
    #local items $gmcp[char][items][list][items];
    #foreach $items[%*] item {

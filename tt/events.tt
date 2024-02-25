@@ -44,16 +44,30 @@
    gui.onCharVitals;
    battlerage.onCharVitals;
 
+   #var hp $gmcp[char][vitals][hp];
+   #if {$prevHp == 0} {#var prevHp $hp};
 
-   #local hp = $gmcp[char][vitals][hp];
-   #if {$prevHp != 0 && $prevHp != $hp} {
+   #if {$prevHp != $hp} {
       #math {diff} {$prevHp - $hp};
-      #if {{$diff} > 0} 
+      #if {$diff > 0} 
          {#show <110>-$diff}
-         {#show <120>+$diff};
+         {#math diff {$diff * -1}; #show <120>+$diff};
       #unvar diff;
    };
    #var prevHp $hp;
+
+
+   #var mp $gmcp[char][vitals][mp];
+   #if {$prevMp == 0} {#var prevMp $mp};
+
+   #if {$prevMp != $mp} {
+      #math {diff} {$prevMp - $mp};
+      #if {$diff > 0} 
+         {#show <140>-$diff}
+         {#math diff {$diff * -1}; #show <150>+$diff};
+      #unvar diff;
+   };
+   #var prevMp $mp;
 }
 
 #EVENT {IAC SB GMCP char.maxstats IAC SE}

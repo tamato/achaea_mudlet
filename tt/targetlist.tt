@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the Rhodestrian Settlement}
+#VARIABLE {areaName} {the bog of Ashtan}
 #VARIABLE {targets}
 {
     {Ashtan} 
@@ -33,6 +33,10 @@
     {the Village of Genji} 
     {
         {manticore} {}
+    }
+    {the bog of Ashtan} 
+    {
+        {Haag} {}
     }
     {the land of Minia} 
     {

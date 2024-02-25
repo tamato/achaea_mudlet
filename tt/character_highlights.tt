@@ -46,6 +46,7 @@
 #highlight {Thoralyn{ |,|'}} {<830>}
 #highlight {Marcella{ |,|'}} {<400><830>}
 #highlight {Elentya{ |,|'}} {<830>}
+#highlight {Olympia{ |,|'}} {<830>}
 #highlight {Ceno{ |,|'}} {<400><830>}
 #highlight {Laergon{ |,|'}} {<830>}
 #highlight {Bambi{ |,|'}} {<400><830>}
@@ -97,6 +98,7 @@
 #highlight {Ucu{ |,|'}} {<830>}
 #highlight {Zorina{ |,|'}} {<110>}
 #highlight {Aecius{ |,|'}} {<830>}
+#highlight {Janoul{ |,|'}} {<830>}
 #highlight {Sharid{ |,|'}} {<830>}
 #highlight {Welsh{ |,|'}} {<830>}
 #highlight {Zech{ |,|'}} {<830>}
@@ -116,6 +118,7 @@
 #highlight {Enalya{ |,|'}} {<830>}
 #highlight {Radrieth{ |,|'}} {<830>}
 #highlight {Kildcu{ |,|'}} {<830>}
+#highlight {Mogi{ |,|'}} {<110>}
 #highlight {Murray{ |,|'}} {<830>}
 #highlight {Zariah{ |,|'}} {<830>}
 #highlight {Naelith{ |,|'}} {<830>}
@@ -127,9 +130,12 @@
 #highlight {Brel{ |,|'}} {<400><830>}
 #highlight {Treyal{ |,|'}} {<830>}
 #highlight {Austere{ |,|'}} {<830>}
+#highlight {Phe{ |,|'}} {<400><Fff33ff>}
 #highlight {Menpo{ |,|'}} {<830>}
 #highlight {Harran{ |,|'}} {<830>}
+#highlight {Layta{ |,|'}} {<110>}
 #highlight {Lachlan{ |,|'}} {<830>}
+#highlight {Ertris{ |,|'}} {<400><830>}
 #highlight {Viceleritas{ |,|'}} {<400><830>}
 #highlight {Roselle{ |,|'}} {<830>}
 #highlight {Kelraz{ |,|'}} {<830>}
@@ -174,6 +180,7 @@
 #highlight {Molli{ |,|'}} {<400><830>}
 #highlight {Delia{ |,|'}} {<830>}
 #highlight {Ranara{ |,|'}} {<830>}
+#highlight {Shigeru{ |,|'}} {<830>}
 #highlight {Vilxe{ |,|'}} {<400><Fff33ff>}
 #highlight {Melaya{ |,|'}} {<400><830>}
 #highlight {Fastolph{ |,|'}} {<830>}
@@ -244,12 +251,14 @@
 #highlight {Brandilar{ |,|'}} {<830>}
 #highlight {Celica{ |,|'}} {<830>}
 #highlight {Aduan{ |,|'}} {<400><830>}
+#highlight {Halbrand{ |,|'}} {<400><830>}
 #highlight {Neno{ |,|'}} {<830>}
 #highlight {Jirijyanyja{ |,|'}} {<400><830>}
 #highlight {Masaryk{ |,|'}} {<830>}
 #highlight {Bimnono{ |,|'}} {<400><Fff33ff>}
 #highlight {Fitz{ |,|'}} {<400><Fff33ff>}
 #highlight {Faerum{ |,|'}} {<830>}
+#highlight {Micin{ |,|'}} {<400><Fff33ff>}
 #highlight {Baptiste{ |,|'}} {<830>}
 #highlight {Zoktos{ |,|'}} {<400><830>}
 #highlight {Palasyne{ |,|'}} {<830>}
@@ -284,9 +293,11 @@
 #highlight {Arnai{ |,|'}} {<110>}
 #highlight {Feanor{ |,|'}} {<400><Fff33ff>}
 #highlight {Eaboa{ |,|'}} {<400><Fff33ff>}
+#highlight {Arbi{ |,|'}} {<110>}
 #highlight {Ozmatiah{ |,|'}} {<830>}
 #highlight {Aegoth{ |,|'}} {<110>}
 #highlight {Falcain{ |,|'}} {<400><830>}
+#highlight {Odrandara{ |,|'}} {<414>}
 #highlight {Perl{ |,|'}} {<830>}
 #highlight {Oasou{ |,|'}} {<110>}
 #highlight {Karalden{ |,|'}} {<830>}
@@ -326,6 +337,7 @@
 #highlight {Mardil{ |,|'}} {<830>}
 #highlight {Iandor{ |,|'}} {<830>}
 #highlight {Knightwolf{ |,|'}} {<830>}
+#highlight {Herenna{ |,|'}} {<830>}
 #highlight {Irius{ |,|'}} {<400><Fff33ff>}
 #highlight {Entaro{ |,|'}} {<110>}
 #highlight {Dortheron{ |,|'}} {<830>}
@@ -359,6 +371,7 @@
 #highlight {Orzon{ |,|'}} {<830>}
 #highlight {Czanthria{ |,|'}} {<400><830>}
 #highlight {Runi{ |,|'}} {<400><830>}
+#highlight {Svenson{ |,|'}} {<830>}
 #highlight {Utan{ |,|'}} {<400><830>}
 #highlight {Veya{ |,|'}} {<110>}
 #highlight {Leisyll{ |,|'}} {<830>}
@@ -415,6 +428,7 @@
 #highlight {Sareia{ |,|'}} {<830>}
 #highlight {Meg{ |,|'}} {<830>}
 #highlight {Kormac{ |,|'}} {<830>}
+#highlight {Sagan{ |,|'}} {<830>}
 #highlight {Tahquil{ |,|'}} {<400><830>}
 #highlight {Cedarclaw{ |,|'}} {<830>}
 #highlight {Baaker{ |,|'}} {<830>}
@@ -457,8 +471,10 @@
 #highlight {Vindanel{ |,|'}} {<400><830>}
 #highlight {Illiyath{ |,|'}} {<830>}
 #highlight {Tinarni{ |,|'}} {<830>}
+#highlight {Ivoria{ |,|'}} {<830>}
 #highlight {Nomak{ |,|'}} {<400><Fff33ff>}
 #highlight {Szael{ |,|'}} {<830>}
+#highlight {Vexpera{ |,|'}} {<830>}
 #highlight {Tatsuo{ |,|'}} {<400><830>}
 #highlight {Poxie{ |,|'}} {<400><830>}
 #highlight {Erikarn{ |,|'}} {<400><830>}
@@ -529,6 +545,7 @@
 #highlight {Gauge{ |,|'}} {<830>}
 #highlight {Bunni{ |,|'}} {<400><830>}
 #highlight {Novaleigh{ |,|'}} {<830>}
+#highlight {Uacel{ |,|'}} {<414>}
 #highlight {Azaka{ |,|'}} {<830>}
 #highlight {Jarrob{ |,|'}} {<830>}
 #highlight {Danius{ |,|'}} {<110>}
@@ -539,6 +556,7 @@
 #highlight {Morai{ |,|'}} {<110>}
 #highlight {Laorir{ |,|'}} {<830>}
 #highlight {Sephem{ |,|'}} {<830>}
+#highlight {Chris{ |,|'}} {<400><830>}
 #highlight {Boklwa{ |,|'}} {<400><830>}
 #highlight {Nishan{ |,|'}} {<400><830>}
 #highlight {Kilian{ |,|'}} {<830>}
@@ -552,6 +570,7 @@
 #highlight {Emiya{ |,|'}} {<830>}
 #highlight {Zuriel{ |,|'}} {<830>}
 #highlight {Forelk{ |,|'}} {<830>}
+#highlight {Antares{ |,|'}} {<830>}
 #highlight {Anaria{ |,|'}} {<830>}
 #highlight {Jover{ |,|'}} {<400><830>}
 #highlight {Sinvier{ |,|'}} {<830>}
@@ -560,6 +579,7 @@
 #highlight {Talysin{ |,|'}} {<830>}
 #highlight {Vilissa{ |,|'}} {<400><830>}
 #highlight {Therod{ |,|'}} {<830>}
+#highlight {Itkovian{ |,|'}} {<830>}
 #highlight {Fayne{ |,|'}} {<400><830>}
 #highlight {Tialha{ |,|'}} {<830>}
 #highlight {Bulwer{ |,|'}} {<400><830>}
@@ -656,6 +676,7 @@
 #highlight {Celadriel{ |,|'}} {<400><830>}
 #highlight {Ocenna{ |,|'}} {<110>}
 #highlight {Alashi{ |,|'}} {<400><Fff33ff>}
+#highlight {Unandira{ |,|'}} {<414>}
 #highlight {Voli{ |,|'}} {<830>}
 #highlight {Izahl{ |,|'}} {<830>}
 #highlight {Irimon{ |,|'}} {<400><Fff33ff>}
@@ -697,6 +718,8 @@
 #highlight {Ceirina{ |,|'}} {<830>}
 #highlight {Boosteya{ |,|'}} {<400><Fff33ff>}
 #highlight {Tesha{ |,|'}} {<830>}
+#highlight {Kayzoc{ |,|'}} {<400><830>}
+#highlight {Yenifer{ |,|'}} {<400><830>}
 #highlight {Celandine{ |,|'}} {<830>}
 #highlight {Ziam{ |,|'}} {<830>}
 #highlight {Paish{ |,|'}} {<830>}
@@ -881,9 +904,9 @@
 	{Bumin} {
 		{lvl}		{110}
 		{city}	{(none)}
-		{pvp}		{147}
+		{pvp}		{149}
 		{class}	{runewarden}
-		{xp}		{108}
+		{xp}		{111}
 		{explorer} {279}
 		{color}	{<830>}
 	};
@@ -891,10 +914,10 @@
 	{Sela} {
 		{lvl}		{110}
 		{city}	{hashan}
-		{pvp}		{297}
+		{pvp}		{302}
 		{class}	{psion}
-		{xp}		{118}
-		{explorer} {81}
+		{xp}		{120}
+		{explorer} {86}
 		{color}	{<400><830>}
 	};
 
@@ -953,8 +976,8 @@
 		{city}	{targossas}
 		{pvp}		{4}
 		{class}	{depthswalker}
-		{xp}		{601}
-		{explorer} {850}
+		{xp}		{592}
+		{explorer} {826}
 		{color}	{<830>}
 	};
 
@@ -1023,18 +1046,18 @@
 		{city}	{(none)}
 		{pvp}		{6}
 		{class}	{blademaster}
-		{xp}		{451}
-		{explorer} {454}
+		{xp}		{452}
+		{explorer} {446}
 		{color}	{<830>}
 	};
 
 	{Fanten} {
-		{lvl}		{94}
+		{lvl}		{99}
 		{city}	{hashan}
-		{pvp}		{38}
+		{pvp}		{39}
 		{class}	{serpent}
-		{xp}		{403}
-		{explorer} {274}
+		{xp}		{386}
+		{explorer} {262}
 		{color}	{<400><830>}
 	};
 
@@ -1119,12 +1142,22 @@
 	};
 
 	{Elentya} {
-		{lvl}		{86}
+		{lvl}		{87}
 		{city}	{targossas}
 		{pvp}		{2}
 		{class}	{runewarden}
-		{xp}		{491}
-		{explorer} {541}
+		{xp}		{485}
+		{explorer} {527}
+		{color}	{<830>}
+	};
+
+	{Olympia} {
+		{lvl}		{50}
+		{city}	{targossas}
+		{pvp}		{0}
+		{class}	{priest}
+		{xp}		{1008}
+		{explorer} {1118}
 		{color}	{<830>}
 	};
 
@@ -1154,7 +1187,7 @@
 		{pvp}		{0}
 		{class}	{monk}
 		{xp}		{72}
-		{explorer} {178}
+		{explorer} {186}
 		{color}	{<400><830>}
 	};
 
@@ -1229,12 +1262,12 @@
 	};
 
 	{Arlys} {
-		{lvl}		{76}
+		{lvl}		{80}
 		{city}	{mhaldor}
 		{pvp}		{0}
 		{class}	{pariah}
-		{xp}		{752}
-		{explorer} {790}
+		{xp}		{660}
+		{explorer} {677}
 		{color}	{<110>}
 	};
 
@@ -1249,12 +1282,12 @@
 	};
 
 	{Mornath} {
-		{lvl}		{96}
+		{lvl}		{99}
 		{city}	{cyrene}
 		{pvp}		{10}
 		{class}	{runewarden}
-		{xp}		{399}
-		{explorer} {567}
+		{xp}		{392}
+		{explorer} {551}
 		{color}	{<830>}
 	};
 
@@ -1264,7 +1297,7 @@
 		{pvp}		{757}
 		{class}	{serpent}
 		{xp}		{39}
-		{explorer} {157}
+		{explorer} {162}
 		{color}	{<830>}
 	};
 
@@ -1281,10 +1314,10 @@
 	{Yiliri} {
 		{lvl}		{80}
 		{city}	{underworld}
-		{pvp}		{46}
+		{pvp}		{50}
 		{class}	{}
-		{xp}		{686}
-		{explorer} {1116}
+		{xp}		{678}
+		{explorer} {1054}
 		{color}	{<414>}
 	};
 
@@ -1339,12 +1372,12 @@
 	};
 
 	{Dyfi} {
-		{lvl}		{83}
+		{lvl}		{87}
 		{city}	{cyrene}
 		{pvp}		{1}
 		{class}	{psion}
-		{xp}		{567}
-		{explorer} {731}
+		{xp}		{471}
+		{explorer} {659}
 		{color}	{<830>}
 	};
 
@@ -1393,8 +1426,8 @@
 		{city}	{hashan}
 		{pvp}		{21}
 		{class}	{depthswalker}
-		{xp}		{319}
-		{explorer} {360}
+		{xp}		{322}
+		{explorer} {366}
 		{color}	{<400><830>}
 	};
 
@@ -1423,8 +1456,8 @@
 		{city}	{cyrene}
 		{pvp}		{317}
 		{class}	{runewarden}
-		{xp}		{51}
-		{explorer} {299}
+		{xp}		{53}
+		{explorer} {300}
 		{color}	{<830>}
 	};
 
@@ -1459,12 +1492,12 @@
 	};
 
 	{Elka} {
-		{lvl}		{49}
+		{lvl}		{60}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{magi}
-		{xp}		{1049}
-		{explorer} {1070}
+		{xp}		{933}
+		{explorer} {884}
 		{color}	{<830>}
 	};
 
@@ -1559,12 +1592,12 @@
 	};
 
 	{Kulgond} {
-		{lvl}		{5}
+		{lvl}		{9}
 		{city}	{eleusis}
 		{pvp}		{0}
 		{class}	{druid}
 		{xp}		{0}
-		{explorer} {1186}
+		{explorer} {1143}
 		{color}	{<830>}
 	};
 
@@ -1604,7 +1637,7 @@
 		{pvp}		{1060}
 		{class}	{monk}
 		{xp}		{60}
-		{explorer} {61}
+		{explorer} {65}
 		{color}	{<110>}
 	};
 
@@ -1638,6 +1671,16 @@
 		{color}	{<830>}
 	};
 
+	{Janoul} {
+		{lvl}		{5}
+		{city}	{cyrene}
+		{pvp}		{0}
+		{class}	{blademaster}
+		{xp}		{0}
+		{explorer} {1134}
+		{color}	{<830>}
+	};
+
 	{Sharid} {
 		{lvl}		{18}
 		{city}	{(none)}
@@ -1653,8 +1696,8 @@
 		{city}	{targossas}
 		{pvp}		{215}
 		{class}	{depthswalker}
-		{xp}		{194}
-		{explorer} {383}
+		{xp}		{198}
+		{explorer} {379}
 		{color}	{<830>}
 	};
 
@@ -1723,8 +1766,8 @@
 		{city}	{eleusis}
 		{pvp}		{3674}
 		{class}	{psion}
-		{xp}		{46}
-		{explorer} {34}
+		{xp}		{47}
+		{explorer} {35}
 		{color}	{<830>}
 	};
 
@@ -1823,9 +1866,19 @@
 		{city}	{eleusis}
 		{pvp}		{5}
 		{class}	{sylvan}
-		{xp}		{159}
-		{explorer} {249}
+		{xp}		{162}
+		{explorer} {253}
 		{color}	{<830>}
+	};
+
+	{Mogi} {
+		{lvl}		{31}
+		{city}	{mhaldor}
+		{pvp}		{0}
+		{class}	{infernal}
+		{xp}		{1062}
+		{explorer} {1134}
+		{color}	{<110>}
 	};
 
 	{Murray} {
@@ -1871,10 +1924,10 @@
 	{Gaelyn} {
 		{lvl}		{99}
 		{city}	{eleusis}
-		{pvp}		{83}
+		{pvp}		{89}
 		{class}	{sentinel}
-		{xp}		{372}
-		{explorer} {426}
+		{xp}		{376}
+		{explorer} {419}
 		{color}	{<830>}
 	};
 
@@ -1893,8 +1946,8 @@
 		{city}	{cyrene}
 		{pvp}		{13}
 		{class}	{blademaster}
-		{xp}		{387}
-		{explorer} {413}
+		{xp}		{385}
+		{explorer} {403}
 		{color}	{<830>}
 	};
 
@@ -1921,21 +1974,31 @@
 	{Treyal} {
 		{lvl}		{112}
 		{city}	{eleusis}
-		{pvp}		{527}
+		{pvp}		{538}
 		{class}	{sylvan}
-		{xp}		{97}
-		{explorer} {141}
+		{xp}		{99}
+		{explorer} {148}
 		{color}	{<830>}
 	};
 
 	{Austere} {
-		{lvl}		{164}
+		{lvl}		{165}
 		{city}	{(hidden)}
-		{pvp}		{8737}
+		{pvp}		{8740}
 		{class}	{shaman}
 		{xp}		{2}
 		{explorer} {13}
 		{color}	{<830>}
+	};
+
+	{Phe} {
+		{lvl}		{100}
+		{city}	{ashtan}
+		{pvp}		{28}
+		{class}	{runewarden}
+		{xp}		{335}
+		{explorer} {505}
+		{color}	{<400><Fff33ff>}
 	};
 
 	{Menpo} {
@@ -1958,6 +2021,16 @@
 		{color}	{<830>}
 	};
 
+	{Layta} {
+		{lvl}		{118}
+		{city}	{mhaldor}
+		{pvp}		{56}
+		{class}	{depthswalker}
+		{xp}		{56}
+		{explorer} {122}
+		{color}	{<110>}
+	};
+
 	{Lachlan} {
 		{lvl}		{101}
 		{city}	{(hidden)}
@@ -1966,6 +2039,16 @@
 		{xp}		{253}
 		{explorer} {78}
 		{color}	{<830>}
+	};
+
+	{Ertris} {
+		{lvl}		{12}
+		{city}	{hashan}
+		{pvp}		{0}
+		{class}	{runewarden}
+		{xp}		{0}
+		{explorer} {1134}
+		{color}	{<400><830>}
 	};
 
 	{Viceleritas} {
@@ -2021,10 +2104,10 @@
 	{Belaziel} {
 		{lvl}		{108}
 		{city}	{(hidden)}
-		{pvp}		{949}
-		{class}	{depthswalker}
-		{xp}		{141}
-		{explorer} {167}
+		{pvp}		{952}
+		{class}	{magi}
+		{xp}		{145}
+		{explorer} {168}
 		{color}	{<830>}
 	};
 
@@ -2041,9 +2124,9 @@
 	{Majin} {
 		{lvl}		{123}
 		{city}	{(hidden)}
-		{pvp}		{2077}
-		{class}	{blademaster}
-		{xp}		{41}
+		{pvp}		{2078}
+		{class}	{sentinel}
+		{xp}		{42}
 		{explorer} {28}
 		{color}	{<830>}
 	};
@@ -2061,10 +2144,10 @@
 	{Amranu} {
 		{lvl}		{127}
 		{city}	{hashan}
-		{pvp}		{5706}
-		{class}	{shaman}
-		{xp}		{28}
-		{explorer} {88}
+		{pvp}		{5719}
+		{class}	{pariah}
+		{xp}		{29}
+		{explorer} {92}
 		{color}	{<400><830>}
 	};
 
@@ -2203,8 +2286,8 @@
 		{city}	{mhaldor}
 		{pvp}		{4}
 		{class}	{druid}
-		{xp}		{550}
-		{explorer} {463}
+		{xp}		{544}
+		{explorer} {457}
 		{color}	{<110>}
 	};
 
@@ -2221,10 +2304,10 @@
 	{Axios} {
 		{lvl}		{118}
 		{city}	{(hidden)}
-		{pvp}		{2404}
+		{pvp}		{2417}
 		{class}	{magi}
-		{xp}		{54}
-		{explorer} {93}
+		{xp}		{55}
+		{explorer} {97}
 		{color}	{<830>}
 	};
 
@@ -2373,8 +2456,8 @@
 		{city}	{(none)}
 		{pvp}		{16}
 		{class}	{blademaster}
-		{xp}		{615}
-		{explorer} {464}
+		{xp}		{613}
+		{explorer} {460}
 		{color}	{<830>}
 	};
 
@@ -2403,8 +2486,18 @@
 		{city}	{eleusis}
 		{pvp}		{12}
 		{class}	{sylvan}
-		{xp}		{241}
-		{explorer} {495}
+		{xp}		{240}
+		{explorer} {475}
+		{color}	{<830>}
+	};
+
+	{Shigeru} {
+		{lvl}		{28}
+		{city}	{eleusis}
+		{pvp}		{1}
+		{class}	{monk}
+		{xp}		{0}
+		{explorer} {1127}
 		{color}	{<830>}
 	};
 
@@ -2439,12 +2532,12 @@
 	};
 
 	{Nefertem} {
-		{lvl}		{81}
+		{lvl}		{84}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{blademaster}
-		{xp}		{617}
-		{explorer} {674}
+		{xp}		{537}
+		{explorer} {667}
 		{color}	{<830>}
 	};
 
@@ -2471,10 +2564,10 @@
 	{Vothaec} {
 		{lvl}		{123}
 		{city}	{eleusis}
-		{pvp}		{3195}
-		{class}	{runewarden}
-		{xp}		{39}
-		{explorer} {169}
+		{pvp}		{3197}
+		{class}	{depthswalker}
+		{xp}		{40}
+		{explorer} {174}
 		{color}	{<830>}
 	};
 
@@ -2509,11 +2602,11 @@
 	};
 
 	{Moroa} {
-		{lvl}		{103}
+		{lvl}		{104}
 		{city}	{eleusis}
-		{pvp}		{960}
+		{pvp}		{975}
 		{class}	{druid}
-		{xp}		{213}
+		{xp}		{212}
 		{explorer} {18}
 		{color}	{<830>}
 	};
@@ -2553,8 +2646,8 @@
 		{city}	{eleusis}
 		{pvp}		{1}
 		{class}	{psion}
-		{xp}		{878}
-		{explorer} {889}
+		{xp}		{863}
+		{explorer} {872}
 		{color}	{<830>}
 	};
 
@@ -2599,12 +2692,12 @@
 	};
 
 	{Cthul} {
-		{lvl}		{80}
+		{lvl}		{81}
 		{city}	{ashtan}
 		{pvp}		{0}
 		{class}	{occultist}
-		{xp}		{636}
-		{explorer} {592}
+		{xp}		{630}
+		{explorer} {581}
 		{color}	{<400><Fff33ff>}
 	};
 
@@ -2653,17 +2746,17 @@
 		{city}	{cyrene}
 		{pvp}		{18}
 		{class}	{serpent}
-		{xp}		{676}
-		{explorer} {580}
+		{xp}		{669}
+		{explorer} {569}
 		{color}	{<830>}
 	};
 
 	{Gavriil} {
 		{lvl}		{112}
 		{city}	{eleusis}
-		{pvp}		{1041}
+		{pvp}		{1049}
 		{class}	{bard}
-		{xp}		{101}
+		{xp}		{103}
 		{explorer} {8}
 		{color}	{<830>}
 	};
@@ -2671,10 +2764,10 @@
 	{Agramon} {
 		{lvl}		{113}
 		{city}	{hashan}
-		{pvp}		{1266}
+		{pvp}		{1267}
 		{class}	{bard}
-		{xp}		{79}
-		{explorer} {195}
+		{xp}		{84}
+		{explorer} {200}
 		{color}	{<400><830>}
 	};
 
@@ -2783,8 +2876,8 @@
 		{city}	{eleusis}
 		{pvp}		{2}
 		{class}	{druid}
-		{xp}		{413}
-		{explorer} {425}
+		{xp}		{410}
+		{explorer} {414}
 		{color}	{<830>}
 	};
 
@@ -2799,12 +2892,12 @@
 	};
 
 	{Atikara} {
-		{lvl}		{79}
+		{lvl}		{80}
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{bard}
-		{xp}		{710}
-		{explorer} {761}
+		{xp}		{629}
+		{explorer} {708}
 		{color}	{<400><830>}
 	};
 
@@ -2883,8 +2976,8 @@
 		{city}	{ashtan}
 		{pvp}		{103}
 		{class}	{occultist}
-		{xp}		{12}
-		{explorer} {288}
+		{xp}		{13}
+		{explorer} {289}
 		{color}	{<400><Fff33ff>}
 	};
 
@@ -2949,12 +3042,12 @@
 	};
 
 	{Trendric} {
-		{lvl}		{130}
+		{lvl}		{131}
 		{city}	{eleusis}
-		{pvp}		{2761}
+		{pvp}		{2766}
 		{class}	{serpent}
 		{xp}		{22}
-		{explorer} {135}
+		{explorer} {139}
 		{color}	{<830>}
 	};
 
@@ -2993,7 +3086,7 @@
 		{city}	{cyrene}
 		{pvp}		{69}
 		{class}	{runewarden}
-		{xp}		{401}
+		{xp}		{404}
 		{explorer} {32}
 		{color}	{<830>}
 	};
@@ -3003,8 +3096,8 @@
 		{city}	{targossas}
 		{pvp}		{21}
 		{class}	{priest}
-		{xp}		{23}
-		{explorer} {248}
+		{xp}		{24}
+		{explorer} {232}
 		{color}	{<830>}
 	};
 
@@ -3013,8 +3106,8 @@
 		{city}	{cyrene}
 		{pvp}		{278}
 		{class}	{runewarden}
-		{xp}		{228}
-		{explorer} {97}
+		{xp}		{223}
+		{explorer} {83}
 		{color}	{<830>}
 	};
 
@@ -3023,8 +3116,8 @@
 		{city}	{(none)}
 		{pvp}		{61}
 		{class}	{serpent}
-		{xp}		{220}
-		{explorer} {202}
+		{xp}		{223}
+		{explorer} {209}
 		{color}	{<830>}
 	};
 
@@ -3063,8 +3156,8 @@
 		{city}	{hashan}
 		{pvp}		{6}
 		{class}	{blademaster}
-		{xp}		{755}
-		{explorer} {495}
+		{xp}		{750}
+		{explorer} {485}
 		{color}	{<400><830>}
 	};
 
@@ -3105,6 +3198,16 @@
 		{class}	{monk}
 		{xp}		{465}
 		{explorer} {214}
+		{color}	{<400><830>}
+	};
+
+	{Halbrand} {
+		{lvl}		{64}
+		{city}	{hashan}
+		{pvp}		{0}
+		{class}	{serpent}
+		{xp}		{901}
+		{explorer} {983}
 		{color}	{<400><830>}
 	};
 
@@ -3166,6 +3269,16 @@
 		{xp}		{6}
 		{explorer} {11}
 		{color}	{<830>}
+	};
+
+	{Micin} {
+		{lvl}		{1}
+		{city}	{ashtan}
+		{pvp}		{0}
+		{class}	{unnamable}
+		{xp}		{0}
+		{explorer} {1143}
+		{color}	{<400><Fff33ff>}
 	};
 
 	{Baptiste} {
@@ -3293,18 +3406,18 @@
 		{city}	{(hidden)}
 		{pvp}		{4439}
 		{class}	{blademaster}
-		{xp}		{135}
-		{explorer} {59}
+		{xp}		{139}
+		{explorer} {62}
 		{color}	{<830>}
 	};
 
 	{Dreddik} {
-		{lvl}		{56}
+		{lvl}		{59}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{1002}
-		{explorer} {992}
+		{xp}		{944}
+		{explorer} {952}
 		{color}	{<830>}
 	};
 
@@ -3352,9 +3465,9 @@
 		{lvl}		{126}
 		{city}	{cyrene}
 		{pvp}		{117}
-		{class}	{runewarden}
-		{xp}		{34}
-		{explorer} {517}
+		{class}	{serpent}
+		{xp}		{35}
+		{explorer} {490}
 		{color}	{<830>}
 	};
 
@@ -3393,8 +3506,8 @@
 		{city}	{(none)}
 		{pvp}		{0}
 		{class}	{bard}
-		{xp}		{177}
-		{explorer} {428}
+		{xp}		{180}
+		{explorer} {421}
 		{color}	{<830>}
 	};
 
@@ -3473,8 +3586,8 @@
 		{city}	{cyrene}
 		{pvp}		{2}
 		{class}	{magi}
-		{xp}		{624}
-		{explorer} {318}
+		{xp}		{617}
+		{explorer} {312}
 		{color}	{<830>}
 	};
 
@@ -3508,6 +3621,16 @@
 		{color}	{<400><Fff33ff>}
 	};
 
+	{Arbi} {
+		{lvl}		{1}
+		{city}	{mhaldor}
+		{pvp}		{0}
+		{class}	{infernal}
+		{xp}		{0}
+		{explorer} {1143}
+		{color}	{<110>}
+	};
+
 	{Ozmatiah} {
 		{lvl}		{125}
 		{city}	{targossas}
@@ -3538,6 +3661,16 @@
 		{color}	{<400><830>}
 	};
 
+	{Odrandara} {
+		{lvl}		{80}
+		{city}	{underworld}
+		{pvp}		{8}
+		{class}	{}
+		{xp}		{679}
+		{explorer} {1143}
+		{color}	{<414>}
+	};
+
 	{Perl} {
 		{lvl}		{100}
 		{city}	{cyrene}
@@ -3561,10 +3694,10 @@
 	{Karalden} {
 		{lvl}		{105}
 		{city}	{targossas}
-		{pvp}		{278}
+		{pvp}		{279}
 		{class}	{monk}
-		{xp}		{186}
-		{explorer} {115}
+		{xp}		{187}
+		{explorer} {118}
 		{color}	{<830>}
 	};
 
@@ -3582,19 +3715,19 @@
 		{lvl}		{127}
 		{city}	{(hidden)}
 		{pvp}		{346}
-		{class}	{runewarden}
-		{xp}		{31}
-		{explorer} {44}
+		{class}	{serpent}
+		{xp}		{32}
+		{explorer} {46}
 		{color}	{<830>}
 	};
 
 	{Leviticus} {
 		{lvl}		{103}
 		{city}	{mhaldor}
-		{pvp}		{1505}
-		{class}	{magi}
-		{xp}		{231}
-		{explorer} {306}
+		{pvp}		{1506}
+		{class}	{runewarden}
+		{xp}		{232}
+		{explorer} {307}
 		{color}	{<110>}
 	};
 
@@ -3611,10 +3744,10 @@
 	{Aziz} {
 		{lvl}		{102}
 		{city}	{(hidden)}
-		{pvp}		{399}
+		{pvp}		{404}
 		{class}	{blademaster}
-		{xp}		{250}
-		{explorer} {152}
+		{xp}		{247}
+		{explorer} {131}
 		{color}	{<830>}
 	};
 
@@ -3673,8 +3806,8 @@
 		{city}	{(none)}
 		{pvp}		{374}
 		{class}	{serpent}
-		{xp}		{164}
-		{explorer} {49}
+		{xp}		{167}
+		{explorer} {52}
 		{color}	{<830>}
 	};
 
@@ -3691,20 +3824,20 @@
 	{Lira} {
 		{lvl}		{121}
 		{city}	{eleusis}
-		{pvp}		{19}
-		{class}	{sylvan}
+		{pvp}		{25}
+		{class}	{runewarden}
 		{xp}		{45}
-		{explorer} {173}
+		{explorer} {177}
 		{color}	{<830>}
 	};
 
 	{Mokovas} {
-		{lvl}		{79}
+		{lvl}		{80}
 		{city}	{targossas}
 		{pvp}		{0}
 		{class}	{alchemist}
-		{xp}		{712}
-		{explorer} {970}
+		{xp}		{635}
+		{explorer} {932}
 		{color}	{<830>}
 	};
 
@@ -3763,8 +3896,8 @@
 		{city}	{hashan}
 		{pvp}		{184}
 		{class}	{magi}
-		{xp}		{274}
-		{explorer} {78}
+		{xp}		{275}
+		{explorer} {83}
 		{color}	{<400><830>}
 	};
 
@@ -3793,8 +3926,8 @@
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{blademaster}
-		{xp}		{630}
-		{explorer} {338}
+		{xp}		{623}
+		{explorer} {337}
 		{color}	{<830>}
 	};
 
@@ -3881,10 +4014,10 @@
 	{Eril} {
 		{lvl}		{100}
 		{city}	{hashan}
-		{pvp}		{462}
+		{pvp}		{464}
 		{class}	{depthswalker}
 		{xp}		{294}
-		{explorer} {160}
+		{explorer} {165}
 		{color}	{<400><830>}
 	};
 
@@ -3893,8 +4026,8 @@
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{blademaster}
-		{xp}		{1129}
-		{explorer} {1132}
+		{xp}		{1072}
+		{explorer} {1069}
 		{color}	{<400><830>}
 	};
 
@@ -3923,8 +4056,18 @@
 		{city}	{eleusis}
 		{pvp}		{6}
 		{class}	{sylvan}
-		{xp}		{540}
-		{explorer} {615}
+		{xp}		{524}
+		{explorer} {606}
+		{color}	{<830>}
+	};
+
+	{Herenna} {
+		{lvl}		{66}
+		{city}	{(none)}
+		{pvp}		{2}
+		{class}	{blademaster}
+		{xp}		{870}
+		{explorer} {648}
 		{color}	{<830>}
 	};
 
@@ -3941,9 +4084,9 @@
 	{Entaro} {
 		{lvl}		{131}
 		{city}	{mhaldor}
-		{pvp}		{3772}
+		{pvp}		{3774}
 		{class}	{magi}
-		{xp}		{19}
+		{xp}		{20}
 		{explorer} {14}
 		{color}	{<110>}
 	};
@@ -4033,8 +4176,8 @@
 		{city}	{cyrene}
 		{pvp}		{2}
 		{class}	{depthswalker}
-		{xp}		{365}
-		{explorer} {451}
+		{xp}		{366}
+		{explorer} {443}
 		{color}	{<830>}
 	};
 
@@ -4083,8 +4226,8 @@
 		{city}	{hashan}
 		{pvp}		{66}
 		{class}	{serpent}
-		{xp}		{117}
-		{explorer} {196}
+		{xp}		{113}
+		{explorer} {201}
 		{color}	{<400><830>}
 	};
 
@@ -4163,8 +4306,8 @@
 		{city}	{cyrene}
 		{pvp}		{4}
 		{class}	{jester}
-		{xp}		{317}
-		{explorer} {223}
+		{xp}		{321}
+		{explorer} {230}
 		{color}	{<830>}
 	};
 
@@ -4193,18 +4336,18 @@
 		{city}	{cyrene}
 		{pvp}		{2}
 		{class}	{serpent}
-		{xp}		{471}
-		{explorer} {262}
+		{xp}		{472}
+		{explorer} {270}
 		{color}	{<830>}
 	};
 
 	{Xarthus} {
 		{lvl}		{108}
 		{city}	{mhaldor}
-		{pvp}		{972}
+		{pvp}		{976}
 		{class}	{runewarden}
-		{xp}		{139}
-		{explorer} {245}
+		{xp}		{137}
+		{explorer} {250}
 		{color}	{<110>}
 	};
 
@@ -4243,7 +4386,7 @@
 		{city}	{hashan}
 		{pvp}		{206}
 		{class}	{runewarden}
-		{xp}		{76}
+		{xp}		{78}
 		{explorer} {2}
 		{color}	{<400><830>}
 	};
@@ -4258,13 +4401,23 @@
 		{color}	{<400><830>}
 	};
 
+	{Svenson} {
+		{lvl}		{105}
+		{city}	{targossas}
+		{pvp}		{78}
+		{class}	{priest}
+		{xp}		{196}
+		{explorer} {297}
+		{color}	{<830>}
+	};
+
 	{Utan} {
 		{lvl}		{104}
 		{city}	{hashan}
-		{pvp}		{88}
+		{pvp}		{130}
 		{class}	{alchemist}
-		{xp}		{198}
-		{explorer} {459}
+		{xp}		{200}
+		{explorer} {438}
 		{color}	{<400><830>}
 	};
 
@@ -4399,12 +4552,12 @@
 	};
 
 	{Antoninus} {
-		{lvl}		{108}
+		{lvl}		{109}
 		{city}	{mhaldor}
-		{pvp}		{2824}
-		{class}	{runewarden}
-		{xp}		{128}
-		{explorer} {250}
+		{pvp}		{2845}
+		{class}	{infernal}
+		{xp}		{133}
+		{explorer} {254}
 		{color}	{<110>}
 	};
 
@@ -4432,8 +4585,8 @@
 		{lvl}		{114}
 		{city}	{eleusis}
 		{pvp}		{173}
-		{class}	{depthswalker}
-		{xp}		{78}
+		{class}	{druid}
+		{xp}		{81}
 		{explorer} {19}
 		{color}	{<830>}
 	};
@@ -4553,8 +4706,8 @@
 		{city}	{cyrene}
 		{pvp}		{21}
 		{class}	{monk}
-		{xp}		{545}
-		{explorer} {540}
+		{xp}		{542}
+		{explorer} {528}
 		{color}	{<830>}
 	};
 
@@ -4661,10 +4814,10 @@
 	{Gallus} {
 		{lvl}		{106}
 		{city}	{eleusis}
-		{pvp}		{164}
-		{class}	{magi}
-		{xp}		{157}
-		{explorer} {173}
+		{pvp}		{165}
+		{class}	{depthswalker}
+		{xp}		{160}
+		{explorer} {177}
 		{color}	{<830>}
 	};
 
@@ -4684,7 +4837,7 @@
 		{pvp}		{229}
 		{class}	{runewarden}
 		{xp}		{109}
-		{explorer} {72}
+		{explorer} {77}
 		{color}	{<830>}
 	};
 
@@ -4702,9 +4855,9 @@
 		{lvl}		{90}
 		{city}	{mhaldor}
 		{pvp}		{85}
-		{class}	{infernal}
-		{xp}		{443}
-		{explorer} {297}
+		{class}	{depthswalker}
+		{xp}		{444}
+		{explorer} {290}
 		{color}	{<110>}
 	};
 
@@ -4722,19 +4875,19 @@
 		{lvl}		{109}
 		{city}	{cyrene}
 		{pvp}		{987}
-		{class}	{runewarden}
-		{xp}		{126}
-		{explorer} {90}
+		{class}	{magi}
+		{xp}		{128}
+		{explorer} {93}
 		{color}	{<830>}
 	};
 
 	{Nezaya} {
 		{lvl}		{105}
 		{city}	{hashan}
-		{pvp}		{288}
+		{pvp}		{292}
 		{class}	{depthswalker}
-		{xp}		{178}
-		{explorer} {100}
+		{xp}		{179}
+		{explorer} {103}
 		{color}	{<400><830>}
 	};
 
@@ -4751,10 +4904,10 @@
 	{Mizik} {
 		{lvl}		{133}
 		{city}	{ashtan}
-		{pvp}		{17855}
-		{class}	{occultist}
-		{xp}		{16}
-		{explorer} {98}
+		{pvp}		{17893}
+		{class}	{runewarden}
+		{xp}		{17}
+		{explorer} {101}
 		{color}	{<400><Fff33ff>}
 	};
 
@@ -4815,6 +4968,16 @@
 		{class}	{psion}
 		{xp}		{774}
 		{explorer} {811}
+		{color}	{<830>}
+	};
+
+	{Sagan} {
+		{lvl}		{103}
+		{city}	{(none)}
+		{pvp}		{15}
+		{class}	{runewarden}
+		{xp}		{217}
+		{explorer} {33}
 		{color}	{<830>}
 	};
 
@@ -4943,8 +5106,8 @@
 		{city}	{hashan}
 		{pvp}		{22}
 		{class}	{magi}
-		{xp}		{26}
-		{explorer} {66}
+		{xp}		{27}
+		{explorer} {68}
 		{color}	{<400><830>}
 	};
 
@@ -5061,10 +5224,10 @@
 	{Ardor} {
 		{lvl}		{100}
 		{city}	{hashan}
-		{pvp}		{212}
+		{pvp}		{215}
 		{class}	{runewarden}
-		{xp}		{312}
-		{explorer} {198}
+		{xp}		{310}
+		{explorer} {203}
 		{color}	{<400><830>}
 	};
 
@@ -5089,12 +5252,12 @@
 	};
 
 	{Eiat} {
-		{lvl}		{95}
+		{lvl}		{96}
 		{city}	{eleusis}
 		{pvp}		{17}
 		{class}	{sylvan}
-		{xp}		{401}
-		{explorer} {241}
+		{xp}		{398}
+		{explorer} {216}
 		{color}	{<830>}
 	};
 
@@ -5129,12 +5292,12 @@
 	};
 
 	{Ann} {
-		{lvl}		{87}
+		{lvl}		{91}
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{486}
-		{explorer} {520}
+		{xp}		{435}
+		{explorer} {501}
 		{color}	{<400><830>}
 	};
 
@@ -5172,9 +5335,9 @@
 		{lvl}		{91}
 		{city}	{hashan}
 		{pvp}		{87}
-		{class}	{psion}
-		{xp}		{440}
-		{explorer} {242}
+		{class}	{magi}
+		{xp}		{443}
+		{explorer} {244}
 		{color}	{<400><830>}
 	};
 
@@ -5238,6 +5401,16 @@
 		{color}	{<830>}
 	};
 
+	{Ivoria} {
+		{lvl}		{81}
+		{city}	{(none)}
+		{pvp}		{0}
+		{class}	{serpent}
+		{xp}		{611}
+		{explorer} {883}
+		{color}	{<830>}
+	};
+
 	{Nomak} {
 		{lvl}		{5}
 		{city}	{ashtan}
@@ -5249,12 +5422,22 @@
 	};
 
 	{Szael} {
-		{lvl}		{82}
+		{lvl}		{84}
 		{city}	{targossas}
 		{pvp}		{13}
-		{class}	{runewarden}
-		{xp}		{571}
-		{explorer} {740}
+		{class}	{priest}
+		{xp}		{539}
+		{explorer} {713}
+		{color}	{<830>}
+	};
+
+	{Vexpera} {
+		{lvl}		{7}
+		{city}	{eleusis}
+		{pvp}		{0}
+		{class}	{druid}
+		{xp}		{0}
+		{explorer} {1134}
 		{color}	{<830>}
 	};
 
@@ -5281,10 +5464,10 @@
 	{Erikarn} {
 		{lvl}		{105}
 		{city}	{hashan}
-		{pvp}		{135}
+		{pvp}		{136}
 		{class}	{magi}
-		{xp}		{180}
-		{explorer} {303}
+		{xp}		{182}
+		{explorer} {301}
 		{color}	{<400><830>}
 	};
 
@@ -5371,10 +5554,10 @@
 	{Proficy} {
 		{lvl}		{160}
 		{city}	{mhaldor}
-		{pvp}		{25497}
-		{class}	{bard}
+		{pvp}		{25518}
+		{class}	{infernal}
 		{xp}		{3}
-		{explorer} {42}
+		{explorer} {44}
 		{color}	{<110>}
 	};
 
@@ -5401,10 +5584,10 @@
 	{Ulvin} {
 		{lvl}		{107}
 		{city}	{(hidden)}
-		{pvp}		{872}
+		{pvp}		{881}
 		{class}	{psion}
-		{xp}		{150}
-		{explorer} {43}
+		{xp}		{152}
+		{explorer} {45}
 		{color}	{<830>}
 	};
 
@@ -5424,7 +5607,7 @@
 		{pvp}		{486}
 		{class}	{druid}
 		{xp}		{208}
-		{explorer} {94}
+		{explorer} {96}
 		{color}	{<830>}
 	};
 
@@ -5493,8 +5676,8 @@
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{pariah}
-		{xp}		{667}
-		{explorer} {471}
+		{xp}		{655}
+		{explorer} {464}
 		{color}	{<400><830>}
 	};
 
@@ -5511,10 +5694,10 @@
 	{Zerboxx} {
 		{lvl}		{116}
 		{city}	{targossas}
-		{pvp}		{148}
+		{pvp}		{149}
 		{class}	{magi}
-		{xp}		{65}
-		{explorer} {48}
+		{xp}		{68}
+		{explorer} {50}
 		{color}	{<830>}
 	};
 
@@ -5523,38 +5706,38 @@
 		{city}	{(none)}
 		{pvp}		{497}
 		{class}	{magi}
-		{xp}		{29}
-		{explorer} {155}
+		{xp}		{30}
+		{explorer} {164}
 		{color}	{<830>}
 	};
 
 	{Inki} {
-		{lvl}		{83}
+		{lvl}		{85}
 		{city}	{hashan}
 		{pvp}		{1}
 		{class}	{alchemist}
-		{xp}		{554}
-		{explorer} {450}
+		{xp}		{519}
+		{explorer} {432}
 		{color}	{<400><830>}
 	};
 
 	{Dilek} {
-		{lvl}		{105}
+		{lvl}		{106}
 		{city}	{eleusis}
 		{pvp}		{333}
 		{class}	{sylvan}
-		{xp}		{175}
-		{explorer} {362}
+		{xp}		{176}
+		{explorer} {367}
 		{color}	{<830>}
 	};
 
 	{Sevyn} {
-		{lvl}		{74}
+		{lvl}		{77}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{bard}
-		{xp}		{812}
-		{explorer} {719}
+		{xp}		{735}
+		{explorer} {659}
 		{color}	{<830>}
 	};
 
@@ -5569,12 +5752,12 @@
 	};
 
 	{Strite} {
-		{lvl}		{57}
+		{lvl}		{73}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{986}
-		{explorer} {825}
+		{xp}		{814}
+		{explorer} {777}
 		{color}	{<830>}
 	};
 
@@ -5591,20 +5774,20 @@
 	{Haeron} {
 		{lvl}		{113}
 		{city}	{eleusis}
-		{pvp}		{348}
-		{class}	{runewarden}
-		{xp}		{87}
-		{explorer} {367}
+		{pvp}		{364}
+		{class}	{bard}
+		{xp}		{89}
+		{explorer} {361}
 		{color}	{<830>}
 	};
 
 	{Lyrin} {
 		{lvl}		{110}
 		{city}	{eleusis}
-		{pvp}		{1882}
-		{class}	{magi}
-		{xp}		{117}
-		{explorer} {190}
+		{pvp}		{1906}
+		{class}	{psion}
+		{xp}		{116}
+		{explorer} {194}
 		{color}	{<830>}
 	};
 
@@ -5683,8 +5866,8 @@
 		{city}	{targossas}
 		{pvp}		{274}
 		{class}	{depthswalker}
-		{xp}		{274}
-		{explorer} {262}
+		{xp}		{272}
+		{explorer} {265}
 		{color}	{<830>}
 	};
 
@@ -5749,12 +5932,12 @@
 	};
 
 	{Constanstia} {
-		{lvl}		{86}
+		{lvl}		{92}
 		{city}	{hashan}
 		{pvp}		{1}
 		{class}	{runewarden}
-		{xp}		{495}
-		{explorer} {842}
+		{xp}		{433}
+		{explorer} {816}
 		{color}	{<400><830>}
 	};
 
@@ -5869,12 +6052,12 @@
 	};
 
 	{Ficus} {
-		{lvl}		{112}
+		{lvl}		{113}
 		{city}	{eleusis}
-		{pvp}		{749}
+		{pvp}		{760}
 		{class}	{druid}
-		{xp}		{88}
-		{explorer} {249}
+		{xp}		{94}
+		{explorer} {252}
 		{color}	{<830>}
 	};
 
@@ -5909,12 +6092,12 @@
 	};
 
 	{Beir} {
-		{lvl}		{75}
+		{lvl}		{76}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{monk}
-		{xp}		{782}
-		{explorer} {839}
+		{xp}		{753}
+		{explorer} {817}
 		{color}	{<830>}
 	};
 
@@ -5923,8 +6106,8 @@
 		{city}	{mhaldor}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{211}
-		{explorer} {577}
+		{xp}		{207}
+		{explorer} {564}
 		{color}	{<110>}
 	};
 
@@ -5942,9 +6125,9 @@
 		{lvl}		{104}
 		{city}	{hashan}
 		{pvp}		{1408}
-		{class}	{depthswalker}
-		{xp}		{197}
-		{explorer} {478}
+		{class}	{monk}
+		{xp}		{198}
+		{explorer} {467}
 		{color}	{<400><830>}
 	};
 
@@ -5958,13 +6141,23 @@
 		{color}	{<830>}
 	};
 
+	{Uacel} {
+		{lvl}		{80}
+		{city}	{underworld}
+		{pvp}		{215}
+		{class}	{}
+		{xp}		{0}
+		{explorer} {1143}
+		{color}	{<414>}
+	};
+
 	{Azaka} {
 		{lvl}		{92}
 		{city}	{targossas}
 		{pvp}		{37}
 		{class}	{paladin}
-		{xp}		{426}
-		{explorer} {404}
+		{xp}		{422}
+		{explorer} {398}
 		{color}	{<830>}
 	};
 
@@ -6043,8 +6236,8 @@
 		{city}	{(hidden)}
 		{pvp}		{1281}
 		{class}	{runewarden}
-		{xp}		{67}
-		{explorer} {52}
+		{xp}		{69}
+		{explorer} {54}
 		{color}	{<830>}
 	};
 
@@ -6056,6 +6249,16 @@
 		{xp}		{201}
 		{explorer} {132}
 		{color}	{<830>}
+	};
+
+	{Chris} {
+		{lvl}		{107}
+		{city}	{hashan}
+		{pvp}		{630}
+		{class}	{serpent}
+		{xp}		{150}
+		{explorer} {216}
+		{color}	{<400><830>}
 	};
 
 	{Boklwa} {
@@ -6083,8 +6286,8 @@
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{magi}
-		{xp}		{475}
-		{explorer} {458}
+		{xp}		{465}
+		{explorer} {449}
 		{color}	{<830>}
 	};
 
@@ -6188,6 +6391,16 @@
 		{color}	{<830>}
 	};
 
+	{Antares} {
+		{lvl}		{80}
+		{city}	{(none)}
+		{pvp}		{5}
+		{class}	{sylvan}
+		{xp}		{637}
+		{explorer} {317}
+		{color}	{<830>}
+	};
+
 	{Anaria} {
 		{lvl}		{100}
 		{city}	{(none)}
@@ -6209,12 +6422,12 @@
 	};
 
 	{Sinvier} {
-		{lvl}		{84}
+		{lvl}		{85}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{bard}
-		{xp}		{528}
-		{explorer} {445}
+		{xp}		{518}
+		{explorer} {426}
 		{color}	{<830>}
 	};
 
@@ -6268,6 +6481,16 @@
 		{color}	{<830>}
 	};
 
+	{Itkovian} {
+		{lvl}		{103}
+		{city}	{targossas}
+		{pvp}		{783}
+		{class}	{runewarden}
+		{xp}		{229}
+		{explorer} {389}
+		{color}	{<830>}
+	};
+
 	{Fayne} {
 		{lvl}		{75}
 		{city}	{hashan}
@@ -6291,10 +6514,10 @@
 	{Bulwer} {
 		{lvl}		{99}
 		{city}	{hashan}
-		{pvp}		{342}
+		{pvp}		{352}
 		{class}	{magi}
-		{xp}		{382}
-		{explorer} {513}
+		{xp}		{372}
+		{explorer} {504}
 		{color}	{<400><830>}
 	};
 
@@ -6343,18 +6566,18 @@
 		{city}	{hashan}
 		{pvp}		{36}
 		{class}	{runewarden}
-		{xp}		{432}
-		{explorer} {743}
+		{xp}		{427}
+		{explorer} {727}
 		{color}	{<400><830>}
 	};
 
 	{Ceredia} {
 		{lvl}		{130}
 		{city}	{hashan}
-		{pvp}		{226}
+		{pvp}		{231}
 		{class}	{shaman}
-		{xp}		{24}
-		{explorer} {217}
+		{xp}		{25}
+		{explorer} {223}
 		{color}	{<400><830>}
 	};
 
@@ -6403,8 +6626,8 @@
 		{city}	{cyrene}
 		{pvp}		{7}
 		{class}	{bard}
-		{xp}		{533}
-		{explorer} {558}
+		{xp}		{531}
+		{explorer} {549}
 		{color}	{<830>}
 	};
 
@@ -6464,7 +6687,7 @@
 		{pvp}		{4}
 		{class}	{magi}
 		{xp}		{334}
-		{explorer} {220}
+		{explorer} {205}
 		{color}	{<830>}
 	};
 
@@ -6499,12 +6722,12 @@
 	};
 
 	{Galyn} {
-		{lvl}		{44}
+		{lvl}		{80}
 		{city}	{mhaldor}
 		{pvp}		{0}
 		{class}	{apostate}
-		{xp}		{1090}
-		{explorer} {1199}
+		{xp}		{646}
+		{explorer} {792}
 		{color}	{<110>}
 	};
 
@@ -6521,10 +6744,10 @@
 	{Wraiph} {
 		{lvl}		{81}
 		{city}	{mhaldor}
-		{pvp}		{1}
+		{pvp}		{2}
 		{class}	{psion}
-		{xp}		{615}
-		{explorer} {725}
+		{xp}		{600}
+		{explorer} {716}
 		{color}	{<110>}
 	};
 
@@ -6623,18 +6846,18 @@
 		{city}	{hashan}
 		{pvp}		{149}
 		{class}	{bard}
-		{xp}		{376}
-		{explorer} {279}
+		{xp}		{367}
+		{explorer} {276}
 		{color}	{<400><830>}
 	};
 
 	{Ante} {
 		{lvl}		{109}
 		{city}	{targossas}
-		{pvp}		{1702}
-		{class}	{depthswalker}
-		{xp}		{128}
-		{explorer} {234}
+		{pvp}		{1720}
+		{class}	{runewarden}
+		{xp}		{129}
+		{explorer} {241}
 		{color}	{<830>}
 	};
 
@@ -6662,9 +6885,9 @@
 		{lvl}		{119}
 		{city}	{(none)}
 		{pvp}		{93}
-		{class}	{magi}
-		{xp}		{49}
-		{explorer} {64}
+		{class}	{runewarden}
+		{xp}		{52}
+		{explorer} {66}
 		{color}	{<830>}
 	};
 
@@ -6709,11 +6932,11 @@
 	};
 
 	{Kieva} {
-		{lvl}		{123}
+		{lvl}		{124}
 		{city}	{cyrene}
 		{pvp}		{69}
 		{class}	{runewarden}
-		{xp}		{37}
+		{xp}		{38}
 		{explorer} {16}
 		{color}	{<830>}
 	};
@@ -7052,9 +7275,9 @@
 		{lvl}		{154}
 		{city}	{cyrene}
 		{pvp}		{449}
-		{class}	{runewarden}
+		{class}	{serpent}
 		{xp}		{4}
-		{explorer} {76}
+		{explorer} {81}
 		{color}	{<830>}
 	};
 
@@ -7063,7 +7286,7 @@
 		{city}	{hashan}
 		{pvp}		{7}
 		{class}	{blademaster}
-		{xp}		{238}
+		{xp}		{240}
 		{explorer} {295}
 		{color}	{<400><830>}
 	};
@@ -7111,30 +7334,30 @@
 	{Smashy} {
 		{lvl}		{107}
 		{city}	{mhaldor}
-		{pvp}		{1511}
+		{pvp}		{1513}
 		{class}	{monk}
-		{xp}		{151}
-		{explorer} {200}
+		{xp}		{155}
+		{explorer} {206}
 		{color}	{<110>}
 	};
 
 	{Aesior} {
-		{lvl}		{60}
+		{lvl}		{69}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{serpent}
-		{xp}		{951}
-		{explorer} {1046}
+		{xp}		{853}
+		{explorer} {967}
 		{color}	{<830>}
 	};
 
 	{Orinna} {
-		{lvl}		{82}
+		{lvl}		{84}
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{magi}
-		{xp}		{593}
-		{explorer} {818}
+		{xp}		{525}
+		{explorer} {696}
 		{color}	{<400><830>}
 	};
 
@@ -7173,8 +7396,8 @@
 		{city}	{hashan}
 		{pvp}		{0}
 		{class}	{runewarden}
-		{xp}		{595}
-		{explorer} {656}
+		{xp}		{586}
+		{explorer} {637}
 		{color}	{<400><830>}
 	};
 
@@ -7228,13 +7451,23 @@
 		{color}	{<400><Fff33ff>}
 	};
 
+	{Unandira} {
+		{lvl}		{80}
+		{city}	{underworld}
+		{pvp}		{42}
+		{class}	{}
+		{xp}		{688}
+		{explorer} {994}
+		{color}	{<414>}
+	};
+
 	{Voli} {
 		{lvl}		{101}
 		{city}	{(hidden)}
 		{pvp}		{13}
 		{class}	{jester}
-		{xp}		{274}
-		{explorer} {492}
+		{xp}		{277}
+		{explorer} {480}
 		{color}	{<830>}
 	};
 
@@ -7272,9 +7505,9 @@
 		{lvl}		{136}
 		{city}	{cyrene}
 		{pvp}		{42}
-		{class}	{jester}
+		{class}	{alchemist}
 		{xp}		{8}
-		{explorer} {177}
+		{explorer} {180}
 		{color}	{<830>}
 	};
 
@@ -7311,20 +7544,20 @@
 	{Dunn} {
 		{lvl}		{132}
 		{city}	{ashtan}
-		{pvp}		{19630}
+		{pvp}		{19632}
 		{class}	{runewarden}
-		{xp}		{17}
-		{explorer} {35}
+		{xp}		{18}
+		{explorer} {36}
 		{color}	{<400><Fff33ff>}
 	};
 
 	{Elathaen} {
 		{lvl}		{100}
 		{city}	{eleusis}
-		{pvp}		{60}
+		{pvp}		{62}
 		{class}	{serpent}
-		{xp}		{334}
-		{explorer} {269}
+		{xp}		{335}
+		{explorer} {273}
 		{color}	{<830>}
 	};
 
@@ -7333,18 +7566,18 @@
 		{city}	{targossas}
 		{pvp}		{26}
 		{class}	{druid}
-		{xp}		{75}
-		{explorer} {178}
+		{xp}		{76}
+		{explorer} {183}
 		{color}	{<830>}
 	};
 
 	{Artanis} {
 		{lvl}		{113}
 		{city}	{targossas}
-		{pvp}		{267}
+		{pvp}		{269}
 		{class}	{runewarden}
-		{xp}		{86}
-		{explorer} {147}
+		{xp}		{88}
+		{explorer} {157}
 		{color}	{<830>}
 	};
 
@@ -7399,12 +7632,12 @@
 	};
 
 	{Lexxie} {
-		{lvl}		{14}
+		{lvl}		{67}
 		{city}	{mhaldor}
 		{pvp}		{0}
 		{class}	{infernal}
-		{xp}		{0}
-		{explorer} {1189}
+		{xp}		{868}
+		{explorer} {1006}
 		{color}	{<110>}
 	};
 
@@ -7419,12 +7652,12 @@
 	};
 
 	{Renly} {
-		{lvl}		{55}
+		{lvl}		{57}
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{alchemist}
-		{xp}		{1012}
-		{explorer} {876}
+		{xp}		{955}
+		{explorer} {818}
 		{color}	{<830>}
 	};
 
@@ -7442,9 +7675,9 @@
 		{lvl}		{100}
 		{city}	{hashan}
 		{pvp}		{565}
-		{class}	{blademaster}
-		{xp}		{325}
-		{explorer} {206}
+		{class}	{shaman}
+		{xp}		{326}
+		{explorer} {210}
 		{color}	{<400><830>}
 	};
 
@@ -7601,10 +7834,10 @@
 	{Tih} {
 		{lvl}		{116}
 		{city}	{eleusis}
-		{pvp}		{1456}
+		{pvp}		{1465}
 		{class}	{depthswalker}
-		{xp}		{68}
-		{explorer} {416}
+		{xp}		{70}
+		{explorer} {404}
 		{color}	{<830>}
 	};
 
@@ -7636,6 +7869,26 @@
 		{xp}		{123}
 		{explorer} {60}
 		{color}	{<830>}
+	};
+
+	{Kayzoc} {
+		{lvl}		{105}
+		{city}	{hashan}
+		{pvp}		{16}
+		{class}	{runewarden}
+		{xp}		{184}
+		{explorer} {287}
+		{color}	{<400><830>}
+	};
+
+	{Yenifer} {
+		{lvl}		{15}
+		{city}	{hashan}
+		{pvp}		{0}
+		{class}	{serpent}
+		{xp}		{0}
+		{explorer} {1078}
+		{color}	{<400><830>}
 	};
 
 	{Celandine} {
@@ -7673,8 +7926,8 @@
 		{city}	{cyrene}
 		{pvp}		{0}
 		{class}	{serpent}
-		{xp}		{714}
-		{explorer} {310}
+		{xp}		{710}
+		{explorer} {306}
 		{color}	{<830>}
 	};
 
@@ -7701,10 +7954,10 @@
 	{Ghi} {
 		{lvl}		{83}
 		{city}	{eleusis}
-		{pvp}		{81}
-		{class}	{sentinel}
-		{xp}		{548}
-		{explorer} {687}
+		{pvp}		{90}
+		{class}	{magi}
+		{xp}		{540}
+		{explorer} {673}
 		{color}	{<830>}
 	};
 
@@ -7713,8 +7966,8 @@
 		{city}	{targossas}
 		{pvp}		{64}
 		{class}	{priest}
-		{xp}		{176}
-		{explorer} {216}
+		{xp}		{178}
+		{explorer} {223}
 		{color}	{<830>}
 	};
 
@@ -7779,12 +8032,12 @@
 	};
 
 	{Blonk} {
-		{lvl}		{108}
+		{lvl}		{109}
 		{city}	{hashan}
-		{pvp}		{536}
-		{class}	{runewarden}
-		{xp}		{136}
-		{explorer} {297}
+		{pvp}		{540}
+		{class}	{pariah}
+		{xp}		{134}
+		{explorer} {296}
 		{color}	{<400><830>}
 	};
 
@@ -7809,12 +8062,12 @@
 	};
 
 	{Kasotus} {
-		{lvl}		{115}
+		{lvl}		{116}
 		{city}	{cyrene}
-		{pvp}		{64}
+		{pvp}		{67}
 		{class}	{blademaster}
-		{xp}		{73}
-		{explorer} {120}
+		{xp}		{75}
+		{explorer} {104}
 		{color}	{<830>}
 	};
 

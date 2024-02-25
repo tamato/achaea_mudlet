@@ -103,6 +103,10 @@
    #if {"%1" === ""}  { 
       #send {hermits}
    } { 
+      #list room_window[tab][items] find {monolith} idx;
+      print IDX $idx;
+      #if {$idx} {print Monolith present, find another room; #return;};
+
       #send {$addfree outd hermit};
       #send {$addfree activate hermit %1};
       print {Can hermit be used off balance?};
@@ -120,18 +124,47 @@
    };
 };
 
+#class priestess kill
+#class priestess open
+
+#nop when fling is used.;
+#nop You shuffle a tarot card inscribed with the High Priestess out of your deck, bringing the total number of remaining cards to 89;
+
+#nop when outd is used;
+#nop You shuffle a card with the image of the High Priestess out of your deck, bringing the total remaining to 86;
+#line oneshot #action {High Priestess %* bringing the total %2 to %3.$} {
+   #var priCards %3; 
+   updateCharUI; 
+};
+
+#line oneshot #action {Raising the High Priestess tarot over your head} {
+   #var priestessEnable 1; 
+   #var priStatus {Ready};
+
+   #nop Have it out of deck, it could be similar to the rift in that some things my block getting it out.;
+   #nop TODO Should do this for FOOL too.;
+   #nop #send {outd priestess};
+   updateCharUI;
+   print Healed from Priestess;
+
+   #class priestess clear
+};
+
+#class priestess close
+#class priestess save
+#class priestess clear
+
 #var priStatus {Ready};
+#var priCards 0;
 #alias {pri} {
+   #nop Since this actin is nested in the Alias we HAVE to use an extra %;
+   #class priestess load;
+
+   #nop #send {$insfree fling priestess at me};
    #send {$insfree fling priestess at me};
    #var priStatus {Qd};
-
-   #line oneshot #action {Raising the High Priestess tarot over your head} {
-      #var priestessEnable 0; 
-      #var priStatus {Ready};
-      #nop Have it out of deck, it could be similar to the rift in that some things my block getting it out.;
-      #send {outd priestess};
-      updateCharUI;
-   };
+   #var priestessEnable 0; 
+   updateCharUI;
 };
 
 #nop Alias only match at the start of a line.;
@@ -167,6 +200,65 @@
          #unvar dest;
       }};
    }
+};
+
+#nop Fool, 35 sec cooldown;
+
+#nop 18:06:21.90 start;
+#nop 8:06:56.61 O ends;
+#var foolMaxTimer 35;
+#var remainingFoolTime 0;
+#alias {fool} {
+   #send {$addfree fling fool at me};
+
+   #line oneshot #action {^You press the Fool tarot to your forehead.$}{
+      #line oneshot #high {%*} {reverse};
+      #var remainingFoolTime $foolMaxTimer;
+
+      #ticker foolTimer {
+         #math remainingFoolTime {$remainingFoolTime - 1};
+         updateCharUI;
+
+         #if {remainingFoolTime <= 0} {#unticker foolTimer; #var remainingFoolTime 0;};
+      } {1};
+
+      updateCharUI;
+   };
+
+   #line oneshot #high {^You may heal another affliction$}{reverse};
+};
+
+#alias {inscr} {
+   #var cardcount 0;
+   #if {&{2} == 0} 
+      {#var cardcount 20};
+      {#var cardcount %1};
+   
+   #var card %1;
+   #send {outd $cardcount blank};
+   #send {inscribe blank with $cardcount $card};
+
+   #line oneshot #action {You have successfully inscribed the image of the %%1 on your Tarot card} {
+      #line oneshot #high {%%*} {reverse};
+      #send {ind all $card};
+   };
+
+   #unvar card;
+   #unvar cardcount;
+};
+
+#alias {dl} {
+   #line oneshot #action {{.+}[%%!s%%1] Priestess} {
+      #var priCards %%1;
+      updateCharUI;
+   };
+
+   #line oneshot #action {{.+}[%%!s%%1] Hermit} {
+      #var hermitCards %%1;
+      updateCharUI;
+   };
+
+   #send {dl};
 };
 
 #class tarot close;

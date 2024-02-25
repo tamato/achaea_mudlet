@@ -30,14 +30,16 @@ with open('world.tt', 'w') as f:
             environment = rooms['environment']
 
 def getAreaIdsForRegion():
-    for areas in parsed['areas']:
-        areaid = areas["id"]
-        for rooms in areas['rooms']:
-            if 'userData' in rooms:
-                user = rooms['userData']
+    for area in parsed['areas']:
+        areaid = area["id"]
+        for room in area['rooms']:
+            if 'userData' in room:
+                user = room['userData']
                 if 'Game Area' in user:
-                    print(f'{areaid}:Region: {user["Game Area"]}, sub: {areas["name"]}')
-            break
+                    print(f'{areaid}:Region: {user["Game Area"]}, sub: {area["name"]}')
+            else: 
+                if "name" not in room: print(f'Room has no name: {room["id"]}')
+                else: print(f'Room has no user Data: {room["id"]}, {room["name"]}')
 
 def getRoomsForRegion():
     # areas["rooms"][idx]["userData"]["Game Area"]

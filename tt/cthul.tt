@@ -9,14 +9,7 @@ achaeapassword;
 
 #var whoami Cthul;
 
-#nop set target when one is seen.
-
 #alias attackCmd {queue insert freestand 5 warp};
-
-#nop #read melkervur/battlerage.tt;
-
-#nop find the enchiridon of oblivion;
-#nop --- Nicator Archives -------------- 1:0:0 ---;
 
 #read occultist/misc.tt;
 #read occultist/occultism.tt;
