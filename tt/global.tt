@@ -12,6 +12,9 @@
 
 #var seenPlys {};
 
+#read character_highlights.tt;
+#class chardatabase save;
+
 #read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;
 #read gui.tt;
@@ -92,9 +95,7 @@
 
 #var clearCharDb 0;
 #alias {whois} { 
-   #class chardatabase load;
    #var chardb[%1];
-   #var clearCharDb 1;
 }
 
 #alias {cw} { 

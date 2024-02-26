@@ -737,6 +737,8 @@
 #highlight {Kirsi{ |,|'}} {<830>}
 #highlight {Kasotus{ |,|'}} {<830>}
 
+#class chardatabase close
+
 #var {chardb}
 {
    {Aelhion} {
@@ -8071,6 +8073,5 @@
 
 };
 
-#class chardatabase close
 #class chardatabase save
-#class chardatabase clear
+

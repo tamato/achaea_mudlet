@@ -285,8 +285,6 @@
    room_window_draw_data;
 }
 
-#read character_highlights.tt
-
 #alias {gui.onAddPlayer}
 {
    #local ply $gmcp[room][addplayer][name];
