@@ -4,5 +4,10 @@
 #class wip kill
 #class wip open
 
+#foreach {$gmcp[char][items][list][items][]} thing {
+   #if {"$thing" == "%*mono%*"} {#show found;#break};
+}
+
+
 #class wip save
 #class wip close

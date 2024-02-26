@@ -298,13 +298,14 @@
 {
    #local ply $gmcp[room][addplayer][name];
 
+   #var pid &room_window[expanded][seen][];
 
    #if {{$chardb[$ply]} != {}} {
       room_window_show players $chardb[$ply][color]$ply<099>;
-      room_window_show seen $chardb[$ply][color]$ply<099>;
+      room_window_show seen {$pid $chardb[$ply][color]$ply<099>};
    }{
       room_window_show players <070>$ply<099>;
-      room_window_show seen $chardb[$ply][color]$ply<099>;
+      room_window_show seen {$pid $chardb[$ply][color]$ply<099>};
    };
 }
 

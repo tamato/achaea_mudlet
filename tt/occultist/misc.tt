@@ -103,9 +103,7 @@
    #if {"%1" === ""}  { 
       #send {hermits}
    } { 
-      #list room_window[tab][items] find {monolith} idx;
-      print IDX $idx;
-      #if {$idx} {print Monolith present, find another room; #return;};
+      #nop TODO #if {$idx} {print Monolith present, find another room; #return;};
 
       #send {$addfree outd hermit};
       #send {$addfree activate hermit %1};
