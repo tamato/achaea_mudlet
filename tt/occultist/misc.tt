@@ -103,7 +103,12 @@
    #if {"%1" === ""}  { 
       #send {hermits}
    } { 
-      #nop TODO #if {$idx} {print Monolith present, find another room; #return;};
+      #foreach {$gmcp[char][items][list][items][]} thing {
+         #if {"$thing" == "%*mono%*"} {
+            print {Monolith present, find another room};
+            #return;
+         };
+      };
 
       #send {$addfree outd hermit};
       #send {$addfree activate hermit %1};

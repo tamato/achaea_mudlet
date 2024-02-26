@@ -50,7 +50,7 @@
    #if {$prevHp != $hp} {
       #math {diff} {$prevHp - $hp};
       #if {$diff > 0} 
-         {#show <110>-$diff}
+         {#show <501>-$diff}
          {#math diff {$diff * -1}; #show <120>+$diff};
       #unvar diff;
    };
@@ -100,12 +100,18 @@
 
 #EVENT {IAC SB GMCP Room.addplayer IAC SE}
 {
-    #variable gmcp[room][addplayer] {%0};
-    gui.onAddPlayer;
+   #class chardatabase load;
+   #var clearCharDb 1;
+
+   #variable gmcp[room][addplayer] {%0};
+   gui.onAddPlayer;
 }
 
 #EVENT {IAC SB GMCP Room.Players IAC SE}
 {
+   #class chardatabase load;
+   #var clearCharDb 1;
+
    #variable gmcp[room][players] {%0};
    #nop [ Players? {1}{{name}{Cthul}{fullname}{Servitor Cthul}} ];
 
@@ -139,6 +145,15 @@
    #foreach {$gmcp[char][defences][remove][]} def {
       #nop #show {..: $def :..};
       #if {"$def" == "arctar"} { #var orbActive 0; };
+   };
+}
+
+#EVENT {RECEIVED PROMPT}
+{
+   #nop %0 raw, %1 plain text;
+   #if {$clearCharDb} {
+      #var clearCharDb 0;
+      #class chardatabase clear;
    };
 }
 

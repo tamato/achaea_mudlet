@@ -180,4 +180,35 @@
    #if {&{atkTarget} == 0} {dbg {Nothing to attack}};
 }
 
+#var clearCharDb 0;
+#alias {whois} { 
+   #class chardatabase load;
+   #var chardb[%1];
+   #var clearCharDb 1;
+}
+
+#alias {cw} { 
+   #class chardatabase load;
+   #send {cw};
+   #var clearCharDb 1;
+}
+
+#alias {hw} { 
+   #class chardatabase load;
+   #send {hw};
+   #var clearCharDb 1;
+}
+
+#alias {qw} { 
+   #class chardatabase load;
+   #send {qw};
+   #var clearCharDb 1;
+}
+
+#alias {ih} { 
+   #class chardatabase load;
+   #send {in here};
+   #var clearCharDb 1;
+}
+
 #class targeting close

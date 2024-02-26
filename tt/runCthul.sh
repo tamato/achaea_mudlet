@@ -1,3 +1,3 @@
-#!/usr/bin/sh
+#!/bin/bash
 
-sh -c "/usr/local/bin/tt++ -G $(pwd)/cthul.tt"
+/usr/local/bin/tt++ -G $(pwd)/cthul.tt

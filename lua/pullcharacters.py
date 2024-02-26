@@ -94,4 +94,10 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
     hi.write(f'#class chardatabase close\n')
     hi.write(f'#class chardatabase save\n')
 
+#alias {whois} { 
+   #class chardatabase load;
+   #var chardb[%1];
+   #class chardatabase clear; 
+}
+
 

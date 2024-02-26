@@ -10,6 +10,8 @@
 #script {configdir} {echo $HOME/.config/tintin}
 #read {$configdir[1]/guisettings.tt}
 
+#var seenPlys {};
+
 #read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;
 #read gui.tt;
@@ -33,16 +35,16 @@
 
 #alias {print} {
    #showme  <168>-----------------------------------------------------------;
-   #showme  <078>             [ <038>%0 <078>];
+   #showme  <078>             [ <038>%1 <078>];
    #showme  <168>-----------------------------------------------------------;
 }
 
 #alias {err} {
-   #showme  {<410>ERROR: %0};
+   #showme  {<710>ERROR: <488>%1};
 }
 
 #alias {dbg} {
-   #showme  {<460>DBG: %0};
+   #showme  {<760>DBG: <488>%1};
 }
 
 #alias {journal} {
@@ -87,6 +89,7 @@
 };
 
 #highlight {%1 suddenly appears, having travelled down the beam of prismatic light.} { black b red };
+
 
 #read events.tt;
 

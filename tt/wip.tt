@@ -4,10 +4,22 @@
 #class wip kill
 #class wip open
 
-#foreach {$gmcp[char][items][list][items][]} thing {
-   #if {"$thing" == "%*mono%*"} {#show found;#break};
+#alias {add}
+{
+   #local ply %1;
+
+   addSeenPlayer <070>$ply<099>;
+
+   #list seenPlys ins -1 $ply;
 }
 
+#alias pvp {
+   #var pcnt &seenPlys[];
+   #if {%1 > $pcnt} {dbg {Invalid PvP index}; #return};
+
+   #show Target is: $seenPlys[%1];
+   #send {emote wave's at $seenPlys[%1]};
+}
 
 #class wip save
 #class wip close
