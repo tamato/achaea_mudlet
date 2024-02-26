@@ -257,7 +257,6 @@
    comm_window_show chats $messages[text];
 
    #nop {{text}{includes the talkers name "..."}{channel}{"says"}{talker}{"includes color sdfsdaf"}};
-#nop #class load, highlights
 }
 
 #ALIAS {room_window_show %1 %2}

@@ -148,6 +148,14 @@
    };
 }
 
+#EVENT {RECEIVED OUTPUT}
+{
+   #nop %0 raw, %1 plain text;
+   #if {$clearCharDb} {
+      #class chardatabase load;
+   };
+}
+
 #EVENT {RECEIVED PROMPT}
 {
    #nop %0 raw, %1 plain text;

@@ -90,6 +90,33 @@
 
 #highlight {%1 suddenly appears, having travelled down the beam of prismatic light.} { black b red };
 
+#var clearCharDb 0;
+#alias {whois} { 
+   #class chardatabase load;
+   #var chardb[%1];
+   #var clearCharDb 1;
+}
+
+#alias {cw} { 
+   #var clearCharDb 1;
+   #send {cw};
+}
+
+#alias {hw} { 
+   #var clearCharDb 1;
+   #send {hw};
+}
+
+#alias {qw} { 
+   #var clearCharDb 1;
+   #send {qw};
+}
+
+#alias {ih} { 
+   #var clearCharDb 1;
+   #send {in here};
+}
+
 
 #read events.tt;
 
