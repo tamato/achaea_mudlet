@@ -19,10 +19,20 @@ for area in parsed['areas']:
 crowdcolors = parsed['customEnvColors']
 colormapping = parsed['envToColorMapping']
 
+globalRoomCnt = parsed['roomCount']
+voidRoomOffset = 0
+
 def colors(mapping):
     cid = colormapping[mapping]
-    bit24 = crowdcolors[cid-2]
+    bit24 = crowdcolors[cid] # TODO might need an offset.
     rgb = bit24["color24RGB"]
+
+    color = "<"
+    color += hex(rgb[0])[2:].upper()
+    color += hex(rgb[1])[2:].upper()
+    color += hex(rgb[2])[2:].upper()
+    color +=">"
+    return color
 
 with open('world.tt', 'w') as f:
     for area in parsed['areas']:
@@ -45,30 +55,34 @@ with open('world.tt', 'w') as f:
             rcoords = room['coordinates']
             ttroom['colorId'] = room['environment']
 
+            harbour = False
             shop = False
             bank = False
-            wilder = False
             stronghold = False
-            harbour = False
-            news = False
+            wilder = False
             ferry = False
+            news = False
+            arena = False
+            post = False
+            comm = False
+            grate = False
+            locksmith = False
             if 'userData' in room:
                 user = room['userData']
-                if 'Game Area' in user:
-                    ttroom['areaName'] = user['Game Area']
-                    #  "feature-harbour": "true"
-                    #  "feature-shop": "true"
-                    #  "feature-bank": "true"
-                    #  "feature-stronghold": "true"
-                    #  "feature-wilderness": "true"
-                    #  "feature-ferry": "true"
-                    #  "feature-news": "true"
-                    #  "feature-arena": "true"
-                    #  "feature-postoffice": "true"
-                    #  "feature-commodityshop": "true"
-                    #  "feature-grate": "true"
-                    #  "feature-locksmith": "true"
 
+                if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
+                if 'feature-harbour' in user: harbour = True;
+                if 'feature-shop' in user: shop = True;
+                if 'feature-bank' in user: bank = True;
+                if 'feature-stronghold' in user: stronghold  = True;
+                if 'feature-wilderness' in user: wilderness = True;
+                if 'feature-ferry' in user: ferry = True;
+                if 'feature-news' in user: news = True;
+                if 'feature-arena' in user: arena = True;
+                if 'feature-postoffice' in user: postoffice = True;
+                if 'feature-commodityshop' in user: commodityshope = True;
+                if 'feature-grate' in user: grate = True;
+                if 'feature-locksmith' in user: locksmith = True;
 
             rname = ''
             if 'name' in room:
@@ -79,16 +93,22 @@ with open('world.tt', 'w') as f:
                 exitid = portal['exitId']
                 # check if this leads to the same area id
                 direction = 'in'
+                sameArea = False
                 if allrooms[rid]['areaid'] == areaid
                     direction = portal['name']
+                    sameArea = True
+
                 x = abs(rcoords[0] - ecoords[0])
                 y = abs(rcoords[1] - ecoords[1])
 
                 # TODO needs to loop
-                if x > 1 or y > 1:
+                if x > 1 or y > 1 and sameArea:
+
+                    void = {'dir': direction, 'flag':'void', 'number':globalRoomCnt+voidRoomOffset}
+                    voidRoomOffset += 1
 
 
-            # room flags - 8 is void room
+            # room flags - 8 is void room,4104
             rflag = ''
             rcolor = '<170>'
             rsym = ''
