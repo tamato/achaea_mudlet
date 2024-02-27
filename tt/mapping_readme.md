@@ -19,15 +19,6 @@ E {#exitvnum}{exitname}{exitcommand}{#exitdir}{#exitflags}{exitdata}{#exitweight
 
 
 
-#nop Coords
-#nop first number is the Map Id
-#nop then horizton
-#nop then vertical
-#nop #VARIABLE {gmcp[room][info]}
-#nop {
-#nop     {area} {Ashtan}
-#nop     {coords} {49,6,-9,0}
-
 #VARIABLE {gmcp[room][info]}
 {
     {area} {Ashtan}

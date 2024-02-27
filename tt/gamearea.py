@@ -1,33 +1,105 @@
 #!/usr/bin/python
 
 import json
+import sys
 
 with open('map.json') as mapfile:
     parsed = json.load(mapfile)
 
+allrooms = {}
+for area in parsed['areas']:
+    for room in area['rooms']:
+        rid = room['id']
+        if rid in allrooms: 
+            print("Found Duplicate Room Num")
+            sys.exit()
+
+        allrooms[rid] = {'coords':room['coordinates'], 'areaid':area['id']} 
+
+crowdcolors = parsed['customEnvColors']
+colormapping = parsed['envToColorMapping']
+
+def colors(mapping):
+    cid = colormapping[mapping]
+    bit24 = crowdcolors[cid-2]
+    rgb = bit24["color24RGB"]
+
 with open('world.tt', 'w') as f:
-    for areas in parsed['areas']:
-        
-        areaname = areas['name']
-        roomCnt =  areas['roomCount']
+    for area in parsed['areas']:
+        areaname = area['name']
+        roomCnt =  area['roomCount']
         if roomCnt == 0: continue
-        areaid = areas['id']
+        
+        areaid = area['id']
+        if areaid < 0: continue
 
-        for rooms in areas['rooms']:
-            if 'userData' in rooms:
-                user = rooms['userData']
+        for room in area['rooms']:
+            ttroom = {}
+            ttroom['exits'] = []
+            ttroom['areaName'] = ''
+            ttroom['name'] = ''
+
+            ttroom['areaId'] = areaid
+            rid = room['id']
+
+            rcoords = room['coordinates']
+            ttroom['colorId'] = room['environment']
+
+            shop = False
+            bank = False
+            wilder = False
+            stronghold = False
+            harbour = False
+            news = False
+            ferry = False
+            if 'userData' in room:
+                user = room['userData']
                 if 'Game Area' in user:
-                    break
+                    ttroom['areaName'] = user['Game Area']
+                    #  "feature-harbour": "true"
+                    #  "feature-shop": "true"
+                    #  "feature-bank": "true"
+                    #  "feature-stronghold": "true"
+                    #  "feature-wilderness": "true"
+                    #  "feature-ferry": "true"
+                    #  "feature-news": "true"
+                    #  "feature-arena": "true"
+                    #  "feature-postoffice": "true"
+                    #  "feature-commodityshop": "true"
+                    #  "feature-grate": "true"
+                    #  "feature-locksmith": "true"
 
-        for rooms in areas['rooms']:
 
-            roomid = rooms['id']
+            rname = ''
+            if 'name' in room:
+                rname = room['name']
 
-            if 'name' in rooms:
-                roomname = rooms['name']
+            rexits = []
+            for portal in room['exits']:
+                exitid = portal['exitId']
+                # check if this leads to the same area id
+                direction = 'in'
+                if allrooms[rid]['areaid'] == areaid
+                    direction = portal['name']
+                x = abs(rcoords[0] - ecoords[0])
+                y = abs(rcoords[1] - ecoords[1])
 
-            coordinates = rooms['coordinates']
-            environment = rooms['environment']
+                # TODO needs to loop
+                if x > 1 or y > 1:
+
+
+            # room flags - 8 is void room
+            rflag = ''
+            rcolor = '<170>'
+            rsym = ''
+            rdesc = ''
+            rarea = ttroom['areaName']
+            rnote = ''; rterain = ''; rdata = ''; rweight = ''; rid = ''
+            #TODO throw in area id somewhere.
+            f.write(f'R{{{rid}}}{{{rflag}}}{{{rcolor}}}{{{rname}}}{{{rsym}}}')
+            f.write(f'{{{rdesc}}}{{{rarea}}}{{{rnote}}}{{{rterain}}}')
+            f.write(f'{{{rdata}}}{{{rweight}}}{{{areaid}}}\n')
+        break
 
 def getAreaIdsForRegion():
     for area in parsed['areas']:
