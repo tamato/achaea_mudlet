@@ -4,22 +4,18 @@
 #class wip kill
 #class wip open
 
-#alias {add}
-{
-   #local ply %1;
-
-   addSeenPlayer <070>$ply<099>;
-
-   #list seenPlys ins -1 $ply;
-}
-
-#alias pvp {
-   #var pcnt &seenPlys[];
-   #if {%1 > $pcnt} {dbg {Invalid PvP index}; #return};
-
-   #show Target is: $seenPlys[%1];
-   #send {emote wave's at $seenPlys[%1]};
-}
+#event {CLASS DEACTIVATED chardatabase}{
+   print {DEACTIVATED %0..};
+};
+#event {CLASS ACTIVATED chardatabase}{
+   print {ACTIVATED %0...};
+};
+#event {CLASS CREATED chardatabase}{
+   print CREATED %0;
+};
+#event {CLASS DESTROYED chardatabase}{
+   print DESTROYED %0;
+};
 
 #class wip save
 #class wip close

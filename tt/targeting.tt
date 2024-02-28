@@ -154,8 +154,8 @@
    #if {"%1" === ""}
    {
 
-      #if {&{roomMobs} == 0} {dbg {no roomMobs};#return};
-      #if {&{roomMobs[]} == 0} {dbg {roomMobs list empty};#return};
+      #if {&{roomMobs} == 0} {#return};
+      #if {&{roomMobs[]} == 0} {#return};
 
       #foreach *roomMobs[] denizen {
          #foreach *targets[$areaName][] tar {

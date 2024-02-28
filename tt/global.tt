@@ -38,16 +38,16 @@
 
 #alias {print} {
    #showme  <168>-----------------------------------------------------------;
-   #showme  <078>             [ <038>%1 <078>];
+   #showme  <078>             [ <038>%0 <078>];
    #showme  <168>-----------------------------------------------------------;
 }
 
 #alias {err} {
-   #showme  {<710>ERROR: <488>%1};
+   #showme  {<710>ERROR: <488>%0};
 }
 
 #alias {dbg} {
-   #showme  {<760>DBG: <488>%1};
+   #showme  {<760>DBG: <488>%0};
 }
 
 #alias {journal} {
@@ -94,9 +94,6 @@
 #highlight {%1 suddenly appears, having travelled down the beam of prismatic light.} { black b red };
 
 #var clearCharDb 0;
-#alias {whois} { 
-   #var chardb[%1];
-}
 
 #alias {cw} { 
    #var clearCharDb 1;
@@ -115,9 +112,13 @@
 
 #alias {ih} { 
    #var clearCharDb 1;
-   #send {in here};
+   #send {info here};
 }
 
 
 #read events.tt;
+
+#class chardatabase save;
+
+
 

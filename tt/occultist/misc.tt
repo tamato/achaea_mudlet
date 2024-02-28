@@ -82,8 +82,6 @@
 
    #nop TODO - need to add Temper;
 
-   #if {$rage >= $ruinCost} {#send {ruin};#var rage 0};
-
    tryRage 35 chaosgate 23;
    tryRage 24 stagnate 35;
    tryRage 14 harry 17;

@@ -63,7 +63,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{char["name"]}{{ |,|\'}}}} {{{color}}}\n')
+                hi.write(f'#highlight {{{char["name"]}{{ |,|\'}}}} {{{color}} reset}\n')
             except Exception as inst:
                 print(f'WTF??')
                 print(f'---------------------')
@@ -74,6 +74,9 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                                      # but may be overridden in exception subclasses
                 break
 
+    hi.write('\n')
+    hi.write(f'#class chardatabase close\n')
+    hi.write(f'#class chardatabase save\n')
     hi.write('\n')
     hi.write('#var {chardb}\n')
     hi.write('{\n')
@@ -91,8 +94,6 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
         hi.write('\t};\n\n')
     hi.write('};\n\n')
 
-    hi.write(f'#class chardatabase close\n')
-    hi.write(f'#class chardatabase save\n')
 
 #alias {whois} { 
    #class chardatabase load;

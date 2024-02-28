@@ -243,12 +243,7 @@
 
 #EVENT {IAC SB GMCP Comm.Channel.Start IAC SE}
 {
-   #class chardatabase load;
-}
-
-#EVENT {IAC SB GMCP Comm.Channel.End IAC SE}
-{
-   #class chardatabase clear;
+   #var clearCharDb 1;
 }
 
 #EVENT {IAC SB GMCP Comm.Channel.Text IAC SE}
