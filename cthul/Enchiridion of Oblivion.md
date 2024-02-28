@@ -1,8 +1,3 @@
-#LOG: LOGGING OUTPUT TO 'Enchiridion of Oblivion.md' FILESIZE: 0
-read journal291709
-You read what is written on a black leather journal:
-"The Enchiridion of Oblivion", By Emperor Emeritus Imyrr Invictus, the Wayward Avatar (Page 1)
-
 
    The Enchiridion of Oblivion
 
@@ -12,22 +7,6 @@ You read what is written on a black leather journal:
 4      Freedom and Power
 5      The Cult of Babel
 6      The Twin
-14:54:57.56 I 100h 0rage 100m 100e 100w[exE|52] :>-read journal291709 page 1
-You read what is written on a black leather journal:
-"The Enchiridion of Oblivion", By Emperor Emeritus Imyrr Invictus, the Wayward Avatar (Page 1)
-
-
-   The Enchiridion of Oblivion
-
-1      Table of Contents
-2      Of Chaos and Creation
-3      The Foundations of the Third Age
-4      Freedom and Power
-5      The Cult of Babel
-6      The Twin
-14:55:06.62 I 100h 0rage 100m 100e 100w[exE|52] :>-read journal291709 page 2
-You read what is written on a black leather journal:
-"The Enchiridion of Oblivion", By Emperor Emeritus Imyrr Invictus, the Wayward Avatar (Page 2)
 
 Of Chaos and Creation
 
@@ -46,9 +25,6 @@ created Chaos as well, though perhaps it is more proper to say that
 Chaos came forth from Him. Chaos had but one feature and one property --
 to change. In Chaos, nothing could ever be, for its power was to prevent
 a thing from being. Instead, it maintained a state wherein nothing
-[Type MORE if you wish to continue reading. (20% shown)]
-14:55:08.31 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 exists in a constant ineffable flux that embraces the totality of
 transcendent potential.
 
@@ -69,9 +45,6 @@ it could never otherwise possess.
 Thus time was born from the marriage of Chaos and Creation, and with it
 Aeon, the first of the elder gods. Understanding that the animating
 power of Chaos needed to be governed and controlled and channeled, lest
-[Type MORE if you wish to continue reading. (42% shown)]
-14:55:10.25 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 it twist and warp the fabric of Creation into something completely
 foreign, Ayar created the remainder of the elder gods and assigned them
 dominion over various aspects of the worlds. By Their will, which
@@ -92,9 +65,6 @@ why the power of Chaos was able to twist the fabric of reality into a
 being so foreign and inconsistent with the natural laws of Creation, yet
 somehow that is exactly what happened. An Unnamable Horror, pureblood
 firstborn offspring of the infinite void, moved unhindered through the
-[Type MORE if you wish to continue reading. (65% shown)]
-14:55:11.24 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 worlds. It came upon Maya, who was yet an Aldar maiden.
 
 The union of Maya and the Unnamable was a moment that unquestionably
@@ -115,9 +85,6 @@ race. Such is their glory.
 
 The rest of the story is known, in various versions, as the Chaos Wars.
 Though the priests of Babel have much otherwise unknown and startling
-[Type MORE if you wish to continue reading. (87% shown)]
-14:55:12.06 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 knowledge on the secret roles and motivations of the participants in the
 war, the final results can be reduced to a few basic points. Two
 indescribable entities, each more powerful than Proteus Himself, emerged
@@ -150,9 +117,6 @@ previously been composed entirely of the five primal elements. Though
 dispersed and subdued, their power nevertheless remained the same. They
 slowly accelerated the changes within Creation, increasing its vitality
 and putting further strain on the elder gods. For this reason the beings
-[Type MORE if you wish to continue reading. (24% shown)]
-14:55:17.10 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 called Celani were brought forth to assist the gods in Their work.
 
 Second, He joined Himself again to Proteus and became Sarapis. This
@@ -173,9 +137,6 @@ the fact that the balanced Creation He had intended had assumed a new
 aspect and character. Because of the very nature of Chaos, it was
 impossible for it to interact with Creation on any extended basis
 without ultimately destroying it. Despite the efforts of the gods to
-[Type MORE if you wish to continue reading. (49% shown)]
-14:55:19.66 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 channel the transformative power of Chaos, the reality was that each
 transition from one moment to another was a transition that moved
 Creation further from its original state of cohesion and perfection.
@@ -196,9 +157,6 @@ into new forms, Her attribute was to literally create new things in a
 way that reflected Ayar's own first great work. By recognising and
 empowering this creative potential within the Aldar maiden in the act of
 making Her a true goddess, Sarapis hoped to counter the destructive
-[Type MORE if you wish to continue reading. (76% shown)]
-14:55:20.38 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 activity of Entropy, Discord, and the things that might come after. In a
 way, He was successful. However, even the work wrought by Maya only
 served to move Creation away from its original perfection, complicating
@@ -237,9 +195,6 @@ nothing we could do to destroy either. We simply know that the world
 will end, whether or not we act.
 
 Our message is a message of freedom and liberation. No action has
-[Type MORE if you wish to continue reading. (33% shown)]
-14:55:24.21 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 enduring consequence! All actions are morally equal! "Do as thou wilt,"
 for it does not really matter what you do. There is no reason to
 restrict your behaviour or live in a way that is different from what
@@ -260,9 +215,6 @@ mouse without legitimate moral restriction. Your individual freedom is
 inevitably defined by your own power relative to the power of the things
 that surround you. The slave, though his actions are not rightly bound
 by any moral code, may yet be bound by the whip of his master. This is
-[Type MORE if you wish to continue reading. (72% shown)]
-14:55:26.68 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 the reality of brute power, and it is a reality with which all beings
 save the infinite creator must contend.
 
@@ -298,9 +250,6 @@ service of Babel.
 
 Second, we understand freedom and power. Though we may throw aside all
 the constraints of false morality and live according to our own will,
-[Type MORE if you wish to continue reading. (35% shown)]
-14:55:31.17 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 still we are slaves in some way. For protection from the mighty, we must
 swear oaths to the cities. For gold to buy food, we must submit to
 labour. Should we will to own a thing, and the one in whose possession
@@ -321,9 +270,6 @@ to all beings. For His followers, however, He wills purpose. In all
 things they are free, except that their wills must always be aligned
 with His purposes. Consequentially, He requires the Babelonian
 Priesthood to perform His will without question and without reservation.
-[Type MORE if you wish to continue reading. (77% shown)]
-14:55:33.07 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 We are to be an extension of Him -- His hands and tools in the worlds.
 For the true Babelonian, this load is no load at all. Enlightenment is
 nothing but a transcendent awareness of the working of Chaos. The God of
@@ -356,9 +302,6 @@ of the twin. The twin is Creation and Chaos, parallel, mirroring one
 another perfectly. It is a power that echoes down through the ages in
 endless repetition. It is Light and Darkness, Male and Female, Good and
 Evil, Active and Passive, Time and Space, Change and Continuity.
-[Type MORE if you wish to continue reading. (57% shown)]
-14:55:36.77 I 100h 0rage 100m 100e 100w[exE|52] :>-more
-[File continued via MORE]
 
 The true truth of the twin, however, is that it is a lie. Though the two
 were intended to be separate, they could not stay thus. They always come

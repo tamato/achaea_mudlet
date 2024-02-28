@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the bog of Ashtan}
+#VARIABLE {areaName} {the Rhodestrian Settlement}
 #VARIABLE {targets}
 {
     {Ashtan} 
@@ -23,6 +23,7 @@
         {Rhodestrian} {}
         {cougar} {}
         {mercenary} {}
+        {thief} {}
         {troll} {}
     }
     {the Southern Vashnar Mountains} 

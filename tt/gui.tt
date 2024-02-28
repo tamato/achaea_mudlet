@@ -265,8 +265,13 @@
    #var newidx &room_window[tab][seen][];
    #math newidx {$newidx + 1};
 
-   #list room_window[tab][seen] ins -1 {<110>$newidx %1};
+   #list room_window[tab][seen] find {%*%1%*} idx;
+   #if {$idx == 0}{
+      #list room_window[tab][seen] ins -1 {<110>$newidx %1};
+      #list pvpTargets ins -1 {%1};
+   };
    room_window_draw_data;
+   #unvar idx;
 }
 
 #alias {room_window_remove %1}

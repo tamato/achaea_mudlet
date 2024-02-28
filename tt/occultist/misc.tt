@@ -23,7 +23,7 @@
 #nop F1
 #macro {\eOP} { 
    #unvar atkTarget;
-   print {stopping auto attack};
+   #nop print {stopping auto attack};
    #class bash clear; 
 };
 
@@ -31,7 +31,7 @@
 #macro {\e[1;2P} { 
    #class bash load; 
    print {resuming auto attack};
-   #if {$distortActive === 0} {da};
+   #nop #if {$distortActive === 0} {da};
    atk;
 };
 
@@ -55,6 +55,7 @@
    #if {&{atkTarget} != 0} {
       #if {$rage >= $ruinCost} {
          #send {ruin}
+         print Ruin Shield!;
       }
    }
 };
@@ -66,9 +67,9 @@
       #var rage 0;
       #var %2 0;
       #send {%2}; 
-      print {Used %1, disabled [${%2}]};
-      #delay {%3} {#var %2 {1};#print {${%2} reEnabled}};
-   }
+      print {Used %2, disabled [%2]};
+      #delay {%3} {#var %2 {1};print %2 reEnabled};
+   };
 }
 
 #alias {battlerage.onCharVitals}
