@@ -27,14 +27,14 @@ def colors(mapping):
     bit24 = crowdcolors[cid] # TODO might need an offset.
     rgb = bit24["color24RGB"]
 
-    color = "<"
+    color = "<F"
     color += hex(rgb[0])[2:].upper()
     color += hex(rgb[1])[2:].upper()
     color += hex(rgb[2])[2:].upper()
     color +=">"
     return color
 
-with open('world.tt', 'w') as f:
+with open('world.map', 'w') as f:
     for area in parsed['areas']:
         areaname = area['name']
         roomCnt =  area['roomCount']
@@ -45,15 +45,11 @@ with open('world.tt', 'w') as f:
 
         for room in area['rooms']:
             ttroom = {}
-            ttroom['exits'] = []
-            ttroom['areaName'] = ''
-            ttroom['name'] = ''
 
             ttroom['areaId'] = areaid
             rid = room['id']
 
             rcoords = room['coordinates']
-            ttroom['colorId'] = room['environment']
 
             harbour = False
             shop = False
@@ -88,37 +84,56 @@ with open('world.tt', 'w') as f:
             if 'name' in room:
                 rname = room['name']
 
-            rexits = []
+            # room flags - 8 is void room,4104
+            rflag = 'flag'
+            #  rcolor = colors(room['environment'])
+            rcolor = "<101>"
+            rsym = 'sym'
+            rdesc = 'desc'
+            rarea = areaid
+            rnote = 'note'; rterain = 'ter'; rdata = 'data'; rweight = '1.0'; 
+            #TODO throw in area id somewhere.
+            f.write(f'R {{{rid}}}{{{rflag}}}{{{rcolor}}}{{{rname}}}{{{rsym}}}')
+            f.write(f'{{{rdesc}}}{{{rarea}}}{{{rnote}}}{{{rterain}}}')
+            f.write(f'{{{rdata}}}{{{rweight}}}{{{areaid}}}\n')
+
             for portal in room['exits']:
+                p = {}
                 exitid = portal['exitId']
+                p['vnum'] = exitid
+
                 # check if this leads to the same area id
                 direction = 'in'
                 sameArea = False
-                if allrooms[rid]['areaid'] == areaid
+                if allrooms[rid]['areaid'] == areaid:
                     direction = portal['name']
                     sameArea = True
 
-                x = abs(rcoords[0] - ecoords[0])
-                y = abs(rcoords[1] - ecoords[1])
+                p['dir'] = direction
+                p['dircmd'] = portal['name']
+
+                x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
+                y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
 
                 # TODO needs to loop
                 if x > 1 or y > 1 and sameArea:
 
                     void = {'dir': direction, 'flag':'void', 'number':globalRoomCnt+voidRoomOffset}
                     voidRoomOffset += 1
+                    #  allrooms
 
+                gotoexitdir = 0
+                eflag = ''
+                edata = ''
+                eweight = 1.0
+                ecolor = '<270>'
+                edelay = 0.0
+                f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
+                f.write(f'{{{gotoexitdir}}}{{{eflag}}}{{{edata}}}')
+                f.write(f'{{{eweight}}}{{{ecolor}}}{{{edelay}}}')
+                f.write(f'\n')
+            f.write(f'\n')
 
-            # room flags - 8 is void room,4104
-            rflag = ''
-            rcolor = '<170>'
-            rsym = ''
-            rdesc = ''
-            rarea = ttroom['areaName']
-            rnote = ''; rterain = ''; rdata = ''; rweight = ''; rid = ''
-            #TODO throw in area id somewhere.
-            f.write(f'R{{{rid}}}{{{rflag}}}{{{rcolor}}}{{{rname}}}{{{rsym}}}')
-            f.write(f'{{{rdesc}}}{{{rarea}}}{{{rnote}}}{{{rterain}}}')
-            f.write(f'{{{rdata}}}{{{rweight}}}{{{areaid}}}\n')
         break
 
 def getAreaIdsForRegion():
@@ -154,4 +169,3 @@ def listRegions():
                     test = region.lower()
                     print(f'Region: {user["Game Area"]}')
 
-getAreaIdsForRegion()
