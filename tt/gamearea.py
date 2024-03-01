@@ -7,6 +7,7 @@ with open('map.json') as mapfile:
     parsed = json.load(mapfile)
 
 allrooms = {}
+voidrooms = []
 for area in parsed['areas']:
     for room in area['rooms']:
         rid = room['id']
@@ -37,6 +38,18 @@ dirs = {
 
     "up": "u",
     "down": "d",
+}
+
+#define MAP_EXIT_
+dirBits = {
+    'n':1,
+    'e':2,
+    's':4,
+    'w':8,
+    'u':16,
+    'd':32,
+    'i':64,
+    'o':128,
 }
 
 def colors(mapping):
@@ -91,13 +104,13 @@ with open('world.map', 'w') as f:
                 rname = room['name']
 
             # room flags - 8 is void room,4104
-            rflag = 'flag'
+            rflag = ''
             #  rcolor = colors(room['environment'])
-            rcolor = "<101>"
+            rcolor = "<250>"
             rsym = feature
             rdesc = 'desc'
-            rarea = areaid
-            rnote = 'note'; rterain = 'ter'; rdata = 'data'; rweight = '1.0'; 
+            rarea = ''
+            rnote = 'note'; rterain = ''; rdata = 'data'; rweight = '1.0'; 
             #TODO throw in area id somewhere.
             f.write(f'R {{{rid}}}{{{rflag}}}{{{rcolor}}}{{{rname}}}{{{rsym}}}')
             f.write(f'{{{rdesc}}}{{{rarea}}}{{{rnote}}}{{{rterain}}}')
@@ -137,18 +150,32 @@ with open('world.map', 'w') as f:
                 skipVoidRooms = ['in','out','u','d']
                 if p['dir'] in skipVoidRooms: continue
 
+                simplelist = ['n','s','e','w','u','d']
+                orlist = ['nw','ne','se','sw']
+                if p['dir'] in simplelist: dirbit = dirBits[p['dir']]
+
+                if p['dir'] == 'ne': dirbit = dirBits['n'] | dirBits['e']
+                if p['dir'] == 'se': dirbit = dirBits['s'] | dirBits['e']
+                if p['dir'] == 'sw': dirbit = dirBits['s'] | dirBits['w']
+                if p['dir'] == 'nw': dirbit = dirBits['n'] | dirBits['w']
+
+                if p['dir'] == 'in': dirbit = dirBits['i']
+                if p['dir'] == 'out': dirbit = dirBits['o']
+
+                if p['dir'] == 'u': dirbit = dirBits['u']
+                if p['dir'] == 'd': dirbit = dirBits['d']
+
                 x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
                 y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
-                z = abs(rcoords[2] - allrooms[exitid]['coords'][2])
 
                 while x > 1 or y > 1:
                     print(f'Diffs {x}, {y}, {z}, dir {p["dir"]}/{p["dircmd"]}')
                     if x > 0: x = abs(x - 1)
                     if y > 0: y = abs(y - 1)
 
-                    rid = len(allrooms) + len(voidrooms)
+                    rrid = len(allrooms) + len(voidrooms)
                     voidroom = {
-                        'vnum':rid, 
+                        'vnum':rrid, 
                         'flag':4104, 
                         'color': '<270>',
                         'exits': [],
@@ -158,10 +185,10 @@ with open('world.map', 'w') as f:
                     voidrooms.append(voidroom)
 
                 rexit = {
-                    'vnum':rid
-                    'dir':p['idr'],
-                    'dircmd':p['dircmd']
-                    'bitflag':0,
+                    'vnum':rid,
+                    'dir': p['dir'],
+                    'dircmd':p['dircmd'],
+                    'dirbit':0,
                     'flag':'',
                     'data':'',
                     'weight':1.00,
@@ -169,8 +196,10 @@ with open('world.map', 'w') as f:
                     'delay':0.0,
                 }
 
+                eflag = ''; edata = ''; eweight = 1.0;
+                ecolor = '<220>'; edelay = 0.0;
                 f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
-                f.write(f'{{{gotoexitdir}}}{{{eflag}}}{{{edata}}}')
+                f.write(f'{{{dirbit}}}{{{eflag}}}{{{edata}}}')
                 f.write(f'{{{eweight}}}{{{ecolor}}}{{{edelay}}}')
                 f.write(f'\n')
             f.write(f'\n')

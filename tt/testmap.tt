@@ -1,0 +1,15 @@
+#nop adf
+
+
+#map flag vtmap;
+#split;
+
+#map read world.map;
+
+#alias {mm} {#map map};
+#alias {mi} {#map info};
+#alias {gt} {#map goto %1};
+
+#map goto 4058;
+mm;
+
