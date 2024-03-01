@@ -22,6 +22,23 @@ colormapping = parsed['envToColorMapping']
 globalRoomCnt = parsed['roomCount']
 voidRoomOffset = 0
 
+dirs = {
+    "north": "n",
+    "northeast": "ne",
+    "east": "e",
+    "southeast": "se",
+    "south": "s",
+    "southwest": "sw",
+    "west": "w",
+    "northwest": "nw",
+
+    "in": "in",
+    "out": "out",
+
+    "up": "u",
+    "down": "d",
+}
+
 def colors(mapping):
     cid = colormapping[mapping]
     bit24 = crowdcolors[cid] # TODO might need an offset.
@@ -51,34 +68,23 @@ with open('world.map', 'w') as f:
 
             rcoords = room['coordinates']
 
-            harbour = False
-            shop = False
-            bank = False
-            stronghold = False
-            wilder = False
-            ferry = False
-            news = False
-            arena = False
-            post = False
-            comm = False
-            grate = False
-            locksmith = False
+            feature = ''
             if 'userData' in room:
                 user = room['userData']
 
                 if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
-                if 'feature-harbour' in user: harbour = True;
-                if 'feature-shop' in user: shop = True;
-                if 'feature-bank' in user: bank = True;
-                if 'feature-stronghold' in user: stronghold  = True;
-                if 'feature-wilderness' in user: wilderness = True;
-                if 'feature-ferry' in user: ferry = True;
-                if 'feature-news' in user: news = True;
-                if 'feature-arena' in user: arena = True;
-                if 'feature-postoffice' in user: postoffice = True;
-                if 'feature-commodityshop' in user: commodityshope = True;
-                if 'feature-grate' in user: grate = True;
-                if 'feature-locksmith' in user: locksmith = True;
+                if 'feature-stronghold' in user: feature = 'h'
+                if 'feature-ferry' in user: feature = 'F'
+                if 'feature-news' in user: feature = 'N'
+                if 'feature-arena' in user: feature = 'A'
+                if 'feature-postoffice' in user: feature = 'O'
+                if 'feature-commodityshop' in user: feature = 'C'
+                if 'feature-grate' in user: feature = 'G'
+                if 'feature-wilderness' in user: feature = 'W'
+                if 'feature-harbour' in user: feature = 'H'
+                if 'feature-shop' in user: feature = 'S'
+                if 'feature-bank' in user: feature = '$'
+                if 'feature-locksmith' in user: feature = 'L'
 
             rname = ''
             if 'name' in room:
@@ -88,7 +94,7 @@ with open('world.map', 'w') as f:
             rflag = 'flag'
             #  rcolor = colors(room['environment'])
             rcolor = "<101>"
-            rsym = 'sym'
+            rsym = feature
             rdesc = 'desc'
             rarea = areaid
             rnote = 'note'; rterain = 'ter'; rdata = 'data'; rweight = '1.0'; 
@@ -109,25 +115,60 @@ with open('world.map', 'w') as f:
                     direction = portal['name']
                     sameArea = True
 
-                p['dir'] = direction
-                p['dircmd'] = portal['name']
+                if portal['name'] not in dirs:
+                    print(f'Weird portal: {portal["name"]}')
+                    direction = 'special'
+                    cmd = 0
+                    continue
+                    #  sys.exit(1)
+                else:
+                    #TODO need to account for 
+                    #   sendAll, send
+                    #   script
+                    #   push, pull, turn .*here
+                    #       figure, idol, jar, vine, carving, callibius, opal, horn
+                    #   embrace
+                    #   enter
+                    #   kneel
+                    #   "say .*"
+                    p['dir'] = dirs[direction]
+                    p['dircmd'] = dirs[portal['name']]
+                
+                skipVoidRooms = ['in','out','u','d']
+                if p['dir'] in skipVoidRooms: continue
 
                 x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
                 y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
+                z = abs(rcoords[2] - allrooms[exitid]['coords'][2])
 
-                # TODO needs to loop
-                if x > 1 or y > 1 and sameArea:
+                while x > 1 or y > 1:
+                    print(f'Diffs {x}, {y}, {z}, dir {p["dir"]}/{p["dircmd"]}')
+                    if x > 0: x = abs(x - 1)
+                    if y > 0: y = abs(y - 1)
 
-                    void = {'dir': direction, 'flag':'void', 'number':globalRoomCnt+voidRoomOffset}
-                    voidRoomOffset += 1
-                    #  allrooms
+                    rid = len(allrooms) + len(voidrooms)
+                    voidroom = {
+                        'vnum':rid, 
+                        'flag':4104, 
+                        'color': '<270>',
+                        'exits': [],
+                    }
+                    vexit = {'vnum':exitid}
 
-                gotoexitdir = 0
-                eflag = ''
-                edata = ''
-                eweight = 1.0
-                ecolor = '<270>'
-                edelay = 0.0
+                    voidrooms.append(voidroom)
+
+                rexit = {
+                    'vnum':rid
+                    'dir':p['idr'],
+                    'dircmd':p['dircmd']
+                    'bitflag':0,
+                    'flag':'',
+                    'data':'',
+                    'weight':1.00,
+                    'color':'<270>',
+                    'delay':0.0,
+                }
+
                 f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
                 f.write(f'{{{gotoexitdir}}}{{{eflag}}}{{{edata}}}')
                 f.write(f'{{{eweight}}}{{{ecolor}}}{{{edelay}}}')

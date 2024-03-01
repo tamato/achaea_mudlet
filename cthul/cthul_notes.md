@@ -1,3 +1,10 @@
+Artifact List:
+-------------------
+Fracture: for occie it's diadem, +int, and magic damage collar
+Fracture: then the obvious generic bashing arties like Maya Figurine, artifact armor paragons, etc
+
+
+
 def list in gui
 
 read through PROJECT 100, by Boosteya
@@ -169,6 +176,7 @@ nations.
 
 
 His search still continues...
+
 
 
 

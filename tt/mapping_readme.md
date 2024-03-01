@@ -15,7 +15,21 @@ L {legendgroupname} {legendname} {legendsymbol}
 T {terrainname} {terrainflags} {terrainsymbol}
 
 R {#roomvnum}{#roomflags}{roomcolor}{roomname}{roomsymbol}{roomdesc}{roomarea}{roomnote}{roomterrain}{roomdata}{#roomweight}{roomid}
-E {#exitvnum}{exitname}{exitcommand}{#gotoexitdir}{#exitflags}{exitdata}{#exitweight}{exitcolor}{#exitdelay}
+E
+    #vnum
+    name
+    cmd
+    #dir -- seems like a bitflag for possible directions from this exit.
+    #flags -- get_exit_color, colors exit based on HIDE,INVI,AVOID,BLOCK
+    data -- can see it with #map exit, with no args.
+    #3f weight
+    color
+    #2f delay
+
+
+-- in mapper.c
+fprintf(file, "\nR {%d}{%d}{%s}{%s}{%s}{%s}{%s}{%s}{%s}{%s}{%.3f}{%s}\n",
+fprintf(file, "E {%d}{%s}{%s}{%d}{%d}{%s}{%.3f}{%s}{%.2f}\n",
 
 
 

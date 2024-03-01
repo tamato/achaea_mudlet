@@ -9,14 +9,14 @@ manifestations of it.
 
 Concept of Self:
 
-| | While we all walk the path of Enlightenment, our first steps are
+|x| While we all walk the path of Enlightenment, our first steps are
 often unique and shaped by our history. Be prepared to discuss your life
 before your experiences with the pygmies and your citizenship to Ashtan.
 Your memories may be a bit hazy following your escape. This is perfectly
 reasonable, in which case, simply be willing to speak a little about
 yourself.
 
-| | Ensure you have a suitable description so citizens can get a good
+|x| Ensure you have a suitable description so citizens can get a good
 LOOK at you. Remember, you represent our city at all times.
 Additionally, make use of DIRECTORY and CHELP SHOPS in order to find
 appropriate clothing and out of those rags. HELP DESCRIPTION and HELP
@@ -29,33 +29,33 @@ Unpredictability is an attribute most accurately associated with Chaos.
 In order to properly prepare yourself for unseen challenges you've yet
 to face, ensure you obtain the following essentials:
 
-| | Follow HELP ARMOUR to find and obtain the armour best suited to your
+|x| Follow HELP ARMOUR to find and obtain the armour best suited to your
 class. If applicable, also obtain and equip the proper weapons and
 shields. For blademasters, this would include your uniquely forged and
 named blade. CHELP BLADEFORGING will help you with that process.
 
-| | Maintaining tattoos is an important facet of survival. HELP TATTOOS
+|x| Maintaining tattoos is an important facet of survival. HELP TATTOOS
 and CHELP TATTOOS will better assist you in learning their unique
 benefits. Please ensure you have at minimum the following required
 tattoos: Cloak, Moss, Shield, Tree, Boar, and Mindseye. You can ask over
 city channels for someone to assist with inking these on your person, or
 alternatively, you can purchase stencils in the various shops.
 
-| | Familiarize yourself with CHELP ANTITHEFT. Be prepared to discuss
+|x| Familiarize yourself with CHELP ANTITHEFT. Be prepared to discuss
 the steps you've taken in order to ensure your hard earned rewards
 remain in your possession.
 
 Concept of Chaos:
 
-Read CLHELP TOUR in the Academy. You do not need to take a tour, if you
+|x| Read CLHELP TOUR in the Academy. You do not need to take a tour, if you
 feel you already know Ashtan well enough to get around, but you will be
 quizzed on your knowledge as part of your interview.
 
-Read CHELP CHAOS. This will give you a basic introduction to the concept
+| | Read CHELP CHAOS. This will give you a basic introduction to the concept
 of Chaos, what it is and why we work to spread its influence across
 Sapience.
 
-READ CHELP CHAOSPLANE. We are charged with maintaining the sanctity of
+| | READ CHELP CHAOSPLANE. We are charged with maintaining the sanctity of
 the home of the Chaos Lords. Occultists, especially, should be aware of
 this duty.
 

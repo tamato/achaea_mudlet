@@ -7,7 +7,7 @@ advance the workings of Chaos beyond the boundaries of Ashtan.
 
 Concept of Progression:
 
-| | Prior to your assessment, check TASKS ALL and complete any tasks
+|x| Prior to your assessment, check TASKS ALL and complete any tasks
 remaining.
 
 | | Consider your future growth as a citizen of Ashtan. Be willing to
@@ -20,7 +20,7 @@ CT for someone to induct you into the Institute of Entropy. While
 completion of this program is not required in order to graduate from the
 Academy, this will be the first step necessary to join the Army.
 
-| | Read over HOUSE LIST ASHTAN and learn more information about the
+|x| Read over HOUSE LIST ASHTAN and learn more information about the
 Houses available to you with HELP HOUSE <Housename>. By this point, you
 should have an idea of which house most fits your unique skills and
 interests. Once you have made this decision, WALK TO EPICURUS and ASK
@@ -30,7 +30,7 @@ graduate.
 
 Concept of Ashtan:
 
-| | Review the city laws (CHELP LAWS) located at the Standards of
+|x| Review the city laws (CHELP LAWS) located at the Standards of
 Ambition due north of the Main Gates. You may need to PUSH, PULL, or
 TURN the PLINTH to view all legislation relevant to the Seat of Chaos'
 citizens. Be prepared to be tested on your knowledge.
@@ -41,7 +41,7 @@ while you READ the TABLET, as well as the obligations we as Ashtani
 share and the mutually beneficial nature of our pact with the Chaos
 Court.
 
-| | Learn the location and purpose of the Weave of Conflict, as well as
+|x| Learn the location and purpose of the Weave of Conflict, as well as
 how to help fill it. Use CHELP FONT as a guide in order to contribute
 to our city font.
 
