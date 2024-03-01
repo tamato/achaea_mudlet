@@ -6,8 +6,9 @@ import sys
 with open('map.json') as mapfile:
     parsed = json.load(mapfile)
 
-allrooms = {}
 voidrooms = []
+
+allrooms = {}
 for area in parsed['areas']:
     for room in area['rooms']:
         rid = room['id']
@@ -48,9 +49,27 @@ dirBits = {
     'w':8,
     'u':16,
     'd':32,
-    'i':64,
-    'o':128,
+    'in':64,
+    'out':128,
 }
+
+# d is expected to be a dirBits
+def reverseDir(d):
+    if d == 'n': return (4,'s')
+    if d == 's': return (1,'n')
+    if d == 'e': return (8,'w')
+    if d == 'w': return (2,'e')
+
+    if d == 'nw': return (4|2,'se')
+    if d == 'ne': return (4|8,'sw')
+    if d == 'sw': return (1|2,'ne')
+    if d == 'se': return (1|8,'nw')
+
+    if d == 'in':  return (128,'out')
+    if d == 'out': return (64,'in')
+
+    if d == 'u': return (32,'d')
+    if d == 'd': return (16,'u')
 
 def colors(mapping):
     cid = colormapping[mapping]
@@ -65,6 +84,12 @@ def colors(mapping):
     return color
 
 with open('world.map', 'w') as f:
+
+    # prepand the header junk
+    with open('mapheader') as header:
+        for line in header:
+            f.write(line)
+
     for area in parsed['areas']:
         areaname = area['name']
         roomCnt =  area['roomCount']
@@ -104,22 +129,24 @@ with open('world.map', 'w') as f:
                 rname = room['name']
 
             # room flags - 8 is void room,4104
-            rflag = ''
-            #  rcolor = colors(room['environment'])
-            rcolor = "<250>"
-            rsym = feature
-            rdesc = 'desc'
-            rarea = ''
-            rnote = 'note'; rterain = ''; rdata = 'data'; rweight = '1.0'; 
-            #TODO throw in area id somewhere.
-            f.write(f'R {{{rid}}}{{{rflag}}}{{{rcolor}}}{{{rname}}}{{{rsym}}}')
-            f.write(f'{{{rdesc}}}{{{rarea}}}{{{rnote}}}{{{rterain}}}')
-            f.write(f'{{{rdata}}}{{{rweight}}}{{{areaid}}}\n')
+            croom = {
+                'vnum':rid,
+                'flags':'',
+                'color':'',
+                'name':rname,
+                'sym':feature,
+                'desc':'',
+                'areaname':'',
+                'note':'',
+                'terain':'',
+                'data':'',
+                'weight':1.00,
+                'roomid':areaid,
+                'exits':[],
+            }
 
             for portal in room['exits']:
-                p = {}
                 exitid = portal['exitId']
-                p['vnum'] = exitid
 
                 # check if this leads to the same area id
                 direction = 'in'
@@ -144,61 +171,82 @@ with open('world.map', 'w') as f:
                     #   enter
                     #   kneel
                     #   "say .*"
-                    p['dir'] = dirs[direction]
-                    p['dircmd'] = dirs[portal['name']]
+                    rdir = dirs[direction]
+                    rdircmd = dirs[portal['name']]
                 
                 skipVoidRooms = ['in','out','u','d']
-                if p['dir'] in skipVoidRooms: continue
+                if rdir in skipVoidRooms: continue
 
-                simplelist = ['n','s','e','w','u','d']
+                simplelist = ['n','s','e','w','u','d','in','out']
                 orlist = ['nw','ne','se','sw']
-                if p['dir'] in simplelist: dirbit = dirBits[p['dir']]
+                dirbit = 0
+                if rdir in simplelist: dirbit = dirBits[rdir]
+                if rdir in orlist: dirbit = dirBits[rdir[0]] | dirBits[rdir[1]]
 
-                if p['dir'] == 'ne': dirbit = dirBits['n'] | dirBits['e']
-                if p['dir'] == 'se': dirbit = dirBits['s'] | dirBits['e']
-                if p['dir'] == 'sw': dirbit = dirBits['s'] | dirBits['w']
-                if p['dir'] == 'nw': dirbit = dirBits['n'] | dirBits['w']
-
-                if p['dir'] == 'in': dirbit = dirBits['i']
-                if p['dir'] == 'out': dirbit = dirBits['o']
-
-                if p['dir'] == 'u': dirbit = dirBits['u']
-                if p['dir'] == 'd': dirbit = dirBits['d']
+                crexit = {
+                    'vnum':exitid,
+                    'dir': rdir,
+                    'dircmd':rdircmd,
+                    'dirbit':dirbit,
+                    'flag':'',
+                    'data':'',
+                    'weight':1.00,
+                    'color':'',
+                    'delay':0.0,
+                }
 
                 x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
                 y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
 
                 while x > 1 or y > 1:
-                    print(f'Diffs {x}, {y}, {z}, dir {p["dir"]}/{p["dircmd"]}')
+                    print(f'Diffs {x}, {y}')
                     if x > 0: x = abs(x - 1)
                     if y > 0: y = abs(y - 1)
 
-                    rrid = len(allrooms) + len(voidrooms)
+                    vid = len(allrooms) + len(voidrooms)
                     voidroom = {
-                        'vnum':rrid, 
+                        'vnum':vid,
                         'flag':4104, 
-                        'color': '<270>',
-                        'exits': [],
+                        'color':'',
+                        'name':'',
+                        'sym':'',
+                        'desc':'',
+                        'areaname':'',
+                        'note':'',
+                        'terain':'',
+                        'data':'',
+                        'weight':0.00001,
+                        'roomid':'',
+                        'exits':[],
                     }
-                    vexit = {'vnum':exitid}
-
                     voidrooms.append(voidroom)
 
-                rexit = {
-                    'vnum':rid,
-                    'dir': p['dir'],
-                    'dircmd':p['dircmd'],
-                    'dirbit':0,
-                    'flag':'',
-                    'data':'',
-                    'weight':1.00,
-                    'color':'<270>',
-                    'delay':0.0,
-                }
+                    vexit = {
+                        'vnum':crexit['vnum'],
+                        'dir': rdir,
+                        'dircmd':rdircmd,
+                        'dirbit':dirbit,
+                        'flag':'',
+                        'data':'',
+                        'weight':1.00,
+                        'color':'',
+                        'delay':0.0,
+                    }
+                    crexit['vnum'] = vid
+                    voidroom['exits'].append(vexit)
+
+                    vexit = {
+                        'vnum':croom['vnum']
+                        'dir': reverseDir(dirbit)[1],
+                        'dircmd': reverseDir(dirbit)[1],
+                        'dirbit': reverseDir(dirbit)[0],
+                    }
+                    voidroom['exits'].append(vexit)
+
 
                 eflag = ''; edata = ''; eweight = 1.0;
-                ecolor = '<220>'; edelay = 0.0;
-                f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
+                ecolor = ''; edelay = 0.0;
+                #  f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
                 f.write(f'{{{dirbit}}}{{{eflag}}}{{{edata}}}')
                 f.write(f'{{{eweight}}}{{{ecolor}}}{{{edelay}}}')
                 f.write(f'\n')
