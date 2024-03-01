@@ -49,12 +49,14 @@
 #nop Around monsters?
 #nop there might be a different one around people.
 #high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
-#action {^A nearly invisible magical shield forms around.*$} 
+#action {^A nearly invisible magical shield forms around} 
 { 
    #nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
+   print RUIN THE SHEILD!;
    #if {&{atkTarget} != 0} {
       #if {$rage >= $ruinCost} {
-         #send {ruin}
+         #math rage {$rage - $ruinCost};
+         #send {ruin};
          print Ruin Shield!;
       }
    }

@@ -305,7 +305,6 @@
    #list room_window[tab][players] clear;
 
    #foreach {*gmcp[room][players][]} {idx} {
-      #nop #show $gmcp[room][players][+$idx];
       #local ply $gmcp[room][players][+$idx][name];
 
       #if {{$ply} === {$whoami}} { #continue };

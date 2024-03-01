@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the Rhodestrian Settlement}
+#VARIABLE {areaName} {the Darkenwood Forest}
 #VARIABLE {targets}
 {
     {Ashtan} 
@@ -15,6 +15,7 @@
     }
     {the Darkenwood Forest} 
     {
+        {Vinia} {}
         {arachnoi} {}
         {spider} {}
     }

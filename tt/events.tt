@@ -120,8 +120,11 @@
 
 #EVENT {IAC SB GMCP Room.removeplayer IAC SE}
 {
-    #variable gmcp[room][removeplayer] {%0};
-    gui.onRoomRemovePlayers;
+   #variable gmcp[room][removeplayer] {%0};
+   gui.onRoomRemovePlayers;
+
+   #class chardatabase load;
+   #var clearCharDb 1;
 }
 
 #EVENT {IAC SB GMCP Char.defences.add IAC SE}
@@ -164,6 +167,8 @@
       #class chardatabase clear;
    };
 }
+
+#nop #ACTION {colors are 11/1
 
 #EVENT {SESSION DISCONNECTED}
 {
