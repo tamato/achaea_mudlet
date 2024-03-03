@@ -3,8 +3,8 @@ There are rooms that seem to break when loading the entir map
     if the room has been tarversed, don't update it more.
 
 How to load up just an area
-
-learn to build TinTin
+    possible by hidding their connects, if they are outside the area.
+    Couldu tintin scripting to test this.
 
 chardatabase, why does it not get saved, for loading and clear
 
@@ -16,4 +16,6 @@ more map things
 room 4271
     has too many NE exits, how did this happen. 
     With the smaller map.
+    Add 'rdir' and 'rdirmcd' back
+
 
