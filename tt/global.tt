@@ -113,7 +113,7 @@
 #alias {ih} { 
    #var clearCharDb 1;
    #send {info here};
-}
+};
 
 
 #read events.tt;

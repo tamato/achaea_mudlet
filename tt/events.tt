@@ -168,11 +168,9 @@
    };
 }
 
-#nop #ACTION {colors are 11/1
-
 #EVENT {SESSION DISCONNECTED}
 {
-    #map write gmcp.map
+    #nop #map write gmcp.map;
 }
 
 

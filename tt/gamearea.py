@@ -79,7 +79,7 @@ dirBits = {
     'out':128,
 }
 
-# d is expected to be a 'rdir', which is room direction
+# d is expected to be a 'rdircmd', which is room direction
 def reverseDir(d):
 
     if d == 'n': return (4,'s')
@@ -112,6 +112,14 @@ def colors(mapping):
 
 def getRoom(areaId,roomId):
     pass
+
+def getArea(roomId):
+    if roomId > voidRoomStart: return -1
+
+    for area in parsed['areas']:
+        for room in area['rooms']:
+            if roomId == room['id']:
+                return area['id']
 
 def getExit(roomId,exitId):
     for area in parsed['areas']:
@@ -150,7 +158,7 @@ with open('world.map', 'w') as f:
         areaid = area['id']
         if areaid < 0: continue
 
-        #  print(f'Converting area {areaid}')
+        print(f'Converting area {areaid}')
         #  print(f'RoomCnt {roomCnt}')
 
         for roomIdx, room in enumerate(area['rooms']):
@@ -163,7 +171,7 @@ with open('world.map', 'w') as f:
             if 'userData' in room:
                 user = room['userData']
 
-                #  if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
+                #if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
                 if 'feature-stronghold' in user: feature = 'h'
                 if 'feature-ferry' in user: feature = 'F'
                 if 'feature-news' in user: feature = 'N'
@@ -189,7 +197,7 @@ with open('world.map', 'w') as f:
                 'name':rname,
                 'sym':feature,
                 'desc':'',
-                'areaname':'',
+                'area':areaname,
                 'note':'',
                 'terain':'',
                 'data':'',
@@ -202,12 +210,10 @@ with open('world.map', 'w') as f:
                 exitid = portal['exitId']
 
                 # check if this leads to the same area id
-                direction = 'in'
-                sameArea = True
                 direction = portal['name']
 
                 if portal['name'] not in dirs:
-                    print(f'Weird portal: {portal["name"]}')
+                    #  print(f'Weird portal: {portal["name"]}')
                     direction = 'special'
                     cmd = 0
                     continue
@@ -223,21 +229,27 @@ with open('world.map', 'w') as f:
                     #   kneel
                     #   "say .*"
                     rdir = dirs[direction]
-                    rdircmd = dirs[portal['name']]
-                
-                skipVoidRooms = ['in','out','u','d']
-                if rdir in skipVoidRooms: continue
+                    rdircmd = dirs[direction]
 
+                exitAreaId = getArea(exitid)
+                if exitAreaId != -1 and exitAreaId != areaid:
+                    rdir = 'in'
+                
                 simplelist = ['n','s','e','w','u','d','in','out']
                 orlist = ['nw','ne','se','sw']
                 dirbit = 0
-                if rdir in simplelist: dirbit = dirBits[rdir]
-                if rdir in orlist: dirbit = dirBits[rdir[0]] | dirBits[rdir[1]]
+                if rdircmd in simplelist: dirbit = dirBits[rdircmd]
+                if rdircmd in orlist: dirbit = dirBits[rdircmd[0]] | dirBits[rdircmd[1]]
+
+                if rdir != rdircmd: 
+                    color = '<118>'
+                    croom['color'] = color
+                    #  print(f'Room {croom["vnum"]} leads somewhere else')
 
                 crexit = {
                     'vnum':exitid,
-                    'dir': rdir,
-                    'dircmd':rdircmd,
+                    'dir': '',
+                    'dircmd':'',
                     'dirbit':dirbit,
                     'flag':'',
                     'data':'',
@@ -247,16 +259,18 @@ with open('world.map', 'w') as f:
                 }
                 croom['exits'].append(crexit)
 
-                # If the exitid is not in allrooms, it is because it is a void room.
-                if exitid not in allrooms: 
+                # don't check for void rooms on layer or map changes
+                skipVoidRooms = ['in','out','u','d']
+                if rdircmd in skipVoidRooms: 
+                    continue
+
+                # If the exitid greater than voidRoomStart, it is because it is a void room.
+                if exitid >= voidRoomStart: 
                     continue;
 
                 x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
                 y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
                 while x > 1 or y > 1:
-                    if sameArea == False:
-                        break
-
                     #  print(f'Diffs {x}, {y}')
                     if x > 0: x = abs(x - 1)
                     if y > 0: y = abs(y - 1)
@@ -271,7 +285,7 @@ with open('world.map', 'w') as f:
                         'name':'',
                         'sym':'',
                         'desc':'',
-                        'areaname':'',
+                        'areaname':areaname,
                         'note':'',
                         'terain':'',
                         'data':'',
@@ -284,8 +298,8 @@ with open('world.map', 'w') as f:
                     crexit['data'] = 'voidRoom'
                     vexit = {
                         'vnum':exitid,
-                        'dir': rdir,
-                        'dircmd':rdircmd,
+                        'dir': '',
+                        'dircmd':'',
                         'dirbit':dirbit,
                         'flag':'',
                         'data':'',
@@ -310,9 +324,9 @@ with open('world.map', 'w') as f:
                     # create another exit for this void room to point back to the current room
                     vexit = {
                         'vnum':croom['vnum'],
-                        'dir': reverseDir(rdir)[1],
-                        'dircmd': reverseDir(rdir)[1],
-                        'dirbit': reverseDir(rdir)[0],
+                        'dir': reverseDir(rdircmd)[1],
+                        'dircmd': reverseDir(rdircmd)[1],
+                        'dirbit': reverseDir(rdircmd)[0],
                         'flag':'',
                         'data':'',
                         'weight':0.01,
@@ -331,7 +345,7 @@ with open('world.map', 'w') as f:
 
         # done with the current area
         areaCount += 1
-        if False and areaCount > 2:
+        if areaCount > 2:
             break
     print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidrooms)}, void index {nextRoomNum}')
 
