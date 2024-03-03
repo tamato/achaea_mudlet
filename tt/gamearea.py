@@ -3,20 +3,46 @@
 import json
 import sys
 
+def writeRoom(f, room):
+    f.write(f'\n') 
+
+    f.write(f'R ')
+    for k,v in room.items():
+        if k == 'exits':
+            continue
+
+        f.write(f'{{{v}}}') 
+    f.write(f'\n') 
+
+    for ext in room['exits']:
+        f.write(f'E ')
+        for _,v in ext.items():
+            f.write(f'{{{v}}}') 
+        f.write(f'\n') 
+
 with open('map.json') as mapfile:
     parsed = json.load(mapfile)
 
 voidrooms = []
 
+nextRoomNum = 0
+voidRoomStart = 0
 allrooms = {}
 for area in parsed['areas']:
     for room in area['rooms']:
         rid = room['id']
+
+        if rid > nextRoomNum: nextRoomNum = rid
+
         if rid in allrooms: 
             print("Found Duplicate Room Num")
             sys.exit()
 
         allrooms[rid] = {'coords':room['coordinates'], 'areaid':area['id']} 
+
+
+voidRoomStart = nextRoomNum
+print(f'VoidStart {voidRoomStart}')
 
 crowdcolors = parsed['customEnvColors']
 colormapping = parsed['envToColorMapping']
@@ -53,8 +79,9 @@ dirBits = {
     'out':128,
 }
 
-# d is expected to be a dirBits
+# d is expected to be a 'rdir', which is room direction
 def reverseDir(d):
+
     if d == 'n': return (4,'s')
     if d == 's': return (1,'n')
     if d == 'e': return (8,'w')
@@ -83,6 +110,30 @@ def colors(mapping):
     color +=">"
     return color
 
+def getRoom(areaId,roomId):
+    pass
+
+def getExit(roomId,exitId):
+    for area in parsed['areas']:
+        for room in area['rooms']:
+            if roomId == room['id']:
+                for ext in room['exits']:
+                    if exitId == ext['exitId']: 
+                        return ext;
+    #  print(f'room FOUND NOTHING {roomId}, {exitId}')
+    return {}
+
+def getVoidExit(roomId,exitId):
+    for vroom in voidrooms:
+        if roomId == vroom['vnum']:
+            for vexit in vroom['exits']:
+                if exitId == vexit['vnum']:
+                    return vexit;
+
+    print(f'FOUND NOTHING {roomId}, {exitId}')
+    sys.exit(1)
+    return {}
+
 with open('world.map', 'w') as f:
 
     # prepand the header junk
@@ -90,7 +141,8 @@ with open('world.map', 'w') as f:
         for line in header:
             f.write(line)
 
-    for area in parsed['areas']:
+    areaCount = 0
+    for areaIdx,area in enumerate(parsed['areas']):
         areaname = area['name']
         roomCnt =  area['roomCount']
         if roomCnt == 0: continue
@@ -98,10 +150,11 @@ with open('world.map', 'w') as f:
         areaid = area['id']
         if areaid < 0: continue
 
-        for room in area['rooms']:
-            ttroom = {}
+        #  print(f'Converting area {areaid}')
+        #  print(f'RoomCnt {roomCnt}')
 
-            ttroom['areaId'] = areaid
+        for roomIdx, room in enumerate(area['rooms']):
+
             rid = room['id']
 
             rcoords = room['coordinates']
@@ -110,7 +163,7 @@ with open('world.map', 'w') as f:
             if 'userData' in room:
                 user = room['userData']
 
-                if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
+                #  if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
                 if 'feature-stronghold' in user: feature = 'h'
                 if 'feature-ferry' in user: feature = 'F'
                 if 'feature-news' in user: feature = 'N'
@@ -145,15 +198,13 @@ with open('world.map', 'w') as f:
                 'exits':[],
             }
 
-            for portal in room['exits']:
+            for exitIdx, portal in enumerate(room['exits']):
                 exitid = portal['exitId']
 
                 # check if this leads to the same area id
                 direction = 'in'
-                sameArea = False
-                if allrooms[rid]['areaid'] == areaid:
-                    direction = portal['name']
-                    sameArea = True
+                sameArea = True
+                direction = portal['name']
 
                 if portal['name'] not in dirs:
                     print(f'Weird portal: {portal["name"]}')
@@ -194,16 +245,25 @@ with open('world.map', 'w') as f:
                     'color':'',
                     'delay':0.0,
                 }
+                croom['exits'].append(crexit)
+
+                # If the exitid is not in allrooms, it is because it is a void room.
+                if exitid not in allrooms: 
+                    continue;
 
                 x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
                 y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
-
                 while x > 1 or y > 1:
-                    print(f'Diffs {x}, {y}')
+                    if sameArea == False:
+                        break
+
+                    #  print(f'Diffs {x}, {y}')
                     if x > 0: x = abs(x - 1)
                     if y > 0: y = abs(y - 1)
 
-                    vid = len(allrooms) + len(voidrooms)
+                    vid = nextRoomNum
+                    nextRoomNum += 1
+
                     voidroom = {
                         'vnum':vid,
                         'flag':4104, 
@@ -215,44 +275,67 @@ with open('world.map', 'w') as f:
                         'note':'',
                         'terain':'',
                         'data':'',
-                        'weight':0.00001,
+                        'weight':0.01,
                         'roomid':'',
                         'exits':[],
                     }
                     voidrooms.append(voidroom)
 
+                    crexit['data'] = 'voidRoom'
                     vexit = {
-                        'vnum':crexit['vnum'],
+                        'vnum':exitid,
                         'dir': rdir,
                         'dircmd':rdircmd,
                         'dirbit':dirbit,
                         'flag':'',
                         'data':'',
-                        'weight':1.00,
+                        'weight':0.01,
                         'color':'',
                         'delay':0.0,
                     }
-                    crexit['vnum'] = vid
                     voidroom['exits'].append(vexit)
 
+                    # connect what used to be this rooms exit, 
+                    # to the newly created void room.
+                    ext = {}
+                    if exitid < voidRoomStart:
+                        ext = getExit(exitid,rid)
+                    else:
+                        ext = getVoidExit(exitid,rid)
+                    ext['vnum'] = vid
+
+                    # ponit the exit to our newly created void room.
+                    crexit['vnum'] = vid
+
+                    # create another exit for this void room to point back to the current room
                     vexit = {
-                        'vnum':croom['vnum']
-                        'dir': reverseDir(dirbit)[1],
-                        'dircmd': reverseDir(dirbit)[1],
-                        'dirbit': reverseDir(dirbit)[0],
+                        'vnum':croom['vnum'],
+                        'dir': reverseDir(rdir)[1],
+                        'dircmd': reverseDir(rdir)[1],
+                        'dirbit': reverseDir(rdir)[0],
+                        'flag':'',
+                        'data':'',
+                        'weight':0.01,
+                        'color':'',
+                        'delay':0.0,
                     }
                     voidroom['exits'].append(vexit)
+                    
+                    #done with the void room
+                    writeRoom(f, voidroom)
 
+                # done with the current exit.
+            
+            # done with current room, writ it out.
+            writeRoom(f, croom)
 
-                eflag = ''; edata = ''; eweight = 1.0;
-                ecolor = ''; edelay = 0.0;
-                #  f.write(f'E {{{p["vnum"]}}}{{{p["dir"]}}}{{{p["dircmd"]}}}')
-                f.write(f'{{{dirbit}}}{{{eflag}}}{{{edata}}}')
-                f.write(f'{{{eweight}}}{{{ecolor}}}{{{edelay}}}')
-                f.write(f'\n')
-            f.write(f'\n')
+        # done with the current area
+        areaCount += 1
+        if False and areaCount > 2:
+            break
+    print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidrooms)}, void index {nextRoomNum}')
 
-        break
+    # room 4271 goes to road, to id 4100
 
 def getAreaIdsForRegion():
     for area in parsed['areas']:
