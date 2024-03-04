@@ -191,7 +191,7 @@ with open('world.map', 'w') as f:
             coords = room["coordinates"]
             croom = {
                 'vnum':rid,
-                'flags':4102, # hide all room, with 4102, ROOM_FLAG_HIDE
+                'flags':2, # hide all room, with 4102, ROOM_FLAG_HIDE
                 'color':'',
                 'name':rname,
                 'sym':feature,

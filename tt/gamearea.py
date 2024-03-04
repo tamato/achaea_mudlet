@@ -192,7 +192,7 @@ with open('world.map', 'w') as f:
             # room flags - 8 is void room,4104
             croom = {
                 'vnum':rid,
-                'flags':'',
+                'flags':2,
                 'color':'',
                 'name':rname,
                 'sym':feature,
