@@ -12,6 +12,12 @@
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 }
 
+#nop Map Go To, room num
+#alias {mgt} {
+   #map find {%1};
+   #path run {0.5};
+}
+
 #alias {mapping.explore} {
 
    #list yetToVisit clear;
@@ -33,31 +39,6 @@
 
 #alias {mapping.onRoomInfo}
 {
-   #nop Get current Area ID;
-   #local coords $gmcp[room][info][coords];
-   #list coords explode ,;
-   #local areaId $coords[1];
-
-   #if {&{oldAreaId} && $oldAreaId != $areaId} {
-
-      #nop If we have left the current area, hide the old place.;
-      #map list {roomid}{$oldAreaId} {variable}{area};
-      #foreach *area[] roomid {#map set {roomflags}{2} $roomid};
-
-      #nop On entering the new place, unhide it.;
-      #map list {roomid}{$areaId} {variable}{area};
-      #foreach *area[] roomid {#map set {roomflags}{0} $roomid};
-
-      #unvar area;
-      #unvar roomid;
-   };
-
-   #map list {roomid}{$areaId} {variable}{area};
-   #foreach *area[] roomid {#map set {roomflags}{0} $roomid};
-
-   #unvar area;
-   #unvar roomid;
-
    #map goto {$gmcp[room][info][num]};
 
    #draw boxed map 1 1 $uimap[height] $uimap[width];
@@ -84,9 +65,6 @@
    #format {prompt} {%u} {$exits<099>};
    #line ignore #showme {$prompt} {$uimap[height]+1} {2};
    #unvar exits;
-
-   #nop Save the old area to be hidden when we leave.;
-   #var oldAreaId $areaId;
 }
 
 
