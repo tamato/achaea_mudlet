@@ -10,8 +10,16 @@
 
 #alias {mapping.onRoomInfo}
 {
+   #nop If we have left the current area, hide the old place.
+   #nop #map list {roomid}{<ID>} {variable}{<var>};
+   #nop #foreach *<var>[] <roomid> {#map set {roomflags}{0} $roomid};
+
    #map goto {$gmcp[room][info][num]};
    #draw boxed map 1 1 $uimap[height] $uimap[width];
+
+   #nop On entering the new place, unhide it.
+   #nop #map list {roomid}{<ID>} {variable}{<var>};
+   #nop #foreach *<var>[] <roomid> {#map set {roomflags}{0} $roomid};
 
    #math width {$uimap[width] - 4};
 
