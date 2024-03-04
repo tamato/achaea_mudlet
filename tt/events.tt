@@ -100,7 +100,7 @@
 
 #EVENT {IAC SB GMCP Room.addplayer IAC SE}
 {
-   #class chardatabase load;
+   #nop #class chardatabase load;
    #var clearCharDb 1;
 
    #variable gmcp[room][addplayer] {%0};
@@ -109,7 +109,7 @@
 
 #EVENT {IAC SB GMCP Room.Players IAC SE}
 {
-   #class chardatabase load;
+   #nop #class chardatabase load;
    #var clearCharDb 1;
 
    #variable gmcp[room][players] {%0};
@@ -123,7 +123,7 @@
    #variable gmcp[room][removeplayer] {%0};
    gui.onRoomRemovePlayers;
 
-   #class chardatabase load;
+   #nop #class chardatabase load;
    #var clearCharDb 1;
 }
 
@@ -155,7 +155,7 @@
 {
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
-      #class chardatabase load;
+      #nop #class chardatabase load;
    };
 }
 
@@ -164,7 +164,7 @@
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
       #var clearCharDb 0;
-      #class chardatabase clear;
+      #nop #class chardatabase clear;
    };
 }
 
