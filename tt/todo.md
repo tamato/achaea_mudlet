@@ -13,26 +13,11 @@ more map things
    special exits
 
 
-room 4271
-    has too many NE exits, how did this happen. 
-    With the smaller map.
+room 4058
+    when outside the room, its correct
+    whenin this room there is an uparrow
 
-   Room vnum: 4107   Room weight: 1.000   Room flags: 0
+    it should be, 4103
+    Exit: n   (  n)   to room: 6013080 (Grasslands)
 
-       Avoid: off          Block: off         Curved: off            Fog: off
-        Hide: off          Invis: off          Leave: off       NoGlobal: off
-      Static: off           Void: off
-
-           Exit: n   (  n)   to room: 6013104 (     )
-           Exit: e   (  e)   to room: 6013105 (     )
-           Exit: w   (  w)   to room: 6013106 (     )
-           Exit: s   (  s)   to room: 4172  (Tasur Road nearing the Thalassa Market)
-
-       Entrance: n   (  n) from room: 4172  (Tasur Road nearing the Thalassa Market)
-       Entrance: s   (  s) from room: 6013085 (     )
-       Entrance: w   (  w) from room: 6013103 (     )
-       Entrance: s   (  s) from room: 6013104 (     )
-       Entrance: w   (  w) from room: 6013105 (     )
-       Entrance: e   (  e) from room: 6013106 (     )
-       Entrance: e   (  e) from room: 6013109 (     )
-
+    voidroom with the 'correct' number 6013092

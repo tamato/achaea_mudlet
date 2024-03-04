@@ -191,7 +191,7 @@ with open('world.map', 'w') as f:
             coords = room["coordinates"]
             croom = {
                 'vnum':rid,
-                'flags':0, # hide all room, with 4102, ROOM_FLAG_HIDE
+                'flags':4102, # hide all room, with 4102, ROOM_FLAG_HIDE
                 'color':'',
                 'name':rname,
                 'sym':feature,
@@ -259,7 +259,7 @@ with open('world.map', 'w') as f:
 
         # done with the current area
         areaCount += 1
-        if areaCount > 2:
+        if False and areaCount > 2:
             break
 
     # End of loop for areas
@@ -298,8 +298,8 @@ with open('world.map', 'w') as f:
             while dx > 1 or dy > 1:
                 dx = abs(dx -1)
                 dy = abs(dy -1)
-                vid = nextRoomNum 
                 nextRoomNum += 1
+                vid = nextRoomNum 
 
                 voidroom = {
                     'vnum':vid,
