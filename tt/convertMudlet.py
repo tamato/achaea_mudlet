@@ -14,7 +14,7 @@ def writeRoom(f, room):
         f.write(f'{{{v}}}') 
     f.write(f'\n') 
 
-    for ext in room['exits']:
+    for _,ext in room['exits'].items():
         f.write(f'E ')
         for _,v in ext.items():
             f.write(f'{{{v}}}') 
@@ -142,6 +142,7 @@ def getVoidExit(roomId,exitId):
     sys.exit(1)
     return {}
 
+convertedRooms = {}
 with open('world.map', 'w') as f:
 
     # prepand the header junk
@@ -164,14 +165,12 @@ with open('world.map', 'w') as f:
         for roomIdx, room in enumerate(area['rooms']):
 
             rid = room['id']
-
             rcoords = room['coordinates']
-
-            feature = ''
+            feature = '';gameArea = ''
             if 'userData' in room:
                 user = room['userData']
 
-                #if 'Game Area' in user: ttroom['areaName'] = user['Game Area']
+                if 'Game Area' in user: gameArea = user['Game Area']
                 if 'feature-stronghold' in user: feature = 'h'
                 if 'feature-ferry' in user: feature = 'F'
                 if 'feature-news' in user: feature = 'N'
@@ -189,10 +188,10 @@ with open('world.map', 'w') as f:
             if 'name' in room:
                 rname = room['name']
 
-            # room flags - 8 is void room,4104
+            coords = room["coordinates"]
             croom = {
                 'vnum':rid,
-                'flags':'',
+                'flags':0, # hide all room, with 4102, ROOM_FLAG_HIDE
                 'color':'',
                 'name':rname,
                 'sym':feature,
@@ -200,11 +199,12 @@ with open('world.map', 'w') as f:
                 'area':areaname,
                 'note':'',
                 'terain':'',
-                'data':'',
+                'data':coords,
                 'weight':1.00,
                 'roomid':areaid,
-                'exits':[],
+                'exits':{},
             }
+            convertedRooms[rid] = croom
 
             for exitIdx, portal in enumerate(room['exits']):
                 exitid = portal['exitId']
@@ -231,10 +231,6 @@ with open('world.map', 'w') as f:
                     rdir = dirs[direction]
                     rdircmd = dirs[direction]
 
-                exitAreaId = getArea(exitid)
-                if exitAreaId != -1 and exitAreaId != areaid:
-                    rdir = 'in'
-                
                 simplelist = ['n','s','e','w','u','d','in','out']
                 orlist = ['nw','ne','se','sw']
                 dirbit = 0
@@ -244,12 +240,11 @@ with open('world.map', 'w') as f:
                 if rdir != rdircmd: 
                     color = '<118>'
                     croom['color'] = color
-                    #  print(f'Room {croom["vnum"]} leads somewhere else')
 
                 crexit = {
                     'vnum':exitid,
-                    'dir': rid,
-                    'dircmd':ridcmd,
+                    'dir': rdir,
+                    'dircmd':rdircmd,
                     'dirbit':dirbit,
                     'flag':'',
                     'data':'',
@@ -257,96 +252,111 @@ with open('world.map', 'w') as f:
                     'color':'',
                     'delay':0.0,
                 }
-                croom['exits'].append(crexit)
-
-                # don't check for void rooms on layer or map changes
-                skipVoidRooms = ['in','out','u','d']
-                if rdircmd in skipVoidRooms: 
-                    continue
-
-                # If the exitid greater than voidRoomStart, it is because it is a void room.
-                if exitid >= voidRoomStart: 
-                    continue;
-
-                x = abs(rcoords[0] - allrooms[exitid]['coords'][0])
-                y = abs(rcoords[1] - allrooms[exitid]['coords'][1])
-                while x > 1 or y > 1:
-                    #  print(f'Diffs {x}, {y}')
-                    if x > 0: x = abs(x - 1)
-                    if y > 0: y = abs(y - 1)
-
-                    vid = nextRoomNum
-                    nextRoomNum += 1
-
-                    voidroom = {
-                        'vnum':vid,
-                        'flag':4104, 
-                        'color':'',
-                        'name':'',
-                        'sym':'',
-                        'desc':'',
-                        'areaname':areaname,
-                        'note':'',
-                        'terain':'',
-                        'data':'',
-                        'weight':0.01,
-                        'roomid':'',
-                        'exits':[],
-                    }
-                    voidrooms.append(voidroom)
-
-                    crexit['data'] = 'voidRoom'
-                    vexit = {
-                        'vnum':exitid,
-                        'dir': rid,
-                        'dircmd':ridcmd,
-                        'dirbit':dirbit,
-                        'flag':'',
-                        'data':'',
-                        'weight':0.01,
-                        'color':'',
-                        'delay':0.0,
-                    }
-                    voidroom['exits'].append(vexit)
-
-                    # connect what used to be this rooms exit, 
-                    # to the newly created void room.
-                    ext = {}
-                    if exitid < voidRoomStart:
-                        ext = getExit(exitid,rid)
-                    else:
-                        ext = getVoidExit(exitid,rid)
-                    ext['vnum'] = vid
-
-                    # ponit the exit to our newly created void room.
-                    crexit['vnum'] = vid
-
-                    # create another exit for this void room to point back to the current room
-                    vexit = {
-                        'vnum':croom['vnum'],
-                        'dir': reverseDir(rdircmd)[1],
-                        'dircmd': reverseDir(rdircmd)[1],
-                        'dirbit': reverseDir(rdircmd)[0],
-                        'flag':'',
-                        'data':'',
-                        'weight':0.01,
-                        'color':'',
-                        'delay':0.0,
-                    }
-                    voidroom['exits'].append(vexit)
-                    
-                    #done with the void room
-                    writeRoom(f, voidroom)
-
+                croom['exits'][exitid] = crexit
                 # done with the current exit.
             
             # done with current room, writ it out.
-            writeRoom(f, croom)
 
         # done with the current area
         areaCount += 1
         if areaCount > 2:
             break
+
+    # End of loop for areas
+    print(f'Done collection rooms')
+    for roomid,room in convertedRooms.items():
+        if roomid > voidRoomStart: continue
+
+        voidRooms = {}
+        for exitid, rexit in room['exits'].items():
+            if rexit['vnum'] > voidRoomStart: 
+                continue
+
+            # temporary
+            if exitid not in convertedRooms: continue
+
+            exitroom = convertedRooms[exitid]
+
+            # some are one way?
+            if roomid not in exitroom['exits']: continue
+            returnexit = exitroom['exits'][roomid]
+
+            # Coords are stored in Data
+            ccoords = room['data']
+            ecoords = exitroom['data']
+
+            #skip rooms that won't need void rooms
+            # TODO add special exits here
+            voidList = ['u','d','in','out']
+            if rexit['dir'] in voidList: continue
+
+            # Get the deltas
+            dx = abs(ccoords[0] - ecoords[0])
+            dy = abs(ccoords[1] - ecoords[1])
+
+            # getting ready to create a void room.
+            while dx > 1 or dy > 1:
+                dx = abs(dx -1)
+                dy = abs(dy -1)
+                vid = nextRoomNum 
+                nextRoomNum += 1
+
+                voidroom = {
+                    'vnum':vid,
+                    'flags':4104, # void room flag
+                    'color':'',
+                    'name':'',
+                    'sym':'',
+                    'desc':'',
+                    'area':'',
+                    'note':'',
+                    'terain':'',
+                    'data':'',
+                    'weight':0.01,
+                    'roomid':'',
+                    'exits':{},
+                }
+                voidRooms[vid] = voidroom
+
+                # exit going back to the current room
+                vexit = {
+                    'vnum':roomid,
+                    'dir': returnexit['dir'],
+                    'dircmd': returnexit['dir'],
+                    'dirbit': returnexit['dirbit'],
+                    'flag':'',
+                    'data':'',
+                    'weight':0.01,
+                    'color':'',
+                    'delay':0.0,
+                }
+                voidroom['exits'][roomid] = vexit
+                # exit contining through to the exit
+                vexit = {
+                    'vnum':exitid,
+                    'dir': rexit['dir'],
+                    'dircmd': rexit['dir'],
+                    'dirbit': rexit['dirbit'],
+                    'flag':'',
+                    'data':'',
+                    'weight':0.01,
+                    'color':'',
+                    'delay':0.0,
+                }
+                voidroom['exits'][exitid] = vexit
+
+                # point this room to the new void room.
+                rexit['vnum'] = vid
+
+                # point the old exit to this void room.
+                returnexit['vnum'] = vid
+                # done with potential extra rooms
+
+        # done generating void rooms for the current room.
+        writeRoom(f, room)
+        for _,vr in voidRooms.items():
+            writeRoom(f, vr)
+
     print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidrooms)}, void index {nextRoomNum}')
 
     # room 4271 goes to road, to id 4100
