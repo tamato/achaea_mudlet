@@ -99,15 +99,22 @@ def reverseDir(d):
     if d == 'd': return (16,'u')
 
 def colors(mapping):
-    cid = colormapping[mapping]
-    bit24 = crowdcolors[cid] # TODO might need an offset.
-    rgb = bit24["color24RGB"]
+    cid = colormapping[str(mapping)]
 
+    bit24 = [255,0,0]
+    for color in crowdcolors:
+        if color['id'] == cid:
+            bit24 = color["color24RGB"]
+            break;
+
+    hex1 = hex(bit24[0])[2:]
+    hex2 = hex(bit24[1])[2:]
+    hex3 = hex(bit24[2])[2:]
     color = "<F"
-    color += hex(rgb[0])[2:].upper()
-    color += hex(rgb[1])[2:].upper()
-    color += hex(rgb[2])[2:].upper()
-    color +=">"
+    color += hex1.zfill(2)
+    color += hex2.zfill(2)
+    color += hex3.zfill(2)
+    color += ">"
     return color
 
 def getRoom(areaId,roomId):
@@ -188,11 +195,13 @@ with open('world.map', 'w') as f:
             if 'name' in room:
                 rname = room['name']
 
+            envi = room['environment']
+            color = colors(envi)
             coords = room["coordinates"]
             croom = {
                 'vnum':rid,
-                'flags':2, # hide all room, with 4102, ROOM_FLAG_HIDE
-                'color':'',
+                'flags':0, # hide all room, with 4102, ROOM_FLAG_HIDE
+                'color':color,
                 'name':rname,
                 'sym':feature,
                 'desc':'',
@@ -259,7 +268,7 @@ with open('world.map', 'w') as f:
 
         # done with the current area
         areaCount += 1
-        if False and areaCount > 2:
+        if areaCount > 2:
             break
 
     # End of loop for areas

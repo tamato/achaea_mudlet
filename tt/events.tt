@@ -152,7 +152,7 @@
 {
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
-      #class chardatabase load;
+      #nop #class chardatabase load;
    };
 }
 
