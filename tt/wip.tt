@@ -4,18 +4,6 @@
 #class wip kill
 #class wip open
 
-#event {CLASS DEACTIVATED chardatabase}{
-   print {DEACTIVATED %0..};
-};
-#event {CLASS ACTIVATED chardatabase}{
-   print {ACTIVATED %0...};
-};
-#event {CLASS CREATED chardatabase}{
-   print CREATED %0;
-};
-#event {CLASS DESTROYED chardatabase}{
-   print DESTROYED %0;
-};
 
 #class wip save
 #class wip close

@@ -100,7 +100,6 @@
 
 #EVENT {IAC SB GMCP Room.addplayer IAC SE}
 {
-   #nop #class chardatabase load;
    #var clearCharDb 1;
 
    #variable gmcp[room][addplayer] {%0};
@@ -109,7 +108,6 @@
 
 #EVENT {IAC SB GMCP Room.Players IAC SE}
 {
-   #nop #class chardatabase load;
    #var clearCharDb 1;
 
    #variable gmcp[room][players] {%0};
@@ -123,7 +121,6 @@
    #variable gmcp[room][removeplayer] {%0};
    gui.onRoomRemovePlayers;
 
-   #nop #class chardatabase load;
    #var clearCharDb 1;
 }
 
@@ -155,7 +152,7 @@
 {
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
-      #nop #class chardatabase load;
+      #class chardatabase load;
    };
 }
 
@@ -166,6 +163,8 @@
       #var clearCharDb 0;
       #nop #class chardatabase clear;
    };
+
+   #class charadatabase save;
 }
 
 #EVENT {SESSION DISCONNECTED}

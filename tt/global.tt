@@ -12,9 +12,6 @@
 
 #var seenPlys {};
 
-#read character_highlights.tt;
-#class chardatabase save;
-
 #read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;
 #read gui.tt;
@@ -116,9 +113,8 @@
 };
 
 
+#read character_highlights.tt;
 #read events.tt;
-
-#class chardatabase save;
 
 
 
