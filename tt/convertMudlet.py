@@ -99,7 +99,11 @@ def reverseDir(d):
     if d == 'd': return (16,'u')
 
 def colors(mapping):
-    cid = colormapping[str(mapping)]
+    if mapping not in colormapping:
+
+        return '<Fffffff>'
+
+    cid = colormapping[mapping]
 
     bit24 = [255,0,0]
     for color in crowdcolors:
@@ -196,7 +200,8 @@ with open('world.map', 'w') as f:
                 rname = room['name']
 
             envi = room['environment']
-            color = colors(envi)
+            color = colors(str(envi))
+
             coords = room["coordinates"]
             croom = {
                 'vnum':rid,
@@ -268,7 +273,7 @@ with open('world.map', 'w') as f:
 
         # done with the current area
         areaCount += 1
-        if areaCount > 2:
+        if False and areaCount > 2:
             break
 
     # End of loop for areas
