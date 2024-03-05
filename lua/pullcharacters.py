@@ -41,7 +41,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
     hi.write(f'#class chardatabase kill\n')
     hi.write(f'#class chardatabase open\n\n')
     hi.write('#alias {whois} { #var chardb[%0] }\n\n')
-    hi.write('#ticker {updatechardb} {#read character_highlights.tt} {60}\n\n')
+    #  hi.write('#ticker {updatechardb} {#read character_highlights.tt} {60}\n\n')
 
     for file in allcharacters:
         with open(f'{path}/{file}', 'r') as charfile:
@@ -63,7 +63,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{char["name"]}{{ |,|\'}}}} {{{color}} reset}\n')
+                hi.write(f'#highlight {{{char["name"]}{{ |,|\'}}}} {{{color}}}\n')
             except Exception as inst:
                 print(f'WTF??')
                 print(f'---------------------')
@@ -93,12 +93,5 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
 
         hi.write('\t};\n\n')
     hi.write('};\n\n')
-
-
-#alias {whois} { 
-   #class chardatabase load;
-   #var chardb[%1];
-   #class chardatabase clear; 
-}
 
 
