@@ -64,3 +64,16 @@ fprintf(file, "E {%d}{%s}{%s}{%d}{%d}{%s}{%.3f}{%s}{%.2f}\n",
     {num} {448}
 }
 
+
+regex to match on the following
+Just match on the upper case?
+
+{%* [A-Z]%*},
+find the vnum, #map find {roomname}{%2?},
+then subsitutue in roomnumber.
+Add in distance too?
+Save found shops to visit each?
+
+2000gp     a group of 100 pieces of irid moss Golden Dragon's Lair
+
+

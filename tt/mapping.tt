@@ -1,5 +1,17 @@
 #nop Create map as we get it.
 
+#var mapping[callbacks] {};
+
+#alias {mapping} {
+   print Mapping Commands;
+   info * mgt;
+   info   - mapping go to, pass in room num;
+   info * mapping.continue;
+   info * mapping.explore;
+   info * mapping.stop;
+   info ;
+}
+
 #alias {mapping.onConnected}
 {
    #map create;
@@ -18,23 +30,62 @@
    #path run {0.5};
 }
 
-#alias {mapping.explore} {
+#alias {mapping.stop} {
+   #list mapping[yetToVisit] clear;
+}
 
-   #list yetToVisit clear;
+#alias {mapping.prepExplore} {
 
-#nop Map Events;
-#nop END OF PATH,  END OF RUN;
+   #variable mapping[startRoom] $gmcp[room][info][num];
+   #list mapping[yetToVisit] clear;
 
    #local coords $gmcp[room][info][coords];
    #list coords explode ,;
    #local areaId $coords[1];
+   #nop List contains distance to each room;
    #map list {roomid}{$areaId} {variable}{rooms};
    #foreach *rooms[] roomid {
-      #list yetToVisit ins 1 $roomid;
+      #list mapping[yetToVisit] ins 1 $roomid;
    };
+
+   #nop don't bother with the room we are starting in.;
+   #list mapping[yetToVisit] delete $mapping[startRoom];
 
    #unvar rooms;
    #unvar roomid;
+}
+
+#alias {mapping.explore} {
+   mapping.prepExplore;
+   #var mapping[callbacks][explore] {mapping.continue};
+
+   #nop We got the list of rooms to tarverse, now lets go.;
+   mapping.continue;
+}
+
+#alias {mapping.continue} {
+   #if {&mapping[yetToVisit][] > 0} {
+      #local dst *mapping[yetToVisit][+1];
+      #list mapping[yetToVisit] delete +1;
+      mgt $dst;
+   };
+}
+
+#EVENT {END OF RUN} {
+   print Reached destination;
+
+   #nop TODO check if this 'if' can be removed.;
+   #if {&{mapping[callbacks][]} > 0} {
+      #foreach $mapping[callbacks][] cb {
+         $cb;
+      };
+   };
+
+   #if {&mapping[yetToVisit][] == 0} {
+      print Finished AutoExplore;
+      #list mapping[yetToVisit] clear;
+      #unvariable mapping[startRoom];
+   }
 }
 
 #alias {mapping.onRoomInfo}
