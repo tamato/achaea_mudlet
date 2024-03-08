@@ -6,6 +6,13 @@
    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP] %0 $TELNET[IAC]$TELNET[SE]\};
 }
 
+#alias {runCallbacks}{
+   #local tmp {$eventCallbacks[%1]};
+   #foreach {$tmp[]} cb {
+      $cb;
+   };
+}
+
 #EVENT {IAC SB GMCP core.ping IAC SE}
 {
    #var gmcp[core][ping] {%0};
@@ -165,9 +172,7 @@
 
    #class charadatabase save;
 
-   #foreach {$eventCallbacks[prompt][]} cb {
-      $cb;
-   };
+   runCallbacks prompt;
 }
 
 #EVENT {SESSION DISCONNECTED}

@@ -141,7 +141,11 @@
 {
    #send {directory %1};
    #class roomnums load;
-   #var eventCallbacks[prompt][directory] {#class roomnums clear};
+
+   #var eventCallbacks[prompt][directory] {
+      #class roomnums clear; 
+      #unvar eventCallbacks[prompt][directory];
+   };
 }
 
 #class roomnums kill;
