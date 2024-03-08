@@ -191,7 +191,8 @@
 #alias {toggleExpanded} {
    #if {&{room_window[expanded][%0]}} {
       #unvar room_window[expanded][%0];
-   }{
+   };
+   #else {
       #var room_window[expanded][%0] {};
    };
 

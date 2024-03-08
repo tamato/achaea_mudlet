@@ -48,7 +48,7 @@
       #continue; 
    };
 
-   #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
+   #if {$getgold == 1 && "$icon" == "coin" && "$attri" == "%*t%*"} { 
       #send {$addfree get gold};
       #send {$addfree put gold in pack};
       #return; 
@@ -89,7 +89,7 @@
          #local item <278>$name<028>$id<209>;
 
          room_window_show items $item;
-         #if {"$icon" == "coin" && "$attri" == "%*t%*"} { 
+         #if {$getgold == 1 && "$icon" == "coin" && "$attri" == "%*t%*"} { 
 
             #send {$addfree get gold};
             #send {$addfree put gold in pack};

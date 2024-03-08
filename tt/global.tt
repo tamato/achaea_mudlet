@@ -30,6 +30,16 @@
 #config {verbatim}      {on};
 #config {REPEAT_ENTER}  {ON};    #nop repeat last command.
 
+#var getgold 1;
+#alias {ggold} {
+   #if {$getgold == 1 || "%1" == "0"} {
+      #var getgold 0;
+   };
+   #else {$getgold == 1 || "%1" == "0"} {
+      #var getgold 0;
+   }
+}
+
 #var addfree {queue add freestanding};
 #var insfree {queue insert freestanding 1};
 

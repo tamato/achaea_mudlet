@@ -103,7 +103,8 @@
 #alias {b} { 
    #if {"%1" === ""}  { 
       #send {hermits}
-   } { 
+   };
+   #else { 
       #foreach {$gmcp[char][items][list][items][]} thing {
          #if {"$thing" == "%*mono%*"} {
             print {Monolith present, find another room};
@@ -121,7 +122,8 @@
 #alias {t} { 
    #if {"%1" === ""}  { 
       #send {hermits} 
-   } { 
+   };
+   #else{ 
       #send {fling hermit at ground %1};
       print {Can hermit be used off balance?};
       updateCharUI;

@@ -1,5 +1,7 @@
 #nop Create map as we get it.
 
+#read shopRoomNumbers.tt;
+
 #var mapping[callbacks] {};
 
 #alias {mapping} {
@@ -146,21 +148,19 @@
 #class roomnums kill;
 #class roomnums open;
 
-#function roomnum {
-   #map list {%1} {roomdesc}{49} {variable}{room};
+#action {^%dgp %* {[A-Z]%*}%*$} {
+   #var shopnum { ??? };
+   #loop 1 {&shops[49][]} idx {
+      #if {{^%3%4$} == {^*shops[49][+$idx]$}} {
+         #var shopnum $shops[49][+$idx];
 
-#nop #foreach {*shops[49][%*]} shop {#if {{^Golden Dragon's Lair$} == {^$shop$}} {#show found}};
-
-   #if {&{room[]} == 0}
-      {#return { ??? }}
-      {#return *room[+1]};
-
-   #unvar room;
-};
-
-#sub {^%dgp %* {[A-Z]%*}%*$} {%1gp %2 %3%4 [@roomnum{%3%4}]}
+         #line oneshot #sub {%*} {%%1:<269>$shopnum<099>};
+         #break;
+      };
+   };
+   #unvar idx;
+}
 
 #class roomnums close;
 #class roomnums save;
-#delay 5 {#class roomnums clear};
 

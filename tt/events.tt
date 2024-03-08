@@ -49,9 +49,9 @@
 
    #if {$prevHp != $hp} {
       #math {diff} {$prevHp - $hp};
-      #if {$diff > 0} 
-         {#show <501>-$diff}
-         {#math diff {$diff * -1}; #show <120>+$diff};
+      #if {$diff > 0} {#show <501>-$diff};
+      #else {#math diff {$diff * -1}; #show <120>+$diff};
+
       #unvar diff;
    };
    #var prevHp $hp;
@@ -62,9 +62,8 @@
 
    #if {$prevMp != $mp} {
       #math {diff} {$prevMp - $mp};
-      #if {$diff > 0} 
-         {#show <140>-$diff}
-         {#math diff {$diff * -1}; #show <150>+$diff};
+      #if {$diff > 0} {#show <140>-$diff};
+      #else {#math diff {$diff * -1}; #show <150>+$diff};
       #unvar diff;
    };
    #var prevMp $mp;
