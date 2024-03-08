@@ -11,4 +11,5 @@ pvp
 
 hermit auto bind
 
+auraglance/farsee
 
