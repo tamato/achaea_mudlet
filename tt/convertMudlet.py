@@ -154,6 +154,7 @@ def getVoidExit(roomId,exitId):
     return {}
 
 convertedRooms = {}
+allshops = {}
 with open('world.map', 'w') as f:
 
     # prepand the header junk
@@ -170,7 +171,7 @@ with open('world.map', 'w') as f:
         areaid = area['id']
         if areaid < 0: continue
 
-        print(f'Converting area {areaid}')
+        #  print(f'Converting area {areaid}')
         #  print(f'RoomCnt {roomCnt}')
 
         for roomIdx, room in enumerate(area['rooms']):
@@ -209,7 +210,7 @@ with open('world.map', 'w') as f:
                 'color':color,
                 'name':rname,
                 'sym':feature,
-                'desc':'',
+                'desc':gameArea,
                 'area':areaname,
                 'note':'',
                 'terain':'',
@@ -219,6 +220,12 @@ with open('world.map', 'w') as f:
                 'exits':{},
             }
             convertedRooms[rid] = croom
+
+            if feature == 'S':
+                if areaid not in allshops:
+                    allshops[areaid] = {}
+
+                allshops[areaid][rname] = rid
 
             for exitIdx, portal in enumerate(room['exits']):
                 exitid = portal['exitId']
@@ -373,7 +380,15 @@ with open('world.map', 'w') as f:
 
     print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidrooms)}, void index {nextRoomNum}')
 
-    # room 4271 goes to road, to id 4100
+# #foreach {*shops[49][%*]} shop {#if {{^Golden Dragon's Lair$} == {^$shop$}} {#show found}}
+with open('shopRoomNumbers.tt', 'w') as f:
+    f.write(f"#var shops {{\n")
+    for areaid,rooms in allshops.items():
+        f.write(f"\t{{{areaid}}} {{\n")
+        for rname,rid in rooms.items():
+            f.write(f"\t\t{{{rname}}} {{{rid}}}\n")
+        f.write(f"\t}}\n")
+    f.write(f"}}\n")
 
 def getAreaIdsForRegion():
     for area in parsed['areas']:

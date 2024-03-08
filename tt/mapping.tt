@@ -27,15 +27,17 @@
 #nop Map Go To, room num
 #alias {mgt} {
    #map find {%1};
-   #path run {0.5};
+   #path run {0.6};
 }
 
 #alias {mapping.stop} {
    #list mapping[yetToVisit] clear;
 }
 
-#alias {mapping.prepExplore} {
+#action {^Now now, don't be so hasty!$} {
+}
 
+#alias {mapping.prepExplore} {
    #variable mapping[startRoom] $gmcp[room][info][num];
    #list mapping[yetToVisit] clear;
 
@@ -65,13 +67,15 @@
 
 #alias {mapping.continue} {
    #if {&mapping[yetToVisit][] > 0} {
-      #local dst *mapping[yetToVisit][+1];
+
+      #local dst $mapping[yetToVisit][+1];
       #list mapping[yetToVisit] delete +1;
       mgt $dst;
    };
 }
 
 #EVENT {END OF RUN} {
+   #draw boxed map 1 1 $uimap[height] $uimap[width];
    print Reached destination;
 
    #nop TODO check if this 'if' can be removed.;
@@ -118,4 +122,45 @@
    #unvar exits;
 }
 
+#alias {mapping.show} {
+   #local coords $gmcp[room][info][coords];
+   #list coords explode ,;
+   #local areaId $coords[1];
+
+   #nop List contains distance to each room;
+   #map list {roomid}{$areaId} {variable}{rooms};
+   #foreach *rooms[] roomid {
+      #map set {roomflags}{0} $roomid;
+   };
+   #draw boxed map 1 1 $uimap[height] $uimap[width];
+}
+
+
+#alias {directory} 
+{
+   #send {directory %1};
+   #class roomnums load;
+   #delay 5 {#class roomnums clear};
+}
+
+#class roomnums kill;
+#class roomnums open;
+
+#function roomnum {
+   #map list {%1} {roomdesc}{49} {variable}{room};
+
+#nop #foreach {*shops[49][%*]} shop {#if {{^Golden Dragon's Lair$} == {^$shop$}} {#show found}};
+
+   #if {&{room[]} == 0}
+      {#return { ??? }}
+      {#return *room[+1]};
+
+   #unvar room;
+};
+
+#sub {^%dgp %* {[A-Z]%*}%*$} {%1gp %2 %3%4 [@roomnum{%3%4}]}
+
+#class roomnums close;
+#class roomnums save;
+#delay 5 {#class roomnums clear};
 
