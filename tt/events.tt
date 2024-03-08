@@ -164,6 +164,10 @@
    };
 
    #class charadatabase save;
+
+   #foreach {$eventCallbacks[prompt][]} cb {
+      $cb;
+   };
 }
 
 #EVENT {SESSION DISCONNECTED}

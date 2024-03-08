@@ -11,6 +11,7 @@
 #read {$configdir[1]/guisettings.tt}
 
 #var seenPlys {};
+#var eventCallbacks {};
 
 #read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;

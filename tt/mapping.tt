@@ -137,12 +137,11 @@
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 }
 
-
 #alias {directory} 
 {
    #send {directory %1};
    #class roomnums load;
-   #delay 5 {#class roomnums clear};
+   #var eventCallbacks[prompt][directory] {#class roomnums clear};
 }
 
 #class roomnums kill;
