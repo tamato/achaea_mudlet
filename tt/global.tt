@@ -127,11 +127,19 @@
    #send {info here};
 };
 
-
 #read character_highlights.tt;
 #read events.tt;
 
 #delay {10} {#class charadatabase clear};
 
+#alias {bfind} {
+   #buffer find %1;
+   #var findidx 1;
+}
+
+#alias {bfn} {
+   #buffer find +$findidx %1;
+   #math findidx {$findidx + 1};
+}
 
 

@@ -3,14 +3,16 @@
 #read shopRoomNumbers.tt;
 
 #var mapping[callbacks] {};
+#var mapping[puased] 0;
 
 #alias {mapping} {
    print Mapping Commands;
-   info * mgt;
+   info * mgo;
    info   - mapping go to, pass in room num;
-   info * mapping.continue;
-   info * mapping.explore;
-   info * mapping.stop;
+   info * mgostart;
+   info   - go to the start room;
+   info * mexplore;
+   info * mstop;
    info ;
 }
 
@@ -27,39 +29,43 @@
 }
 
 #nop Map Go To, room num
-#alias {mgt} {
+#alias {mgo} {
+   #var mapping[dst] %1;
    #map find {%1};
    #path run {0.6};
 }
 
-#alias {mapping.stop} {
-   #list mapping[yetToVisit] clear;
+#alias {mgostart} {
+   mgo {$mapping[startRoom]};
 }
 
-#action {^Now now, don't be so hasty!$} {
+#alias {mstop} {
+   #list mapping[yetToVisit] clear;
+   #path stop;
+   #class pathing clear;
 }
 
 #alias {mapping.prepExplore} {
-   #variable mapping[startRoom] $gmcp[room][info][num];
+   #map get {roomvnum} {mapping[startRoom]};
    #list mapping[yetToVisit] clear;
 
-   #local coords $gmcp[room][info][coords];
-   #list coords explode ,;
-   #local areaId $coords[1];
    #nop List contains distance to each room;
-   #map list {roomid}{$areaId} {variable}{rooms};
+   #map list {roomid}{@getAreaId{}} {variable}{rooms};
    #foreach *rooms[] roomid {
-      #list mapping[yetToVisit] ins 1 $roomid;
+      #list mapping[yetToVisit] ins -1 $roomid;
    };
 
    #nop don't bother with the room we are starting in.;
-   #list mapping[yetToVisit] delete $mapping[startRoom];
+   #list mapping[yetToVisit] find $mapping[startRoom] idx; 
+   #if {$idx != 0} {
+      #list mapping[yetToVisit] delete $idx;
+   };
 
    #unvar rooms;
    #unvar roomid;
 }
 
-#alias {mapping.explore} {
+#alias {mexplore} {
    mapping.prepExplore;
    #var mapping[callbacks][explore] {mapping.continue};
 
@@ -69,33 +75,39 @@
 
 #alias {mapping.continue} {
    #if {&mapping[yetToVisit][] > 0} {
-
       #local dst $mapping[yetToVisit][+1];
-      #list mapping[yetToVisit] delete +1;
-      mgt $dst;
+      print headed to room $dst;
+      mgo $dst;
    };
 }
 
+#EVENT {END OF PATH} {
+   print End of Path,Walk?;
+}
+
 #EVENT {END OF RUN} {
-   #draw boxed map 1 1 $uimap[height] $uimap[width];
+   #if {$mapping[puased] == 0} {#return};
+
    print Reached destination;
 
-   #nop TODO check if this 'if' can be removed.;
-   #if {&{mapping[callbacks][]} > 0} {
-      #foreach $mapping[callbacks][] cb {
-         $cb;
-      };
-   };
-
+   #nop Clean up;
    #if {&mapping[yetToVisit][] == 0} {
       print Finished AutoExplore;
-      #list mapping[yetToVisit] clear;
-      #unvariable mapping[startRoom];
-   }
+
+      #class pathing clear;
+      #unvar $mapping[callbacks][explore];
+      #unvar $mapping[dst];
+   };
+
+   #foreach $mapping[callbacks][] cb {
+      #if {"$cb" != ""}{$cb};
+   };
 }
 
 #alias {mapping.onRoomInfo}
 {
+   #if {&{gmcp[room][info][num]} === 0}{#return};
+
    #map goto {$gmcp[room][info][num]};
 
    #draw boxed map 1 1 $uimap[height] $uimap[width];
@@ -114,7 +126,7 @@
    #variable {exits} {};
    #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
    {
-       #if {&gmcp[room][info][exits][$exit] == 0} { #continue };
+       #if {&{gmcp[room][info][exits][$exit]} === 0} { #continue };
        #variable {exits} {$exits<128>$exit<270>,};
    };
 
@@ -122,20 +134,44 @@
    #format {prompt} {%u} {$exits<099>};
    #line ignore #showme {$prompt} {$uimap[height]+1} {2};
    #unvar exits;
-}
 
-#alias {mapping.show} {
-   #local coords $gmcp[room][info][coords];
-   #list coords explode ,;
-   #local areaId $coords[1];
-
-   #nop List contains distance to each room;
-   #map list {roomid}{$areaId} {variable}{rooms};
-   #foreach *rooms[] roomid {
-      #map set {roomflags}{0} $roomid;
+   #nop Find the current room and remove it from the rooms to go to.;
+   #if {&mapping[yetToVisit][] > 0} {
+      #list mapping[yetToVisit] find {$gmcp[room][info][num]} idx; 
+      #nop Carefull, we may hit the same room many times;
+      #if {$idx != 0} {
+         #list mapping[yetToVisit] delete $idx;
+      };
    };
-   #draw boxed map 1 1 $uimap[height] $uimap[width];
+
+   #nop Watch for differences in room names to update the crowd map.;
+   #nop #map get roomname rname;
+   #nop #local gmcpName $gmcp[room][info][name];
+   #nop #if {"^$gmcpName" != "^$rname$"} { print Room names differ! $gmcpName and $rname; };
 }
+
+#func {getAreaId} {
+   #map get {roomid} areaid;
+   #return $areaid;
+}
+
+#class pathing kill;
+#class pathing open;
+
+#action {^There is no exit in that direction.$} {
+}
+
+#action {^Now now, don't be so hasty!$} {
+   #var mapping[puased] 1;
+   #path stop;
+   #delay {1} {
+      #var mapping[puased] 0;
+      mgo $mapping[dst];
+   };
+}
+
+#class pathing close;
+#class pathing save;
 
 #alias {directory} 
 {
