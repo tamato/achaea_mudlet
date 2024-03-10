@@ -1,36 +1,3 @@
-C #roomcount
-
-V #versionnumber
-
-C<colorname> colorvalue
-
-F #mapflags
-
-G #globalvnum
-
-I #lastroomvnum
-
-L {legendgroupname} {legendname} {legendsymbol}
-
-T {terrainname} {terrainflags} {terrainsymbol}
-
-R {#roomvnum}{#roomflags}{roomcolor}{roomname}{roomsymbol}{roomdesc}{roomarea}{roomnote}{roomterrain}{roomdata}{#roomweight}{roomid}
-E
-    #vnum
-    name
-    cmd
-    #dir -- seems like a bitflag for possible directions from this exit.
-    #flags -- get_exit_color, colors exit based on HIDE,INVI,AVOID,BLOCK
-    data -- can see it with #map exit, with no args.
-    #3f weight
-    color
-    #2f delay
-
-
--- in mapper.c
-fprintf(file, "\nR {%d}{%d}{%s}{%s}{%s}{%s}{%s}{%s}{%s}{%s}{%.3f}{%s}\n",
-fprintf(file, "E {%d}{%s}{%s}{%d}{%d}{%s}{%.3f}{%s}{%.2f}\n",
-
 
 
 #VARIABLE {gmcp[room][info]}
@@ -49,31 +16,26 @@ fprintf(file, "E {%d}{%s}{%s}{%d}{%d}{%s}{%.3f}{%s}{%.2f}\n",
 }
 
 
-#VARIABLE {gmcp[room][info]}
-{
-    {area} {Ashtan}
-    {coords} {49,6,-9,0}
-    {details} {}
-    {environment} {Urban}
-    {exits}
-    {
-        {sw} {438}
-    }
-    {map} {www.achaea.com/irex/maps/clientmap.php?map=49&building=0&level=0 22 39}
-    {name} {Parade of Zarathustra east of a statue}
-    {num} {448}
-}
+Don't use the events. Check if finished my self.
+
+order of operations
+
+path walk is called
+internal map is updated
+eventually onRoomInfo is called
+delay calls path walk again
+
+WHEN we reach the end a new destination is found
+calls path walk, updates internal map before onRoomInfo has a chance to catchup.
+During this time onRoomInfo is called
+which tries to call path walk a second time
+    Now internal map is out of sync to where we are
 
 
-regex to match on the following
-Just match on the upper case?
+What should happen
 
-{%* [A-Z]%*},
-find the vnum, #map find {roomname}{%2?},
-then subsitutue in roomnumber.
-Add in distance too?
-Save found shops to visit each?
-
-2000gp     a group of 100 pieces of irid moss Golden Dragon's Lair
-
-
+Find destination
+start traversing
+in onRoomInfo, have we reach destination?
+    yes - find next
+    no - continue walking

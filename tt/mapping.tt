@@ -3,7 +3,6 @@
 #read shopRoomNumbers.tt;
 
 #var mapping[callbacks] {};
-#var mapping[paused] 0;
 
 #alias {mapping} {
    print Mapping Commands;
@@ -32,6 +31,7 @@
 #alias {mwalk} {
    #var mapping[dst] %1;
    #map find {%1};
+   mapping.step;
 }
 
 #alias {mrun} {
@@ -45,7 +45,7 @@
 }
 
 #alias {mstop} {
-   #list mapping[yetToVisit] clear;
+   #list mapping[yetToVisie] clear;
    #class pathing clear;
    #path destroy;
 }
@@ -72,7 +72,6 @@
 
 #alias {mexplore} {
    #class pathing load;
-   #var mapping[paused] 0;
 
    mapping.prepExplore;
    #var mapping[callbacks][explore] {mapping.step};
@@ -84,10 +83,7 @@
 }
 
 #alias {mapping.step} {
-   #show it is delayed;
    #delay {0.7} {
-      #path save forward stupid;
-      #var stupid;
       #path walk;
    };
 }
@@ -97,55 +93,38 @@
       #local dst $mapping[yetToVisit][+1];
       #list mapping[yetToVisit] delete +1;
 
-      #nop onRoomInfo will be called and will call into mapping.step;
       mwalk $dst;
    };
 }
 
 #EVENT {END OF PATH} {
-   #unvar $mapping[callbacks][explore];
-   #path destroy;
-   #if {$mapping[paused] == 1} {#return};
-
-   print Walked, Reached destination;
-
    #nop Clean up;
    #if {&mapping[yetToVisit][] == 0} {
       print Finished AutoExplore;
 
       #class pathing clear;
       #unvar $mapping[dst];
+      #unvar $mapping[callbacks][explore];
    };
-
-   #nop if we are not done, head to the next room;
-   print Going to next dest;
-   mapping.nextdest;
 }
 
 #EVENT {END OF RUN} {
-   #if {$mapping[paused] == 1} {#return};
-
-   print Run, Reached destination;
-
    #nop Clean up;
    #if {&mapping[yetToVisit][] == 0} {
       print Finished AutoExplore;
 
       #class pathing clear;
-      #unvar $mapping[callbacks][explore];
       #unvar $mapping[dst];
+      #unvar $mapping[callbacks][explore];
    };
-
-   #nop #foreach $mapping[callbacks][] cb {
-      #nop #if {"$cb" != ""}{$cb};
-   #nop };
 }
 
 #alias {mapping.onRoomInfo}
 {
    #if {&{gmcp[room][info][num]} === 0}{#return};
 
-   #map goto {$gmcp[room][info][num]};
+   #local vnum $gmcp[room][info][num];
+   #map goto {$vnum};
 
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 
@@ -175,17 +154,20 @@
    #nop Find the current room and remove it from the rooms to go to.;
    #if {&mapping[yetToVisit][] > 0} {
 
-      #list mapping[yetToVisit] find {$gmcp[room][info][num]} idx; 
+      #list mapping[yetToVisit] find {$vnum} idx; 
 
       #nop Carefull, we may hit the same room many times;
       #if {$idx != 0} {
-         #show Deleted $idx, $mapping[yetToVisit][$idx];
          #list mapping[yetToVisit] delete $idx;
       };
 
-      print Running mapping callbacks;
-      #foreach $mapping[callbacks][] cb {
-         #if {"$cb" != ""}{$cb};
+      #if {$vnum == $mapping[dst]} {
+         mapping.nextdest;
+      };
+      #else {
+         #foreach $mapping[callbacks][] cb {
+            #if {"$cb" != ""}{$cb};
+         };
       };
    };
 
@@ -204,25 +186,22 @@
 #class pathing open;
 
 #action {^There is no exit in that direction.$} {
-   #var mapping[paused] 1;
-   #list mapping[yetToVisit] clear;
-   print No Path;
-   #path destroy;
+   print Why is there no exit? Did not destory path.;
+   #list mapping[yetToVisie] clear;
+   #unvar $mapping[callbacks][explore];
+   #unvar $mapping[dst];
+
+   #class pathing clear;
 }
 
 #action {^Now now, don't be so hasty!$} {
-   #var mapping[paused] 1;
-   print Stopped Path;
-
-   #delay {1} {
-      #var mapping[paused] 0;
-      #nop mapping.step;
-   };
+   #path move backward;
+   mapping.step;
 }
 
 #class pathing close;
-#delay 5 {#class pathing save};
-#delay 7 {#class pathing clear};
+#delay 5 {print Pathing Saved;#class pathing save};
+#delay 7 {print Pathing Cleared;#class pathing clear};
 
 #alias {directory} 
 {
