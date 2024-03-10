@@ -45,7 +45,7 @@
 }
 
 #alias {mstop} {
-   #list mapping[yetToVisie] clear;
+   #list mapping[yetToVisit] clear;
    #class pathing clear;
    #path destroy;
 }
@@ -187,7 +187,7 @@
 
 #action {^There is no exit in that direction.$} {
    print Why is there no exit? Did not destory path.;
-   #list mapping[yetToVisie] clear;
+   #list mapping[yetToVisit] clear;
    #unvar $mapping[callbacks][explore];
    #unvar $mapping[dst];
 
