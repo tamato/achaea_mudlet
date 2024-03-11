@@ -175,6 +175,11 @@ with open('world.map', 'w') as f:
         #  print(f'RoomCnt {roomCnt}')
 
         for roomIdx, room in enumerate(area['rooms']):
+            rid = room['id']
+
+            rname = ''
+            if 'name' in room: 
+                rname = room['name']
 
             rid = room['id']
             rcoords = room['coordinates']
@@ -195,10 +200,6 @@ with open('world.map', 'w') as f:
                 if 'feature-shop' in user: feature = 'S'
                 if 'feature-bank' in user: feature = '$'
                 if 'feature-locksmith' in user: feature = 'L'
-
-            rname = ''
-            if 'name' in room:
-                rname = room['name']
 
             envi = room['environment']
             color = colors(str(envi))
@@ -297,6 +298,10 @@ with open('world.map', 'w') as f:
             if exitid not in convertedRooms: continue
 
             exitroom = convertedRooms[exitid]
+
+            # in the dict roomid is really AreaID
+            # and if they are in different areas, don't bother with void rooms.
+            if room['roomid'] != exitroom['roomid']: continue
 
             # some are one way?
             if roomid not in exitroom['exits']: continue
