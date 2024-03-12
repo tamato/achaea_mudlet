@@ -50,7 +50,7 @@
    #path destroy;
 }
 
-#alias {mpp.short} {
+#alias {mpp.prepExplore} {
    #map get {roomvnum} {mapping[startRoom]};
    #list mapping[yetToVisit] clear;
 
@@ -80,63 +80,39 @@
    #list mapping[yetToVisit] find $shortest nroom;
    #var mapping[dst] $mapping[yetToVisit][$nroom];
 
-   #var sl;
-   #var shortest;
-   #var nroom;
+   #unvar sl;
+   #unvar shortest;
+   #unvar nroom;
+   #unvar roomid;
 
    #show finished, headed to $mapping[dst];
 }
 
-#alias {mpp.next}{
-   #var shortest {};
-   #var sl {999999};
+#alias {mpp.nextdest}{
+   #if {&mapping[yetToVisit][] > 0} {
+      #var shortest {};
+      #var sl {999999};
 
-   #list mapping[yetToVisit] find $mapping[dst] droom;
-   #list mapping[yetToVisit] delete $droom;
+      #foreach $mapping[yetToVisit][] roomid {
+         #map find $roomid;
+         #path get length len;
+         #if {$len == 0} { #show skipping $roomid; #continue };
 
-   #foreach $mapping[yetToVisit][] roomid {
-      #map find $roomid;
-      #path get length len;
-      #if {$len == 0} { #show skipping $roomid; #continue };
+         #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
+      };
 
-      #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
+      mwalk $shortest;
+      #unvar sl;
+      #unvar shortest;
+      #unvar roomid;
    };
-
-   #list mapping[yetToVisit] find $shortest nroom;
-   #var mapping[dst] $mapping[yetToVisit][$nroom];
-
-   #var sl;
-   #var shortest;
-   #show next, headed to $mapping[dst];
 }
 
-#alias {mapping.prepExplore} {
-   #map get {roomvnum} {mapping[startRoom]};
-   #list mapping[yetToVisit] clear;
-
-   #nop List contains distance to each room;
-   #map list {roomid}{@getAreaId{}} {variable}{rooms};
-   #foreach *rooms[] roomid {
-      #list mapping[yetToVisit] ins -1 $roomid;
-   };
-
-   #nop don't bother with the room we are starting in.;
-   #list mapping[yetToVisit] find $mapping[startRoom] idx; 
-   #if {$idx != 0} {
-      #list mapping[yetToVisit] delete $idx;
-   };
-
-   #unvar roomid;
-}
-
-#alias {mexplore} {
+#alias {mex} {
    #class pathing load;
 
-   mapping.prepExplore;
+   mpp.prepExplore;
    #var mapping[callbacks][explore] {mapping.step};
-
-   #nop We got the list of rooms to tarverse, now lets go.;
-   mapping.nextdest;
 
    #path walk;
 }
@@ -144,15 +120,7 @@
 #alias {mapping.step} {
    #delay {0.7} {
       #path walk;
-   };
-}
-
-#alias {mapping.nextdest} {
-   #if {&mapping[yetToVisit][] > 0} {
-      #local dst $mapping[yetToVisit][+1];
-      #list mapping[yetToVisit] delete +1;
-
-      mwalk $dst;
+      #show Stepping....
    };
 }
 
@@ -222,8 +190,10 @@
          #list mapping[yetToVisit] delete $idx;
       };
 
+      print vnum $vnum, &mapping[yetToVisit][];
       #if {$vnum == $mapping[dst]} {
-         mapping.nextdest;
+         print Find a new dst, cnt &mapping[yetToVisit][];
+         mpp.nextdest;
       };
       #else {
          #foreach $mapping[callbacks][] cb {
