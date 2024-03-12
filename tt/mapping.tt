@@ -190,9 +190,8 @@
          #list mapping[yetToVisit] delete $idx;
       };
 
-      print vnum $vnum, &mapping[yetToVisit][];
       #if {$vnum == $mapping[dst]} {
-         print Find a new dst, cnt &mapping[yetToVisit][];
+         print Finding a new dst, room left to go &mapping[yetToVisit][];
          mpp.nextdest;
       };
       #else {
