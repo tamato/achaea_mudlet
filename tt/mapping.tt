@@ -71,10 +71,10 @@
       #path get length len;
       #if {$len == 0} {#continue};
 
+      #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
+
       #map set {roomweight} {1.0} {$roomid};
       #list mapping[yetToVisit] ins -1 $roomid;
-
-      #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
    };
 
    #list mapping[yetToVisit] find $shortest nroom;
@@ -99,6 +99,7 @@
          #if {$len == 0} { #show skipping $roomid; #continue };
 
          #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
+         #if  {$sl < 3} {#break};
       };
 
       mwalk $shortest;
@@ -253,7 +254,7 @@
       #if {{^%3%4$} == {^*shops[49][+$idx]$}} {
          #var shopnum $shops[49][+$idx];
 
-         #line oneshot #sub {%*} {%%1:<269>$shopnum<099>};
+         #line oneshot #sub {~%*} {%%1:<269>$shopnum<099>};
          #break;
       };
    };

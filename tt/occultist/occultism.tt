@@ -26,7 +26,7 @@
 }
 
 #nop Go to the plane of Chaos!
-#alias {choas} {
+#alias {chaos} {
    #send {transendence};
    #nop TODO action for the gate.
 }
@@ -42,6 +42,28 @@
    }
    updateCharUI;
 }
+
+#alias {clearauraglance} {
+   #class auraglance clear;
+   #unvar eventCallbacks[prompt][auraglance];
+}
+
+#alias {auraglance} {
+   #send {auraglance %1};
+   #class auraglance load;
+   #var eventCallbacks[prompt][auraglance] { clearauraglance };
+}
+
+#class auraglance kill;
+#class auraglance open;
+#action {^You see that %w is at %D.} {
+   #map list {roomname} {%2} {variable}{rooms};
+   #line oneshot #sub {~%*} {%%1 <269>*rooms[]<099>}
+};
+
+#class auraglance close;
+#class auraglance save;
+#class auraglance clear;
 
 #class occultism close;
 #class occultism save;
