@@ -10,3 +10,5 @@ pvp
 
 hermit auto bind
 
+pathfinder "hits" gravehands, what does this mean?
+    is pathfinder a 3rd balance?
