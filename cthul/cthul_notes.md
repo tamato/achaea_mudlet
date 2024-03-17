@@ -4,7 +4,7 @@ Fracture: for occie it's diadem, +int, and magic damage collar
 Fracture: then the obvious generic bashing arties like Maya Figurine, artifact armor paragons, etc
 
 Whispers of Chaos, for the occultist language.
-
+Lhirhjen e'Ekawr - Whispers of Chaos.
 
 def list in gui
 
