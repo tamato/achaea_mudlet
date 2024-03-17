@@ -1,6 +1,6 @@
 #CLASS {targetlist} OPEN
 
-#VARIABLE {areaName} {the Darkenwood Forest}
+#VARIABLE {areaName} {the Rhodestrian Settlement}
 #VARIABLE {targets}
 {
     {Ashtan} 
@@ -19,9 +19,15 @@
         {arachnoi} {}
         {spider} {}
     }
+    {the Ioje compound} 
+    {
+        {slaver} {}
+    }
     {the Rhodestrian Settlement} 
     {
         {Rhodestrian} {}
+        {Sonterro} {}
+        {Yolenders} {}
         {cougar} {}
         {mercenary} {}
         {thief} {}
@@ -39,6 +45,11 @@
     {the bog of Ashtan} 
     {
         {Haag} {}
+    }
+    {the fathomless expanse of the World Tree} 
+    {
+        {rat} {}
+        {slaver} {}
     }
     {the land of Minia} 
     {

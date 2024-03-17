@@ -5,23 +5,11 @@
 #class wip kill
 #class wip open
 
-#action {^%dgp %* {[A-Z]%*}%*$} {
-   #var shopnum {};
-   #loop 1 {&shops[49][]} idx {
-      #if {{^%3%4$} == {^*shops[49][+$idx]$}} {
-         #var shopnum $shops[49][+$idx];
-
-         #line oneshot #sub {%*} {%%1 $shopnum};
-         #break;
-      };
-   };
-   #unvar idx;
-}
-
-#alias {dir} {
-   #scan txt directory.raw;
-   #buffer refresh;
-}
+#action {^Your starburst tattoo flares as the world is momentarily tinted red.$} {
+   #show <118>------------------------------------------------;
+   #line oneshot #sub {%*} {           <138>STARBURST USED};
+   #show <118>------------------------------------------------;
+};
 
 #class wip save
 #class wip close

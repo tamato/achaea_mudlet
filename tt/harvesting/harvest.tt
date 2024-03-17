@@ -1,0 +1,27 @@
+#nop Havesting script
+
+/*
+   A patch of lumic moss is growing here. 
+   Some irid moss gives off dim light. 
+   A bloodroot plant is growing here.
+
+   The following plants are growing in this room:
+
+   A patch of lumic moss (lumic)                Abundant
+   Irid moss (moss)                             Abundant
+   A bloodroot plant (bloodroot)                Abundant
+   A prickly ash tree (ash)                     Plentiful
+   A bellwort wildflower (bellwort)             Abundant
+   A black cohosh plant (cohosh)                Plentiful
+*/
+
+#var plants {
+   {lumic} {0}
+   {moss} {1}
+   {ash} {1}
+   {bloodroot} {1}
+   {bellwort} {1}
+   {cohosh} {1}
+};
+
+#alias {harvest}

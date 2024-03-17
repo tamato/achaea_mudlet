@@ -153,7 +153,7 @@
 
    #if {"%1" === ""}
    {
-
+      info No target given;
       #if {&{roomMobs} == 0} {#return};
       #if {&{roomMobs[]} == 0} {#return};
 
@@ -161,7 +161,6 @@
          #foreach *targets[$areaName][] tar {
 
             #if {"$roomMobs[$denizen]" == "%*$tar%*"} {
-
                #var atkTarget $tar;
                #send {settarget $denizen};
                attackCmd $denizen;
@@ -169,7 +168,7 @@
             };
          };
       };
-
+      info Found nothing;
    };
    #else
    {

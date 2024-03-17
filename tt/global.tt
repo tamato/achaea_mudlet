@@ -84,7 +84,6 @@
    print {New Fight};
 }
 
-#nop \Z until the end f the text sent by the mud;
 #highlight {^You have slain%*.$} {black b magenta};
 #action {^You have slain%*.$} {
    #unvar atkTarget;
@@ -95,7 +94,7 @@
 #nop Use Diagnose  for losing eq;
 #nop use Directory for losing balance;
 
-#highlight {Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow};
+#highlight {^Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {yellow};
 
 #action {A beam of prismatic light suddenly shoots into the room.} {
    
@@ -130,7 +129,8 @@
 #read character_highlights.tt;
 #read events.tt;
 
-#delay {10} {#class charadatabase clear};
+#nop #delay {5} {#class chardatabase save};
+#nop #delay {8} {#class chardatabase clear};
 
 #alias {bfind} {
    #buffer find %1;
@@ -142,4 +142,13 @@
    #math findidx {$findidx + 1};
 }
 
+#action {^Your starburst tattoo flares as the world is momentarily tinted red.$} {
+   #show <118>------------------------------------------------;
+   #line oneshot #sub {%*} {           <138>STARBURST USED};
+   #show <118>------------------------------------------------;
+};
+
+#action {^A %w tattoo fades from view and disappears} {
+   print Lost %1 tattoo!;
+}
 

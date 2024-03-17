@@ -40,13 +40,13 @@ Name: wanderer
         Some woven hand wraps. (handwraps)
         Robes of the wanderer. (wandererrobes)
 
-CALL next attack from wrap gag
-    - find everywhere that calls 'botter.checkForTargets'
-    - event to raise 'continueBashing'
+https://wiki.achaea.com/Category:Races_talisman_set
 
-Remove all referenceds to 
-  botter.triggers.recovered = tempTrigger("You have recovered equilibrium", botter.checkForTargets)
-  disableTrigger(botter.triggers.recovered)
-
-why does flinging priestess stop other things in the FREE queue?
-
+Name: Figurine of the suffering Maya
+    Description
+        Carry over damage from criticals (32/64) to the next attack
+    Talismans:
+        The head of a figurine of the suffering Maya, level 1
+        The arms of a figurine of the suffering Maya, level 1
+        The torso of a figurine of the suffering Maya, level 1
+        The legs of a figurine of the suffering Maya, level 1

@@ -182,7 +182,6 @@ with open('world.map', 'w') as f:
                 rname = room['name']
 
             rid = room['id']
-            rcoords = room['coordinates']
             feature = '';gameArea = ''
             if 'userData' in room:
                 user = room['userData']
@@ -301,7 +300,9 @@ with open('world.map', 'w') as f:
 
             # in the dict roomid is really AreaID
             # and if they are in different areas, don't bother with void rooms.
-            if room['roomid'] != exitroom['roomid']: continue
+            if room['roomid'] != exitroom['roomid']: 
+                rexit['dirbit'] = dirBits['in']
+                continue
 
             # some are one way?
             if roomid not in exitroom['exits']: continue
@@ -387,7 +388,7 @@ with open('world.map', 'w') as f:
 
 # #foreach {*shops[49][%*]} shop {#if {{^Golden Dragon's Lair$} == {^$shop$}} {#show found}}
 with open('shopRoomNumbers.tt', 'w') as f:
-    f.write(f"#var shops {{\n")
+    f.write(f"#var allshops {{\n")
     for areaid,rooms in allshops.items():
         f.write(f"\t{{{areaid}}} {{\n")
         for rname,rid in rooms.items():

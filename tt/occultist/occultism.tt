@@ -58,7 +58,11 @@
 #class auraglance open;
 #action {^You see that %w is at %D.} {
    #map list {roomname} {%2} {variable}{rooms};
-   #line oneshot #sub {~%*} {%%1 <269>*rooms[]<099>}
+
+   #var roomvnum *rooms[+1];
+   #map get roomarea area $roomvnum;
+
+   #line oneshot #sub {~%*} {%%1 <268>$roomvnum<900>, in <268>$area<900>};
 };
 
 #class auraglance close;

@@ -11,6 +11,8 @@ from os.path import isfile, join
 url = 'https://api.achaea.com/characters.json'
 file_name = 'characters.json'
 
+online = []
+longestNameLen = 0
 with urllib.request.urlopen(url) as response:
     # load up the json object
     jsondata = json.loads(response.read())
@@ -21,11 +23,14 @@ with urllib.request.urlopen(url) as response:
     for c in jsondata['characters']:
         uri = c['uri']
         name = c['name']
+        online.append(name.capitalize())
+        if len(name) > longestNameLen: longestNameLen = len(name)
         with urllib.request.urlopen(uri) as charuri:
             charjson = json.loads(charuri.read())
             with open(f'../characters/{name}.json', 'w') as charfile:
                 json.dump(charjson, charfile)
 
+longestNameLen += 1
 print ('finished characters')
 
 # load up all the character files
@@ -33,16 +38,15 @@ path = f'{os.environ["HOME"]}/repos/achaea_mudlet/characters'
 allcharacters = [f for f in listdir(path) if isfile(join(path, f))]
 
 characters = {}
-fg_magenta = '<Fff33ff>'
 fg_yellow = '<Fffff00>'
 fg_red = '<Fff0000>'
 
 with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
-    hi.write(f'#class chardatabase kill\n')
-    hi.write(f'#class chardatabase open\n\n')
-    hi.write('#alias {whois} { #var chardb[%0] }\n\n')
+    hi.write('#alias {whois} { #var chardb[%i%1] }\n\n')
     #  hi.write('#ticker {updatechardb} {#read character_highlights.tt} {60}\n\n')
 
+    hi.write(f'#class chardatabase kill\n')
+    hi.write(f'#class chardatabase open\n\n')
     for file in allcharacters:
         with open(f'{path}/{file}', 'r') as charfile:
             char = json.load(charfile)
@@ -50,20 +54,26 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # create a dictionary of them
                 #  print(char['name'])
                 # could use 24 bit colors, format is <F000000> <FFFFFFF>
-                color = '<830>' # the first '8' is to 'use previous value'
+                color = '<838>' # the first '8' is to 'use previous value'
                 #  color = fg_yellow
 
                 if 'city' in char:
                     city = char['city']
-                    if 'ashtan'     in city: color = '<400>'+fg_magenta # underscore
-                    if 'hashan'     in city: color = '<400>'+color      # underscore
-                    if 'targosas'   in city: color = '<500>'+'<fac>'    # blink, Pink
-                    if 'underworld' in city: color = '<414>'            # underscore, read, blue
-                    if 'mhaldor'    in city: color = '<110>'   
+                    if 'ashtan'     in city: color = '<458>'            # underscore
+                    if 'hashan'     in city: color = '<408>'            # underscore
+                    if 'targosas'   in city: color = '<508>'+'<fac>'    # blink, Pink
+                    if 'underworld' in city: color = '<818>'            # underscore, red, blue
+                    if 'mhaldor'    in city: color = '<418>'   
+                    if 'cyrene'     in city: color = '<468>'   
+                    if 'eleusis'    in city: color = '<828>'   
+                    if '(hidden)'   in city: color = '<438>'   
 
                 char['color'] = color
                 characters[char['name']] = char
-                hi.write(f'#highlight {{{char["name"]}{{ |,|\'}}}} {{{color}}}\n')
+
+                priority = longestNameLen - len(char['name'])
+                hi.write(f"#sub {{{{{char['name']}}}{{ |,|'}}}} {{{color}%1<900>%2}} {{{priority}}}\n")
+
             except Exception as inst:
                 print(f'WTF??')
                 print(f'---------------------')
@@ -73,11 +83,11 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 print(inst)          # __str__ allows args to be printed directly,
                                      # but may be overridden in exception subclasses
                 break
-
-    hi.write('\n')
     hi.write(f'#class chardatabase close\n')
-    hi.write(f'#class chardatabase save\n')
+    hi.write(f'#class chardatabase save;\n')
+    #  hi.write(f'#class chardatabase clear;\n')
     hi.write('\n')
+
     hi.write('#var {chardb}\n')
     hi.write('{\n')
     for char in characters.items():
@@ -92,6 +102,8 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
         hi.write(f'\t\t{{color}}\t{{{char[1]["color"]}}}\n')
 
         hi.write('\t};\n\n')
+
     hi.write('};\n\n')
+
 
 

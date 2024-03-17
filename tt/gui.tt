@@ -159,7 +159,7 @@
       #local tab *comm_window[tab][+$index];
       #if {{$comm_window[active]} === {$tab}}
       {
-          #format short <138>%.6s $tab
+          #format short <238>%.6s $tab
       };
       #elseif {$comm_window[unread][$tab] == 1}
       {
@@ -267,10 +267,18 @@
    #math newidx {$newidx + 1};
 
    #list room_window[tab][seen] find {%*%1%*} idx;
-   #if {$idx == 0}{
-      #list room_window[tab][seen] ins -1 {<110>$newidx %1};
-      #list pvpTargets ins -1 {%1};
+   #if {$idx == 0} {
+      #if {{$chardb[%1]} != {}} {
+         #var color $chardb[%1][color]%1<099>;
+      };
+      #else {
+         #var color <070>%1<099>;
+      };
+
+      #list room_window[tab][seen] ins -1 {<218>$newidx $color};
+      #list pvpTargets ins -1 {%1 {{deathCounter}{0}}};
    };
+
    room_window_draw_data;
    #unvar idx;
 }
@@ -290,15 +298,13 @@
 {
    #local ply $gmcp[room][addplayer][name];
 
-   #list seenPlys ins -1 $ply;
-
    #if {{$chardb[$ply]} != {}} {
       room_window_show players $chardb[$ply][color]$ply<099>;
-      addSeenPlayer $chardb[$ply][color]$ply<099>;
-   }{
+   };
+   #else {
       room_window_show players <070>$ply<099>;
-      addSeenPlayer <070>$ply<099>;
    }
+   addSeenPlayer $ply;
 }
 
 #alias {gui.onRoomPlayers}
@@ -309,15 +315,13 @@
       #local ply $gmcp[room][players][+$idx][name];
 
       #if {{$ply} === {$whoami}} { #continue };
-
-      #list seenPlys ins -1 $ply;
+      addSeenPlayer $ply;
 
       #if {{$chardb[$ply]} != {}} {
          room_window_show players $chardb[$ply][color]$ply<099>;
-         addSeenPlayer $chardb[$ply][color]$ply<099>;
-      }{
+      };
+      #else {
          room_window_show players <070>$ply<099>;
-         addSeenPlayer <070>$ply<099>;
       };
    };
    #unvar idx;

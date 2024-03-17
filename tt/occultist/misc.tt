@@ -4,15 +4,16 @@
 #var priestessEnable 1;
 #var ruinCost 17;
 
+#class bash kill
 #class bash open
 
-#high {^You have recovered equilibrium%*} { reverse };
-#action {You have recovered equilibrium} {
+#action {^You have recovered equilibrium%*} {
+   print How am I here?;
    atk;
 
    #if {&{atkTarget} == 0} {
       #class bash clear;
-      #if {$distortActive === 1} {da};
+      #nop #if {$distortActive === 1} {da};
    };
 };
 
@@ -23,17 +24,21 @@
 #nop F1
 #macro {\eOP} { 
    #unvar atkTarget;
-   #nop print {stopping auto attack};
    #class bash clear; 
 };
 
 #nop S-F1
 #macro {\e[1;2P} { 
+   startAutoAtk;
+   #class autobash clear;
+};
+
+#alias {startAutoAtk} {
    #class bash load; 
    print {resuming auto attack};
-   #nop #if {$distortActive === 0} {da};
+   #if {$distortActive === 0} {da};
    atk;
-};
+}
 
 #nop -------------------------------------------------------------------------
 #nop BattleRage
@@ -46,18 +51,16 @@
 #var harry 1;
 #var fluctuate 1;
 
-#nop Around monsters?
+#nop Around monsters?;
 #nop there might be a different one around people.
 #high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
 #action {^A nearly invisible magical shield forms around} 
 { 
    #nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
-   print RUIN THE SHEILD!;
    #if {&{atkTarget} != 0} {
       #if {$rage >= $ruinCost} {
          #math rage {$rage - $ruinCost};
          #send {ruin};
-         print Ruin Shield!;
       }
    }
 };
@@ -69,8 +72,7 @@
       #var rage 0;
       #var %2 0;
       #send {%2}; 
-      print {Used %2, disabled [%2]};
-      #delay {%3} {#var %2 {1};print %2 reEnabled};
+      #delay {%3} {#var %2 {1}};
    };
 }
 
@@ -123,15 +125,38 @@
    #if {"%1" === ""}  { 
       #send {hermits} 
    };
-   #else{ 
-      #send {fling hermit at ground %1};
+   #else {
+      #send {$addfree fling hermit at ground %1};
+
+      #line oneshot #action {^You have recovered balance on all limbs.$} {b %1};
       print {Can hermit be used off balance?};
       updateCharUI;
    };
 };
 
-#class priestess kill
-#class priestess open
+#alias {death} {
+   #if {"%1" == ""} {err Pass in a target for Death;#return};
+
+   #send {$addfree rub death on %1};
+
+   #list pvpTargets find %1 plyIdx;
+   #math pvpTargets[$plyIdx][deathCounter] {$pvpTargets[$plyIdx][deathCounter] + 1};
+   #if {$pvpTargets[$plyIdx][deathCounter] >= 7} {
+      print Fling Death at %1!!;
+   };
+}
+
+#alias {wheel} {
+   #send {$addfree ruinate wheel at ground};
+   #delay {6.5} {#send {$addfree pinchaura caloric}};
+   #delay {7} {#show Cold Blue Light!};
+   #delay {14} {#show Vibrant Indigo Light!};
+   #delay {21} {#show Violet Light!};
+   #delay {22} {#send {$addfree pinchaura speed}};
+}
+
+#class priestess kill;
+#class priestess open;
 
 #nop when fling is used.;
 #nop You shuffle a tarot card inscribed with the High Priestess out of your deck, bringing the total number of remaining cards to 89;

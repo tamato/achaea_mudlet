@@ -60,4 +60,6 @@ TALISMAN INFO Deathcape
 
 The one to BREAK this coil shall die shortly after.
 
+# Figurine of the suffering Maya
+
 

@@ -1,4 +1,4 @@
-#var shops {
+#var allshops {
 	{2} {
 		{The Seabreeze Tavern} {4299}
 		{The Praetoria Pelagium} {4806}

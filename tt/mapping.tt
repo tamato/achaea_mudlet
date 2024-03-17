@@ -5,14 +5,22 @@
 #var mapping[callbacks] {};
 
 #alias {mapping} {
-   print Mapping Commands;
-   info * mgo;
-   info   - mapping go to, pass in room num;
+   print Auto Walking Commands;
+   info * mrun;
+   info   - run to room num, pass in room number;
    info * mgostart;
    info   - go to the start room;
-   info * mexplore;
+   info * mex;
+   info   - mapping explore. Explores current area.;
    info * mstop;
-   info ;
+   info   - stop exploring/auto walking;
+   info * mfind;
+   info   - pass in a room name to get room info;
+   info;
+   info Notes;
+   info To hook 'events' into this system,;
+   into assign functions/aliases to mapping[callbacks][your callback];
+   info;
 }
 
 #alias {mapping.onConnected}
@@ -27,7 +35,6 @@
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 }
 
-#nop Map Go To, room num
 #alias {mwalk} {
    #var mapping[dst] %1;
    #map find {%1};
@@ -35,6 +42,8 @@
 }
 
 #alias {mrun} {
+   #if {"%1" == ""} {err Pass in room number!; #return};
+
    #var mapping[dst] %1;
    #map find {%1};
    #path run {0.7};
@@ -47,7 +56,24 @@
 #alias {mstop} {
    #list mapping[yetToVisit] clear;
    #class pathing clear;
+   #class autobash clear;
    #path destroy;
+   #unvar mapping[callbacks][explore];
+}
+
+#alias {mfind} {
+   #if {"%1" == ""} {err Pass in a room name;#return};
+
+   #map list {roomname}{%i%*%0%*} {variable}{rooms};
+
+   #show <258>Found rooms:;
+   #foreach {*rooms[]} roomnum {
+      #map get roomname rname $roomnum;
+      #map get roomarea rarea $roomnum;
+      #show <228>$rname <278>is in <228>$rarea<278>: <268>$roomnum;
+   };
+
+   #show <258>--------------------;
 }
 
 #alias {mpp.prepExplore} {
@@ -65,7 +91,7 @@
       #if {"$rname" == "" } {#continue};
 
       #map get {roomexits} {exits} {$roomid};
-      #if {&exits[] == 0} {#continue};
+      #if {&{exits[]} == 0} {#continue};
 
       #map find $roomid;
       #path get length len;
@@ -89,7 +115,7 @@
 }
 
 #alias {mpp.nextdest}{
-   #if {&mapping[yetToVisit][] > 0} {
+   #if {&{mapping[yetToVisit][]} > 0} {
       #var shortest {};
       #var sl {999999};
 
@@ -120,30 +146,38 @@
 
 #alias {mapping.step} {
    #delay {0.7} {
-      #path walk;
-      #show Stepping....
+      #if {$gmcp[char][vitals][bal] == 1 && $gmcp[char][vitals][eq] == 1} {
+         #path walk;
+         #show Stepping....
+      };
+      #else {
+         info Waiting to recover before exploring...;  
+         #line oneshot #action {^You have recovered} {
+            mapping.step;
+         };
+      };
    };
 }
 
 #EVENT {END OF PATH} {
    #nop Clean up;
-   #if {&mapping[yetToVisit][] == 0} {
+   #if {&{mapping[yetToVisit][]} == 0} {
       print Finished AutoExplore;
 
       #class pathing clear;
-      #unvar $mapping[dst];
-      #unvar $mapping[callbacks][explore];
+      #unvar mapping[dst];
+      #unvar mapping[callbacks][explore];
    };
 }
 
 #EVENT {END OF RUN} {
    #nop Clean up;
-   #if {&mapping[yetToVisit][] == 0} {
+   #if {&{mapping[yetToVisit][]} == 0} {
       print Finished AutoExplore;
 
       #class pathing clear;
-      #unvar $mapping[dst];
-      #unvar $mapping[callbacks][explore];
+      #unvar mapping[dst];
+      #unvar mapping[callbacks][explore];
    };
 }
 
@@ -159,19 +193,30 @@
    #math width {$uimap[width] - 4};
 
    #nop Put the area name at the top of the map;
-   #format {prompt} {%.${width}s} {<038>$gmcp[room][info][area]};
+   #format {prompt} {%.${width}s} { <038>$gmcp[room][info][area] };
    #line ignore #showme {$prompt} {1} {3};
 
+   #nop Put the room coords below area name;
+   #local serverCoords $gmcp[room][info][coords];
+   #format {prompt} {%.${width}s} {<038>$gmcp[room][info][coords]};
+   #map get {roomdata} {rcoords};
+   #format {prompt} {%.${width}s} {$prompt / $rcoords};
+   #line ignore #showme {$prompt} {2} {3};
+
+   #nop Put the room number above room name;
+   #format {prompt} {%.${width}s} {<038>$vnum};
+   #line ignore #showme {$prompt} {$uimap[height]-1} {3};
+
    #nop Put the room name at the bottom of the map;
-   #format {prompt} {%.${width}s} {<038>$gmcp[room][info][name]};
-   #line ignore #showme {$prompt} {$uimap[height]} {3};
+   #format {prompt} {%.${width}s} { <038>$gmcp[room][info][name] };
+   #line ignore #showme {$prompt} {$uimap[height]} {2};
 
    #nop Display the exits;
    #variable {exits} {};
    #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
    {
        #if {&{gmcp[room][info][exits][$exit]} === 0} { #continue };
-       #variable {exits} {$exits<128>$exit<270>,};
+       #variable {exits} {$exits<128>$exit<278>,};
    };
 
    #screen clear square {$uimap[height]+1} 1 {$uimap[height]+1} {$uimap[width]-1};
@@ -179,8 +224,11 @@
    #line ignore #showme {$prompt} {$uimap[height]+1} {2};
    #unvar exits;
 
+   #nop ----------------------------------------------------;
+   #nop Auto Explore;
+   #nop ----------------------------------------------------;
    #nop Find the current room and remove it from the rooms to go to.;
-   #if {&mapping[yetToVisit][] > 0} {
+   #if {&{mapping[yetToVisit][]} > 0} {
 
       #nop Try to hit the same rooms as little as possbile;
       #map set {roomweight} {3.0};
@@ -192,7 +240,7 @@
       };
 
       #if {$vnum == $mapping[dst]} {
-         print Finding a new dst, room left to go &mapping[yetToVisit][];
+         print Finding a new dst, number of rooms left to visit &mapping[yetToVisit][];
          mpp.nextdest;
       };
       #else {
@@ -219,8 +267,8 @@
 #action {^There is no exit in that direction.$} {
    print Why is there no exit? Did not destory path.;
    #list mapping[yetToVisit] clear;
-   #unvar $mapping[callbacks][explore];
-   #unvar $mapping[dst];
+   #unvar mapping[callbacks][explore];
+   #unvar mapping[dst];
 
    #class pathing clear;
 }
@@ -248,19 +296,53 @@
 #class roomnums kill;
 #class roomnums open;
 
-#action {^%dgp %* {[A-Z]%*}%*$} {
-   #var shopnum { ??? };
-   #loop 1 {&shops[49][]} idx {
-      #if {{^%3%4$} == {^*shops[49][+$idx]$}} {
-         #var shopnum $shops[49][+$idx];
+#action {^%d%w %* {[A-Z]%*}%*$} {
+   #map get {roomid} shopid;
+   #loop 1 {&allshops[$shopid][]} idx {
+      #if {{^%4%5$} == {^*allshops[$shopid][+$idx]$}} {
+         #var shopnum $allshops[$shopid][+$idx];
 
          #line oneshot #sub {~%*} {%%1:<269>$shopnum<099>};
          #break;
       };
    };
    #unvar idx;
+   #unvar shopid;
 }
 
 #class roomnums close;
-#class roomnums save;
+#delay {2} {#class roomnums save};
+#delay {3} {#class roomnums clear};
 
+#alias {hunt} {
+   atk;
+
+   #nop Nothing, or they've been cleared out, move on.;
+   #if {&{atkTarget} == 0} {
+      mapping.step;
+   };
+}
+
+#alias {mbash} {
+   #class bash clear;
+   #class autobash load; 
+   #class pathing load;
+
+   print Starting Auto Bash;
+   #if {$distortActive === 0} {da};
+
+   mpp.prepExplore;
+   #var mapping[callbacks][explore] {hunt};
+   hunt;
+};
+
+#class autobash kill;
+#class autobash open;
+
+#action {^You have recovered} {
+   hunt;
+}
+
+#class autobash close;
+#delay 1 {#class autobash save};
+#delay 2 {#class autobash clear};
