@@ -311,8 +311,8 @@
 }
 
 #class roomnums close;
-#delay {2} {#class roomnums save};
-#delay {3} {#class roomnums clear};
+#class roomnums save;
+#class roomnums clear;
 
 #alias {hunt} {
    atk;

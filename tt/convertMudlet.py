@@ -23,8 +23,6 @@ def writeRoom(f, room):
 with open('map.json') as mapfile:
     parsed = json.load(mapfile)
 
-voidrooms = []
-
 nextRoomNum = 0
 voidRoomStart = 0
 allrooms = {}
@@ -142,17 +140,6 @@ def getExit(roomId,exitId):
     #  print(f'room FOUND NOTHING {roomId}, {exitId}')
     return {}
 
-def getVoidExit(roomId,exitId):
-    for vroom in voidrooms:
-        if roomId == vroom['vnum']:
-            for vexit in vroom['exits']:
-                if exitId == vexit['vnum']:
-                    return vexit;
-
-    print(f'FOUND NOTHING {roomId}, {exitId}')
-    sys.exit(1)
-    return {}
-
 convertedRooms = {}
 allshops = {}
 with open('world.map', 'w') as f:
@@ -204,6 +191,7 @@ with open('world.map', 'w') as f:
             color = colors(str(envi))
 
             coords = room["coordinates"]
+
             croom = {
                 'vnum':rid,
                 'flags':0, # hide all room, with 4102, ROOM_FLAG_HIDE
@@ -289,24 +277,24 @@ with open('world.map', 'w') as f:
         if roomid > voidRoomStart: continue
 
         voidRooms = {}
-        for exitid, rexit in room['exits'].items():
-            if rexit['vnum'] > voidRoomStart: 
+        for destid, rdest in room['exits'].items():
+            if rdest['vnum'] > voidRoomStart: 
                 continue
 
             # temporary
-            if exitid not in convertedRooms: continue
+            if destid not in convertedRooms: continue
 
-            exitroom = convertedRooms[exitid]
+            exitroom = convertedRooms[destid]
 
             # in the dict roomid is really AreaID
             # and if they are in different areas, don't bother with void rooms.
             if room['roomid'] != exitroom['roomid']: 
-                rexit['dirbit'] = dirBits['in']
+                rdest['dirbit'] = dirBits['in']
                 continue
 
             # some are one way?
             if roomid not in exitroom['exits']: continue
-            returnexit = exitroom['exits'][roomid]
+            exitBackToCRoom = exitroom['exits'][roomid]
 
             # Coords are stored in Data
             ccoords = room['data']
@@ -315,16 +303,24 @@ with open('world.map', 'w') as f:
             #skip rooms that won't need void rooms
             # TODO add special exits here
             voidList = ['u','d','in','out']
-            if rexit['dir'] in voidList: continue
+            if rdest['dir'] in voidList: continue
 
             # Get the deltas
             dx = abs(ccoords[0] - ecoords[0])
             dy = abs(ccoords[1] - ecoords[1])
 
+            # New void rooms to be inserted between this room and the exit.
+            #   if more then one is created, each new one will be connected
+            #   to this room and push the exit further away
+            nextRoom = destid # start off pointing to the original exit
+
             # getting ready to create a void room.
             while dx > 1 or dy > 1:
-                dx = abs(dx -1)
-                dy = abs(dy -1)
+                if dx > 0: dx = dx - 1;
+                if dx < 0: dx = dx + 1;
+                if dy > 0: dy = dy - 1;
+                if dy < 0: dy = dy + 1;
+
                 nextRoomNum += 1
                 vid = nextRoomNum 
 
@@ -348,9 +344,9 @@ with open('world.map', 'w') as f:
                 # exit going back to the current room
                 vexit = {
                     'vnum':roomid,
-                    'dir': returnexit['dir'],
-                    'dircmd': returnexit['dir'],
-                    'dirbit': returnexit['dirbit'],
+                    'dir': exitBackToCRoom['dir'],
+                    'dircmd': exitBackToCRoom['dir'],
+                    'dirbit': exitBackToCRoom['dirbit'],
                     'flag':'',
                     'data':'',
                     'weight':0.01,
@@ -358,25 +354,32 @@ with open('world.map', 'w') as f:
                     'delay':0.0,
                 }
                 voidroom['exits'][roomid] = vexit
-                # exit contining through to the exit
+                # point this room to the new void room.
+                rdest['vnum'] = vid
+
+                # exit continuing through to the original exit
                 vexit = {
-                    'vnum':exitid,
-                    'dir': rexit['dir'],
-                    'dircmd': rexit['dir'],
-                    'dirbit': rexit['dirbit'],
+                    'vnum': nextRoom,
+                    'dir': rdest['dir'],
+                    'dircmd': rdest['dir'],
+                    'dirbit': rdest['dirbit'],
                     'flag':'',
                     'data':'',
                     'weight':0.01,
                     'color':'',
                     'delay':0.0,
                 }
-                voidroom['exits'][exitid] = vexit
+                voidroom['exits'][nextRoom] = vexit
 
-                # point this room to the new void room.
-                rexit['vnum'] = vid
+                # have the original exit link to the first void room.
+                if nextRoom == destid:
+                    exitBackToCRoom['vnum'] = vid
+                # update the previous void room how to exit to this one
+                else:
+                    voidRooms[nextRoom]['exits'][roomid]['vnum'] = vid
 
-                # point the old exit to this void room.
-                returnexit['vnum'] = vid
+                # for the next iteration, tell the upcoming void room how to enter the one that was just finished.
+                nextRoom = vid
                 # done with potential extra rooms
 
         # done generating void rooms for the current room.
@@ -384,7 +387,7 @@ with open('world.map', 'w') as f:
         for _,vr in voidRooms.items():
             writeRoom(f, vr)
 
-    print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidrooms)}, void index {nextRoomNum}')
+    print(f'Total rooms b4 {globalRoomCnt}, after {globalRoomCnt + len(voidRooms)}, void index {nextRoomNum}')
 
 # #foreach {*shops[49][%*]} shop {#if {{^Golden Dragon's Lair$} == {^$shop$}} {#show found}}
 with open('shopRoomNumbers.tt', 'w') as f:
@@ -396,36 +399,4 @@ with open('shopRoomNumbers.tt', 'w') as f:
         f.write(f"\t}}\n")
     f.write(f"}}\n")
 
-def getAreaIdsForRegion():
-    for area in parsed['areas']:
-        areaid = area["id"]
-        for room in area['rooms']:
-            if 'userData' in room:
-                user = room['userData']
-                if 'Game Area' in user:
-                    print(f'{areaid}:Region: {user["Game Area"]}, sub: {area["name"]}')
-            else: 
-                if "name" not in room: print(f'Room has no name: {room["id"]}')
-                else: print(f'Room has no user Data: {room["id"]}, {room["name"]}')
-
-def getRoomsForRegion():
-    # areas["rooms"][idx]["userData"]["Game Area"]
-    # ^ a region.
-    pass
-
-def listRegions():
-    currentRegion = ''
-    for areas in parsed['areas']:
-        for rooms in areas['rooms']:
-            if 'userData' in rooms:
-                user = rooms['userData']
-                if 'Game Area' in user:
-                    region = user["Game Area"]
-                    if region == currentRegion: 
-                        break
-                    
-                    currentRegion = user["Game Area"]
-
-                    test = region.lower()
-                    print(f'Region: {user["Game Area"]}')
 
