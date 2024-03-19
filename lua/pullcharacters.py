@@ -54,25 +54,28 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # create a dictionary of them
                 #  print(char['name'])
                 # could use 24 bit colors, format is <F000000> <FFFFFFF>
-                color = '<838>' # the first '8' is to 'use previous value'
+                color = '<848>' # the first '8' is to 'use previous value' or 'dont change'
                 #  color = fg_yellow
 
                 if 'city' in char:
                     city = char['city']
                     if 'ashtan'     in city: color = '<458>'            # underscore
                     if 'hashan'     in city: color = '<408>'            # underscore
-                    if 'targosas'   in city: color = '<508>'+'<fac>'    # blink, Pink
+                    if 'targossas'  in city: color = '<508>'+'<fac>'    # blink, Pink
                     if 'underworld' in city: color = '<818>'            # underscore, red, blue
                     if 'mhaldor'    in city: color = '<418>'   
                     if 'cyrene'     in city: color = '<468>'   
                     if 'eleusis'    in city: color = '<828>'   
-                    if '(hidden)'   in city: color = '<438>'   
+                    if '(hidden)'   in city: color = '<430>'            # underscore
 
                 char['color'] = color
                 characters[char['name']] = char
 
                 priority = longestNameLen - len(char['name'])
-                hi.write(f"#sub {{{{{char['name']}}}{{ |,|'}}}} {{{color}%1<900>%2}} {{{priority}}}\n")
+                # Can't use ACTION's because only the first one will fire.
+                # SUBSITUTES fail because they break what goes after thier match
+                # HIGHLIGHT 
+                hi.write(f"#hi {{%w{char['name']}%w}} {{{color}}} {{{priority}}};\n")
 
             except Exception as inst:
                 print(f'WTF??')
@@ -83,9 +86,9 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 print(inst)          # __str__ allows args to be printed directly,
                                      # but may be overridden in exception subclasses
                 break
-    hi.write(f'#class chardatabase close\n')
+    hi.write(f'#class chardatabase close;\n')
     hi.write(f'#class chardatabase save;\n')
-    #  hi.write(f'#class chardatabase clear;\n')
+    #  hi.write(f'#delay 2 {#class chardatabase clear};\n')
     hi.write('\n')
 
     hi.write('#var {chardb}\n')

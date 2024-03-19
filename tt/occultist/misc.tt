@@ -116,7 +116,6 @@
 
       #send {$addfree outd hermit};
       #send {$addfree activate hermit %1};
-      print {Can hermit be used off balance?};
       updateCharUI;
    };
 };
@@ -129,7 +128,6 @@
       #send {$addfree fling hermit at ground %1};
 
       #line oneshot #action {^You have recovered balance on all limbs.$} {b %1};
-      print {Can hermit be used off balance?};
       updateCharUI;
    };
 };
@@ -146,12 +144,25 @@
    };
 }
 
+/*
+   hanged man before Aeon, or Cold?
+*/
 #alias {wheel} {
    #send {$addfree ruinate wheel at ground};
-   #delay {6.5} {#send {$addfree pinchaura caloric}};
-   #delay {7} {#show Cold Blue Light!};
-   #delay {14} {#show Vibrant Indigo Light!};
-   #delay {21} {#show Violet Light!};
+   #nop 01:09:59.76 O 100h 0rage 100m 99e 78w[xE|66] :>-;
+
+   #nop #delay {6.5} {#send {$addfree pinchaura caloric}};
+
+   #delay {14} {#show Cold Blue Light! Chill them with relevations of the void!}; 
+   #nop 01:10:13.50 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+   
+   #delay {21} {#show Vibrant Indigo Light! Stupify with the truth!};
+   #nop 01:10:20.56 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+
+   #delay {28} {#show Violet Light! Slow them down!};
+   #nop 01:10:27.52 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+   #nop TODO need timer for when Aeon hits;
+
    #delay {22} {#send {$addfree pinchaura speed}};
 }
 
@@ -299,7 +310,12 @@
    #send {CITY GUIDE AVAILABLE};
    #send {CITYNEWBIES};
    #send {CITY NOVICE LIST};
+   
+   #action {%w has requested that you share some of your knowledge} {#send {OK}};
+   #nop Cenoi has requested that you share some of your knowledge of Weaponmastery with him. 'OK' to commence the lesson. ;
 }
+
+
 
 #var generosity 0;
 #alias {self} {

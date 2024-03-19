@@ -7,7 +7,7 @@
 
 #alias {targeting.onRoomInfo}
 {
-   #variable roomInfo $gmcp[room][info];
+   #local roomInfo $gmcp[room][info];
 
    #nop UNhighlight mobs from a different area.;
    #if {{$areaName} != {$roomInfo[area]}} {
@@ -129,7 +129,9 @@
    #if {"%1" === ""}
    {
       #showme {<848>Targets for <818>[<838>$areaName<818>]};
-      #showme {*targets[$areaName][%*]};
+      #foreach {*targets[$areaName][%*]} tar {
+         info   $tar;
+      };
    };
    #elseif {&targets[$areaName][%0]}
    {
@@ -153,7 +155,7 @@
 
    #if {"%1" === ""}
    {
-      info No target given;
+      #nop info No target given;
       #if {&{roomMobs} == 0} {#return};
       #if {&{roomMobs[]} == 0} {#return};
 
@@ -168,7 +170,6 @@
             };
          };
       };
-      info Found nothing;
    };
    #else
    {
@@ -176,7 +177,7 @@
       attackCmd %1;
    };
 
-   #if {&{atkTarget} == 0} {dbg {Nothing to attack}};
+   #nop #if {&{atkTarget} == 0} {dbg {Nothing to attack}};
 }
 
 #class targeting close

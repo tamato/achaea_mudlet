@@ -4,7 +4,7 @@
 
 #session mel achaea.com 23
 melkervur
-achaeapassword
+@password{};
 
 #var whoami Melkervur;
 

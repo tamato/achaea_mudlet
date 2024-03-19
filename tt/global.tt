@@ -84,7 +84,7 @@
    print {New Fight};
 }
 
-#highlight {^You have slain%*.$} {black b magenta};
+#highlight {^You have slain%*.$} {dark black b light magenta};
 #action {^You have slain%*.$} {
    #unvar atkTarget;
 };

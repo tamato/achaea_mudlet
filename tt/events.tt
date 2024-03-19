@@ -37,6 +37,24 @@
    targeting.onCharItemsRemove;
 }
 
+
+#EVENT {IAC SB GMCP Char.Afflictions.Add IAC SE}
+{
+    #variable gmcp[char][afflictions][add] {%0};
+    print Gained Affliction $gmcp[char][afflictions][add][+1][name];
+}
+
+#EVENT {IAC SB GMCP Char.Afflictions.List IAC SE}
+{
+    #variable gmcp[char][afflictions][list] {%0};
+}
+
+#EVENT {IAC SB GMCP Char.Afflictions.Remove IAC SE}
+{
+    #variable gmcp[char][afflictions][remove] {%0};
+    print Removed Affliction $gmcp[char][afflictions][remove];
+}
+
 #EVENT {IAC SB GMCP char.status IAC SE}
 {
     #variable gmcp[char][status] {%0};
@@ -56,8 +74,8 @@
 
    #if {$prevHp != $hp} {
       #math {diff} {$prevHp - $hp};
-      #if {$diff > 0} {#show <501>-$diff};
-      #else {#math diff {$diff * -1}; #show <128>+$diff};
+      #if {$diff > 0} {#show HP <501>-$diff, Orb: $orbActive};
+      #else {#math diff {$diff * -1}; #show HP <128>+$diff, Orb: $orbActive};
 
       #unvar diff;
    };
@@ -69,8 +87,8 @@
 
    #if {$prevMp != $mp} {
       #math {diff} {$prevMp - $mp};
-      #if {$diff > 0} {#show <148>-$diff};
-      #else {#math diff {$diff * -1}; #show <158>+$diff};
+      #if {$diff > 0} {#show Mana <148>-$diff};
+      #else {#math diff {$diff * -1}; #show Mana <158>+$diff};
       #unvar diff;
    };
    #var prevMp $mp;

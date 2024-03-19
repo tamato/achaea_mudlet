@@ -1,15 +1,18 @@
 #nop test scripts
 
-#read shopRoomNumbers.tt;
-
 #class wip kill
 #class wip open
 
-#action {^Your starburst tattoo flares as the world is momentarily tinted red.$} {
-   #show <118>------------------------------------------------;
-   #line oneshot #sub {%*} {           <138>STARBURST USED};
-   #show <118>------------------------------------------------;
-};
+#alias {mycolors} {
+   #show <108>Bold, <208>Dim;
+   #show <118>Bold, <218>Dim;
+   #show <128>Bold, <228>Dim;
+   #show <138>Bold, <238>Dim;
+   #show <148>Bold, <248>Dim;
+   #show <158>Bold, <258>Dim;
+   #show <168>Bold, <268>Dim;
+   #show <178>Bold, <278>Dim;
+}
 
 #class wip save
 #class wip close
