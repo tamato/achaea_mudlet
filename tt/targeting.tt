@@ -181,3 +181,15 @@
 }
 
 #class targeting close
+
+#alias {whois} { 
+   #format inquery %n %1;
+   #var inquery $chardb[$inquery];
+
+   info Class: $inquery[class];
+   info Level: $inquery[lvl];
+   info PvP: $inquery[pvp];
+   info City: $inquery[color]$inquery[city]<900>;
+}
+
+

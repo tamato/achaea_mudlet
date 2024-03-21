@@ -6,10 +6,16 @@
 #var whoami Cthul;
 
 #alias attackCmd {queue insert freestand 5 warp};
+
 #read occultist/misc.tt;
 #read occultist/occultism.tt;
 #read occultist/domination.tt;
 #read occultist/gui.tt;
+
+#read harvesting/harvest.tt;
+
+#nop #unvar eventCallbacks[connected][cthul];
+#nop #var eventCallbacks[connected][cthul] {loadOccultist};
 
 #session cthul achaea.com 23;
 cthul;

@@ -17,6 +17,7 @@
 
 #read connect.tt;
 #read gui.tt;
+#read targeting.tt
 
 #nop Convert ANSI output to HTML
 #nop install 'aha'
@@ -25,8 +26,6 @@
 #nop to see ANSI in NVIM, 
 #nop  use nvim -c ":term cat $1", or ansivim in .profile.
 
-#nop Targeting needs to be after GUI
-#read targeting.tt
 
 #config {command color} {\e[4;33m}; #nop underline yellow;
 #config {verbatim}      {on};
@@ -128,7 +127,6 @@
 };
 
 #read events.tt;
-#read harvesting/harvest.tt;
 
 #alias {bfind} {
    #buffer find %1;
@@ -149,4 +147,6 @@
 #action {^A %w tattoo fades from view and disappears} {
    print Lost %1 tattoo!;
 }
+
+
 

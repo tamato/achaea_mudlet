@@ -125,7 +125,6 @@
          #if {$len == 0} { #show skipping $roomid; #continue };
 
          #if  {$sl > $len} {#var sl $len; #var shortest $roomid;};
-         #if  {$sl < 3} {#break};
       };
 
       #var mapping[dst] $shortest;
@@ -285,6 +284,9 @@
    };
 }
 
+#action {^You stumble through the fog, attempting to find a way out.} {
+}
+
 #action {^Now now, don't be so hasty!$} {
    print Slow it down...;
    #path move backward;
@@ -338,10 +340,10 @@
 
    #nop Nothing, or they've been cleared out, move on.;
    #if {&{atkTarget} == 0} {
-      
       #class autobash clear;
+
+      #var autoharvest[callback][finished] {continueFromHarvest};
       autoharvest;
-      #var autoharvest[callback][finished] {autobash.step};
    };
 }
 
@@ -358,12 +360,14 @@
    hunt;
 };
 
-#class autobash kill;
-#class autobash open;
-
 /*
 Be aware if targets walking into the room.
 */
+#alias {continueFromHarvest} {
+   #class autobash load;
+   autobash.step;
+}
+
 #alias {autobash.step} {
    #delay {0.7} {
 
@@ -376,6 +380,9 @@ Be aware if targets walking into the room.
       };
    };
 }
+
+#class autobash kill;
+#class autobash open;
 
 
 #action {^You have recovered} {

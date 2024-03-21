@@ -1,4 +1,3 @@
-#alias {whois} { #var chardb[%i%1] }
 
 #class chardatabase kill
 #class chardatabase open

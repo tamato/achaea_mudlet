@@ -1,7 +1,63 @@
 Artifact List:
 -------------------
+## Help files
+HELP ARTEFACTSOFFENSIVE
+HELP ARTEFACTSDEFENSIVE
+
+Bracelts for HP/Mana
+Sip Rings
+Diadem,
+
+## Magic damage collar
+A COLLAR of Ceylon:                                           400 Credits
+Artefact power: magic_damage
+ - This COLLAR increases the damage of your magical attacks by 10%.
+ - These COLLARs increase damage done to opponents from abilities that are magical in nature. These abilities include cast (or grove) lightning, cast firelash,
+thornrend, staffcast, stormhammer, accentato, holocaust globe, kai choke, distort aura, utter truename, warp, taint, purity, decay, star tarot, thurisaz rune, educe
+iron, and mind crush.
+
+A COLLAR of Diablerie:                                        800 Credits
+Artefact power: magic_damage
+ - This COLLAR increases the damage of your magical attacks by 15%.
+ - See COLLAR of Ceylon for full details.
+
+A COLLAR of Agatheis:                                         1600 Credits
+Artefact power: magic_damage
+ - This COLLAR increases the damage of your magical attacks by 20%.
+ - See COLLAR of Ceylon for full details.
+
+## Wings
+A pair of eagle's wings:                                      800 Credits
+ - These wings grant you access to the clouds room, which has exits to key locations around Sapience.
+
+A pair of atavian wings:                                      2000 Credits
+ - An enhanced version of the Eagle's Wings.
+ - These wings will also reach all exits available to the eagle's wings
+
+
+## Knocker
+A macabre door knocker:                                       1100 Credits
+ - RAISE KNOCKER to open a door of light from a ground location and enter the doorway to escape to another underground locale.
+ - There are 6 exits available from Sapience and 4 if you use this from Meropis.
+ - Activation and entering the door can be prevented by the presence of a monolith sigil.
+ - There is a 5 second windup on cast.
+ - This will not function on outer islands or away from the continents of Sapience or Meropis proper.
+
 Fracture: for occie it's diadem, +int, and magic damage collar
 Fracture: then the obvious generic bashing arties like Maya Figurine, artifact armor paragons, etc
+
+## Shield
+A SHIELD of Absorption:                                       800 Credits
+ - This SHIELD will absorb a physical-based attack completely, 15% of the time.
+ - Must be wielded.
+ - Stats on the SHIELD are: 11% cutting, 11% Blunt.
+ - May be used by all classes except Blademasters.
+ - You may wield two if you wish, but it will be no more effective than wielding one!
+
+## Armour
+HELP ARTEFACT ARMOUR
+Can CUSTOMISATION armour
+
 
 Whispers of Chaos, for the occultist language.
 Lhirhjen e'Ekawr - Whispers of Chaos.

@@ -42,7 +42,6 @@ fg_yellow = '<Fffff00>'
 fg_red = '<Fff0000>'
 
 with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
-    hi.write('#alias {whois} { #var chardb[%i%1] }\n\n')
     #  hi.write('#ticker {updatechardb} {#read character_highlights.tt} {60}\n\n')
 
     hi.write(f'#class chardatabase kill\n')

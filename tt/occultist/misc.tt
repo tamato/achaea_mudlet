@@ -8,7 +8,6 @@
 #class bash open
 
 #action {^You have recovered equilibrium%*} {
-   print How am I here?;
    atk;
 
    #if {&{atkTarget} == 0} {

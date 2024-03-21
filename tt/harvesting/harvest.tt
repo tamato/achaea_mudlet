@@ -66,43 +66,55 @@ To gain further information on an ability, AB <ability>.
 #var plantQueue {};
 #var picking 0;
 #var autoharvest[callback] {};
+#var picked 0;
+#var harvestedRooms {};
 
 #alias {autoharvest} {
    #send {plants};
    #class harvesting load;
+   #var harvestedRooms {};
 };
 
 #alias {pickplant} {
    #if {$picking == 1} {#return};
 
-   #if {$gmcp[char][vitals][bal] == 0} {#return};
    #if {&plantQueue[] == 0} {
       #class harvesting clear;
-      print Finished Harvesting;
-      #send {inr all};
+
+      #nop Only put stuff away, if anything was picked.
+      #if {$picked > 0} {
+         #send {inr all};
+      }
       
-      #if {&autoharvest[callback][] > 0} {
-         $autoharvest[callback][finished];
-         #unvar autoharvest[callback] {};
+      #foreach {*autoharvest[callback][]} cb {
+         $autoharvest[callback][$cb];
+         #unvar autoharvest[callback][$cb];
       };
 
       #return;
    };
 
+   #if {"*harvestedRooms[$gmcp[room][info][num]]" != ""} {#return};
+   #if {$gmcp[char][vitals][bal] == 0} {#return};
+   #var harvestedRooms[$gmcp[room][info][num]] 1;
+
    #var picking 1;
    #send {harvest *plantQueue[+1]};
    #unvar plantQueue[+1];
+   #math picked {$picked + 1};
 };
 
 #class harvesting kill;
 #class harvesting open;
 
 #action {^You cannot harvest that.$} {
+   #math picked {$picked - 1};
    #var picking 0;
    pickplant;
 }
 
 #action {^You have already harvested from this plant recently.$} {
+   #math picked {$picked - 1};
    #var picking 0;
    pickplant;
 };
@@ -112,21 +124,34 @@ To gain further information on an ability, AB <ability>.
    pickplant;
 };
 
-#line oneshot #action {^The following plants are growing in this room:$} {
-#nop do something?;
+#action {^That plant has been fully harvested.$} {
+   #var picking 0;
+   #math picked {$picked - 1};
+   pickplant;
 }
 
-#action {(goldenseal)} {#var plantQueue[moss] {1};pickplant;};
-#action {(sileris)} {#var plantQueue[moss] {1};pickplant;};
-#action {(kelp)} {#var plantQueue[moss] {1};pickplant;};
-#action {(kola)} {#var plantQueue[moss] {1};pickplant;};
-#action {(elm)} {#var plantQueue[moss] {1};pickplant;};
-#action {(echinacea)} {#var plantQueue[moss] {1};pickplant;};
-#action {(ash)} {#var plantQueue[moss] {1};pickplant;};
-#action {(ginseng)} {#var plantQueue[moss] {1};pickplant;};
-#action {(moss)} {#var plantQueue[moss] {1};pickplant;};
-#action {(bloodroot)} {#var plantQueue[bloodroot] {1};pickplant;};
-#action {(myrrh)} {#var plantQueue[bloodroot] {1};pickplant;};
+#alias {onprompt} {
+   #unvar eventCallbacks[prompt][autoharvest];
+   pickplant;
+}
+
+#line oneshot #action {^The following plants are growing in this room:$} {
+   #var picked 0;
+   #var picking 0;
+   #var eventCallbacks[prompt][autoharvest] {onprompt};
+}
+
+#action {(goldenseal)} {#var plantQueue[goldenseal] {1};};
+#action {(sileris)} {#var plantQueue[sileris] {1};};
+#action {(kelp)} {#var plantQueue[kelp] {1};};
+#action {(kola)} {#var plantQueue[kola] {1};};
+#action {(elm)} {#var plantQueue[elm] {1};};
+#action {(echinacea)} {#var plantQueue[echinacea] {1};};
+#action {(ash)} {#var plantQueue[ash] {1};};
+#action {(ginseng)} {#var plantQueue[ginseng] {1};};
+#action {(moss)} {#var plantQueue[moss] {1};};
+#action {(bloodroot)} {#var plantQueue[bloodroot] {1};};
+#action {(myrrh)} {#var plantQueue[myrrh] {1};};
 
 
 #class harvesting close;
