@@ -1,5 +1,7 @@
 #nop
 
+#nop #config verbose on;
+
 #event {RECEIVED ERROR}
 {
    #echo <118>%h { TOKENIZER };
@@ -13,7 +15,6 @@
 #var seenPlys {};
 #var eventCallbacks {};
 
-#read mapping.tt; #nop will be called from within connect.tt;
 #read connect.tt;
 #read gui.tt;
 
@@ -45,9 +46,9 @@
 #var insfree {queue insert freestanding 1};
 
 #alias {print} {
-   #showme  <168>--------------------------------------------------------------------------------;
-   #showme  <078>             [ <038>%0 <078>];
-   #showme  <168>--------------------------------------------------------------------------------;
+   #line ignore #showme  <168>--------------------------------------------------------------------------------;
+   #line ignore #showme  <078>             [ <038>%0 <078>];
+   #line ignore #showme  <168>--------------------------------------------------------------------------------;
 }
 
 #alias {err} {
@@ -55,11 +56,11 @@
 }
 
 #alias {info} {
-   #showme  {<238>%0};
+   #line ignore #showme  {<238>%0};
 }
 
 #alias {dbg} {
-   #showme  {<760>DBG: <488>%0};
+   #line ignore #showme  {<760>DBG: <488>%0};
 }
 
 #alias {journal} {
@@ -126,11 +127,8 @@
    #send {info here};
 };
 
-#read character_highlights.tt;
 #read events.tt;
-
-#nop #delay {5} {#class chardatabase save};
-#nop #delay {8} {#class chardatabase clear};
+#read harvesting/harvest.tt;
 
 #alias {bfind} {
    #buffer find %1;

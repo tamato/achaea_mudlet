@@ -112,6 +112,8 @@
        #return
    };
 
+   #var clearCharDb 1;
+
    targeting.onRoomInfo;
    mapping.onRoomInfo;
 }
@@ -176,7 +178,7 @@
 {
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
-      #nop #class chardatabase load;
+      #class chardatabase load;
    };
 }
 
@@ -185,7 +187,7 @@
    #nop %0 raw, %1 plain text;
    #if {$clearCharDb} {
       #var clearCharDb 0;
-      #nop #class chardatabase clear;
+      #class chardatabase clear;
    };
 
    runCallbacks prompt;

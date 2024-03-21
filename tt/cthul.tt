@@ -11,11 +11,10 @@
 #read occultist/domination.tt;
 #read occultist/gui.tt;
 
-#delay 3 {
 #session cthul achaea.com 23;
 cthul;
 $password;
+
 guireset;
 updateCharUI;
-};
 

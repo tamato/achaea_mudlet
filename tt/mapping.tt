@@ -309,10 +309,16 @@
 #class roomnums kill;
 #class roomnums open;
 
-#action {^%d%w %* {[A-Z]%*}%*$} {
+#nop ^((?:\d+)(?:mc|gp|cr).+)$;
+#action {^{\d.{44}} {.+}$} {
+
    #map get {roomid} shopid;
+   #format findshopname {%.20s} {%2};
    #loop 1 {&allshops[$shopid][]} idx {
-      #if {{^%4%5$} == {^*allshops[$shopid][+$idx]$}} {
+      #format searchedShopName {%.20s} {*allshops[$shopid][+$idx]};
+
+      #nop info <<$findshopname>> | <<$searchedShopName>>;
+      #if {{^$findshopname$} == {^$searchedShopName$}} {
          #var shopnum $allshops[$shopid][+$idx];
 
          #line oneshot #sub {~%*} {%%1:<269>$shopnum<099>};
@@ -332,7 +338,10 @@
 
    #nop Nothing, or they've been cleared out, move on.;
    #if {&{atkTarget} == 0} {
-      autobash.step;
+      
+      #class autobash clear;
+      autoharvest;
+      #var autoharvest[callback][finished] {autobash.step};
    };
 }
 

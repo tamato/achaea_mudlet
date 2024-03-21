@@ -75,7 +75,7 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 # Can't use ACTION's because only the first one will fire.
                 # SUBSITUTES fail because they break what goes after thier match
                 # HIGHLIGHT 
-                hi.write(f"#hi {{%w{char['name']}%w}} {{{color}}} {{{priority}}};\n")
+                hi.write(f"#hi {{{char['name']}}} {{{color}}} {{{priority}}};\n")
 
             except Exception as inst:
                 print(f'WTF??')

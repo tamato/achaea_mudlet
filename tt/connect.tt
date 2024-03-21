@@ -13,8 +13,11 @@
    #nop Turn telnet debug on to see telnet debugging information.;
    #nop #config {debug telnet} {on};
 
+   #read mapping.tt;
    mapping.onConnected;
    #echo {Session connection!};
+
+   #delay 3 #read character_highlights.tt;
 }
 
 
