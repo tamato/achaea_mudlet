@@ -17,6 +17,7 @@
 
       #line oneshot {#highlight {^You summon all your will to focus your aura. In a flash of blazing light, your aura consumes your body and nothing is left except your disembodied presence.$} {underscore magenta b Silver}};
 
+      #line oneshot {#highlight {^You begin the process of converting your form into pure energy.$} {underscore magenta b Silver};
    }{
       #var astralactive 0;
       #send {human};
@@ -41,6 +42,14 @@
       #send {$addfree normalaura};
    }
    updateCharUI;
+}
+
+#action {^A simulacrum shaped like Cthul cracks and crumbles to dust$} {
+   #send {$addfree simulacrum};
+}
+
+#action {^A heartstone cracks and crumbles to dust.} {
+   #send {$addfree heartstone};
 }
 
 #alias {clearauraglance} {

@@ -52,7 +52,7 @@
 
 #nop Around monsters?;
 #nop there might be a different one around people.
-#high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
+
 #action {^A nearly invisible magical shield forms around} 
 { 
    #nop A dizzying beam of energy strikes you as your attack rebounds off of a burly troll guard's shield.;
@@ -152,17 +152,17 @@
 
    #nop #delay {6.5} {#send {$addfree pinchaura caloric}};
 
-   #delay {14} {#show Cold Blue Light! Chill them with relevations of the void!}; 
+   #delay {13.5} {#show Cold Blue Light! Chill them with relevations of the void!;#cr}; 
    #nop 01:10:13.50 O 100h 0rage 100m 99e 78w[exE|66] :>-;
    
-   #delay {21} {#show Vibrant Indigo Light! Stupify with the truth!};
+   #delay {20.5} {#show Vibrant Indigo Light! Stupify with the truth!;#cr};
    #nop 01:10:20.56 O 100h 0rage 100m 99e 78w[exE|66] :>-;
 
-   #delay {28} {#show Violet Light! Slow them down!};
+   #delay {27.5} {#show Violet Light! Slow them down!;#cr;};
    #nop 01:10:27.52 O 100h 0rage 100m 99e 78w[exE|66] :>-;
    #nop TODO need timer for when Aeon hits;
 
-   #delay {22} {#send {$addfree pinchaura speed}};
+   #nop #delay {22} {#send {$addfree pinchaura speed}};
 }
 
 #class priestess kill;

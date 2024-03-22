@@ -96,11 +96,23 @@
 
 #highlight {^Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {cyan};
 
-#action {A beam of prismatic light suddenly shoots into the room.} {
-   
-   #line oneshot #highlight {%*} { black b red };
+#alias {allowPrism} {
+   #class prism clear;
+   print Use 'blockPrism' to put the defence back up.;
+}
+
+#alias {blockPrism} {
+   #class prism load;
+}
+
+#class prism kill;
+#class prism open;
+#action {^A beam of prismatic light suddenly shoots into the room.$} {
+   #highlight {%*} { black b red };
    #send {*gmcp[room][info][exits][+1]};
 };
+#class prism close;
+#class prism save;
 
 #highlight {%1 suddenly appears, having travelled down the beam of prismatic light.} { black b red };
 
@@ -148,5 +160,6 @@
    print Lost %1 tattoo!;
 }
 
+#high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
 
 

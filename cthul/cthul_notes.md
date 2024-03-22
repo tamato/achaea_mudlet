@@ -46,17 +46,7 @@ A macabre door knocker:                                       1100 Credits
 Fracture: for occie it's diadem, +int, and magic damage collar
 Fracture: then the obvious generic bashing arties like Maya Figurine, artifact armor paragons, etc
 
-## Shield
-A SHIELD of Absorption:                                       800 Credits
- - This SHIELD will absorb a physical-based attack completely, 15% of the time.
- - Must be wielded.
- - Stats on the SHIELD are: 11% cutting, 11% Blunt.
- - May be used by all classes except Blademasters.
- - You may wield two if you wish, but it will be no more effective than wielding one!
 
-## Armour
-HELP ARTEFACT ARMOUR
-Can CUSTOMISATION armour
 
 
 Whispers of Chaos, for the occultist language.

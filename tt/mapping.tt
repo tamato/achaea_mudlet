@@ -16,6 +16,8 @@
    info   - stop exploring/auto walking;
    info * mfind;
    info   - pass in a room name to get room info;
+   info * mbash;
+   info   - Auto explore area while also hunting and harvesting plants.;
    info;
    info Notes;
    info To hook 'events' into this system,;
@@ -54,11 +56,7 @@
 }
 
 #alias {mstop} {
-   #list mapping[yetToVisit] clear;
-   #class pathing clear;
-   #class autobash clear;
-   #path destroy;
-   #unvar mapping[callbacks][explore];
+   cleanHunt;
 }
 
 #alias {mfind} {
@@ -135,13 +133,7 @@
       #unvar roomid;
    };
    #elseif {&{mapping[yetToVisit][]} == 0} {
-      #nop Clean up;
-      print Finished AutoExplore;
-
-      #class pathing clear;
-      #class autobash clear;
-      #unvar mapping[dst];
-      #unvar mapping[callbacks][explore];
+      #var mapping[callbacks][cleanup] {cleanHunt};
    }
 }
 
@@ -172,7 +164,6 @@
 #EVENT {END OF PATH} {
    #if {&{mapping[yetToVisit][]} > 0} {
       print End of PATH hit, but there is still more to explore.;
-      #nop mpp.nextdest;
    };
 }
 
@@ -180,7 +171,6 @@
    #nop Clean up;
    #if {&{mapping[yetToVisit][]} > 0} {
       print End of RUN hit, but there is still more to explore.;
-      #nop mpp.nextdest;
    };
 }
 
@@ -335,6 +325,22 @@
 #class roomnums save;
 #class roomnums clear;
 
+#alias {cleanHunt} {
+   #nop Clean up;
+   print Finished AutoExplore;
+
+   #class pathing clear;
+   #class autobash clear;
+   #unvar mapping[dst];
+   #unvar mapping[callbacks][explore];
+
+   #unvar autoharvest[callback][finished];
+   clearAutoHarvestRooms;
+
+   #list mapping[yetToVisit] clear;
+   #path destroy;
+}
+
 #alias {hunt} {
    atk;
 
@@ -345,12 +351,18 @@
       #var autoharvest[callback][finished] {continueFromHarvest};
       autoharvest;
    };
+
+   #if {"*mapping[callbacks][cleanup]" != ""} {
+      $mapping[callbacks][cleanup];
+   }
 }
 
 #alias {mbash} {
    #class bash clear;
    #class autobash load; 
    #class pathing load;
+
+   clearAutoHarvestRooms;
 
    print Starting Auto Bash;
    #if {$distortActive === 0} {da};

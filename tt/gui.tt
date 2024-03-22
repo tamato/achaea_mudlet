@@ -286,8 +286,10 @@
 #alias {room_window_remove %1}
 {
    #foreach {*room_window[tab][]} con {
+
       #list room_window[tab][$con] find {%*%1%*} idx;
       #if {$idx === 0} { #continue };
+
       #list room_window[tab][$con] delete $idx;
    };
    
@@ -310,6 +312,7 @@
 #alias {gui.onRoomPlayers}
 {
    #list room_window[tab][players] clear;
+   room_window_draw_data;
 
    #foreach {*gmcp[room][players][]} {idx} {
       #local ply $gmcp[room][players][+$idx][name];
@@ -325,12 +328,18 @@
       };
    };
    #unvar idx;
+   room_window_draw_data;
 }
 
 #alias {gui.onRoomRemovePlayers}
 {
    #local ply $gmcp[room][removeplayer];
-   room_window_remove $ply;
+
+   #list room_window[tab][players] find {$ply} idx;
+   #if {$idx != 0} { 
+      #list room_window[tab][players] delete $idx;
+   }
+   room_window_draw_data;
 }
 
 #FUNCTION {colscale}
