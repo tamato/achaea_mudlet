@@ -17,7 +17,7 @@
 
       #line oneshot {#highlight {^You summon all your will to focus your aura. In a flash of blazing light, your aura consumes your body and nothing is left except your disembodied presence.$} {underscore magenta b Silver}};
 
-      #line oneshot {#highlight {^You begin the process of converting your form into pure energy.$} {underscore magenta b Silver};
+      #line oneshot {#highlight {^You begin the process of converting your form into pure energy.$} {underscore magenta b Silver}};
    }{
       #var astralactive 0;
       #send {human};
@@ -26,10 +26,9 @@
    updateCharUI;
 }
 
-#nop Go to the plane of Chaos!
 #alias {chaos} {
    #send {transendence};
-   #nop TODO action for the gate.
+   #nop TODO action for the gate.;
 }
 
 #var distortActive 0;

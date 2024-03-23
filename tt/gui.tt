@@ -335,7 +335,7 @@
 {
    #local ply $gmcp[room][removeplayer];
 
-   #list room_window[tab][players] find {$ply} idx;
+   #list room_window[tab][players] find {%*$ply%*} idx;
    #if {$idx != 0} { 
       #list room_window[tab][players] delete $idx;
    }

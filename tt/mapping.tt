@@ -107,7 +107,6 @@
    #unvar sl;
    #unvar shortest;
    #unvar nroom;
-   #unvar roomid;
 
    #show finished, headed to $mapping[dst];
 }
@@ -147,10 +146,14 @@
 }
 
 #alias {mapping.step} {
-   #delay {0.7} {
+   #delay {$stepTimings[$stepIdx]} {
       #if {$gmcp[char][vitals][bal] == 1 && $gmcp[char][vitals][eq] == 1} {
          #path walk;
-         #show Stepping....
+         #show Stepping....;
+
+         #math stepIdx {$stepidx + 1};
+         #math stepIdx {$stepidx % 3};
+         #if {$stepIdx == 0} {#var stepIdx 1};
       };
       #else {
          info Waiting to recover before exploring...;  
@@ -380,12 +383,19 @@ Be aware if targets walking into the room.
    autobash.step;
 }
 
+#var stepIdx 1;
+#var stepTimings {{1}{0.2}{2}{0.3}{3}{0.7}};
+
 #alias {autobash.step} {
-   #delay {0.7} {
+   #delay {$stepTimings[$stepIdx]} {
 
       #if {&{atkTarget} == 0 && $gmcp[char][vitals][bal] == 1 && $gmcp[char][vitals][eq] == 1} {
          #path walk;
-         #show Stepping....
+         #show Stepping....;
+         #math stepIdx {$stepidx + 1};
+         #math stepIdx {$stepidx % 3};
+         #if {$stepIdx == 0} {#var stepIdx 1};
+
       };
       #else {
          info Waiting to recover before exploring...;  
