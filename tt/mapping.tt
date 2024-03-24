@@ -6,7 +6,7 @@
 
 #alias {mapping} {
    print Auto Walking Commands;
-   info * mrun;
+   info * mgo;
    info   - run to room num, pass in room number;
    info * mgostart;
    info   - go to the start room;
@@ -21,7 +21,7 @@
    info;
    info Notes;
    info To hook 'events' into this system,;
-   into assign functions/aliases to mapping[callbacks][your callback];
+   into assign functions/aliases to mapping[callbacks][group][your callback];
    info;
 }
 
@@ -37,9 +37,26 @@
    #draw boxed map 1 1 $uimap[height] $uimap[width];
 }
 
-#alias {mwalk} {
+#alias {mapping.walkdst} {
+   #local vnum $gmcp[room][info][num];
+
+   #if {$vnum == $mapping[dst]} {
+      mstop;
+   };
+}
+
+#alias {mgo} {
+   #if {"%1" == ""} {err Pass in room number!; #return};
+
+   #class pathing load;
+
+   #nop Do destination checks first;
+   #var mapping[callbacks][walking][dst] {mapping.walkdst};
+   #var mapping[callbacks][walking][step] {mapping.step};
+
    #var mapping[dst] %1;
    #map find {%1};
+
    mapping.step;
 }
 
@@ -52,12 +69,9 @@
 }
 
 #alias {mgostart} {
-   mrun {$mapping[startRoom]};
+   mgo {$mapping[startRoom]};
 }
 
-#alias {mstop} {
-   cleanHunt;
-}
 
 #alias {mfind} {
    #if {"%1" == ""} {err Pass in a room name;#return};
@@ -127,26 +141,42 @@
       #var mapping[dst] $shortest;
       #map find {$shortest};
 
+      #list mapping[yetToVisit] find {$shortest} idx; 
+      #list mapping[yetToVisit] delete $idx;
+
       #unvar sl;
       #unvar shortest;
       #unvar roomid;
    };
    #elseif {&{mapping[yetToVisit][]} == 0} {
-      #var mapping[callbacks][cleanup] {cleanHunt};
+      #nop Will be called after on per room operations are finished.;
+      #var mapping[callbacks][cleanup][stop] {mstop};
    }
+}
+
+#alias {mapping.founddst} {
+   #local vnum $gmcp[room][info][num];
+   #if {$vnum == $mapping[dst]} {
+      print Finding a new dst, number of rooms left to visit &mapping[yetToVisit][];
+      mpp.nextdest;
+   };
 }
 
 #alias {mex} {
    #class pathing load;
 
    mpp.prepExplore;
-   #var mapping[callbacks][explore] {mapping.step};
+
+   #nop Do destination checks first;
+   #var mapping[callbacks][explore][dst] {mapping.founddst};
+   #var mapping[callbacks][explore][step] {mapping.step};
 
    #path walk;
 }
 
 #alias {mapping.step} {
-   #delay {$stepTimings[$stepIdx]} {
+   print Queueing up step command;
+   #delay {delayStepping} {
       #if {$gmcp[char][vitals][bal] == 1 && $gmcp[char][vitals][eq] == 1} {
          #path walk;
          #show Stepping....;
@@ -161,7 +191,7 @@
             mapping.step;
          };
       };
-   };
+   } {$stepTimings[$stepIdx]};
 }
 
 #EVENT {END OF PATH} {
@@ -236,15 +266,18 @@
          #list mapping[yetToVisit] delete $idx;
       };
 
-      #nop Reached the destination, find a new one.;
-      #if {$vnum == $mapping[dst]} {
-         print Finding a new dst, number of rooms left to visit &mapping[yetToVisit][];
-         mpp.nextdest;
+      #nop go through all exploring callbacks;
+      #foreach $mapping[callbacks][explore][] cb {
+         #if {&mapping[callbacks][explore] === 0} {#break};
+         $cb;
       };
+   };
 
-      #foreach $mapping[callbacks][] cb {
-         #if {"$cb" != ""}{$cb};
-      };
+   #nop Go through all walking callbacks;
+   #foreach $mapping[callbacks][walking][] wcb {
+      #if {&mapping[callbacks][walking] === 0} {#break};
+
+      $wcb;
    };
 
    #nop Watch for differences in room names to update the crowd map.;
@@ -269,11 +302,7 @@
    };
    #else {
       print No exit and out of places to go, clean it up.;
-      #list mapping[yetToVisit] clear;
-      #unvar mapping[callbacks][explore];
-      #unvar mapping[dst];
-
-      #class pathing clear;
+      mstop;
    };
 }
 
@@ -328,7 +357,7 @@
 #class roomnums save;
 #class roomnums clear;
 
-#alias {cleanHunt} {
+#alias {mstop} {
    #nop Clean up;
    print Finished AutoExplore;
 
@@ -336,12 +365,17 @@
    #class autobash clear;
    #unvar mapping[dst];
    #unvar mapping[callbacks][explore];
+   #unvar mapping[callbacks][walking];
+   #unvar mapping[callbacks][cleanup];
 
    #unvar autoharvest[callback][finished];
    clearAutoHarvestRooms;
 
    #list mapping[yetToVisit] clear;
    #path destroy;
+
+   #undelay delayStepping;
+   dbg all cleared;
 }
 
 #alias {hunt} {
@@ -355,8 +389,8 @@
       autoharvest;
    };
 
-   #if {"*mapping[callbacks][cleanup]" != ""} {
-      $mapping[callbacks][cleanup];
+   #foreach $mapping[callbacks][cleanup][] cleanup {
+      $cleanup;
    }
 }
 
@@ -371,7 +405,11 @@
    #if {$distortActive === 0} {da};
 
    mpp.prepExplore;
-   #var mapping[callbacks][explore] {hunt};
+
+   #nop Do destination checks first;
+   #var mapping[callbacks][explore][dst] {mapping.founddst};
+   #var mapping[callbacks][explore][hunt] {hunt};
+
    hunt;
 };
 
@@ -384,14 +422,14 @@ Be aware if targets walking into the room.
 }
 
 #var stepIdx 1;
-#var stepTimings {{1}{0.2}{2}{0.3}{3}{0.7}};
+#var stepTimings {{1}{0.7}};
 
 #alias {autobash.step} {
-   #delay {$stepTimings[$stepIdx]} {
+   #delay {delayStepping} {
 
       #if {&{atkTarget} == 0 && $gmcp[char][vitals][bal] == 1 && $gmcp[char][vitals][eq] == 1} {
          #path walk;
-         #show Stepping....;
+         #show AutoBash Stepping....;
          #math stepIdx {$stepidx + 1};
          #math stepIdx {$stepidx % 3};
          #if {$stepIdx == 0} {#var stepIdx 1};
@@ -400,7 +438,7 @@ Be aware if targets walking into the room.
       #else {
          info Waiting to recover before exploring...;  
       };
-   };
+   } {$stepTimings[$stepIdx]};
 }
 
 #class autobash kill;
