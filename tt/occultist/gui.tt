@@ -1,6 +1,8 @@
 #nop Gui info specific to Cthul
 
 #alias {updateCharUI} {
+   #if {$uimap[width] === 0} {#return};
+
    #local offset 4;
    #screen clear square {$uimap[height]+$offset+1} 2 -4 {$uimap[width]-2};
 
