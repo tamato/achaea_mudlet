@@ -94,7 +94,6 @@
 
 #class harvesting close;
 #class harvesting save;
-#class harvesting clear;
 
 /*
 Abilities in Harvesting:

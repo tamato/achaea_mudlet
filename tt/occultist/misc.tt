@@ -18,7 +18,6 @@
 
 #class bash close;
 #class bash save;
-#class bash clear;
 
 #nop F1
 #macro {\eOP} { 
@@ -193,7 +192,6 @@
 
 #class priestess close
 #class priestess save
-#class priestess clear
 
 #var priStatus {Ready};
 #var priCards 0;

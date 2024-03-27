@@ -75,7 +75,6 @@
 
 #class auraglance close;
 #class auraglance save;
-#class auraglance clear;
 
 #class occultism close;
 #class occultism save;

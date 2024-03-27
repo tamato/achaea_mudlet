@@ -8,6 +8,9 @@ Bracelts for HP/Mana
 Sip Rings
 Diadem,
 
+## Veil
+??
+
 ## Magic damage collar
 A COLLAR of Ceylon:                                           400 Credits
 Artefact power: magic_damage

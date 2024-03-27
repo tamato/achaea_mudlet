@@ -34,7 +34,10 @@
    #map read world.map;
 
    #nop seems to be either to use draw or vtmpa/split/offset;
-   #draw boxed map 1 1 $uimap[height] $uimap[width];
+
+   #if {$uimap[height] > 0} {
+      #draw boxed map 1 1 $uimap[height] $uimap[width];
+   };
 }
 
 #alias {mapping.walkdst} {
@@ -215,7 +218,9 @@
    #local vnum $gmcp[room][info][num];
    #map goto {$vnum};
 
-   #draw boxed map 1 1 $uimap[height] $uimap[width];
+   #if {$uimap[height] > 0} {
+      #draw boxed map 1 1 $uimap[height] $uimap[width];
+   };
 
    #math width {$uimap[width] - 4};
 
@@ -317,7 +322,6 @@
 
 #class pathing close;
 #class pathing save;
-#class pathing clear;
 
 #alias {directory} 
 {
@@ -355,7 +359,6 @@
 
 #class roomnums close;
 #class roomnums save;
-#class roomnums clear;
 
 #alias {mstop} {
    #nop Clean up;

@@ -20,6 +20,13 @@
    #read character_highlights.tt;
 
    #nop runCallbacks connected;
+
+   #class pathing clear;
+   #class roomnums clear;
+   #class harvesting clear;
+   #class auraglance clear;
+   #class bash clear;
+   #class priestess clear
 }
 
 

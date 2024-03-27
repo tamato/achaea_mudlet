@@ -74,6 +74,7 @@
     }
 }
 
+/*
 #BUTTON {$comm_window[toprow] $comm_window[topcol] $comm_window[botrow] $comm_window[botcol] SCROLLED MOUSE WHEEL UP}
 {
     comm_window_scroll_up $comm_window[active]
@@ -83,6 +84,7 @@
 {
     comm_window_scroll_down
 }
+*/
 
 #FUNCTION {comm_window_square}
 {
@@ -223,10 +225,12 @@
    comm_window_tab_click tells
 }
 
+/*
 #EVENT {PRESSED SECURE LINK TAB MOUSE BUTTON ONE}
 {
     %4
 }
+*/
 
 #ALIAS {guireset}
 {
@@ -239,7 +243,9 @@
    mapping.onRoomInfo;
    schats;
 
-   #draw green filled jeweled box {$uimap[height]+4} 1 -2 {$uimap[width]};;
+   #if {$uimap[height] > 0} {
+      #draw green filled jeweled box {$uimap[height]+4} 1 -2 {$uimap[width]};
+   };
 }
 
 #EVENT {IAC SB GMCP Comm.Channel.Start IAC SE}
