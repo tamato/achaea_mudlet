@@ -1,0 +1,14 @@
+#nop PvpCommands
+
+#class occultistpvp kill;
+#class occultistpvp open;
+
+/*
+
+*/
+#alias {qw} {
+}
+
+#class occultistpvp close;
+#class occultistpvp save;
+

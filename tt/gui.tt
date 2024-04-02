@@ -113,6 +113,8 @@
 
 #ALIAS {room_window_draw_data}
 {
+   #if {$uiroom[enabled] === 0} {#return};
+
    #local data {};
    #foreach {*room_window[tab][]} con {
 

@@ -218,43 +218,43 @@
    #local vnum $gmcp[room][info][num];
    #map goto {$vnum};
 
-   #if {$uimap[height] > 0} {
+   #if {$uimap[enabled] === 1} {
       #draw boxed map 1 1 $uimap[height] $uimap[width];
+
+      #math width {$uimap[width] - 4};
+
+      #nop Put the area name at the top of the map;
+      #format {prompt} {%.${width}s} { <038>$gmcp[room][info][area] };
+      #line ignore #showme {$prompt} {1} {3};
+
+      #nop Put the room coords below area name;
+      #local serverCoords $gmcp[room][info][coords];
+      #format {prompt} {%.${width}s} {<038>$gmcp[room][info][coords]};
+      #map get {roomdata} {rcoords};
+      #format {prompt} {%.${width}s} {$prompt / $rcoords};
+      #line ignore #showme {$prompt} {2} {3};
+
+      #nop Put the room number above room name;
+      #format {prompt} {%.${width}s} {<038>$vnum};
+      #line ignore #showme {$prompt} {$uimap[height]-1} {3};
+
+      #nop Put the room name at the bottom of the map;
+      #format {prompt} {%.${width}s} { <038>$gmcp[room][info][name] };
+      #line ignore #showme {$prompt} {$uimap[height]} {2};
+
+      #nop Display the exits;
+      #variable {exits} {};
+      #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
+      {
+          #if {&{gmcp[room][info][exits][$exit]} === 0} { #continue };
+          #variable {exits} {$exits<128>$exit<278>,};
+      };
+
+      #screen clear square {$uimap[height]+1} 1 {$uimap[height]+1} {$uimap[width]-1};
+      #format {prompt} {%u} {$exits<099>};
+      #line ignore #showme {$prompt} {$uimap[height]+1} {2};
+      #unvar exits;
    };
-
-   #math width {$uimap[width] - 4};
-
-   #nop Put the area name at the top of the map;
-   #format {prompt} {%.${width}s} { <038>$gmcp[room][info][area] };
-   #line ignore #showme {$prompt} {1} {3};
-
-   #nop Put the room coords below area name;
-   #local serverCoords $gmcp[room][info][coords];
-   #format {prompt} {%.${width}s} {<038>$gmcp[room][info][coords]};
-   #map get {roomdata} {rcoords};
-   #format {prompt} {%.${width}s} {$prompt / $rcoords};
-   #line ignore #showme {$prompt} {2} {3};
-
-   #nop Put the room number above room name;
-   #format {prompt} {%.${width}s} {<038>$vnum};
-   #line ignore #showme {$prompt} {$uimap[height]-1} {3};
-
-   #nop Put the room name at the bottom of the map;
-   #format {prompt} {%.${width}s} { <038>$gmcp[room][info][name] };
-   #line ignore #showme {$prompt} {$uimap[height]} {2};
-
-   #nop Display the exits;
-   #variable {exits} {};
-   #foreach {n;e;s;w;u;d;in;out;nw;ne;se;sw} {exit}
-   {
-       #if {&{gmcp[room][info][exits][$exit]} === 0} { #continue };
-       #variable {exits} {$exits<128>$exit<278>,};
-   };
-
-   #screen clear square {$uimap[height]+1} 1 {$uimap[height]+1} {$uimap[width]-1};
-   #format {prompt} {%u} {$exits<099>};
-   #line ignore #showme {$prompt} {$uimap[height]+1} {2};
-   #unvar exits;
 
    #nop ----------------------------------------------------;
    #nop Auto Explore;
@@ -425,6 +425,7 @@ Be aware if targets walking into the room.
 }
 
 #var stepIdx 1;
+#nop #var stepTimings {{1}{0.01}{2}{0.01}{3}{0.7}};
 #var stepTimings {{1}{0.7}};
 
 #alias {autobash.step} {
