@@ -478,6 +478,9 @@ Syntax:            COMMAND HOUND AT <target>
 Works on/against:  Adventurers
 Cooldown:          3.50 seconds of entity balance
 Resource:          50 mana
+Affliction:        Weariness
+Cure:              
+
 Details:
 The Keeper of the Chaos Hounds shall send one of his charges to serve
 you when called upon. When commanded to strike your foe, the hound shall

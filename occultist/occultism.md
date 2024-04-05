@@ -426,7 +426,7 @@ following defences: cloak, speed, caloric, frost, levitation, insomnia,
 kola.
 
 - For Cloak, insomnia, and kola there will be a message
-- But for, speed, caloric, frost levitation no message will be displayed as to what was lost.
+- But for, speed, caloric, frost, and levitation no message will be displayed as to what was lost.
 
 -------------------------------------------------------------------------------
 
