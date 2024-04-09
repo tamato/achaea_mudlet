@@ -94,7 +94,7 @@
 #nop Use Diagnose  for losing eq;
 #nop use Directory for losing balance;
 
-#highlight {^Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {cyan};
+#highlight {^Your fellow citizen, %w, has just escaped imprisonment in the foul pygmy dungeon. Welcome him to %w!} {light cyan};
 
 #alias {allowPrism} {
    #class prism clear;
@@ -138,6 +138,7 @@
    #send {info here};
 };
 
+#read itemslist.tt;
 #read events.tt;
 
 #alias {bfind} {

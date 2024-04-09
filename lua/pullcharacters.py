@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import urllib.request
+import urllib.request 
 import json
 
 import os
@@ -59,8 +59,8 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 if 'city' in char:
                     city = char['city']
                     if 'ashtan'     in city: color = '<458>'            # underscore
-                    if 'hashan'     in city: color = '<408>'            # underscore
-                    if 'targossas'  in city: color = '<508>'+'<fac>'    # blink, Pink
+                    if 'hashan'     in city: color = '<458>'            # underscore
+                    if 'targossas'  in city: color = '<588>'+'<fac>'    # blink, Pink
                     if 'underworld' in city: color = '<818>'            # underscore, red, blue
                     if 'mhaldor'    in city: color = '<418>'   
                     if 'cyrene'     in city: color = '<468>'   

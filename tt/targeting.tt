@@ -192,4 +192,27 @@
    info City: $inquery[color]$inquery[city]<900>;
 }
 
+#alias {items} {
+   #if {"%1" === ""}
+   {
+      #showme {<848>Items for <818>[<838>$areaName<818>]};
+      #foreach {*itemslist[$areaName][%*]} item {
+         info   $item;
+      };
+   };
+   #elseif {&itemslist[$areaName][%0]}
+   {
+      #unhighlight {%0};
+      #unvar itemslist[$areaName][%0];
+      #showme Item '%0' removed from '$areaName'.;
+      #class itemslist write itemslist.tt;
+   };
+   #else
+   {
+      #highlight { %0 } {blink reverse};
+      #var itemslist[$areaName][%0] {};
+      #showme Item '%0' added to '$areaName'.;
+      #class itemslist write itemslist.tt;
+   };
+}
 

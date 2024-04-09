@@ -1,0 +1,14 @@
+#CLASS {keys} OPEN
+
+#MACRO {\eOk}
+{
+    #showme UP
+}
+
+#MACRO {\e[A}
+{
+    #showme also north
+}
+
+
+#CLASS {keys} CLOSE
