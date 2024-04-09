@@ -51,6 +51,12 @@
         {tells} {0}
     }
 }
+
+#ACTION {~%1 tells you %2}
+{
+    comm_window_show tells %1 tells you %2
+}
+
 #ACTION {~%1 tells you %2}
 {
     comm_window_show tells %1 tells you %2

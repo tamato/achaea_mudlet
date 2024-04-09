@@ -1,0 +1,2030 @@
+[0m#LOG: LOGGING OUTPUT TO 'wheel.txt' FILESIZE: 0[0m
+[4;33mwheel[0m
+[1;32m[[0;37mSystem[1;32m][0;37m: Added RUINATE WHEEL AT GROUND to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: RUINATE WHEEL AT GROUND
+You shuffle a tarot card inscribed with the Wheel of Fortune out of your deck, bringing the total number of remaining cards to 22.
+Orange lightning sparks between your fingers as you unleash the broken wheel to turn its requiem for the damned.
+The Broken Wheel shall turn 1 rotation before chaos shall reign.
+04:31:52.95 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:31:55.73 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+The Wheel of Chaos continues to turn, violet and indigo sparks spraying off of its outer edges.
+04:31:59.97 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mCold Blue Light! Chill them with relevations of the void![0m
+
+04:32:06.46 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Rays of cold blue light lash out from the Wheel of Chaos, irradiating the location.
+04:32:07.86 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0mVibrant Indigo Light! Stupify with the truth![0m
+
+04:32:13.45 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Vibrant indigo rays of light lash out from the Wheel of Chaos.
+04:32:15.00 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0mViolet Light! Slow them down![0m
+
+04:32:20.45 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Rays of violet light lash out at the location from the Wheel of Chaos.
+The Wheel of Chaos winks out of existence.
+04:32:21.97 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Splashed with the reflected radiance of the stars, Achaea's outermost ring glitters ghostly pale against the night sky.
+04:32:26.21 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Cthul slowly fades into view, returning to the realm of perception.
+04:32:35.92 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mfling fool at melkervur[0m
+You shuffle a tarot card inscribed with the Fool out of your deck, bringing the total number of remaining cards to 67.
+You press the Fool tarot to Melkervur's forehead.
+04:32:47.01 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m04:32:49.99 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mwheel[0m
+[1;32m[[0;37mSystem[1;32m][0;37m: Added RUINATE WHEEL AT GROUND to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: RUINATE WHEEL AT GROUND
+You shuffle a tarot card inscribed with the Wheel of Fortune out of your deck, bringing the total number of remaining cards to 21.
+Orange lightning sparks between your fingers as you unleash the broken wheel to turn its requiem for the damned.
+The Broken Wheel shall turn 1 rotation before chaos shall reign.
+04:33:17.26 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[xE|65] :>-
+[1;31m
+Undead Colonel Inatynne has beaten Ante to death with his unfeeling fists.
+[0;37m04:33:19.84 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:33:20.08 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+The Wheel of Chaos continues to turn, violet and indigo sparks spraying off of its outer edges.
+04:33:24.24 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mCold Blue Light! Chill them with relevations of the void![0m
+
+04:33:30.67 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Rays of cold blue light lash out from the Wheel of Chaos, irradiating the location.
+04:33:31.38 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0mVibrant Indigo Light! Stupify with the truth![0m
+
+04:33:37.67 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Vibrant indigo rays of light lash out from the Wheel of Chaos.
+04:33:38.44 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0mViolet Light! Slow them down![0m
+
+04:33:44.67 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Rays of violet light lash out at the location from the Wheel of Chaos.
+The Wheel of Chaos winks out of existence.
+04:33:45.44 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;36m[4;35mMelkervur[0m[0;1;36m says, "As...a....asd...as....."[0;37m
+04:33:48.54 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;36m[4;35mMelkervur[0m[0;1;36m says, "Hi...h....hi'...hi....."[0;37m
+04:33:58.88 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Aundora has discovered that no amount of cowardly flight can halt Elder Headhunter Gavriil Celes'Ciel-de Soulis, The Rose's unstoppable advance.
+[0;37m04:34:11.97 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Elemental destruction rains from Outlander Morthildir, Tuqad of the Forests's hands, blasting Inatynne into death with a hail of lightning.
+[0;37m04:34:25.80 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Belaziel Shin, the Shadowmancer has culled Bugra from the ranks of the living.
+[0;37m04:34:33.90 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mfling fool at melkervur[0m
+You shuffle a tarot card inscribed with the Fool out of your deck, bringing the total number of remaining cards to 66.
+You press the Fool tarot to Melkervur's forehead.
+04:34:43.99 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m04:34:47.05 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Death Knight Manifer has consumed the soul of Erikarn.
+[0;37m04:34:54.24 O [32m100[37mh 0rage [32m82[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+In a blaze of white flame, Scout Ficus has melted Tynei's flesh from his bones.
+[0;37m04:35:14.66 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Death Knight Manifer has consumed the soul of Belaziel.
+[0;37m04:35:27.03 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Death Knight Zatiano has consumed the soul of Gavriil.
+[0;37m04:35:35.25 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab domination[0m
+Abilities in Domination:
+[32m-------------------------------------------------------------------------------[37m
+Skyrax               Skyrax, the Skyscourge.
+Rixil                Rixil, the spectre.
+Eerion               Eerion, the demon jester.
+Arctar               Arctar, the Defender.
+Scrag                Scrag, tender of the bloodleech pool.
+Pyradius             Pyradius, the firelord.
+Golgotha             Golgotha, the Ascendant's Thrall
+Dameron              Jy'Barrak Dameron, the Hand
+Palpatar             Palpatar, the Glutton of Glaaki.
+Nin'kharsag          Nin'Kharsag, the Slime Master.
+Istria               Istria, the pathfinder.
+Marduk               Marduk, the eater of souls.
+Primebond            Agency upon the Prime.
+Nemesis              Nemesis.
+Buul                 Buul, the Chaos Chirurgeon.
+Cadmus               Cadmus, the cursed shaman.
+Piridon              Piridon, the shapechanger.
+Danaeus              Danaeus, the dark savant.
+Xenophage            Xenophage, keeper of the chaos gate.
+Lycantha             Lycantha, Keeper of the Hounds.
+Tarotlink            Command your doppleganger to throw tarot cards.
+Hecate               Hecate, Mother of the Crones.
+Covenant             You are known to the court.
+Glaaki               Glaaki, the Eldritch Ascendant
+[32m-------------------------------------------------------------------------------[37m
+[1;37mTo gain further information on an ability, AB <ability>.
+[0;37m
+04:35:38.75 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Manifer dies, features contorted from the poison delivered by Outlander Morthildir, Tuqad of the Forests.
+[0;37m04:35:42.62 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+The ashen remains of Zatiano drift away in testament to Captain Gallus Blackwing, Mystic of Dark Waters's primal flame.
+[0;37m04:35:50.52 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder doppleganger seek melkervur[0m
+[1;33m[4;35mCthul[0m[0;1;33m tells you, "Yes, master."[0;37m
+04:36:34.47 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+In a blaze of white flame, Scout Ficus has melted Mornon's flesh from her bones.
+[0;37m04:36:51.18 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[4;35mMelkervur[0m[0m leaves to the northwest.
+04:36:56.12 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+A snowball melts away in your hands.
+04:37:15.84 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder doppleganger seek melkervur[0m
+[1;33m[4;35mCthul[0m[0;1;33m tells you, "Yes, master."[0;37m
+Servitor [4;35mCthul[0m[0m leaves to the northwest.
+04:37:16.94 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[31mThe howl of chaos hounds echoes in the distance, followed by the gleeful shrieks of chaotic entities that fade into inaudibility before too long.[37m
+04:37:26.39 O [32m100[37mh 0rage [32m82[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder doppleganger channel warp melkervur[0m
+[0mMana [1;34m-69[0m
+You channel yourself through your doppleganger.
+You reach out and clench a fist before [4;35mMelkervur[0m[0m, who screams and doubles over in agony as his skin suddenly bubbles with gangrenous growths.
+04:37:51.60 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:37:55.27 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m99[37mw[exE|65] :>-[4;33meldertichmists[0m
+I'm sorry, I don't know what "eldertichmists" does.
+04:38:19.31 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Streaks of deadly lightning have scoured Eolnys to death, beckoned forth by Ainly Sar'vet, Ethereal Fox's elemental prowess.
+[0;37m04:38:25.65 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33melderitchmists[0m
+I cannot fathom the meaning of "elderitchmists".
+04:38:27.72 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+(Market): [4;30mBainz[0m[0m says, "Selling complete platinum whistle talisman."
+04:38:35.80 O [32m100[37mh 0rage [32m81[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33meldritchmists[0m
+[0mMana [1;34m-171[0m
+You raise your arms and softly sing the Hymn to Glaaki. Suddenly, green mists rise up from the ground burning the air itself.
+04:38:39.41 O [32m100[37mh 0rage [32m78[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;31m
+Tabethys has bled out, slain by the might of Truthseeker Vierce in The Colosseum Diabolus.
+[0;37m04:38:39.66 O [32m100[37mh 0rage [32m78[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[0mMana [1;35m+796[0m
+
+You take a drink from a glazed runic vial.
+Your mind feels stronger and more alert.
+04:38:39.67 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:38:43.12 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+You may drink another health or mana elixir.
+04:38:44.08 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+[4;35mMelkervur[0m[0m arrives from the northwest.
+04:38:54.26 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+[1;31m
+In a blaze of white flame, Scout Ficus has melted Zatiano's flesh from his bones.
+[0;37m04:39:09.57 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Death Knight Manifer has consumed the soul of Ficus.
+[0;37m04:39:17.04 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Bugra has been overcome by Ainly Sar'vet, Ethereal Fox's arcane command of Elemental Water.
+[0;37m04:39:20.48 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Manifer has been consumed by the arcane flame of Captain Gallus Blackwing, Mystic of Dark Waters.
+[0;37m04:39:23.22 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Rain cascades down from the skies, drenching you and your environment.
+04:39:27.51 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab occultism[0m
+Abilities in Occultism:
+[32m-------------------------------------------------------------------------------[37m
+Ague                 A chill that enters from the aura to the body.
+Auraglance           Seek out another in your mind's eye.
+Warp                 Cause your enemy's body to warp beyond recognition.
+Night                Create darkness in the room.
+Shroud               Perform many actions in secret.
+Bodywarp             Warping your own body is not for the faint of heart.
+Eldritchmists        The Hymn to Glaaki will raise strange mists.
+Mask                 Conceal the movement of your chaos entities.
+Attend               Force your students to pay attention.
+Enervate             Suck the strength from your enemy's aura.
+Encipher             Hide your writings from prying eyes.
+Quicken              A small time warp around your enemy makes them hungry.
+Astralvision         Your aura gives insights into that which is around.
+Regress              As before, so again.
+Shrivel              Cause your opponent's limbs to shrivel up.
+Readaura             Reading another's aura will reveal their secrets.
+Karma                Sense how much karma you have accumulated.
+Heartstone           Create a figurine of your heart to help give you mana.
+Simulacrum           Create a figurine of yourself that absorbs damage.
+Entities             Sense the whereabouts of Chaos Entities in the land.
+Timewarp             Warping time in a location will move vibes.
+Distortaura          Distorting your aura will protect you from physical harm.
+Pinchaura            Surgically alter your patient's aura.
+Impart               Impart your karmic knowledge to others with Occultism.
+Transcendence        Open a gateway to the Plane of Chaos.
+Unnamable            Hear what cannot be named, or see what cannot be imagined.
+Devolve              Devolving your enemy will make them unrecognizable.
+Cleanseaura          Cleanse away those pesky animal spirits from an aura.
+Tentacles            Master your body and create tentacles of your own.
+Chaosrays            Pure chaos will strike all in a location.
+Interlink            They shall warp under your will.
+Instill              Instill your victim's aura with diseases of the body.
+Whisperingmadness    A curse of madness not soon forgotten.
+Devilmark            The Mark of the Devil grants great power.
+Truename             Find the truename of your enemy.
+Astralform           Turn yourself into a being of pure energy.
+Enlighten            Reveal the truth to the uninitiated.
+Unravel              Destroy the psyche of the uninitiated.
+[36m[Type [37mMORE[36m if you wish to continue reading. (90% shown)]
+[37m04:39:31.78 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+The final incantation of Speaker Treyal Wintermourne, Bloodbound's deadly shockwave has blasted Tynei headlong into death, only a smouldering corpse left in memory.
+[0;37m04:39:39.40 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab eldritchmists[0m
+Eldritchmists (Occultism)                     Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mELDRITCHMISTS[0;37m
+[33mWorks on/against:  [37mRoom
+[33mCooldown:          [37m4.00 seconds of equilibrium
+[33mResource:          [37m200 mana
+[33mDetails:[37m
+By singing the Hymn to Glaaki, you may call up eldritch mists out of the
+ground itself, harming all adventurers present except yourself.
+[32m-------------------------------------------------------------------------------[37m
+
+04:39:54.61 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+By the authority of Belaziel Shin, the Shadowmancer, Inatynne dies having suffered the ultimate betrayal.
+[0;37m04:40:03.13 O [32m100[37mh 0rage [32m92[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mnight[0m
+[0mMana [1;34m-43[0m
+Holding your outstretched palm aloft, you call upon the forces of darkness to extinguish the accursed light from around you.
+04:40:23.17 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+Deepest Stygian night steals over the land as the symbolic hourglass empties and turns, ready to begin a new day.
+[33mIt is now the 4th of Scarlatan, 943 years after the fall of the Seleucarian Empire.
+[37m04:40:26.33 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:40:27.10 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+The noxious cloud dissipates.
+04:40:39.29 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Skin sloughing away in great sheets from his bones, Eolnys has perished in absolute agony before Aarashi Aranos Banazir, Warden of Light's ministrations.
+[0;37m04:41:18.07 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder doppleganger return[0m
+[1;33m[4;35mCthul[0m[0;1;33m tells you, "Yes, master."[0;37m
+Servitor [4;35mCthul[0m[0m arrives from the northwest.
+04:41:18.67 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab night[0m
+Night (Occultism)                             Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mNIGHT[0;37m
+[33mWorks on/against:  [37mRoom
+[33mCooldown:          [37m4.00 seconds of equilibrium
+[33mResource:          [37m50 mana
+[33mDetails:[37m
+Cast a shroud of darkness over a location.
+[32m-------------------------------------------------------------------------------[37m
+
+04:41:40.94 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mout myrrh[0m
+There is no exit in that direction.
+04:41:54.30 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33moutr myrrh[0m
+You remove 1 myrrh gum, bringing the total in the rift to 879.
+04:42:00.47 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33meat myrrh[0m
+You eat a ball of myrrh gum.
+As you swallow the myrrh, you feel your mind begin to race. New avenues of mental exploration open up to you and you can feel your mind processing information as never before.
+04:42:07.77 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab domination[0m
+Abilities in Domination:
+[32m-------------------------------------------------------------------------------[37m
+Skyrax               Skyrax, the Skyscourge.
+Rixil                Rixil, the spectre.
+Eerion               Eerion, the demon jester.
+Arctar               Arctar, the Defender.
+Scrag                Scrag, tender of the bloodleech pool.
+Pyradius             Pyradius, the firelord.
+Golgotha             Golgotha, the Ascendant's Thrall
+Dameron              Jy'Barrak Dameron, the Hand
+Palpatar             Palpatar, the Glutton of Glaaki.
+Nin'kharsag          Nin'Kharsag, the Slime Master.
+Istria               Istria, the pathfinder.
+Marduk               Marduk, the eater of souls.
+Primebond            Agency upon the Prime.
+Nemesis              Nemesis.
+Buul                 Buul, the Chaos Chirurgeon.
+Cadmus               Cadmus, the cursed shaman.
+Piridon              Piridon, the shapechanger.
+Danaeus              Danaeus, the dark savant.
+Xenophage            Xenophage, keeper of the chaos gate.
+Lycantha             Lycantha, Keeper of the Hounds.
+Tarotlink            Command your doppleganger to throw tarot cards.
+Hecate               Hecate, Mother of the Crones.
+Covenant             You are known to the court.
+Glaaki               Glaaki, the Eldritch Ascendant
+[32m-------------------------------------------------------------------------------[37m
+[1;37mTo gain further information on an ability, AB <ability>.
+[0;37m
+04:42:26.93 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Like a waterfall, rain pours down around you, soaking you thoroughly.
+04:42:27.58 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab tarot[0m
+Abilities in Tarot:
+[32m-------------------------------------------------------------------------------[37m
+Inscribing           The ability to inscribe images upon blank Tarot cards.
+Sun                  Create a portable light source.
+Cardpacks            Use the handy cardpacks for easier storage.
+Emperor              Create the compulsion in others to follow you.
+Magician             Replenish your mana with the might of the Magician.
+Priestess            Heal yourself with the benevolence of the Priestess.
+Fool                 Shrug off afflictions with blind courage.
+Chariot              Create an infernal chariot to ride.
+Hermit               Teleport to an uninhabited location.
+Empress              Summon your friends to you.
+Lovers               Create a strong love for you in your target.
+Hangedman            Hinder your opponent with a mass of ropes.
+Tower                Cause a crumbling tower to appear in your location.
+Wheel                Spin the wheel and take your chances.
+Creator              Create an illusion in an adjacent room.
+Justice              Bring justice to the unjust.
+Star                 Strike down a foe with a flaming meteor.
+Aeon                 Curse your foe with the mark of Chronos.
+Lust                 Cause an opponent to hopelessly lust after you.
+Universe             Transport yourself around the land.
+Devil                Call a Devil to serve you, though no more than once.
+Moon                 Bestow the maladies of the moon upon your enemy.
+Death                Call down Death itself to claim the soul of your enemy.
+
+[33mOccultist specific Specialisation: [37m
+Heretic              Raised from Ruin.
+Ruinate              Two sides of the same coin.
+[32m-------------------------------------------------------------------------------[37m
+[1;37mTo gain further information on an ability, AB <ability>.
+[0;37m
+04:42:50.92 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab heretic[0m
+Heretic (Tarot)                               Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mRUINATE HERETIC AT <target>
+                   ORDER <target> WITNESS <vision>[0;37m
+[33mDetails:[37m
+When mysterious forces attempted to gain influence over the Occultists
+of Ashtan in the 899th year after the fall of the Seleucarian Empire, a
+group of ritualists did the unthinkable and irrevocably damaged the
+symbolic nature of their Hierophant. Though it no longer holds any power
+in the hands of Occultists, out of their machinations was born a new
+card entirely: the first example of a nontransient ruinated image, that
+of the Heretic.
+
+When a victim falls under the Heretic's sway, the Occultist may command
+them to witness an image: and so long as they are not blind, they will
+be unable to avoid gazing upon that which is brought forth.
+[32m-------------------------------------------------------------------------------[37m
+
+04:43:28.92 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Undead Colonel Inatynne has squeezed the life from Trokar.
+[0;37m04:43:43.09 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mruinate heretic at melkervur[0m
+You shuffle a tarot card inscribed with the Heretic out of your deck, bringing the total number of remaining cards to 21.
+The Heretic writhes between your fingers as you unleash it upon Melkervur, blue sparks lighting the tips of your digits as they flicker across the Ruin-wrought image.
+04:44:04.67 O [32m100[37mh 0rage [32m91[37mm [32m99[37me [32m100[37mw[xE|65] :>-[4;33mallies[0m
+You have the following allies:
+You feel an unusually strong lust for Wintermute.
+You feel an unusually strong lust for Montago.
+You feel an unusually strong lust for Kaelthas.
+Dalran is an ally.
+Gregg is an ally.
+Isaiah is an ally.
+Kazuya is an ally.
+Kierra is an ally.
+Ulvin is an ally.
+You have currently used 6 ally slots of your 20 maximum.
+04:44:06.71 O [32m100[37mh 0rage [32m91[37mm [32m99[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:44:07.53 O [32m100[37mh 0rage [32m91[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Dented skull impacting the floor, Eolnys has discovered that Ancient Peak is profoundly lethal from both ends.
+[0;37m04:44:09.44 O [32m100[37mh 0rage [32m91[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+The final incantation of Speaker Treyal Wintermourne, Bloodbound's deadly shockwave has blasted Manifer headlong into death, only a smouldering corpse left in memory.
+[0;37m04:44:18.21 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense the power of the Heretic no longer holds sway over Melkervur.
+04:44:34.09 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Mornon collapses, unable to cling to unlife any longer.
+[0;37m04:44:43.13 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur witness the stars in the sky split into pieces[0m
+You attempt to impose your will upon Melkervur, but he just ignores you.
+04:45:06.12 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur witness the stars in the sky split into pieces[0m
+You attempt to impose your will upon Melkervur, but he just ignores you.
+04:45:24.76 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur witness the stars in the sky split into pieces[0m
+You attempt to impose your will upon Melkervur, but he just ignores you.
+04:45:28.33 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mtmobs[0m
+[4;33mtmobs[0m
+[4;33mab domination[0m
+Abilities in Domination:
+[32m-------------------------------------------------------------------------------[37m
+Skyrax               Skyrax, the Skyscourge.
+Rixil                Rixil, the spectre.
+Eerion               Eerion, the demon jester.
+Arctar               Arctar, the Defender.
+Scrag                Scrag, tender of the bloodleech pool.
+Pyradius             Pyradius, the firelord.
+Golgotha             Golgotha, the Ascendant's Thrall
+Dameron              Jy'Barrak Dameron, the Hand
+Palpatar             Palpatar, the Glutton of Glaaki.
+Nin'kharsag          Nin'Kharsag, the Slime Master.
+Istria               Istria, the pathfinder.
+Marduk               Marduk, the eater of souls.
+Primebond            Agency upon the Prime.
+Nemesis              Nemesis.
+Buul                 Buul, the Chaos Chirurgeon.
+Cadmus               Cadmus, the cursed shaman.
+Piridon              Piridon, the shapechanger.
+Danaeus              Danaeus, the dark savant.
+Xenophage            Xenophage, keeper of the chaos gate.
+Lycantha             Lycantha, Keeper of the Hounds.
+Tarotlink            Command your doppleganger to throw tarot cards.
+Hecate               Hecate, Mother of the Crones.
+Covenant             You are known to the court.
+Glaaki               Glaaki, the Eldritch Ascendant
+[32m-------------------------------------------------------------------------------[37m
+[1;37mTo gain further information on an ability, AB <ability>.
+[0;37m
+04:45:49.67 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33msummon marduk[0m
+A swirling portal of chaos opens, spits out a soulmaster, then vanishes.
+04:45:57.67 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:46:00.43 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab marduk[0m
+Marduk (Domination)                           Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mORDER SOULMASTER POSSESS <target>
+                   ORDER <target> <command>[0;37m
+[33mWorks on/against:  [37mAdventurers
+[33mCooldown:          [37m3.00 seconds of equilibrium
+[33mDetails:[37m
+Marduk will send to you a soulmaster entity. This entity may be ordered
+to POSSESS an adventurer. When it does, it will take a few seconds to
+gain control of the victim's mind. Once it has done this, you may ORDER
+<target> <command>. Doing this is quite difficult for the soulmaster
+though, so you will be restricted to doing it once every few seconds.
+
+[32m-------------------------------------------------------------------------------[37m
+
+04:46:05.89 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder soulmaster posses melkervur[0m
+A soulmaster does not understand what you wish.
+04:46:18.75 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder soulmaster possess melkervur[0m
+You order a soulmaster to kill Melkervur.
+A soulmaster obeys your command.
+04:46:31.18 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Your soulmaster lets loose a horrible scream as it lets part of its being flow into Melkervur.
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:46:33.49 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+A flesh-eating slug guides Belaziel along the first stage of decomposition.
+[0;37m04:46:55.44 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur get gold from pack[0m
+You order the soulmaster entity to manipulate Melkervur.
+Melkervur gets some [22;38;5;16m[48;5;142mgold sovereigns[0m[0m from a canvas backpack.
+04:47:01.27 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:47:03.47 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:47:09.35 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur put gold in pack[0m
+You order the soulmaster entity to manipulate Melkervur.
+04:47:12.37 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:47:15.10 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:47:20.63 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+A flesh-eating slug guides Rhalan along the first stage of decomposition.
+[0;37m04:47:26.11 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur put gold in pack[0m
+You order the soulmaster entity to manipulate Melkervur.
+04:47:32.55 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:47:35.26 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:47:41.02 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur puts some [22;38;5;16m[48;5;142mgold sovereigns[0m[0m in a canvas backpack.
+04:47:45.14 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+A flesh-eating slug guides Trokar along the first stage of decomposition.
+[0;37m04:47:47.29 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur dive[0m
+You order the soulmaster entity to manipulate Melkervur.
+Melkervur leaps up in what is apparently an attempt at a graceful swan dive. He smacks headfirst into the ground.
+04:47:58.75 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:48:01.48 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Distant, otherworldly screeching flares from the shattered depths of the Sunderlands as Asmodron lays Inatynne aside in the name of Progress.
+[0;37m04:48:01.84 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Inatynne collapses, unable to cling to unlife any longer.
+[0;37m04:48:01.86 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur stands up.
+04:48:06.85 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:48:07.26 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Baleful laughter echoes from deep underground as Belaziel is slain by a minion of Dominar.
+[0;37m04:48:07.50 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Swinging his fists with a recklessness only afforded the undead, a shambling zombie tenderises Morthildir before settling in for lunch.
+[0;37m04:48:24.69 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+It is raining heavily, pregnant drops of water pouring down onto you.
+04:48:27.60 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur rubs his hands together greedily.
+04:48:31.32 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Dented skull impacting the floor, Manifer has discovered that Ancient Peak is profoundly lethal from both ends.
+[0;37m04:48:32.83 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur generosity[0m
+You order the soulmaster entity to manipulate Melkervur.
+Melkervur's eyes gleam with generosity.
+04:48:45.82 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:48:48.58 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You sense that the soulmaster entity is in control of Melkervur's being.
+04:48:54.28 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Dented skull impacting the floor, Mornon has discovered that Ancient Peak is profoundly lethal from both ends.
+[0;37m04:48:54.86 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur rubs his hands together greedily.
+04:48:57.39 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab pincharua[0m
+I know of no skill called 'pincharua'.
+04:49:18.31 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mab pinchaura[0m
+Pinchaura (Occultism)                         Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mPINCHAURA <target> <defence>[0;37m
+[33mWorks on/against:  [37mAdventurers
+[33mCooldown:          [37m4.00 seconds of equilibrium
+[33mResource:          [37m0.50% karma
+[33mDetails:[37m
+You have become exceptionally expert in the study of auras. Indeed, now
+you can surgically alter an individual's aura, removing one of the
+following defences: cloak, speed, caloric, frost, levitation, insomnia,
+kola.
+
+[32m-------------------------------------------------------------------------------[37m
+
+04:49:23.09 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Inatynne has bled out, slain by the might of Elder Headhunter Gavriil Celes'Ciel-de Soulis, The Rose.
+[0;37m04:49:41.62 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mpinchaura caloric[0m
+You may only pinch cloak, speed, caloric, frost, levitation, insomnia, or kola.
+04:49:44.07 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mpinchaura kola[0m
+You may only pinch cloak, speed, caloric, frost, levitation, insomnia, or kola.
+04:50:01.22 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mexlist[0m
+I'm sorry, I don't know what "exlist" does.
+04:50:17.53 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33melist[0m
+[33mVial                         [37m [33mFluid                         [37m [33mSips    [37m [33mMonths  [37m
+[32m-------------------------------------------------------------------------------[37m
+Walnut vial[32m271355[37m             a salve of mending             183      132
+A glazed runic vial[32m288581[37m     an elixir of mana              91       55
+Diamond vial[32m655580[37m            an elixir of health            1        ---
+Pinewood vial[32m558277[37m           an elixir of speed             183      135
+Pinewood vial[32m585332[37m           an elixir of frost             200      135
+Pinewood vial[32m585805[37m           an elixir of immunity          200      135
+Pinewood vial[32m586037[37m           an elixir of levitation        183      135
+Pinewood vial[32m586531[37m           an elixir of venom             183      135
+Pinewood vial[32m586578[37m           a caloric salve                165      135
+Pinewood vial[32m586793[37m           an epidermal salve             200      135
+Pinewood vial[32m586875[37m           a salve of mass                200      135
+Pinewood vial[32m587203[37m           a salve of restoration         200      135
+[32m-------------------------------------------------------------------------------[37m
+04:50:20.38 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Vierce dies, his defences no match for the relentless might of Acolyte Tabethys in The Colosseum Diabolus.
+[0;37m04:50:30.25 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mself[0m
+Automatic defence handling disabled.
+04:50:33.85 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+A feeling of generosity spreads throughout you.
+04:50:33.93 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:50:34.42 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mgive caloric to melkervur[0m
+You give a pinewood vial to Melkervur.
+04:50:43.90 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mself[0m
+Automatic defence handling activated.
+04:50:46.29 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You rub your hands together greedily.
+04:50:46.52 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:50:46.93 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Khadafi dies, his defences no match for the relentless might of Dethindar, Eradicator of Weakness in The Matsuhama Arena.
+[0;37m04:51:00.24 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur takes some salve from a vial and rubs it on his skin.
+04:51:02.18 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Lit in nightmarish hues against the night's sky, a sulphuric cloud rises from the lava field.
+04:51:26.05 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur's eyes gleam with generosity.
+04:51:31.19 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur gives a pinewood vial to you.
+04:51:39.85 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Melkervur rubs his hands together greedily.
+04:51:44.30 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mpinchaura caloric[0m
+You may only pinch cloak, speed, caloric, frost, levitation, insomnia, or kola.
+04:51:56.91 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Though practiced by Yilui's mortal hands, Mornon has discovered that the arts of the Aldar are every bit as deadly as the legends suggest.
+[0;37m04:52:24.40 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Sleepily shedding the vestiges of shadows, the awoken sun slowly rises in the sky, its resplendence unfaltering.
+04:52:26.43 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[4;35mMelkervur[0m[0m leaves to the northwest.
+04:52:34.75 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder doppleganger seek melkervur[0m
+[1;33m[4;35mCthul[0m[0;1;33m tells you, "I see no such person."[0;37m
+04:52:59.13 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33morder melkervur say why hello[0m
+Ahh, I am truly sorry, but I do not see anyone by that name here.
+04:53:27.53 O [32m100[37mh 0rage [32m91[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mbanish doppleganger[0m
+[0mMana [1;34m-86[0m
+You thank Cthul for its service and bid it return to the Chaos Plane.
+Cthul hurls itself into the void.
+04:54:04.07 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m99[37mw[xE|65] :>-[4;33mbanish doppleganger[0m
+You cannot see that being here.
+04:54:04.36 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m04:54:07.30 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m99[37mw[exE|65] :>-[4;33msc[0m
+[32m+-[37m[33mServitor Cthul[37m[32m--------------------------------------------------------------+[37m
+[32m|[37m [32mLevel[37m  : 81 (30%)    "5th Circle of Celestial Power"                        [32m|[37m
+[32m|[37m [32mAge[37m    : 588         [32mBirthdate[37m: 11th Ero, 354AF         [32mClass[37m: Occultist    [32m|[37m
+[32m|[37m [32mGender[37m : Male        [32mRace[37m     : Grook Scholar                  Full member  [32m|[37m
+[32m|[37m                                 (Unassigned Trait Slots)                    [32m|[37m
+[32m|[37m [32mXP Rank[37m: 610         [32mExplorer Rank[37m: 563     [32mCombat Rank[37m: 0                  [32m|[37m
+[32m+-[37m[33mVitals[37m[32m----------------------------------------------------------------------+[37m
+[32m|[37m [32mHealth[37m  : 4300/4300   [32mWillpower[37m: 21452/21460 [32mStrength[37m : 10 [32mIntelligence[37m: 16 [32m|[37m
+[32m|[37m [32mMana[37m    : 5201/5786   [32mEndurance[37m: 16600/16600 [32mDexterity[37m: 12 [32mConstitution[37m: 12 [32m|[37m
+[32m|[37m                                                                             [32m|[37m
+[32m|[37m [32mRest[37m    : fully rested                       [32mBleeding[37m : 0                   [32m|[37m
+[32m|[37m [32mHunger[37m  : utterly satiated                   [32mSobriety[37m : completely sober    [32m|[37m
+[32m|[37m [32mTimeout[37m : 20 minutes                                                        [32m|[37m
+[32m+-[37m[33mResources[37m[32m-------------------------------------------------------------------+[37m
+[32m|[37m You have an active [32mIron Elite Membership[37m subscription.                      [32m|[37m
+[32m|[37m [33mGold[37m                   [33mCredits[37m           [33mHouse Credits[37m  [33mMayan Crowns[37m        [32m|[37m
+[32m|[37m   [32mHolding[37m: 0             [32mUnbound[37m: 0        [32mRoom[37m: 0        [32mUnbound[37m: 0        [32m|[37m
+[32m|[37m   [32mPacks[37m  : 3626          [32mBound[37m  : 150                     [32mBound[37m  : 0        [32m|[37m
+[32m|[37m   [32mBanks[37m  : 330559        [32mLessons[37m: 62                                        [32m|[37m
+[32m|[37m                          [32mCustoms[37m: 0                                         [32m|[37m
+[32m|[37m                          [32mUpgrade[37m: 0                                         [32m|[37m
+[32m|[37m [33mDelosian Eagles[37m        [33mRenown[37m            [33mExploration[37m                        [32m|[37m
+[32m|[37m   [32mAwarded[37m: 0             [32mAwarded[37m: 0        [32mMaps[37m: 0                          [32m|[37m
+[32m+-[37m[33mOrganisations[37m[32m---------------------------------------------------------------+[37m
+[32m|[37m [33mCity[37m                                                                        [32m|[37m
+[32m|[37m   [32mAshtan[37m            : Rank 1 - Plebeian                                     [32m|[37m
+[32m|[37m   [32mAideships[37m         : the Ambassador and the Director of Culture            [32m|[37m
+[32m|[37m   [32mSoldier[37m           : No                                                    [32m|[37m
+[32m|[37m [33mHouse[37m                                                                       [32m|[37m
+[32m|[37m   [32mThe Savants of the Wheel[37m                                                  [32m|[37m
+[32m|[37m   (Rank 3 - Servitor)                                                       [32m|[37m
+[32m|[37m [33mClans[37m                                                                       [32m|[37m
+[32m|[37m   Ashtan Culture Ministry              Mudlet Clan                          [32m|[37m
+[32m|[37m   Chaosaquarium                        Academy of Ascension[1;32m *[0;37m               [32m|[37m
+[32m|[37m   Institute of Entropy                 Ashtani Ambassador Coalition         [32m|[37m
+[32m+-----------------------------------------------------------------------------+[37m
+(SCORE FULL will let you see your full score output.)
+04:54:10.90 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+Occasional raindrops fall on your head as the drizzle continues.
+04:54:27.58 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+With a baneful scream, a cursed phantasm has destroyed Gallus.
+[0;37m04:54:42.34 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Acolyte Tabethys has battered Vierce to death in The Colosseum Diabolus.
+[0;37m04:55:13.33 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mii[0m
+[32m--------------------------------------------------------------------------------
+[37mYou are holding:
+[33mWielded:
+[37m[36m   Left hand:  [37mshield[32m648896[37m        a cavalry shield
+[33mTalismans:
+[37m   snowball[32m562751[37m      an enchanted snowball
+[33mCuring aids:
+[37m   vial[32m271355[37m          a black-walnut vial
+   vial[32m288581[37m          a glazed runic vial
+   tinderbox[32m482683[37m     a soot-blackened tinderbox
+   vial[32m655580[37m          an elegant diamond vial
+   vial[32m558277[37m          a pinewood vial
+   vial[32m585332[37m          a pinewood vial
+   vial[32m585805[37m          a pinewood vial
+   vial[32m586037[37m          a pinewood vial
+   vial[32m586531[37m          a pinewood vial
+   vial[32m586793[37m          a pinewood vial
+   vial[32m586875[37m          a pinewood vial
+   vial[32m587203[37m          a pinewood vial
+   pipe[32m541152[37m          a simple oaken pipe
+   pipe[32m542967[37m          a simple oaken pipe
+   pipe[32m410192[37m          a simple oaken pipe
+   vial[32m586578[37m          a pinewood vial
+[33mWeapons:
+[37m   dagger[32m568651[37m        an obsidian dagger
+[33mMisc:
+[37m   sceptre[32m473688[37m       a lavishly bejewelled sceptre
+   simulacrum[32m248281[37m    a simulacrum shaped like Cthul
+   heartstone[32m575980[37m    a heartstone
+
+You are wearing:
+   scalemail[32m484861[37m     a suit of scale mail
+   tunic[32m521974[37m         a deep green tunic
+   trousers[32m629726[37m      rugged men's trousers
+   boots[32m310605[37m         a pair of dark chestnut riding boots
+   ring[32m51753[37m           a silver ring set with a moonstone
+[33mContainers:
+[37m   backpack[32m3543[37m        a canvas backpack
+[33mMisc:
+[37m   deck[32m563051[37m          a deck of tarot cards
+[36m[Type [37mMORE[36m if you wish to continue reading. (94% shown)]
+[37m04:55:21.13 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+The oppressive darkness lifts, leaving nothing but the memory of it behind.
+04:55:28.30 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Nagin quietly mumbles to himself as he pushes his wheelbarrow out to the southwest.
+04:55:35.57 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhelp combat[0m
+[1;37;44m13 THE PRINCIPLES OF BATTLE[0;37m
+
+            [33m|[37m                               BASIC PRINCIPLES OF [33m|[37m
+         12 [33m<[37m GEOGRAPHY                        COMBAT IN ACHAEA [33m>[37m 13.1
+
+13.1    Combatprinciples Some basic information about combat.
+   13.2    Preparation      Preparing for combat.
+   13.2.1  Defence          Beneficial effects of plants and minerals.
+   13.3    Defending        Defending yourself successfully.
+
+   13.4    Weapons          Learn about the weapons in Achaea.
+   13.4.1  Wielding         Wielding and wearing armour, clothing, and weapons.
+
+   13.4.2  Proficiencies    Becoming adept at use of classes of weapons.
+   13.4.3  Proficiency Teachers
+   13.4.4  Scabbards        Sheathing, Drawing, and Scabbards.
+   13.4.5  Buying Weapons   Where, how, what, in weapons and armour, to buy.
+
+   13.5    Armour           Learn about armour in Achaea.
+   13.6    Saferooms        Read about rooms which are safe, by Divine order.
+
+   13.7    Heal             About healing, curing, afflictions, etc.
+   13.7.1  Healinglist      A list of common natural and alchemical curatives.
+   13.7.2  Afflictions      List of afflictions, and what cures them.
+   13.7.3  Curing Balances  Waiting to cure again.
+   13.7.4  Compose          About composing and concentrating.
+   13.7.5  Smoking          Put this in your pipe and smoke it.
+   13.7.6  Tinderboxes      Light my fire!
+   13.7.7  Entanglement     How to WRITHE out of entanglement.
+   13.7.8  Curingsystem     Set up a server-side curing system. Important!
+
+   13.8    Denizencombat    Adventurer vs. denizen combat.
+   13.9    Bodypartdamage   The system of body parts and damaging them.
+   13.9.1  Target           The target command.
+   13.10   Combattips       Some tips for success in combat.
+   13.10.1 Fleeing          Fleeing combat.
+   13.11   Combat_rankings  Are you good enough to be #1?
+   13.12   Assassins        The ways and means of the Quisalis Mark.
+   13.13   Champions        Avenge the weak.
+   13.14   Contracts        And HIRING!
+[36m[Type [37mMORE[36m if you wish to continue reading. (89% shown)]
+[37m04:55:56.25 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhelp 13.9[0m
+[1;37;44m13.9 BODY PART DAMAGE[0;37m
+
+            [33m|[37m Adventurer vs. Denizen                            [33m|[37m
+       13.8 [33m<[37m Combat                        The TARGET command. [33m>[37m 13.9.1
+
+There are six body parts for the purposes of damage and combat in Achaea:
+Head
+Torso/Body
+Left Arm
+Right Arm
+Left Leg
+Right Leg
+
+Each of these body parts is able to take individual damage, and generally
+attacks will tell you which body part they are attacking, if any. If no body
+part is shown in an attack, then you are just taking general damage.
+
+Attacks vs. body parts do both general damage against your health, and damage
+vs. that body part. However, generally speaking, the damage to your health
+done by an attack vs. a body part will be less than if it wasn't targetted to
+a body part.
+
+Now, each body part can be at one of three states:
+
+State 0 means that your bodypart is either fully healed, or has taken only
+minor damage.
+
+State 1 means that your bodypart has sustained some damage but is still
+functional.
+
+State 2 means that your bodypart has been seriously mutilated.
+
+
+Below is a chart listing the effects of being at State 1 and State 2.
+
+Bodypart        State 1              State 2
+--------        -------              -------
+Head            Stupidity            Concussion
+Body            Minor bleeding       Serious bleeding
+Limbs           Limb breaks          Limb is mutilated and broken and cannot
+[36m[Type [37mMORE[36m if you wish to continue reading. (56% shown)]
+[37m04:56:16.35 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mmore[0m
+[36m[File continued via [37m[1;37mMORE[0;37m[36m]
+[37m                                     be healed without first applying a
+                                     restoration salve to it.
+
+
+Some have been confused in the past by the difference between State 1 and
+State 2 damage on a limb, and a limb being broken. It should be emphasized
+that they are _not_ the same thing. To better understand how this works,
+imagine that when a limb has been damaged, as opposed to broken, the ability
+of that limb to heal has been affected, so a simple mending salve will not
+heal it without first applying a restoration salve.
+
+In order to deal out body part damage, which is possible with weapons and with
+some abilities, you must first obtain the TARGETTING ability in the Weaponry
+skill.
+
+Furthermore, if you have the PARRYING ability in Weaponry, you will, if you
+have a weapon capable of parrying wielded (Probe it to find out), be able to
+parry attacks to a body part, thus taking no damage.
+
+
+            [33m|[37m Adventurer vs. Denizen                            [33m|[37m
+       13.8 [33m<[37m Combat                        The TARGET command. [33m>[37m 13.9.1
+
+04:57:06.38 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Though practiced by Sela's mortal hands, Zatiano has discovered that the arts of the Aldar are every bit as deadly as the legends suggest.
+[0;37m04:57:42.51 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mdirectory sword[0m
+[33mPrice     [37m [33mItem description                  [37m [33mShop                              [37m
+[32m--------------------------------------------------------------------------------[37m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           Pantherly:[22;36;49m3736[0;39;49m
+2500[1;33mgp[0;37m     a broadsword                       Pantherly:[22;36;49m3736[0;39;49m
+2500[1;33mgp[0;37m     a longsword                        Pantherly:[22;36;49m3736[0;39;49m
+2500[1;33mgp[0;37m     a broadsword                       Pantherly:[22;36;49m3736[0;39;49m
+2500[1;33mgp[0;37m     a broadsword                       Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a rapier                           Endless Time:[22;36;49m4217[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a rapier                           Endless Time:[22;36;49m4217[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a tapering, steel scimitar         Pantherly:[22;36;49m3736[0;39;49m
+3000[1;33mgp[0;37m     a rapier                           Endless Time:[22;36;49m4217[0;39;49m
+3000[1;33mgp[0;37m     a rapier                           Endless Time:[22;36;49m4217[0;39;49m
+14999[1;33mgp[0;37m    a brutal, balanced broadsword      Black Sun:[22;36;49m5438[0;39;49m
+43001[1;33mgp[0;37m    an oversized toy sword             The Serpent's Eye:[22;36;49m5417[0;39;49m
+43001[1;33mgp[0;37m    an oversized toy sword             The Serpent's Eye:[22;36;49m5417[0;39;49m
+43001[1;33mgp[0;37m    an oversized toy sword             The Serpent's Eye:[22;36;49m5417[0;39;49m
+43001[1;33mgp[0;37m    an oversized toy sword             The Serpent's Eye:[22;36;49m5417[0;39;49m
+43001[1;33mgp[0;37m    an oversized toy sword             The Serpent's Eye:[22;36;49m5417[0;39;49m
+50000[1;33mgp[0;37m    an oversized toy sword             Pantherly:[22;36;49m3736[0;39;49m
+500000[1;33mgp[0;37m   Venomous Spirit                    World's End:[22;36;49m8003[0;39;49m
+[32m--------------------------------------------------------------------------------[37m
+04:58:31.87 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m04:58:35.03 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mmgo 3736[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[1;33mEntrance to a buffalo paddock.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast, south, and west.[0;37m
+04:58:49.14 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mGrassy clearing.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+04:58:50.95 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mNorth of Selenia pond.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+04:58:51.88 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mRose garden.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and southwest.[0;37m
+04:58:52.77 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mPath circling Selenia pond.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, southwest, and northwest.[0;37m
+04:58:53.59 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mMain junction in the park.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, south, and west.[0;37m
+04:58:54.42 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mPassing a fountain in the park.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m A black-feathered crow eyes you from atop a nearby rock.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+04:58:55.23 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mOak tree-lined path into the Linnaen Park.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+04:58:56.05 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mBefore tree-lined pathway into Linnaen Park.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m A runic totem is planted solidly in the ground.[37m[36m A black-feathered crow eyes you from atop a nearby rock.[37m
+[1;34mYou see exits leading[0;37m[1;34m east, south, west (closed door), and northwest.[0;37m
+04:58:56.95 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mStagira Boulevard next to the Linnaen Park.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and south.[0;37m
+04:58:57.80 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mOutside the House of Epicurus.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), and southwest.[0;37m
+04:58:58.61 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mJunction of Croce Lane and Stagira Boulevard.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, south, and west.[0;37m
+04:58:59.43 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mStagira Boulevard north of the parkmaster's house.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, south (open door), and southwest.[0;37m
+04:59:00.27 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mStagira Boulevard outside the parkmaster's house.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, and southwest.[0;37m
+04:59:01.17 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+
+Your shroud dissipates and you return to the realm of perception.
+04:59:01.92 O [32m100[37mh 0rage [32m89[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mStagira Boulevard.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast and south.[0;37m
+04:59:01.99 O [32m100[37mh 0rage [32m89[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mMana [1;34m-60[0m
+
+Calling on your dark power, you draw a thick shroud of concealment about yourself to cover your every action.
+04:59:02.09 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[xE|65] :>-
+[0m[22;33mWaiting to recover before exploring...[0m
+
+[1;33m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+You have recovered equilibrium.
+[0;37m04:59:03.75 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mStagira Boulevard northwest of the main barracks.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, southeast (closed door), and southwest.[0;37m
+04:59:04.63 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mSouthern Stagira Boulevard.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m
+[1;34mYou see exits leading[0;37m[1;34m north (open door), northeast, southeast (open door), and southwest.[0;37m
+04:59:05.45 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mParade of Zarathustra north of a statue.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m An obsidian eye sigil is here.[37m[36m A filthy young urchin crouches here, hand outstretched in supplication.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, southeast, southwest, and northwest.[0;37m
+04:59:06.31 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mSouth end of Market Street.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, southeast, and southwest.[0;37m
+04:59:07.17 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mNortheast of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m[36m A black-feathered crow eyes you from atop a nearby rock.[37m[33m  You see a sign indicating there are WARES for sale here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north (open door), northeast, east (open door), south, southwest, and west.[0;37m
+04:59:07.99 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[1;31m
+Dethindar futilely gasps one final time for air before dying, slain by Lord Marshal Khadafi Akif-Hassim, His Subjugator in The Matsuhama Arena.
+[0;37m04:59:08.40 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mEast of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m[33m  You see a sign indicating there are WARES for sale here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), south, southwest, west, and northwest.[0;37m
+04:59:08.82 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m99[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mSouth of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, east, south (closed door), southwest (open door), and northwest.[0;37m
+04:59:09.74 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mFinished AutoExplore [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[7;36;40mDBG: [4mall cleared[0m
+
+You open the door to the south.
+[1;33mPantherly.[0;37m (indoors)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA runic totem is planted solidly in the ground.[37m[36m Lying flat on the ground is a key-shaped sigil.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m[36m An obsidian eye sigil is here.[37m[33m  You see a sign indicating there are WARES for sale here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north (open door) and down (closed door).[0;37m
+04:59:10.57 I [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mwares sword[0m
+Proprietor: The Desert Mirage Moritza Sandstrider.
+[36m--------([33mItem[36m)------([33mDescription[36m)------------------------------([33mStock[36m)--([33mPrice[36m)
+[37m[1;32m[0;37m[1;32m[0;37m
+[1;32m[A cabinet of Curious Curios][0;37m
+[32m        sword549878[37m an oversized toy sword                          1   50000[1;33mgp[0;37m
+
+[1;32m[A Rack Encased with Weapons][0;37m
+[32m    longsword433590[37m a longsword                                     1    2500[1;33mgp[0;37m
+[33m                    Dmg: 119;  To-hit: 164;  Spd: 182[37m
+[32m   broadsword529529[37m a broadsword                                    3    2500[1;33mgp[0;37m
+[33m                    Dmg: 151;  To-hit: 164;  Spd: 155[37m
+[32m       rapier597290[37m a rapier                                        6    2000[1;33mgp[0;37m
+[33m                    Dmg:  51;  To-hit: 164;  Spd: 235[37m
+[32m                   (Songblessed)[37m
+[32m     scimitar542648[37m a tapering, steel scimitar                     10    3000[1;33mgp[0;37m
+[33m                    Dmg:  53;  To-hit: 164;  Spd: 233[37m
+04:59:18.17 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mp sword[0m
+[32mYou inspect the item that is for sale:
+[37mCrafted simply, with rigid right-angles at the hilt, this longsword possesses fine workmanship. It has a split-leather grip ending in a slight pommel, and the crossbar is covered with some simple, engraved patterns.
+It has 60 months of usefulness left.
+It weighs about 10 pounds.
+It bears the distinctive mark of Moritza.
+You may use the following commands with this weapon:
+swing
+hack
+slash
+jab
+04:59:22.91 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mp broadsword[0m
+[32mYou inspect the item that is for sale:
+[37mPossessing a slightly broader and shorter blade than a longsword, this instrument of war is functional and beautiful. The Theran workmanship is of finest quality. The seal of the Theran blacksmiths is etched very slightly into the blade, and no doubt stands out brightly when the blade is blooded.
+It has 60 months of usefulness left.
+It weighs about 10 pounds.
+It bears the distinctive mark of Moritza.
+You may use the following commands with this weapon:
+swing
+hack
+slash
+jab
+04:59:33.46 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mp rapier[0m
+[32mYou inspect the item that is for sale:
+[37mSlim, light, and well-balanced, with a beautifully ornate hilt, this rapier looks to be fit for a true artist of swordplay.
+
+A soft, haunting melody emanates from this blade.
+It has 60 months of usefulness left.
+It weighs about 10 pounds.
+It bears the distinctive mark of Moritza.
+You may use the following commands with this weapon:
+jab
+slash
+04:59:38.09 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mp scimitar[0m
+[32mYou inspect the item that is for sale:
+[37mThick at one end and slim on the other, this scimitar boasts an elegant taper along its body. A great deal of steel has gone into the forging of this scimitar.
+It has 60 months of usefulness left.
+It weighs about 10 pounds.
+It bears the distinctive mark of Moritza.
+You may use the following commands with this weapon:
+swing
+hack
+slash
+jab
+04:59:57.42 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mdirectory shortsword[0m
+Nothing matching 'shortsword' was found.
+05:00:05.43 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mdirectory shorts[0m
+Nothing matching 'shorts' was found.
+05:00:11.38 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mdirectory short[0m
+Nothing matching 'short' was found.
+05:00:15.89 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhelp 13.9[0m
+[1;37;44m13.9 BODY PART DAMAGE[0;37m
+
+            [33m|[37m Adventurer vs. Denizen                            [33m|[37m
+       13.8 [33m<[37m Combat                        The TARGET command. [33m>[37m 13.9.1
+
+There are six body parts for the purposes of damage and combat in Achaea:
+Head
+Torso/Body
+Left Arm
+Right Arm
+Left Leg
+Right Leg
+
+Each of these body parts is able to take individual damage, and generally
+attacks will tell you which body part they are attacking, if any. If no body
+part is shown in an attack, then you are just taking general damage.
+
+Attacks vs. body parts do both general damage against your health, and damage
+vs. that body part. However, generally speaking, the damage to your health
+done by an attack vs. a body part will be less than if it wasn't targetted to
+a body part.
+
+Now, each body part can be at one of three states:
+
+State 0 means that your bodypart is either fully healed, or has taken only
+minor damage.
+
+State 1 means that your bodypart has sustained some damage but is still
+functional.
+
+State 2 means that your bodypart has been seriously mutilated.
+
+
+Below is a chart listing the effects of being at State 1 and State 2.
+
+Bodypart        State 1              State 2
+--------        -------              -------
+Head            Stupidity            Concussion
+Body            Minor bleeding       Serious bleeding
+Limbs           Limb breaks          Limb is mutilated and broken and cannot
+[36m[Type [37mMORE[36m if you wish to continue reading. (56% shown)]
+[37m05:00:30.12 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mmore[0m
+[36m[File continued via [37m[1;37mMORE[0;37m[36m]
+[37m                                     be healed without first applying a
+                                     restoration salve to it.
+
+
+Some have been confused in the past by the difference between State 1 and
+State 2 damage on a limb, and a limb being broken. It should be emphasized
+that they are _not_ the same thing. To better understand how this works,
+imagine that when a limb has been damaged, as opposed to broken, the ability
+of that limb to heal has been affected, so a simple mending salve will not
+heal it without first applying a restoration salve.
+
+In order to deal out body part damage, which is possible with weapons and with
+some abilities, you must first obtain the TARGETTING ability in the Weaponry
+skill.
+
+Furthermore, if you have the PARRYING ability in Weaponry, you will, if you
+have a weapon capable of parrying wielded (Probe it to find out), be able to
+parry attacks to a body part, thus taking no damage.
+
+
+            [33m|[37m Adventurer vs. Denizen                            [33m|[37m
+       13.8 [33m<[37m Combat                        The TARGET command. [33m>[37m 13.9.1
+
+05:00:31.81 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhelp parrying[0m
+Parrying (Weaponry)                           Known: [1;37mYes
+[0;37m[32m-------------------------------------------------------------------------------[37m
+[33mSyntax:            [37m[1;37mPARRY <body part>
+                   [0;37m
+[33mExtra Information: [37mBody Parts: HEAD
+                   TORSO
+                   RIGHT/LEFT ARM
+                   RIGHT/LEFT LEG
+                   NOTHING
+
+[33mWorks on/against:  [37mAdventurers
+[33mDetails:[37m
+To use this ability, you must have a weapon capable of parrying wielded. It allows you to automatically stop any physical attack directed specifically at that body part.
+[32m-------------------------------------------------------------------------------[37m
+
+05:00:38.50 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhelp weapon[0m
+[1;37;44m13.4 WEAPONS[0;37m
+
+       13.3 [33m<[37m DEFENDING YOURSELF           WEARING AND WIELDING [33m>[37m 13.4.1
+
+(See also: HELP WEAPONRY, HELP THROWING)
+
+Weapons in Achaea may be crucially important or not-so-important, depending on
+your class. For instance, those of the monk class fight primarily with their
+hands and the power of their minds, and a weapon in their hands only inhibits
+the power of their martial arts skills. A Paladin, on the other hand, depends
+on his trusty longswords, and to be without them is to be rendered
+significantly less powerful. Having said this, all classes may benefit from
+occasional use of a weapon. What follows is a discussion of weapons in Achaea,
+and how they work.
+
+Bows and archery are specifically omitted here, though they are also a strong
+part of combat in Achaea. Both the Chivalry and Subterfuge skills include
+abilities related to Archery (HELP CHIVALRY, HELP SUBTERFUGE).
+
+
+Using Weapons
+-------------
+Using a weapon in a basic fashion is easy. Simply PROBE the weapon to get a
+list of commands that may be used with it, wield it, and then use one of the
+weapon's commands. For instance, if it is a sword, JAB <whatever> will work.
+
+In order to wield a weapon, simply type WIELD <weapon>. If you want to wield it
+in a specific hand, do WIELD RIGHT/LEFT <weapon>. UNWIELD <weapon> will unwield
+it.
+
+
+Weapon Statistics
+-----------------
+All non-missile weapons in Achaea possess three common factors that distinguish
+how well they work in combat. These are DAMAGE, SPEED, and TO-HIT. Bows are
+covered in the individual class-specific ability help scrolls.
+
+The higher the damage number, the more damage you will do. The higher the speed
+number, the faster you will be at using the weapon and the higher the to-hit
+number, the more easily you will hit your opponents.
+[36m[Type [37mMORE[36m if you wish to continue reading. (45% shown)]
+[37m05:01:02.50 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mmore[0m
+[36m[File continued via [37m[1;37mMORE[0;37m[36m]
+[37m
+You may discover the statistics of a weapon once you have gained the
+WEAPONPROBE ability in Weaponry. This ability is fairly low in the skill, so if
+you intend to use weapons, it may be worth getting this ability as soon as
+possible.
+
+Now, these are not the only factors that affect how effective you are with a
+weapon. The other factors are covered in the HELP WEAPONRY scroll.
+
+
+Weapon Types
+------------
+Below is a list of some of Achaea's non-missile / non-archery weapons.
+One-handed weapons (which may be used with a shield) are indicated with (1h).
+Two-handed weapons are marked (2h). All do cutting physical damage
+unless otherwise specified:
+
+Longsword    : The standard sword. (1h)
+Broadsword   : Cousin to the longsword. (1h)
+Shortsword   : A smaller, quicker version of the large swords. (1h)
+Scimitar     : A curving sword favoured by those in the east. (1h)
+Bastard Sword: A long, straight sword. (2h)
+Rapier       : More accurate, but less damage than a longsword. (1h)
+Battleaxe    : A battleaxe. (1h)
+Handaxe      : A weapon designed to be thrown. (1h)
+Club         : The weapon of the very poor. (blunt damage) (1h)
+Quarterstaff : A longer club, slower, but sharpenable. (blunt damage) (2h)
+Dagger       : A small hand weapon. Some may be throwing weapons. (1h)
+Dirk         : A long dagger used to stab with. Fairly fast. (1h)
+Flail        : Similar stats to a longsword. (blunt damage) (1h)
+Mace         : Much like a flail. (blunt damage) (1h)
+Javelin      : Strongest of the thrown weapons, it is quite slow. (1h)
+Halberd      : A polearm with high damage. (2h)
+Morning Star : Faster than a flail, but with less damage. (1h)
+               (blunt physical damage)
+Spear        : A cheap but effective weapon. (1h)
+Warhammer    : A massive two-handed hammer. Slow, with good damage. (2h)
+               (blunt damage)
+Trident      : Faster than a longsword, with slightly less damage. (1h)
+Whip         : A stylish weapon that is fairly quick. (1h)
+[36m[Type [37mMORE[36m if you wish to continue reading. (93% shown)]
+[37m05:01:11.61 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mb home[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33m{Monolith present, find another room} [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[4;33mn[0m
+[1;33mSouth of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, east, south (open door), southwest (open door), and northwest.[0;37m
+The door to the south slams shut.
+05:01:25.60 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mb home[0m
+[1;32m[[0;37mSystem[1;32m][0;37m: Added OUTD HERMIT to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: OUTD HERMIT
+You shuffle a card with the image of the Hermit out of your deck, bringing the total remaining to 31.
+05:01:32.74 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;32m[[0;37mSystem[1;32m][0;37m: Added ACTIVATE HERMIT HOME to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: ACTIVATE HERMIT HOME
+You take the Hermit tarot and rub it vigorously on the ground.
+05:01:32.83 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m05:01:34.58 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mwalkto delos[0m
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mSoutheast of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m[36m A wooden vat rests on a five-legged platform in the centre of the floor.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), south, west, and northwest.[0;37m
+You are 48 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:37.43 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mSouthern corner of the Merchant's Quarter.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m There are 2 black riders here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 thralls of the wheel here.[37m[36m A sentry of the [4;31mVan[0m[0;36mguard maintains his vigil, a flame-blackened bardiche planted beside him.[37m[36m An obsidian eye sigil is here.[37m[36m A logosmas stocking has been hung here, awaiting gifts.[37m[36m Skeletal fingers clutch at the hood of a large robe that conceals the statue of Danaeus, the Dark Savant from view.[37m[36m Lying flat on the ground is a key-shaped sigil.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), southeast, south (open door), and west (open door).[0;37m
+You are 47 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:37.50 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mEntry to the Merchant's Quarter.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 thralls of the wheel here.[37m[36m There are 2 sentries of the [4;31mVan[0m[0;36mguard here.[37m[36m A whistling tumult of whirling air surrounds a gangly, robe-clad figure.[37m[36m A small cooking stove stands here.[37m[36m Its flat surface displaying countless runes, a mirror-like servitor hovers nearby.[37m[36m A soot-plumed falcon judges her surroundings with a disdainful stare.[37m[36m A gilded pike with the decapitated heads of [4;31mZorina[0m[0;36m, Dethindar and [4;31mSprucebruce[0m[0;36m has been erected here.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, southeast, northwest, and up.[0;37m
+You are 46 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:38.11 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mEntering the main gate of Ashtan.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 Weave Witches here.[37m[36m A furry little humgii sits here, a hungry expression in his wide eyes.[37m[36m A ladder of long, soft leaves comprises a wispy Weaver's Fern along the ground.[37m[36m A gleaming wooden sign is posted here.[37m[36m There are 2 demented skyscourges here.[37m[36m Upon an ironwood stand, a tablet displays the Ruinous Accords of Ashtan, the Seat of Chaos.[37m[36m Hunched but ever vigilant, a thrall of the wheel stands here.[37m[36m Wielding his hammer, a great granite statue of the ice giant, Oughlor stands sentinel.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m The impressive black and gold city gates of Ashtan tower above you.[37m[36m An obsidian eye sigil is here.[37m[36m Echoes of delighted feminine laughter fill the air around this towering shrine to Pandora.[37m[36m Rippling in the wind despite its size, a flag of Imperial Ashtan flies above.[37m[36m A logosmas stocking has been hung here, awaiting gifts.[37m[36m A spectral owl swoops here on silent wings.[37m[33m You may ENTER SUBDIVISION from here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, south, and northwest.[0;37m
+You are 45 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:38.21 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+The eyes of a Weave Witch linger upon you as you walk away.
+[1;33mBefore the gate of Ashtan.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[36mA great snowdrift blankets the area in a mantle of wintry white.[37m[36m A runic totem is planted solidly in the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and south.[0;37m
+You are 44 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:38.86 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mThe approach to Ashtan.[0;37m (road)
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m
+[1;34mYou see exits leading[0;37m[1;34m north and southwest.[0;37m
+You are 43 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:38.94 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southwest toward your goal.
+[1;33mChurned mud.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A bellwort flower is growing here.[37m[35m A black cohosh plant is here.[37m[36m A rune that looks like a nail has been sketched into the ground here.[37m[36m A large muddy ditch floods the road with dirty water.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast and south.[0;37m
+You are 42 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:39.57 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mA highway turned quagmire.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A bellwort flower is growing here.[37m[35m A black cohosh plant is here.[37m[36m A putrid bog hound lurks here, snarling.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and southeast.[0;37m
+You are 41 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:40.15 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mSkirting the edge of a bog.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A bellwort flower is growing here.[37m[35m A black cohosh plant is here.[37m[36m A ladder of long, soft leaves comprises a wispy Weaver's Fern along the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast, south, and northwest.[0;37m
+You are 40 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:40.25 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mStraying into the depths of the Bog.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A bellwort flower is growing here.[37m[35m A black cohosh plant is here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east, and southwest.[0;37m
+You are 39 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:40.90 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mEntering a gloomy bog.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A black cohosh plant is here.[37m[35m A bellwort flower is growing here.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast, southwest, and west.[0;37m
+You are 38 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:40.00 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mThe edge of a bog.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA bellwort flower is growing here.[37m[35m A black cohosh plant is here.[37m[35m A prickly ash tree is growing here.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, west, and northwest.[0;37m
+You are 37 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:41.62 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mA moist pass above the bog.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A black cohosh plant is here.[37m[35m A bellwort flower is growing here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, southwest, and west.[0;37m
+You are 36 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:42.28 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southwest toward your goal.
+[1;33mA bubbling morass.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A black cohosh plant is here.[37m[35m A bellwort flower is growing here.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast and south.[0;37m
+You are 35 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:42.37 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mSloshing through the mire.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A black cohosh plant is here.[37m[35m A bellwort flower is growing here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and southwest.[0;37m
+You are 34 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:42.95 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southwest toward your goal.
+[1;33mAlong the Prelatorian Highway.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mA wall of celadon-tinged fog deluges the surroundings in the sickly scent of stale water. [37m[35mA prickly ash tree is growing here.[37m[35m A black cohosh plant is here.[37m[35m A bellwort flower is growing here.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast and south.[0;37m
+You are 33 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:43.08 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mNorth of New Thera.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A ladder of long, soft leaves comprises a wispy Weaver's Fern along the ground.[37m[36m A small wooden sign is here.[37m[36m Waving about invisible papers in the air, a tall mime hawker silently plies his wares.[37m[36m A set of animal footprints leads through the area.[37m[36m A sturdy ladder lies by a sparkling puddle.[37m[36m A merchant plies his potions here.[37m[36m The spirit vitae of an alchemical golem bubbles free from its corporeal shell, revealing the core of Hashan's guardian.[37m[36m Bathed in a soft glow, a diminutive star-shaped servitor flits about the greenery.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m[36m The corpse of [4;31mSprucebruce[0m[0;36m is here, impaled by a narrow bone. A note on it reads, 'This is the end of those who would trifle with [4;30mEsan[0m[0;36m.'[37m[36m  The corpse of [4;31mSprucebruce[0m[0;36m is here, impaled by a narrow bone. A note on it reads, 'This is the end of those who would trifle with [4;30mEsan[0m[0;36m.'[37m[36m  Pacing back and forth, a spectral snow leopard keeps watch over the area.[37m[36m The transparent form of a tundra mammoth towers above you, its spectral self strangely silent.[37m[36m Miniature hands clasped patiently, a diminutive homunculus stands here, its features bearing an uncanny resemblance to [5;30m[22;38;5;198mBlonk[0m[0;36m.[37m[1;36m Sir [32mAodfionn[0m[0;1;36m Wintermourne, the Thorn-Wrought Knight is here. His features are obscured by a mask of lifevision.[0;37m[1;36m [5;30m[22;38;5;198mBlonk[0m[0;1;36m, Candidate for Redemption is riding on a mute mammoth apparition. His features are obscured by a deep purple domino mask. He wields a paper tower shield of haphazard construction in his left hand.[0;37m
+[1;34mYou see exits leading[0;37m[1;34m north, southeast, south, southwest, and northwest.[0;37m
+You are 32 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:43.70 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mAlong the Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 31 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:44.33 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mShunai Bridge.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+You are 30 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:44.43 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mEast of the Shunai Bridge.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A ladder of long, soft leaves comprises a wispy Weaver's Fern along the ground.[37m[36m A small wooden sign is nailed crookedly to a post here.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, south, and west.[0;37m
+You are 29 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:45.06 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mSkirting the Aureliana Forest.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A stone figure kneels here, its head bowed low in repentance.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m[36m Scouting for clients, a young woman stretches provocatively.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, southeast, south, southwest, and west.[0;37m
+You are 28 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:45.14 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mHighway skirting the Aureliana Forest.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast and northwest.[0;37m
+You are 27 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:45.83 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mPassing the Aureliana Forest.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 26 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:45.93 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mHighway north of the Aureliana.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east, south, and west.[0;37m
+You are 25 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:46.57 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mNearing Lake Vundamere.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A small wooden sign is nailed crookedly to a post here.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, southeast, south, and west.[0;37m
+You are 24 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:47.17 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mLakeside highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m Bedecked with brass bells and covered in trinkets, a travelling cart leans here.[37m [33mA temporary cart has been setup here, with a sign indicating there are CART WARES for sale. [37m
+[1;34mYou see exits leading[0;37m[1;34m east, south, and northwest.[0;37m
+You are 23 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:47.26 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mNearing the Western Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+You are 22 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:47.91 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mOutskirts of the Western Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, southeast, southwest, and west.[0;37m
+You are 21 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:48.04 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mOutskirts of the Western Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast and northwest.[0;37m
+You are 20 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:48.67 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mHighway passing the Western Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, south, southwest, and northwest.[0;37m
+You are 19 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:49.29 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mPrelatorian Highway skirting the Western Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[32mVines have overtaken this location.[37m[36m Rain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, southeast, and west.[0;37m
+You are 18 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:49.41 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mHighway along the southwestern edge of the Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[32mVines have overtaken this location.[37m[36m Rain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A marble statue of a young woman stands beside the highway.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, south, southwest, and northwest.[0;37m
+You are 17 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:50.05 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mAlong the southern Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[32mVines have overtaken this location.[37m[36m Rain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and south.[0;37m
+You are 16 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:50.13 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mAlong the southern Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[32mVines have overtaken this location.[37m[36m Rain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and southeast.[0;37m
+You are 15 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:50.72 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mPrelatorian Highway on outskirts of southern Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[32mVines have overtaken this location.[37m[36m Rain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast, southwest, and northwest.[0;37m
+You are 14 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:51.33 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mPrelatorian Highway on outskirts of southern Ithmia.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 13 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:51.43 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mSharp turn in the Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m south and west.[0;37m
+You are 12 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:52.04 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off south toward your goal.
+[1;33mAlong the southern Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m north and southeast.[0;37m
+You are 11 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:52.13 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Vierce falls to Acolyte Tabethys, his body seared to a crisp by electric energy in The Colosseum Diabolus.
+[0;37m05:01:52.60 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mAlong the southern Prelatorian Highway.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 10 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:52.78 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mPrelatorian Highway through grasslands.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+You are 9 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:53.40 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mPrelatorian Highway through grasslands.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, and west.[0;37m
+You are 8 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:53.52 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off northeast toward your goal.
+[1;33mPrelatorian Highway near Green Lake.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and southwest.[0;37m
+You are 7 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:54.15 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mPrelatorian Highway north of Green Lake.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast, south, and west.[0;37m
+You are 6 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:54.25 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mPrelatorian Highway near Green Lake.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 5 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:54.86 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mHighway through the grasslands.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m southeast and west.[0;37m
+You are 4 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:55.53 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off southeast toward your goal.
+[1;33mHighway through the grasslands.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and northwest.[0;37m
+You are 3 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:55.62 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mPrelatorian Highway approaching Delos.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m
+[1;34mYou see exits leading[0;37m[1;34m east and west.[0;37m
+You are 2 rooms distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:56.26 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mBefore the bridge to Delos.[0;37m (road)
+[1;30mLines of leaden shadow coil underfoot, turning earth to metal by alchemical writ. [0;37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m Festooned with trinkets and treasures, an elaborately designed shop cart stands proudly.[37m[36m An ornately carved wooden sign is posted here.[37m[36m Sethrin, the ore merchant, waits here impatiently.[37m [33mA temporary cart has been setup here, with a sign indicating there are CART WARES for sale. [37m
+[1;34mYou see exits leading[0;37m[1;34m east, south, and west.[0;37m
+You are 1 room distant from your destination. ([1;37mSTOP[0;37m to abort walking.)
+05:01:56.37 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+Carefully getting your bearings, you set off east toward your goal.
+[1;33mOn the Delosian bridge.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m[36m Dressed in a smart uniform of maroon and silver, a young boy stands at the ready.[37m[36m A ladder of long, soft leaves comprises a wispy Weaver's Fern along the ground.[37m[36m Bedecked with brass bells and covered in trinkets, a travelling cart leans here.[37m [33mA temporary cart has been setup here, with a sign indicating there are CART WARES for sale. [37m[33mYou may ENTER the WILDERNESS map from here.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, southeast, west, and down.[0;37m
+You have arrived at your destination!
+05:01:57.01 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mdirectory sword[0m
+[33mPrice     [37m [33mItem description                  [37m [33mShop                              [37m
+[32m--------------------------------------------------------------------------------[37m
+200[1;31mcr[0;37m      a Scimitar of Hawks                Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+350[1;31mcr[0;37m      a Dawnrender bastard sword         Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+350[1;31mcr[0;37m      a mithril broadsword               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+350[1;31mcr[0;37m      a meteoric longsword               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+350[1;31mcr[0;37m      a blackened rapier                 Class Artefacts Shop: Alchemist -:[22;36;49m10160[0;39;49m
+400[1;31mcr[0;37m      a Scimitar of Falcons              Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+500[1;33mgp[0;37m      a beautiful practice rapier        The Weapons Gallery:[22;36;49m2848[0;39;49m
+800[1;31mcr[0;37m      a vorpal broadsword                Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+800[1;31mcr[0;37m      a vorpal sword                     Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+800[1;31mcr[0;37m      an Eagle's Scream                  Class Artefacts Shop: Alchemist -:[22;36;49m10160[0;39;49m
+800[1;31mcr[0;37m      a Scimitar of Eagles               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+800[1;31mcr[0;37m      a Soulreaver bastard sword         Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+1600[1;31mcr[0;37m     a Logosian longsword               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+1600[1;31mcr[0;37m     a Soulpiercer                      Class Artefacts Shop: Alchemist -:[22;36;49m10160[0;39;49m
+1600[1;31mcr[0;37m     a Dreadblade bastard sword         Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+1600[1;31mcr[0;37m     a Logosian broadsword              Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+2000[1;33mgp[0;37m     a rapier                           The Weapons Gallery:[22;36;49m2848[0;39;49m
+2500[1;31mcr[0;37m     a crystal sword                    The Second Delosian Talisman Shop
+2500[1;33mgp[0;37m     a longsword                        The Weapons Gallery:[22;36;49m2848[0;39;49m
+2500[1;33mgp[0;37m     a broadsword                       The Weapons Gallery:[22;36;49m2848[0;39;49m
+3000[1;33mgp[0;37m     a Delosian bastard sword           The Weapons Gallery:[22;36;49m2848[0;39;49m
+6500[1;33mgp[0;37m     a puissant, slender rapier         The Broken Anvil:[22;36;49m5448[0;39;49m
+6500[1;33mgp[0;37m     a puissant, slender rapier         The Broken Anvil:[22;36;49m5448[0;39;49m
+6500[1;33mgp[0;37m     a puissant, slender rapier         The Broken Anvil:[22;36;49m5448[0;39;49m
+6500[1;33mgp[0;37m     a puissant, slender rapier         The Broken Anvil:[22;36;49m5448[0;39;49m
+7000[1;33mgp[0;37m     a grim, vicious scimitar           The Broken Anvil:[22;36;49m5448[0;39;49m
+7500[1;33mgp[0;37m     a daunting, balanced broadsword    The Broken Anvil:[22;36;49m5448[0;39;49m
+7500[1;33mgp[0;37m     a daunting, balanced broadsword    The Broken Anvil:[22;36;49m5448[0;39;49m
+7500[1;33mgp[0;37m     a daunting, balanced broadsword    The Broken Anvil:[22;36;49m5448[0;39;49m
+7500[1;33mgp[0;37m     a daunting, balanced broadsword    The Broken Anvil:[22;36;49m5448[0;39;49m
+14000[1;33mgp[0;37m    a devastating, monstrous rapier    The Rose Petal:[22;36;49m3696[0;39;49m
+14000[1;33mgp[0;37m    a devastating, monstrous rapier    The Rose Petal:[22;36;49m3696[0;39;49m
+14250[1;33mgp[0;37m    a devastating, monstrous longsword The Rose Petal:[22;36;49m3696[0;39;49m
+14250[1;33mgp[0;37m    a devastating, monstrous longsword The Rose Petal:[22;36;49m3696[0;39;49m
+14850[1;33mgp[0;37m    a devastating, monstrous broadswor The Rose Petal:[22;36;49m3696[0;39;49m
+14850[1;33mgp[0;37m    a devastating, monstrous broadswor The Rose Petal:[22;36;49m3696[0;39;49m
+16550[1;33mgp[0;37m    a devastating, monstrous scimitar  The Rose Petal:[22;36;49m3696[0;39;49m
+16550[1;33mgp[0;37m    a devastating, monstrous scimitar  The Rose Petal:[22;36;49m3696[0;39;49m
+[36m[Type [37mMORE[36m if you wish to continue reading. (60% shown)]
+[37m05:02:04.29 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m05:02:07.36 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mdirectory short[0m
+Nothing matching 'short' was found.
+05:02:11.06 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mdirectory longsword[0m
+[33mPrice     [37m [33mItem description                  [37m [33mShop                              [37m
+[32m--------------------------------------------------------------------------------[37m
+350[1;31mcr[0;37m      a meteoric longsword               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+800[1;31mcr[0;37m      a vorpal sword                     Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+1600[1;31mcr[0;37m     a Logosian longsword               Class Artefacts Shop: Warriors:[22;36;49m10160[0;39;49m
+2500[1;33mgp[0;37m     a longsword                        The Weapons Gallery:[22;36;49m2848[0;39;49m
+14250[1;33mgp[0;37m    a devastating, monstrous longsword The Rose Petal:[22;36;49m3696[0;39;49m
+14250[1;33mgp[0;37m    a devastating, monstrous longsword The Rose Petal:[22;36;49m3696[0;39;49m
+31600[1;33mgp[0;37m    a simple, indomitable longsword    The Treasure Trove:[22;36;49m41082[0;39;49m
+34200[1;33mgp[0;37m    a mighty, notched longsword        The Treasure Trove:[22;36;49m41082[0;39;49m
+34200[1;33mgp[0;37m    a mighty, notched longsword        The Treasure Trove:[22;36;49m41082[0;39;49m
+44000[1;33mgp[0;37m    a radiant, grooved longsword       The Treasure Trove:[22;36;49m41082[0;39;49m
+44000[1;33mgp[0;37m    a radiant, grooved longsword       The Treasure Trove:[22;36;49m41082[0;39;49m
+44500[1;33mgp[0;37m    a radiant, grooved longsword       The Treasure Trove:[22;36;49m41082[0;39;49m
+44500[1;33mgp[0;37m    a radiant, grooved longsword       The Treasure Trove:[22;36;49m41082[0;39;49m
+58900[1;33mgp[0;37m    a golden, lightweight longsword    The Treasure Trove:[22;36;49m41082[0;39;49m
+65800[1;33mgp[0;37m    a nightmarish, primitive longsword The Treasure Trove:[22;36;49m41082[0;39;49m
+[32m--------------------------------------------------------------------------------[37m
+05:02:25.46 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[eE|65] :>-
+The glassy obsidian of Achaea's innermost ring gleams with a dark lustre in the swiftly advancing daylight.
+05:02:26.43 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m05:02:28.63 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mmgo 3696[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[1;33mEpitus Avenue nearing the bridge.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m Some graffiti has been scrawled here. It reads, "[1;32mBuy and SURVEY FOR MAP -- North!![0;37m"
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, east, southwest, and northwest (open door).[0;37m
+05:02:45.34 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mWestern Epitus Avenue.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m Some graffiti has been scrawled here. It reads, "[1;33mArtefacts - [N] [N].[0;37m"[36m Lying flat on the ground is a key-shaped sigil.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east, southeast (open door), south (open door), southwest, and west (closed door).[0;37m
+05:02:46.24 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mEpitus Avenue west of the market.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast (open door), east, southeast (open door), and west.[0;37m
+05:02:47.09 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mIn the Delosian market.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m Some graffiti has been scrawled here. It reads, "[1;36mVinci's Tattoos - [N].[0;37m"[36m Oranil stands here, absentmindedly twirling her fingers in her hair.[37m
+[1;34mYou see exits leading[0;37m[1;34m north (open door), northeast (open door), east, south (open door), and west.[0;37m
+05:02:47.97 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mQueueing up step command [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+
+[1;33mEast of the market.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, south (closed door), and west.[0;37m
+05:02:48.81 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[0mStepping....[0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[0;37m             [ [0;33mFinished AutoExplore [0;37m][0m
+[0m[1;36m--------------------------------------------------------------------------------[0m
+[0m[7;36;40mDBG: [4mall cleared[0m
+
+You open the door to the south.
+[1;33mThe Rose Petal.[0;37m (indoors)
+[36mLying flat on the ground is a key-shaped sigil.[37m[36m An obsidian eye sigil is here.[37m[36m A sigil in the shape of a small, rectangular monolith is on the ground.[37m[33m  You see a sign indicating there are WARES for sale here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north (open door) and down (closed door).[0;37m
+05:02:49.71 I [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mp longsword[0m
+[32mYou inspect the item that is for sale:
+[37mThe destructive force of this longsword is apparent in the masterful craftsmanship that has gone in to it. The sheer size and weight of this great longsword make for a fearsome sight even outside of battle.
+It has 60 months of usefulness left.
+It weighs about 10 pounds.
+It bears the distinctive mark of Milabar.
+You may use the following commands with this weapon:
+swing
+hack
+slash
+jab
+05:02:54.61 I [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mt home[0m
+[1;32m[[0;37mSystem[1;32m][0;37m: Added FLING HERMIT AT GROUND HOME to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: FLING HERMIT AT GROUND HOME
+A monolith sigil prevents the attempt.
+05:03:00.99 I [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mn[0m
+[1;33mEast of the market.[0;37m
+[36mDawn rises upon a cloudless sky, the dim, reddish rays of the sun shining down upon the land.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, south (open door), and west.[0;37m
+The door to the south slams shut.
+05:03:05.99 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mn[0m
+There is no exit in that direction.
+05:03:08.16 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mt home[0m
+[1;32m[[0;37mSystem[1;32m][0;37m: Added FLING HERMIT AT GROUND HOME to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: FLING HERMIT AT GROUND HOME
+You fling your Hermit tarot to the ground. Upon contact, it explodes in a great flash of technicolour light, flinging you across the land.
+You vaguely make out a large, square doorway of light and you step through it.
+[1;33mSouth of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mRain pours down from the sky, the dawn's light filtering dimly through the cloud cover.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, east, south (closed door), southwest (open door), and northwest.[0;37m
+05:03:09.61 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[eE|65] :>-
+[1;33m
+You have recovered balance on all limbs.
+[0;37m05:03:12.51 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;32m[[0;37mSystem[1;32m][0;37m: Added OUTD HERMIT to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: OUTD HERMIT
+You shuffle a card with the image of the Hermit out of your deck, bringing the total remaining to 30.
+05:03:12.60 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;32m[[0;37mSystem[1;32m][0;37m: Added ACTIVATE HERMIT HOME to your freestand queue.
+[1;32m[[0;37mSystem[1;32m][0;37m: Running queued freestand command: ACTIVATE HERMIT HOME
+You take the Hermit tarot and rub it vigorously on the ground.
+05:03:12.69 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[xE|65] :>-[4;33mdl[0m
+Shuffling through your deck, you see:
+[32m------------------------------------------------------------------------------[37m
+[33mCards[37m
+[32m[[37m   [1;31m21[0;37m[32m] [37mAeon                   [32m[[37m  561[32m] [37mBlank                  [32m[[37m   [1;31m57[0;37m[32m] [37mChariot
+[32m[[37m   [1;31m20[0;37m[32m] [37mCreator                [32m[[37m   [1;31m10[0;37m[32m] [37mDeath                  [32m[[37m   [1;31m27[0;37m[32m] [37mDevil
+[32m[[37m   [1;31m19[0;37m[32m] [37mEmperor                [32m[[37m   [1;31m15[0;37m[32m] [37mEmpress                [32m[[37m   [1;31m66[0;37m[32m] [37mFool
+[32m[[37m   [1;31m33[0;37m[32m] [37mHangedman              [32m[[37m   [1;31m21[0;37m[32m] [37mHeretic                [32m[[37m   [1;31m30[0;37m[32m] [37mHermit
+[32m[[37m   [1;31m24[0;37m[32m] [37mJustice                [32m[[37m   [1;31m34[0;37m[32m] [37mLovers                 [32m[[37m   [1;31m10[0;37m[32m] [37mLust
+[32m[[37m   [1;31m18[0;37m[32m] [37mMagician               [32m[[37m   [1;31m21[0;37m[32m] [37mMoon                   [32m[[37m   [1;31m93[0;37m[32m] [37mPriestess
+[32m[[37m   [1;31m15[0;37m[32m] [37mStar                   [32m[[37m   [1;31m25[0;37m[32m] [37mSun                    [32m[[37m   [1;31m37[0;37m[32m] [37mTower
+[32m[[37m   [1;31m53[0;37m[32m] [37mUniverse               [32m[[37m   [1;31m21[0;37m[32m] [37mWheel
+[32m------------------------------------------------------------------------------[37m
+Your deck contains a total of 1231 cards.
+05:03:13.56 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m05:03:14.42 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mind hermit[0m
+You shuffle a card with the image of the Hermit into your deck, bringing the total stored to 31.
+05:03:17.35 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mind hermit[0m
+You have no hermit in your inventory.
+05:03:18.94 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33me[0m
+[1;33mSoutheast of Central Market.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A runic totem is planted solidly in the ground.[37m[36m An obsidian eye sigil is here.[37m[36m A wooden vat rests on a five-legged platform in the centre of the floor.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), south, west, and northwest.[0;37m
+05:03:26.65 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+[1;31m
+Dethindar, Eradicator of Weakness has battered Khadafi to death in The Matsuhama Arena.
+[0;37m05:03:26.80 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-
+A light rain wets your surroundings, falling pleasantly around you.
+05:03:27.61 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mcs[0m
+I'm sorry, I don't know what "cs" does.
+05:03:28.86 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33ms[0m
+[1;33mSouthern corner of the Merchant's Quarter.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m There are 2 black riders here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 thralls of the wheel here.[37m[36m A sentry of the [4;31mVan[0m[0;36mguard maintains his vigil, a flame-blackened bardiche planted beside him.[37m[36m An obsidian eye sigil is here.[37m[36m A logosmas stocking has been hung here, awaiting gifts.[37m[36m Skeletal fingers clutch at the hood of a large robe that conceals the statue of Danaeus, the Dark Savant from view.[37m[36m Lying flat on the ground is a key-shaped sigil.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, east (open door), southeast, south (open door), and west (open door).[0;37m
+05:03:29.91 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mse[0m
+[1;33mEntry to the Merchant's Quarter.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 thralls of the wheel here.[37m[36m There are 2 sentries of the [4;31mVan[0m[0;36mguard here.[37m[36m A whistling tumult of whirling air surrounds a gangly, robe-clad figure.[37m[36m A small cooking stove stands here.[37m[36m Its flat surface displaying countless runes, a mirror-like servitor hovers nearby.[37m[36m A soot-plumed falcon judges her surroundings with a disdainful stare.[37m[36m A gilded pike with the decapitated heads of [4;31mZorina[0m[0;36m, Dethindar and [4;31mSprucebruce[0m[0;36m has been erected here.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, southeast, northwest, and up.[0;37m
+05:03:31.37 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mne[0m
+[1;33mParade of Zarathustra before a statue.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A runic totem is planted solidly in the ground.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m There are 2 sentries of the [4;31mVan[0m[0;36mguard here.[37m[36m There are 2 thralls of the wheel here.[37m[36m A whistling tumult of whirling air surrounds a gangly, robe-clad figure.[37m[36m A large barracks is here providing the city's forces with rest and refuge.[37m
+[1;34mYou see exits leading[0;37m[1;34m north, northeast, southeast, south, southwest, and northwest.[0;37m
+05:03:33.72 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33msw[0m
+[1;33mEntry to the Merchant's Quarter.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A runic totem is planted solidly in the ground.[37m[36m There are 2 thralls of the wheel here.[37m[36m There are 2 sentries of the [4;31mVan[0m[0;36mguard here.[37m[36m A whistling tumult of whirling air surrounds a gangly, robe-clad figure.[37m[36m A small cooking stove stands here.[37m[36m Its flat surface displaying countless runes, a mirror-like servitor hovers nearby.[37m[36m A soot-plumed falcon judges her surroundings with a disdainful stare.[37m[36m A gilded pike with the decapitated heads of [4;31mZorina[0m[0;36m, Dethindar and [4;31mSprucebruce[0m[0;36m has been erected here.[37m[36m Lucca paces here, calling out to passers-by in hopes of attracting their attention to the Imperator's Voice.[37m
+[1;34mYou see exits leading[0;37m[1;34m northeast, east, southeast, northwest, and up.[0;37m
+[1;36mA demented skyscourge says, "Ashtani..."[0;37m
+[1;36mLucca, the Ashtan paperboy says, "Hello, friend. Got some sovereigns for the paper today?"[0;37m
+05:03:35.51 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mup[0m
+[1;33mAtop the battlements of the city wall.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A corroded chest of iron and gold has been placed here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "FITZ".[37m[36m A runic totem is planted solidly in the ground.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m Whirling currents of air guard the figure of a capricious djinn.[37m[36m There are 2 thralls of the wheel here.[37m[36m Electricity wreathes the lithe frame of a vigilant Weave Witch.[37m[36m Perched upon the edge of the battlement, a statue of Tanris Rozzan stares sightlessly across the land.[37m[36m There are 2 logosmas stockings here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "GRANDUE".[37m[36m Mounted atop the battlement, a mighty wooden ballista points out over the gates.[37m[36m Scattered about the battlements, a random pile of birdseed has been kicked about.[37m[36m Supported on the hunched back of a cowled crone, a marble bench rests here.[37m[36m There are 2 black riders here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "IRIMON".[37m[36m As large as a supine troll, a gilded chest dominates the nearby sights.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "SATUM".[37m[36m The burning frame of a chaos hound gleams with viridian light.[37m[1;36m [4;35mDunn[0m[0;1;36m, Avatar of Ruin is here.[0;37m[1;36m[0;37m
+[1;34mYou see exits leading[0;37m[1;34m east and down.[0;37m
+05:03:37.02 O [32m100[37mh 0rage [32m88[37mm [32m99[37me [32m100[37mw[exE|65] :>-[4;33mhw[0m
+[32mMember              Rank      HTell  HNTell  [4;31mProbatio[0m[0;32mn      Class
+------              ----      -----  ------  ---------      -----
+[37mAishu                 02        Off      On         No      Occultist
+05:03:41.39 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+The body of Ielo appears in a flash and his soul descends to fill it, causing the previously expressionless face to fill with emotion.
+05:04:04.73 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo rubs his hands together greedily.
+05:04:04.82 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo touches a mindseye tattoo.
+05:04:05.33 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Aishu arrives from the down.
+05:04:09.26 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+The body of Ielo appears in a flash and his soul descends to fill it, causing the previously expressionless face to fill with emotion.
+05:04:28.41 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo rubs his hands together greedily.
+05:04:28.51 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo touches a mindseye tattoo.
+05:04:29.06 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Lucca enters from the down, frantically waving a newspaper in hopes of attracting your attention.
+05:04:38.84 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mql[0m
+[1;33mAtop the battlements of the city wall.[0;37m
+[35mCrackling ozone heralds warp-touched mirage, their coming the advent of change. [37m[36mThe rain pours down, daylight edging the dark clouds with streaks of silver.[37m[36m A rune resembling a horse has been sketched into the ground here.[37m[36m A corroded chest of iron and gold has been placed here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "FITZ".[37m[36m A runic totem is planted solidly in the ground.[37m[36m A great snowdrift blankets the area in a mantle of wintry white.[37m[36m Whirling currents of air guard the figure of a capricious djinn.[37m[36m There are 2 thralls of the wheel here.[37m[36m Electricity wreathes the lithe frame of a vigilant Weave Witch.[37m[36m Perched upon the edge of the battlement, a statue of Tanris Rozzan stares sightlessly across the land.[37m[36m There are 2 logosmas stockings here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "GRANDUE".[37m[36m Mounted atop the battlement, a mighty wooden ballista points out over the gates.[37m[36m Scattered about the battlements, a random pile of birdseed has been kicked about.[37m[36m Supported on the hunched back of a cowled crone, a marble bench rests here.[37m[36m There are 2 black riders here.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "IRIMON".[37m[36m As large as a supine troll, a gilded chest dominates the nearby sights.[37m[36m Placed in preparatory memoriam, implacable chiselwork marks this gravestone "SATUM".[37m[36m The burning frame of a chaos hound gleams with viridian light.[37m[36m Lucca paces here, calling out to passers-by in hopes of attracting their attention to the Imperator's Voice.[37m[1;36m Thrall Aishu is here. She wields a spiked cavalry shield in her left hand.[0;37m[1;36m Ielo is here. He wields a training shortsword in his left hand.[0;37m[1;36m [4;35mDunn[0m[0;1;36m, Avatar of Ruin is here.[0;37m[1;36m[0;37m
+[1;34mYou see exits leading[0;37m[1;34m east and down.[0;37m
+05:04:42.06 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Lucca walks out to the east, yelling today's headlines.
+05:04:51.68 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[1;36m
+Aishu greets Ielo with a sincere smile.
+[0;37m05:05:01.92 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo leaves to the east.
+05:05:15.59 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo arrives from the east.
+05:05:45.79 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+Ielo leaves to the down.
+05:05:47.26 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhw[0m
+[32mMember              Rank      HTell  HNTell  [4;31mProbatio[0m[0;32mn      Class
+------              ----      -----  ------  ---------      -----
+[37mAishu                 02        Off      On         No      Occultist
+05:05:52.62 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mcw[0m
+[32mCitizen                                                   Rank CT  Class
+-------                                                   ---- --  -----
+[37m[36m[4;35mOgoun[0m[0;36m[37m, Soldier of Ruin                                      1  On  Magi
+Thrall [36mAishu[37m                                                1  On  Occultist
+Admiral [36m[4;35mKazuya[0m[0;36m[37m Solhar                                       4  On  Black Dragon
+[36mIelo[37m                                                        1  On  Runewarden
+05:05:56.66 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhonours ielo[0m
+Ielo (male Troll).
+He is 18 years old, having been born on the 25th of Miraman, 925 years after the fall of the Seleucarian Empire.
+He is unranked in Achaea.
+He is an extremely credible character.
+He is not known for acts of infamy.
+He is a Plebeian in Ashtan.
+He is a member of the Runewarden class.
+He is considered to be approximately 5% of your might.
+05:06:00.24 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m05:06:01.99 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mauraglance ogoun[0m
+[0mMana [1;34m-18[0m
+You create a window in your mind's eye and will the image of Ogoun within its frame.
+You see that Ogoun is at The Radiant Path approaching the palace gates. [22;36m507[0m, in [22;36mAshtan, the City of[0m
+05:06:18.94 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m99[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m05:06:19.84 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m99[37mw[exE|65] :>-
+A light rain wets your surroundings, falling pleasantly around you.
+05:06:27.64 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mhonours ogoun[0m
+Ogoun, Soldier of Ruin (male Human).
+He is 160 years old, having been born on the 25th of Miraman, 783 years after the fall of the Seleucarian Empire.
+He is ranked 441st in Achaea.
+He is the 15th ranked combatant with a rating of 100.
+He is an extremely credible character.
+He is not known for acts of infamy.
+He is a Plebeian in Ashtan.
+He is a Recruit(1) in the army of Ashtan.
+He is a member of the Magi class.
+He is considered to be approximately 175% of your might.
+He is a mentor and able to take on proteges.
+His motto: 'Earth, Wind, & Fire!'
+See HONOURS DEEDS OGOUN to view his 1 special honours.
+05:06:31.88 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[xE|65] :>-
+[1;33m
+You have recovered equilibrium.
+[0;37m05:06:33.57 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33msc[0m
+[32m+-[37m[33mServitor Cthul[37m[32m--------------------------------------------------------------+[37m
+[32m|[37m [32mLevel[37m  : 81 (30%)    "5th Circle of Celestial Power"                        [32m|[37m
+[32m|[37m [32mAge[37m    : 588         [32mBirthdate[37m: 11th Ero, 354AF         [32mClass[37m: Occultist    [32m|[37m
+[32m|[37m [32mGender[37m : Male        [32mRace[37m     : Grook Scholar                  Full member  [32m|[37m
+[32m|[37m                                 (Unassigned Trait Slots)                    [32m|[37m
+[32m|[37m [32mXP Rank[37m: 610         [32mExplorer Rank[37m: 563     [32mCombat Rank[37m: 0                  [32m|[37m
+[32m+-[37m[33mVitals[37m[32m----------------------------------------------------------------------+[37m
+[32m|[37m [32mHealth[37m  : 4300/4300   [32mWillpower[37m: 21460/21460 [32mStrength[37m : 10 [32mIntelligence[37m: 16 [32m|[37m
+[32m|[37m [32mMana[37m    : 5123/5786   [32mEndurance[37m: 16600/16600 [32mDexterity[37m: 12 [32mConstitution[37m: 12 [32m|[37m
+[32m|[37m                                                                             [32m|[37m
+[32m|[37m [32mRest[37m    : fully rested                       [32mBleeding[37m : 0                   [32m|[37m
+[32m|[37m [32mHunger[37m  : utterly satiated                   [32mSobriety[37m : completely sober    [32m|[37m
+[32m|[37m [32mTimeout[37m : 20 minutes                                                        [32m|[37m
+[32m+-[37m[33mResources[37m[32m-------------------------------------------------------------------+[37m
+[32m|[37m You have an active [32mIron Elite Membership[37m subscription.                      [32m|[37m
+[32m|[37m [33mGold[37m                   [33mCredits[37m           [33mHouse Credits[37m  [33mMayan Crowns[37m        [32m|[37m
+[32m|[37m   [32mHolding[37m: 0             [32mUnbound[37m: 0        [32mRoom[37m: 0        [32mUnbound[37m: 0        [32m|[37m
+[32m|[37m   [32mPacks[37m  : 3626          [32mBound[37m  : 150                     [32mBound[37m  : 0        [32m|[37m
+[32m|[37m   [32mBanks[37m  : 330559        [32mLessons[37m: 62                                        [32m|[37m
+[32m|[37m                          [32mCustoms[37m: 0                                         [32m|[37m
+[32m|[37m                          [32mUpgrade[37m: 0                                         [32m|[37m
+[32m|[37m [33mDelosian Eagles[37m        [33mRenown[37m            [33mExploration[37m                        [32m|[37m
+[32m|[37m   [32mAwarded[37m: 0             [32mAwarded[37m: 0        [32mMaps[37m: 0                          [32m|[37m
+[32m+-[37m[33mOrganisations[37m[32m---------------------------------------------------------------+[37m
+[32m|[37m [33mCity[37m                                                                        [32m|[37m
+[32m|[37m   [32mAshtan[37m            : Rank 1 - Plebeian                                     [32m|[37m
+[32m|[37m   [32mAideships[37m         : the Ambassador and the Director of Culture            [32m|[37m
+[32m|[37m   [32mSoldier[37m           : No                                                    [32m|[37m
+[32m|[37m [33mHouse[37m                                                                       [32m|[37m
+[32m|[37m   [32mThe Savants of the Wheel[37m                                                  [32m|[37m
+[32m|[37m   (Rank 3 - Servitor)                                                       [32m|[37m
+[32m|[37m [33mClans[37m                                                                       [32m|[37m
+[32m|[37m   Ashtan Culture Ministry              Mudlet Clan                          [32m|[37m
+[32m|[37m   Chaosaquarium                        Academy of Ascension[1;32m *[0;37m               [32m|[37m
+[32m|[37m   Institute of Entropy                 Ashtani Ambassador Coalition         [32m|[37m
+[32m+-----------------------------------------------------------------------------+[37m
+(SCORE FULL will let you see your full score output.)
+05:06:38.60 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-[4;33mwhois aishu[0m
+[0m[22;33mClass: [0m
+[0m[22;33mLevel: [0m
+[0m[22;33mPvP: [0m
+[0m[22;33mCity: [0m[0m
+[4;33mqq[0m
+Automatic defence handling disabled.
+05:07:10.71 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You have not yet made yourself available to newcomers to the Anathema Territories of Ashtan.
+05:07:10.82 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+You grow still and begin to silently pray for preservation of your soul while you are out of the land.
+05:07:10.83 O [32m100[37mh 0rage [32m88[37mm [32m100[37me [32m100[37mw[exE|65] :>-
+[0m#SESSION 'cthul' DIED.[0m

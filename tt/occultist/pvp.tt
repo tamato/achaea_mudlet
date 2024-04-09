@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #nop PvpCommands
 
 #class occultistpvp kill;
@@ -12,3 +13,6 @@
 #class occultistpvp close;
 #class occultistpvp save;
 
+/* */
+#alias {} {
+}

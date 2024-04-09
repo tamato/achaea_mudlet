@@ -269,9 +269,8 @@
 
 #alias {inscr} {
    #var cardcount 0;
-   #if {&{2} == 0} 
-      {#var cardcount 20};
-      {#var cardcount %1};
+   #if {&{2} == 0} { #var cardcount 20};
+   #else {#var cardcount %1};
    
    #var card %1;
    #send {outd $cardcount blank};
@@ -280,9 +279,9 @@
    #line oneshot #action {You have successfully inscribed the image of the %%1 on your Tarot card} {
       #line oneshot #high {%%*} {reverse};
       #send {ind all $card};
+      #unvar card;
    };
 
-   #unvar card;
    #unvar cardcount;
 };
 

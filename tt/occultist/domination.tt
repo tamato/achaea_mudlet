@@ -38,3 +38,6 @@
    }
 }
 
+#alias {ds} {#send {order doppleganger seek %1}};
+#alias {dhome} {#send {order doppleganger return}};
+
