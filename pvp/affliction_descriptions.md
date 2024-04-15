@@ -361,4 +361,16 @@ WhisperingMadness:  No
 Enlighten:          No
 Tzantza:            No
 Accentato:          No
-CadmusCurse:        No
+
+Affliction:         Stuttering
+Diagnose:           a stuttering fool.
+Afflicted msg:      The thought of speech seems difficult all of a sudden.
+Cured msg:          Your tongue will finally obey your commands properly.
+Cure(s):            Apply Epidermal To Head
+                    Focus Mind
+Description:        With a stutter, you can barely speak a word coherently.
+WhisperingMadness:  No
+Enlighten:          No
+Tzantza:            No
+Accentato:          No
+CadmusCurse:        NoadmusCurse:        No

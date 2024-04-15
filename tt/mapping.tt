@@ -79,12 +79,12 @@
 #alias {mfind} {
    #if {"%1" == ""} {err Pass in a room name;#return};
 
-   #map list {roomname}{%i%*%0%*} {variable}{rooms};
+   #map list {roomname}{%i%*%1%*} {variable}{rooms};
 
    #show <258>Found rooms:;
    #foreach {*rooms[]} roomnum {
-      #map get roomname rname $roomnum;
-      #map get roomarea rarea $roomnum;
+      #map get {roomname} {rname} {$roomnum};
+      #map get {roomarea} {rarea} {$roomnum};
       #show <228>$rname <278>is in <228>$rarea<278>: <268>$roomnum;
    };
 

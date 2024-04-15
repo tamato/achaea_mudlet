@@ -2,9 +2,9 @@
 
 #read global.tt;
 
-#session mel achaea.com 23
-melkervur
-@password{};
+#session mel achaea.com 23;
+melkervur;
+$password;
 
 #var whoami Melkervur;
 

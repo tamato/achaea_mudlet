@@ -235,23 +235,27 @@ Use of this card which affects anyone unwillingly could result in very serious r
 Between each turn, and to the start of the first, 7 seconds, 4 seconds after fling.
 Then each of these, in this order, each after 7 seconds.
 
-Cold Blue - seems to be shiver/cold
+Cold Blue - shiver/cold
 - Rays of cold blue light lash out from the Wheel of Chaos, irradiating the location.
+- Use Ague to remove caloric.
 - shiver cured by: APPLY caloric
 
-Vibrant indigo - stupidity
+Vibrant indigo - stuttering
 - Vibrant indigo rays of light lash out from the Wheel of Chaos
-- Stupidity: cured by EAT Goldenseal/Plumbum
+- Stupidity: APPLY epidermal
 
-Violet - aeon
+Violet - aeon, 28 seconds after flinging wheel, with no additional rotations.
 - Rays of violet light lash out at the location from the Wheel of Chaos.
-- Use PinchAura to remove Speed defence ~26 seconds in for Aeon to land.
+- Use PinchAura (4 s eq) to remove Speed defence ~26 seconds in for Aeon to land.
  - PinchAura's messae is hidden from the target.
 - Aeon: 
  - cured by SMOKE ELM/Cinnabar
  - This is the only affliction cured with smoking Elm. e.g. Stacking smoking aff's don't mean anythng.
   - need to stack things that block asthma.
 
+04:33:45.44: END rays of violet, winks out. affected melkervur
+04:33:17.26: START commaned wheel
+      28.18: Time for Aeon to hit.
 
 PREREQ - Devil
 Fling/Ruinate wheel
