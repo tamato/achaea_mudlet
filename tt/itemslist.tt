@@ -8,6 +8,10 @@
         {bell} {}
         {fetish} {}
     }
+    {the bog of Ashtan} 
+    {
+        {cauldron} {}
+    }
 }
 
 #CLASS {itemslist} CLOSE
