@@ -311,8 +311,6 @@
    #nop Cenoi has requested that you share some of your knowledge of Weaponmastery with him. 'OK' to commence the lesson. ;
 }
 
-
-
 #var generosity 0;
 #alias {self} {
    #if {$generosity === 0} {
@@ -325,6 +323,27 @@
       #send {generosity};
    };
 }
+
+#action {You get %d gold sovereigns from a canvas backpack} {
+   #if {$generosity === 1} {
+      #send {put gold in pack};
+   }
+}
+
+#action {You remove a deck of tarot cards.} {
+   #if {$generosity === 1} {
+      #send {wear deck};
+   }
+}
+
+#action {You remove a canvas backpack.} {
+   #if {$generosity === 1} {
+      #send {wear pack};
+   }
+}
+
+#nop TODO keep wearing the deck
+#nop TODO put pack back on.
 
 #alias {qq} {
    #send {curing defences off};

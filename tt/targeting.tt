@@ -124,7 +124,7 @@
    #unvar roomMobs[$id];
 }
 
-#alias {target}
+#alias {targets}
 {
    #if {"%1" === ""}
    {
