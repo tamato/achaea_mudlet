@@ -243,8 +243,6 @@
 
 #nop Fool, 35 sec cooldown;
 
-#nop 18:06:21.90 start;
-#nop 8:06:56.61 O ends;
 #var foolMaxTimer 35;
 #var remainingFoolTime 0;
 #alias {fool} {
