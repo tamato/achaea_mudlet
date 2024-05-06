@@ -4,6 +4,22 @@
 #var priestessEnable 1;
 #var ruinCost 17;
 
+#alias {occult} {
+   print Occultist Helper commands;
+   info * da;
+   info   - Toggles distort aura;
+   info * af;
+   info   - Toggles astral form;
+   info * pri;
+   info   - fling priestess card;
+   info * b and t;
+   info   - hermit cards;
+   info * uni;
+   info   - universe card;
+   info * inscr;
+   info   - inscribe tarot cards, 2 param, first is card, second is #;
+}
+
 #class bash kill
 #class bash open
 
@@ -21,21 +37,25 @@
 
 #nop F1
 #macro {\eOP} { 
+   satk;
+};
+#alias {satk} {
    #unvar atkTarget;
    #class bash clear; 
-};
+}
 
 #nop S-F1
 #macro {\e[1;2P} { 
    startAutoAtk;
-   #class autobash clear;
 };
 
-#alias {startAutoAtk} {
+#alias {aatk} {
    #class bash load; 
    print {resuming auto attack};
    #if {$distortActive === 0} {da};
    atk;
+
+   #class autobash clear;
 }
 
 #nop -------------------------------------------------------------------------
@@ -199,8 +219,13 @@
    #nop Since this actin is nested in the Alias we HAVE to use an extra %;
    #class priestess load;
 
+   #var target {me};
+   #if {"%1" !== ""} {#var target %1};
+
    #nop #send {$insfree fling priestess at me};
-   #send {$insfree fling priestess at me};
+   #send {$insfree fling priestess at $target};
+
+   #unvar target;
    #var priStatus {Qd};
    #var priestessEnable 0; 
    updateCharUI;
@@ -246,23 +271,29 @@
 #var foolMaxTimer 35;
 #var remainingFoolTime 0;
 #alias {fool} {
-   #send {$addfree fling fool at me};
+   #var target {%1};
 
-   #line oneshot #action {^You press the Fool tarot to your forehead.$}{
-      #line oneshot #high {%*} {reverse};
-      #var remainingFoolTime $foolMaxTimer;
+   #if {"$1" === ""} {
+      #var target {me};
+      #line oneshot #action {^You press the Fool tarot to your forehead.$}{
+         #line oneshot #high {%*} {reverse};
+         #var remainingFoolTime $foolMaxTimer;
 
-      #ticker foolTimer {
-         #math remainingFoolTime {$remainingFoolTime - 1};
+         #ticker foolTimer {
+            #math remainingFoolTime {$remainingFoolTime - 1};
+            updateCharUI;
+
+            #if {remainingFoolTime <= 0} {#unticker foolTimer; #var remainingFoolTime 0;};
+         } {1};
+
          updateCharUI;
+      };
 
-         #if {remainingFoolTime <= 0} {#unticker foolTimer; #var remainingFoolTime 0;};
-      } {1};
-
-      updateCharUI;
+      #line oneshot #high {^You may heal another affliction$}{reverse};
    };
 
-   #line oneshot #high {^You may heal another affliction$}{reverse};
+   #send {$addfree fling fool at $target};
+   #unvar target;
 };
 
 #alias {inscr} {
@@ -310,7 +341,7 @@
 }
 
 #var generosity 0;
-#alias {self} {
+#alias {defs} {
    #if {$generosity === 0} {
       #var generosity 1;
       #send {curing defences on};
@@ -344,7 +375,7 @@
 #nop TODO put pack back on.
 
 #alias {qq} {
-   #send {curing defences off};
+   #nop #send {curing defences off};
    #send {CITY GUIDE UNAVAILABLE};
    #send {QQ};
 }

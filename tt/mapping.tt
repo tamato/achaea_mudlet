@@ -11,13 +11,13 @@
    info * mgostart;
    info   - go to the start room;
    info * mex;
-   info   - mapping explore. Explores current area.;
+   info   - mapping explore. Explores current area;
    info * mstop;
    info   - stop exploring/auto walking;
    info * mfind;
    info   - pass in a room name to get room info;
    info * mbash;
-   info   - Auto explore area while also hunting and harvesting plants.;
+   info   - Auto explore area while also hunting and harvesting plants;
    info;
    info Notes;
    info To hook 'events' into this system,;
@@ -323,15 +323,16 @@
 #class pathing close;
 #class pathing save;
 
+#alias {deregisterDirectory} {
+   #class roomnums clear; 
+   deregisterEvent prompt deregisterDirectory;
+}
+
 #alias {directory} 
 {
    #send {directory %1};
    #class roomnums load;
-
-   #var eventCallbacks[prompt][directory] {
-      #class roomnums clear; 
-      #unvar eventCallbacks[prompt][directory];
-   };
+   registerEvent prompt deregisterDirectory;
 }
 
 #class roomnums kill;

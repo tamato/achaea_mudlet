@@ -19,8 +19,6 @@
 
    #read character_highlights.tt;
 
-   #nop runCallbacks connected;
-
    #class pathing clear;
    #class roomnums clear;
    #class harvesting clear;

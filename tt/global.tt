@@ -13,8 +13,8 @@
 #read {$configdir[1]/guisettings.tt}
 
 #var seenPlys {};
-#var eventCallbacks {};
 
+#read eventsSystem.tt;
 #read connect.tt;
 #read gui.tt;
 #read targeting.tt
@@ -163,4 +163,19 @@
 
 #high {A nearly invisible magical shield forms around%*$} { underscore <FFF0000>}
 
+#alias {help} {
+  print Global helper commands;
+  info * atk;
+  info   - single attack a denzien in the room that is on the targets list;
+  info * aatk;
+  info   - auto attack denziens in the room;
+  info * satk;
+  info   - stop auto attacking;
+  info * targets;
+  info   - lists, adds/removes targets to attack;
+  info * mapping; 
+  info   - prints commands related to QoL for rooms/maps;
+  info * occult; 
+  info   - prints commands for occultists;
+}
 

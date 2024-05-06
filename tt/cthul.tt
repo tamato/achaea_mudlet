@@ -14,9 +14,6 @@
 
 #read harvesting/harvest.tt;
 
-#nop #unvar eventCallbacks[connected][cthul];
-#nop #var eventCallbacks[connected][cthul] {loadOccultist};
-
 #session cthul achaea.com 23;
 cthul;
 $password;

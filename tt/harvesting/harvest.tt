@@ -4,7 +4,6 @@
 
 #var plantQueue {};
 #var picking 0;
-#var autoharvest[callback] {};
 #var picked 0;
 #var harvestedRooms {};
 
@@ -28,11 +27,6 @@
          #send {inr all};
       };
       
-      #foreach {*autoharvest[callback][]} cb {
-         $autoharvest[callback][$cb];
-         #unvar autoharvest[callback][$cb];
-      };
-
       #return;
    };
 
@@ -71,15 +65,15 @@
    pickplant;
 }
 
-#alias {onprompt} {
-   #unvar eventCallbacks[prompt][autoharvest];
+#alias {autoHarvestPrompt} {
+   deregisterEvent prompt autoHarvestPrompt;
    pickplant;
 }
 
 #line oneshot #action {^The following plants are growing in this room:$} {
    #var picked 0;
    #var picking 0;
-   #var eventCallbacks[prompt][autoharvest] {onprompt};
+   registerEvent prompt autoHarvestPrompt;
 }
 
 #alias {queuepick %1} {
