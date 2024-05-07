@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #nop PvpCommands
 
 #class occultistpvp kill;
@@ -7,7 +6,35 @@
 /*
 
 */
-#alias {qw} {
+#alias {mist} {
+   #send {$addfree eldritchmists}
+}
+
+#alias {sra %1} {
+   #send {$addfree COMMAND CRONE AT %1 right arm}
+   #send {$addfree bodywarp %1 right arm shrivel}
+}
+
+#alias {tent} {
+   #send {$addfree tentacles}
+}
+
+/*
+   hanged man before Aeon, or Cold?
+*/
+#alias {wheel} {
+   #send {$addfree ruinate wheel at ground};
+   #nop 01:09:59.76 O 100h 0rage 100m 99e 78w[xE|66] :>-;
+   #nop #delay {6.5} {#send {$addfree pinchaura caloric}};
+   #delay {13.5} {#show Cold blue Light! Chill them with relevations of the void!;#cr}; 
+   #nop 01:10:13.50 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+   #delay {20.5} {#show Vibrant indigo Light! Stupify with the truth!;#cr};
+   #nop 01:10:20.56 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+   #delay {27.5} {#show violet Light! Slow them down!;#cr;};
+
+   #nop 01:10:27.52 O 100h 0rage 100m 99e 78w[exE|66] :>-;
+   #nop TODO need timer for when Aeon hits;
+   #nop #delay {22} {#send {$addfree pinchaura speed}};
 }
 
 #class occultistpvp close;

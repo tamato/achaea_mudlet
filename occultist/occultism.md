@@ -543,7 +543,7 @@ Tapping into your stores of karma, you transmute a small amount into pure chaos.
 different coloured light spring out from your outstretched hands, irradiating the location with blinding strobes.
 
 violet - Aeon
-Orange - paralysis
+orange - paralysis
 indigo - stupidity
 blue - 
 red - 
@@ -666,6 +666,7 @@ You can give yourself the mark of the devil. When flinging the tarot DEVIL card,
 to you by your will for a longer period of time up to a possible three services. The mark of the 
 devil vanishes as soon as this term of service expires. You may also wipe the devilmark from your 
 body to prematurely end the services of a devil.
+
 -------------------------------------------------------------------------------
 
 
