@@ -10,6 +10,7 @@ from os.path import isfile, join
 # Download the file from `url` and save it locally under `file_name`:
 url = 'https://api.achaea.com/characters.json'
 file_name = 'characters.json'
+path = f'{os.environ["HOME"]}/repos/ttransendence/characters'
 
 online = []
 longestNameLen = 0
@@ -27,27 +28,26 @@ with urllib.request.urlopen(url) as response:
         if len(name) > longestNameLen: longestNameLen = len(name)
         with urllib.request.urlopen(uri) as charuri:
             charjson = json.loads(charuri.read())
-            with open(f'../characters/{name}.json', 'w') as charfile:
+            with open(f'{path}/{name}.json', 'w') as charfile:
                 json.dump(charjson, charfile)
 
 longestNameLen += 1
 print ('finished characters')
 
 # load up all the character files
-path = f'{os.environ["HOME"]}/repos/achaea_mudlet/characters'
 allcharacters = [f for f in listdir(path) if isfile(join(path, f))]
 
 characters = {}
 fg_yellow = '<Fffff00>'
 fg_red = '<Fff0000>'
 
-with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
+with open(f'{path}/../character_highlights.tt', 'w') as hi:
     #  hi.write('#ticker {updatechardb} {#read character_highlights.tt} {60}\n\n')
 
     hi.write(f'#class chardatabase kill\n')
     hi.write(f'#class chardatabase open\n\n')
-    for file in allcharacters:
-        with open(f'{path}/{file}', 'r') as charfile:
+    for charName in online:
+        with open(f'{path}/{charName}.json', 'r') as charfile:
             char = json.load(charfile)
             try:
                 # create a dictionary of them
@@ -59,18 +59,18 @@ with open(f'{path}/../tt/character_highlights.tt', 'w') as hi:
                 if 'city' in char:
                     city = char['city']
                     if 'ashtan'     in city: color = '<458>'            # underscore
-                    if 'hashan'     in city: color = '<458>'            # underscore
-                    if 'targossas'  in city: color = '<588>'+'<fac>'    # blink, Pink
-                    if 'underworld' in city: color = '<818>'            # underscore, red, blue
+                    if 'hashan'     in city: color = '<438>'            # underscore
+                    if 'targossas'  in city: color = '<478>'+'<fac>'    # blink, Pink
+                    if 'underworld' in city: color = '<401>'
                     if 'mhaldor'    in city: color = '<418>'   
                     if 'cyrene'     in city: color = '<468>'   
-                    if 'eleusis'    in city: color = '<828>'   
-                    if '(hidden)'   in city: color = '<430>'            # underscore
+                    if 'eleusis'    in city: color = '<199><428>'   
+                    if '(hidden)'   in city: color = '<403>'            # underscore
 
                 char['color'] = color
                 characters[char['name']] = char
 
-                priority = longestNameLen - len(char['name'])
+                priority = len(char['name'])
                 # Can't use ACTION's because only the first one will fire.
                 # SUBSITUTES fail because they break what goes after thier match
                 # HIGHLIGHT 
